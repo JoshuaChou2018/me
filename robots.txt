@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://www.joshuachou.ink/sitemap.xml
+Sitemap: https://joshuachou2018.github.io/sitemap.xml
