@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/Users/joshuachou/Documents/GitHub/me.hugo",
+	"sourceRoot": "/home/runner/work/me.hugo/me.hugo",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/css/_variables.scss",
