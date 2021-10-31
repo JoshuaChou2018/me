@@ -1,1 +1,16 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Juexiao Zhou</title><link>https://joshuachou2018.github.io/me/</link><description>About LoveIt Theme</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://joshuachou2018.github.io/me/index.xml" rel="self" type="application/rss+xml"/><item><title>My Research Interest</title><link>https://joshuachou2018.github.io/me/my-research-interest/</link><pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate><author>Author</author><guid>https://joshuachou2018.github.io/me/my-research-interest/</guid><description> Bioinformatics &amp;amp; Deep Learning Analysis and integration of biological omics data with deep learning methods. Developing new bioinformatics tools. Brain Science &amp;amp; Cognitive Neuroscience Mechanism of Language, Emotion, Memory, and Dream. Macroscopic phenomena and application of brain. The human brain and Artificial Intelligence. Brain Computer Interface Artificial Intelligence Theoretical Research of Deep Learning. Medical Imaging EEG, X-ray, fMRI</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Juexiao Zhou</title>
+        <link>https://joshuachou2018.github.io/me/</link>
+        <description>About LoveIt Theme</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 31 Oct 2021 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://joshuachou2018.github.io/me/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>My Research Interest</title>
+    <link>https://joshuachou2018.github.io/me/my-research-interest/</link>
+    <pubDate>Sun, 31 Oct 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://joshuachou2018.github.io/me/my-research-interest/</guid>
+    <description><![CDATA[ Bioinformatics &amp; Deep Learning  Analysis and integration of biological omics data with deep learning methods. Developing new bioinformatics tools.   Brain Science &amp; Cognitive Neuroscience  Mechanism of Language, Emotion, Memory, and Dream. Macroscopic phenomena and application of brain. The human brain and Artificial Intelligence. Brain Computer Interface   Artificial Intelligence  Theoretical Research of Deep Learning.   Medical Imaging  EEG, X-ray, fMRI    ]]></description>
+</item></channel>
+</rss>
