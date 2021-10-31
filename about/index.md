@@ -10,7 +10,7 @@ MS/PhD student @KAUST. Major in Bioinformatics and Computer Science.
 
 Email: juexiao.zhou@gmail.com
 
-Wechat: MaybeChou
+Wechat: JoshuaChou666
 
 QQ: 414816433
 
@@ -41,5 +41,8 @@ QQ: 414816433
 **Reviewer**
 
 - Journal of Bioinformatics and Computational Biology
+- ICONIP2020
+- MICCAI2020
+- ICMLA2021
 
 
