@@ -30,6 +30,26 @@ QQ: 414816433
 
 
 
+**Research Interest**
+
+- Bioinformatics & Deep Learning
+	- Analysis and integration of biological omics data with deep learning methods.
+	- Developing new bioinformatics tools.
+- Brain Science & Cognitive Neuroscience
+	- Mechanism of Language, Emotion, Memory, and Dream.
+	- Macroscopic phenomena and application of brain.
+	- The human brain and Artificial Intelligence.
+	- Brain Computer Interface
+- Artificial Intelligence
+	- Theoretical Research of Deep Learning.
+- Medical Imaging
+	- EEG, X-ray, fMRI
+
+
+<br>
+
+
+
 **Membership**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
@@ -44,5 +64,7 @@ QQ: 414816433
 - ICONIP2020
 - MICCAI2020
 - ICMLA2021
+
+
 
 
