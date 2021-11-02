@@ -2,13 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.joshuachou.ink/my-research-interest/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/info/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/research/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2021-10-31T16:37:10&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/publish-package-on-conda/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/about/</loc><priority>0</priority></url><url>
             <loc>https://www.joshuachou.ink/honours/</loc><priority>0</priority></url><url>
-            <loc>https://www.joshuachou.ink/publications/</loc><priority>0</priority></url></urlset>
+            <loc>https://www.joshuachou.ink/publications/</loc><priority>0</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/coding/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2021-11-02T10:54:16&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

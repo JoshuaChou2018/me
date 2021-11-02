@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Juexiao Zhou</title>
-        <link>https://www.joshuachou.ink/posts/</link>
-        <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <title>conda - Tag - Juexiao Zhou</title>
+        <link>https://www.joshuachou.ink/tags/conda/</link>
+        <description>conda - Tag - Juexiao Zhou</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://www.joshuachou.ink/tags/conda/" rel="self" type="application/rss+xml" /><item>
     <title>Publish python package on Anaconda</title>
     <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
     <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>

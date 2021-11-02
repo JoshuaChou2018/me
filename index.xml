@@ -3,14 +3,15 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 31 Oct 2021 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>My Research Interest</title>
-    <link>https://www.joshuachou.ink/my-research-interest/</link>
-    <pubDate>Sun, 31 Oct 2021 00:00:00 &#43;0000</pubDate>
+    <title>Publish python package on Anaconda</title>
+    <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://www.joshuachou.ink/my-research-interest/</guid>
-    <description><![CDATA[ Bioinformatics &amp; Deep Learning  Analysis and integration of biological omics data with deep learning methods. Developing new bioinformatics tools.   Brain Science &amp; Cognitive Neuroscience  Mechanism of Language, Emotion, Memory, and Dream. Macroscopic phenomena and application of brain. The human brain and Artificial Intelligence. Brain Computer Interface   Artificial Intelligence  Theoretical Research of Deep Learning.   Medical Imaging  EEG, X-ray, fMRI    ]]></description>
+    <guid>https://www.joshuachou.ink/publish-package-on-conda/</guid>
+    <description><![CDATA[Install Conda Packaging Tool 1  conda install conda-build anaconda-client   File Structure 1 2 3 4 5 6 7 8 9  - home/ - my_package/ - my_package/ - package_lib/ - setup.py - README.md - run_test.py - build.sh - meta.yaml   meta.yaml This file tells conda-build how to package files under my_package/
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  package: name: my_package version: 1.]]></description>
 </item></channel>
 </rss>
