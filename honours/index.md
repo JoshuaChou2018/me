@@ -1,6 +1,6 @@
 # 
 
-## King Abdullah University of Science and Technology, KAUST, 2020-2025
+### King Abdullah University of Science and Technology, KAUST, 2020-2025
 
 **MS/PhD, Computer Science**
 
@@ -9,7 +9,7 @@
 - Yearly best studetnt award, CEMSE, 2021
 - Full scholarship for MS/PhD study, 2020
 
-## Southern University of Science and Technology, SUSTech, 2016-2020
+### Southern University of Science and Technology, SUSTech, 2016-2020
 
 **Bachelor, Bioinformatics, Biology**
 
