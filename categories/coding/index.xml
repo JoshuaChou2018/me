@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Coding - Category - Juexiao Zhou</title>
+        <title>coding - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/coding/</link>
-        <description>Coding - Category - Juexiao Zhou</description>
+        <description>coding - Category - Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://www.joshuachou.ink/categories/coding/" rel="self" type="application/rss+xml" /><item>
     <title>Publish python package on Anaconda</title>
     <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
