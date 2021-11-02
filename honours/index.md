@@ -8,6 +8,7 @@
 
 **GPA: 3.93 / 4.00**
 
+- Student ambassador, CEMSE, 2021
 - Yearly best studetnt award, CEMSE, 2021
 - Full scholarship for MS/PhD study, 2020
 
