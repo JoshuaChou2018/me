@@ -6,26 +6,6 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>i2.How Many Times Do A Clock’s Hands Overlap In A Day?</title>
-    <link>https://www.joshuachou.ink/i2.clock-hand-overlap/</link>
-    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/i2.clock-hand-overlap/</guid>
-    <description><![CDATA[Q. How Many Times Do A Clock’s Hands Overlap In A Day?
-The most important is not the answer but the way to think and work out problems.
-In total 22, because the clock hands approximately overlap at 12:00, 1:05, 2:10, 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45 and 10:50 twice a day.
-Although reaching the wrong answer is fine to an extent, you should avoid these common errors.
- Don&rsquo;t just blurt out an answer without thinking it through.]]></description>
-</item><item>
-    <title>i1.What is the most efficient way to sort a million integers?</title>
-    <link>https://www.joshuachou.ink/i1.sort-1-million/</link>
-    <pubDate>Wed, 03 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/i1.sort-1-million/</guid>
-    <description><![CDATA[Q. What is the most efficient way to sort a million integers?
-Time Complexity
-   Sorting Algorithm Average Case Best Case Worst Case     Bubble Sort O(n^2) O(n) O(n^2)   Insertion Sort O(n^2) O(n) O(n^2)   Selection Sort O(n^2) O(n^2) O(n^2)   Quick Sort O(n.log(n)) O(n.log(n)) O(n^2)   Merge Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Heap Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Counting Sort O(n+k) O(n+k) O(n+k)   Radix Sort O(n*k) O(n*k) O(n*k)   Bucket Sort O(n+k) O(n+k) O(n^2)    Space Complexity]]></description>
-</item><item>
     <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
     <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
     <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -47,6 +27,17 @@ Now you can ignore the upper and lower case when you use Tab in terminal]]></des
 Like below:
 1 2 3 4 5 6 7 8  #enable bash completion in interactive shells if !]]></description>
 </item><item>
+    <title>i2.How Many Times Do A Clock’s Hands Overlap In A Day?</title>
+    <link>https://www.joshuachou.ink/i2.clock-hand-overlap/</link>
+    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/i2.clock-hand-overlap/</guid>
+    <description><![CDATA[Q. How Many Times Do A Clock’s Hands Overlap In A Day?
+The most important is not the answer but the way to think and work out problems.
+In total 22, because the clock hands approximately overlap at 12:00, 1:05, 2:10, 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45 and 10:50 twice a day.
+Although reaching the wrong answer is fine to an extent, you should avoid these common errors.
+ Don&rsquo;t just blurt out an answer without thinking it through.]]></description>
+</item><item>
     <title>Miniserve, an elegant file server</title>
     <link>https://www.joshuachou.ink/miniserver/</link>
     <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -54,6 +45,15 @@ Like below:
     <guid>https://www.joshuachou.ink/miniserver/</guid>
     <description><![CDATA[Install You can find it at here: https://github.com/svenstaro/miniserve/releases
 Usage 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  miniserve --help miniserve 0.4.1 Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt; For when you really just want to serve some files over HTTP right now! USAGE: miniserve [FLAGS] [OPTIONS] [--] [PATH] FLAGS: -u, --upload-files Enable file uploading -h, --help Prints help information -P, --no-symlinks Do not follow symbolic links -o, --overwrite-files Enable overriding existing files during file upload --random-route Generate a random 6-hexdigit route -V, --version Prints version information -v, --verbose Be verbose, includes emitting access logs OPTIONS: -a, --auth &lt;auth&gt; Set authentication (username:password) -c, --color-scheme &lt;color_scheme&gt; Default color scheme [default: Squirrel] [possible values: Archlinux, Zenburn, Monokai, Squirrel] -i, --if &lt;interfaces&gt;.]]></description>
+</item><item>
+    <title>i1.What is the most efficient way to sort a million integers?</title>
+    <link>https://www.joshuachou.ink/i1.sort-1-million/</link>
+    <pubDate>Wed, 03 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/i1.sort-1-million/</guid>
+    <description><![CDATA[Q. What is the most efficient way to sort a million integers?
+Time Complexity
+   Sorting Algorithm Average Case Best Case Worst Case     Bubble Sort O(n^2) O(n) O(n^2)   Insertion Sort O(n^2) O(n) O(n^2)   Selection Sort O(n^2) O(n^2) O(n^2)   Quick Sort O(n.log(n)) O(n.log(n)) O(n^2)   Merge Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Heap Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Counting Sort O(n+k) O(n+k) O(n+k)   Radix Sort O(n*k) O(n*k) O(n*k)   Bucket Sort O(n+k) O(n+k) O(n^2)    Space Complexity]]></description>
 </item><item>
     <title>Publish python package on Anaconda</title>
     <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
