@@ -3,7 +3,28 @@
         <title>linux - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>linux - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
+    <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
+    <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</guid>
+    <description><![CDATA[Mofidy .inputrc
+1  sudo vi ~/.inputrc   Add this line
+1  set completion-ignore-case on   Restart your terminal
+Now you can ignore the upper and lower case when you use Tab in terminal]]></description>
+</item><item>
+    <title>How to set autocomplete in Ubuntu</title>
+    <link>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</link>
+    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</guid>
+    <description><![CDATA[Mofidy bash.bashrc
+1  sudo vi /etc/bash.bashrc   Find those code in the file
+1 2 3 4 5 6 7 8  #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi   Remove #
+Like below:
+1 2 3 4 5 6 7 8  #enable bash completion in interactive shells if !]]></description>
+</item><item>
     <title>Miniserve, an elegant file server</title>
     <link>https://www.joshuachou.ink/miniserver/</link>
     <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>

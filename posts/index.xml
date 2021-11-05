@@ -3,7 +3,7 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
     <title>i2.How Many Times Do A Clock’s Hands Overlap In A Day?</title>
     <link>https://www.joshuachou.ink/i2.clock-hand-overlap/</link>
     <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -23,6 +23,27 @@ Although reaching the wrong answer is fine to an extent, you should avoid these 
     <description><![CDATA[Q. What is the most efficient way to sort a million integers?
 Time Complexity
    Sorting Algorithm Average Case Best Case Worst Case     Bubble Sort O(n^2) O(n) O(n^2)   Insertion Sort O(n^2) O(n) O(n^2)   Selection Sort O(n^2) O(n^2) O(n^2)   Quick Sort O(n.log(n)) O(n.log(n)) O(n^2)   Merge Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Heap Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Counting Sort O(n+k) O(n+k) O(n+k)   Radix Sort O(n*k) O(n*k) O(n*k)   Bucket Sort O(n+k) O(n+k) O(n^2)    Space Complexity]]></description>
+</item><item>
+    <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
+    <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
+    <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</guid>
+    <description><![CDATA[Mofidy .inputrc
+1  sudo vi ~/.inputrc   Add this line
+1  set completion-ignore-case on   Restart your terminal
+Now you can ignore the upper and lower case when you use Tab in terminal]]></description>
+</item><item>
+    <title>How to set autocomplete in Ubuntu</title>
+    <link>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</link>
+    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</guid>
+    <description><![CDATA[Mofidy bash.bashrc
+1  sudo vi /etc/bash.bashrc   Find those code in the file
+1 2 3 4 5 6 7 8  #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi   Remove #
+Like below:
+1 2 3 4 5 6 7 8  #enable bash completion in interactive shells if !]]></description>
 </item><item>
     <title>Miniserve, an elegant file server</title>
     <link>https://www.joshuachou.ink/miniserver/</link>
