@@ -14,6 +14,17 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 Example 1:
 1 2 3  Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
 </item><item>
+    <title>typora &amp; uPic &amp; Github image hosting service</title>
+    <link>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</link>
+    <pubDate>Sun, 07 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</guid>
+    <description><![CDATA[MacOS install uPic
+1  brew install uPic   Set uPic
+Set uPic host to Github
+The default host is SMMS
+Set Typora uploading to uPic]]></description>
+</item><item>
     <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
     <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
     <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
