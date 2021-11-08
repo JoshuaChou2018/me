@@ -3,7 +3,20 @@
         <title>interview - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/interview/</link>
         <description>interview - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/interview/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/interview/" rel="self" type="application/rss+xml" /><item>
+    <title>i3.different types of machine learning</title>
+    <link>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</link>
+    <pubDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</guid>
+    <description><![CDATA[Q. What Are the Different Types of Machine Learning?
+Supervised learning
+A model makes predictions or decisions based on past or labeled data. Labeled data refers to sets of data that are given tags or labels, and thus made more meaningful.
+Unsupervised learning
+In this case, we don’t have labeled data, a model can identify patterns, anomalies, and relationships in the input data.
+Reinforcement learning
+The model learn based on the rewards received from the previous action.]]></description>
+</item><item>
     <title>i2.How Many Times Do A Clock’s Hands Overlap In A Day?</title>
     <link>https://www.joshuachou.ink/i2.clock-hand-overlap/</link>
     <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
