@@ -3,7 +3,17 @@
         <title>interview - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/interview/</link>
         <description>interview - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/interview/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/interview/" rel="self" type="application/rss+xml" /><item>
+    <title>i4.genetic algorithm and evolutionary algorithm</title>
+    <link>https://www.joshuachou.ink/i4.gaea/</link>
+    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/i4.gaea/</guid>
+    <description><![CDATA[Q. What are genetic algorithm and evolutionary algorithm?
+Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).
+There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:
+GA: They were developed by Holland and thoroughly reviewed by Goldberg;]]></description>
+</item><item>
     <title>i3.different types of machine learning</title>
     <link>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</link>
     <pubDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</pubDate>

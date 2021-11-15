@@ -3,9 +3,38 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>i4.genetic algorithm and evolutionary algorithm</title>
+    <link>https://www.joshuachou.ink/i4.gaea/</link>
+    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/i4.gaea/</guid>
+    <description><![CDATA[Q. What are genetic algorithm and evolutionary algorithm?
+Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).
+There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:
+GA: They were developed by Holland and thoroughly reviewed by Goldberg;]]></description>
+</item><item>
+    <title>Install Slurm in Ubuntu</title>
+    <link>https://www.joshuachou.ink/install-slurm/</link>
+    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/install-slurm/</guid>
+    <description><![CDATA[Install
+1  sudo apt install slurm-wlm slurm-wlm-doc -y   Modify config
+1 2  rm /etc/slurm-llnl/slurm.conf vi /etc/slurm-llnl/slurm.conf   Example of config
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52  # slurm.]]></description>
+</item><item>
+    <title>安装Python导致VNC黑屏解决方案</title>
+    <link>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</link>
+    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</guid>
+    <description><![CDATA[问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
+解决方案：
+1 2 3 4 5 6 7 8 9  $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base   ]]></description>
+</item><item>
     <title>i3.different types of machine learning</title>
     <link>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</link>
     <pubDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -79,22 +108,5 @@ Although reaching the wrong answer is fine to an extent, you should avoid these 
     <guid>https://www.joshuachou.ink/miniserver/</guid>
     <description><![CDATA[Install You can find it at here: https://github.com/svenstaro/miniserve/releases
 Usage 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  miniserve --help miniserve 0.4.1 Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt; For when you really just want to serve some files over HTTP right now! USAGE: miniserve [FLAGS] [OPTIONS] [--] [PATH] FLAGS: -u, --upload-files Enable file uploading -h, --help Prints help information -P, --no-symlinks Do not follow symbolic links -o, --overwrite-files Enable overriding existing files during file upload --random-route Generate a random 6-hexdigit route -V, --version Prints version information -v, --verbose Be verbose, includes emitting access logs OPTIONS: -a, --auth &lt;auth&gt; Set authentication (username:password) -c, --color-scheme &lt;color_scheme&gt; Default color scheme [default: Squirrel] [possible values: Archlinux, Zenburn, Monokai, Squirrel] -i, --if &lt;interfaces&gt;.]]></description>
-</item><item>
-    <title>i1.What is the most efficient way to sort a million integers?</title>
-    <link>https://www.joshuachou.ink/i1.sort-1-million/</link>
-    <pubDate>Wed, 03 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/i1.sort-1-million/</guid>
-    <description><![CDATA[Q. What is the most efficient way to sort a million integers?
-Time Complexity
-   Sorting Algorithm Average Case Best Case Worst Case     Bubble Sort O(n^2) O(n) O(n^2)   Insertion Sort O(n^2) O(n) O(n^2)   Selection Sort O(n^2) O(n^2) O(n^2)   Quick Sort O(n.log(n)) O(n.log(n)) O(n^2)   Merge Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Heap Sort O(n.log(n)) O(n.log(n)) O(n.log(n))   Counting Sort O(n+k) O(n+k) O(n+k)   Radix Sort O(n*k) O(n*k) O(n*k)   Bucket Sort O(n+k) O(n+k) O(n^2)    Space Complexity]]></description>
-</item><item>
-    <title>Publish python package on Anaconda</title>
-    <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
-    <pubDate>Mon, 01 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/publish-package-on-conda/</guid>
-    <description><![CDATA[Install Conda Packaging Tool 1  conda install conda-build anaconda-client   File Structure 1 2 3 4 5 6 7 8 9  - home/ - my_package/ - my_package/ - package_lib/ - setup.py - README.md - run_test.py - build.sh - meta.yaml   meta.yaml This file tells conda-build how to package files under my_package/
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  package: name: my_package version: 1.]]></description>
 </item></channel>
 </rss>
