@@ -3,7 +3,19 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>Install kernel for jupyter notebook</title>
+    <link>https://www.joshuachou.ink/install-jupyter-kernel/</link>
+    <pubDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/install-jupyter-kernel/</guid>
+    <description><![CDATA[Avticate your environment，check for package ipykernel  python -m ipykernel &ndash;version
+If it’s not installed：
+python -m pip install ipykernel
+Add kernel to Jupyter notebook  python -m ipykernel install &ndash;user &ndash;name &lsquo;kernelname&rsquo;
+Check Jupyter notebook kernel  jupyter kernelspec list
+Delet jupyter kernel  jupyter kernelspec remove kernelname]]></description>
+</item><item>
     <title>Install Slurm in Ubuntu</title>
     <link>https://www.joshuachou.ink/install-slurm/</link>
     <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
