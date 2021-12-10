@@ -2,38 +2,38 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.joshuachou.ink/install-jupyter-kernel/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/i4.gaea/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://www.joshuachou.ink/install-slurm/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</loc><lastmod>2021-11-14T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</loc><lastmod>2021-11-08T12:54:44&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/lc2.add2numbers/</loc><lastmod>2021-11-07T20:03:26&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</loc><lastmod>2021-11-07T20:10:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/i2.clock-hand-overlap/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/miniserver/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/i1.sort-1-million/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/publish-package-on-conda/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/coding/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/leetcode/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/interview/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/interview/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/machine-learning/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/thinking/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/algorithm/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/bat/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/coding/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/install-jupyter-kernel/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/i4.gaea/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/install-slurm/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</loc><lastmod>2021-11-14T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</loc><lastmod>2021-11-08T12:54:44&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/lc2.add2numbers/</loc><lastmod>2021-11-07T20:03:26&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</loc><lastmod>2021-11-07T20:10:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/i2.clock-hand-overlap/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/miniserver/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/i1.sort-1-million/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/publish-package-on-conda/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/coding/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/leetcode/</loc><lastmod>2021-11-28T15:46:05&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/interview/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/interview/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/machine-learning/</loc><lastmod>2021-11-15T13:51:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/thinking/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/algorithm/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/bat/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/coding/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://www.joshuachou.ink/about/</loc><priority>0</priority></url><url>
             <loc>https://www.joshuachou.ink/honours/</loc><priority>0</priority></url><url>
             <loc>https://www.joshuachou.ink/publications/</loc><priority>0</priority></url></urlset>
