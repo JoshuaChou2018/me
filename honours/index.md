@@ -2,11 +2,21 @@
 
 ## King Abdullah University of Science and Technology
 
-## KAUST, 2020-2025
+## KAUST, 2021-Present
 
-**MS/PhD, Computer Science**
+**PhD, Computer Science**
 
-**GPA: 3.93 / 4.00**
+**GPA: 4.00 / 4.00**
+
+- Excellent Research Award, CEMSE, 2021
+
+## King Abdullah University of Science and Technology
+
+## KAUST, 2020-2021
+
+**MS, Computer Science**
+
+**GPA: 3.94 / 4.00**
 
 - Student ambassador, CEMSE, 2021
 - Yearly best studetnt award, CEMSE, 2021
