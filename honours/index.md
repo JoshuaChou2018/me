@@ -16,7 +16,7 @@
 
 **MS, Computer Science**
 
-**GPA: 3.94 / 4.00**
+**GPA: 3.95 / 4.00**
 
 - Student ambassador, CEMSE, 2021
 - Yearly best studetnt award, CEMSE, 2021
