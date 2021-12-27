@@ -2,7 +2,9 @@
 
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
-MS/PhD student @KAUST. Major in Bioinformatics and Computer Science.
+PhD student @KAUST. 
+
+Major in Bioinformatics and Computer Science.
 
 <br>
 

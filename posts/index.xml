@@ -3,7 +3,18 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
+    <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
+    <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</guid>
+    <description><![CDATA[Problem Description
+Fors some unknow reason, the user is unable to click the text boxes or type anything into the publish window after running the Build &amp; Publish. When the user clicks the main window in Unity, the cursor disappears and the user can not select the text boxes or anything else.
+This problem happens under my settings, macOS Catalina 10.15.7, Unity 2019.4.31f1, VRChat SDK3.
+Solution
+The reason of this problem is that when you click the temp scene created by the SDK3, the cursor will be invisible and locked.]]></description>
+</item><item>
     <title>Install kernel for jupyter notebook</title>
     <link>https://www.joshuachou.ink/install-jupyter-kernel/</link>
     <pubDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -99,16 +110,5 @@ Set Typora uploading to uPic]]></description>
 1  sudo vi ~/.inputrc   Add this line
 1  set completion-ignore-case on   Restart your terminal
 Now you can ignore the upper and lower case when you use Tab in terminal]]></description>
-</item><item>
-    <title>How to set autocomplete in Ubuntu</title>
-    <link>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</link>
-    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</guid>
-    <description><![CDATA[Mofidy bash.bashrc
-1  sudo vi /etc/bash.bashrc   Find those code in the file
-1 2 3 4 5 6 7 8  #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi   Remove #
-Like below:
-1 2 3 4 5 6 7 8  #enable bash completion in interactive shells if !]]></description>
 </item></channel>
 </rss>
