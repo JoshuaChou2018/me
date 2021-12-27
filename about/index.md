@@ -24,7 +24,8 @@ QQ: 414816433
 
 **Education**
 
-- MS/PhD Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Present
+- PhD Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
+- MS Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
 - Visiting Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Sep 2019 - Feb 2020
 - B.S. (Honored) in Bioinformatics, Supervised by Prof. Wei Chen, [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ), Sep 2016 - Jun 2020
 
