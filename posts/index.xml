@@ -16,6 +16,14 @@ INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
 药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
  One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
 </item><item>
+    <title>ER Diagram Notation</title>
+    <link>https://www.joshuachou.ink/er-diagram-notation/</link>
+    <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/er-diagram-notation/</guid>
+    <description><![CDATA[ER diagram Notation:
+ Chen Notation  Crow’s Foot Notation  UML Class Diagram Notation   ]]></description>
+</item><item>
     <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
     <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
     <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
@@ -101,16 +109,5 @@ The model learn based on the rewards received from the previous action.]]></desc
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 Example 1:
 1 2 3  Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
-</item><item>
-    <title>typora &amp; uPic &amp; Github image hosting service</title>
-    <link>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</link>
-    <pubDate>Sun, 07 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</guid>
-    <description><![CDATA[MacOS install uPic
-1  brew install uPic   Set uPic
-Set uPic host to Github
-The default host is SMMS
-Set Typora uploading to uPic]]></description>
 </item></channel>
 </rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>database - Tag - Juexiao Zhou</title>
+        <link>https://www.joshuachou.ink/tags/database/</link>
+        <description>database - Tag - Juexiao Zhou</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/database/" rel="self" type="application/rss+xml" /><item>
+    <title>ER Diagram Notation</title>
+    <link>https://www.joshuachou.ink/er-diagram-notation/</link>
+    <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/er-diagram-notation/</guid>
+    <description><![CDATA[ER diagram Notation:
+ Chen Notation  Crow’s Foot Notation  UML Class Diagram Notation   ]]></description>
+</item></channel>
+</rss>
