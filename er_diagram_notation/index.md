@@ -15,5 +15,5 @@ ER diagram Notation:
 
 3. UML Class Diagram Notation
 
-	![截屏2022-01-02 下午9.44.19](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/%E6%88%AA%E5%B1%8F2022-01-02%20%E4%B8%8B%E5%8D%889.44.19.Xc6bbG.png)
+![截屏2022-01-02 下午9.44.19](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/%E6%88%AA%E5%B1%8F2022-01-02%20%E4%B8%8B%E5%8D%889.44.19.Xc6bbG.qY8bF1.png)
 
