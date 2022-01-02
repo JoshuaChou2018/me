@@ -3,9 +3,21 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[NMI] A geometric deep learning approach to predict binding conformations of bioactive molecules 解读</title>
+    <link>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</link>
+    <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</guid>
+    <description><![CDATA[Title: A geometric deep learning approach to predict binding conformations of bioactive molecules
+DOI: https://doi.org/10.1038/s42256-021-00409-9
+INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
+**发表周期：**Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
+药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
+ One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
+</item><item>
     <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
     <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
     <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
@@ -39,18 +51,6 @@ Example 1:
 1 2 3  Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3.   Example 2:
 1 2 3  Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1.   Example 3:
 1 2 3 4  Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
-</item><item>
-    <title>[NMI] A geometric deep learning approach to predict binding conformations of bioactive molecules 解读</title>
-    <link>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</guid>
-    <description><![CDATA[Title: A geometric deep learning approach to predict binding conformations of bioactive molecules
-DOI: https://doi.org/10.1038/s42256-021-00409-9
-INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
-**发表周期：**Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
-药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
- One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
 </item><item>
     <title>i4.genetic algorithm and evolutionary algorithm</title>
     <link>https://www.joshuachou.ink/i4.gaea/</link>
