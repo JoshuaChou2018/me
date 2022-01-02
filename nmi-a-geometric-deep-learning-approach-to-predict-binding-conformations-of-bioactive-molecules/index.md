@@ -7,7 +7,7 @@
 
 **INFO:** NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
 
-**发表周期：**Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
+**发表周期**: Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
 
 
 
