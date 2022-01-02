@@ -40,6 +40,18 @@ Example 1:
 1 2 3  Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1.   Example 3:
 1 2 3 4  Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
 </item><item>
+    <title>[NMI] A geometric deep learning approach to predict binding conformations of bioactive molecules 解读</title>
+    <link>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</link>
+    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</guid>
+    <description><![CDATA[Title: A geometric deep learning approach to predict binding conformations of bioactive molecules
+DOI: https://doi.org/10.1038/s42256-021-00409-9
+INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
+**发表周期：**Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
+药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
+ One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
+</item><item>
     <title>i4.genetic algorithm and evolutionary algorithm</title>
     <link>https://www.joshuachou.ink/i4.gaea/</link>
     <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
@@ -102,15 +114,5 @@ Example 1:
 Set uPic host to Github
 The default host is SMMS
 Set Typora uploading to uPic]]></description>
-</item><item>
-    <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
-    <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
-    <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</guid>
-    <description><![CDATA[Mofidy .inputrc
-1  sudo vi ~/.inputrc   Add this line
-1  set completion-ignore-case on   Restart your terminal
-Now you can ignore the upper and lower case when you use Tab in terminal]]></description>
 </item></channel>
 </rss>
