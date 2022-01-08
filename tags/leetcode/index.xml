@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>coding - Category - Juexiao Zhou</title>
-        <link>https://www.joshuachou.ink/categories/coding/</link>
-        <description>coding - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/coding/" rel="self" type="application/rss+xml" /><item>
+        <title>leetcode - Tag - Juexiao Zhou</title>
+        <link>https://www.joshuachou.ink/tags/leetcode/</link>
+        <description>leetcode - Tag - Juexiao Zhou</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
     <title>剑指 Offer 09. 用两个栈实现队列</title>
     <link>https://www.joshuachou.ink/jz09.%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</link>
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -24,13 +24,5 @@ deleteHead表示调用deleteHead函数
 第二个栈对应的是操作的值。
 栈（Stack）的特点是先入后出，但是我们需要实现直接操作Head的功能。因此使用两个Stack可以实现列表倒序。
 1 2 3 4 5 6 7 8 9 10 11 12 13  class CQueue: def __init__(self): self.]]></description>
-</item><item>
-    <title>Publish python package on Anaconda</title>
-    <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
-    <pubDate>Mon, 01 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/publish-package-on-conda/</guid>
-    <description><![CDATA[Install Conda Packaging Tool 1  conda install conda-build anaconda-client   File Structure 1 2 3 4 5 6 7 8 9  - home/ - my_package/ - my_package/ - package_lib/ - setup.py - README.md - run_test.py - build.sh - meta.yaml   meta.yaml This file tells conda-build how to package files under my_package/
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  package: name: my_package version: 1.]]></description>
 </item></channel>
 </rss>

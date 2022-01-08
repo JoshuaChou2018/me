@@ -3,7 +3,14 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>Example</title>
+    <link>https://www.joshuachou.ink/example/</link>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/example/</guid>
+    <description><![CDATA[Example MD]]></description>
+</item><item>
     <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
     <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
     <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
