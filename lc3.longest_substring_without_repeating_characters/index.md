@@ -64,3 +64,51 @@ In the brute force idea, we repeatedly check a substring starting from the chara
 
 Partially cited from:  https://www.enjoyalgorithms.com/blog/longest-substring-without-repeating-characters
 
+###### 暴力解法：
+
+```python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        _max=0
+        for i in range(len(s)):
+            sub=[s[i]]
+            for j in range(i+1,len(s)):
+                if s[j] not in sub:
+                    sub.append(s[j])
+                else:
+                    break
+            if len(sub)>_max:
+                _max=len(sub)
+        return _max
+```
+
+时间复杂度为O(N^2)
+
+###### 滑动窗口解法：
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s):
+        if not s:return 0
+        left = 0
+        lookup = set()
+        n = len(s)
+        max_len = 0
+        cur_len = 0
+        for i in range(n):
+            cur_len += 1
+            while s[i] in lookup:
+                lookup.remove(s[left])
+                left += 1
+                cur_len -= 1
+            if cur_len > max_len:max_len = cur_len
+            lookup.add(s[i])
+        return max_len
+```
+
+时间复杂度为O(N)
+

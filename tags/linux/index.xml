@@ -4,6 +4,15 @@
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>linux - Tag - Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>lc155.Min Stack</title>
+    <link>https://www.joshuachou.ink/lc155.min_stack/</link>
+    <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc155.min_stack/</guid>
+    <description><![CDATA[Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+Implement the MinStack class:
+ MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack.  Example 1: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  Input [&#34;MinStack&#34;,&#34;push&#34;,&#34;push&#34;,&#34;push&#34;,&#34;getMin&#34;,&#34;pop&#34;,&#34;top&#34;,&#34;getMin&#34;] [[],[-2],[0],[-3],[],[],[],[]] Output [null,null,null,null,-3,null,0,-2] Explanation MinStack minStack = new MinStack(); minStack.]]></description>
+</item><item>
     <title>剑指 Offer 09. 用两个栈实现队列</title>
     <link>https://www.joshuachou.ink/jz09.%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</link>
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -105,13 +114,5 @@ Now you can ignore the upper and lower case when you use Tab in terminal]]></des
 1 2 3 4 5 6 7 8  #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi   Remove #
 Like below:
 1 2 3 4 5 6 7 8  #enable bash completion in interactive shells if !]]></description>
-</item><item>
-    <title>Miniserve, an elegant file server</title>
-    <link>https://www.joshuachou.ink/miniserver/</link>
-    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/miniserver/</guid>
-    <description><![CDATA[Install You can find it at here: https://github.com/svenstaro/miniserve/releases
-Usage 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  miniserve --help miniserve 0.4.1 Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt; For when you really just want to serve some files over HTTP right now! USAGE: miniserve [FLAGS] [OPTIONS] [--] [PATH] FLAGS: -u, --upload-files Enable file uploading -h, --help Prints help information -P, --no-symlinks Do not follow symbolic links -o, --overwrite-files Enable overriding existing files during file upload --random-route Generate a random 6-hexdigit route -V, --version Prints version information -v, --verbose Be verbose, includes emitting access logs OPTIONS: -a, --auth &lt;auth&gt; Set authentication (username:password) -c, --color-scheme &lt;color_scheme&gt; Default color scheme [default: Squirrel] [possible values: Archlinux, Zenburn, Monokai, Squirrel] -i, --if &lt;interfaces&gt;.]]></description>
 </item></channel>
 </rss>

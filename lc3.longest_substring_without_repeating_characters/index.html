@@ -14,7 +14,7 @@ Example 1:
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-11-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-11-28T15:46:05+03:00" />
+<meta property="article:modified_time" content="2022-01-10T13:29:20+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -37,8 +37,8 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc3.longest_substring_without_repeating_characters\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "coding","wordcount":  343 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc3.longest_substring_without_repeating_characters\/","datePublished": "2021-11-18T00:00:00+00:00","dateModified": "2021-11-28T15:46:05+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "coding","wordcount":  467 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc3.longest_substring_without_repeating_characters\/","datePublished": "2021-11-18T00:00:00+00:00","dateModified": "2022-01-10T13:29:20+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -119,8 +119,8 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc3.Longest Substring Without Repeating Characters</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-18">2021-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;343 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-18">2021-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;467 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -134,7 +134,12 @@ Example 1:
           <ul>
             <li>
               <ul>
-                <li><a href="#thinking">Thinking</a></li>
+                <li><a href="#thinking">Thinking</a>
+                  <ul>
+                    <li><a href="#暴力解法">暴力解法：</a></li>
+                    <li><a href="#滑动窗口解法">滑动窗口解法：</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
@@ -210,12 +215,96 @@ Output: 0
 <p>To optimize, here is an optimization insight:</p>
 <p>In the brute force idea, we repeatedly check a substring starting from the character str[i] to see if it has a duplicate character or not. We can optimize it further because, during the loop, if a substring <strong>str[i, j-1]</strong> is already checked to have no duplicate characters, then for the substring <strong>str[i, j],</strong> we only need to check if <strong>str[j]</strong> is already present in the substring <strong>str[i, j-1]</strong> or not.</p>
 <p>Partially cited from:  <a href="https://www.enjoyalgorithms.com/blog/longest-substring-without-repeating-characters" target="_blank" rel="noopener noreffer">https://www.enjoyalgorithms.com/blog/longest-substring-without-repeating-characters</a></p>
+<h6 id="暴力解法">暴力解法：</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">lengthOfLongestSubstring</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">        :type s: str
+</span><span class="s2">        :rtype: int
+</span><span class="s2">        &#34;&#34;&#34;</span>
+        <span class="n">_max</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+            <span class="n">sub</span><span class="o">=</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sub</span><span class="p">:</span>
+                    <span class="n">sub</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">break</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sub</span><span class="p">)</span><span class="o">&gt;</span><span class="n">_max</span><span class="p">:</span>
+                <span class="n">_max</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">sub</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">_max</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>时间复杂度为O(N^2)</p>
+<h6 id="滑动窗口解法">滑动窗口解法：</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">lengthOfLongestSubstring</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span><span class="p">:</span><span class="k">return</span> <span class="mi">0</span>
+        <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">lookup</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="n">max_len</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">cur_len</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">cur_len</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">while</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">in</span> <span class="n">lookup</span><span class="p">:</span>
+                <span class="n">lookup</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">])</span>
+                <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">cur_len</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">cur_len</span> <span class="o">&gt;</span> <span class="n">max_len</span><span class="p">:</span><span class="n">max_len</span> <span class="o">=</span> <span class="n">cur_len</span>
+            <span class="n">lookup</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">max_len</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>时间复杂度为O(N)</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-11-28&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/83dd459e6e3caeebbe3092dd50c9500b36d56fb0" target="_blank" title="commit by anonymous271(65954890&#43;anonymous271@users.noreply.github.com) 83dd459e6e3caeebbe3092dd50c9500b36d56fb0: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>83dd459</a></span>
+                <span>Updated on 2022-01-10&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/3be576f98ce78b63a3c443bc90e35e981d14e73f" target="_blank" title="commit by anonymous271(65954890&#43;anonymous271@users.noreply.github.com) 3be576f98ce78b63a3c443bc90e35e981d14e73f: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>3be576f</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
