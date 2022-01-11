@@ -3,9 +3,19 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Jan 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>lc1249. Minimum Remove to Make Valid Parentheses</title>
+    <link>https://www.joshuachou.ink/lc1249.minimum_remove_to_make_valid_parentheses/</link>
+    <pubDate>Tue, 11 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc1249.minimum_remove_to_make_valid_parentheses/</guid>
+    <description><![CDATA[Given a string s of '(' , ')' and lowercase English characters.
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+Formally, a parentheses string is valid if and only if:
+ It is the empty string, contains only lowercase characters, or It can be written as AB (A concatenated with B), where A and B are valid strings, or It can be written as (A), where A is a valid string.]]></description>
+</item><item>
     <title>lc155.Min Stack</title>
     <link>https://www.joshuachou.ink/lc155.min_stack/</link>
     <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -106,15 +116,5 @@ Example 1:
 Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).
 There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:
 GA: They were developed by Holland and thoroughly reviewed by Goldberg;]]></description>
-</item><item>
-    <title>Install Slurm in Ubuntu</title>
-    <link>https://www.joshuachou.ink/install-slurm/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/install-slurm/</guid>
-    <description><![CDATA[Install
-1  sudo apt install slurm-wlm slurm-wlm-doc -y   Modify config
-1 2  rm /etc/slurm-llnl/slurm.conf vi /etc/slurm-llnl/slurm.conf   Example of config
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52  # slurm.]]></description>
 </item></channel>
 </rss>
