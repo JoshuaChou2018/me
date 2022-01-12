@@ -13,7 +13,7 @@
 
 1. **Juexiao Zhou**\*, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao. DeeReCT-TSS: A novel meta-learning-based method annotates TSS in multiple cell types based on DNA sequences and RNA-seq data. **under review.**
 2. Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **Juexiao Zhou**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao. Hongxia Zhang; Lihua Li. A Workflow for Automatic, Accurate and Robust Breast Tumor Segmentation on Multi-Database DCE-MRI. **under review.**
-3. Longxi Zhou\*, Xianglin Meng\*, Yuxin Huang\*, Kai Kang , **Juexiao Zhou**, Yuetan Chu , Haoyang Li , Dexuan Xie , Jiannan Zhang , Weizhen Yang , Na Bai , Yi Zhao , Mingyan Zhao , Guohuag Wang, Lawrence Carin, Xigang Xiao, Kaijiang YuZhaowen Qiu , and Xin Gao. Seeing the Unseen: Discovering Interpretable Sub-Visual Abnormalities in CT Scans of COVID-19 Patients and Survivors by Deep Learning. **under review.**
+3. Longxi Zhou\*, Xianglin Meng\*, Yuxin Huang\*, Kai Kang , **Juexiao Zhou**, Yuetan Chu , Haoyang Li , Dexuan Xie , Jiannan Zhang , Weizhen Yang , Na Bai , Yi Zhao , Mingyan Zhao , Guohuag Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu , and Xin Gao. Seeing the Unseen: Discovering Interpretable Sub-Visual Abnormalities in CT Scans of COVID-19 Patients and Survivors by Deep Learning. **under review.**
 3. Haoyang Li, Hanmin Li, **Juexiao Zhou** and Xin Gao. SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information. **under review.**
 
 ## Conference
