@@ -3,7 +3,17 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 12 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc953. Verifying an Alien Dictionary</title>
+    <link>https://www.joshuachou.ink/lc953.verifying_an_alien_dictionary/</link>
+    <pubDate>Wed, 12 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc953.verifying_an_alien_dictionary/</guid>
+    <description><![CDATA[In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.
+Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographically in this alien language.
+Example 1:
+1 2 3  Input: words = [&#34;hello&#34;,&#34;leetcode&#34;], order = &#34;hlabcdefgijkmnopqrstuvwxyz&#34; Output: true Explanation: As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.]]></description>
+</item><item>
     <title>lc1249. Minimum Remove to Make Valid Parentheses</title>
     <link>https://www.joshuachou.ink/lc1249.minimum_remove_to_make_valid_parentheses/</link>
     <pubDate>Tue, 11 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -104,15 +114,5 @@ Example 1:
 1 2 3  Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3.   Example 2:
 1 2 3  Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1.   Example 3:
 1 2 3 4  Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
-</item><item>
-    <title>i4.genetic algorithm and evolutionary algorithm</title>
-    <link>https://www.joshuachou.ink/i4.gaea/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/i4.gaea/</guid>
-    <description><![CDATA[Q. What are genetic algorithm and evolutionary algorithm?
-Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).
-There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:
-GA: They were developed by Holland and thoroughly reviewed by Goldberg;]]></description>
 </item></channel>
 </rss>
