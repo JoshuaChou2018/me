@@ -3,7 +3,40 @@
         <title>leetcode - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/leetcode/</link>
         <description>leetcode - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 12 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc273. Integer to English Words</title>
+    <link>https://www.joshuachou.ink/lc273.integer_to_english_words/</link>
+    <pubDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc273.integer_to_english_words/</guid>
+    <description><![CDATA[Convert a non-negative integer num to its English words representation.
+Example 1:
+1 2  Input: num = 123 Output: &#34;One Hundred Twenty Three&#34;   Example 2:
+1 2  Input: num = 12345 Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;   Example 3:
+1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
+ 0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
+</item><item>
+    <title>lc973. K Closest Points to Origin</title>
+    <link>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</link>
+    <pubDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</guid>
+    <description><![CDATA[Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
+The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
+You may return the answer in any order. The answer is guaranteed to be unique(except for the order that it is in).]]></description>
+</item><item>
+    <title>lc680. Valid Palindrome II</title>
+    <link>https://www.joshuachou.ink/lc680.valid_palindrome_ii/</link>
+    <pubDate>Thu, 13 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc680.valid_palindrome_ii/</guid>
+    <description><![CDATA[Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+Example 1:
+1 2  Input: s = &#34;aba&#34; Output: true   Example 2:
+1 2 3  Input: s = &#34;abca&#34; Output: true Explanation: You could delete the character &#39;c&#39;.   Example 3:
+1 2  Input: s = &#34;abc&#34; Output: false   Constraints:
+ 1 &lt;= s.]]></description>
+</item><item>
     <title>lc953. Verifying an Alien Dictionary</title>
     <link>https://www.joshuachou.ink/lc953.verifying_an_alien_dictionary/</link>
     <pubDate>Wed, 12 Jan 2022 00:00:00 &#43;0000</pubDate>
