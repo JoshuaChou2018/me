@@ -14,8 +14,8 @@ Example 1:
  0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/lc273.integer_to_english_words/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-01-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-01-16T22:04:46+03:00" />
+<meta property="article:published_time" content="2022-01-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-17T22:45:02+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -39,8 +39,8 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc273.integer_to_english_words\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  104 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc273.integer_to_english_words\/","datePublished": "2022-01-16T00:00:00+00:00","dateModified": "2022-01-16T22:04:46+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  255 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc273.integer_to_english_words\/","datePublished": "2022-01-17T00:00:00+00:00","dateModified": "2022-01-17T22:45:02+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -121,8 +121,8 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc273. Integer to English Words</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-16">2022-01-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;104 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-17">2022-01-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;255 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -140,6 +140,7 @@ Example 1:
                   <ul>
                     <li><a href="#解题思路">解题思路：</a></li>
                     <li><a href="#递归解法">递归解法：</a></li>
+                    <li><a href="#踩坑">踩坑：</a></li>
                   </ul>
                 </li>
               </ul>
@@ -197,12 +198,111 @@ Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Sev
 <p><strong>难点</strong>：把数字根据位数拆开。</p>
 <p>**两种解法：**递归和迭代。</p>
 <h6 id="递归解法">递归解法：</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">numberToWords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">        :type num: int
+</span><span class="s2">        :rtype: str
+</span><span class="s2">        &#34;&#34;&#34;</span>
+        <span class="n">from0to19</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;One&#39;</span><span class="p">,</span><span class="s1">&#39;Two&#39;</span><span class="p">,</span><span class="s1">&#39;Three&#39;</span><span class="p">,</span><span class="s1">&#39;Four&#39;</span><span class="p">,</span><span class="s1">&#39;Five&#39;</span><span class="p">,</span><span class="s1">&#39;Six&#39;</span><span class="p">,</span><span class="s1">&#39;Seven&#39;</span><span class="p">,</span><span class="s1">&#39;Eight&#39;</span><span class="p">,</span><span class="s1">&#39;Nine&#39;</span><span class="p">,</span><span class="s1">&#39;Ten&#39;</span><span class="p">,</span><span class="s1">&#39;Eleven&#39;</span><span class="p">,</span><span class="s1">&#39;Twelve&#39;</span><span class="p">,</span><span class="s1">&#39;Thirteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fourteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fifteen&#39;</span><span class="p">,</span><span class="s1">&#39;Sixteen&#39;</span><span class="p">,</span><span class="s1">&#39;Seventeen&#39;</span><span class="p">,</span><span class="s1">&#39;Eighteen&#39;</span><span class="p">,</span><span class="s1">&#39;Nineteen&#39;</span><span class="p">]</span>
+        <span class="n">from20to90</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;Twenty&#39;</span><span class="p">,</span><span class="s1">&#39;Thirty&#39;</span><span class="p">,</span><span class="s1">&#39;Forty&#39;</span><span class="p">,</span><span class="s1">&#39;Fifty&#39;</span><span class="p">,</span><span class="s1">&#39;Sixty&#39;</span><span class="p">,</span><span class="s1">&#39;Seventy&#39;</span><span class="p">,</span><span class="s1">&#39;Eighty&#39;</span><span class="p">,</span><span class="s1">&#39;Ninety&#39;</span><span class="p">]</span>
+
+        <span class="k">def</span> <span class="nf">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000000</span><span class="p">:</span> <span class="c1"># larger than 1 billion</span>
+                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Billion&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000000</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000000</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">ans</span>
+            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000</span><span class="p">:</span>
+                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Million&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">ans</span>
+            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000</span><span class="p">:</span>
+                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Thousand&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">ans</span>
+            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">100</span><span class="p">:</span>
+                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Hundred&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">100</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">100</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">ans</span>
+            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">20</span><span class="p">:</span>
+                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from20to90</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">10</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">ans</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+
+        <span class="k">def</span> <span class="nf">addBlank</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+            <span class="n">_s</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+                    <span class="n">_s</span><span class="o">+=</span><span class="s1">&#39; </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">_s</span><span class="o">+=</span><span class="n">_</span>
+            <span class="k">return</span> <span class="n">_s</span>
+
+        <span class="k">if</span> <span class="n">num</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;Zero&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ans</span><span class="o">=</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">addBlank</span><span class="p">(</span><span class="n">ans</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Runtime: 24 ms, faster than 54.38% of Python online submissions for Integer to English Words.</p>
+<p>Memory Usage: 13.6 MB, less than 13.33% of Python online submissions for Integer to English Words.</p>
+<h6 id="踩坑">踩坑：</h6>
+<ol>
+<li>空格问题</li>
+<li>数字区间分割</li>
+<li>Billion位忘记转英文</li>
+<li>英文拼写错误，eg: forteen</li>
+</ol>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-01-16&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d85418e11659cced82835b9e20e762d074f8e1a3" target="_blank" title="commit by JoshuaChou(maybechou@live.com) d85418e11659cced82835b9e20e762d074f8e1a3: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>d85418e</a></span>
+                <span>Updated on 2022-01-17&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/eb8ae7a6c1c764f839b1ed03dbe3e1355ba1fcce" target="_blank" title="commit by JoshuaChou(maybechou@live.com) eb8ae7a6c1c764f839b1ed03dbe3e1355ba1fcce: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>eb8ae7a</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
