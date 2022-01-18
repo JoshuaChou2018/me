@@ -16,6 +16,18 @@ Example 1:
 1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
  0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
 </item><item>
+    <title>lc301. Remove Invalid Parentheses</title>
+    <link>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</link>
+    <pubDate>Mon, 17 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</guid>
+    <description><![CDATA[Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
+Return all the possible results. You may return the answer in any order.
+Example 1:
+1 2  Input: s = &#34;()())()&#34; Output: [&#34;(())()&#34;,&#34;()()()&#34;]   Example 2:
+1 2  Input: s = &#34;(a)())()&#34; Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]   Example 3:
+1 2  Input: s = &#34;)(&#34; Output: [&#34;&#34;]   Constraints:]]></description>
+</item><item>
     <title>lc973. K Closest Points to Origin</title>
     <link>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</link>
     <pubDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</pubDate>
