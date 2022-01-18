@@ -8,23 +8,23 @@
 
 2. <font color=blue>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.</font>  
 
-	Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao. ***Medical Image Computing and Computer Assisted Interventions 2020**.*  doi: 10.1007/978-3-030-59713-9_44 [ [link](https://www.google.com/url?q=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-030-59713-9_44%23citeas&sa=D&sntz=1&usg=AFQjCNEB9mq8XLHYcDYNt45hbbBQMdFXug) ] [ [pdf](papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf) ]
+	Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao. ***Medical Image Computing and Computer Assisted Interventions 2020**.*  doi: 10.1007/978-3-030-59713-9_44 [ [link](https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas) ] [ [pdf](papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf) ]
 
 3. <font color=blue>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.</font>  
 
-	Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, **Juexiao Zhou**,  Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao.  ***Genomics Proteomics and Bioinformatics**.* doi: 10.1016/j.gpb.2020.05.004 [ [link](https://www.google.com/url?q=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS1672022921000498&sa=D&sntz=1&usg=AFQjCNGjLpo3kwydf8zephr-k3aqocp8TQ) ] [ [pdf](papers/1-s2.0-S1672022921000498-main.pdf) ]
+	Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, **Juexiao Zhou**,  Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao.  ***Genomics Proteomics and Bioinformatics**.* doi: 10.1016/j.gpb.2020.05.004 [ [link](https://www.sciencedirect.com/science/article/pii/S1672022921000498) ] [ [pdf](papers/1-s2.0-S1672022921000498-main.pdf) ]
 
 4. <font color=blue>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.</font> 
 
-	Liongxi Zhou, Zhongxiao Li, **Juexiao Zhou** , Haoyang Li , Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao. ***Transactions on Medical Imaging**, 2020.* doi: 10.1109/TMI.2020.3001810 [ [link](https://www.google.com/url?q=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F9115057%3Fsource%3Dauthoralert&sa=D&sntz=1&usg=AFQjCNEdsEbs6FcS97QDBDwS-G-gTE0NPw) ] [ [pdf](papers/A_Rapid_Accurate_and_Machine-Agnostic_Segmentation_and_Quantification_Method_for_CT-Based_COVID-19_Diagnosis.pdf) ]
+	Liongxi Zhou, Zhongxiao Li, **Juexiao Zhou** , Haoyang Li , Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao. ***Transactions on Medical Imaging**, 2020.* doi: 10.1109/TMI.2020.3001810 [ [link](https://ieeexplore.ieee.org/document/9115057?source=authoralert) ] [ [pdf](papers/A_Rapid_Accurate_and_Machine-Agnostic_Segmentation_and_Quantification_Method_for_CT-Based_COVID-19_Diagnosis.pdf) ]
 
 5. <font color=blue>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
 
-	Haoyang Li , **Juexiao Zhou**, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.  ***Front. Oncol**., 2020.* doi: 10.3389/fonc.2020.00207 [ [link](https://www.google.com/url?q=https%3A%2F%2Fwww.frontiersin.org%2Farticles%2F10.3389%2Ffonc.2020.00207%2Ffull%3F%26utm_source%3DEmail_to_authors_%26utm_medium%3DEmail%26utm_content%3DT1_11.5e1_author%26utm_campaign%3DEmail_publication%26field%3D%26journalName%3DFrontiers_in_Oncology%26id%3D518675&sa=D&sntz=1&usg=AFQjCNHB9z4UgW9FpBZdXBESNmvqHeyjHg) ] [ [pdf](papers/fonc-10-00207.pdf) ]
+	Haoyang Li , **Juexiao Zhou**, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.  ***Front. Oncol**., 2020.* doi: 10.3389/fonc.2020.00207 [ [link](https://www.frontiersin.org/articles/10.3389/fonc.2020.00207/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Oncology&id=518675) ] [ [pdf](papers/fonc-10-00207.pdf) ]
 
 6. <font color=blue>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.</font> 
 
-	Yisheng Li\* , Bernhard Schaefke\* , Xudong Zou , Min Zhang , Florian Heyd , Wei Sun , Bin Zhang , Guipeng Li , Weizheng Liang , Yuhao He , **Juexiao Zhou** , Yunfei Li , Liang Fang , Yuhui Hu. ***Molecular Systems Biology***, *2020*. doi: 10.15252/msb.20199367 [ [link](https://www.google.com/search?safe=strict&sxsrf=ALeKk03NeUqqse2SL0ye8WrNnqpBks6q2g%3A1591584635163&source=hp&ei=e6fdXq2qB6W8ggfO9YfgAQ&q=Pan-tissue+analysis+of+allelic+alternative+polyadenylation+suggests+widespread+functional+regulation&oq=Pan-tissue+analysis+of+allelic+alternative+polyadenylation+suggests+widespread+functional+regulation&gs_lcp=CgZwc3ktYWIQA1DEFljEFmDZF2gAcAB4AIABAIgBAJIBAJgBAKABAqABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjt07nmmvHpAhUlnuAKHc76ARwQ4dUDCAw&uact=5) ] [ [pdf](papers/msb.20199367.pdf) ]
+	Yisheng Li\* , Bernhard Schaefke\* , Xudong Zou , Min Zhang , Florian Heyd , Wei Sun , Bin Zhang , Guipeng Li , Weizheng Liang , Yuhao He , **Juexiao Zhou** , Yunfei Li , Liang Fang , Yuhui Hu. ***Molecular Systems Biology***, *2020*. doi: 10.15252/msb.20199367 [ [link](https://www.embopress.org/doi/full/10.15252/msb.20199367) ] [ [pdf](papers/msb.20199367.pdf) ]
 
 ## Preprint or under review
 
