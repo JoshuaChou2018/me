@@ -1,6 +1,5 @@
 # 
 
-
 ## Journal
 
 1. <font color=blue>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.</font> 
@@ -26,7 +25,6 @@
 6. <font color=blue>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.</font> 
 
 	Yisheng Li\* , Bernhard Schaefke\* , Xudong Zou , Min Zhang , Florian Heyd , Wei Sun , Bin Zhang , Guipeng Li , Weizheng Liang , Yuhao He , **Juexiao Zhou** , Yunfei Li , Liang Fang , Yuhui Hu. ***Molecular Systems Biology***, *2020*. doi: 10.15252/msb.20199367 [ [link](https://www.embopress.org/doi/full/10.15252/msb.20199367) ] [ [pdf](papers/msb.20199367.pdf) ]
-	
 ## Preprint or under review
 
 1. <font color=blue>DeeReCT-TSS: A novel meta-learning-based method annotates TSS in multiple cell types based on DNA sequences and RNA-seq data.</font> 
@@ -66,4 +64,8 @@
 5. <font color=blue>Systematical discovery of *cis*-elements regulating alternative polyadenylationin mammalian cells. </font> 
 
 	Min Zhang, Yisheng Li, **Juexiao Zhou**, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. *Poster. **Regulatory RNAs, Cell Symposia**, Berlin, Germany, May 12-14, 2019.*
+	
+	
+
+{reversed="reversed"}
 
