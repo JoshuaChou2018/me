@@ -1,5 +1,6 @@
 # 
 
+
 ## Journal
 
 1. <font color=blue>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.</font> 
@@ -9,7 +10,7 @@
 2. <font color=blue>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.</font>  
 
 	Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao. ***Medical Image Computing and Computer Assisted Interventions 2020**.*  doi: 10.1007/978-3-030-59713-9_44 [ [link](https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas) ] [ [pdf](papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf) ]
-
+	
 3. <font color=blue>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.</font>  
 
 	Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, **Juexiao Zhou**,  Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao.  ***Genomics Proteomics and Bioinformatics**.* doi: 10.1016/j.gpb.2020.05.004 [ [link](https://www.sciencedirect.com/science/article/pii/S1672022921000498) ] [ [pdf](papers/1-s2.0-S1672022921000498-main.pdf) ]
@@ -25,7 +26,7 @@
 6. <font color=blue>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.</font> 
 
 	Yisheng Li\* , Bernhard Schaefke\* , Xudong Zou , Min Zhang , Florian Heyd , Wei Sun , Bin Zhang , Guipeng Li , Weizheng Liang , Yuhao He , **Juexiao Zhou** , Yunfei Li , Liang Fang , Yuhui Hu. ***Molecular Systems Biology***, *2020*. doi: 10.15252/msb.20199367 [ [link](https://www.embopress.org/doi/full/10.15252/msb.20199367) ] [ [pdf](papers/msb.20199367.pdf) ]
-
+	
 ## Preprint or under review
 
 1. <font color=blue>DeeReCT-TSS: A novel meta-learning-based method annotates TSS in multiple cell types based on DNA sequences and RNA-seq data.</font> 
