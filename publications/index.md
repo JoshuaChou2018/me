@@ -64,5 +64,6 @@
 0. <font color=blue>Systematical discovery of *cis*-elements regulating alternative polyadenylationin mammalian cells. </font> 
 
 	Min Zhang, Yisheng Li, **Juexiao Zhou**, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. *Poster. **Regulatory RNAs, Cell Symposia**, Berlin, Germany, May 12-14, 2019.*
+	
 {: reversed="reversed"}
 
