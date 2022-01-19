@@ -65,5 +65,5 @@
 
 	Min Zhang, Yisheng Li, **Juexiao Zhou**, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. *Poster. **Regulatory RNAs, Cell Symposia**, Berlin, Germany, May 12-14, 2019.*
 	
-{: reversed="reversed"}
+0. {: reversed="reversed"}
 
