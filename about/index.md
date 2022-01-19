@@ -4,13 +4,13 @@
 
 PhD student @KAUST. 
 
-Major in Bioinformatics and Computer Science.
+Major in Computer Science and Bioinformatics.
 
 <br>
 
 
 
-Email: juexiao.zhou@gmail.com
+Email: juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
 
 Wechat: JoshuaChou666
 
@@ -35,16 +35,17 @@ QQ: 414816433
 
 **Research Interest**
 
-- Bioinformatics & Deep Learning
+- Metaverse
+- Artificial Intelligence
+	- Theoretical Research of Deep Learning.
+- Bioinformatics
 	- Analysis and integration of biological omics data with deep learning methods.
 	- Developing new bioinformatics tools.
-- Brain Science & Cognitive Neuroscience
+- Cognitive Neuroscience
 	- Mechanism of Language, Emotion, Memory, and Dream.
 	- Macroscopic phenomena and application of brain.
 	- The human brain and Artificial Intelligence.
 	- Brain Computer Interface
-- Artificial Intelligence
-	- Theoretical Research of Deep Learning.
 - Medical Imaging
 	- EEG, X-ray, fMRI
 
