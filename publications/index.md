@@ -42,14 +42,41 @@
 4. <font color=blue>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.</font> 
 
 	Haoyang Li, Hanmin Li, **Juexiao Zhou** and Xin Gao. **under review.**
+	
+	
 
 ## Conference
 
-1. <font color=blue>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. </font> <br>Haoyang Li, **Juexiao Zhou** , Xin Gao. *Poster.* ***DigitalHealth, KAUST**, 2020.*
-2. <font color=blue>CaMeRe: A novel tool for inference of cancer metabolic reprogramming. </font> <br>Haoyang Li, **Juexiao Zhou**, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu. *Poster. **Advance In Artificial Intelligence, KAUST**, 2019.*
-3. <font color=blue>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.</font> <br>Yongkang Long, **Juexiao Zhou**, Zhongxiao Li, Wei Chen, Xin Gao. *Poster. **Advance In Artificial Intelligence, KAUST**, 2019.*
-4. <font color=blue>Systematical discovery of *cis*-elements regulating alternative polyadenylationin mammalian cells.</font> <br>Min Zhang, Yisheng Li, **Juexiao Zhou**, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. *Poster. **RNA Biology, CSH Asia**, 2019.*
-5. <font color=blue>Systematical discovery of *cis*-elements regulating alternative polyadenylationin mammalian cells. </font> <br>Min Zhang, Yisheng Li, **Juexiao Zhou**, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. *Poster. **Regulatory RNAs, Cell Symposia**, Berlin, Germany, May 12-14, 2019.*
-{: reversed="reversed"}
-
+<ol reversed>
+  <li>
+    <font color=blue>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. </font>
+    <br>	
+    Haoyang Li, <b>Juexiao Zhou</b> , Xin Gao. <i>Poster</i>. <i><b>DigitalHealth, KAUST, 2020</b></i>. 	
+  </li>
+  <br>
+  <li>
+    <font color=blue>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
+    <br>
+    Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu. <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.</font> 
+    <br>
+    Yongkang Long, <b>Juexiao Zhou</b>, Zhongxiao Li, Wei Chen, Xin Gao. <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019. </b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells.</font> 
+    <br>
+    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. <i>Poster</i>. <i><b>RNA Biology, CSH Asia, 2019.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells. </font> 
+    <br>
+    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. <i>Poster</i>. <i><b>Regulatory RNAs, Cell Symposia, Berlin, Germany, May 12-14, 2019.</b></i>
+  </li>
+  <br>
+</ol>
 
