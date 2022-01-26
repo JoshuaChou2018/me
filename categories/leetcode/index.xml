@@ -3,7 +3,52 @@
         <title>leetcode - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/leetcode/</link>
         <description>leetcode - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 17 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jan 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc238. Product of Array Except Self</title>
+    <link>https://www.joshuachou.ink/lc238._product_of_array_except_self/</link>
+    <pubDate>Wed, 26 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc238._product_of_array_except_self/</guid>
+    <description><![CDATA[Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+You must write an algorithm that runs in O(n) time and without using the division operation.
+Example 1:
+1 2  Input: nums = [1,2,3,4] Output: [24,12,8,6]   Example 2:]]></description>
+</item><item>
+    <title>lc560. Subarray Sum Equals K</title>
+    <link>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</link>
+    <pubDate>Tue, 25 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</guid>
+    <description><![CDATA[Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+Example 1:
+1 2  Input: nums = [1,1,1], k = 2 Output: 2   Example 2:
+1 2  Input: nums = [1,2,3], k = 3 Output: 2   Constraints:
+ 1 &lt;= nums.length &lt;= 2 * 104 -1000 &lt;= nums[i] &lt;= 1000 -107 &lt;= k &lt;= 107  解题思路： 累积和（使用数组）]]></description>
+</item><item>
+    <title>lc301. Remove Invalid Parentheses</title>
+    <link>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</link>
+    <pubDate>Thu, 20 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</guid>
+    <description><![CDATA[Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
+Return all the possible results. You may return the answer in any order.
+Example 1:
+1 2  Input: s = &#34;()())()&#34; Output: [&#34;(())()&#34;,&#34;()()()&#34;]   Example 2:
+1 2  Input: s = &#34;(a)())()&#34; Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]   Example 3:
+1 2  Input: s = &#34;)(&#34; Output: [&#34;&#34;]   Constraints:]]></description>
+</item><item>
+    <title>lc67. Add Binary</title>
+    <link>https://www.joshuachou.ink/lc67.add_binary/</link>
+    <pubDate>Thu, 20 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc67.add_binary/</guid>
+    <description><![CDATA[Given two binary strings a and b, return their sum as a binary string.
+Example 1:
+1 2  Input: a = &#34;11&#34;, b = &#34;1&#34; Output: &#34;100&#34;   Example 2:
+1 2  Input: a = &#34;1010&#34;, b = &#34;1011&#34; Output: &#34;10101&#34;   Constraints:
+ 1 &lt;= a.length, b.length &lt;= 104 a and b consist only of '0' or '1' characters. Each string does not contain leading zeros except for the zero itself.]]></description>
+</item><item>
     <title>lc273. Integer to English Words</title>
     <link>https://www.joshuachou.ink/lc273.integer_to_english_words/</link>
     <pubDate>Mon, 17 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -15,18 +60,6 @@ Example 1:
 1 2  Input: num = 12345 Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;   Example 3:
 1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
  0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
-</item><item>
-    <title>lc301. Remove Invalid Parentheses</title>
-    <link>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</link>
-    <pubDate>Mon, 17 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</guid>
-    <description><![CDATA[Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
-Return all the possible results. You may return the answer in any order.
-Example 1:
-1 2  Input: s = &#34;()())()&#34; Output: [&#34;(())()&#34;,&#34;()()()&#34;]   Example 2:
-1 2  Input: s = &#34;(a)())()&#34; Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]   Example 3:
-1 2  Input: s = &#34;)(&#34; Output: [&#34;&#34;]   Constraints:]]></description>
 </item><item>
     <title>lc973. K Closest Points to Origin</title>
     <link>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</link>
@@ -77,47 +110,5 @@ Formally, a parentheses string is valid if and only if:
     <description><![CDATA[Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class:
  MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack.  Example 1: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  Input [&#34;MinStack&#34;,&#34;push&#34;,&#34;push&#34;,&#34;push&#34;,&#34;getMin&#34;,&#34;pop&#34;,&#34;top&#34;,&#34;getMin&#34;] [[],[-2],[0],[-3],[],[],[],[]] Output [null,null,null,null,-3,null,0,-2] Explanation MinStack minStack = new MinStack(); minStack.]]></description>
-</item><item>
-    <title>剑指 Offer 09. 用两个栈实现队列</title>
-    <link>https://www.joshuachou.ink/jz09.%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</link>
-    <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/jz09.%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</guid>
-    <description><![CDATA[用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
-示例 1：
-输入：
-1 2 3  [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1]   示例 2：
-输入：
-1 2 3  [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2]   提示：
-1 2 3  1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用   来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-解题思路 输入为两个栈，
-第一个栈对应的是操作： [&ldquo;CQueue&rdquo;,&ldquo;appendTail&rdquo;,&ldquo;deleteHead&rdquo;,&ldquo;deleteHead&rdquo;]
-CQueue表示init一个CQueue object
-appendTail表示调用appendTail函数
-deleteHead表示调用deleteHead函数
-第二个栈对应的是操作的值。
-栈（Stack）的特点是先入后出，但是我们需要实现直接操作Head的功能。因此使用两个Stack可以实现列表倒序。
-1 2 3 4 5 6 7 8 9 10 11 12 13  class CQueue: def __init__(self): self.]]></description>
-</item><item>
-    <title>lc3.Longest Substring Without Repeating Characters</title>
-    <link>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</link>
-    <pubDate>Thu, 18 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</guid>
-    <description><![CDATA[Given a string s, find the length of the longest substring without repeating characters.
-Example 1:
-1 2 3  Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3.   Example 2:
-1 2 3  Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1.   Example 3:
-1 2 3 4  Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
-</item><item>
-    <title>lc2.Add Two Numbers</title>
-    <link>https://www.joshuachou.ink/lc2.add2numbers/</link>
-    <pubDate>Sun, 07 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc2.add2numbers/</guid>
-    <description><![CDATA[You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Example 1:
-1 2 3  Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
 </item></channel>
 </rss>

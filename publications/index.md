@@ -88,7 +88,6 @@
   </li>
   <br>
 </ol>
-
 ## Preprint or under review
 
 <ol reversed>
@@ -170,5 +169,4 @@
   </li>
   <br>
 </ol>
-
 

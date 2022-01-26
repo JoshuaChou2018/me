@@ -41,4 +41,72 @@ Output: [""]
 1. 如果父节点已经是合法字符串，则无需再考虑任何子节点。
 2. 如果有一个节点已经是合法字符串，则其它所有结果都只可能出现在和这个节点同一层（为了确保minimal removal）。
 
+```python
+class Solution(object):
+    def removeInvalidParentheses(self, s):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
+
+        def delOne(string):
+            out=set()
+            for i in range(len(string)):
+                tmp=list(string)
+                tmp.pop(i)
+                out.add(''.join(tmp))
+            return out
+
+        def getNextLevel(level):
+            """
+            :type level: set
+            """
+            nextlevel=set()
+            for _ in level:
+                for __ in delOne(_):
+                    nextlevel.add(__)
+            return nextlevel
+
+        def isValid(string):
+            count=0
+            for _ in string:
+                if _=='(':
+                    count+=1
+                elif _==')':
+                    count-=1
+                if count<0:
+                    return False
+            if count==0:
+                return True
+            else:
+                return False
+
+        level=[s]
+        length=len(s)
+        while True:
+            current_ans=[]
+            #print(current_ans,level)
+            for _ in level:
+                if isValid(_)==True:
+                    current_ans.append(_)
+                else:
+                    pass
+            if len(current_ans)!=0:
+                break
+            else:
+                if length>1:
+                    level=getNextLevel(level)
+                    length-=1
+                else:
+                    current_ans=[""]
+                    break
+        return current_ans
+
+```
+
+但是使用BFS的时间复杂度比较高，
+
+执行用时：668 ms, 在所有 Python 提交中击败了13.99%的用户
+
+内存消耗：13.9 MB, 在所有 Python 提交中击败了5.12%的用户
 
