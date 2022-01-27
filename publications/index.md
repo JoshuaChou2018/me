@@ -88,9 +88,8 @@
   </li>
   <br>
 </ol>
+
 ## Preprint or under review
-
-
 
 <ol reversed>
   <li>
@@ -126,6 +125,7 @@
   </li>
   <br>
 </ol>
+
 ## Conference
 
 <ol reversed>
