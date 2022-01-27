@@ -6,6 +6,16 @@
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>lc10. Regular Expression Matching</title>
+    <link>https://www.joshuachou.ink/lc10.regular_expression_matching/</link>
+    <pubDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc10.regular_expression_matching/</guid>
+    <description><![CDATA[Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
+ '.' Matches any single character. '*' Matches zero or more of the preceding element.  The matching should cover the entire input string (not partial).
+Example 1:
+1 2 3  Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.   Example 2:]]></description>
+</item><item>
     <title>lc31. Next Permutation</title>
     <link>https://www.joshuachou.ink/lc31.next_permutation/</link>
     <pubDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</pubDate>
@@ -101,14 +111,5 @@ Example 1:
 1 2  Input: num = 12345 Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;   Example 3:
 1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
  0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
-</item><item>
-    <title>lc973. K Closest Points to Origin</title>
-    <link>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</link>
-    <pubDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</guid>
-    <description><![CDATA[Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
-The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
-You may return the answer in any order. The answer is guaranteed to be unique(except for the order that it is in).]]></description>
 </item></channel>
 </rss>

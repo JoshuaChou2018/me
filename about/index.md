@@ -33,6 +33,15 @@ QQ: 414816433
 
 
 
+**Teaching Experience**
+
+- CS398 Graduate Seminar, Spring 2022, KAUST
+	- Cooperated with Prof. Dominik Michels
+
+<br>
+
+
+
 **Research Interest**
 
 - Metaverse
