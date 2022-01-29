@@ -1,0 +1,306 @@
+# 搭建Time Machine 服务器 （转载）
+
+
+
+
+**本文转载自：https://zhuanlan.zhihu.com/p/31088141**
+
+本文的内容分为：
+
+- Time Machine 是什么？
+- 自建Time Machine 服务器的理由
+- 硬件的选择
+- 软件的部署
+- Mac 备份到Time Machine 服务器
+- 从Time Machine 服务器恢复Mac
+
+## Time Machine 是什么？
+
+Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
+
+- 本地快照（只要空间允许）
+- 过去24小时的每小时备份
+- 过去一个月的每日备份
+- 过去所有月份的每周备份
+
+Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。
+
+引用知友 
+
+[@Xing](https://www.zhihu.com/people/f42bb95d1448482e4aae658a19f6ed0b)
+
+ 在[OS X 中的 Time Machine 真的有用吗？](https://www.zhihu.com/question/21277559/answer/18483790)中的回答：
+
+
+
+> 只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，<del>按住option开机进入recovery分区，选择从Time Machine中恢复。</del>开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。
+> 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
+
+使用Time Machine，你既可以**回到过去某个时刻，提取某个文件在当时的版本**；也可以在电脑异常崩溃后直接**全盘恢复到过去某个时刻的状态**。
+
+## 自建Time Machine 服务器的理由
+
+Time Machine的使用方法有三种：
+
+1. 使用一块外置的USB移动硬盘，要求文件系统是HFS+。
+2. 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。
+3. 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。
+
+方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
+
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。
+
+方法3. 如果不考虑价格，是事实上的最优解，但是对于一般用户如果只是想要单纯的作「Time Machine服务器」似乎费效比太高。
+
+因此，我的目标是自建一台低成本低功耗长期运行的服务器，在服务器上部署Time Machine server服务，并且具有性能/功能的冗余，以应对日后产生的需求。
+
+## 硬件选择
+
+我购买了一个X86的准系统：
+
+尺寸：160*120*37，重量：600g，功耗：6-12W，全铝设计无风扇被动散热。
+
+CPU：14nm Intel® Celeron® N3150 四核心 1.6GHz, 最高2.08GHz, 内建Intel HD Graphics 4K 显示核心。
+
+前置面板：4个原生USB3.0，2个USB2.0。
+
+后置面板：12V-19V宽幅电压外接直流供电，2个HDMI，2个千兆有线网口，3.5mm音频输入/输出，2个SMA天线座。
+
+板载：SATA3 6Gb/s机械硬盘插槽（蓝色），MSATA3 6Gb/s固态硬盘插槽（橙色），mini PCIe无线网卡插槽（红色），DDR3L-1600内存插槽（黄色）。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-464e560a7dd0f5afa0fe029c48d6acf3_1440w.DjUIAl.jpg)
+
+另外购买了相关硬件：
+
+内存：威刚(ADATA) DDR3L 1G 1600 笔记本内存；
+
+固态硬盘：闪迪(SanDisk) i100 32G MSATA3 MLC SSD；
+
+无线网卡：博通(Broadcom) BCM94352hmb 802.11ac + 蓝牙4.0；
+
+机械硬盘：昱科(HGST) 500G SATA3 7200转32M 笔记本硬盘。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-ad995649ecd6dbc42709278e1e27611b_1440w.JLlCh6.jpg)
+
+组装好之后，与MacBook Pro 13大小比较。总计开销1180=准系统550+内存80+固态硬盘80+无线网卡200+机械硬盘270。
+
+## 软件的部署
+
+安装Linux，我选择的是Ubuntu Server 16.04.3 LTS，以下以此为例，我的账户名为tmback，密码为tmback，主机名为TMBack-Server。
+
+SSH登陆：
+
+```bash
+ssh tmback@tmback-server.local
+```
+
+首先，查看识别到的硬盘：
+
+```bash
+~$ sudo fdisk -l
+```
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-c82f1f3a59c0b3471daf0cb322cf47cf_1440w.KtzIQL.jpg)
+
+sda是系统所在的SSD，sdb就是我要用来作Time Machine备份的硬盘，把这个硬盘格式化为Linux的EXT4文件格式：
+
+```bash
+~$ sudo mkfs.ext4  /dev/sdb1
+```
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-c267b38669c816fb8ae5bcbbb5cfb93a_1440w.1NCF66.jpg)
+
+把格式化好的分区起个名字就叫TMBack：
+
+```bash
+~$ sudo e2label /dev/sdb1 TMBack
+```
+
+在/media创建一个目录，把sdb1挂载上去：
+
+```bash
+~$ sudo mkdir /media/TMBack
+~$ sudo mount /dev/sdb1 /media/TMBack 
+```
+
+把/media/TMBack目录所有者修改为tmback:tmback
+
+```bash
+~$ sudo chown -R tmback:tmback /media/TMBack
+```
+
+安装Netatalk服务，项目主页[Netatalk](https://link.zhihu.com/?target=http%3A//netatalk.sourceforge.net/)。
+
+> Netatalk is an OpenSource software package, that can be used to turn a *NIX machine into an extremely high-performance and reliable file server for Macintosh computers.
+> Using Netatalk's AFP 3.3 compliant file-server leads to significantly higher transmission speeds compared with Macs accessing a server via SaMBa/NFS while providing clients with the best possible user experience (full support for Macintosh metadata, flawlessly supporting mixed environments of classic Mac OS and OS X clients)
+
+用来把Linux/Unix伪装成AFP协议传输的文件服务器：
+
+```bash
+~$ sudo apt-get install netatalk
+```
+
+修改Netatalk的配置文件：
+
+```bash
+~$ sudo nano /etc/netatalk/AppleVolumes.default
+```
+
+在末尾加上这么一句：「/media/TMBack "TMback" options:tm」
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-ceefd2e6d480078cf4c636186206657e_1440w.ODld3N.jpg)
+
+重启Netatalk服务：
+
+```bash
+~$ sudo service netatalk restart
+```
+
+这时在网络上就能发现一台新的，主机名为「tmback-server」的Mac主机。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-a30a61eb588faa89f5fa427d39fc8e68_1440w.MISPNj.jpg)
+
+用刚刚设的账户名tmback密码tmback登陆。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-862778d88cfef721bd7ab1d28f62550b_1440w.KXpxaF.jpg)
+
+能看到挂载的硬盘TMBack目录。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-2dd8c5ee4eaf18630955b1bffc8a3abc_1440w.jWnVQn.jpg)
+
+安装avahi-daemon，项目主页[avahi - mDNS/DNS-SD](https://link.zhihu.com/?target=https%3A//www.avahi.org/)。
+
+> Avahi is a system which facilitates service discovery on a local network via the mDNS/DNS-SD protocol suite. This enables you to plug your laptop or computer into a network and instantly be able to view other people who you can chat with, find printers to print to or find files being shared. Compatible technology is found in Apple MacOS X (branded "[Bonjour](https://link.zhihu.com/?target=http%3A//www.apple.com/macosx/features/bonjour/)" and sometimes "Zeroconf").
+> Avahi is primarily targetted at Linux systems and ships by default in most distributions. It is not ported to Windows at this stage, but will run on many other BSD-like systems. The primary API is D-Bus and is required for usage of most of Avahi, however services can be published using an XML service definition placed in /etc/avahi/services.
+
+用来在Linux/Unix中开启类似的Bonjour的服务：
+
+```bash
+~$ sudo apt-get install avahi-daemon
+```
+
+然后我们新建一个它的服务：
+
+```text
+~$ sudo nano /etc/avahi/services/afpd.service
+```
+
+输入以下内容：
+
+```text
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+	<name replace-wildcards="yes">%h</name>
+	<service>
+        <type>_afpovertcp._tcp</type>
+        <port>548</port>
+    </service>
+    <service>
+        <type>_device-info._tcp</type>
+ 	       <port>0</port>
+        <txt-record>model=Xserve</txt-record>
+    </service>
+</service-group>
+```
+
+重启avahi-daemon服务：
+
+```bash
+~$ sudo service avahi-daemon restart
+```
+
+这时「tmback-server」变成了一台Mac文件服务器。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-01fdd713e9cb7d1e3b2ce205007f2484_1440w.329RHZ.jpg)
+
+如果关闭ubuntu，你还会在Mac上收到通知。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-3e05ad4dd11b68daaf379948d52e125b_1440w.mM2JHg.jpg)
+
+安装nss-mdns，项目主页[nss-mdns 0.10](https://link.zhihu.com/?target=http%3A//0pointer.de/lennart/projects/nss-mdns/)。
+
+> nss-mdns is a plugin for the GNU Name Service Switch (NSS) functionality of the GNU C Library (glibc) providing host name resolution via [Multicast DNS](https://link.zhihu.com/?target=http%3A//www.multicastdns.org/) (aka *Zeroconf*, aka *Apple Rendezvous*, aka *Apple Bonjour*), effectively allowing name resolution by common Unix/Linux programs in the ad-hoc mDNS domain .local.
+> nss-mdns provides client functionality only, which means that you have to run a mDNS responder daemon seperately from nss-mdns if you want to register the local host name via mDNS. I recommend [Avahi](https://link.zhihu.com/?target=http%3A//avahi.org/).
+> nss-mdns is very lightweight (9 KByte stripped binary .so compiled with -DNDEBUG=1 -Os on i386, gcc 4.0), has no dependencies besides the glibc and requires only minimal configuration.
+> By default nss-mdns tries to contact a running [avahi-daemon](https://link.zhihu.com/?target=http%3A//avahi.org/) for resolving host names and addresses and making use of its superior record cacheing. Optionally nss-mdns can be compiled with a mini mDNS stack that can be used to resolve host names without a local Avahi installation. Both Avahi support and this mini mDNS stack are optional, however at least one of them needs to be enabled. If both are enabled a connection to Avahi is tried first, and if that fails the mini mDNS stack is used.
+
+用来配合刚刚设置好的avahi-daemon：
+
+```bash
+~$ sudo apt-get install libnss-mdns
+```
+
+修改nss-mdns配置文件：
+
+```bash
+~$ sudo nano /etc/nsswitch.conf
+```
+
+在「hosts」这一行的结尾添加两项，「mdns4」和「mdns」：
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-2a754f13d4d47d1b0c64c657f1187d13_1440w.nq6EbL.jpg)
+
+再次重启avahi-daemon服务：
+
+```bash
+~$ sudo service avahi-daemon restart
+```
+
+最后一步我们要开机自动挂载机械硬盘。
+
+```bash
+~$ blkid
+```
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-d7f18954d617013165abcca8edda0309_1440w.T20Noo.jpg)
+
+机械硬盘的UUID="5202aacf-9e77-4768-b4ec-d6009adbb179"
+
+编辑启动文件：
+
+```bash
+~$ sudo nano /etc/fstab
+```
+
+加上这一行：
+
+```text
+UUID=5202aacf-9e77-4768-b4ec-d6009adbb179 /media/TMBack ext4 defaults 0 0
+```
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-a09d076dc706a8f71872dad240b45f1f_1440w.z8IGb4.jpg)
+
+现在软件部署就完成了，重启ubuntu。
+
+## Mac 备份到Time Machine 服务器
+
+系统偏好设置-->Time Machine-->选择备份磁盘
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-3fa3a7107650d6feecf4d535031c3a26_1440w.EwQ1Hc.jpg)
+
+会发现一个名为「TMBack」的网络共享磁盘，选择它。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-1a117b4c6bdb0c911b88982e9c9584dc_1440w.ifyQpN.jpg)
+
+用我们之前设的账户名tmback密码tmback登陆。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-6fcb4d2a391fef29fb705a27aa2ffa87_1440w.Tmcrwj.jpg)
+
+耐心等待首次备份完成，嫌慢的话，把ubuntu和Mac都插上千兆网线，备份速度不输给外置USB硬盘备份。
+
+此后，只要Mac与ubuntu处在同一个网络内，就会自动进行备份，Mac脱离网络则备份会自动停止，一切都是无感的。
+
+## 从Time Machine 服务器恢复Mac
+
+按住「command+R」启动Mac，直到进入「Recovery」模式。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-88fab67c08638a073269cdd3adc3bf30_1440w.ZHCcnh.jpg)
+
+选择「从Time Machine 备份进行恢复」。
+
+![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/v2-b26b65c7c3883d3d3a3a0dcf5e59cdd5_1440w.Pk0Ya0.jpg)
+
+选择网络上的分区，输入账号密码连接即可。
+
+
