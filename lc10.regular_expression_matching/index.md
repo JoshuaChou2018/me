@@ -54,9 +54,35 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 
 **进阶思路**
 
-动态规划。
+动态规划。类似于两个序列做比对，只要可以完全alignment上就OK。
 
+![16155](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png)
 
+```python
+class Solution:
+    def isMatch(self, s, p):
+        m = len(s) + 1
+        n = len(p) + 1
+        dp = [[False for _ in range(n)] for _ in range(m)]
+        dp[0][0] = True
+        for j in range(2, n):
+            if p[j-1] == '*':
+                dp[0][j] = dp[0][j - 2]
+        for r in range(1, m):
+            i = r - 1 
+            for c in range(1, n):
+                j = c - 1 
+                if s[i] == p[j] or p[j] == '.':
+                    dp[r][c] = dp[r - 1][c - 1]
+                elif p[j] == '*':
+                    if p[j - 1] == s[i] or p[j - 1] == '.':
+                        dp[r][c] = dp[r - 1][c] or dp[r][c - 2]
+                    else:
+                        dp[r][c] = dp[r][c - 2]
+                else:
+                    dp[r][c] = False
+        return dp[m - 1][n - 1]
+```
 
 
 

@@ -13,7 +13,7 @@ Example 1:
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/lc10.regular_expression_matching/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-01-27T23:33:21+03:00" />
+<meta property="article:modified_time" content="2022-02-06T17:06:51+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -35,8 +35,8 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc10.regular_expression_matching\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  176 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc10.regular_expression_matching\/","datePublished": "2022-01-27T00:00:00+00:00","dateModified": "2022-01-27T23:33:21+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  319 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc10.regular_expression_matching\/","datePublished": "2022-01-27T00:00:00+00:00","dateModified": "2022-02-06T17:06:51+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -117,8 +117,8 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc10. Regular Expression Matching</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-27">2022-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;176 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-27">2022-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;319 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -203,13 +203,73 @@ Explanation: &#34;.*&#34; means &#34;zero or more (*) of any character (.)&#34;.
 <p><strong>初始思路</strong></p>
 <p>用两个指针分别读取s和p的头，按照规则依次匹配。确保两个指针可以在满足规则的前提下都移动到s和p的尾端。</p>
 <p><strong>进阶思路</strong></p>
-<p>动态规划。</p>
-</div><div class="post-footer" id="post-footer">
+<p>动态规划。类似于两个序列做比对，只要可以完全alignment上就OK。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/16155.9GLp0j.png"
+        title="16155" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">isMatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">)]</span>
+        <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;*&#39;</span><span class="p">:</span>
+                <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">r</span> <span class="o">-</span> <span class="mi">1</span> 
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">c</span> <span class="o">-</span> <span class="mi">1</span> 
+                <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">or</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;.&#39;</span><span class="p">:</span>
+                    <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">c</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+                <span class="k">elif</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;*&#39;</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">or</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;.&#39;</span><span class="p">:</span>
+                        <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">r</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="ow">or</span> <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">dp</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-01-27&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/c387451a642f90a9e9953a86087f7651ea3de101" target="_blank" title="commit by JoshuaChou(maybechou@live.com) c387451a642f90a9e9953a86087f7651ea3de101: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>c387451</a></span>
+                <span>Updated on 2022-02-06&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/1dfaed36e6c95cd637c1a7fa21750f660ba1e7c8" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 1dfaed36e6c95cd637c1a7fa21750f660ba1e7c8: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>1dfaed3</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
