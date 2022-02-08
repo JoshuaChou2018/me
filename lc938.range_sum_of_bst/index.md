@@ -38,3 +38,28 @@ Explanation: Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.
 
 因为题中树结构的每个父节点，其左孩子都更小，右孩子都更大，所以直接用树搜索获取所有在区间内的值即可。
 
+**二叉搜索树 BST** 的 value 具有 左值 < 根值 < 右值 的特点。所以我们可以用递归算法累积求和。
+
+```python
+class Solution(object):
+    def rangeSumBST(self, root, low, high):
+        """
+        :type root: TreeNode
+        :type low: int
+        :type high: int
+        :rtype: int
+        """
+        global res
+        res = 0
+        def traverse(root):
+            global res
+            if root:
+                traverse(root.left)
+                if low <= root.val <= high:
+                    res += root.val
+                traverse(root.right)
+        traverse(root)
+        return res
+```
+
+

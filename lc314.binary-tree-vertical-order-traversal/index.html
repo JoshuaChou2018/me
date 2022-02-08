@@ -5,36 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>lc938. Range Sum of BST - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="lc938. Range Sum of BST" />
-<meta property="og:description" content="Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
+        <title>lc314. 二叉树的垂直遍历 - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="lc314. 二叉树的垂直遍历" />
+<meta property="og:description" content="Given the root of a binary tree, return the vertical order traversal of its nodes&#39; values. (i.e., from top to bottom, column by column).
+If two nodes are in the same row and column, the order should be from left to right.
 Example 1:
-1 2 3  Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 &#43; 10 &#43; 15 = 32.   Example 2:" />
+1 2  Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]]   Example 2:
+1 2  Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]]   Example 3:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/lc938.range_sum_of_bst/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-02-03T00:00:00+00:00" />
+<meta property="og:url" content="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-08T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-02-08T16:17:08+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
 
-<meta name="twitter:title" content="lc938. Range Sum of BST"/>
-<meta name="twitter:description" content="Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
+<meta name="twitter:title" content="lc314. 二叉树的垂直遍历"/>
+<meta name="twitter:description" content="Given the root of a binary tree, return the vertical order traversal of its nodes&#39; values. (i.e., from top to bottom, column by column).
+If two nodes are in the same row and column, the order should be from left to right.
 Example 1:
-1 2 3  Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 &#43; 10 &#43; 15 = 32.   Example 2:"/>
+1 2  Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]]   Example 2:
+1 2  Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]]   Example 3:"/>
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc938.range_sum_of_bst/" /><link rel="prev" href="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/" /><link rel="next" href="https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" /><link rel="prev" href="https://www.joshuachou.ink/neurips-personalized-federated-learning-a-meta-learning-approach/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "lc938. Range Sum of BST",
+        "headline": "lc314. 二叉树的垂直遍历",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/www.joshuachou.ink\/lc938.range_sum_of_bst\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  213 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc938.range_sum_of_bst\/","datePublished": "2022-02-03T00:00:00+00:00","dateModified": "2022-02-08T16:17:08+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/www.joshuachou.ink\/lc314.binary-tree-vertical-order-traversal\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  92 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc314.binary-tree-vertical-order-traversal\/","datePublished": "2022-02-08T00:00:00+00:00","dateModified": "2022-02-08T16:17:08+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -113,9 +117,9 @@ Example 1:
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">lc938. Range Sum of BST</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">lc314. 二叉树的垂直遍历</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-03">2022-02-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;213 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-08">2022-02-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;92 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -143,104 +147,70 @@ Example 1:
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>Given the <code>root</code> node of a binary search tree and two integers <code>low</code> and <code>high</code>, return <em>the sum of values of all nodes with a value in the <strong>inclusive</strong> range</em> <code>[low, high]</code>.</p>
+            </div><div class="content" id="content"><p>Given the root of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).</p>
+<p>If two nodes are in the same row and column, the order should be from left to right.</p>
 <p><strong>Example 1:</strong></p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/bst1.mScA0F.jpg"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/bst1.mScA0F.jpg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/bst1.mScA0F.jpg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/bst1.mScA0F.jpg 2x"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree1.iiO12U.QkFbUS.jpg"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree1.iiO12U.QkFbUS.jpg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree1.iiO12U.QkFbUS.jpg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree1.iiO12U.QkFbUS.jpg 2x"
         data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/bst1.mScA0F.jpg"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree1.iiO12U.QkFbUS.jpg"
         title="img" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
-Output: 32
-Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: root = [3,9,20,null,null,15,7]
+Output: [[9],[3,15],[20],[7]]
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg"
-        data-srcset="https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg, https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg 1.5x, https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg 2x"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2-1.z96seX.jpg"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2-1.z96seX.jpg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2-1.z96seX.jpg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2-1.z96seX.jpg 2x"
         data-sizes="auto"
-        alt="https://assets.leetcode.com/uploads/2020/11/05/bst2.jpg"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2-1.z96seX.jpg"
         title="img" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10
-Output: 23
-Explanation: Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: root = [3,9,8,4,0,1,7]
+Output: [[4],[9],[3,0,1],[8],[7]]
 </code></pre></td></tr></table>
 </div>
-</div><p><strong>Constraints:</strong></p>
-<ul>
-<li>The number of nodes in the tree is in the range <code>[1, 2 * 104]</code>.</li>
-<li><code>1 &lt;= Node.val &lt;= 105</code></li>
-<li><code>1 &lt;= low &lt;= high &lt;= 105</code></li>
-<li>All <code>Node.val</code> are <strong>unique</strong>.</li>
-</ul>
-<h6 id="解题思路">解题思路</h6>
-<p>因为题中树结构的每个父节点，其左孩子都更小，右孩子都更大，所以直接用树搜索获取所有在区间内的值即可。</p>
-<p><strong>二叉搜索树 BST</strong> 的 value 具有 左值 &lt; 根值 &lt; 右值 的特点。所以我们可以用递归算法累积求和。</p>
+</div><p><strong>Example 3:</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2.ADmpP4.jpg"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2.ADmpP4.jpg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2.ADmpP4.jpg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2.ADmpP4.jpg 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/vtree2.ADmpP4.jpg"
+        title="img" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">rangeSumBST</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type root: TreeNode
-</span><span class="s2">        :type low: int
-</span><span class="s2">        :type high: int
-</span><span class="s2">        :rtype: int
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="k">global</span> <span class="n">res</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">def</span> <span class="nf">traverse</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
-            <span class="k">global</span> <span class="n">res</span>
-            <span class="k">if</span> <span class="n">root</span><span class="p">:</span>
-                <span class="n">traverse</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
-                <span class="k">if</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">root</span><span class="o">.</span><span class="n">val</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
-                    <span class="n">res</span> <span class="o">+=</span> <span class="n">root</span><span class="o">.</span><span class="n">val</span>
-                <span class="n">traverse</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
-        <span class="n">traverse</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: root = [3,9,8,4,0,1,7,null,null,null,2,5]
+Output: [[4],[9,5],[3,0,1],[8,2],[7]]
 </code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><p>Constraints:</p>
+<p>The number of nodes in the tree is in the range [0, 100].
+-100 &lt;= Node.val &lt;= 100</p>
+<h6 id="解题思路">解题思路</h6>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -251,10 +221,10 @@ Explanation: Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/lc938.range_sum_of_bst/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/lc314.binary-tree-vertical-order-traversal/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST" data-hashtags="leetcode"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-hashtag="leetcode"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/lc938.range_sum_of_bst/" data-title="lc938. Range Sum of BST"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历" data-hashtags="leetcode"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-hashtag="leetcode"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" data-title="lc314. 二叉树的垂直遍历"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -266,8 +236,7 @@ Explanation: Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.
         </section>
     </div>
 
-    <div class="post-nav"><a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/" class="prev" rel="prev" title="搭建Time Machine 服务器 （转载）"><i class="fas fa-angle-left fa-fw"></i>搭建Time Machine 服务器 （转载）</a>
-            <a href="/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/" class="next" rel="next" title="lc253. 会议室 II">lc253. 会议室 II<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/neurips-personalized-federated-learning-a-meta-learning-approach/" class="prev" rel="prev" title="[NeurIPS] Personalized Federated Learning: A Meta-Learning Approach解读"><i class="fas fa-angle-left fa-fw"></i>[NeurIPS] Personalized Federated Learning: A Meta-Learning Approach解读</a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.

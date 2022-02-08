@@ -31,4 +31,5 @@ This way, while the initial model is derived in a distributed manner over all us
 
 ###### Per-FedAvg
 
+![image-20220206171301219](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220206171301219.wNDwMK.png)
 

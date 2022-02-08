@@ -3,7 +3,18 @@
         <title>leetcode - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/leetcode/</link>
         <description>leetcode - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc314. 二叉树的垂直遍历</title>
+    <link>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</link>
+    <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</guid>
+    <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).
+If two nodes are in the same row and column, the order should be from left to right.
+Example 1:
+1 2  Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]]   Example 2:
+1 2  Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]]   Example 3:]]></description>
+</item><item>
     <title>lc253. 会议室 II</title>
     <link>https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/</link>
     <pubDate>Thu, 03 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -100,17 +111,5 @@ Example 1:
 1 2  Input: nums = [1,1,1], k = 2 Output: 2   Example 2:
 1 2  Input: nums = [1,2,3], k = 3 Output: 2   Constraints:
  1 &lt;= nums.length &lt;= 2 * 104 -1000 &lt;= nums[i] &lt;= 1000 -107 &lt;= k &lt;= 107  解题思路： 累积和（使用数组）]]></description>
-</item><item>
-    <title>lc301. Remove Invalid Parentheses</title>
-    <link>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</link>
-    <pubDate>Thu, 20 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</guid>
-    <description><![CDATA[Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
-Return all the possible results. You may return the answer in any order.
-Example 1:
-1 2  Input: s = &#34;()())()&#34; Output: [&#34;(())()&#34;,&#34;()()()&#34;]   Example 2:
-1 2  Input: s = &#34;(a)())()&#34; Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]   Example 3:
-1 2  Input: s = &#34;)(&#34; Output: [&#34;&#34;]   Constraints:]]></description>
 </item></channel>
 </rss>
