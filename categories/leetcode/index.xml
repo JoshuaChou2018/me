@@ -4,6 +4,14 @@
         <link>https://www.joshuachou.ink/categories/leetcode/</link>
         <description>leetcode - Category - Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc297. Serialize and Deserialize Binary Tree</title>
+    <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
+    <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
+    <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.]]></description>
+</item><item>
     <title>lc314. Binary Tree Vertical Order Traversal</title>
     <link>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</link>
     <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -100,16 +108,5 @@ You must solve the problem without using any built-in library for handling large
 Example 1:
 1 2  Input: num1 = &#34;11&#34;, num2 = &#34;123&#34; Output: &#34;134&#34;   Example 2:
 1 2  Input: num1 = &#34;456&#34;, num2 = &#34;77&#34; Output: &#34;533&#34;   Example 3:]]></description>
-</item><item>
-    <title>lc560. Subarray Sum Equals K</title>
-    <link>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</link>
-    <pubDate>Tue, 25 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</guid>
-    <description><![CDATA[Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
-Example 1:
-1 2  Input: nums = [1,1,1], k = 2 Output: 2   Example 2:
-1 2  Input: nums = [1,2,3], k = 3 Output: 2   Constraints:
- 1 &lt;= nums.length &lt;= 2 * 104 -1000 &lt;= nums[i] &lt;= 1000 -107 &lt;= k &lt;= 107  解题思路： 累积和（使用数组）]]></description>
 </item></channel>
 </rss>

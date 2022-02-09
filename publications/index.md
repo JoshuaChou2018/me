@@ -88,10 +88,17 @@
   </li>
   <br>
 </ol>
-
 ## Preprint or under review
 
 <ol reversed>
+  <li>
+    <font color=blue>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data</font> 
+    <br>	
+    <b>Juexiao Zhou</b>*, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
   <li>
     <font color=blue>DeeReCT-TSS: A novel meta-learning-based method annotates TSS in multiple cell types based on DNA sequences and RNA-seq data.</font> 
     <br>	
@@ -125,6 +132,7 @@
   </li>
   <br>
 </ol>
+
 
 ## Conference
 

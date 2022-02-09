@@ -4,6 +4,14 @@
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc297. Serialize and Deserialize Binary Tree</title>
+    <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
+    <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
+    <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.]]></description>
+</item><item>
     <title>lc314. Binary Tree Vertical Order Traversal</title>
     <link>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</link>
     <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -224,15 +232,5 @@ Example 1:
 1 2 3  Input: s = &#34;abca&#34; Output: true Explanation: You could delete the character &#39;c&#39;.   Example 3:
 1 2  Input: s = &#34;abc&#34; Output: false   Constraints:
  1 &lt;= s.]]></description>
-</item><item>
-    <title>lc953. Verifying an Alien Dictionary</title>
-    <link>https://www.joshuachou.ink/lc953.verifying_an_alien_dictionary/</link>
-    <pubDate>Wed, 12 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc953.verifying_an_alien_dictionary/</guid>
-    <description><![CDATA[In an alien language, surprisingly, they also use English lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.
-Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographically in this alien language.
-Example 1:
-1 2 3  Input: words = [&#34;hello&#34;,&#34;leetcode&#34;], order = &#34;hlabcdefgijkmnopqrstuvwxyz&#34; Output: true Explanation: As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.]]></description>
 </item></channel>
 </rss>
