@@ -3,10 +3,21 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc15. 3Sum</title>
+    <link>https://www.joshuachou.ink/lc15.-3sum/</link>
+    <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc15.-3sum/</guid>
+    <description><![CDATA[Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Example 1:
+1 2  Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]]   Example 2:
+1 2  Input: nums = [] Output: []   Example 3:]]></description>
+</item><item>
     <title>lc297. Serialize and Deserialize Binary Tree</title>
     <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
-    <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
     <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
@@ -220,17 +231,5 @@ Example 1:
     <description><![CDATA[Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
 The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
 You may return the answer in any order. The answer is guaranteed to be unique(except for the order that it is in).]]></description>
-</item><item>
-    <title>lc680. Valid Palindrome II</title>
-    <link>https://www.joshuachou.ink/lc680.valid_palindrome_ii/</link>
-    <pubDate>Thu, 13 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc680.valid_palindrome_ii/</guid>
-    <description><![CDATA[Given a string s, return true if the s can be palindrome after deleting at most one character from it.
-Example 1:
-1 2  Input: s = &#34;aba&#34; Output: true   Example 2:
-1 2 3  Input: s = &#34;abca&#34; Output: true Explanation: You could delete the character &#39;c&#39;.   Example 3:
-1 2  Input: s = &#34;abc&#34; Output: false   Constraints:
- 1 &lt;= s.]]></description>
 </item></channel>
 </rss>

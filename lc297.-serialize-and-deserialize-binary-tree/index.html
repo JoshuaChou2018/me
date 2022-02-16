@@ -10,8 +10,8 @@
 Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-02-08T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-02-09T16:29:28+03:00" />
+<meta property="article:published_time" content="2022-02-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-02-16T12:09:11+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -22,7 +22,7 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/" /><link rel="prev" href="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/" /><link rel="prev" href="https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/" /><link rel="next" href="https://www.joshuachou.ink/lc15.-3sum/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -31,8 +31,8 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc297.-serialize-and-deserialize-binary-tree\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  167 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc297.-serialize-and-deserialize-binary-tree\/","datePublished": "2022-02-08T00:00:00+00:00","dateModified": "2022-02-09T16:29:28+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  336 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc297.-serialize-and-deserialize-binary-tree\/","datePublished": "2022-02-14T00:00:00+00:00","dateModified": "2022-02-16T12:09:11+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -113,8 +113,8 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc297. Serialize and Deserialize Binary Tree</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-08">2022-02-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;167 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-14">2022-02-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;336 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -180,12 +180,115 @@ Output: []
 <li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
 <h6 id="解题思路">解题思路</h6>
-</div><div class="post-footer" id="post-footer">
+<p>二叉树的序列化本质上是对其值进行编码，更重要的是对其结构进行编码。可以遍历树来完成上述任务。众所周知，我们一般有两个策略：广度优先搜索和深度优先搜索。</p>
+<p>广度优先搜索可以按照层次的顺序从上到下遍历所有的节点
+深度优先搜索可以从一个根开始，一直延伸到某个叶，然后回到根，到达另一个分支。根据根节点、左节点和右节点之间的相对顺序，可以进一步将深度优先搜索策略区分为：
+1. 先序遍历
+2. 中序遍历
+3. 后序遍历</p>
+<p>如Example 1的树，采用先序遍历我们可以得到字符串: 1, 2, None, None, 3, 4, 5</p>
+<p>None表示子节点不存在，因此该字符串就保留了树的结构。</p>
+<p>该序列化方法的时间复杂度为O(N)，因为我们只会访问每个节点一次。空间复杂度也为O(N).</p>
+<p>反序列化的过程我们先把字符串根据“,”拆分，然后从左往右遍历元素。</p>
+<p>序列化函数和反序列化函数都可以用递归思想。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Definition for a binary tree node.</span>
+<span class="c1"># class TreeNode(object):</span>
+<span class="c1">#     def __init__(self, x):</span>
+<span class="c1">#         self.val = x</span>
+<span class="c1">#         self.left = None</span>
+<span class="c1">#         self.right = None</span>
+
+<span class="k">class</span> <span class="nc">Codec</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">serialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+        <span class="s2">&#34;&#34;&#34;Encodes a tree to a single string.
+</span><span class="s2">        
+</span><span class="s2">        :type root: TreeNode
+</span><span class="s2">        :rtype: str
+</span><span class="s2">        &#34;&#34;&#34;</span>
+        <span class="k">if</span> <span class="n">root</span><span class="o">==</span><span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;#,&#39;</span>
+        <span class="n">left</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">serialize</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">right</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">serialize</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">root</span><span class="o">.</span><span class="n">val</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;,&#39;</span><span class="o">+</span><span class="n">left</span><span class="o">+</span><span class="n">right</span>
+        
+
+    <span class="k">def</span> <span class="nf">deserialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="s2">&#34;&#34;&#34;Decodes your encoded data to tree.
+</span><span class="s2">        
+</span><span class="s2">        :type data: str
+</span><span class="s2">        :rtype: TreeNode
+</span><span class="s2">        &#34;&#34;&#34;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">buildTree</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span>
+        
+    <span class="k">def</span> <span class="nf">buildTree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+        <span class="n">val</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">val</span><span class="o">==</span><span class="s1">&#39;#&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">node</span><span class="o">=</span><span class="n">TreeNode</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">left</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">buildTree</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">right</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">buildTree</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">node</span>
+
+<span class="c1"># Your Codec object will be instantiated and called as such:</span>
+<span class="c1"># ser = Codec()</span>
+<span class="c1"># deser = Codec()</span>
+<span class="c1"># ans = deser.deserialize(ser.serialize(root))</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-02-09&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/a5b7b13f4b59a0a65f64cd04eb320e3f5f48c90e" target="_blank" title="commit by JoshuaChou(maybechou@live.com) a5b7b13f4b59a0a65f64cd04eb320e3f5f48c90e: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>a5b7b13</a></span>
+                <span>Updated on 2022-02-16&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d53e104cd3e0e8cfb9a78f799bae7e260fd830fb" target="_blank" title="commit by JoshuaChou(maybechou@live.com) d53e104cd3e0e8cfb9a78f799bae7e260fd830fb: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>d53e104</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -206,7 +309,8 @@ Output: []
         </section>
     </div>
 
-    <div class="post-nav"><a href="/lc314.binary-tree-vertical-order-traversal/" class="prev" rel="prev" title="lc314. Binary Tree Vertical Order Traversal"><i class="fas fa-angle-left fa-fw"></i>lc314. Binary Tree Vertical Order Traversal</a></div>
+    <div class="post-nav"><a href="/lc314.binary-tree-vertical-order-traversal/" class="prev" rel="prev" title="lc314. Binary Tree Vertical Order Traversal"><i class="fas fa-angle-left fa-fw"></i>lc314. Binary Tree Vertical Order Traversal</a>
+            <a href="/lc15.-3sum/" class="next" rel="next" title="lc15. 3Sum">lc15. 3Sum<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
