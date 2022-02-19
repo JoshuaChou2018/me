@@ -3,7 +3,15 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc621. Task Scheduler</title>
+    <link>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</link>
+    <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</guid>
+    <description><![CDATA[Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
+However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks.]]></description>
+</item><item>
     <title>lc15. 3Sum</title>
     <link>https://www.joshuachou.ink/lc15.-3sum/</link>
     <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -222,14 +230,5 @@ Example 1:
 1 2  Input: num = 12345 Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;   Example 3:
 1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
  0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
-</item><item>
-    <title>lc973. K Closest Points to Origin</title>
-    <link>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</link>
-    <pubDate>Sun, 16 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc973.k_closest_points_to_origin/</guid>
-    <description><![CDATA[Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0).
-The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2).
-You may return the answer in any order. The answer is guaranteed to be unique(except for the order that it is in).]]></description>
 </item></channel>
 </rss>

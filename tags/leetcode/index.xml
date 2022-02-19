@@ -3,7 +3,15 @@
         <title>leetcode - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/leetcode/</link>
         <description>leetcode - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc621. Task Scheduler</title>
+    <link>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</link>
+    <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</guid>
+    <description><![CDATA[Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
+However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks.]]></description>
+</item><item>
     <title>lc15. 3Sum</title>
     <link>https://www.joshuachou.ink/lc15.-3sum/</link>
     <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
@@ -97,16 +105,5 @@ Example 1:
 Given a string s, return true if it is a palindrome, or false otherwise.
 Example 1:
 1 2 3  Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.   Example 2:]]></description>
-</item><item>
-    <title>lc238. Product of Array Except Self</title>
-    <link>https://www.joshuachou.ink/lc238._product_of_array_except_self/</link>
-    <pubDate>Wed, 26 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc238._product_of_array_except_self/</guid>
-    <description><![CDATA[Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
-The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-You must write an algorithm that runs in O(n) time and without using the division operation.
-Example 1:
-1 2  Input: nums = [1,2,3,4] Output: [24,12,8,6]   Example 2:]]></description>
 </item></channel>
 </rss>
