@@ -81,13 +81,13 @@ QQ: 414816433
 
 **Reviewer**
 
-- IJCAI-ECAI 2022
-- Journal of Bioinformatics and Computational Biology
-- Genome Biology
-- ICONIP2020
-- MICCAI2020
-- ICMLA2021
-
-
+|                 Journal/Conference                  | # Paper Reviewed |
+| :-------------------------------------------------: | :--------------: |
+|                   Genome Biology                    |        1         |
+|                   IJCAI-ECAI 2022                   |        1         |
+|                     ICONIP2020                      |        1         |
+|                      ICMLA2021                      |        1         |
+| Journal of Bioinformatics and Computational Biology |        1         |
+|                     MICCAI2020                      |        1         |
 
 
