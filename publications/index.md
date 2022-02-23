@@ -1,6 +1,6 @@
 # 
 
-## Journal
+## Journal & Conference
 
 <ol reversed>
   <li>
@@ -30,7 +30,6 @@
     <a href="https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf">pdf</a>
   </li>
-  <br>
   <li>
     <font color=blue>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.</font> 
     <br>	
@@ -87,6 +86,49 @@
     <a href="https://www.joshuachou.ink/publications/papers/msb.20199367.pdf">pdf</a>
   </li>
   <br>
+  <li>
+    <font color=blue>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. </font>
+    <br>	
+    Haoyang Li, <b>Juexiao Zhou</b>, Xin Gao. 
+    <br>
+    <i>Poster</i>. <i><b>DigitalHealth, KAUST, 2020</b></i>.
+    <br>
+    <b>Access: </b>
+    <a href="http://hdl.handle.net/10754/661204">online</a>
+  </li>
+  <br>
+  <li>
+    <font color=blue>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
+    <br>
+    Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.
+    <br>
+    <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.</font> 
+    <br>
+    Yongkang Long, <b>Juexiao Zhou</b>, Zhongxiao Li, Wei Chen, Xin Gao. 
+    <br>
+    <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019. </b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells.</font> 
+    <br>
+    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
+    <br>
+    <i>Poster</i>. <i><b>RNA Biology, CSH Asia, 2019.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells. </font> 
+    <br>
+    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
+    <br>
+    <i>Poster</i>. <i><b>Regulatory RNAs, Cell Symposia, Berlin, Germany, May 12-14, 2019.</b></i>
+  </li>
+  <br>
 </ol>
 
 
@@ -136,49 +178,4 @@
   <br>
 </ol>
 
-
-## Conference
-
-<ol reversed>
-  <li>
-    <font color=blue>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. </font>
-    <br>	
-    Haoyang Li, <b>Juexiao Zhou</b>, Xin Gao. 
-    <br>
-    <i>Poster</i>. <i><b>DigitalHealth, KAUST, 2020</b></i>. 	
-  </li>
-  <br>
-  <li>
-    <font color=blue>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
-    <br>
-    Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.
-    <br>
-    <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019.</b></i>
-  </li>
-  <br>
-  <li>
-    <font color=blue>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.</font> 
-    <br>
-    Yongkang Long, <b>Juexiao Zhou</b>, Zhongxiao Li, Wei Chen, Xin Gao. 
-    <br>
-    <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019. </b></i>
-  </li>
-  <br>
-  <li>
-    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells.</font> 
-    <br>
-    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
-    <br>
-    <i>Poster</i>. <i><b>RNA Biology, CSH Asia, 2019.</b></i>
-  </li>
-  <br>
-  <li>
-    <font color=blue>Systematical discovery of cis-elements regulating alternative polyadenylationin mammalian cells. </font> 
-    <br>
-    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
-    <br>
-    <i>Poster</i>. <i><b>Regulatory RNAs, Cell Symposia, Berlin, Germany, May 12-14, 2019.</b></i>
-  </li>
-  <br>
-</ol>
 
