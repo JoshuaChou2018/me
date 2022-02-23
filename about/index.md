@@ -1,5 +1,15 @@
 # 
 
+
+
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220223210315680.yhLJmt.png" width = "120" height = "100" alt="Juexiao" align=right />
+</div>
+
+
+
+**Hi!**
+
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
 PhD student @KAUST. 
@@ -22,7 +32,7 @@ QQ: 414816433
 
 
 
-**Education**
+#### **Education**
 
 - PhD Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 - Master of Science, M.S., Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
@@ -33,7 +43,28 @@ QQ: 414816433
 
 
 
-**Working Experience**
+### **Research Interest**
+
+- Metaverse
+	- Computer vision and VR
+
+- Artificial Intelligence
+	- Theoretical Research of Deep Learning.
+- Intelligent Healthcare and Privacy
+- Cognitive Neuroscience
+	- Mechanism of Language, Emotion, Memory, and Dream.
+	- Brain Computer Interface
+- Medical Imaging
+	- EEG, X-ray, CT, fMRI
+- Bioinformatics
+	- Analysis and integration of biological omics data with deep learning methods.
+	- Developing new bioinformatics tools.
+
+<br>
+
+
+
+### **Working Experience**
 
 - Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 
@@ -41,7 +72,7 @@ QQ: 414816433
 
 
 
-**Teaching Experience**
+### **Teaching Experience**
 
 - CS398 Graduate Seminar, Spring 2022, KAUST
 	- Cooperated with Prof. Dominik Michels
@@ -50,28 +81,59 @@ QQ: 414816433
 
 
 
-**Research Interest**
+### Honours
 
-- Metaverse
-- Artificial Intelligence
-	- Theoretical Research of Deep Learning.
-- Bioinformatics
-	- Analysis and integration of biological omics data with deep learning methods.
-	- Developing new bioinformatics tools.
-- Cognitive Neuroscience
-	- Mechanism of Language, Emotion, Memory, and Dream.
-	- Macroscopic phenomena and application of brain.
-	- The human brain and Artificial Intelligence.
-	- Brain Computer Interface
-- Medical Imaging
-	- EEG, X-ray, fMRI
+#### King Abdullah University of Science and Technology
 
+##### KAUST, 2021-Present
+
+**PhD, Computer Science**
+
+**GPA: 4.00 / 4.00**
+
+- Excellent Research Award, CEMSE, 2021
+
+#### King Abdullah University of Science and Technology
+
+##### KAUST, 2020-2021
+
+**MS, Computer Science**
+
+**GPA: 3.95 / 4.00**
+
+- Student ambassador, CEMSE, 2021
+- Yearly best studetnt award, CEMSE, 2021
+- Full scholarship for MS/PhD study, 2020
+
+#### Southern University of Science and Technology
+
+##### SUSTech, 2016-2020
+
+**Bachelor, Bioinformatics, Biology**
+
+**GPA: 3.92 / 4.00 (Top 0.1%), Core GPA: 3.94/4.00**
+
+- Outstanding graduate of SUSTech, 2020.
+- Cum Laude Graduate of the Department of Biology (Top 1/10), 2020.
+- The Guinness world record for "the most vows received by a single civilized act activity", 2019
+- Candidate for 2019 National Scholarship, 2019
+- Summer social practice excellent experience Award, 2018
+- Excellent Student, The First Prize Scholarship, 2018
+- Outstanding volunteer for the 12th CBIS Biennial Meeting, Shenzhen, China, 2018
+- Candidate for 2018 National Scholarship, 2018
+- Outstanding Volunteer of the 3rd Shenzhen International Life Science & Health Industry Summit (2016) Excellent Student, The First Prize Scholarship, 2017
+- Dean scholarship, The First Prize Scholarship, 2017
+- Excellent Student Cadre, 2017
+- Outstanding Volunteer of 2017 Shenzhen International Precision Medicine Summit, 2017
+- Alma mater practice excellent team, 2017
+- National Literary Creation Award, 2016
+- Excellent Student, The Second Prize Scholarship, 2016
 
 <br>
 
 
 
-**Membership**
+### **Membership**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
 
@@ -79,7 +141,7 @@ QQ: 414816433
 
 
 
-**Reviewer**
+### **Reviewer**
 
 |                 Journal/Conference                  | # Paper Reviewed |
 | :-------------------------------------------------: | :--------------: |
@@ -90,4 +152,5 @@ QQ: 414816433
 | Journal of Bioinformatics and Computational Biology |        1         |
 |                     MICCAI2020                      |        1         |
 
+<br>
 
