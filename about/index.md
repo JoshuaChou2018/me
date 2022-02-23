@@ -32,7 +32,7 @@ QQ: 414816433
 
 
 
-#### **Education**
+### **Education**
 
 - PhD Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 - Master of Science, M.S., Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
