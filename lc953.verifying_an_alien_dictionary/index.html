@@ -35,7 +35,7 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc953.verifying_an_alien_dictionary\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  516 ,
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  515 ,
         "url": "https:\/\/www.joshuachou.ink\/lc953.verifying_an_alien_dictionary\/","datePublished": "2022-01-12T00:00:00+00:00","dateModified": "2022-01-13T00:16:54+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -117,7 +117,7 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc953. Verifying an Alien Dictionary</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-12">2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;516 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-12">2022-01-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;515 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -158,10 +158,10 @@ Example 1:
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: words = [&#34;hello&#34;,&#34;leetcode&#34;], order = &#34;hlabcdefgijkmnopqrstuvwxyz&#34;
-Output: true
-Explanation: As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: words = [&#34;hello&#34;,&#34;leetcode&#34;], order = &#34;hlabcdefgijkmnopqrstuvwxyz&#34;
+</span></span><span class="line"><span class="cl">Output: true
+</span></span><span class="line"><span class="cl">Explanation: As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -171,10 +171,10 @@ Explanation: As &#39;h&#39; comes before &#39;l&#39; in this language, then the 
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: words = [&#34;word&#34;,&#34;world&#34;,&#34;row&#34;], order = &#34;worldabcefghijkmnpqstuvxyz&#34;
-Output: false
-Explanation: As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: words = [&#34;word&#34;,&#34;world&#34;,&#34;row&#34;], order = &#34;worldabcefghijkmnpqstuvxyz&#34;
+</span></span><span class="line"><span class="cl">Output: false
+</span></span><span class="line"><span class="cl">Explanation: As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -184,10 +184,10 @@ Explanation: As &#39;d&#39; comes after &#39;l&#39; in this language, then words
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: words = [&#34;apple&#34;,&#34;app&#34;], order = &#34;abcdefghijklmnopqrstuvwxyz&#34;
-Output: false
-Explanation: The first three characters &#34;app&#34; match, and the second string is shorter (in size.) According to lexicographical rules &#34;apple&#34; &gt; &#34;app&#34;, because &#39;l&#39; &gt; &#39;∅&#39;, where &#39;∅&#39; is defined as the blank character which is less than any other character (More info).
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: words = [&#34;apple&#34;,&#34;app&#34;], order = &#34;abcdefghijklmnopqrstuvwxyz&#34;
+</span></span><span class="line"><span class="cl">Output: false
+</span></span><span class="line"><span class="cl">Explanation: The first three characters &#34;app&#34; match, and the second string is shorter (in size.) According to lexicographical rules &#34;apple&#34; &gt; &#34;app&#34;, because &#39;l&#39; &gt; &#39;∅&#39;, where &#39;∅&#39; is defined as the blank character which is less than any other character (More info).
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -242,49 +242,47 @@ Explanation: The first three characters &#34;app&#34; match, and the second stri
 </span><span class="lnt">36
 </span><span class="lnt">37
 </span><span class="lnt">38
-</span><span class="lnt">39
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">isAlienSorted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">words</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type words: List[str]
-</span><span class="s2">        :type order: str
-</span><span class="s2">        :rtype: bool
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="k">def</span> <span class="nf">word2idx</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">order</span><span class="p">):</span>
-            <span class="n">out</span><span class="o">=</span><span class="p">[]</span>
-            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-                <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">order</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">_</span><span class="p">))</span>
-            <span class="k">return</span> <span class="n">out</span>
-
-        <span class="n">A_idx</span><span class="o">=</span><span class="kc">None</span> <span class="c1"># to record the left one</span>
-        <span class="n">B_idx</span><span class="o">=</span><span class="kc">None</span> <span class="c1"># to record the right one</span>
-
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">A_idx</span><span class="o">=</span><span class="n">word2idx</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">order</span><span class="p">)</span>
-            <span class="n">B_idx</span><span class="o">=</span><span class="n">word2idx</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="n">order</span><span class="p">)</span>
-            <span class="n">flag</span><span class="o">=</span><span class="kc">True</span>
-            <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">A_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">B_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                <span class="n">A</span><span class="o">=</span><span class="n">A_idx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-                <span class="n">A_idx</span><span class="o">=</span><span class="n">A_idx</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-                <span class="n">B</span><span class="o">=</span><span class="n">B_idx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-                <span class="n">B_idx</span><span class="o">=</span><span class="n">B_idx</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-                <span class="k">if</span> <span class="n">A</span><span class="o">&lt;</span><span class="n">B</span><span class="p">:</span>
-                    <span class="n">flag</span><span class="o">=</span><span class="kc">False</span>
-                <span class="k">elif</span> <span class="n">A</span><span class="o">&gt;</span><span class="n">B</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">False</span>
-                <span class="k">elif</span> <span class="n">A</span><span class="o">==</span><span class="n">B</span><span class="p">:</span>
-                    <span class="k">pass</span>
-            <span class="k">if</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">A_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">False</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="k">pass</span>
-        <span class="k">return</span> <span class="kc">True</span>
-            
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">isAlienSorted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">words</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type words: List[str]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type order: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: bool
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">word2idx</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">order</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">out</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">order</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">_</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">out</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">A_idx</span><span class="o">=</span><span class="kc">None</span> <span class="c1"># to record the left one</span>
+</span></span><span class="line"><span class="cl">        <span class="n">B_idx</span><span class="o">=</span><span class="kc">None</span> <span class="c1"># to record the right one</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">A_idx</span><span class="o">=</span><span class="n">word2idx</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">order</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">B_idx</span><span class="o">=</span><span class="n">word2idx</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="n">order</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flag</span><span class="o">=</span><span class="kc">True</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">A_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">B_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">A</span><span class="o">=</span><span class="n">A_idx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="n">A_idx</span><span class="o">=</span><span class="n">A_idx</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                <span class="n">B</span><span class="o">=</span><span class="n">B_idx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="n">B_idx</span><span class="o">=</span><span class="n">B_idx</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">A</span><span class="o">&lt;</span><span class="n">B</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">flag</span><span class="o">=</span><span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">elif</span> <span class="n">A</span><span class="o">&gt;</span><span class="n">B</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">elif</span> <span class="n">A</span><span class="o">==</span><span class="n">B</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">flag</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">A_idx</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">            
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h6 id="性能">性能：</h6>
 <p>执行用时：20 ms, 在所有 Python 提交中击败了69.01%的用户</p>
@@ -331,43 +329,43 @@ Explanation: The first three characters &#34;app&#34; match, and the second stri
 </span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">isAlienSorted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">words</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">order</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-        <span class="n">di</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-		<span class="c1"># storing the alphabet order of language via hashmap</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">order</span><span class="p">)):</span>
-            <span class="n">di</span><span class="p">[</span><span class="n">order</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
-        
-		<span class="c1"># helper function comparing two words</span>
-        <span class="k">def</span> <span class="nf">compareWords</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">):</span>
-            <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-			<span class="c1"># looping depends on smaller word</span>
-            <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">w1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">w2</span><span class="p">)):</span> 
-				<span class="c1"># getting order/rank of words</span>
-                <span class="n">rank1</span><span class="p">,</span> <span class="n">rank2</span> <span class="o">=</span> <span class="n">di</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w1</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">di</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-                <span class="c1"># correct order if w2&#39;s rank is greater</span>
-				<span class="k">if</span> <span class="n">rank1</span> <span class="o">&lt;</span> <span class="n">rank2</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">True</span>
-				<span class="c1"># continue if letters are same</span>
-                <span class="k">elif</span> <span class="n">rank1</span> <span class="o">==</span> <span class="n">rank2</span><span class="p">:</span> 
-                    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-                    <span class="k">continue</span>
-                <span class="c1"># incorrect order if w1&#39;s rank is greater</span>
-				<span class="k">else</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">False</span> 
-            <span class="c1"># w1 should be smaller if all letters are equal</span>
-			<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w1</span><span class="p">)</span><span class="o">&gt;</span><span class="nb">len</span><span class="p">(</span><span class="n">w2</span><span class="p">):</span>
-                <span class="k">return</span> <span class="kc">False</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">True</span>
-        
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span> <span class="o">=</span> <span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-			<span class="c1"># comparing with the immediate next word</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">compareWords</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">):</span>
-                <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">return</span> <span class="kc">True</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">isAlienSorted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">words</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">order</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">di</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="c1"># storing the alphabet order of language via hashmap</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">order</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">di</span><span class="p">[</span><span class="n">order</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">		<span class="c1"># helper function comparing two words</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">compareWords</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">			<span class="c1"># looping depends on smaller word</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="nb">min</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">w1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">w2</span><span class="p">)):</span> 
+</span></span><span class="line"><span class="cl">				<span class="c1"># getting order/rank of words</span>
+</span></span><span class="line"><span class="cl">                <span class="n">rank1</span><span class="p">,</span> <span class="n">rank2</span> <span class="o">=</span> <span class="n">di</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w1</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">di</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">w2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># correct order if w2&#39;s rank is greater</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span> <span class="n">rank1</span> <span class="o">&lt;</span> <span class="n">rank2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">				<span class="c1"># continue if letters are same</span>
+</span></span><span class="line"><span class="cl">                <span class="k">elif</span> <span class="n">rank1</span> <span class="o">==</span> <span class="n">rank2</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">                    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># incorrect order if w1&#39;s rank is greater</span>
+</span></span><span class="line"><span class="cl">				<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span> 
+</span></span><span class="line"><span class="cl">            <span class="c1"># w1 should be smaller if all letters are equal</span>
+</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">w1</span><span class="p">)</span><span class="o">&gt;</span><span class="nb">len</span><span class="p">(</span><span class="n">w2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span> <span class="o">=</span> <span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">			<span class="c1"># comparing with the immediate next word</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="ow">not</span> <span class="n">compareWords</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

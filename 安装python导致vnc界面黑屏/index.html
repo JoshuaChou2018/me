@@ -138,16 +138,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">$ <span class="nb">cd</span> <span class="nv">$HOME</span>
-$ vim .bashrc
-找到如下语句：
-   <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;/home/user/anaconda2/bin:</span><span class="nv">$PATH</span><span class="s2">&#34;</span>
-并修改为，并保存退出。
-   <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:/home/user/anaconda2/bin&#34;</span>
-$ vncserver -kill :id
-$ <span class="nb">source</span> .bashrc
-$ conda config --set auto_activate_base <span class="nb">false</span> <span class="c1">#取消conda自动启动base</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">cd</span> <span class="nv">$HOME</span>
+</span></span><span class="line"><span class="cl">$ vim .bashrc
+</span></span><span class="line"><span class="cl">找到如下语句：
+</span></span><span class="line"><span class="cl">   <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;/home/user/anaconda2/bin:</span><span class="nv">$PATH</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">并修改为，并保存退出。
+</span></span><span class="line"><span class="cl">   <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PATH</span><span class="s2">:/home/user/anaconda2/bin&#34;</span>
+</span></span><span class="line"><span class="cl">$ vncserver -kill :id
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> .bashrc
+</span></span><span class="line"><span class="cl">$ conda config --set auto_activate_base <span class="nb">false</span> <span class="c1">#取消conda自动启动base</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

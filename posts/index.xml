@@ -3,12 +3,23 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc76. Minimum Window Substring</title>
+    <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc76.-minimum-window-substring/</guid>
+    <description><![CDATA[Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &quot;&quot;.
+The testcases will be generated such that the answer is unique.
+A substring is a contiguous sequence of characters within the string.
+Example 1:
+1 2 3  Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.]]></description>
+</item><item>
     <title>lc621. Task Scheduler</title>
-    <link>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</link>
+    <link>https://www.joshuachou.ink/lc621.-task-scheduler/</link>
     <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/</guid>
+    <guid>https://www.joshuachou.ink/lc621.-task-scheduler/</guid>
     <description><![CDATA[Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
 However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks.]]></description>
 </item><item>
@@ -36,7 +47,7 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
     <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</guid>
-    <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).
+    <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).
 If two nodes are in the same row and column, the order should be from left to right.
 Example 1:
 1 2  Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]]   Example 2:
@@ -218,17 +229,5 @@ Example 1:
 1 2  Input: a = &#34;11&#34;, b = &#34;1&#34; Output: &#34;100&#34;   Example 2:
 1 2  Input: a = &#34;1010&#34;, b = &#34;1011&#34; Output: &#34;10101&#34;   Constraints:
  1 &lt;= a.length, b.length &lt;= 104 a and b consist only of '0' or '1' characters. Each string does not contain leading zeros except for the zero itself.]]></description>
-</item><item>
-    <title>lc273. Integer to English Words</title>
-    <link>https://www.joshuachou.ink/lc273.integer_to_english_words/</link>
-    <pubDate>Mon, 17 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc273.integer_to_english_words/</guid>
-    <description><![CDATA[Convert a non-negative integer num to its English words representation.
-Example 1:
-1 2  Input: num = 123 Output: &#34;One Hundred Twenty Three&#34;   Example 2:
-1 2  Input: num = 12345 Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;   Example 3:
-1 2  Input: num = 1234567 Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;   Constraints:
- 0 &lt;= num &lt;= 2^31 - 1  解题思路： 根据数字长度分成不同的翻译位:]]></description>
 </item></channel>
 </rss>

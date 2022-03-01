@@ -157,9 +157,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: nums = [1,2,3,4]
-Output: [24,12,8,6]
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [1,2,3,4]
+</span></span><span class="line"><span class="cl">Output: [24,12,8,6]
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -168,9 +168,9 @@ Output: [24,12,8,6]
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: nums = [-1,1,0,-3,3]
-Output: [0,0,9,0,0]
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [-1,1,0,-3,3]
+</span></span><span class="line"><span class="cl">Output: [0,0,9,0,0]
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -207,26 +207,26 @@ Output: [0,0,9,0,0]
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">productExceptSelf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type nums: List[int]
-</span><span class="s2">        :rtype: List[int]
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">left</span><span class="o">=</span><span class="p">[]</span>
-        <span class="n">right</span><span class="o">=</span><span class="p">[]</span>
-        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
-            <span class="n">left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_mul</span><span class="p">)</span>
-            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">_nums</span><span class="o">=</span><span class="n">nums</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_nums</span><span class="p">)):</span>
-            <span class="n">right</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_mul</span><span class="p">)</span>
-            <span class="n">_mul</span><span class="o">*=</span><span class="n">_nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">return</span> <span class="p">[</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">right</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">))]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">productExceptSelf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">left</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">right</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">left</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_mul</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_nums</span><span class="o">=</span><span class="n">nums</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">right</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_mul</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_mul</span><span class="o">*=</span><span class="n">_nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span><span class="n">left</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">right</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">))]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这个算法下，因为我们有一个循环，所以时间复杂度是O(N)，同时我们需要维护和nums同长的一个list，所以空间复杂度是O(N)</p>
 <p><strong>进阶，空间复杂度O(1)</strong></p>
@@ -252,23 +252,23 @@ Output: [0,0,9,0,0]
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">productExceptSelf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type nums: List[int]
-</span><span class="s2">        :rtype: List[int]
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">res</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">))]</span>
-        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
-            <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*=</span><span class="n">_mul</span>
-            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
-            <span class="n">res</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*=</span><span class="n">_mul</span>
-            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">res</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">productExceptSelf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">))]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*=</span><span class="n">_mul</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_mul</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*=</span><span class="n">_mul</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_mul</span><span class="o">*=</span><span class="n">nums</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这里需要注意在计算右乘积时使用的index，因为我们使用的是-i，所以i=0的时候会出现问题，我们需要在idx上减去1.</p>
 </div><div class="post-footer" id="post-footer">

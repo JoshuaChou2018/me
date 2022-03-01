@@ -159,9 +159,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num = 123
-Output: &#34;One Hundred Twenty Three&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num = 123
+</span></span><span class="line"><span class="cl">Output: &#34;One Hundred Twenty Three&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -170,9 +170,9 @@ Output: &#34;One Hundred Twenty Three&#34;
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num = 12345
-Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num = 12345
+</span></span><span class="line"><span class="cl">Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -181,9 +181,9 @@ Output: &#34;Twelve Thousand Three Hundred Forty Five&#34;
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num = 1234567
-Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num = 1234567
+</span></span><span class="line"><span class="cl">Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -244,49 +244,49 @@ Output: &#34;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Sev
 </span><span class="lnt">42
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">numberToWords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type num: int
-</span><span class="s2">        :rtype: str
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">from0to19</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;One&#39;</span><span class="p">,</span><span class="s1">&#39;Two&#39;</span><span class="p">,</span><span class="s1">&#39;Three&#39;</span><span class="p">,</span><span class="s1">&#39;Four&#39;</span><span class="p">,</span><span class="s1">&#39;Five&#39;</span><span class="p">,</span><span class="s1">&#39;Six&#39;</span><span class="p">,</span><span class="s1">&#39;Seven&#39;</span><span class="p">,</span><span class="s1">&#39;Eight&#39;</span><span class="p">,</span><span class="s1">&#39;Nine&#39;</span><span class="p">,</span><span class="s1">&#39;Ten&#39;</span><span class="p">,</span><span class="s1">&#39;Eleven&#39;</span><span class="p">,</span><span class="s1">&#39;Twelve&#39;</span><span class="p">,</span><span class="s1">&#39;Thirteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fourteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fifteen&#39;</span><span class="p">,</span><span class="s1">&#39;Sixteen&#39;</span><span class="p">,</span><span class="s1">&#39;Seventeen&#39;</span><span class="p">,</span><span class="s1">&#39;Eighteen&#39;</span><span class="p">,</span><span class="s1">&#39;Nineteen&#39;</span><span class="p">]</span>
-        <span class="n">from20to90</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;Twenty&#39;</span><span class="p">,</span><span class="s1">&#39;Thirty&#39;</span><span class="p">,</span><span class="s1">&#39;Forty&#39;</span><span class="p">,</span><span class="s1">&#39;Fifty&#39;</span><span class="p">,</span><span class="s1">&#39;Sixty&#39;</span><span class="p">,</span><span class="s1">&#39;Seventy&#39;</span><span class="p">,</span><span class="s1">&#39;Eighty&#39;</span><span class="p">,</span><span class="s1">&#39;Ninety&#39;</span><span class="p">]</span>
-
-        <span class="k">def</span> <span class="nf">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000000</span><span class="p">:</span> <span class="c1"># larger than 1 billion</span>
-                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Billion&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000000</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000000</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">ans</span>
-            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000</span><span class="p">:</span>
-                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Million&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">ans</span>
-            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000</span><span class="p">:</span>
-                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Thousand&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">ans</span>
-            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">100</span><span class="p">:</span>
-                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Hundred&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">100</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">100</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">ans</span>
-            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">20</span><span class="p">:</span>
-                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from20to90</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">10</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
-                <span class="k">return</span> <span class="n">ans</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
-
-        <span class="k">def</span> <span class="nf">addBlank</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-            <span class="n">_s</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
-                    <span class="n">_s</span><span class="o">+=</span><span class="s1">&#39; </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">_s</span><span class="o">+=</span><span class="n">_</span>
-            <span class="k">return</span> <span class="n">_s</span>
-
-        <span class="k">if</span> <span class="n">num</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span> <span class="s1">&#39;Zero&#39;</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">ans</span><span class="o">=</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">addBlank</span><span class="p">(</span><span class="n">ans</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">numberToWords</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type num: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">from0to19</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;One&#39;</span><span class="p">,</span><span class="s1">&#39;Two&#39;</span><span class="p">,</span><span class="s1">&#39;Three&#39;</span><span class="p">,</span><span class="s1">&#39;Four&#39;</span><span class="p">,</span><span class="s1">&#39;Five&#39;</span><span class="p">,</span><span class="s1">&#39;Six&#39;</span><span class="p">,</span><span class="s1">&#39;Seven&#39;</span><span class="p">,</span><span class="s1">&#39;Eight&#39;</span><span class="p">,</span><span class="s1">&#39;Nine&#39;</span><span class="p">,</span><span class="s1">&#39;Ten&#39;</span><span class="p">,</span><span class="s1">&#39;Eleven&#39;</span><span class="p">,</span><span class="s1">&#39;Twelve&#39;</span><span class="p">,</span><span class="s1">&#39;Thirteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fourteen&#39;</span><span class="p">,</span><span class="s1">&#39;Fifteen&#39;</span><span class="p">,</span><span class="s1">&#39;Sixteen&#39;</span><span class="p">,</span><span class="s1">&#39;Seventeen&#39;</span><span class="p">,</span><span class="s1">&#39;Eighteen&#39;</span><span class="p">,</span><span class="s1">&#39;Nineteen&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">from20to90</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="s1">&#39;Twenty&#39;</span><span class="p">,</span><span class="s1">&#39;Thirty&#39;</span><span class="p">,</span><span class="s1">&#39;Forty&#39;</span><span class="p">,</span><span class="s1">&#39;Fifty&#39;</span><span class="p">,</span><span class="s1">&#39;Sixty&#39;</span><span class="p">,</span><span class="s1">&#39;Seventy&#39;</span><span class="p">,</span><span class="s1">&#39;Eighty&#39;</span><span class="p">,</span><span class="s1">&#39;Ninety&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000000</span><span class="p">:</span> <span class="c1"># larger than 1 billion</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Billion&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000000</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000000</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Million&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">1000</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Thousand&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">//</span><span class="mi">1000</span><span class="p">))</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">100</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Hundred&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">100</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">num</span><span class="o">&gt;=</span><span class="mi">20</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from20to90</span><span class="p">[</span><span class="n">num</span><span class="o">//</span><span class="mi">10</span><span class="p">])</span><span class="o">+</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">ans</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">from0to19</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">addBlank</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_s</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">_</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">_s</span><span class="o">+=</span><span class="s1">&#39; </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">_s</span><span class="o">+=</span><span class="n">_</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">_s</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">num</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="s1">&#39;Zero&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">=</span><span class="n">recursive</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">addBlank</span><span class="p">(</span><span class="n">ans</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Runtime: 24 ms, faster than 54.38% of Python online submissions for Integer to English Words.</p>
 <p>Memory Usage: 13.6 MB, less than 13.33% of Python online submissions for Integer to English Words.</p>

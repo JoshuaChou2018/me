@@ -133,8 +133,8 @@ Like below:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo vi /etc/bash.bashrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vi /etc/bash.bashrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Find those code in the file</strong></p>
 <div class="highlight"><div class="chroma">
@@ -149,15 +149,15 @@ Like below:
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#enable bash completion in interactive shells</span>
-<span class="c1">#if ! shopt -oq posix; then</span>
-<span class="c1">#      if [-f  /usr/share/bash-completion/bash_completion ]; then</span>
-<span class="c1">#          . /usr/share/bash-completion/bash_completion</span>
-<span class="c1">#      elif [ -f /etc/bash_completion]; then</span>
-<span class="c1">#           . /etc/bash_completion</span>
-<span class="c1">#      fi</span>
-<span class="c1">#fi</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#enable bash completion in interactive shells</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#if ! shopt -oq posix; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      if [-f  /usr/share/bash-completion/bash_completion ]; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#          . /usr/share/bash-completion/bash_completion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      elif [ -f /etc/bash_completion]; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#           . /etc/bash_completion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      fi</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#fi</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Remove #</strong></p>
 <p>Like below:</p>
@@ -173,15 +173,15 @@ Like below:
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#enable bash completion in interactive shells</span>
-<span class="k">if</span> ! <span class="nb">shopt</span> -oq posix<span class="p">;</span> <span class="k">then</span>
-     <span class="k">if</span> <span class="o">[</span>-f  /usr/share/bash-completion/bash_completion <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-          . /usr/share/bash-completion/bash_completion
-      <span class="k">elif</span> <span class="o">[</span> -f /etc/bash_completion<span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-           . /etc/bash_completion
-      <span class="k">fi</span>
-<span class="k">fi</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#enable bash completion in interactive shells</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> ! <span class="nb">shopt</span> -oq posix<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">     <span class="k">if</span> <span class="o">[</span>-f  /usr/share/bash-completion/bash_completion <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">          . /usr/share/bash-completion/bash_completion
+</span></span><span class="line"><span class="cl">      <span class="k">elif</span> <span class="o">[</span> -f /etc/bash_completion<span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">           . /etc/bash_completion
+</span></span><span class="line"><span class="cl">      <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Source it</strong></p>
 <div class="highlight"><div class="chroma">
@@ -189,8 +189,8 @@ Like below:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo <span class="nb">source</span> /etc/bash.bashrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo <span class="nb">source</span> /etc/bash.bashrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>Now you can use Tab to autocomplete your command</p>
 </div><div class="post-footer" id="post-footer">

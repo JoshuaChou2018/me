@@ -155,10 +155,10 @@ Example 1:
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;A man, a plan, a canal: Panama&#34;
-Output: true
-Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;A man, a plan, a canal: Panama&#34;
+</span></span><span class="line"><span class="cl">Output: true
+</span></span><span class="line"><span class="cl">Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -168,10 +168,10 @@ Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;race a car&#34;
-Output: false
-Explanation: &#34;raceacar&#34; is not a palindrome.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;race a car&#34;
+</span></span><span class="line"><span class="cl">Output: false
+</span></span><span class="line"><span class="cl">Explanation: &#34;raceacar&#34; is not a palindrome.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -182,11 +182,11 @@ Explanation: &#34;raceacar&#34; is not a palindrome.
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34; &#34;
-Output: true
-Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34; &#34;
+</span></span><span class="line"><span class="cl">Output: true
+</span></span><span class="line"><span class="cl">Explanation: s is an empty string &#34;&#34; after removing non-alphanumeric characters.
+</span></span><span class="line"><span class="cl">Since an empty string reads the same forward and backward, it is a palindrome.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -218,22 +218,22 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type s: str
-</span><span class="s2">        :rtype: bool
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">valid</span><span class="o">=</span><span class="s1">&#39;abcdefghijklmnopqrstuvwxyz0123456789&#39;</span>
-        <span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-        <span class="n">s</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">valid</span><span class="p">])</span>
-        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">!=</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="k">return</span> <span class="kc">False</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">return</span> <span class="kc">True</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type s: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: bool
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">valid</span><span class="o">=</span><span class="s1">&#39;abcdefghijklmnopqrstuvwxyz0123456789&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">valid</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">!=</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这道题注意一下valid字符串别漏写就行。因为我们只需要遍历一遍字符串，所以时间复杂度为O(N)，同时空间复杂度也为O(N)</p>
 </div><div class="post-footer" id="post-footer">

@@ -51,7 +51,7 @@ Implement the MinStack class:
 1 2 3  [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1]   示例 2：
 输入：
 1 2 3  [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2]   提示：
-1 2 3  1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用   来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+1 2  1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用   来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 解题思路 输入为两个栈，
 第一个栈对应的是操作： [&ldquo;CQueue&rdquo;,&ldquo;appendTail&rdquo;,&ldquo;deleteHead&rdquo;,&ldquo;deleteHead&rdquo;]
 CQueue表示init一个CQueue object

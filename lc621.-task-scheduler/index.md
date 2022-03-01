@@ -50,7 +50,7 @@ A -> B -> C -> A -> D -> E -> A -> F -> G -> A -> idle -> idle -> A -> idle -> i
 - `tasks[i]` is upper-case English letter.
 - The integer `n` is in the range `[0, 100]`.
 
-###### 解题思路
+##### 解题思路
 
 第一思路是先根据数目最多的task来排位置，确保每两个之间隔的距离是n。这个时候留出来的idel之间也有符合距离为n的位点，然后再考虑其它task的位置。
 
@@ -110,8 +110,28 @@ NUM2=tasks.size()
 
 引用解析链接：https://leetcode-cn.com/problems/task-scheduler/solution/tong-zi-by-popopop/
 
+##### Answer
+
 
 ```python
+from collections import Counter
+class Solution(object):
+    def leastInterval(self, tasks, n):
+        """
+        :type tasks: List[str]
+        :type n: int
+        :rtype: int
+        """
+        F=Counter(tasks).values()
+        max_F=max(F)
+        count_max_F=0
+        for x in F:
+            if x==max_F:
+                count_max_F+=1
+        ans1=(max_F-1)*(n+1)+count_max_F
+        ans2=len(tasks)
+        return max(ans1,ans2)
+
 ```
 
 

@@ -145,8 +145,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">conda install conda-build anaconda-client
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda install conda-build anaconda-client
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="file-structure">File Structure</h3>
 <div class="highlight"><div class="chroma">
@@ -162,16 +162,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">    - home/
-        - my_package/
-            - my_package/
-                - package_lib/
-                - setup.py
-                - README.md
-                - run_test.py
-            - build.sh
-            - meta.yaml    
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    - home/
+</span></span><span class="line"><span class="cl">        - my_package/
+</span></span><span class="line"><span class="cl">            - my_package/
+</span></span><span class="line"><span class="cl">                - package_lib/
+</span></span><span class="line"><span class="cl">                - setup.py
+</span></span><span class="line"><span class="cl">                - README.md
+</span></span><span class="line"><span class="cl">                - run_test.py
+</span></span><span class="line"><span class="cl">            - build.sh
+</span></span><span class="line"><span class="cl">            - meta.yaml    
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="metayaml">meta.yaml</h3>
 <p>This file tells conda-build how to package files under <code>my_package/</code></p>
@@ -211,39 +211,39 @@
 </span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">    <span class="n">package</span><span class="p">:</span>
-      <span class="n">name</span><span class="p">:</span> <span class="n">my_package</span>
-      <span class="n">version</span><span class="p">:</span> <span class="mf">1.1.2</span>
-    
-    <span class="n">source</span><span class="p">:</span>
-      <span class="n">path</span><span class="p">:</span> <span class="n">my_package</span><span class="o">/</span><span class="n">my_package</span><span class="o">/</span>
-     
-    <span class="n">build</span><span class="p">:</span>
-      <span class="n">number</span><span class="p">:</span> <span class="mi">0</span>
-    
-    <span class="n">requirements</span><span class="p">:</span>
-      <span class="n">build</span><span class="p">:</span>
-        <span class="o">-</span> <span class="n">python</span> <span class="o">&gt;=</span><span class="mi">3</span>
-        <span class="o">-</span> <span class="n">setuptools</span>
-      <span class="n">run</span><span class="p">:</span>
-        <span class="o">-</span> <span class="n">python</span> <span class="o">&gt;=</span><span class="mi">3</span>
-        <span class="o">-</span> <span class="n">numpy</span> <span class="o">&gt;=</span><span class="mf">1.20</span>
-        <span class="o">-</span> <span class="n">scipy</span>
-        <span class="o">-</span> <span class="n">pandas</span>
-        <span class="o">-</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span> <span class="o">&gt;=</span><span class="mf">0.22</span>
-        <span class="o">-</span> <span class="n">lightgbm</span>
-        <span class="o">-</span> <span class="n">matplotlib</span>
-        <span class="o">-</span> <span class="n">seaborn</span>
-        <span class="o">-</span> <span class="n">plink</span> <span class="o">&gt;=</span><span class="mf">1.9</span>
-    
-    <span class="n">test</span><span class="p">:</span>
-      <span class="n">source_files</span><span class="p">:</span>
-        <span class="o">-</span> <span class="n">run_test</span><span class="o">.</span><span class="n">py</span>
-
-    <span class="n">about</span><span class="p">:</span>
-      <span class="n">home</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">JoshuaChou2018</span>
-      <span class="n">license</span><span class="p">:</span> <span class="n">MIT</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">package</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">name</span><span class="p">:</span> <span class="n">my_package</span>
+</span></span><span class="line"><span class="cl">      <span class="n">version</span><span class="p">:</span> <span class="mf">1.1.2</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">source</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">path</span><span class="p">:</span> <span class="n">my_package</span><span class="o">/</span><span class="n">my_package</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">    <span class="n">build</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">number</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">requirements</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">build</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">python</span> <span class="o">&gt;=</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">setuptools</span>
+</span></span><span class="line"><span class="cl">      <span class="n">run</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">python</span> <span class="o">&gt;=</span><span class="mi">3</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">numpy</span> <span class="o">&gt;=</span><span class="mf">1.20</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">scipy</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">pandas</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span> <span class="o">&gt;=</span><span class="mf">0.22</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">lightgbm</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">matplotlib</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">seaborn</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">plink</span> <span class="o">&gt;=</span><span class="mf">1.9</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">test</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">source_files</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="o">-</span> <span class="n">run_test</span><span class="o">.</span><span class="n">py</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">about</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">home</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">JoshuaChou2018</span>
+</span></span><span class="line"><span class="cl">      <span class="n">license</span><span class="p">:</span> <span class="n">MIT</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="buildsh">build.sh</h3>
 <p>The build.sh script contains methods to compile and install. So we use setuptools to complete the compilation and installation process.</p>
@@ -254,9 +254,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">    <span class="c1"># Install my_package</span>
-    <span class="err">$</span><span class="n">PYTHON</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="c1"># Install my_package</span>
+</span></span><span class="line"><span class="cl">    <span class="err">$</span><span class="n">PYTHON</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="setuppy">setup.py</h3>
 <div class="highlight"><div class="chroma">
@@ -292,36 +292,36 @@
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
-
-<span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
-
-<span class="n">setup</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.0.3&#39;</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="p">(</span>
-        <span class="s1">&#39;my_package&#39;</span>
-    <span class="p">),</span>
-    <span class="n">author</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
-    <span class="n">author_email</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
-    <span class="n">maintainer</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
-    <span class="n">maintainer_email</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
-    <span class="n">license</span><span class="o">=</span><span class="s1">&#39;MIT License&#39;</span><span class="p">,</span>
-    <span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://github.com/JoshuaChou2018/my_package&#39;</span><span class="p">,</span>
-    <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(),</span>
-    <span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
-        <span class="s1">&#39;console_scripts&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;run = my_package.entry:main&#39;</span><span class="p">,</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
-        <span class="s1">&#39;Operating System :: OS Independent&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;License :: OSI Approved :: MIT License&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;Programming Language :: Python :: 3&#39;</span>
-    <span class="p">],</span>
-    <span class="n">python_requires</span><span class="o">=</span><span class="s1">&#39;&gt;=3&#39;</span>
-<span class="p">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">setup</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">name</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.0.3&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">description</span><span class="o">=</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;my_package&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">author</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">author_email</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">maintainer</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">maintainer_email</span><span class="o">=</span><span class="s1">&#39;my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">license</span><span class="o">=</span><span class="s1">&#39;MIT License&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://github.com/JoshuaChou2018/my_package&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;console_scripts&#39;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;run = my_package.entry:main&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Operating System :: OS Independent&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;License :: OSI Approved :: MIT License&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Programming Language :: Python :: 3&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">python_requires</span><span class="o">=</span><span class="s1">&#39;&gt;=3&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="start-build">Start build</h3>
 <div class="highlight"><div class="chroma">
@@ -329,8 +329,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">conda</span> <span class="n">build</span> <span class="n">my_package</span><span class="o">/</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">build</span> <span class="n">my_package</span><span class="o">/</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="publish">Publish</h3>
 <div class="highlight"><div class="chroma">
@@ -339,9 +339,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">anaconda</span> <span class="n">login</span>
-<span class="n">anaconda</span> <span class="n">upload</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">conda</span><span class="o">-</span><span class="n">bld</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="mi">64</span><span class="o">/</span><span class="n">my_package</span><span class="o">-</span><span class="mf">1.0.0</span><span class="o">-</span><span class="n">py39_0</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">anaconda</span> <span class="n">login</span>
+</span></span><span class="line"><span class="cl"><span class="n">anaconda</span> <span class="n">upload</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">conda</span><span class="o">-</span><span class="n">bld</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="mi">64</span><span class="o">/</span><span class="n">my_package</span><span class="o">-</span><span class="mf">1.0.0</span><span class="o">-</span><span class="n">py39_0</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

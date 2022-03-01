@@ -155,9 +155,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: nums = [1,1,1], k = 2
-Output: 2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [1,1,1], k = 2
+</span></span><span class="line"><span class="cl">Output: 2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -166,9 +166,9 @@ Output: 2
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: nums = [1,2,3], k = 3
-Output: 2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [1,2,3], k = 3
+</span></span><span class="line"><span class="cl">Output: 2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -204,26 +204,26 @@ Output: 2
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type nums: List[int]
-</span><span class="s2">        :type k: int
-</span><span class="s2">        :rtype: int
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">cumulative</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">base</span><span class="o">=</span><span class="mi">0</span>
-        <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
-            <span class="n">base</span><span class="o">+=</span><span class="n">num</span>
-            <span class="n">cumulative</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">0</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cumulative</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cumulative</span><span class="p">)):</span>
-                <span class="n">res</span><span class="o">=</span><span class="n">cumulative</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">cumulative</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-                <span class="k">if</span> <span class="n">res</span><span class="o">==</span><span class="n">k</span><span class="p">:</span>
-                    <span class="n">ans</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="k">return</span> <span class="n">ans</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type k: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cumulative</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">base</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">base</span><span class="o">+=</span><span class="n">num</span>
+</span></span><span class="line"><span class="cl">            <span class="n">cumulative</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">base</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cumulative</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cumulative</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">=</span><span class="n">cumulative</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">-</span><span class="n">cumulative</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">res</span><span class="o">==</span><span class="n">k</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">ans</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个方法因为我们需要在cumulative上进行两次循环，所以时间复杂度为O(N^2)，同时因为需要cumulative来存储，所以空间复杂度是O(N).</p>
 <p><strong>累积和</strong>（不使用数组）</p>
@@ -246,22 +246,22 @@ Output: 2
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type nums: List[int]
-</span><span class="s2">        :type k: int
-</span><span class="s2">        :rtype: int
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">0</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-            <span class="nb">sum</span><span class="o">=</span><span class="mi">0</span>
-            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
-                <span class="nb">sum</span><span class="o">+=</span><span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-                <span class="k">if</span> <span class="nb">sum</span><span class="o">==</span><span class="n">k</span><span class="p">:</span>
-                    <span class="n">ans</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="k">return</span> <span class="n">ans</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type k: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">sum</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">sum</span><span class="o">+=</span><span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="nb">sum</span><span class="o">==</span><span class="n">k</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">ans</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这个方法因为我们依旧需要在cumulative上进行两次循环，所以时间复杂度为O(N^2)，但是我们不需要使用数组来存储答案，所以空间复杂度是O(1).</p>
 <p><strong>哈希表</strong></p>
@@ -287,24 +287,24 @@ Output: 2
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type nums: List[int]
-</span><span class="s2">        :type k: int
-</span><span class="s2">        :rtype: int
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">_sum</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">cul</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
-        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
-            <span class="n">_sum</span><span class="o">+=</span><span class="n">_</span>
-            <span class="k">if</span> <span class="n">_sum</span><span class="o">-</span><span class="n">k</span> <span class="ow">in</span> <span class="n">cul</span><span class="p">:</span>
-                <span class="n">res</span><span class="o">+=</span><span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="o">-</span><span class="n">k</span><span class="p">]</span>
-            <span class="k">try</span><span class="p">:</span>
-                <span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
-            <span class="k">except</span><span class="p">:</span>
-                <span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
-        <span class="k">return</span> <span class="n">res</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">subarraySum</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type k: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_sum</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">cul</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_sum</span><span class="o">+=</span><span class="n">_</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">_sum</span><span class="o">-</span><span class="n">k</span> <span class="ow">in</span> <span class="n">cul</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">res</span><span class="o">+=</span><span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="o">-</span><span class="n">k</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">cul</span><span class="p">[</span><span class="n">_sum</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

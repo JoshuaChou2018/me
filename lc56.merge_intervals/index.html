@@ -154,10 +154,10 @@ Example 1:
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
-Output: [[1,6],[8,10],[15,18]]
-Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+</span></span><span class="line"><span class="cl">Output: [[1,6],[8,10],[15,18]]
+</span></span><span class="line"><span class="cl">Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -167,10 +167,10 @@ Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: intervals = [[1,4],[4,5]]
-Output: [[1,5]]
-Explanation: Intervals [1,4] and [4,5] are considered overlapping.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: intervals = [[1,4],[4,5]]
+</span></span><span class="line"><span class="cl">Output: [[1,5]]
+</span></span><span class="line"><span class="cl">Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -231,53 +231,53 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 </span><span class="lnt">46
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">intervals</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type intervals: List[List[int]]
-</span><span class="s2">        :rtype: List[List[int]]
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
-            <span class="n">i</span><span class="o">=</span><span class="n">low</span><span class="o">-</span><span class="mi">1</span>
-            <span class="n">pivot</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">pivot</span><span class="p">:</span>
-                    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
-                    <span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">]</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-            <span class="k">return</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
-
-        <span class="k">def</span> <span class="nf">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lists</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">lists</span>
-            <span class="k">if</span> <span class="n">low</span><span class="o">&lt;</span><span class="n">high</span><span class="p">:</span>
-                <span class="n">pi</span><span class="o">=</span><span class="n">partition</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">)</span>
-                <span class="n">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">pi</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-                <span class="n">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">pi</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">high</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">lists</span>
-
-        <span class="k">def</span> <span class="nf">overlap</span><span class="p">(</span><span class="n">intv1</span><span class="p">,</span><span class="n">intv2</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">intv2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">intv1</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-                <span class="k">if</span> <span class="n">intv2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">intv1</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-                    <span class="k">return</span> <span class="kc">True</span><span class="p">,</span><span class="n">intv1</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">True</span><span class="p">,[</span><span class="n">intv1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">intv2</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">False</span><span class="p">,[</span><span class="n">intv1</span><span class="p">,</span><span class="n">intv2</span><span class="p">]</span>
-
-        <span class="n">_intervals</span><span class="o">=</span><span class="n">quickSort</span><span class="p">(</span><span class="n">intervals</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">intervals</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="p">[]</span>
-        <span class="n">tmp</span><span class="o">=</span><span class="n">_intervals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">_intervals</span><span class="p">:</span>
-            <span class="n">isoverlapped</span><span class="p">,</span><span class="n">res</span><span class="o">=</span><span class="n">overlap</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">_</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">isoverlapped</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                <span class="n">tmp</span><span class="o">=</span><span class="n">res</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
-                <span class="n">tmp</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">ans</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">intervals</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type intervals: List[List[int]]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: List[List[int]]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">partition</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="o">=</span><span class="n">low</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pivot</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">pivot</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">]</span><span class="o">=</span><span class="n">lists</span><span class="p">[</span><span class="n">high</span><span class="p">],</span><span class="n">lists</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lists</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">lists</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">low</span><span class="o">&lt;</span><span class="n">high</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pi</span><span class="o">=</span><span class="n">partition</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">pi</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">quickSort</span><span class="p">(</span><span class="n">lists</span><span class="p">,</span><span class="n">pi</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">high</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">lists</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">overlap</span><span class="p">(</span><span class="n">intv1</span><span class="p">,</span><span class="n">intv2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">intv2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">intv1</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">intv2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">intv1</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">True</span><span class="p">,</span><span class="n">intv1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">True</span><span class="p">,[</span><span class="n">intv1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">intv2</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">False</span><span class="p">,[</span><span class="n">intv1</span><span class="p">,</span><span class="n">intv2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">_intervals</span><span class="o">=</span><span class="n">quickSort</span><span class="p">(</span><span class="n">intervals</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">intervals</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tmp</span><span class="o">=</span><span class="n">_intervals</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">_intervals</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">isoverlapped</span><span class="p">,</span><span class="n">res</span><span class="o">=</span><span class="n">overlap</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span><span class="n">_</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">isoverlapped</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">tmp</span><span class="o">=</span><span class="n">res</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">tmp</span><span class="o">=</span><span class="n">res</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ans</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

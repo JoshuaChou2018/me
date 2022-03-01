@@ -169,38 +169,38 @@ The reason of this problem is that when you click the temp scene created by the 
 </span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">new</span> <span class="nt">void</span> <span class="nt">Start</span><span class="o">()</span>
-        <span class="p">{</span>
-            <span class="err">if</span> <span class="err">(!Application.isEditor</span> <span class="err">||</span> <span class="err">!Application.isPlaying)</span>
-                <span class="err">return</span><span class="p">;</span>
-
-            <span class="err">base.Start()</span><span class="p">;</span>
-
-            <span class="err">IsCurrentWorldInCommunityLabs</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-            <span class="err">IsCurrentWorldUploaded</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-            <span class="err">IsCurrentWorldPubliclyPublished</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-
-
-            <span class="err">var</span> <span class="err">desc</span> <span class="err">=</span> <span class="err">pipelineManager.GetComponent&lt;VRC.SDKBase.VRC_SceneDescriptor&gt;()</span><span class="p">;</span>
-            <span class="err">desc.PositionPortraitCamera(imageCapture.shotCamera.transform)</span><span class="p">;</span>
-
-            <span class="err">Application.runInBackground</span> <span class="err">=</span> <span class="err">true</span><span class="p">;</span>
-            <span class="err">UnityEngine.XR.XRSettings.enabled</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-
-            <span class="err">uploadButton.onClick.AddListener(SetupUpload)</span><span class="p">;</span>
-
-            <span class="err">openCommunityLabsDocsButton.onClick.AddListener(OpenCommunityLabsDocumentation)</span><span class="p">;</span>
-
-            <span class="err">shouldUpdateImageToggle.onValueChanged.AddListener(ToggleUpdateImage)</span><span class="p">;</span>
-
-            <span class="err">releasePublic.gameObject.SetActive(false)</span><span class="p">;</span>
-
-            <span class="err">System.Action&lt;string&gt;</span> <span class="err">onError</span> <span class="err">=</span> <span class="err">(err)</span> <span class="err">=&gt;</span> <span class="err">{</span>
-                <span class="err">VRC.Core.Logger.LogError(&#34;Could</span> <span class="err">not</span> <span class="err">authenticate</span> <span class="err">-</span> <span class="err">&#34;</span> <span class="err">+</span> <span class="err">err,</span> <span class="err">DebugLevel.Always)</span><span class="p">;</span>
-                <span class="err">blueprintPanel.SetActive(false)</span><span class="p">;</span>
-                <span class="err">errorPanel.SetActive(true)</span><span class="p">;</span>
-            <span class="p">}</span><span class="o">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">new</span> <span class="nt">void</span> <span class="nt">Start</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="err">if</span> <span class="err">(!Application.isEditor</span> <span class="err">||</span> <span class="err">!Application.isPlaying)</span>
+</span></span><span class="line"><span class="cl">                <span class="err">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">base.Start()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldInCommunityLabs</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldUploaded</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldPubliclyPublished</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">var</span> <span class="err">desc</span> <span class="err">=</span> <span class="err">pipelineManager.GetComponent&lt;VRC.SDKBase.VRC_SceneDescriptor&gt;()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">desc.PositionPortraitCamera(imageCapture.shotCamera.transform)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">Application.runInBackground</span> <span class="err">=</span> <span class="err">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">UnityEngine.XR.XRSettings.enabled</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">uploadButton.onClick.AddListener(SetupUpload)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">openCommunityLabsDocsButton.onClick.AddListener(OpenCommunityLabsDocumentation)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">shouldUpdateImageToggle.onValueChanged.AddListener(ToggleUpdateImage)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">releasePublic.gameObject.SetActive(false)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">System.Action&lt;string&gt;</span> <span class="err">onError</span> <span class="err">=</span> <span class="err">(err)</span> <span class="err">=&gt;</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">                <span class="err">VRC.Core.Logger.LogError(&#34;Could</span> <span class="err">not</span> <span class="err">authenticate</span> <span class="err">-</span> <span class="err">&#34;</span> <span class="err">+</span> <span class="err">err,</span> <span class="err">DebugLevel.Always)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="err">blueprintPanel.SetActive(false)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="err">errorPanel.SetActive(true)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Add 2 lines.</strong></p>
 <div class="highlight"><div class="chroma">
@@ -209,9 +209,9 @@ The reason of this problem is that when you click the temp scene created by the 
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">Cursor</span><span class="p">.</span><span class="nc">visible</span><span class="o">=</span><span class="nt">true</span><span class="o">;</span>
-<span class="nt">Cursor</span><span class="p">.</span><span class="nc">lockState</span><span class="o">=</span><span class="nt">0</span><span class="o">;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">Cursor</span><span class="p">.</span><span class="nc">visible</span><span class="o">=</span><span class="nt">true</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">Cursor</span><span class="p">.</span><span class="nc">lockState</span><span class="o">=</span><span class="nt">0</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Now the final content will be</strong></p>
 <div class="highlight"><div class="chroma">
@@ -265,54 +265,54 @@ The reason of this problem is that when you click the temp scene created by the 
 </span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="nt">new</span> <span class="nt">void</span> <span class="nt">Start</span><span class="o">()</span>
-        <span class="p">{</span>
-            <span class="err">Cursor.visible=true</span><span class="p">;</span>
-            <span class="err">Cursor.lockState=0</span><span class="p">;</span>
-            <span class="err">if</span> <span class="err">(!Application.isEditor</span> <span class="err">||</span> <span class="err">!Application.isPlaying)</span>
-                <span class="err">return</span><span class="p">;</span>
-
-            <span class="err">base.Start()</span><span class="p">;</span>
-
-            <span class="err">IsCurrentWorldInCommunityLabs</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-            <span class="err">IsCurrentWorldUploaded</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-            <span class="err">IsCurrentWorldPubliclyPublished</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-
-
-            <span class="err">var</span> <span class="err">desc</span> <span class="err">=</span> <span class="err">pipelineManager.GetComponent&lt;VRC.SDKBase.VRC_SceneDescriptor&gt;()</span><span class="p">;</span>
-            <span class="err">desc.PositionPortraitCamera(imageCapture.shotCamera.transform)</span><span class="p">;</span>
-
-            <span class="err">Application.runInBackground</span> <span class="err">=</span> <span class="err">true</span><span class="p">;</span>
-            <span class="err">UnityEngine.XR.XRSettings.enabled</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
-
-            <span class="err">uploadButton.onClick.AddListener(SetupUpload)</span><span class="p">;</span>
-
-            <span class="err">openCommunityLabsDocsButton.onClick.AddListener(OpenCommunityLabsDocumentation)</span><span class="p">;</span>
-
-            <span class="err">shouldUpdateImageToggle.onValueChanged.AddListener(ToggleUpdateImage)</span><span class="p">;</span>
-
-            <span class="err">releasePublic.gameObject.SetActive(false)</span><span class="p">;</span>
-
-            <span class="err">System.Action&lt;string&gt;</span> <span class="err">onError</span> <span class="err">=</span> <span class="err">(err)</span> <span class="err">=&gt;</span> <span class="err">{</span>
-                <span class="err">VRC.Core.Logger.LogError(&#34;Could</span> <span class="err">not</span> <span class="err">authenticate</span> <span class="err">-</span> <span class="err">&#34;</span> <span class="err">+</span> <span class="err">err,</span> <span class="err">DebugLevel.Always)</span><span class="p">;</span>
-                <span class="err">blueprintPanel.SetActive(false)</span><span class="p">;</span>
-                <span class="err">errorPanel.SetActive(true)</span><span class="p">;</span>
-            <span class="p">}</span><span class="o">;</span>
-
-            <span class="nt">if</span> <span class="o">(!</span><span class="nt">ApiCredentials</span><span class="p">.</span><span class="nc">Load</span><span class="o">())</span>
-                <span class="nt">onError</span><span class="o">(</span><span class="s2">&#34;Not logged in&#34;</span><span class="o">);</span>
-            <span class="nt">else</span>
-                <span class="nt">APIUser</span><span class="p">.</span><span class="nc">InitialFetchCurrentUser</span><span class="o">(</span>
-                    <span class="nt">delegate</span> <span class="o">(</span><span class="nt">ApiModelContainer</span><span class="o">&lt;</span><span class="nt">APIUser</span><span class="o">&gt;</span> <span class="nt">c</span><span class="o">)</span>
-                    <span class="p">{</span>
-                        <span class="err">UserLoggedInCallback(c.Model</span> <span class="err">as</span> <span class="err">APIUser)</span><span class="p">;</span>
-                    <span class="p">}</span><span class="o">,</span>
-                    <span class="nt">delegate</span> <span class="o">(</span><span class="nt">ApiModelContainer</span><span class="o">&lt;</span><span class="nt">APIUser</span><span class="o">&gt;</span> <span class="nt">c</span><span class="o">)</span>
-                    <span class="p">{</span>
-                        <span class="err">onError(c.Error)</span><span class="p">;</span>
-                    <span class="p">}</span>
-                <span class="o">);</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">new</span> <span class="nt">void</span> <span class="nt">Start</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="err">Cursor.visible=true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">Cursor.lockState=0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">if</span> <span class="err">(!Application.isEditor</span> <span class="err">||</span> <span class="err">!Application.isPlaying)</span>
+</span></span><span class="line"><span class="cl">                <span class="err">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">base.Start()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldInCommunityLabs</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldUploaded</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">IsCurrentWorldPubliclyPublished</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">var</span> <span class="err">desc</span> <span class="err">=</span> <span class="err">pipelineManager.GetComponent&lt;VRC.SDKBase.VRC_SceneDescriptor&gt;()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">desc.PositionPortraitCamera(imageCapture.shotCamera.transform)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">Application.runInBackground</span> <span class="err">=</span> <span class="err">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="err">UnityEngine.XR.XRSettings.enabled</span> <span class="err">=</span> <span class="err">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">uploadButton.onClick.AddListener(SetupUpload)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">openCommunityLabsDocsButton.onClick.AddListener(OpenCommunityLabsDocumentation)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">shouldUpdateImageToggle.onValueChanged.AddListener(ToggleUpdateImage)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">releasePublic.gameObject.SetActive(false)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="err">System.Action&lt;string&gt;</span> <span class="err">onError</span> <span class="err">=</span> <span class="err">(err)</span> <span class="err">=&gt;</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">                <span class="err">VRC.Core.Logger.LogError(&#34;Could</span> <span class="err">not</span> <span class="err">authenticate</span> <span class="err">-</span> <span class="err">&#34;</span> <span class="err">+</span> <span class="err">err,</span> <span class="err">DebugLevel.Always)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="err">blueprintPanel.SetActive(false)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="err">errorPanel.SetActive(true)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="nt">if</span> <span class="o">(!</span><span class="nt">ApiCredentials</span><span class="p">.</span><span class="nc">Load</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">onError</span><span class="o">(</span><span class="s2">&#34;Not logged in&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">else</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">APIUser</span><span class="p">.</span><span class="nc">InitialFetchCurrentUser</span><span class="o">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">delegate</span> <span class="o">(</span><span class="nt">ApiModelContainer</span><span class="o">&lt;</span><span class="nt">APIUser</span><span class="o">&gt;</span> <span class="nt">c</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="err">UserLoggedInCallback(c.Model</span> <span class="err">as</span> <span class="err">APIUser)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">delegate</span> <span class="o">(</span><span class="nt">ApiModelContainer</span><span class="o">&lt;</span><span class="nt">APIUser</span><span class="o">&gt;</span> <span class="nt">c</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="err">onError(c.Error)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="o">);</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Now rebuild, you find you can edit the texts now.</strong></p>
 </div><div class="post-footer" id="post-footer">

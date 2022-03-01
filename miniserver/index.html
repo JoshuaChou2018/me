@@ -167,33 +167,33 @@ Usage 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  mini
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">miniserve --help
-miniserve 0.4.1
-Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt;
-For when you really just want to serve some files over HTTP right now!
-
-USAGE:
-    miniserve <span class="o">[</span>FLAGS<span class="o">]</span> <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>--<span class="o">]</span> <span class="o">[</span>PATH<span class="o">]</span>
-
-FLAGS:
-    -u, --upload-files       Enable file uploading
-    -h, --help               Prints <span class="nb">help</span> information
-    -P, --no-symlinks        Do not follow symbolic links
-    -o, --overwrite-files    Enable overriding existing files during file upload
-        --random-route       Generate a random 6-hexdigit route
-    -V, --version            Prints version information
-    -v, --verbose            Be verbose, includes emitting access logs
-
-OPTIONS:
-    -a, --auth &lt;auth&gt;                    Set authentication <span class="o">(</span>username:password<span class="o">)</span>
-    -c, --color-scheme &lt;color_scheme&gt;    Default color scheme <span class="o">[</span>default: Squirrel<span class="o">]</span>  <span class="o">[</span>possible values:
-                                         Archlinux, Zenburn, Monokai, Squirrel<span class="o">]</span>
-    -i, --if &lt;interfaces&gt;...             Interface to listen on
-    -p, --port &lt;port&gt;                    Port to use <span class="o">[</span>default: 8080<span class="o">]</span>
-
-ARGS:
-    &lt;PATH&gt;    Which path to serve
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">miniserve --help
+</span></span><span class="line"><span class="cl">miniserve 0.4.1
+</span></span><span class="line"><span class="cl">Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt;
+</span></span><span class="line"><span class="cl">For when you really just want to serve some files over HTTP right now!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">USAGE:
+</span></span><span class="line"><span class="cl">    miniserve <span class="o">[</span>FLAGS<span class="o">]</span> <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>--<span class="o">]</span> <span class="o">[</span>PATH<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">FLAGS:
+</span></span><span class="line"><span class="cl">    -u, --upload-files       Enable file uploading
+</span></span><span class="line"><span class="cl">    -h, --help               Prints <span class="nb">help</span> information
+</span></span><span class="line"><span class="cl">    -P, --no-symlinks        Do not follow symbolic links
+</span></span><span class="line"><span class="cl">    -o, --overwrite-files    Enable overriding existing files during file upload
+</span></span><span class="line"><span class="cl">        --random-route       Generate a random 6-hexdigit route
+</span></span><span class="line"><span class="cl">    -V, --version            Prints version information
+</span></span><span class="line"><span class="cl">    -v, --verbose            Be verbose, includes emitting access logs
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">OPTIONS:
+</span></span><span class="line"><span class="cl">    -a, --auth &lt;auth&gt;                    Set authentication <span class="o">(</span>username:password<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    -c, --color-scheme &lt;color_scheme&gt;    Default color scheme <span class="o">[</span>default: Squirrel<span class="o">]</span>  <span class="o">[</span>possible values:
+</span></span><span class="line"><span class="cl">                                         Archlinux, Zenburn, Monokai, Squirrel<span class="o">]</span>
+</span></span><span class="line"><span class="cl">    -i, --if &lt;interfaces&gt;...             Interface to listen on
+</span></span><span class="line"><span class="cl">    -p, --port &lt;port&gt;                    Port to use <span class="o">[</span>default: 8080<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ARGS:
+</span></span><span class="line"><span class="cl">    &lt;PATH&gt;    Which path to serve
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Serve single folder</strong></p>
 <div class="highlight"><div class="chroma">
@@ -201,8 +201,8 @@ ARGS:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">miniserve share/ -u -o
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">miniserve share/ -u -o
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Serve single file</strong></p>
 <div class="highlight"><div class="chroma">
@@ -210,8 +210,8 @@ ARGS:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">miniserve file
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">miniserve file
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Start user verification</strong></p>
 <div class="highlight"><div class="chroma">
@@ -219,8 +219,8 @@ ARGS:
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">miniserve --auth joe:123 some_dir
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">miniserve --auth joe:123 some_dir
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

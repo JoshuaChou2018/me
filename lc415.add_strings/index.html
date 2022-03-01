@@ -156,9 +156,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num1 = &#34;11&#34;, num2 = &#34;123&#34;
-Output: &#34;134&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num1 = &#34;11&#34;, num2 = &#34;123&#34;
+</span></span><span class="line"><span class="cl">Output: &#34;134&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -167,9 +167,9 @@ Output: &#34;134&#34;
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num1 = &#34;456&#34;, num2 = &#34;77&#34;
-Output: &#34;533&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num1 = &#34;456&#34;, num2 = &#34;77&#34;
+</span></span><span class="line"><span class="cl">Output: &#34;533&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -178,9 +178,9 @@ Output: &#34;533&#34;
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: num1 = &#34;0&#34;, num2 = &#34;0&#34;
-Output: &#34;0&#34;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num1 = &#34;0&#34;, num2 = &#34;0&#34;
+</span></span><span class="line"><span class="cl">Output: &#34;0&#34;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -235,44 +235,44 @@ Output: &#34;0&#34;
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">addStrings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type num1: str
-</span><span class="s2">        :type num2: str
-</span><span class="s2">        :rtype: str
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-        <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
-        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-            <span class="n">_1</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-            <span class="n">_2</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-            <span class="n">num1</span><span class="o">=</span><span class="n">num1</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">num2</span><span class="o">=</span><span class="n">num2</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">_sum</span><span class="o">=</span><span class="n">_1</span><span class="o">+</span><span class="n">_2</span><span class="o">+</span><span class="n">_up</span>
-            <span class="k">if</span> <span class="n">_sum</span><span class="o">&gt;</span><span class="mi">9</span><span class="p">:</span>
-                <span class="n">_up</span><span class="o">=</span><span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
-            <span class="n">ans</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="n">_sum</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
-        <span class="n">num</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-            <span class="n">num</span><span class="o">=</span><span class="n">num1</span>
-        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-            <span class="n">num</span><span class="o">=</span><span class="n">num2</span>
-        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-            <span class="n">_1</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-            <span class="n">num</span><span class="o">=</span><span class="n">num</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">_sum</span><span class="o">=</span><span class="n">_1</span><span class="o">+</span><span class="n">_up</span>
-            <span class="k">if</span> <span class="n">_sum</span><span class="o">&gt;</span><span class="mi">9</span><span class="p">:</span>
-                <span class="n">_up</span><span class="o">=</span><span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
-            <span class="n">ans</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="n">_sum</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">_up</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-            <span class="n">ans</span><span class="o">+=</span><span class="s1">&#39;1&#39;</span>
-        <span class="k">return</span> <span class="n">ans</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">addStrings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type num1: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type num2: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_1</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_2</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num1</span><span class="o">=</span><span class="n">num1</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num2</span><span class="o">=</span><span class="n">num2</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_sum</span><span class="o">=</span><span class="n">_1</span><span class="o">+</span><span class="n">_2</span><span class="o">+</span><span class="n">_up</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">_sum</span><span class="o">&gt;</span><span class="mi">9</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_up</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="n">_sum</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">num</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num</span><span class="o">=</span><span class="n">num1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num</span><span class="o">=</span><span class="n">num2</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_1</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">num</span><span class="o">=</span><span class="n">num</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_sum</span><span class="o">=</span><span class="n">_1</span><span class="o">+</span><span class="n">_up</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">_sum</span><span class="o">&gt;</span><span class="mi">9</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_up</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">_up</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="n">_sum</span><span class="o">%</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">_up</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">+=</span><span class="s1">&#39;1&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ans</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注意如果最后_up还是1，那么记得在最终答案上补上1.</p>
 <p>执行用时：36 ms, 在所有 Python 提交中击败了41.44%的用户</p>

@@ -159,9 +159,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;aba&#34;
-Output: true
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;aba&#34;
+</span></span><span class="line"><span class="cl">Output: true
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -171,10 +171,10 @@ Output: true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;abca&#34;
-Output: true
-Explanation: You could delete the character &#39;c&#39;.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;abca&#34;
+</span></span><span class="line"><span class="cl">Output: true
+</span></span><span class="line"><span class="cl">Explanation: You could delete the character &#39;c&#39;.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -183,9 +183,9 @@ Explanation: You could delete the character &#39;c&#39;.
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;abc&#34;
-Output: false
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;abc&#34;
+</span></span><span class="line"><span class="cl">Output: false
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -237,44 +237,44 @@ Output: false
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">validPalindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type s: str
-</span><span class="s2">        :rtype: bool
-</span><span class="s2">        &#34;&#34;&#34;</span>
-        
-        <span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">_s</span><span class="p">):</span>
-            <span class="n">_left</span><span class="o">=</span><span class="mi">0</span>
-            <span class="n">_right</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">_s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
-            <span class="k">while</span> <span class="n">_left</span><span class="o">&lt;</span><span class="n">_right</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">_s</span><span class="p">[</span><span class="n">_left</span><span class="p">]</span><span class="o">!=</span><span class="n">_s</span><span class="p">[</span><span class="n">_right</span><span class="p">]:</span>
-                    <span class="k">return</span> <span class="kc">False</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">_left</span><span class="o">+=</span><span class="mi">1</span>
-                    <span class="n">_right</span><span class="o">-=</span><span class="mi">1</span>
-            <span class="k">return</span> <span class="kc">True</span>
-
-        <span class="n">delcount</span><span class="o">=</span><span class="mi">0</span>
-        <span class="n">left</span><span class="o">=</span><span class="mi">0</span>
-        <span class="n">right</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
-        <span class="k">while</span> <span class="n">left</span><span class="o">&lt;</span><span class="n">right</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="o">==</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
-                <span class="n">left</span><span class="o">+=</span><span class="mi">1</span>
-                <span class="n">right</span><span class="o">-=</span><span class="mi">1</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">delcount</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-                    <span class="n">delcount</span><span class="o">+=</span><span class="mi">1</span>
-                    <span class="k">if</span> <span class="n">isPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                        <span class="n">left</span><span class="o">+=</span><span class="mi">1</span>
-                    <span class="k">elif</span> <span class="n">isPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">:</span><span class="n">right</span><span class="p">])</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                        <span class="n">right</span><span class="o">-=</span><span class="mi">1</span>
-                    <span class="k">else</span><span class="p">:</span>
-                        <span class="k">return</span> <span class="kc">False</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">return</span> <span class="kc">True</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">validPalindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type s: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: bool
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">_s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_left</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="n">_right</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">_s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="n">_left</span><span class="o">&lt;</span><span class="n">_right</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">_s</span><span class="p">[</span><span class="n">_left</span><span class="p">]</span><span class="o">!=</span><span class="n">_s</span><span class="p">[</span><span class="n">_right</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">_left</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">_right</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">delcount</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">left</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">right</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">left</span><span class="o">&lt;</span><span class="n">right</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="o">==</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">left</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="n">right</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">delcount</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">delcount</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="n">isPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">left</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">elif</span> <span class="n">isPalindrome</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">:</span><span class="n">right</span><span class="p">])</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">right</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h6 id="性能">性能：</h6>
 <p>执行用时：140 ms, 在所有 Python 提交中击败了17.65%的用户</p>

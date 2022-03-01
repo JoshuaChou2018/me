@@ -39,7 +39,7 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc301.remove_invalid_parentheses\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  264 ,
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  263 ,
         "url": "https:\/\/www.joshuachou.ink\/lc301.remove_invalid_parentheses\/","datePublished": "2022-01-20T00:00:00+00:00","dateModified": "2022-01-26T12:10:38+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -121,7 +121,7 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc301. Remove Invalid Parentheses</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-20">2022-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;264 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-01-20">2022-01-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;263 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -158,9 +158,9 @@ Example 1:
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;()())()&#34;
-Output: [&#34;(())()&#34;,&#34;()()()&#34;]
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;()())()&#34;
+</span></span><span class="line"><span class="cl">Output: [&#34;(())()&#34;,&#34;()()()&#34;]
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -169,9 +169,9 @@ Output: [&#34;(())()&#34;,&#34;()()()&#34;]
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;(a)())()&#34;
-Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;(a)())()&#34;
+</span></span><span class="line"><span class="cl">Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -180,9 +180,9 @@ Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: s = &#34;)(&#34;
-Output: [&#34;&#34;]
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;)(&#34;
+</span></span><span class="line"><span class="cl">Output: [&#34;&#34;]
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -258,70 +258,68 @@ Output: [&#34;&#34;]
 </span><span class="lnt">57
 </span><span class="lnt">58
 </span><span class="lnt">59
-</span><span class="lnt">60
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">removeInvalidParentheses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">        :type s: str
-</span><span class="s2">        :rtype: List[str]
-</span><span class="s2">        &#34;&#34;&#34;</span>
-
-        <span class="k">def</span> <span class="nf">delOne</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-            <span class="n">out</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
-            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
-                <span class="n">tmp</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
-                <span class="n">tmp</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-                <span class="n">out</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp</span><span class="p">))</span>
-            <span class="k">return</span> <span class="n">out</span>
-
-        <span class="k">def</span> <span class="nf">getNextLevel</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
-            <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">            :type level: set
-</span><span class="s2">            &#34;&#34;&#34;</span>
-            <span class="n">nextlevel</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
-            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">level</span><span class="p">:</span>
-                <span class="k">for</span> <span class="n">__</span> <span class="ow">in</span> <span class="n">delOne</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
-                    <span class="n">nextlevel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">__</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">nextlevel</span>
-
-        <span class="k">def</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-            <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
-            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">_</span><span class="o">==</span><span class="s1">&#39;(&#39;</span><span class="p">:</span>
-                    <span class="n">count</span><span class="o">+=</span><span class="mi">1</span>
-                <span class="k">elif</span> <span class="n">_</span><span class="o">==</span><span class="s1">&#39;)&#39;</span><span class="p">:</span>
-                    <span class="n">count</span><span class="o">-=</span><span class="mi">1</span>
-                <span class="k">if</span> <span class="n">count</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="kc">False</span>
-            <span class="k">if</span> <span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">True</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">False</span>
-
-        <span class="n">level</span><span class="o">=</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
-        <span class="n">length</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-            <span class="n">current_ans</span><span class="o">=</span><span class="p">[]</span>
-            <span class="c1">#print(current_ans,level)</span>
-            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">level</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">isValid</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
-                    <span class="n">current_ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="k">pass</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">current_ans</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
-                <span class="k">break</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">length</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
-                    <span class="n">level</span><span class="o">=</span><span class="n">getNextLevel</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
-                    <span class="n">length</span><span class="o">-=</span><span class="mi">1</span>
-                <span class="k">else</span><span class="p">:</span>
-                    <span class="n">current_ans</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;&#34;</span><span class="p">]</span>
-                    <span class="k">break</span>
-        <span class="k">return</span> <span class="n">current_ans</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">removeInvalidParentheses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type s: str
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: List[str]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">delOne</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">out</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">tmp</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">tmp</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">out</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">out</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">getNextLevel</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">            :type level: set
+</span></span></span><span class="line"><span class="cl"><span class="s2">            &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nextlevel</span><span class="o">=</span><span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">level</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="n">__</span> <span class="ow">in</span> <span class="n">delOne</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nextlevel</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">nextlevel</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">def</span> <span class="nf">isValid</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">_</span><span class="o">==</span><span class="s1">&#39;(&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">count</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">elif</span> <span class="n">_</span><span class="o">==</span><span class="s1">&#39;)&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">count</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">count</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">count</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">level</span><span class="o">=</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">length</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">current_ans</span><span class="o">=</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">#print(current_ans,level)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">level</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">isValid</span><span class="p">(</span><span class="n">_</span><span class="p">)</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">current_ans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">current_ans</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">length</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">level</span><span class="o">=</span><span class="n">getNextLevel</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">length</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">current_ans</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">current_ans</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>但是使用BFS的时间复杂度比较高，</p>
 <p>执行用时：668 ms, 在所有 Python 提交中击败了13.99%的用户</p>

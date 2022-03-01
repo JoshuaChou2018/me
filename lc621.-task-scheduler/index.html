@@ -9,9 +9,9 @@
 <meta property="og:description" content="Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
 However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.joshuachou.ink/lc621.-task-scheduler/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-02-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-02-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-01T15:49:43+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -22,7 +22,7 @@ However, there is a non-negative integer n that represents the cooldown period b
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" /><link rel="prev" href="https://www.joshuachou.ink/lc15.-3sum/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc621.-task-scheduler/" /><link rel="prev" href="https://www.joshuachou.ink/lc15.-3sum/" /><link rel="next" href="https://www.joshuachou.ink/lc76.-minimum-window-substring/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -30,9 +30,9 @@ However, there is a non-negative integer n that represents the cooldown period b
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/www.joshuachou.ink\/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  351 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC\/","datePublished": "2022-02-16T00:00:00+00:00","dateModified": "2022-02-16T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/www.joshuachou.ink\/lc621.-task-scheduler\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  403 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc621.-task-scheduler\/","datePublished": "2022-02-16T00:00:00+00:00","dateModified": "2022-03-01T15:49:43+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -113,7 +113,7 @@ However, there is a non-negative integer n that represents the cooldown period b
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc621. Task Scheduler</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-16">2022-02-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;351 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-16">2022-02-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;403 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -128,11 +128,8 @@ However, there is a non-negative integer n that represents the cooldown period b
           <ul>
             <li>
               <ul>
-                <li>
-                  <ul>
-                    <li><a href="#解题思路">解题思路</a></li>
-                  </ul>
-                </li>
+                <li><a href="#解题思路">解题思路</a></li>
+                <li><a href="#answer">Answer</a></li>
               </ul>
             </li>
           </ul>
@@ -154,12 +151,12 @@ However, there is a non-negative integer n that represents the cooldown period b
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;], n = 2
-Output: 8
-Explanation: 
-A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B
-There is at least 2 units of time between any two same tasks.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;], n = 2
+</span></span><span class="line"><span class="cl">Output: 8
+</span></span><span class="line"><span class="cl">Explanation: 
+</span></span><span class="line"><span class="cl">A -&gt; B -&gt; idle -&gt; A -&gt; B -&gt; idle -&gt; A -&gt; B
+</span></span><span class="line"><span class="cl">There is at least 2 units of time between any two same tasks.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 2:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -174,15 +171,15 @@ There is at least 2 units of time between any two same tasks.
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;], n = 0
-Output: 6
-Explanation: On this case any permutation of size 6 would work since n = 0.
-[&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;]
-[&#34;A&#34;,&#34;B&#34;,&#34;A&#34;,&#34;B&#34;,&#34;A&#34;,&#34;B&#34;]
-[&#34;B&#34;,&#34;B&#34;,&#34;B&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;]
-...
-And so on.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;], n = 0
+</span></span><span class="line"><span class="cl">Output: 6
+</span></span><span class="line"><span class="cl">Explanation: On this case any permutation of size 6 would work since n = 0.
+</span></span><span class="line"><span class="cl">[&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;B&#34;,&#34;B&#34;]
+</span></span><span class="line"><span class="cl">[&#34;A&#34;,&#34;B&#34;,&#34;A&#34;,&#34;B&#34;,&#34;A&#34;,&#34;B&#34;]
+</span></span><span class="line"><span class="cl">[&#34;B&#34;,&#34;B&#34;,&#34;B&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;]
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl">And so on.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Example 3:</strong></p>
 <div class="highlight"><div class="chroma">
@@ -194,12 +191,12 @@ And so on.
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;C&#34;,&#34;D&#34;,&#34;E&#34;,&#34;F&#34;,&#34;G&#34;], n = 2
-Output: 16
-Explanation: 
-One possible solution is
-A -&gt; B -&gt; C -&gt; A -&gt; D -&gt; E -&gt; A -&gt; F -&gt; G -&gt; A -&gt; idle -&gt; idle -&gt; A -&gt; idle -&gt; idle -&gt; A
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: tasks = [&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;A&#34;,&#34;B&#34;,&#34;C&#34;,&#34;D&#34;,&#34;E&#34;,&#34;F&#34;,&#34;G&#34;], n = 2
+</span></span><span class="line"><span class="cl">Output: 16
+</span></span><span class="line"><span class="cl">Explanation: 
+</span></span><span class="line"><span class="cl">One possible solution is
+</span></span><span class="line"><span class="cl">A -&gt; B -&gt; C -&gt; A -&gt; D -&gt; E -&gt; A -&gt; F -&gt; G -&gt; A -&gt; idle -&gt; idle -&gt; A -&gt; idle -&gt; idle -&gt; A
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>Constraints:</strong></p>
 <ul>
@@ -207,7 +204,7 @@ A -&gt; B -&gt; C -&gt; A -&gt; D -&gt; E -&gt; A -&gt; F -&gt; G -&gt; A -&gt; 
 <li><code>tasks[i]</code> is upper-case English letter.</li>
 <li>The integer <code>n</code> is in the range <code>[0, 100]</code>.</li>
 </ul>
-<h6 id="解题思路">解题思路</h6>
+<h5 id="解题思路">解题思路</h5>
 <p>第一思路是先根据数目最多的task来排位置，确保每两个之间隔的距离是n。这个时候留出来的idel之间也有符合距离为n的位点，然后再考虑其它task的位置。</p>
 <p>建立大小为 n+1 的桶子，个数为任务数量最多的那个任务，比如下图，等待时间 n=2，A 任务个数 6 个，我们建立 6 桶子，每个容量为 3：</p>
 <p>我们可以把一个桶子看作一轮任务</p>
@@ -270,26 +267,62 @@ A -&gt; B -&gt; C -&gt; A -&gt; D -&gt; E -&gt; A -&gt; F -&gt; G -&gt; A -&gt; 
 <p>输出其中较大值即可因为存在空闲时间时肯定是 NUM1 大，不存在空闲时间时肯定是 NUM2&gt;=NUM1</p>
 <p>引用解析作者：popopop</p>
 <p>引用解析链接：https://leetcode-cn.com/problems/task-scheduler/solution/tong-zi-by-popopop/</p>
+<h5 id="answer">Answer</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code></code></pre></td>
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">leastInterval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tasks</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type tasks: List[str]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type n: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">F</span><span class="o">=</span><span class="n">Counter</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">max_F</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">count_max_F</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">F</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="n">max_F</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">count_max_F</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans1</span><span class="o">=</span><span class="p">(</span><span class="n">max_F</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="n">count_max_F</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ans2</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">tasks</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">ans1</span><span class="p">,</span><span class="n">ans2</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-02-16</span>
+                <span>Updated on 2022-03-01&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/1c625ba7352f179c85e858de0703b88b69ec890d" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 1c625ba7352f179c85e858de0703b88b69ec890d: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>1c625ba</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/lc621.-task-scheduler/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler" data-hashtags="leetcode"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-hashtag="leetcode"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/lc15.-3sum%E7%9A%84%E5%89%AF%E6%9C%AC/" data-title="lc621. Task Scheduler"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler" data-hashtags="leetcode"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-hashtag="leetcode"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/lc621.-task-scheduler/" data-title="lc621. Task Scheduler"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -301,7 +334,8 @@ A -&gt; B -&gt; C -&gt; A -&gt; D -&gt; E -&gt; A -&gt; F -&gt; G -&gt; A -&gt; 
         </section>
     </div>
 
-    <div class="post-nav"><a href="/lc15.-3sum/" class="prev" rel="prev" title="lc15. 3Sum"><i class="fas fa-angle-left fa-fw"></i>lc15. 3Sum</a></div>
+    <div class="post-nav"><a href="/lc15.-3sum/" class="prev" rel="prev" title="lc15. 3Sum"><i class="fas fa-angle-left fa-fw"></i>lc15. 3Sum</a>
+            <a href="/lc76.-minimum-window-substring/" class="next" rel="next" title="lc76. Minimum Window Substring">lc76. Minimum Window Substring<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.

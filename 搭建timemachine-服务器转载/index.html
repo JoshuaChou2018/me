@@ -223,8 +223,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">ssh tmback@tmback-server.local
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh tmback@tmback-server.local
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>首先，查看识别到的硬盘：</p>
 <div class="highlight"><div class="chroma">
@@ -232,8 +232,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo fdisk -l
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo fdisk -l
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -249,8 +249,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo mkfs.ext4  /dev/sdb1
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo mkfs.ext4  /dev/sdb1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -266,8 +266,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo e2label /dev/sdb1 TMBack
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo e2label /dev/sdb1 TMBack
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在/media创建一个目录，把sdb1挂载上去：</p>
 <div class="highlight"><div class="chroma">
@@ -276,9 +276,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo mkdir /media/TMBack
-~$ sudo mount /dev/sdb1 /media/TMBack 
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo mkdir /media/TMBack
+</span></span><span class="line"><span class="cl">~$ sudo mount /dev/sdb1 /media/TMBack 
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>把/media/TMBack目录所有者修改为tmback:tmback</p>
 <div class="highlight"><div class="chroma">
@@ -286,8 +286,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo chown -R tmback:tmback /media/TMBack
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo chown -R tmback:tmback /media/TMBack
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装Netatalk服务，项目主页<a href="https://link.zhihu.com/?target=http%3A//netatalk.sourceforge.net/" target="_blank" rel="noopener noreffer">Netatalk</a>。</p>
 <blockquote>
@@ -300,8 +300,8 @@ Using Netatalk&rsquo;s AFP 3.3 compliant file-server leads to significantly high
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo apt-get install netatalk
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo apt-get install netatalk
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改Netatalk的配置文件：</p>
 <div class="highlight"><div class="chroma">
@@ -309,8 +309,8 @@ Using Netatalk&rsquo;s AFP 3.3 compliant file-server leads to significantly high
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo nano /etc/netatalk/AppleVolumes.default
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo nano /etc/netatalk/AppleVolumes.default
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在末尾加上这么一句：「/media/TMBack &ldquo;TMback&rdquo; options:tm」</p>
 <p><img
@@ -327,8 +327,8 @@ Using Netatalk&rsquo;s AFP 3.3 compliant file-server leads to significantly high
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo service netatalk restart
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo service netatalk restart
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这时在网络上就能发现一台新的，主机名为「tmback-server」的Mac主机。</p>
 <p><img
@@ -368,8 +368,8 @@ Avahi is primarily targetted at Linux systems and ships by default in most distr
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo apt-get install avahi-daemon
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo apt-get install avahi-daemon
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后我们新建一个它的服务：</p>
 <div class="highlight"><div class="chroma">
@@ -377,8 +377,8 @@ Avahi is primarily targetted at Linux systems and ships by default in most distr
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">~$ sudo nano /etc/avahi/services/afpd.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">~$ sudo nano /etc/avahi/services/afpd.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>输入以下内容：</p>
 <div class="highlight"><div class="chroma">
@@ -399,21 +399,21 @@ Avahi is primarily targetted at Linux systems and ships by default in most distr
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">&lt;?xml version=&#34;1.0&#34; standalone=&#39;no&#39;?&gt;&lt;!--*-nxml-*--&gt;
-&lt;!DOCTYPE service-group SYSTEM &#34;avahi-service.dtd&#34;&gt;
-&lt;service-group&gt;
-	&lt;name replace-wildcards=&#34;yes&#34;&gt;%h&lt;/name&gt;
-	&lt;service&gt;
-        &lt;type&gt;_afpovertcp._tcp&lt;/type&gt;
-        &lt;port&gt;548&lt;/port&gt;
-    &lt;/service&gt;
-    &lt;service&gt;
-        &lt;type&gt;_device-info._tcp&lt;/type&gt;
- 	       &lt;port&gt;0&lt;/port&gt;
-        &lt;txt-record&gt;model=Xserve&lt;/txt-record&gt;
-    &lt;/service&gt;
-&lt;/service-group&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&lt;?xml version=&#34;1.0&#34; standalone=&#39;no&#39;?&gt;&lt;!--*-nxml-*--&gt;
+</span></span><span class="line"><span class="cl">&lt;!DOCTYPE service-group SYSTEM &#34;avahi-service.dtd&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;service-group&gt;
+</span></span><span class="line"><span class="cl">	&lt;name replace-wildcards=&#34;yes&#34;&gt;%h&lt;/name&gt;
+</span></span><span class="line"><span class="cl">	&lt;service&gt;
+</span></span><span class="line"><span class="cl">        &lt;type&gt;_afpovertcp._tcp&lt;/type&gt;
+</span></span><span class="line"><span class="cl">        &lt;port&gt;548&lt;/port&gt;
+</span></span><span class="line"><span class="cl">    &lt;/service&gt;
+</span></span><span class="line"><span class="cl">    &lt;service&gt;
+</span></span><span class="line"><span class="cl">        &lt;type&gt;_device-info._tcp&lt;/type&gt;
+</span></span><span class="line"><span class="cl"> 	       &lt;port&gt;0&lt;/port&gt;
+</span></span><span class="line"><span class="cl">        &lt;txt-record&gt;model=Xserve&lt;/txt-record&gt;
+</span></span><span class="line"><span class="cl">    &lt;/service&gt;
+</span></span><span class="line"><span class="cl">&lt;/service-group&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>重启avahi-daemon服务：</p>
 <div class="highlight"><div class="chroma">
@@ -421,8 +421,8 @@ Avahi is primarily targetted at Linux systems and ships by default in most distr
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo service avahi-daemon restart
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo service avahi-daemon restart
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这时「tmback-server」变成了一台Mac文件服务器。</p>
 <p><img
@@ -455,8 +455,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo apt-get install libnss-mdns
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo apt-get install libnss-mdns
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改nss-mdns配置文件：</p>
 <div class="highlight"><div class="chroma">
@@ -464,8 +464,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo nano /etc/nsswitch.conf
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo nano /etc/nsswitch.conf
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在「hosts」这一行的结尾添加两项，「mdns4」和「mdns」：</p>
 <p><img
@@ -482,8 +482,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo service avahi-daemon restart
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo service avahi-daemon restart
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>最后一步我们要开机自动挂载机械硬盘。</p>
 <div class="highlight"><div class="chroma">
@@ -491,8 +491,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ blkid
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ blkid
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
@@ -509,8 +509,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">~$ sudo nano /etc/fstab
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~$ sudo nano /etc/fstab
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>加上这一行：</p>
 <div class="highlight"><div class="chroma">
@@ -518,8 +518,8 @@ By default nss-mdns tries to contact a running <a href="https://link.zhihu.com/?
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">UUID=5202aacf-9e77-4768-b4ec-d6009adbb179 /media/TMBack ext4 defaults 0 0
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">UUID=5202aacf-9e77-4768-b4ec-d6009adbb179 /media/TMBack ext4 defaults 0 0
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><img
         class="lazyload"
