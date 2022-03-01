@@ -14,7 +14,7 @@ Example 1:
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/lc76.-minimum-window-substring/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-03-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-03-01T15:49:43+03:00" />
+<meta property="article:modified_time" content="2022-03-01T16:24:03+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
@@ -28,7 +28,7 @@ Example 1:
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc76.-minimum-window-substring/" /><link rel="prev" href="https://www.joshuachou.ink/lc621.-task-scheduler/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc76.-minimum-window-substring/" /><link rel="prev" href="https://www.joshuachou.ink/lc88.-merge-sorted-array/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -37,8 +37,8 @@ Example 1:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/lc76.-minimum-window-substring\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  179 ,
-        "url": "https:\/\/www.joshuachou.ink\/lc76.-minimum-window-substring\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T15:49:43+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  313 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc76.-minimum-window-substring\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T16:24:03+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -119,8 +119,8 @@ Example 1:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">lc76. Minimum Window Substring</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;179 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;313 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -135,6 +135,7 @@ Example 1:
             <li>
               <ul>
                 <li><a href="#解题思路">解题思路</a></li>
+                <li><a href="#answer">Answer</a></li>
               </ul>
             </li>
           </ul>
@@ -195,12 +196,118 @@ Example 1:
 <li><code>s</code> and <code>t</code> consist of uppercase and lowercase English letters.</li>
 </ul>
 <h5 id="解题思路">解题思路</h5>
-</div><div class="post-footer" id="post-footer">
+<p>这道题要求我们返回字符串 s中包含字符串 t 的全部字符的最小窗口，我们利用滑动窗口的思想解决这个问题。因此我们需要两个哈希表，hs哈希表维护的是s字符串中滑动窗口中各个字符出现多少次，ht哈希表维护的是t字符串各个字符出现多少次。如果hs哈希表中包含ht哈希表中的所有字符，并且对应的个数都不小于ht哈希表中各个字符的个数，那么说明当前的窗口是可行的，可行中的长度最短的滑动窗口就是答案。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392480-ABjwBs-image.3mRxFv.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392480-ABjwBs-image.3mRxFv.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392480-ABjwBs-image.3mRxFv.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392480-ABjwBs-image.3mRxFv.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392480-ABjwBs-image.3mRxFv.png"
+        title="image.png" /></p>
+<p>过程如下：</p>
+<p>1、遍历t字符串，用ht哈希表记录t字符串各个字符出现的次数。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-vODlam-file_1626094550107.J0quVF.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-vODlam-file_1626094550107.J0quVF.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-vODlam-file_1626094550107.J0quVF.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-vODlam-file_1626094550107.J0quVF.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-vODlam-file_1626094550107.J0quVF.png"
+        title="&lt;img src=&#34;力扣500题刷题笔记.assets/image-20210710122600263.png&#34; alt=&#34;image-20210710122600263&#34; style=&#34;zoom:67%;&#34; /&gt;" /></p>
+<p>2、定义两个指针j和i，j指针用于收缩窗口，i指针用于延伸窗口，则区间[j,i]表示当前滑动窗口。首先让i和j指针都指向字符串s开头，然后枚举整个字符串s ，枚举过程中，不断增加i使滑动窗口增大，相当于向右扩展滑动窗口。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-FNKtMc-file_1626094550122.WxE42X.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-FNKtMc-file_1626094550122.WxE42X.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-FNKtMc-file_1626094550122.WxE42X.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-FNKtMc-file_1626094550122.WxE42X.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-FNKtMc-file_1626094550122.WxE42X.png"
+        title="&lt;img src=&#34;力扣500题刷题笔记.assets/image-20210710121027770.png&#34; alt=&#34;image-20210710121027770&#34; style=&#34;zoom:67%;&#34; /&gt;" /></p>
+<p>3、每次向右扩展滑动窗口一步，将s[i]加入滑动窗口中，而新加入了s[i]，相当于滑动窗口维护的字符数加一，即hs[s[i]]++。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-RbOYEW-file_1626094550125.ZdlAPi.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-RbOYEW-file_1626094550125.ZdlAPi.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-RbOYEW-file_1626094550125.ZdlAPi.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-RbOYEW-file_1626094550125.ZdlAPi.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1626094551-RbOYEW-file_1626094550125.ZdlAPi.png"
+        title="&lt;img src=&#34;力扣500题刷题笔记.assets/image-20210710122648338.png&#34; alt=&#34;image-20210710122648338&#34; style=&#34;zoom: 67%;&#34; /&gt;" /></p>
+<p>4、对于新加入的字符s[i],如果hs[s[i]] &lt;= ht[s[i]]，说明当前新加入的字符s[i]是必需的，且还未到达字符串t所要求的数量。我们还需要事先定义一个cnt变量， cnt维护的是s字符串[j,i]区间中满足t字符串的元素的个数，记录相对应字符的总数。新加入的字符s[i]必需，则cnt++。</p>
+<p>5、我们向右扩展滑动窗口的同时也不能忘记收缩滑动窗口。因此当hs[s[j]] &gt; ht[s[j]时，说明hs哈希表中s[j]的数量多于ht哈希表中s[j]的数量，此时我们就需要向右收缩滑动窗口，j++并使hs[s[j]]&ndash;，即hs[s[j ++ ]] &ndash;。</p>
+<p>6、当cnt == t.size时，说明此时滑动窗口包含符串 t 的全部字符。我们重复上述过程找到最小窗口即为答案。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392545-pNYyEm-image.pFgkQx.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392545-pNYyEm-image.pFgkQx.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392545-pNYyEm-image.pFgkQx.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392545-pNYyEm-image.pFgkQx.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1627392545-pNYyEm-image.pFgkQx.png"
+        title="image.png" /></p>
+<p>时间复杂度分析： 两个指针都严格递增，最多移动 n 次，所以总时间复杂度是 O(n)。</p>
+<p>作者：lin-shen-shi-jian-lu-k</p>
+<p>链接：https://leetcode-cn.com/problems/minimum-window-substring/solution/leetcode-76-zui-xiao-fu-gai-zi-chuan-cja-lmqz/</p>
+<h5 id="answer">Answer</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">minWindow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">hs</span><span class="p">,</span> <span class="n">ht</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="nb">chr</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ht</span><span class="p">[</span><span class="nb">chr</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">right</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hs</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">hs</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]]</span> <span class="o">&lt;=</span> <span class="n">ht</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]]:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="n">left</span><span class="o">&lt;=</span><span class="n">right</span> <span class="ow">and</span> <span class="n">hs</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]]</span> <span class="o">&gt;</span> <span class="n">ht</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]]:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">hs</span><span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">]]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">cnt</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span> <span class="ow">or</span> <span class="n">right</span><span class="o">-</span><span class="n">left</span><span class="o">+</span><span class="mi">1</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">res</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">:</span><span class="n">right</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">right</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-03-01&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/1c625ba7352f179c85e858de0703b88b69ec890d" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 1c625ba7352f179c85e858de0703b88b69ec890d: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>1c625ba</a></span>
+                <span>Updated on 2022-03-01&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d3c4b1740dcc427d21a27f01f235470bd147730e" target="_blank" title="commit by JoshuaChou(maybechou@live.com) d3c4b1740dcc427d21a27f01f235470bd147730e: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>d3c4b17</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -221,7 +328,7 @@ Example 1:
         </section>
     </div>
 
-    <div class="post-nav"><a href="/lc621.-task-scheduler/" class="prev" rel="prev" title="lc621. Task Scheduler"><i class="fas fa-angle-left fa-fw"></i>lc621. Task Scheduler</a></div>
+    <div class="post-nav"><a href="/lc88.-merge-sorted-array/" class="prev" rel="prev" title="lc88. Merge Sorted Array"><i class="fas fa-angle-left fa-fw"></i>lc88. Merge Sorted Array</a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.

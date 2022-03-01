@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>lc88. Merge Sorted Array - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="lc88. Merge Sorted Array" />
+<meta property="og:description" content="You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.joshuachou.ink/lc88.-merge-sorted-array/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-01T16:24:03+03:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
+
+<meta name="twitter:title" content="lc88. Merge Sorted Array"/>
+<meta name="twitter:description" content="You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m &#43; n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored."/>
+<meta name="application-name" content="Juexiao Zhou">
+<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc88.-merge-sorted-array/" /><link rel="prev" href="https://www.joshuachou.ink/lc621.-task-scheduler/" /><link rel="next" href="https://www.joshuachou.ink/lc76.-minimum-window-substring/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "lc88. Merge Sorted Array",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/lc88.-merge-sorted-array\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "leetcode","wordcount":  373 ,
+        "url": "https:\/\/www.joshuachou.ink\/lc88.-merge-sorted-array\/","datePublished": "2022-03-01T00:00:00+00:00","dateModified": "2022-03-01T16:24:03+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/about/" title="Me">Me</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">lc88. Merge Sorted Array</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;373 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#思路">思路</a></li>
+                <li><a href="#answer">Answer</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
+<p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>
+<p>The final sorted array should not be returned by the function, but instead be <em>stored inside the array</em> <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of <code>m + n</code>, where the first <code>m</code> elements denote the elements that should be merged, and the last <code>n</code> elements are set to <code>0</code> and should be ignored. <code>nums2</code> has a length of <code>n</code>.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+</span></span><span class="line"><span class="cl">Output: [1,2,2,3,5,6]
+</span></span><span class="line"><span class="cl">Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
+</span></span><span class="line"><span class="cl">The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums1 = [1], m = 1, nums2 = [], n = 0
+</span></span><span class="line"><span class="cl">Output: [1]
+</span></span><span class="line"><span class="cl">Explanation: The arrays we are merging are [1] and [].
+</span></span><span class="line"><span class="cl">The result of the merge is [1].
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 3:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums1 = [0], m = 0, nums2 = [1], n = 1
+</span></span><span class="line"><span class="cl">Output: [1]
+</span></span><span class="line"><span class="cl">Explanation: The arrays we are merging are [] and [1].
+</span></span><span class="line"><span class="cl">The result of the merge is [1].
+</span></span><span class="line"><span class="cl">Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Constraints:</strong></p>
+<ul>
+<li><code>nums1.length == m + n</code></li>
+<li><code>nums2.length == n</code></li>
+<li><code>0 &lt;= m, n &lt;= 200</code></li>
+<li><code>1 &lt;= m + n &lt;= 200</code></li>
+<li><code>-109 &lt;= nums1[i], nums2[j] &lt;= 109</code></li>
+</ul>
+<p><strong>Follow up:</strong> Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>
+<h5 id="思路">思路</h5>
+<p>由于nums1的后序数字全为0，并且nums1和nums2都是以升序排列，所以我们可以把两个数组从大到小依次比较，然后插入num1。因为num1和num2中的数字只会遍历一次，因此最终的时间复杂度是O(m+n)。</p>
+<h5 id="answer">Answer</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums1</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">nums2</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums1: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type m: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type nums2: List[int]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type n: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: None Do not return anything, modify nums1 in-place instead.
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">insert</span><span class="o">=-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">m</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">n</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">nums1</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">&gt;</span><span class="n">nums2</span><span class="p">[</span><span class="n">n</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">nums1</span><span class="p">[</span><span class="n">m</span><span class="p">],</span><span class="n">nums1</span><span class="p">[</span><span class="n">insert</span><span class="p">]</span><span class="o">=</span><span class="n">nums1</span><span class="p">[</span><span class="n">insert</span><span class="p">],</span><span class="n">nums1</span><span class="p">[</span><span class="n">m</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="n">m</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">nums1</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">&lt;=</span><span class="n">nums2</span><span class="p">[</span><span class="n">n</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">nums1</span><span class="p">[</span><span class="n">insert</span><span class="p">]</span><span class="o">=</span><span class="n">nums2</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="n">n</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="n">insert</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">n</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nums1</span><span class="p">[</span><span class="n">insert</span><span class="p">]</span><span class="o">=</span><span class="n">nums2</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">n</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="n">insert</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-01&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d3c4b1740dcc427d21a27f01f235470bd147730e" target="_blank" title="commit by JoshuaChou(maybechou@live.com) d3c4b1740dcc427d21a27f01f235470bd147730e: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>d3c4b17</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/lc88.-merge-sorted-array/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array" data-hashtags="leetcode"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-hashtag="leetcode"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/lc88.-merge-sorted-array/" data-title="lc88. Merge Sorted Array"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/lc621.-task-scheduler/" class="prev" rel="prev" title="lc621. Task Scheduler"><i class="fas fa-angle-left fa-fw"></i>lc621. Task Scheduler</a>
+            <a href="/lc76.-minimum-window-substring/" class="next" rel="next" title="lc76. Minimum Window Substring">lc76. Minimum Window Substring<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"url","label":"","lightTheme":"github-light","repo":"JoshuaChou2018/me"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
