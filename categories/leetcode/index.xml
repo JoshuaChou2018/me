@@ -4,6 +4,37 @@
         <link>https://www.joshuachou.ink/categories/leetcode/</link>
         <description>leetcode - Category - Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
+    <title>lc1570. Dot Product of Two Sparse Vectors</title>
+    <link>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</guid>
+    <description><![CDATA[给定两个稀疏向量，计算它们的点积（数量积）。
+实现类 SparseVector：
+SparseVector(nums) 以向量 nums 初始化对象。 dotProduct(vec) 计算此向量与 vec 的点积。 稀疏向量 是指绝大多数分量为 0 的向量。你需要 高效 地存储这个向量，并计算两个稀疏向量的点积。
+进阶：当其中只有一个向量是稀疏向量时，你该如何解决此问题？
+示例 1：
+输入：nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
+输出：8
+解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+v1.dotProduct(v2) = 10 + 03 + 00 + 24 + 3*0 = 8
+示例 2：
+输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
+输出：0
+解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+v1.dotProduct(v2) = 00 + 10 + 00 + 00 + 0*2 = 0]]></description>
+</item><item>
+    <title>lc50. Pow(x, n)</title>
+    <link>https://www.joshuachou.ink/lc50.-powx-n/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc50.-powx-n/</guid>
+    <description><![CDATA[Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+Example 1:
+1 2  Input: x = 2.00000, n = 10 Output: 1024.00000   Example 2:
+1 2  Input: x = 2.10000, n = 3 Output: 9.26100   Example 3:
+1 2 3  Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25   Constraints:]]></description>
+</item><item>
     <title>lc76. Minimum Window Substring</title>
     <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
@@ -87,23 +118,5 @@ Example 1:
     <description><![CDATA[Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
 Example 1:
 1 2 3  Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.   Example 2:]]></description>
-</item><item>
-    <title>lc10. Regular Expression Matching</title>
-    <link>https://www.joshuachou.ink/lc10.regular_expression_matching/</link>
-    <pubDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc10.regular_expression_matching/</guid>
-    <description><![CDATA[Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
- '.' Matches any single character. '*' Matches zero or more of the preceding element.  The matching should cover the entire input string (not partial).
-Example 1:
-1 2 3  Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.   Example 2:]]></description>
-</item><item>
-    <title>lc31. Next Permutation</title>
-    <link>https://www.joshuachou.ink/lc31.next_permutation/</link>
-    <pubDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc31.next_permutation/</guid>
-    <description><![CDATA[A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
- For example, for arr = [1,2,3], the following are considered permutations of arr: [1,2,3], [1,3,2], [3,1,2], [2,3,1].  The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container.]]></description>
 </item></channel>
 </rss>

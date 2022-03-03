@@ -30,6 +30,7 @@
     <a href="https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf">pdf</a>
   </li>
+  <br>
   <li>
     <font color=blue>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.</font> 
     <br>	
@@ -177,5 +178,4 @@
   </li>
   <br>
 </ol>
-
 

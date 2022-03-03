@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.93.0" />
+	<meta name="generator" content="Hugo 0.93.1" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -102,26 +102,34 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/lc938.range_sum_of_bst/">lc938. Range Sum of BST</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-03">2022-02-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
+Example 1:
+1 2 3  Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.   Example 2:</div><div class="post-footer">
+        <a href="/lc938.range_sum_of_bst/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">搭建Time Machine 服务器 （转载）</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-29">2022-01-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">本文转载自：https://zhuanlan.zhihu.com/p/31088141
+本文的内容分为：
+ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 软件的部署 Mac 备份到Time Machine 服务器 从Time Machine 服务器恢复Mac  Time Machine 是什么？ Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
+ 本地快照（只要空间允许） 过去24小时的每小时备份 过去一个月的每日备份 过去所有月份的每周备份  Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。
+引用知友
+@Xing
+在OS X 中的 Time Machine 真的有用吗？中的回答：
+ 只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
+ 使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
+自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
+ 使用一块外置的USB移动硬盘，要求文件系统是HFS+。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。  方法1.</div><div class="post-footer">
+        <a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc10.regular_expression_matching/">lc10. Regular Expression Matching</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
  '.' Matches any single character. '*' Matches zero or more of the preceding element.  The matching should cover the entire input string (not partial).
 Example 1:
 1 2 3  Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.   Example 2:</div><div class="post-footer">
         <a href="/lc10.regular_expression_matching/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc31.next_permutation/">lc31. Next Permutation</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
- For example, for arr = [1,2,3], the following are considered permutations of arr: [1,2,3], [1,3,2], [3,1,2], [2,3,1].  The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container.</div><div class="post-footer">
-        <a href="/lc31.next_permutation/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc56.merge_intervals/">lc56. Merge Intervals</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
-Example 1:
-1 2 3  Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].   Example 2:
-1 2 3  Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4] and [4,5] are considered overlapping.</div><div class="post-footer">
-        <a href="/lc56.merge_intervals/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

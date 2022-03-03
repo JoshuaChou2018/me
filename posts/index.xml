@@ -4,6 +4,37 @@
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>lc1570. Dot Product of Two Sparse Vectors</title>
+    <link>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</guid>
+    <description><![CDATA[给定两个稀疏向量，计算它们的点积（数量积）。
+实现类 SparseVector：
+SparseVector(nums) 以向量 nums 初始化对象。 dotProduct(vec) 计算此向量与 vec 的点积。 稀疏向量 是指绝大多数分量为 0 的向量。你需要 高效 地存储这个向量，并计算两个稀疏向量的点积。
+进阶：当其中只有一个向量是稀疏向量时，你该如何解决此问题？
+示例 1：
+输入：nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
+输出：8
+解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+v1.dotProduct(v2) = 10 + 03 + 00 + 24 + 3*0 = 8
+示例 2：
+输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
+输出：0
+解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
+v1.dotProduct(v2) = 00 + 10 + 00 + 00 + 0*2 = 0]]></description>
+</item><item>
+    <title>lc50. Pow(x, n)</title>
+    <link>https://www.joshuachou.ink/lc50.-powx-n/</link>
+    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/lc50.-powx-n/</guid>
+    <description><![CDATA[Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+Example 1:
+1 2  Input: x = 2.00000, n = 10 Output: 1024.00000   Example 2:
+1 2  Input: x = 2.10000, n = 3 Output: 9.26100   Example 3:
+1 2 3  Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25   Constraints:]]></description>
+</item><item>
     <title>lc76. Minimum Window Substring</title>
     <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
@@ -204,28 +235,5 @@ You must solve the problem without using any built-in library for handling large
 Example 1:
 1 2  Input: num1 = &#34;11&#34;, num2 = &#34;123&#34; Output: &#34;134&#34;   Example 2:
 1 2  Input: num1 = &#34;456&#34;, num2 = &#34;77&#34; Output: &#34;533&#34;   Example 3:]]></description>
-</item><item>
-    <title>lc560. Subarray Sum Equals K</title>
-    <link>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</link>
-    <pubDate>Tue, 25 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc560.subarray_sum_equals_k/</guid>
-    <description><![CDATA[Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
-Example 1:
-1 2  Input: nums = [1,1,1], k = 2 Output: 2   Example 2:
-1 2  Input: nums = [1,2,3], k = 3 Output: 2   Constraints:
- 1 &lt;= nums.length &lt;= 2 * 104 -1000 &lt;= nums[i] &lt;= 1000 -107 &lt;= k &lt;= 107  解题思路： 累积和（使用数组）]]></description>
-</item><item>
-    <title>lc301. Remove Invalid Parentheses</title>
-    <link>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</link>
-    <pubDate>Thu, 20 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc301.remove_invalid_parentheses/</guid>
-    <description><![CDATA[Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
-Return all the possible results. You may return the answer in any order.
-Example 1:
-1 2  Input: s = &#34;()())()&#34; Output: [&#34;(())()&#34;,&#34;()()()&#34;]   Example 2:
-1 2  Input: s = &#34;(a)())()&#34; Output: [&#34;(a())()&#34;,&#34;(a)()()&#34;]   Example 3:
-1 2  Input: s = &#34;)(&#34; Output: [&#34;&#34;]   Constraints:]]></description>
 </item></channel>
 </rss>
