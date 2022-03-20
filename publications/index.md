@@ -4,6 +4,20 @@
 
 <ol reversed>
   <li>
+    <font color=blue>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.</font> 
+    <br>	
+    Longxi Zhou*, Xianglin Meng*, Yuxin Huang*, Kai Kang*, <b>Juexiao Zhou</b>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao.
+    <br>
+    <i><b>Nature machine intelligence</b></i>
+    <br>
+    <b>Accepted</b>
+    <br>
+    <b>Access: </b>
+    <a href="">online</a>, 
+    <a href="">pdf</a>
+  </li>
+  <br>
+  <li>
     <font color=blue>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.</font> 
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao.
@@ -134,6 +148,7 @@
 
 
 
+
 ## Preprint or under review
 
 <ol reversed>
@@ -162,14 +177,6 @@
   </li>
   <br>
   <li>
-    <font color=blue>Seeing the Unseen: Discovering Interpretable Sub-Visual Abnormalities in CT Scans of COVID-19 Patients and Survivors by Deep Learning.</font> 
-    <br>	
-    Longxi Zhou*, Xianglin Meng*, Yuxin Huang*, Kai Kang, <b>Juexiao Zhou</b>, Yuetan Chu , Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohuag Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu and Xin Gao. 
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=blue>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.</font> 
     <br>	
     Haoyang Li, Hanmin Li, <b>Juexiao Zhou</b> and Xin Gao.
@@ -178,4 +185,5 @@
   </li>
   <br>
 </ol>
+
 

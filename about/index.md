@@ -159,6 +159,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 |                      ICMLA2021                      |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
 |                     MICCAI2020                      |        1         |
+|                     SIGKDD2022                      |        2         |
 
 <br>
 
