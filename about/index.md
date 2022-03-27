@@ -24,8 +24,6 @@ Email: juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
 
 Wechat: JoshuaChou666
 
-QQ: 414816433
-
  [CV](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
@@ -144,6 +142,17 @@ Please check [here](https://www.joshuachou.ink/publications/)
 ### **Membership**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
+
+<br>
+
+
+
+### **Talks**
+
+- PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
+	- CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
+- PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
+	- BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
 
 <br>
 
