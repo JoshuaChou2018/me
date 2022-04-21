@@ -184,6 +184,14 @@
     <i><b>under review.</b></i>
   </li>
   <br>
+  <li>
+    <font color=blue>APAIQ identifies and quantifies alternative polyadenylation from RNA-seq data.</font> 
+    <br>	
+    Yongkang Long*, Bin Zhang*, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An, Ying Xu, Yvonne Tay, Wei Chen, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
 </ol>
 
 
