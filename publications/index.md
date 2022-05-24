@@ -10,11 +10,11 @@
     <br>
     <i><b>Nature machine intelligence</b></i>
     <br>
-    <b>Accepted</b>
+    <b>DOI: 10.1038/s42256-022-00483-7</b>
     <br>
     <b>Access: </b>
-    <a href="">online</a>, 
-    <a href="">pdf</a>
+    <a href="https://www.nature.com/articles/s42256-022-00483-7">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -149,6 +149,7 @@
 
 
 
+
 ## Preprint or under review
 
 <ol reversed>
@@ -193,5 +194,4 @@
   </li>
   <br>
 </ol>
-
 
