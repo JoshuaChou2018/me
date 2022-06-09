@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://www.joshuachou.ink/check-swap/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/lc50.-powx-n/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/lc76.-minimum-window-substring/</loc><lastmod>2022-03-01T16:24:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -50,12 +51,15 @@
             <loc>https://www.joshuachou.ink/miniserver/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/i1.sort-1-million/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/publish-package-on-conda/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2022-06-09T11:19:11&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/leetcode/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/leetcode/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2022-03-03T13:57:18&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/federated-learning/</loc><lastmod>2022-02-08T16:17:08&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/machine-learning/</loc><lastmod>2022-02-08T16:17:08&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/neurips/</loc><lastmod>2022-02-08T16:17:08&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -64,9 +68,6 @@
             <loc>https://www.joshuachou.ink/tags/ieee/</loc><lastmod>2022-02-08T16:17:08&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/paper/</loc><lastmod>2022-02-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/paper/</loc><lastmod>2022-02-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2022-02-19T16:27:39&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2022-02-19T16:27:39&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2022-02-19T16:27:39&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/database/</loc><lastmod>2022-01-02T22:28:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/database/</loc><lastmod>2022-01-02T22:28:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/nmi/</loc><lastmod>2022-01-02T17:41:40&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

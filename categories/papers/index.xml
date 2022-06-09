@@ -12,11 +12,11 @@
     <description><![CDATA[Title: Personalized Federated Learning: A Meta-Learning Approach
 INFO: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)
 研究背景 目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。
- However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
- 但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
- This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
- 在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
- In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
+However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
+但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
+This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
+在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
+In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
 </item><item>
     <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
     <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
@@ -38,6 +38,6 @@ DOI: https://doi.org/10.1038/s42256-021-00409-9
 INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
 发表周期: Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
 药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
- One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
+One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
 </item></channel>
 </rss>

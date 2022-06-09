@@ -8,7 +8,7 @@
         <title>安装Python导致VNC黑屏解决方案 - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="安装Python导致VNC黑屏解决方案" />
 <meta property="og:description" content="问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
 解决方案：
-1 2 3 4 5 6 7 8 9  $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base   " />
+1 2 3 4 5 6 7 8 9 $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-11-14T00:00:00+00:00" />
@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="安装Python导致VNC黑屏解决方案"/>
 <meta name="twitter:description" content="问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
 解决方案：
-1 2 3 4 5 6 7 8 9  $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base   "/>
+1 2 3 4 5 6 7 8 9 $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base "/>
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

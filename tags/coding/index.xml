@@ -11,9 +11,9 @@
     <guid>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</guid>
     <description><![CDATA[Given a string s, find the length of the longest substring without repeating characters.
 Example 1:
-1 2 3  Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3.   Example 2:
-1 2 3  Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1.   Example 3:
-1 2 3 4  Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
+1 2 3 Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Example 2:
+1 2 3 Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Example 3:
+1 2 3 4 Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
 </item><item>
     <title>lc2.Add Two Numbers</title>
     <link>https://www.joshuachou.ink/lc2.add2numbers/</link>
@@ -23,6 +23,6 @@ Example 1:
     <description><![CDATA[You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 Example 1:
-1 2 3  Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
+1 2 3 Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
 </item></channel>
 </rss>

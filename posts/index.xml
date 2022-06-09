@@ -3,7 +3,14 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Check SWAP</title>
+    <link>https://www.joshuachou.ink/check-swap/</link>
+    <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/check-swap/</guid>
+    <description><![CDATA[ Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} ]]></description>
+</item><item>
     <title>lc1570. Dot Product of Two Sparse Vectors</title>
     <link>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
@@ -31,9 +38,10 @@ v1.dotProduct(v2) = 00 + 10 + 00 + 00 + 0*2 = 0]]></description>
     <guid>https://www.joshuachou.ink/lc50.-powx-n/</guid>
     <description><![CDATA[Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 Example 1:
-1 2  Input: x = 2.00000, n = 10 Output: 1024.00000   Example 2:
-1 2  Input: x = 2.10000, n = 3 Output: 9.26100   Example 3:
-1 2 3  Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25   Constraints:]]></description>
+1 2 Input: x = 2.00000, n = 10 Output: 1024.00000 Example 2:
+1 2 Input: x = 2.10000, n = 3 Output: 9.26100 Example 3:
+1 2 3 Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25 Constraints:
+-100.0 &lt; x &lt; 100.0 -231 &lt;= n &lt;= 231-1 -104 &lt;= xn &lt;= 104 思路 ]]></description>
 </item><item>
     <title>lc76. Minimum Window Substring</title>
     <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
@@ -44,7 +52,7 @@ Example 1:
 The testcases will be generated such that the answer is unique.
 A substring is a contiguous sequence of characters within the string.
 Example 1:
-1 2 3  Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.]]></description>
+1 2 3 Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.]]></description>
 </item><item>
     <title>lc88. Merge Sorted Array</title>
     <link>https://www.joshuachou.ink/lc88.-merge-sorted-array/</link>
@@ -71,8 +79,9 @@ However, there is a non-negative integer n that represents the cooldown period b
     <description><![CDATA[Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 Notice that the solution set must not contain duplicate triplets.
 Example 1:
-1 2  Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]]   Example 2:
-1 2  Input: nums = [] Output: []   Example 3:]]></description>
+1 2 Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Example 2:
+1 2 Input: nums = [] Output: [] Example 3:
+1 2 Input: nums = [0] Output: [] Constraints:]]></description>
 </item><item>
     <title>lc297. Serialize and Deserialize Binary Tree</title>
     <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
@@ -90,8 +99,9 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
     <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).
 If two nodes are in the same row and column, the order should be from left to right.
 Example 1:
-1 2  Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]]   Example 2:
-1 2  Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]]   Example 3:]]></description>
+1 2 Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]] Example 2:
+1 2 Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]] Example 3:
+1 2 Input: root = [3,9,8,4,0,1,7,null,null,null,2,5] Output: [[4],[9,5],[3,0,1],[8,2],[7]] Constraints:]]></description>
 </item><item>
     <title>[NeurIPS] Personalized Federated Learning: A Meta-Learning Approach解读</title>
     <link>https://www.joshuachou.ink/neurips-personalized-federated-learning-a-meta-learning-approach/</link>
@@ -101,11 +111,11 @@ Example 1:
     <description><![CDATA[Title: Personalized Federated Learning: A Meta-Learning Approach
 INFO: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)
 研究背景 目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。
- However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
- 但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
- This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
- 在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
- In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
+However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
+但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
+This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
+在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
+In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
 </item><item>
     <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
     <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
@@ -148,7 +158,7 @@ because, because of, as, since, owing to, due to, thanks to, for this reason]]><
 解题思路 我们可以想象把这些interval给叠起来，所需要会议室的最小数量就等于最大重叠的interval的数目。
 转化为上下车问题，每个interval的开始时间+1，每个interval的结束时间-1，然后我们统计counter的最大数值。
 换个思路就是我们以时间为单位，我们可以知道每个单位时间车上的总人数是增加多少还是减少多少，这样我们可以直接求和从开始扫描到结束，获取当前车上最大的人数就可以。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23  class Solution(object): def minMeetingRooms(self, intervals): &#34;&#34;&#34; :type intervals: List[List[int]] :rtype: int &#34;&#34;&#34; dic={} for interval in intervals: try: dic[interval[0]]+=1 except: dic[interval[0]]=1 try: dic[interval[1]]-=1 except: dic[interval[1]]=-1 max_=0 count=0 for key in sorted(dic.]]></description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 class Solution(object): def minMeetingRooms(self, intervals): &#34;&#34;&#34; :type intervals: List[List[int]] :rtype: int &#34;&#34;&#34; dic={} for interval in intervals: try: dic[interval[0]]+=1 except: dic[interval[0]]=1 try: dic[interval[1]]-=1 except: dic[interval[1]]=-1 max_=0 count=0 for key in sorted(dic.]]></description>
 </item><item>
     <title>lc938. Range Sum of BST</title>
     <link>https://www.joshuachou.ink/lc938.range_sum_of_bst/</link>
@@ -157,7 +167,7 @@ because, because of, as, since, owing to, due to, thanks to, for this reason]]><
     <guid>https://www.joshuachou.ink/lc938.range_sum_of_bst/</guid>
     <description><![CDATA[Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
 Example 1:
-1 2 3  Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.   Example 2:]]></description>
+1 2 3 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32. Example 2:]]></description>
 </item><item>
     <title>搭建Time Machine 服务器 （转载）</title>
     <link>https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/</link>
@@ -166,15 +176,16 @@ Example 1:
     <guid>https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/</guid>
     <description><![CDATA[本文转载自：https://zhuanlan.zhihu.com/p/31088141
 本文的内容分为：
- Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 软件的部署 Mac 备份到Time Machine 服务器 从Time Machine 服务器恢复Mac  Time Machine 是什么？ Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
- 本地快照（只要空间允许） 过去24小时的每小时备份 过去一个月的每日备份 过去所有月份的每周备份  Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。
+Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 软件的部署 Mac 备份到Time Machine 服务器 从Time Machine 服务器恢复Mac Time Machine 是什么？ Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
+本地快照（只要空间允许） 过去24小时的每小时备份 过去一个月的每日备份 过去所有月份的每周备份 Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。
 引用知友
 @Xing
 在OS X 中的 Time Machine 真的有用吗？中的回答：
- 只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
- 使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
+只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
+使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
- 使用一块外置的USB移动硬盘，要求文件系统是HFS+。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。  方法1.]]></description>
+使用一块外置的USB移动硬盘，要求文件系统是HFS+。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。]]></description>
 </item><item>
     <title>lc10. Regular Expression Matching</title>
     <link>https://www.joshuachou.ink/lc10.regular_expression_matching/</link>
@@ -182,9 +193,10 @@ Example 1:
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc10.regular_expression_matching/</guid>
     <description><![CDATA[Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
- '.' Matches any single character. '*' Matches zero or more of the preceding element.  The matching should cover the entire input string (not partial).
+'.' Matches any single character. '*' Matches zero or more of the preceding element. The matching should cover the entire input string (not partial).
 Example 1:
-1 2 3  Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.   Example 2:]]></description>
+1 2 3 Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;. Example 2:
+1 2 3 Input: s = &#34;aa&#34;, p = &#34;a*&#34; Output: true Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;.]]></description>
 </item><item>
     <title>lc31. Next Permutation</title>
     <link>https://www.joshuachou.ink/lc31.next_permutation/</link>
@@ -192,7 +204,7 @@ Example 1:
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc31.next_permutation/</guid>
     <description><![CDATA[A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
- For example, for arr = [1,2,3], the following are considered permutations of arr: [1,2,3], [1,3,2], [3,1,2], [2,3,1].  The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container.]]></description>
+For example, for arr = [1,2,3], the following are considered permutations of arr: [1,2,3], [1,3,2], [3,1,2], [2,3,1]. The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container.]]></description>
 </item><item>
     <title>lc56. Merge Intervals</title>
     <link>https://www.joshuachou.ink/lc56.merge_intervals/</link>
@@ -201,8 +213,8 @@ Example 1:
     <guid>https://www.joshuachou.ink/lc56.merge_intervals/</guid>
     <description><![CDATA[Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 Example 1:
-1 2 3  Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].   Example 2:
-1 2 3  Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4] and [4,5] are considered overlapping.]]></description>
+1 2 3 Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Example 2:
+1 2 3 Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4] and [4,5] are considered overlapping.]]></description>
 </item><item>
     <title>lc125. Valid Palindrome</title>
     <link>https://www.joshuachou.ink/lc125.valid_palindrome/</link>
@@ -212,7 +224,7 @@ Example 1:
     <description><![CDATA[A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 Given a string s, return true if it is a palindrome, or false otherwise.
 Example 1:
-1 2 3  Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome.   Example 2:]]></description>
+1 2 3 Input: s = &#34;A man, a plan, a canal: Panama&#34; Output: true Explanation: &#34;amanaplanacanalpanama&#34; is a palindrome. Example 2:]]></description>
 </item><item>
     <title>lc238. Product of Array Except Self</title>
     <link>https://www.joshuachou.ink/lc238._product_of_array_except_self/</link>
@@ -223,17 +235,6 @@ Example 1:
 The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 You must write an algorithm that runs in O(n) time and without using the division operation.
 Example 1:
-1 2  Input: nums = [1,2,3,4] Output: [24,12,8,6]   Example 2:]]></description>
-</item><item>
-    <title>lc415. Add Strings</title>
-    <link>https://www.joshuachou.ink/lc415.add_strings/</link>
-    <pubDate>Wed, 26 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc415.add_strings/</guid>
-    <description><![CDATA[Given two non-negative integers, num1 and num2 represented as string, return the sum of num1and num2 as a string.
-You must solve the problem without using any built-in library for handling large integers (such as BigInteger). You must also not convert the inputs to integers directly.
-Example 1:
-1 2  Input: num1 = &#34;11&#34;, num2 = &#34;123&#34; Output: &#34;134&#34;   Example 2:
-1 2  Input: num1 = &#34;456&#34;, num2 = &#34;77&#34; Output: &#34;533&#34;   Example 3:]]></description>
+1 2 Input: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:]]></description>
 </item></channel>
 </rss>
