@@ -5,32 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Check SWAP - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="Check SWAP" />
-<meta property="og:description" content=" Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a&#43;$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} " />
+        <title>Automatically Sort Data in Google Sheets - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="Automatically Sort Data in Google Sheets" />
+<meta property="og:description" content="Automatically Sort Data in Google Sheets
+Extension -&gt; Apps script
+1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/check-swap/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-06-09T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-06-09T11:19:11+03:00" />
+<meta property="og:url" content="https://www.joshuachou.ink/googlesheetautomaticsort/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-01T14:09:58+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
 
-<meta name="twitter:title" content="Check SWAP"/>
-<meta name="twitter:description" content=" Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a&#43;$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} "/>
+<meta name="twitter:title" content="Automatically Sort Data in Google Sheets"/>
+<meta name="twitter:description" content="Automatically Sort Data in Google Sheets
+Extension -&gt; Apps script
+1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } "/>
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/check-swap/" /><link rel="prev" href="https://www.joshuachou.ink/xcode-select/" /><link rel="next" href="https://www.joshuachou.ink/googlesheetautomaticsort/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/googlesheetautomaticsort/" /><link rel="prev" href="https://www.joshuachou.ink/check-swap/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Check SWAP",
+        "headline": "Automatically Sort Data in Google Sheets",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/www.joshuachou.ink\/check-swap\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "system, linux","wordcount":  39 ,
-        "url": "https:\/\/www.joshuachou.ink\/check-swap\/","datePublished": "2022-06-09T00:00:00+00:00","dateModified": "2022-06-09T11:19:11+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/www.joshuachou.ink\/googlesheetautomaticsort\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "system, linux","wordcount":  44 ,
+        "url": "https:\/\/www.joshuachou.ink\/googlesheetautomaticsort\/","datePublished": "2022-07-01T00:00:00+00:00","dateModified": "2022-07-01T14:09:58+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -109,9 +113,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Check SWAP</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Automatically Sort Data in Google Sheets</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-06-09">2022-06-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;39 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-07-01">2022-07-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;44 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -119,43 +123,49 @@
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><ol>
-<li><strong>Check SWAP used by differnt PID</strong></li>
-</ol>
+            </div><div class="content" id="content"><p>Automatically Sort Data in Google Sheets</p>
+<p><strong>Extension -&gt; Apps script</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol start="2">
-<li><strong>Get the information about the PID</strong></li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ps aux | grep ${pid}
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">function autoSort(e) {
+</span></span><span class="line"><span class="cl">  const ss = SpreadsheetApp.getActiveSpreadsheet()
+</span></span><span class="line"><span class="cl">  const ws = ss.getSheetByName(&#34;Sheet1&#34;)
+</span></span><span class="line"><span class="cl">  const range = ws.getRange(2,1,ws.getLastRow()-1,2)
+</span></span><span class="line"><span class="cl">  range.sort({column: 2, ascending: false})
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">function onEdit(e){
+</span></span><span class="line"><span class="cl">  autoSort(e)
+</span></span><span class="line"><span class="cl">}
 </span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-06-09&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/e9c3901004f0bdb6e01622bd79285fa37ecbd30f" target="_blank" title="commit by JoshuaChou(maybechou@live.com) e9c3901004f0bdb6e01622bd79285fa37ecbd30f: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>e9c3901</a></span>
+                <span>Updated on 2022-07-01&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d5313a501e0441298c0c0549b199cbeeb54efbdf" target="_blank" title="commit by JoshuaChou(maybechou@live.com) d5313a501e0441298c0c0549b199cbeeb54efbdf: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>d5313a5</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/check-swap/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/googlesheetautomaticsort/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP" data-hashtags="system,linux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/check-swap/" data-hashtag="system"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/check-swap/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/check-swap/" data-title="Check SWAP"><i class="fab fa-evernote fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets" data-hashtags="system,linux"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-hashtag="system"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/googlesheetautomaticsort/" data-title="Automatically Sort Data in Google Sheets"><i class="fab fa-evernote fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -167,8 +177,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/xcode-select/" class="prev" rel="prev" title="xcode-select"><i class="fas fa-angle-left fa-fw"></i>xcode-select</a>
-            <a href="/googlesheetautomaticsort/" class="next" rel="next" title="Automatically Sort Data in Google Sheets">Automatically Sort Data in Google Sheets<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/check-swap/" class="prev" rel="prev" title="Check SWAP"><i class="fas fa-angle-left fa-fw"></i>Check SWAP</a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.

@@ -3,13 +3,31 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>Automatically Sort Data in Google Sheets</title>
+    <link>https://www.joshuachou.ink/googlesheetautomaticsort/</link>
+    <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/googlesheetautomaticsort/</guid>
+    <description><![CDATA[Automatically Sort Data in Google Sheets
+Extension -&gt; Apps script
+1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } ]]></description>
+</item><item>
     <title>Check SWAP</title>
     <link>https://www.joshuachou.ink/check-swap/</link>
     <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/check-swap/</guid>
     <description><![CDATA[ Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} ]]></description>
+</item><item>
+    <title>xcode-select</title>
+    <link>https://www.joshuachou.ink/xcode-select/</link>
+    <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/xcode-select/</guid>
+    <description><![CDATA[显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
+解决方案：
+1 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer ]]></description>
 </item><item>
     <title>搭建Time Machine 服务器 （转载）</title>
     <link>https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/</link>
@@ -84,26 +102,5 @@ The reason of this problem is that when you click the temp scene created by the 
 Set uPic host to Github
 The default host is SMMS
 Set Typora uploading to uPic]]></description>
-</item><item>
-    <title>How to ignore upper and lower case when using Tab in Ubuntu</title>
-    <link>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</link>
-    <pubDate>Fri, 05 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/how-to-ignore-upperlower-case-with-tab-in-ubuntu/</guid>
-    <description><![CDATA[Mofidy .inputrc
-1 sudo vi ~/.inputrc Add this line
-1 set completion-ignore-case on Restart your terminal
-Now you can ignore the upper and lower case when you use Tab in terminal]]></description>
-</item><item>
-    <title>How to set autocomplete in Ubuntu</title>
-    <link>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</link>
-    <pubDate>Thu, 04 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/how-to-set-autocomplete-in-ubuntu/</guid>
-    <description><![CDATA[Mofidy bash.bashrc
-1 sudo vi /etc/bash.bashrc Find those code in the file
-1 2 3 4 5 6 7 8 #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi Remove #
-Like below:
-1 2 3 4 5 6 7 8 #enable bash completion in interactive shells if !]]></description>
 </item></channel>
 </rss>
