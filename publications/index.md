@@ -154,6 +154,15 @@
 
 <ol reversed>
   <li>
+    <font color=blue>Antibody library design with transformer and deep reinforcement learning
+</font> 
+    <br>	
+    Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Lu Zhang and Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=blue>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data</font> 
     <br>	
     <b>Juexiao Zhou</b>*, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
@@ -194,4 +203,5 @@
   </li>
   <br>
 </ol>
+
 
