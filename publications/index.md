@@ -154,6 +154,15 @@
 
 <ol reversed>
   <li>
+    <font color=blue>Application of Deep Learning in Understanding Gene Expression Regulation
+</font> 
+    <br>	
+    Zhongxiao Li, Elva Gao, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=blue>Antibody library design with transformer and deep reinforcement learning
 </font> 
     <br>	
