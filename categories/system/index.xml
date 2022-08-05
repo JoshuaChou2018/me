@@ -3,7 +3,16 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>linux删除百万级别文件</title>
+    <link>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</link>
+    <pubDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</guid>
+    <description><![CDATA[在运行任务时，往linux的同一个文件夹中写入超过500万个文件，导致在硬盘还有空间的情况下，在该文件夹下无法继续写入文件，也无法使用ls、rm等命令。记录处理过程。
+Background: physical server, about two years old, 7200-RPM SATA drives connected to a 3Ware RAID card, ext3 FS mounted noatime and data=ordered, not under crazy load, kernel 2.6.18-92.1.22.el5, uptime 545 days. Directory doesn&rsquo;t contain any subdirectories, just millions of small (~100 byte) files, with some larger (a few KB) ones.
+We have a server that has gone a bit cuckoo over the course of the last few months, but we only noticed it the other day when it started being unable to write to a directory due to it containing too many files.]]></description>
+</item><item>
     <title>Automatically Sort Data in Google Sheets</title>
     <link>https://www.joshuachou.ink/googlesheetautomaticsort/</link>
     <pubDate>Fri, 01 Jul 2022 00:00:00 &#43;0000</pubDate>
@@ -91,16 +100,5 @@ The reason of this problem is that when you click the temp scene created by the 
     <description><![CDATA[问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
 解决方案：
 1 2 3 4 5 6 7 8 9 $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base ]]></description>
-</item><item>
-    <title>typora &amp; uPic &amp; Github image hosting service</title>
-    <link>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</link>
-    <pubDate>Sun, 07 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/typora-upic-github-image-hosting-service/</guid>
-    <description><![CDATA[MacOS install uPic
-1 brew install uPic Set uPic
-Set uPic host to Github
-The default host is SMMS
-Set Typora uploading to uPic]]></description>
 </item></channel>
 </rss>
