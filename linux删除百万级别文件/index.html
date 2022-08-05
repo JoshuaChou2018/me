@@ -33,7 +33,7 @@ We have a server that has gone a bit cuckoo over the course of the last few mont
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "system, linux","wordcount":  757 ,
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "system, linux","wordcount":  1031 ,
         "url": "https:\/\/www.joshuachou.ink\/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6\/","datePublished": "2022-08-05T00:00:00+00:00","dateModified": "2022-08-05T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
@@ -115,8 +115,8 @@ We have a server that has gone a bit cuckoo over the course of the last few mont
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">linux删除百万级别文件</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-05">2022-08-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;757 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-05">2022-08-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1031 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -203,6 +203,164 @@ done )</p>
 </div>
 </div><p>So, three million files deleted in a bit over four hours.</p>
 <p>Source: <a href="https://serverfault.com/questions/183821/rm-on-a-directory-with-millions-of-files" target="_blank" rel="noopener noreffer">kernel - rm on a directory with millions of files - Server Fault</a></p>
+<p>最终解决方案：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">export i=0; while [ true ]; do ls -1 -f --ignore &#39;.&#39; --ignore &#39;..&#39;| head -n 1000 | xargs rm -f ; export i=$(($i+1000)); echo “$i…”; done
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rsync -a --delete empty_dir/ pdb_files_split
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Linux 下删除大量文件效率对比</p>
+<p>首先建立50万个文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">test</span>   <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">$</span><span class="p">(</span><span class="nx">seq</span> <span class="mi">1</span> <span class="mi">500000</span><span class="p">);</span><span class="k">do</span> <span class="nx">echo</span> <span class="nx">text</span> <span class="o">&gt;&gt;</span><span class="nx">$i</span><span class="p">.</span><span class="nx">txt</span><span class="p">;</span><span class="nx">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>rm删除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">time</span> <span class="nx">rm</span> <span class="o">-</span><span class="nx">f</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="nx">zsh</span><span class="o">:</span> <span class="nx">sure</span> <span class="nx">you</span> <span class="nx">want</span> <span class="nx">to</span> <span class="k">delete</span> <span class="nx">all</span> <span class="nx">the</span> <span class="nx">files</span> <span class="k">in</span> <span class="err">/home/hungerr/test [yn]? y</span>
+</span></span><span class="line"><span class="cl"><span class="nx">zsh</span><span class="o">:</span> <span class="nx">argument</span> <span class="nx">list</span> <span class="nx">too</span> <span class="kr">long</span><span class="o">:</span> <span class="nx">rm</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rm</span> <span class="o">-</span><span class="nx">f</span> <span class="o">*</span>  <span class="mf">3.63</span><span class="nx">s</span> <span class="nx">user</span> <span class="mf">0.29</span><span class="nx">s</span> <span class="nx">system</span> <span class="mi">98</span><span class="o">%</span> <span class="nx">cpu</span> <span class="mf">3.985</span> <span class="nx">total</span>
+</span></span><span class="line"><span class="cl"><span class="nx">由于文件数量过多</span><span class="err">，</span><span class="nx">rm不起作用</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>find删除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">time</span> <span class="nx">find</span> <span class="p">.</span><span class="o">/</span> <span class="o">-</span><span class="nx">type</span> <span class="nx">f</span> <span class="o">-</span><span class="nx">exec</span> <span class="nx">rm</span> <span class="p">{}</span> <span class="err">\</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">find</span> <span class="p">.</span><span class="o">/</span> <span class="o">-</span><span class="nx">type</span> <span class="nx">f</span> <span class="o">-</span><span class="nx">exec</span> <span class="nx">rm</span> <span class="p">{}</span> <span class="err">\</span><span class="p">;</span>  <span class="mf">49.86</span><span class="nx">s</span> <span class="nx">user</span> <span class="mf">1032.13</span><span class="nx">s</span> <span class="nx">system</span> <span class="mi">41</span><span class="o">%</span> <span class="nx">cpu</span> <span class="mi">43</span><span class="o">:</span><span class="mf">19.17</span> <span class="nx">total</span>
+</span></span><span class="line"><span class="cl"><span class="nx">大概43分钟</span><span class="p">,</span><span class="nx">我的电脑</span><span class="err">。。。。。。</span><span class="nx">边看视频边删的</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>复制</p>
+<p><strong>find with delete</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">time</span> <span class="nx">find</span> <span class="p">.</span><span class="o">/</span> <span class="o">-</span><span class="nx">type</span> <span class="nx">f</span> <span class="o">-</span><span class="k">delete</span>
+</span></span><span class="line"><span class="cl"><span class="nx">find</span> <span class="p">.</span><span class="o">/</span> <span class="o">-</span><span class="nx">type</span> <span class="nx">f</span> <span class="o">-</span><span class="k">delete</span>  <span class="mf">0.43</span><span class="nx">s</span> <span class="nx">user</span> <span class="mf">11.21</span><span class="nx">s</span> <span class="nx">system</span> <span class="mi">2</span><span class="o">%</span> <span class="nx">cpu</span> <span class="mi">9</span><span class="o">:</span><span class="mf">13.38</span> <span class="nx">total</span>
+</span></span><span class="line"><span class="cl"><span class="nx">用时9分钟</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>rsync删除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="err">#</span> <span class="nx">首先建立空文件夹blanktest</span>
+</span></span><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">time</span> <span class="nx">rsync</span> <span class="o">-</span><span class="nx">a</span> <span class="o">--</span><span class="k">delete</span> <span class="nx">blanktest</span><span class="o">/</span> <span class="nx">test</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rsync</span> <span class="o">-</span><span class="nx">a</span> <span class="o">--</span><span class="k">delete</span> <span class="nx">blanktest</span><span class="o">/</span> <span class="nx">test</span><span class="o">/</span>  <span class="mf">0.59</span><span class="nx">s</span> <span class="nx">user</span> <span class="mf">7.86</span><span class="nx">s</span> <span class="nx">system</span> <span class="mi">51</span><span class="o">%</span> <span class="nx">cpu</span> <span class="mf">16.418</span> <span class="nx">total</span>
+</span></span><span class="line"><span class="cl"><span class="mi">16</span><span class="nx">s</span><span class="err">，</span><span class="nx">很好很强大</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Python删除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">os</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">timeit</span>
+</span></span><span class="line"><span class="cl"><span class="nx">def</span> <span class="nx">main</span><span class="p">()</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">pathname</span><span class="p">,</span><span class="nx">dirnames</span><span class="p">,</span><span class="nx">filenames</span> <span class="k">in</span> <span class="nx">os</span><span class="p">.</span><span class="nx">walk</span><span class="p">(</span><span class="s1">&#39;/home/username/test&#39;</span><span class="p">)</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="nx">filename</span> <span class="k">in</span> <span class="nx">filenames</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">file</span><span class="o">=</span><span class="nx">os</span><span class="p">.</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">pathname</span><span class="p">,</span><span class="nx">filename</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">os</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl"><span class="nx">t</span><span class="o">=</span><span class="nx">timeit</span><span class="p">.</span><span class="nx">Timer</span><span class="p">(</span><span class="s1">&#39;main()&#39;</span><span class="p">,</span><span class="s1">&#39;from __main__ import main&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">print</span> <span class="nx">t</span><span class="p">.</span><span class="nx">timeit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>　　
+</span></span><span class="line"><span class="cl"><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">python</span> <span class="nx">test</span><span class="p">.</span><span class="nx">py</span>
+</span></span><span class="line"><span class="cl"><span class="mf">529.309022903</span>
+</span></span><span class="line"><span class="cl"><span class="nx">大概用时9分钟</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Perl删除</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">$</span> <span class="nx">time</span> <span class="nx">perl</span> <span class="o">-</span><span class="nx">e</span> <span class="s1">&#39;for(&lt;*&gt;){((stat)[9]&lt;(unlink))}&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">perl</span> <span class="o">-</span><span class="nx">e</span> <span class="s1">&#39;for(&lt;*&gt;){((stat)[9]&lt;(unlink))}&#39;</span>  <span class="mf">1.28</span><span class="nx">s</span> <span class="nx">user</span> <span class="mf">7.23</span><span class="nx">s</span> <span class="nx">system</span> <span class="mi">50</span><span class="o">%</span> <span class="nx">cpu</span> <span class="mf">16.784</span> <span class="nx">total</span>
+</span></span><span class="line"><span class="cl"><span class="mi">16</span><span class="nx">s</span><span class="err">，</span><span class="nx">这个应该最快了</span><span class="err">。</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>结果：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">rm</span><span class="err">：</span><span class="nx">文件数量太多</span><span class="err">，</span><span class="nx">不可用</span>
+</span></span><span class="line"><span class="cl"><span class="nx">find</span> <span class="kd">with</span> <span class="o">-</span><span class="nx">exec</span> <span class="mi">50</span><span class="nx">万文件耗时43分钟</span>
+</span></span><span class="line"><span class="cl"><span class="nx">find</span> <span class="kd">with</span> <span class="o">-</span><span class="k">delete</span> <span class="mi">9</span><span class="nx">分钟</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Perl</span>  <span class="mi">16</span><span class="nx">s</span>
+</span></span><span class="line"><span class="cl"><span class="nx">Python</span> <span class="mi">9</span><span class="nx">分钟</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rsync</span> <span class="kd">with</span> <span class="o">-</span><span class="k">delete</span>  <span class="mi">16</span><span class="nx">s</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>ref: <a href="https://cloud.tencent.com/developer/article/1647290" target="_blank" rel="noopener noreffer">https://cloud.tencent.com/developer/article/1647290</a></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

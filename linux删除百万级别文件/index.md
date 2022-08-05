@@ -3,8 +3,6 @@
 
 在运行任务时，往linux的同一个文件夹中写入超过500万个文件，导致在硬盘还有空间的情况下，在该文件夹下无法继续写入文件，也无法使用ls、rm等命令。记录处理过程。
 
-
-
 *Background: physical server, about two years old, 7200-RPM SATA drives connected to a 3Ware RAID card, ext3 FS mounted noatime and data=ordered, not under crazy load, kernel 2.6.18-92.1.22.el5, uptime 545 days. Directory doesn't contain any subdirectories, just millions of small (~100 byte) files, with some larger (a few KB) ones.*
 
 We have a server that has gone a bit cuckoo over the course of the last few months, but we only noticed it the other day when it started being unable to write to a directory due to it containing too many files. Specifically, it started throwing this error in /var/log/messages:
@@ -70,7 +68,102 @@ sys     5m4.019s
 
 So, three million files deleted in a bit over four hours.
 
-
-
 Source: [kernel - rm on a directory with millions of files - Server Fault](https://serverfault.com/questions/183821/rm-on-a-directory-with-millions-of-files)
+
+最终解决方案：
+
+```
+export i=0; while [ true ]; do ls -1 -f --ignore '.' --ignore '..'| head -n 1000 | xargs rm -f ; export i=$(($i+1000)); echo “$i…”; done
+```
+
+```
+rsync -a --delete empty_dir/ pdb_files_split
+```
+
+Linux 下删除大量文件效率对比
+
+首先建立50万个文件
+
+```javascript
+$ test   for i in $(seq 1 500000);do echo text >>$i.txt;done
+```
+
+**rm删除**
+
+```javascript
+$ time rm -f *
+zsh: sure you want to delete all the files in /home/hungerr/test [yn]? y
+zsh: argument list too long: rm
+rm -f *  3.63s user 0.29s system 98% cpu 3.985 total
+由于文件数量过多，rm不起作用。
+```
+
+**find删除**
+
+```javascript
+$ time find ./ -type f -exec rm {} \;
+find ./ -type f -exec rm {} \;  49.86s user 1032.13s system 41% cpu 43:19.17 total
+大概43分钟,我的电脑。。。。。。边看视频边删的。
+```
+
+复制
+
+**find with delete**
+
+```javascript
+$ time find ./ -type f -delete
+find ./ -type f -delete  0.43s user 11.21s system 2% cpu 9:13.38 total
+用时9分钟。
+```
+
+**rsync删除**
+
+```javascript
+# 首先建立空文件夹blanktest
+$ time rsync -a --delete blanktest/ test/
+rsync -a --delete blanktest/ test/  0.59s user 7.86s system 51% cpu 16.418 total
+16s，很好很强大。
+```
+
+**Python删除**
+
+```javascript
+import os
+import timeit
+def main():
+    for pathname,dirnames,filenames in os.walk('/home/username/test'):
+        for filename in filenames:
+            file=os.path.join(pathname,filename)
+            os.remove(file)
+
+if __name__=='__main__':
+t=timeit.Timer('main()','from __main__ import main')
+print t.timeit(1)　　
+1
+2
+$ python test.py
+529.309022903
+大概用时9分钟。
+```
+
+**Perl删除**
+
+```javascript
+$ time perl -e 'for(<*>){((stat)[9]<(unlink))}'
+perl -e 'for(<*>){((stat)[9]<(unlink))}'  1.28s user 7.23s system 50% cpu 16.784 total
+16s，这个应该最快了。
+```
+
+**结果：**
+
+```javascript
+rm：文件数量太多，不可用
+find with -exec 50万文件耗时43分钟
+find with -delete 9分钟
+Perl  16s
+Python 9分钟
+rsync with -delete  16s
+```
+
+ref: https://cloud.tencent.com/developer/article/1647290
 
