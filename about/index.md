@@ -34,29 +34,29 @@ Wechat: JoshuaChou666
 
 ### **Research Interest**
 
-- Metaverse
-  
-  - Computer vision and VR
-
-- Artificial Intelligence
-  
-  - Theoretical Research of Deep Learning.
-
 - Intelligent Healthcare and Privacy
-
-- Cognitive Neuroscience
-  
-  - Mechanism of Language, Emotion, Memory, and Dream.
-  - Brain Computer Interface
 
 - Medical Imaging
   
   - EEG, X-ray, CT, fMRI
 
+- Artificial Intelligence
+  
+  - Theoretical Research of Deep Learning.
+
 - Bioinformatics
   
   - Analysis and integration of biological omics data with deep learning methods.
   - Developing new bioinformatics tools.
+
+- Metaverse
+  
+  - Computer vision and VR
+
+- Cognitive Neuroscience
+  
+  - Mechanism of Language, Emotion, Memory, and Dream.
+  - Brain Computer Interface
 
 <br>
 
@@ -74,8 +74,16 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 ### **Teaching Experience**
 
+- BioE 201/230, Fall 2022/2023, KAUST
+  - Cooperated with Prof. Xin Gao
+  - Position: Teaching Labs, TBD
+  - Contents:
+    - Lab 1. TBD
+    - Lab 2. TBD
+    - Lab 3. TBD
 - CS398 Graduate Seminar, Spring 2022, KAUST
   - Cooperated with Prof. Dominik Michels
+  - Position: Teaching Assistant
 
 <br>
 
@@ -150,6 +158,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 | Journal/Conference                                  | # Paper Reviewed |
 |:---------------------------------------------------:|:----------------:|
 | Genome Biology                                      | 1                |
+| Genome Research                                     | 2                |
 | IJCAI-ECAI 2022                                     | 1                |
 | ICONIP2020                                          | 1                |
 | ICMLA2021                                           | 1                |
