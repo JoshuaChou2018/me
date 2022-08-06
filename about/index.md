@@ -1,12 +1,9 @@
 # 
 
 
-
 <div>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220223210315680.yhLJmt.png" width = "120" height = "100" alt="Juexiao" align=right />
 </div>
-
-
 
 **Hi!**
 
@@ -18,8 +15,6 @@ Major in Computer Science and Bioinformatics.
 
 <br>
 
-
-
 Email: juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
 
 Wechat: JoshuaChou666
@@ -27,8 +22,6 @@ Wechat: JoshuaChou666
  [CV](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
-
-
 
 ### **Education**
 
@@ -39,28 +32,33 @@ Wechat: JoshuaChou666
 
 <br>
 
-
-
 ### **Research Interest**
 
 - Metaverse
-	- Computer vision and VR
+  
+  - Computer vision and VR
 
 - Artificial Intelligence
-	- Theoretical Research of Deep Learning.
+  
+  - Theoretical Research of Deep Learning.
+
 - Intelligent Healthcare and Privacy
+
 - Cognitive Neuroscience
-	- Mechanism of Language, Emotion, Memory, and Dream.
-	- Brain Computer Interface
+  
+  - Mechanism of Language, Emotion, Memory, and Dream.
+  - Brain Computer Interface
+
 - Medical Imaging
-	- EEG, X-ray, CT, fMRI
+  
+  - EEG, X-ray, CT, fMRI
+
 - Bioinformatics
-	- Analysis and integration of biological omics data with deep learning methods.
-	- Developing new bioinformatics tools.
+  
+  - Analysis and integration of biological omics data with deep learning methods.
+  - Developing new bioinformatics tools.
 
 <br>
-
-
 
 ### Projects and Publications
 
@@ -68,24 +66,18 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-
-
 ### **Working Experience**
 
 - Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 
 <br>
 
-
-
 ### **Teaching Experience**
 
 - CS398 Graduate Seminar, Spring 2022, KAUST
-	- Cooperated with Prof. Dominik Michels
+  - Cooperated with Prof. Dominik Michels
 
 <br>
-
-
 
 ### Honours
 
@@ -97,6 +89,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 **GPA: 4.00 / 4.00**
 
+- CEMSE Dean’s List  Award, 2022
 - Excellent Research Award, CEMSE, 2021
 
 #### King Abdullah University of Science and Technology
@@ -137,38 +130,32 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-
-
 ### **Membership**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
 
 <br>
 
-
-
 ### **Talks**
 
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-	- CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
+  - CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-	- BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
+  - BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
 
 <br>
 
-
-
 ### **Reviewer**
 
-|                 Journal/Conference                  | # Paper Reviewed |
-| :-------------------------------------------------: | :--------------: |
-|                   Genome Biology                    |        1         |
-|                   IJCAI-ECAI 2022                   |        1         |
-|                     ICONIP2020                      |        1         |
-|                      ICMLA2021                      |        1         |
-| Journal of Bioinformatics and Computational Biology |        1         |
-|                     MICCAI2020                      |        1         |
-|                     SIGKDD2022                      |        2         |
+| Journal/Conference                                  | # Paper Reviewed |
+|:---------------------------------------------------:|:----------------:|
+| Genome Biology                                      | 1                |
+| IJCAI-ECAI 2022                                     | 1                |
+| ICONIP2020                                          | 1                |
+| ICMLA2021                                           | 1                |
+| Journal of Bioinformatics and Computational Biology | 1                |
+| MICCAI2020                                          | 1                |
+| SIGKDD2022                                          | 2                |
 
 <br>
 
