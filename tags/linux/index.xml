@@ -3,7 +3,17 @@
         <title>linux - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>linux - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>libc10_cuda.so error for installing pyG</title>
+    <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
+    <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</guid>
+    <description><![CDATA[After installing PyG, here is the error:
+libc10_cuda.so: cannot open shared object file: No such file or directory
+Solution
+1 2 conda install pytorch==1.11.0 cudatoolkit=11.3 -c pytorch conda install pyg -c pyg ]]></description>
+</item><item>
     <title>linux删除百万级别文件</title>
     <link>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</link>
     <pubDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -102,16 +112,5 @@ deleteHead表示调用deleteHead函数
     <author>Author</author>
     <guid>https://www.joshuachou.ink/example/</guid>
     <description><![CDATA[Example MD]]></description>
-</item><item>
-    <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
-    <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
-    <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</guid>
-    <description><![CDATA[Problem Description
-Fors some unknow reason, the user is unable to click the text boxes or type anything into the publish window after running the Build &amp; Publish. When the user clicks the main window in Unity, the cursor disappears and the user can not select the text boxes or anything else.
-This problem happens under my settings, macOS Catalina 10.15.7, Unity 2019.4.31f1, VRChat SDK3.
-Solution
-The reason of this problem is that when you click the temp scene created by the SDK3, the cursor will be invisible and locked.]]></description>
 </item></channel>
 </rss>
