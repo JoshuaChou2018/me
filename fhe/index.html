@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Fully homomorphic encryption (FHE) - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="Fully homomorphic encryption (FHE)" />
+<meta property="og:description" content="全同态加密 Fully homomorphic encryption (FHE) What’s is FHE 第一种形式：同时使用secret key加密和解密，public key用于第三方加密进行同态计算
+第二种形式：asymmetric FHE，只使用public key进行加密，secret key用于解密
+Efficient FHE is a giant leap towards httpz://
+? what’s httpz?
+History Major task: find a new scheme to combine both addition and multiplication together.
+1. First generation Plain text: single bit
+这个方法的主要问题是noise，随着计算的叠加，there is a notion of noise in ciphertexts，noise accumulates
+Defining noise budget thourgh defining parameters
+noise growth is exponential
+bootstrapping to rescure (decrease the noise)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.joshuachou.ink/fhe/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-10T17:33:23+03:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
+
+<meta name="twitter:title" content="Fully homomorphic encryption (FHE)"/>
+<meta name="twitter:description" content="全同态加密 Fully homomorphic encryption (FHE) What’s is FHE 第一种形式：同时使用secret key加密和解密，public key用于第三方加密进行同态计算
+第二种形式：asymmetric FHE，只使用public key进行加密，secret key用于解密
+Efficient FHE is a giant leap towards httpz://
+? what’s httpz?
+History Major task: find a new scheme to combine both addition and multiplication together.
+1. First generation Plain text: single bit
+这个方法的主要问题是noise，随着计算的叠加，there is a notion of noise in ciphertexts，noise accumulates
+Defining noise budget thourgh defining parameters
+noise growth is exponential
+bootstrapping to rescure (decrease the noise)"/>
+<meta name="application-name" content="Juexiao Zhou">
+<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/fhe/" /><link rel="prev" href="https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Fully homomorphic encryption (FHE)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/fhe\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "privacy","wordcount":  128 ,
+        "url": "https:\/\/www.joshuachou.ink\/fhe\/","datePublished": "2022-08-10T00:00:00+00:00","dateModified": "2022-08-10T17:33:23+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/about/" title="Me">Me</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Fully homomorphic encryption (FHE)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>privacy</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-10">2022-08-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;128 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-is-fhe">What’s is FHE</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="#1-first-generation">1. First generation</a></li>
+    <li><a href="#2-second-generation">2. Second generation</a></li>
+    <li><a href="#3-third-generation-gsw">3. Third generation: GSW</a></li>
+    <li><a href="#4-4th-generation-torus-fhe-tfhe">4. 4th generation: Torus FHE, TFHE</a></li>
+    <li><a href="#open-source-fhe-librabies">Open-source FHE librabies</a></li>
+    <li><a href="#two-encryption">Two encryption</a></li>
+    <li><a href="#plaintext-encoding">Plaintext encoding</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="全同态加密-fully-homomorphic-encryption-fhe">全同态加密 Fully homomorphic encryption (FHE)</h1>
+<h2 id="whats-is-fhe">What’s is FHE</h2>
+<p>第一种形式：同时使用secret key加密和解密，public key用于第三方加密进行同态计算</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161455665.7Sogoe.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161455665.7Sogoe.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161455665.7Sogoe.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161455665.7Sogoe.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161455665.7Sogoe.png"
+        title="image-20220810161455665" /></p>
+<p>第二种形式：asymmetric FHE，只使用public key进行加密，secret key用于解密</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161707363.4nIJAt.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161707363.4nIJAt.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161707363.4nIJAt.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161707363.4nIJAt.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810161707363.4nIJAt.png"
+        title="image-20220810161707363" /></p>
+<p><strong>Efficient FHE is a giant leap towards httpz://</strong></p>
+<p>? what’s httpz?</p>
+<h2 id="history">History</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162634078.kd7s8b.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162634078.kd7s8b.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162634078.kd7s8b.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162634078.kd7s8b.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162634078.kd7s8b.png"
+        title="image-20220810162634078" /></p>
+<p><strong>Major task</strong>: find a new scheme to combine both addition and multiplication together.</p>
+<h2 id="1-first-generation">1. First generation</h2>
+<p>Plain text: single bit</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162938730.6YwAEf.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162938730.6YwAEf.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162938730.6YwAEf.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162938730.6YwAEf.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810162938730.6YwAEf.png"
+        title="image-20220810162938730" /></p>
+<p>这个方法的主要问题是noise，随着计算的叠加，there is a notion of noise in ciphertexts，noise accumulates</p>
+<ol>
+<li>
+<p>Defining noise budget thourgh defining parameters</p>
+</li>
+<li>
+<p>noise growth is exponential</p>
+</li>
+<li>
+<p>bootstrapping to rescure (decrease the noise)</p>
+</li>
+</ol>
+<p><strong>Somewhat homomorphic encyption (SHE)</strong></p>
+<p>初代的FHE目标是每一步同态计算，都进行一次bootstrapping，来抑制噪音增加。但是bootstrapping的计算消耗太大，所以SHE的目标是控制在output时的噪音水平，保证是可以接受的。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810163706513.adONzi.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810163706513.adONzi.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810163706513.adONzi.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810163706513.adONzi.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810163706513.adONzi.png"
+        title="image-20220810163706513" /></p>
+<h2 id="2-second-generation">2. Second generation</h2>
+<p>targeting the exponential growing noise</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164134885.dqkLd9.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164134885.dqkLd9.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164134885.dqkLd9.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164134885.dqkLd9.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164134885.dqkLd9.png"
+        title="image-20220810164134885" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164255110.L8cELM.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164255110.L8cELM.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164255110.L8cELM.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164255110.L8cELM.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164255110.L8cELM.png"
+        title="image-20220810164255110" /></p>
+<h2 id="3-third-generation-gsw">3. Third generation: GSW</h2>
+<p>只是概念上的简化，但是无法实用。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164410551.9fFNfF.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164410551.9fFNfF.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164410551.9fFNfF.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164410551.9fFNfF.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164410551.9fFNfF.png"
+        title="image-20220810164410551" /></p>
+<h2 id="4-4th-generation-torus-fhe-tfhe">4. 4th generation: Torus FHE, TFHE</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164528414.a1nVpv.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164528414.a1nVpv.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164528414.a1nVpv.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164528414.a1nVpv.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810164528414.a1nVpv.png"
+        title="image-20220810164528414" /></p>
+<h2 id="open-source-fhe-librabies">Open-source FHE librabies</h2>
+<p>FV-NFLlib</p>
+<p>SEAL</p>
+<p>HEAAN</p>
+<p>TFHE</p>
+<p>HElib</p>
+<p>nuFHE</p>
+<p>Palisade</p>
+<h2 id="two-encryption">Two encryption</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172343243.YM9jwM.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172343243.YM9jwM.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172343243.YM9jwM.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172343243.YM9jwM.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172343243.YM9jwM.png"
+        title="image-20220810172343243" /></p>
+<h2 id="plaintext-encoding">Plaintext encoding</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172439231.q2rqqZ.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172439231.q2rqqZ.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172439231.q2rqqZ.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172439231.q2rqqZ.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172439231.q2rqqZ.png"
+        title="image-20220810172439231" /></p>
+<p>但是在计算的时候，noise会在右侧累积。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172529388.zPkVYt.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172529388.zPkVYt.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172529388.zPkVYt.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172529388.zPkVYt.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172529388.zPkVYt.png"
+        title="image-20220810172529388" /></p>
+<p>通过bootstrapping，可以减少右侧的noise</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172605531.e9V2vW.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172605531.e9V2vW.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172605531.e9V2vW.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172605531.e9V2vW.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172605531.e9V2vW.png"
+        title="image-20220810172605531" /></p>
+<p><strong>LWE ciphertexts are homomorphic</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172707491.kX7bKI.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172707491.kX7bKI.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172707491.kX7bKI.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172707491.kX7bKI.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220810172707491.kX7bKI.png"
+        title="image-20220810172707491" /></p>
+<h1 id="ref">Ref</h1>
+<p>Complete talk: <a href="https://www.youtube.com/watch?v=umqz7kKWxyw" target="_blank" rel="noopener noreffer">Introduction to Homomorphic Encryption (by Pascal Paillier) - YouTube</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-08-10&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/0075973b2dae789668f5ce9cbf3f453dabd1f616" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 0075973b2dae789668f5ce9cbf3f453dabd1f616: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>0075973</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/fhe/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)" data-hashtags="privacy"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/fhe/" data-hashtag="privacy"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/fhe/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/fhe/" data-title="Fully homomorphic encryption (FHE)"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">privacy</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/libc10_cuda.so-error-for-installing-pyg/" class="prev" rel="prev" title="libc10_cuda.so error for installing pyG"><i class="fas fa-angle-left fa-fw"></i>libc10_cuda.so error for installing pyG</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"url","label":"","lightTheme":"github-light","repo":"JoshuaChou2018/me"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

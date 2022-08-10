@@ -3,7 +3,23 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Fully homomorphic encryption (FHE)</title>
+    <link>https://www.joshuachou.ink/fhe/</link>
+    <pubDate>Wed, 10 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/fhe/</guid>
+    <description><![CDATA[全同态加密 Fully homomorphic encryption (FHE) What’s is FHE 第一种形式：同时使用secret key加密和解密，public key用于第三方加密进行同态计算
+第二种形式：asymmetric FHE，只使用public key进行加密，secret key用于解密
+Efficient FHE is a giant leap towards httpz://
+? what’s httpz?
+History Major task: find a new scheme to combine both addition and multiplication together.
+1. First generation Plain text: single bit
+这个方法的主要问题是noise，随着计算的叠加，there is a notion of noise in ciphertexts，noise accumulates
+Defining noise budget thourgh defining parameters
+noise growth is exponential
+bootstrapping to rescure (decrease the noise)]]></description>
+</item><item>
     <title>libc10_cuda.so error for installing pyG</title>
     <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
     <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -223,16 +239,5 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
 使用一块外置的USB移动硬盘，要求文件系统是HFS+。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
 方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。]]></description>
-</item><item>
-    <title>lc10. Regular Expression Matching</title>
-    <link>https://www.joshuachou.ink/lc10.regular_expression_matching/</link>
-    <pubDate>Thu, 27 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc10.regular_expression_matching/</guid>
-    <description><![CDATA[Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
-'.' Matches any single character. '*' Matches zero or more of the preceding element. The matching should cover the entire input string (not partial).
-Example 1:
-1 2 3 Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;. Example 2:
-1 2 3 Input: s = &#34;aa&#34;, p = &#34;a*&#34; Output: true Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;.]]></description>
 </item></channel>
 </rss>
