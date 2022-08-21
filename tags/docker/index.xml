@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>docker - Tag - Juexiao Zhou</title>
+        <link>https://www.joshuachou.ink/tags/docker/</link>
+        <description>docker - Tag - Juexiao Zhou</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
+    <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
+    <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/run-ubuntu-in-docker/</guid>
+    <description><![CDATA[Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
+1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
+1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.]]></description>
+</item></channel>
+</rss>

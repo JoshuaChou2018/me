@@ -3,7 +3,16 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
+    <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
+    <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/run-ubuntu-in-docker/</guid>
+    <description><![CDATA[Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
+1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
+1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.]]></description>
+</item><item>
     <title>libc10_cuda.so error for installing pyG</title>
     <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
     <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -91,15 +100,5 @@ The reason of this problem is that when you click the temp scene created by the 
     <guid>https://www.joshuachou.ink/install-jupyter-kernel/</guid>
     <description><![CDATA[ Avticate your environment，check for package ipykernel 1 python -m ipykernel --version If it’s not installed：
 1 python -m pip install ipykernel Add kernel to Jupyter notebook 1 python -m ipykernel install --user --name &#39;kernelname&#39; Check Jupyter notebook kernel 1 jupyter kernelspec list Delet jupyter kernel 1 jupyter kernelspec remove kernelname ]]></description>
-</item><item>
-    <title>Install Slurm in Ubuntu</title>
-    <link>https://www.joshuachou.ink/install-slurm/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/install-slurm/</guid>
-    <description><![CDATA[Install
-1 sudo apt install slurm-wlm slurm-wlm-doc -y Modify config
-1 2 rm /etc/slurm-llnl/slurm.conf vi /etc/slurm-llnl/slurm.conf Example of config
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 # slurm.]]></description>
 </item></channel>
 </rss>
