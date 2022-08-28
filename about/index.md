@@ -76,9 +76,13 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 ### **Teaching Experience**
 
-- BioE 201/230, Fall 2022/2023, KAUST
+- CS220, Data Analytics, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
-  - Position: TA, Teaching Labs, Building 9 Room 4225
+  - Position: Teaching Assistant
+
+- BioE 201/230 Foundations of Bioengineering, Fall 2022/2023, KAUST
+  - Cooperated with Prof. Xin Gao
+  - Position: Teaching Labs, Building 9 Room 4225
   - Contents:
     - Lab 1. Genome data analysis, 2022.08.30
     - Lab 2. Protein sequence analysis, 2022.09.06
