@@ -76,11 +76,11 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 - BioE 201/230, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
-  - Position: Teaching Labs, TBD
+  - Position: TA, Teaching Labs, Building 9 Room 4225
   - Contents:
-    - Lab 1. TBD
-    - Lab 2. TBD
-    - Lab 3. TBD
+    - Lab 1. Genome data analysis, 2022.08.30
+    - Lab 2. Protein sequence analysis, 2022.09.06
+    - Lab 3. Proetin structure and function, 2022.09.13
 - CS398 Graduate Seminar, Spring 2022, KAUST
   - Cooperated with Prof. Dominik Michels
   - Position: Teaching Assistant
