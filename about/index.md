@@ -2,7 +2,7 @@
 
 
 <div>
-  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220223210315680.yhLJmt.png" width = "120" height = "100" alt="Juexiao" align=right />
+  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/avatar.mEXOZc.png" width = "220" height = "200" alt="Juexiao" align=right />
 </div>
 
 **Hi!**
@@ -22,6 +22,8 @@ Wechat: JoshuaChou666
  [CV](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
+
+
 
 ### **Education**
 
