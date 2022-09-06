@@ -2,7 +2,19 @@
 
 ## Journal & Conference
 
+
+
 <ol reversed>
+  <li>
+    <font color=blue>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.</font> 
+    <br>	
+    Haoyang Li, Hanmin Li, <b>Juexiao Zhou</b> and Xin Gao.
+    <br>
+    <i><b>Bioinformatics</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+  </li>
+  <br>
   <li>
     <font color=blue>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.</font> 
     <br>	
@@ -148,11 +160,29 @@
 
 
 
-
-
 ## Preprint or under review
 
+
+
 <ol reversed>
+  <li>
+    <font color=blue>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI
+</font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Longxi Zhou*, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=blue>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics
+</font> 
+    <br>	
+    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
   <li>
     <font color=blue>Application of Deep Learning in Understanding Gene Expression Regulation
 </font> 
@@ -191,14 +221,6 @@
     <font color=blue>A Workflow for Automatic, Accurate and Robust Breast Tumor Segmentation on Multi-Database DCE-MRI.</font> 
     <br>	
     Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, <b>Juexiao Zhou</b>, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
-    <font color=blue>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.</font> 
-    <br>	
-    Haoyang Li, Hanmin Li, <b>Juexiao Zhou</b> and Xin Gao.
     <br>
     <i><b>under review.</b></i>
   </li>
