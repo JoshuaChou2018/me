@@ -12,7 +12,11 @@
     <br>
     <i><b>Bioinformatics</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>DOI: https://doi.org/10.1093/bioinformatics/btac605</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac605/6692424">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/btac605.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -234,5 +238,4 @@
   </li>
   <br>
 </ol>
-
 
