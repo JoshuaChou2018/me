@@ -58,7 +58,7 @@ Wechat: JoshuaChou666
 - Cognitive Neuroscience
   
   - Mechanism of Language, Emotion, Memory, and Dream.
-  - Brain Computer Interface
+  - Brain-Computer Interface
 
 <br>
 
@@ -84,9 +84,24 @@ Please check [here](https://www.joshuachou.ink/publications/)
   - Cooperated with Prof. Xin Gao
   - Position: Teaching Labs, Building 9 Room 4225
   - Contents:
-    - Lab 1. Genome data analysis, 2022.08.30
-    - Lab 2. Protein sequence analysis, 2022.09.06
-    - Lab 3. Proetin structure and function, 2022.09.13
+    - Lab 1. Genome data analysis, 2022.08.30, [colab](https://colab.research.google.com/drive/1AqzzwgcwQpK36LwIBu0xg6zmkWDUmwoM)
+    	- Python basics
+    	- D/RNA sequence analysis
+    	- Biopython
+    	- BLAST
+    	- Reference genome
+    - Lab 2. Protein sequence analysis, 2022.09.06, [colab](https://colab.research.google.com/drive/16auY7KCXS4g5ly4Kq6K9EuiSE_LeSzLz)
+    	- Protein sequence analysis
+    	- MSA
+    	- PDB
+    	- PyMOL
+    	- Secondary structure prediction
+    - Lab 3. Proetin structure and function, 2022.09.13, [colab](https://colab.research.google.com/drive/1CQmEgsdkyPuIwgW28eiqgf8v13OT6UD-)
+    	- Ab initio with PyRosetta
+    	- AlphaFold2
+    	- NucleicNet
+    	- Docking with Smina
+    	- Pfam annotation with deep learning
 - CS398 Graduate Seminar, Spring 2022, KAUST
   - Cooperated with Prof. Dominik Michels
   - Position: Teaching Assistant
@@ -115,7 +130,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 **GPA: 3.95 / 4.00**
 
 - Student ambassador, CEMSE, 2021
-- Yearly best studetnt award, CEMSE, 2021
+- Yearly best student award, CEMSE, 2021
 - Full scholarship for MS/PhD study, 2020
 
 #### Southern University of Science and Technology
@@ -159,7 +174,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-### **Reviewer**
+### **Academic Services: Reviewer**
 
 | Journal/Conference                                  | # Paper Reviewed |
 |:---------------------------------------------------:|:----------------:|
