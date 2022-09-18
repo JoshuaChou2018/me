@@ -1,4 +1,4 @@
-# Bankok, Thailand
+# Bangkok, Thailand
 
 
 ![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/CoUBGV4_rxaASM4MAAdL7eAvAKs053.CY9z8n.jpg)
