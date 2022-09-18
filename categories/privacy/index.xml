@@ -3,7 +3,17 @@
         <title>privacy - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/privacy/</link>
         <description>privacy - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 10 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/privacy/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/privacy/" rel="self" type="application/rss+xml" /><item>
+    <title>CKKS</title>
+    <link>https://www.joshuachou.ink/ckks/</link>
+    <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/ckks/</guid>
+    <description><![CDATA[What’s is CKKS Plain Computation Encrypted Computation bool, int (uint 64), modulo p BGV, BFV, TFHE double (float) CKKS Approximate arithmetic For floating-point arithmetic, we keep the bits of significand to be the same.
+For fixed-point arithmetic, we keep the scaling factor to be the same.
+Algorithms in CKKS Encoding and decoding 在编码过程中需要使用比较大的scaling factor，这样可以保证更大的精度。
+Encrypt and decrypt Ref https://www.youtube.com/watch?v=iQlgeL64vfo]]></description>
+</item><item>
     <title>Fully homomorphic encryption (FHE)</title>
     <link>https://www.joshuachou.ink/fhe/</link>
     <pubDate>Wed, 10 Aug 2022 00:00:00 &#43;0000</pubDate>
