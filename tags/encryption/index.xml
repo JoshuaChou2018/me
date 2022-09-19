@@ -3,7 +3,14 @@
         <title>encryption - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/encryption/</link>
         <description>encryption - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/encryption/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/encryption/" rel="self" type="application/rss+xml" /><item>
+    <title>SEAL</title>
+    <link>https://www.joshuachou.ink/ms-seal/</link>
+    <pubDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/ms-seal/</guid>
+    <description><![CDATA[Microsoft SEAL Ref https://www.youtube.com/watch?v=XaYEHnaAg8M]]></description>
+</item><item>
     <title>CKKS</title>
     <link>https://www.joshuachou.ink/ckks/</link>
     <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -13,5 +20,12 @@
 For fixed-point arithmetic, we keep the scaling factor to be the same.
 Algorithms in CKKS Encoding and decoding 在编码过程中需要使用比较大的scaling factor，这样可以保证更大的精度。
 Encrypt and decrypt Ref https://www.youtube.com/watch?v=iQlgeL64vfo]]></description>
+</item><item>
+    <title>Homomorphic Encryption for Arithmetic of Approximate Numbers</title>
+    <link>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</link>
+    <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</guid>
+    <description><![CDATA[]]></description>
 </item></channel>
 </rss>

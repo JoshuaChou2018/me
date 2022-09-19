@@ -32,12 +32,6 @@ For fixed-point arithmetic, we keep the scaling factor to be the same.
 
 ![image-20220918164003975](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220918164003975.asv6vQ.png)
 
-
-
-
-
-
-
 ## Ref
 
 https://www.youtube.com/watch?v=iQlgeL64vfo

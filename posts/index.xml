@@ -3,7 +3,14 @@
         <title>All Posts - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>SEAL</title>
+    <link>https://www.joshuachou.ink/ms-seal/</link>
+    <pubDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/ms-seal/</guid>
+    <description><![CDATA[Microsoft SEAL Ref https://www.youtube.com/watch?v=XaYEHnaAg8M]]></description>
+</item><item>
     <title>CKKS</title>
     <link>https://www.joshuachou.ink/ckks/</link>
     <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -13,6 +20,13 @@
 For fixed-point arithmetic, we keep the scaling factor to be the same.
 Algorithms in CKKS Encoding and decoding 在编码过程中需要使用比较大的scaling factor，这样可以保证更大的精度。
 Encrypt and decrypt Ref https://www.youtube.com/watch?v=iQlgeL64vfo]]></description>
+</item><item>
+    <title>Homomorphic Encryption for Arithmetic of Approximate Numbers</title>
+    <link>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</link>
+    <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</guid>
+    <description><![CDATA[]]></description>
 </item><item>
     <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
     <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
@@ -198,38 +212,5 @@ In particular, in the heterogeneous settings where the underlying data distribut
 DOI: 10.1109/JIOT.2020.2991416
 INFO: IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020
 发表周期: Manuscript received December 15, 2019; revised March 20, 2020; accepted April 13, 2020. Date of publication April 30, 2020;]]></description>
-</item><item>
-    <title>SCI高频词汇</title>
-    <link>https://www.joshuachou.ink/sci%E9%AB%98%E9%A2%91%E8%AF%8D%E6%B1%87/</link>
-    <pubDate>Fri, 04 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/sci%E9%AB%98%E9%A2%91%E8%AF%8D%E6%B1%87/</guid>
-    <description><![CDATA[并列递进
-moreover, in addition, furthermore, besides, likewise, also, then, additionally
-转折
-not, yet, however, nevertheless, nonetheless, meanwhile, on the other hand, on the contrary, conversely, paradoxically, by contrast, in spite of，rather than, instead of, unfortunately
-解释
-in other words, in fact, as a matter of fact, that is, namely, in simpler terms
-对比比较
-Likewise, Similarly, In parallel to, while, whereas,
-原因
-because, because of, as, since, owing to, due to, thanks to, for this reason]]></description>
-</item><item>
-    <title>lc253. 会议室 II</title>
-    <link>https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/</link>
-    <pubDate>Thu, 03 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/</guid>
-    <description><![CDATA[给你一个会议时间安排的数组 intervals ，每个会议时间都会包括开始和结束的时间 intervals[i] = [starti, endi] ，返回 所需会议室的最小数量 。
-示例 1：
-输入：intervals = [[0,30],[5,10],[15,20]] 输出：2
-示例 2：
-输入：intervals = [[7,10],[2,4]] 输出：1
-提示：
-1 &lt;= intervals.length &lt;= 104 0 &lt;= starti &lt; endi &lt;= 106
-解题思路 我们可以想象把这些interval给叠起来，所需要会议室的最小数量就等于最大重叠的interval的数目。
-转化为上下车问题，每个interval的开始时间+1，每个interval的结束时间-1，然后我们统计counter的最大数值。
-换个思路就是我们以时间为单位，我们可以知道每个单位时间车上的总人数是增加多少还是减少多少，这样我们可以直接求和从开始扫描到结束，获取当前车上最大的人数就可以。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 class Solution(object): def minMeetingRooms(self, intervals): &#34;&#34;&#34; :type intervals: List[List[int]] :rtype: int &#34;&#34;&#34; dic={} for interval in intervals: try: dic[interval[0]]+=1 except: dic[interval[0]]=1 try: dic[interval[1]]-=1 except: dic[interval[1]]=-1 max_=0 count=0 for key in sorted(dic.]]></description>
 </item></channel>
 </rss>
