@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Homomorphic Encryption - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="Homomorphic Encryption" />
+<meta property="og:description" content="## Outsourcing computation, privately Homomorphic evaluation function:
+Eval: f, Enc(x) -&gt; Enc(f(x))
+Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
+Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
+**idea：**使用approximate eigenvectors，在secret key右乘cipher text
+Learning with errors (LWE) R05 Rearranging notation **basic idea: ** we have a matrix A, we can generate a matrix s, such that sA=$\eta$
+Encryption scheme from LWE Encryption Decryption it can be generalized to matrices." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.joshuachou.ink/homomorphic-encryption/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-19T19:47:59+03:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
+
+<meta name="twitter:title" content="Homomorphic Encryption"/>
+<meta name="twitter:description" content="## Outsourcing computation, privately Homomorphic evaluation function:
+Eval: f, Enc(x) -&gt; Enc(f(x))
+Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
+Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
+**idea：**使用approximate eigenvectors，在secret key右乘cipher text
+Learning with errors (LWE) R05 Rearranging notation **basic idea: ** we have a matrix A, we can generate a matrix s, such that sA=$\eta$
+Encryption scheme from LWE Encryption Decryption it can be generalized to matrices."/>
+<meta name="application-name" content="Juexiao Zhou">
+<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/homomorphic-encryption/" /><link rel="prev" href="https://www.joshuachou.ink/ms-seal/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Homomorphic Encryption",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/homomorphic-encryption\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "privacy, encryption","wordcount":  77 ,
+        "url": "https:\/\/www.joshuachou.ink\/homomorphic-encryption\/","datePublished": "2022-09-20T00:00:00+00:00","dateModified": "2022-09-19T19:47:59+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/life/" title="Life"> Life </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/about/" title="Me">Me</a><a class="menu-item" href="/life/" title="Life">Life</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Homomorphic Encryption</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>privacy</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-09-20">2022-09-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;77 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#-outsourcing-computation-privately">## Outsourcing computation, privately</a></li>
+    <li><a href="#fully-homomorphic-encryption">Fully homomorphic encryption</a>
+      <ul>
+        <li><a href="#approximate-eigenvector-method">Approximate eigenvector method</a></li>
+        <li><a href="#learning-with-errors-lwe-r05">Learning with errors (LWE) R05</a></li>
+        <li><a href="#rearranging-notation"><strong>Rearranging notation</strong></a></li>
+        <li><a href="#encryption-scheme-from-lwe">Encryption scheme from LWE</a>
+          <ul>
+            <li><a href="#encryption">Encryption</a></li>
+            <li><a href="#decryption-image-20220919192128171httpscdnjsdelivrnetghjoshuachou2018ossmainupicimage-202209191921281719naakjpng">Decryption <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png" alt="image-20220919192128171"></a></li>
+            <li><a href="#on-matrices">On matrices</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#ref">Ref</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="-outsourcing-computation-privately">## Outsourcing computation, privately</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png"
+        title="image-20220919154446784" /></p>
+<p>Homomorphic evaluation function:</p>
+<p>Eval: f, Enc(x) -&gt; Enc(f(x))</p>
+<h2 id="fully-homomorphic-encryption">Fully homomorphic encryption</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png"
+        title="image-20220919154723892" /></p>
+<p><strong>Fully</strong> homomorphic = correctness for <strong>any</strong> efficient f = correctness for <strong>universal</strong> set</p>
+<h3 id="approximate-eigenvector-method">Approximate eigenvector method</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png"
+        title="image-20220919160158938" /></p>
+<p>基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。</p>
+<p>**idea：**使用approximate eigenvectors，在secret key右乘cipher text</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png"
+        title="image-20220919160511119" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162526756.EzrmQ6.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162526756.EzrmQ6.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162526756.EzrmQ6.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162526756.EzrmQ6.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162526756.EzrmQ6.png"
+        title="image-20220919162526756" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162834463.0N5n69.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162834463.0N5n69.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162834463.0N5n69.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162834463.0N5n69.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919162834463.0N5n69.png"
+        title="image-20220919162834463" /></p>
+<h3 id="learning-with-errors-lwe-r05">Learning with errors (LWE) R05</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190114289.FJ89eg.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190114289.FJ89eg.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190114289.FJ89eg.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190114289.FJ89eg.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190114289.FJ89eg.png"
+        title="image-20220919190114289" /></p>
+<h3 id="rearranging-notation"><strong>Rearranging notation</strong></h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190916495.flSCYd.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190916495.flSCYd.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190916495.flSCYd.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190916495.flSCYd.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919190916495.flSCYd.png"
+        title="image-20220919190916495" /></p>
+<p>**basic idea: ** we have a matrix A, we can generate a matrix  s, such that <strong>sA=$\eta$</strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191541347.7kqUzm.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191541347.7kqUzm.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191541347.7kqUzm.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191541347.7kqUzm.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191541347.7kqUzm.png"
+        title="image-20220919191541347" /></p>
+<h3 id="encryption-scheme-from-lwe">Encryption scheme from LWE</h3>
+<h4 id="encryption">Encryption</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png"
+        title="image-20220919191851050" /></p>
+<h4 id="decryption-image-20220919192128171httpscdnjsdelivrnetghjoshuachou2018ossmainupicimage-202209191921281719naakjpng">Decryption <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png"
+        title="image-20220919192128171" /></h4>
+<p>it can be generalized to matrices.</p>
+<h4 id="on-matrices">On matrices</h4>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png"
+        title="image-20220919192253181" /></p>
+<h2 id="ref">Ref</h2>
+<p><a href="https://www.youtube.com/watch?v=O8IvJAIvGJo" target="_blank" rel="noopener noreffer">https://www.youtube.com/watch?v=O8IvJAIvGJo</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-19&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/5c2da2e9aebff56632d0b69fd8e7a285698a4200" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 5c2da2e9aebff56632d0b69fd8e7a285698a4200: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>5c2da2e</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/homomorphic-encryption/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption" data-hashtags="privacy,encryption"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-hashtag="privacy"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/homomorphic-encryption/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://www.joshuachou.ink/homomorphic-encryption/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/homomorphic-encryption/" data-title="Homomorphic Encryption"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">privacy</a>,&nbsp;<a href="/tags/encryption/">encryption</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ms-seal/" class="prev" rel="prev" title="SEAL"><i class="fas fa-angle-left fa-fw"></i>SEAL</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"url","label":"","lightTheme":"github-light","repo":"JoshuaChou2018/me"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

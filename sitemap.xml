@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://www.joshuachou.ink/homomorphic-encryption/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/ms-seal/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/ckks/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -109,5 +110,5 @@
             <loc>https://www.joshuachou.ink/tags/thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2022-09-18T10:27:58&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2022-09-20T10:27:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/publications/</loc><priority>0</priority></url></urlset>

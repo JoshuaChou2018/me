@@ -3,9 +3,22 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Homomorphic Encryption</title>
+    <link>https://www.joshuachou.ink/homomorphic-encryption/</link>
+    <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/homomorphic-encryption/</guid>
+    <description><![CDATA[## Outsourcing computation, privately Homomorphic evaluation function:
+Eval: f, Enc(x) -&gt; Enc(f(x))
+Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
+Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
+**idea：**使用approximate eigenvectors，在secret key右乘cipher text
+Learning with errors (LWE) R05 Rearranging notation **basic idea: ** we have a matrix A, we can generate a matrix s, such that sA=$\eta$
+Encryption scheme from LWE Encryption Decryption it can be generalized to matrices.]]></description>
+</item><item>
     <title>SEAL</title>
     <link>https://www.joshuachou.ink/ms-seal/</link>
     <pubDate>Mon, 19 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -204,15 +217,5 @@ However, this scheme only develops a common output for all the users, and, there
 This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
 在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
 In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
-</item><item>
-    <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
-    <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
-    <pubDate>Fri, 04 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</guid>
-    <description><![CDATA[Title: Personalized Federated Learning With Differential Privacy
-DOI: 10.1109/JIOT.2020.2991416
-INFO: IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020
-发表周期: Manuscript received December 15, 2019; revised March 20, 2020; accepted April 13, 2020. Date of publication April 30, 2020;]]></description>
 </item></channel>
 </rss>
