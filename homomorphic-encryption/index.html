@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Homomorphic Encryption - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="Homomorphic Encryption" />
-<meta property="og:description" content="## Outsourcing computation, privately Homomorphic evaluation function:
+<meta property="og:description" content="Outsourcing computation, privately Homomorphic evaluation function:
 Eval: f, Enc(x) -&gt; Enc(f(x))
 Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
 Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
@@ -16,13 +16,13 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/homomorphic-encryption/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-09-19T19:47:59+03:00" />
+<meta property="article:modified_time" content="2022-09-21T10:23:04+03:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
 
 <meta name="twitter:title" content="Homomorphic Encryption"/>
-<meta name="twitter:description" content="## Outsourcing computation, privately Homomorphic evaluation function:
+<meta name="twitter:description" content="Outsourcing computation, privately Homomorphic evaluation function:
 Eval: f, Enc(x) -&gt; Enc(f(x))
 Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
 Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
@@ -41,8 +41,8 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/homomorphic-encryption\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "privacy, encryption","wordcount":  77 ,
-        "url": "https:\/\/www.joshuachou.ink\/homomorphic-encryption\/","datePublished": "2022-09-20T00:00:00+00:00","dateModified": "2022-09-19T19:47:59+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "privacy, encryption","wordcount":  76 ,
+        "url": "https:\/\/www.joshuachou.ink\/homomorphic-encryption\/","datePublished": "2022-09-20T00:00:00+00:00","dateModified": "2022-09-21T10:23:04+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -123,7 +123,7 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Homomorphic Encryption</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>privacy</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-09-20">2022-09-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;77 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-09-20">2022-09-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;76 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -132,7 +132,7 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#-outsourcing-computation-privately">## Outsourcing computation, privately</a></li>
+    <li><a href="#outsourcing-computation-privately">Outsourcing computation, privately</a></li>
     <li><a href="#fully-homomorphic-encryption">Fully homomorphic encryption</a>
       <ul>
         <li><a href="#approximate-eigenvector-method">Approximate eigenvector method</a></li>
@@ -141,7 +141,7 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
         <li><a href="#encryption-scheme-from-lwe">Encryption scheme from LWE</a>
           <ul>
             <li><a href="#encryption">Encryption</a></li>
-            <li><a href="#decryption-image-20220919192128171httpscdnjsdelivrnetghjoshuachou2018ossmainupicimage-202209191921281719naakjpng">Decryption <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png" alt="image-20220919192128171"></a></li>
+            <li><a href="#decryption">Decryption</a></li>
             <li><a href="#on-matrices">On matrices</a></li>
           </ul>
         </li>
@@ -150,7 +150,7 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
     <li><a href="#ref">Ref</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="-outsourcing-computation-privately">## Outsourcing computation, privately</h2>
+            </div><div class="content" id="content"><h2 id="outsourcing-computation-privately">Outsourcing computation, privately</h2>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -243,14 +243,15 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
         data-sizes="auto"
         alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png"
         title="image-20220919191851050" /></p>
-<h4 id="decryption-image-20220919192128171httpscdnjsdelivrnetghjoshuachou2018ossmainupicimage-202209191921281719naakjpng">Decryption <img
+<h4 id="decryption">Decryption</h4>
+<p><img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png"
         data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png 2x"
         data-sizes="auto"
         alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png"
-        title="image-20220919192128171" /></h4>
+        title="image-20220919192128171" /></p>
 <p>it can be generalized to matrices.</p>
 <h4 id="on-matrices">On matrices</h4>
 <p><img
@@ -267,8 +268,8 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-09-19&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/5c2da2e9aebff56632d0b69fd8e7a285698a4200" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 5c2da2e9aebff56632d0b69fd8e7a285698a4200: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>5c2da2e</a></span>
+                <span>Updated on 2022-09-21&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/302ec700fd0f772903cb948d61819522c8e9bc44" target="_blank" title="commit by JoshuaChou(maybechou@live.com) 302ec700fd0f772903cb948d61819522c8e9bc44: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>302ec70</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

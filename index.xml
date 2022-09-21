@@ -11,7 +11,7 @@
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/homomorphic-encryption/</guid>
-    <description><![CDATA[## Outsourcing computation, privately Homomorphic evaluation function:
+    <description><![CDATA[Outsourcing computation, privately Homomorphic evaluation function:
 Eval: f, Enc(x) -&gt; Enc(f(x))
 Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
 Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。

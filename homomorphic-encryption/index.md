@@ -1,7 +1,7 @@
 # Homomorphic Encryption
 
 
-## ## Outsourcing computation, privately
+## Outsourcing computation, privately
 
 ![image-20220919154446784](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png)
 
@@ -45,13 +45,19 @@ Eval: f, Enc(x) -> Enc(f(x))
 
 #### Encryption
 
+
+
 ![image-20220919191851050](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919191851050.sVByoT.png)
 
-#### Decryption ![image-20220919192128171](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png)
+#### Decryption 
+
+![image-20220919192128171](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192128171.9naakJ.png)
 
 it can be generalized to matrices.
 
 #### On matrices
+
+
 
 ![image-20220919192253181](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919192253181.9ImI1D.png)
 
