@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>[转载] 同态加密：实现数据的“可算不可见” - Juexiao Zhou</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="[转载] 同态加密：实现数据的“可算不可见”" />
+<meta property="og:description" content="同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。
+本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。
+一、同态加密概述 1、基本概念 同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。
+图1：同态加密原理
+如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。
+目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。
+2、研究进展 1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。
+表1：各类同态加密算法
+*类型* *算法* *时间* *说明* *实际应用* 半同态加密 乘法同态 RSA算法 1977 非随机化加密，具有乘法同态性的原始算法面临选择明文攻击 在非同态场景中应用广泛 ElGamal算法 1985 随机化加密 DSS数字签名标准基于ElGamal数字签名算法的变体 加法同态 Paillier算法 1999 应用最为成熟 联邦学习 有限次数全同态 Boneh-Goh-Nissim方案 2005 仅支持1次乘法同态运算 / 全同态加密 Gentry方案 2009 第一代全同态加密，性能较差 / BGV方案 2012 第二代全同态加密，性能相对较好 IBM HElib开源库 BFV方案 2012 第二代全同态加密，与BGV类似 微软SEAL开源库 GSW方案 2013 第三代全同态加密，基于近似特征向量 TFHE开源库 CKKS方案 2017 可实现浮点数近似计算，适合机器学习建模场景 HElib和SEAL 3、标准化进展 （1）半同态加密标准化" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-20T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
+
+<meta name="twitter:title" content="[转载] 同态加密：实现数据的“可算不可见”"/>
+<meta name="twitter:description" content="同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。
+本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。
+一、同态加密概述 1、基本概念 同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。
+图1：同态加密原理
+如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。
+目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。
+2、研究进展 1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。
+表1：各类同态加密算法
+*类型* *算法* *时间* *说明* *实际应用* 半同态加密 乘法同态 RSA算法 1977 非随机化加密，具有乘法同态性的原始算法面临选择明文攻击 在非同态场景中应用广泛 ElGamal算法 1985 随机化加密 DSS数字签名标准基于ElGamal数字签名算法的变体 加法同态 Paillier算法 1999 应用最为成熟 联邦学习 有限次数全同态 Boneh-Goh-Nissim方案 2005 仅支持1次乘法同态运算 / 全同态加密 Gentry方案 2009 第一代全同态加密，性能较差 / BGV方案 2012 第二代全同态加密，性能相对较好 IBM HElib开源库 BFV方案 2012 第二代全同态加密，与BGV类似 微软SEAL开源库 GSW方案 2013 第三代全同态加密，基于近似特征向量 TFHE开源库 CKKS方案 2017 可实现浮点数近似计算，适合机器学习建模场景 HElib和SEAL 3、标准化进展 （1）半同态加密标准化"/>
+<meta name="application-name" content="Juexiao Zhou">
+<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" /><link rel="prev" href="https://www.joshuachou.ink/homomorphic-encryption/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[转载] 同态加密：实现数据的“可算不可见”",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "privacy, encryption","wordcount":  445 ,
+        "url": "https:\/\/www.joshuachou.ink\/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81\/","datePublished": "2022-09-20T00:00:00+00:00","dateModified": "2022-09-20T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/life/" title="Life"> Life </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Juexiao Zhou">Juexiao Zhou</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/about/" title="Me">Me</a><a class="menu-item" href="/life/" title="Life">Life</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">[转载] 同态加密：实现数据的“可算不可见”</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>privacy</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-09-20">2022-09-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;445 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#一同态加密概述">一、同态加密概述</a>
+      <ul>
+        <li><a href="#1基本概念">1、基本概念</a></li>
+        <li><a href="#2研究进展">2、研究进展</a></li>
+        <li><a href="#3标准化进展">3、标准化进展</a></li>
+      </ul>
+    </li>
+    <li><a href="#二主流同态加密算法原理">二、主流同态加密算法原理</a>
+      <ul>
+        <li><a href="#1半同态加密算法">1、半同态加密算法</a></li>
+        <li><a href="#2全同态加密算法">2、全同态加密算法</a></li>
+      </ul>
+    </li>
+    <li><a href="#三同态加密应用场景">三、同态加密应用场景</a>
+      <ul>
+        <li><a href="#1经典应用场景云计算">1、经典应用场景——云计算</a></li>
+        <li><a href="#2在区块链中的应用">2、在区块链中的应用</a></li>
+        <li><a href="#3在联邦学习中的应用">3、在联邦学习中的应用</a></li>
+      </ul>
+    </li>
+    <li><a href="#四总结与建议">四、总结与建议</a></li>
+    <li><a href="#参考文献">参考文献</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。</p>
+<p>本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。</p>
+</blockquote>
+<h2 id="一同态加密概述">一、同态加密概述</h2>
+<h3 id="1基本概念">1、基本概念</h3>
+<p>同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg"
+        title="img" /></p>
+<p>图1：同态加密原理</p>
+<p>如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。</p>
+<p>目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。</p>
+<h3 id="2研究进展">2、研究进展</h3>
+<p>1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。</p>
+<p>表1：各类同态加密算法</p>
+<table>
+<thead>
+<tr>
+<th><em><strong>*类型*</strong></em></th>
+<th><em><strong>*算法*</strong></em></th>
+<th><em><strong>*时间*</strong></em></th>
+<th><em><strong>*说明*</strong></em></th>
+<th><em><strong>*实际应用*</strong></em></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>半同态加密</td>
+<td>乘法同态</td>
+<td>RSA算法</td>
+<td>1977</td>
+<td>非随机化加密，具有乘法同态性的原始算法面临选择明文攻击</td>
+<td>在非同态场景中应用广泛</td>
+</tr>
+<tr>
+<td>ElGamal算法</td>
+<td>1985</td>
+<td>随机化加密</td>
+<td>DSS数字签名标准基于ElGamal数字签名算法的变体</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>加法同态</td>
+<td>Paillier算法</td>
+<td>1999</td>
+<td>应用最为成熟</td>
+<td>联邦学习</td>
+<td></td>
+</tr>
+<tr>
+<td>有限次数全同态</td>
+<td>Boneh-Goh-Nissim方案</td>
+<td>2005</td>
+<td>仅支持1次乘法同态运算</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>全同态加密</td>
+<td>Gentry方案</td>
+<td>2009</td>
+<td>第一代全同态加密，性能较差</td>
+<td>/</td>
+<td></td>
+</tr>
+<tr>
+<td>BGV方案</td>
+<td>2012</td>
+<td>第二代全同态加密，性能相对较好</td>
+<td>IBM HElib开源库</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>BFV方案</td>
+<td>2012</td>
+<td>第二代全同态加密，与BGV类似</td>
+<td>微软SEAL开源库</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>GSW方案</td>
+<td>2013</td>
+<td>第三代全同态加密，基于近似特征向量</td>
+<td>TFHE开源库</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CKKS方案</td>
+<td>2017</td>
+<td>可实现浮点数近似计算，适合机器学习建模场景</td>
+<td>HElib和SEAL</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3标准化进展">3、标准化进展</h3>
+<p><strong>（1）半同态加密标准化</strong></p>
+<p>2019年5月，国际标准化组织ISO发布了同态加密标准（ISO/IEC 18033-6:2019）。该标准仅涉及半同态加密，具体包含两种较为成熟的半同态加密机制：ElGamal乘法同态加密和Paillier加法同态加密，并规定了参与实体的参数和密钥生成、数据加密、密文数据解密、密文数据同态运算等步骤的具体过程。</p>
+<p><strong>（2）全同态加密标准化</strong></p>
+<p>2017年7月，来自学术界、工业界和政界的相关领域研究人员组成了全同态加密标准化开放联盟HomomorphicEncryption.org，在微软研究院举办了首届全同态加密标准化研讨会，开始共同推进全同态加密标准草案的编写工作，并发布了全同态加密安全标准、API标准、应用标准三份白皮书。迄今为止，HomomorphicEncryption.org在三年内已举办五届全同态加密标准化会议，参与成员包括微软、三星SDS、英特尔、IBM、谷歌、万事达卡等企业，以及NIST、ITU等机构的代表和各大高校的学者。在标准化进展方面，HomomorphicEncryption.org已分别于2018年3月和11月发布和更新了全同态加密标准草案。</p>
+<h2 id="二主流同态加密算法原理">二、主流同态加密算法原理</h2>
+<h3 id="1半同态加密算法">1、半同态加密算法</h3>
+<p>满足有限运算同态性而不满足任意运算同态性的加密算法称为半同态加密。典型的半同态加密特性包括乘法同态、加法同态、有限次数全同态等。</p>
+<p><strong>（1）乘法同态加密算法</strong></p>
+<p>在实际应用中，密文乘法同态性的需求场景不多，因此乘法同态性通常偶然存在于已有的经典加密算法中。满足乘法同态特性的典型加密算法包括1977年提出的RSA公钥加密算法和1985年提出的ElGamal公钥加密算法等。</p>
+<p><strong>① RSA算法</strong></p>
+<p>RSA算法是最为经典的公钥加密算法，至今已有40余年的历史，其安全性基于大整数分解困难问题。在实际应用中，RSA算法可采用RSA_PKCS1_PADDING、RSA_PKCS1_OAEP_PADDING等填充模式，根据密钥长度（常用1024位或2048位）对明文分组进行填充，而只有不对明文进行填充的原始RSA算法才能满足乘法同态特性。由于原始的RSA不是随机化加密算法，即加密过程中没有使用随机因子，每次用相同密钥加密相同明文的结果是固定的。因此，利用RSA的乘法同态性实现同态加密运算会存在安全弱点，攻击者可能通过选择明文攻击得到原始数据。</p>
+<p><strong>② ElGamal算法</strong></p>
+<p>ElGamal算法是一种基于Diffie-Hellman离散对数困难问题的公钥密码算法，可实现公钥加密和数字签名功能，同时满足乘法同态特性。ElGamal是一种随机化加密算法，即使每次用相同密钥加密相同明文得到的密文结果也不相同，因此不存在与RSA算法类似的选择明文攻击问题，是ISO同态加密国际标准中唯一指定的乘法同态加密算法。</p>
+<p><strong>（2）加法同态加密算法</strong></p>
+<p>Paillier算法是1999年提出的一种基于合数剩余类问题的公钥加密算法，也是目前最为常用且最具实用性的加法同态加密算法，已在众多具有同态加密需求的应用场景中实现了落地应用，同时也是ISO同态加密国际标准中唯一指定的加法同态加密算法。此外，由于支持加法同态，所以Paillier算法还可支持数乘同态，即支持密文与明文相乘。</p>
+<p><strong>（3）有限全同态加密算法</strong></p>
+<p>2005年提出的Boneh-Goh-Nissim方案是一种基于双线性映射的公钥密码方案，支持任意次加法同态和一次乘法同态运算。方案中的加法同态基于类似Paillier算法的思想，而一次乘法同态基于双线性映射的运算性质。由于双线性映射运算会使得密文所在的群发生变化，因此仅能支持一次乘法同态运算，但仍支持对乘法后的密文进一步作加法同态运算。</p>
+<h3 id="2全同态加密算法">2、全同态加密算法</h3>
+<p>满足任意运算同态性的加密算法称为全同态加密。由于任何计算都可以通过加法和乘法门电路构造，所以加密算法只要同时满足乘法同态和加法同态特性就称其满足全同态特性。</p>
+<p><strong>（1）主流算法</strong></p>
+<p>全同态加密算法的发展起源于2009年Gentry提出的方案，后续方案大多基于格代数结构构造。目前已在主流同态加密开源库中得到实现的全同态加密算法包括BGV方案、BFV方案、CKKS方案等。</p>
+<p><strong>① 第一代全同态加密方案——Gentry方案</strong></p>
+<p>Gentry方案是一种基于电路模型的全同态加密算法，支持对每个比特进行加法和乘法同态运算。Gentry方案的基本思想是构造支持有限次同态运算的同态加密算法并引入“Bootstrapping”方法控制运算过程中的噪音增长，这也是第一代全同态加密方案的主流模型。 “Bootstrapping”方法通过将解密过程本身转化为同态运算电路，并生成新的公私钥对对原私钥和含有噪音的原密文进行加密，然后用原私钥的密文对原密文的密文进行解密过程的同态运算，即可得到不含噪音的新密文。但是，由于解密过程本身的运算十分复杂，运算过程中也会产生大量噪音，为了给必要的同态运算需求至少预留足够进行一次乘法运算的噪音增长空间，需要对预先解密电路进行压缩简化，即将解密过程的一些操作尽量提前到加密时完成。</p>
+<p><strong>② 第二代全同态加密方案——BGV/BFV方案</strong></p>
+<p>Gentry方案之后的第二代全同态加密方案通常基于LWE/RLWE假设，其安全性基于代数格上的困难问题，典型方案包括BGV方案和BFV方案等。</p>
+<p>BGV（Brakerski-Gentry-Vaikuntanathan）方案是目前主流的全同态加密算法中效率最高的方案。在BGV方案中，密文和密钥均以向量表示，而密文的乘积和对应的密钥乘积则为张量，因此密文乘法运算会造成密文维数的爆炸式增长，导致方案只能进行常数次的乘法运算。BGV方案采用密钥交换技术控制密文向量的维数膨胀，在进行密文计算后通过密钥交换将膨胀的密文维数恢复为原密文的维数。同时，BGV方案可采用模交换技术替代Gentry方案中的“Bootstrapping”过程，用于控制密文同态运算产生的噪声增长，而不需要通过复杂的解密电路实现。因此，在每次进行密文乘法运算后，首先需要通过密钥交换技术降低密文的维数，然后通过模交换技术降低密文的噪声，从而能够继续进行下一次计算。</p>
+<p>BFV（Brakerski/Fan-Vercauteren）方案是与BGV方案类似的另一种第二代全同态加密方案，同样可基于LWE和RLWE构造。BFV方案不需要通过模交换进行密文噪声控制，但同样需要通过密钥交换解决密文乘法带来的密文维数膨胀问题。</p>
+<p>目前，最为主流的两个全同态加密开源库HElib和SEAL分别实现了BGV方案和BFV方案。</p>
+<p><strong>③ 第三代全同态加密方案——GSW方案</strong></p>
+<p>GSW（Gentry-Sahai-Waters）方案是一种基于近似特征向量的全同态加密方案。该方案基于LWE并可推广至RLWE，但其的性能不如BGV方案等其他基于RLWE的方案。GSW方案的密文为矩阵的形式，而矩阵相乘并不会导致矩阵维数的改变，因此GSW方案解决了以往方案中密文向量相乘导致的密文维数膨胀问题，无需进行用于降低密文维数的密钥交换过程。</p>
+<p><strong>④ 浮点数全同态加密方案——CKKS方案</strong></p>
+<p>CKKS（Cheon-Kim-Kim-Song）方案是2017年提出的一种新方案，支持针对实数或复数的浮点数加法和乘法同态运算，得到的计算结果为近似值，适用于机器学习模型训练等不需要精确结果的场景。由于浮点数同态运算在特定场景的必要性，HElib和SEAL两个全同态加密开源库均支持了CKKS方案。</p>
+<p><strong>（2）工程实现</strong></p>
+<p>虽然现有的全同态加密算法在工程实现性能方面存在一定的局限性，但仍有世界顶尖的科技公司对全同态加密进行了开源实现。目前，最为主流的全同态加密算法开源工具包括IBM主导的HElib库和微软主导的SEAL库。</p>
+<p><strong>① HElib</strong></p>
+<p>HElib是一个基于C++语言的同态加密开源软件库，底层依赖于NTL数论运算库和GMP多精度运算库实现，主要开发者为IBM的Halevi，目前最新版本为1.0.2，实现了支持“Bootstrapping”的BGV方案和基于近似数的CKKS方案。同时，HElib在上述原始方案中引入了许多优化以加速同态运算，包括Smart-Vercauteren密文打包技术[13]和Gentry-Halevi-Smart优化[14]，提升了算法的整体运行效率。HElib提供了一种“同态加密汇编语言”，支持“set”、“add”、“multiply”、“shift”等基本操作指令，此外还提供了自动噪声管理、改进的“Bootstrapping”方法、多线程等功能。目前，HElib支持在Ubuntu、CentOS、macOS等操作系统平台上进行安装部署。</p>
+<p>2020年5月，IBM在GitHub上开源了基于HElib开发的面向macOS和iOS操作系统的全同态加密工具包，提供了基于Xcode的全同态加密SDK，近期还将发布面向Linux和Android操作系统的工具包。</p>
+<p><strong>② SEAL</strong></p>
+<p>SEAL（Simple Encrypted Arithmetic Library，简单加密运算库）是微软密码学与隐私研究组开发的开源同态加密库，目前最新版本为3.5，支持BFV方案和CKKS方案，项目的参与人员包括CKKS的作者之一Song。SEAL基于C++实现，不需要其他依赖库，但一些可选功能需要微软GSL、ZLIB和Google Test等第三方库的支持。SEAL支持Windows、Linux、macOS、FreeBSD、Android等操作系统平台，同时支持.NET开发。与HElib类似，SEAL同样支持了基于整数的精确同态运算和基于浮点数的近似同态运算两类方案，但SEAL依靠微软的天生优势能够在Windows系统中进行部署。</p>
+<p>在噪声管理方面，与HElib支持自动噪声管理不同，在SEAL中每个密文拥有一个特定的噪声预算量，需要在程序编写过程中通过重线性化操作自行控制乘法运算产生的噪声。基于SEAL实现同态加密运算的性能在很大程度上取决于程序编写的优劣，且存在着不同的优化方法，因此总体而言，SEAL的学习和使用难度较大。</p>
+<p>由于现有的全同态加密算法在实际场景中的实用性不高，目前已落地的同态加密应用中采用的多为Paillier算法等性能较好的加法同态加密等半同态加密算法，通过将复杂计算需求以一定方式转化为纯加法的形式实现加法同态加密算法的有效应用。</p>
+<h2 id="三同态加密应用场景">三、同态加密应用场景</h2>
+<p>同态加密的概念最初提出用于解决云计算等外包计算中的数据机密性保护问题，防止云计算服务提供商获取敏感明文数据，实现“先计算后解密”等价于传统的“先解密后计算”。随着区块链、隐私计算等新兴领域的发展及其对隐私保护的更高要求，同态加密的应用边界拓展到了更为丰富的领域。</p>
+<h3 id="1经典应用场景云计算">1、经典应用场景——云计算</h3>
+<p>在云计算或外包计算中，用户为了节约自身的软硬件成本，可将计算和存储需求外包给云服务提供商，利用云服务提供商强大的算力资源实现数据的托管存储和处理。但是，将明文数据直接交给云服务器具有一定的安全风险，而传统的加密存储方式则无法实现对密文数据的直接计算，因此如何同时实现数据的机密性和可计算性成为了学术界的一个难题。同态加密的出现为这一场景的实现提供了可能性。</p>
+<p>在传统的云存储与计算解决方案中，用户需要信任云服务提供商不会窃取甚至泄露用户数据，而基于同态加密的云计算模型可在根本上解决这一矛盾。首先，用户使用同态加密算法和加密密钥对数据进行加密，并将密文发送给云服务器；云服务器在无法获知数据明文的情况下按照用户给定的程序对密文进行计算，并将密文计算结果返回给用户；用户使用同态加密算法和解密密钥对密文计算结果进行解密，所得结果与直接对明文进行相同计算的结果等价。</p>
+<h3 id="2在区块链中的应用">2、在区块链中的应用</h3>
+<p>区块链应用的基本逻辑是将需要存证的信息上链，并通过众多区块链节点的验证和存储，确保上链数据的有效性和不可篡改性。例如，在比特币中，用户将转账信息进行广播，区块链节点在进行验证后将其打包上链，保证交易的合法性；在以太坊中，需要依赖区块链节点对智能合约的正确执行，以实现链上信息的统一性和正确性。但是，无论是公有链还是联盟链，直接基于明文信息进行区块链发布通常会在泄露一定的敏感数据。</p>
+<p>基于同态加密的区块链应用理论模型如图2所示。为了保护链上信息的隐私性，同时又能实现区块链节点对相关信息的可计算性，可对数据进行同态加密，并将计算过程转化为同态运算过程，节点即可在无需获知明文数据的情况下实现密文计算。例如，区块链底层应用平台特别是公有链平台大多基于交易模型，可考虑采用加法同态加密进行支持隐私保护的交易金额计算等操作。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586306.2N7RTT.jpeg"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586306.2N7RTT.jpeg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586306.2N7RTT.jpeg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586306.2N7RTT.jpeg 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586306.2N7RTT.jpeg"
+        title="img" /></p>
+<p>图2：基于同态加密的区块链应用模型</p>
+<p>在一般的区块链隐私保护应用需求中，通常需要同时实现链上数据的保密性和可验证性，而同态加密仅能解决链上的密文计算问题。由于私钥不能公开，且随机化加密使得密文之间无法比较对应明文值是否相等，单独依靠同态加密技术难以在链上实现明文计算结果的验证。例如，加法同态加密虽然可以在保护交易金额和账户余额隐私的情况下实现金额的密文计算，但区块链节点无法对相关金额的有效性进行验证。因此，同态加密在区块链场景中的应用需求和应用能力有限，理论上更适合云计算等算力外包场景以及存在多个参与方之间交互计算需求的隐私计算应用。</p>
+<h3 id="3在联邦学习中的应用">3、在联邦学习中的应用</h3>
+<p>联邦学习的概念最早由谷歌提出，多个参与方可在保证各自数据隐私的同时实现联合机器学习建模，即在不获取对方原始数据的情况下利用对方数据提升自身模型的效果。根据数据融合维度的不同，联邦学习主要可分为横向联邦学习和纵向联邦学习，分别对应样本维度的融合和特征维度的融合。目前，联邦学习方案可采用同态加密、秘密分享、不经意传输等密码学手段解决不同阶段的安全计算问题。其中，同态加密主要用于联合建模过程中的参数交互计算过程，实现预测模型的联合确立。目前，在联邦学习场景中使用较多同态加密算法为Paillier加法半同态加密算法。</p>
+<p>在该类方案中，一般包含参与方A、参与方B、协作方C三种角色，参与方A和参与方B为数据提供方，而参与方C负责进行密钥分发和汇总计算，有时协作方C也可由两个参与方之一扮演。由于加法同态加密无法实现任意形式的计算，在进行联合建模时需要事先将拟联合计算的计算式近似转换为加法形式，并确定协议的具体流程。例如，通过泰勒展开将乘法运算转化为多项式相加的形式。联合模型的加密训练过程一般包含以下步骤：</p>
+<blockquote>
+<p>协作方C生成同态加密公私钥对，并向参与方A和B分发公钥；</p>
+<p>A和B以同态密文的形式交互用于计算的中间结果；</p>
+<p>A和B将各自的计算结果汇总给C，C进行汇总计算，并对结果进行解密；</p>
+<p>C将解密后的结果返回给A和B，双方根据结果更新各自的模型参数。</p>
+</blockquote>
+<p>在一些基于半同态加密的联邦学习特定方案中，也可无需协作方C进行模型汇总，参与双方各自形成一个子模型，在后续的联合预测的过程中需要进行参数交互。</p>
+<p>除以上使用单一密钥的方法外，目前还存在无需协作者C的联合建模方案，参与计算的两方各掌握一对公私钥，但该方案的复杂程度较大，在性能方面不如上述方案。此外，学术界还提出了多密钥全同态加密方案，支持在多方使用不同密钥加密的密文之间进行同态计算，但该类方法目前还处于理论阶段。</p>
+<p>目前，同态加密在联邦学习场景中的应用大多用于联合建模过程中的参数交互过程，避免泄露原始数据和直接传输明文参数，可在一定程度上同时解决数据融合计算和数据隐私保护问题。但是，目前基于加法半同态加密的解决方案仍存在一定的局限性，包括精度损失、交互开销大、公平性不足等问题。</p>
+<h2 id="四总结与建议">四、总结与建议</h2>
+<p>目前，全同态加密算法仍处于以学术界研究为主的发展阶段，现有方案均存在计算和存储开销大等无法规避的性能问题，距离高效的工程应用还有着难以跨越的鸿沟，同时面临国际和国内相关标准的缺失。因此，在尝试同态加密落地应用时，可考虑利用Paillier加法同态加密算法等较为成熟且性能较好的半同态加密算法，解决只存在加法或数乘同态运算需求的应用场景，或通过将复杂计算需求转化为只存在加法或数乘运算的形式实现全同态场景的近似替代。</p>
+<h2 id="参考文献">参考文献</h2>
+<blockquote>
+<p>Rivest R L, Adleman L, Dertouzos M L. On data banks and privacy homomorphisms[J]. Foundations of secure computation, 1978, 4(11): 169-180.</p>
+<p>Rivest R L, Shamir A, Adleman L. A method for obtaining digital signatures and public-key cryptosystems[J]. Communications of the ACM, 1978, 21(2): 120-126.</p>
+<p>ElGamal T. A public key cryptosystem and a signature scheme based on discrete logarithms[J]. IEEE transactions on information theory, 1985, 31(4): 469-472.</p>
+<p>Paillier P. Public-key cryptosystems based on composite degree residuosity classes[C]//International conference on the theory and applications of cryptographic techniques. Springer, Berlin, Heidelberg, 1999: 223-238.</p>
+<p>Boneh D, Goh E J, Nissim K. Evaluating 2-DNF formulas on ciphertexts[C]//Theory of Cryptography Conference. Springer, Berlin, Heidelberg, 2005: 325-341.</p>
+<p>Gentry C. Fully homomorphic encryption using ideal lattices[C]//Proceedings of the forty-first annual ACM symposium on Theory of computing. 2009: 169-178.</p>
+<p>Gentry C, Halevi S. Implementing gentry’s fully-homomorphic encryption scheme[C]//Annual international conference on the theory and applications of cryptographic techniques. Springer, Berlin, Heidelberg, 2011: 129-148.</p>
+<p>Brakerski Z, Gentry C, Vaikuntanathan V. (Leveled) fully homomorphic encryption without bootstrapping[J]. ACM Transactions on Computation Theory (TOCT), 2014, 6(3): 1-36.</p>
+<p>Brakerski Z. Fully homomorphic encryption without modulus switching from classical GapSVP[C]//Annual Cryptology Conference. Springer, Berlin, Heidelberg, 2012: 868-886.</p>
+<p>Fan J, Vercauteren F. Somewhat Practical Fully Homomorphic Encryption[J]. IACR Cryptology ePrint Archive, 2012, 2012: 144.</p>
+<p>Gentry C, Sahai A, Waters B. Homomorphic encryption from learning with errors: Conceptually-simpler, asymptotically-faster, attribute-based[C]//Annual Cryptology Conference. Springer, Berlin, Heidelberg, 2013: 75-92.</p>
+<p>Cheon J H, Kim A, Kim M, et al. Homomorphic encryption for arithmetic of approximate numbers[C]//International Conference on the Theory and Application of Cryptology and Information Security. Springer, Cham, 2017: 409-437.</p>
+<p>Smart N P, Vercauteren F. Fully homomorphic SIMD operations[J]. Designs, codes and cryptography, 2014, 71(1): 57-81.</p>
+<p>Gentry C, Halevi S, Smart N P. Homomorphic evaluation of the AES circuit[C]//Annual Cryptology Conference. Springer, Berlin, Heidelberg, 2012: 850-867.</p>
+</blockquote>
+<p><strong>转载自<a href="https://www.freebuf.com/" target="_blank" rel="noopener noreffer">FreeBuf.COM</a></strong></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-20</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”" data-hashtags="privacy,encryption"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-hashtag="privacy"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" data-title="[转载] 同态加密：实现数据的“可算不可见”"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">privacy</a>,&nbsp;<a href="/tags/encryption/">encryption</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/homomorphic-encryption/" class="prev" rel="prev" title="Homomorphic Encryption"><i class="fas fa-angle-left fa-fw"></i>Homomorphic Encryption</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"url","label":"","lightTheme":"github-light","repo":"JoshuaChou2018/me"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
