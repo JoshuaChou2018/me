@@ -9,8 +9,10 @@
     <pubDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/install-jupyter-kernel/</guid>
-    <description><![CDATA[ Avticate your environment，check for package ipykernel 1 python -m ipykernel --version If it’s not installed：
-1 python -m pip install ipykernel Add kernel to Jupyter notebook 1 python -m ipykernel install --user --name &#39;kernelname&#39; Check Jupyter notebook kernel 1 jupyter kernelspec list Delet jupyter kernel 1 jupyter kernelspec remove kernelname ]]></description>
+    <description><![CDATA[Avticate your environment，check for package ipykernel 1 python -m ipykernel --version If it’s not installed：
+1 python -m pip install ipykernel Add kernel to Jupyter notebook 1 python -m ipykernel install --user --name &#39;kernelname&#39; Check Jupyter notebook kernel 1 jupyter kernelspec list Delet jupyter kernel 1 jupyter kernelspec remove kernelname Update 2022.09.25:
+If you encounter the error: ImportError: cannot import name &lsquo;AsyncGenerator&rsquo;
+The reason is that the version of prompt_toolkit does not match Python 3.]]></description>
 </item><item>
     <title>Publish python package on Anaconda</title>
     <link>https://www.joshuachou.ink/publish-package-on-conda/</link>

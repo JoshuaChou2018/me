@@ -36,3 +36,18 @@ jupyter kernelspec remove kernelname
 ```
 
 
+
+**Update 2022.09.25:**
+
+If you encounter the error: **ImportError: cannot import name 'AsyncGenerator'**
+
+The reason is that the version of prompt_toolkit does not match Python 3.6
+
+The solution is to reduce the version
+
+```
+pip install --upgrade prompt-toolkit==2.0.1
+```
+
+Then you can add the kernel to notebook.
+
