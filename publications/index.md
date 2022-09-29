@@ -178,15 +178,12 @@
 
 
 
+
 ## Preprint or under review
 
 
 
 <ol reversed>
-  <li>
-    <font color=#0096FF>test</font> 
-  </li>
-  <br>
   <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
