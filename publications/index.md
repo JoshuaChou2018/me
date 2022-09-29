@@ -6,7 +6,8 @@
 
 <ol reversed>
   <li>
-    <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.</font> 
+    <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.
+    </font> 
     <br>	
     Haoyang Li, Hanmin Li, <b>Juexiao Zhou</b> and Xin Gao.
     <br>
@@ -20,7 +21,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.</font> 
+    <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.
+    </font> 
     <br>	
     Longxi Zhou*, Xianglin Meng*, Yuxin Huang*, Kai Kang*, <b>Juexiao Zhou</b>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao.
     <br>
@@ -34,7 +36,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.</font> 
+    <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.
+    </font> 
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao.
     <br>
@@ -48,7 +51,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.</font> 
+    <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.
+    </font> 
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao.
     <br>
@@ -62,7 +66,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.</font> 
+    <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.
+    </font> 
     <br>	
     Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, <b>Juexiao Zhou</b>, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao.
     <br>
@@ -76,7 +81,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.</font> 
+    <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.
+    </font> 
     <br>	
     Liongxi Zhou, Zhongxiao Li, <b>Juexiao Zhou</b>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao.
     <br>
@@ -90,7 +96,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
+    <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
+    </font> 
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.
     <br>
@@ -104,7 +111,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.</font> 
+    <font color=#0096FF>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.
+    </font> 
     <br>	
     Yisheng Li*, Bernhard Schaefke*, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, <b>Juexiao Zhou</b>, Yunfei Li, Liang Fang, Yuhui Hu.
     <br>
@@ -118,7 +126,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. </font>
+    <font color=#0096FF>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. 
+    </font>
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Xin Gao. 
     <br>
@@ -129,7 +138,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.</font> 
+    <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
+    </font> 
     <br>
     Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao and Ying Xu.
     <br>
@@ -137,7 +147,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.</font> 
+    <font color=#0096FF>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.
+    </font> 
     <br>
     Yongkang Long, <b>Juexiao Zhou</b>, Zhongxiao Li, Wei Chen, Xin Gao. 
     <br>
@@ -145,7 +156,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells.</font> 
+    <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells.
+    </font> 
     <br>
     Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
     <br>
@@ -153,7 +165,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells. </font> 
+    <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells. 
+    </font> 
     <br>
     Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen. 
     <br>
@@ -175,8 +188,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT
-</font> 
+    <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
+    </font> 
     <br>	
     Yuetan Chu*, Longxi Zhou*, <b>Juexiao Zhou</b>, Yuxin Huang, Tianyi Xing, Dexuan Xie, Xigang Xiao, Zhaowen Qiu, Xin Gao
     <br>
@@ -184,8 +197,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI
-</font> 
+    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
+    </font> 
     <br>	
     <b>Juexiao Zhou*</b>, Longxi Zhou*, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao
     <br>
@@ -193,8 +206,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics
-</font> 
+    <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics.
+    </font> 
     <br>	
     Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
     <br>
@@ -202,8 +215,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Application of Deep Learning in Understanding Gene Expression Regulation
-</font> 
+    <font color=#0096FF>Application of Deep Learning in Understanding Gene Expression Regulation.
+    </font> 
     <br>	
     Zhongxiao Li, Elva Gao, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao
     <br>
@@ -211,8 +224,8 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Antibody library design with transformer and deep reinforcement learning
-</font> 
+    <font color=#0096FF>Antibody library design with transformer and deep reinforcement learning.
+    </font> 
     <br>	
     Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Lu Zhang and Xin Gao
     <br>
@@ -220,7 +233,7 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data</font> 
+    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
     <br>	
     <b>Juexiao Zhou</b>*, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
     <br>
@@ -252,4 +265,5 @@
   </li>
   <br>
 </ol>
+
 
