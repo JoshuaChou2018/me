@@ -3,9 +3,22 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[转载] 谷歌开源计算框架JAX”</title>
+    <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</link>
+    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</guid>
+    <description><![CDATA[相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！
+下面是使用Numpy的运行情况：
+1 2 3 import numpy as np # 使用标准numpy，运算将在CPU上执行。 x = np.random.random([5000, 5000]).astype(np.float32) %timeit np.matmul(x, x) 运行结果：
+1 2 1 loop, best of 3: 3.9 s per loop 而下面是使用JAX的Numpy的情况： import jax.numpy as np # 使用&#34;JAX版&#34;的numpy from jax import random # 注意JAX下随机数API有所不同 x = random.uniform(random.PRNGKey(0), [5000, 5000]) %timeit np.matmul(x, x) 运行情况：
+1 1 loop, best of 3: 109 ms per loop 我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！
+是不是很神奇？ 那JAX到底是什么？
+JAX是谷歌开源的、可以在CPU、GPU和TPU上运行的numpy，是针对机器学习研究的高性能自微分计算框架。]]></description>
+</item><item>
     <title>[转载] 同态加密：实现数据的“可算不可见”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</link>
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -206,17 +219,5 @@ Example 1:
     <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
     <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
 Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.]]></description>
-</item><item>
-    <title>lc314. Binary Tree Vertical Order Traversal</title>
-    <link>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</link>
-    <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</guid>
-    <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).
-If two nodes are in the same row and column, the order should be from left to right.
-Example 1:
-1 2 Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]] Example 2:
-1 2 Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]] Example 3:
-1 2 Input: root = [3,9,8,4,0,1,7,null,null,null,2,5] Output: [[4],[9,5],[3,0,1],[8,2],[7]] Constraints:]]></description>
 </item></channel>
 </rss>

@@ -102,6 +102,21 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/">lc253. 会议室 II</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-03">2022-02-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">给你一个会议时间安排的数组 intervals ，每个会议时间都会包括开始和结束的时间 intervals[i] = [starti, endi] ，返回 所需会议室的最小数量 。
+示例 1：
+输入：intervals = [[0,30],[5,10],[15,20]] 输出：2
+示例 2：
+输入：intervals = [[7,10],[2,4]] 输出：1
+提示：
+1 &lt;= intervals.length &lt;= 104 0 &lt;= starti &lt; endi &lt;= 106
+解题思路 我们可以想象把这些interval给叠起来，所需要会议室的最小数量就等于最大重叠的interval的数目。
+转化为上下车问题，每个interval的开始时间+1，每个interval的结束时间-1，然后我们统计counter的最大数值。
+换个思路就是我们以时间为单位，我们可以知道每个单位时间车上的总人数是增加多少还是减少多少，这样我们可以直接求和从开始扫描到结束，获取当前车上最大的人数就可以。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 class Solution(object): def minMeetingRooms(self, intervals): &#34;&#34;&#34; :type intervals: List[List[int]] :rtype: int &#34;&#34;&#34; dic={} for interval in intervals: try: dic[interval[0]]+=1 except: dic[interval[0]]=1 try: dic[interval[1]]-=1 except: dic[interval[1]]=-1 max_=0 count=0 for key in sorted(dic.</div><div class="post-footer">
+        <a href="/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc938.range_sum_of_bst/">lc938. Range Sum of BST</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-02-03">2022-02-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
 Example 1:
@@ -124,15 +139,6 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。</div><div class="post-footer">
         <a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc10.regular_expression_matching/">lc10. Regular Expression Matching</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>leetcode</a></span></div><div class="content">Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
-'.' Matches any single character. '*' Matches zero or more of the preceding element. The matching should cover the entire input string (not partial).
-Example 1:
-1 2 3 Input: s = &#34;aa&#34;, p = &#34;a&#34; Output: false Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;. Example 2:
-1 2 3 Input: s = &#34;aa&#34;, p = &#34;a*&#34; Output: true Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;.</div><div class="post-footer">
-        <a href="/lc10.regular_expression_matching/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">leetcode</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -163,7 +169,7 @@ Example 1:
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/20/">20</a>
+                        <a href="/page/21/">21</a>
                     </span>
                 </li></ul></div>
     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5f0suf0rff6&amp;m=7&amp;c=54ff00&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=80" async="async"></script></div>
