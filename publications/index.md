@@ -171,7 +171,7 @@
 
 <ol reversed>
   <li>
-    <font color=#0096FF>test
+    <font color=#0096FF>test</font> 
   </li>
   <br>
   <li>
