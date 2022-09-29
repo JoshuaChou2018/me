@@ -171,6 +171,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT
+</font> 
+    <br>	
+    Yuetan Chu*, Longxi Zhou*, <b>Juexiao Zhou</b>, Yuxin Huang, Tianyi Xing, Dexuan Xie, Xigang Xiao, Zhaowen Qiu, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI
 </font> 
     <br>	
@@ -239,4 +248,5 @@
   </li>
   <br>
 </ol>
+
 

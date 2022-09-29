@@ -2,12 +2,12 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</loc><lastmod>2022-09-20T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/homomorphic-encryption/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/ms-seal/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/ckks/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/saudi-arabia/</loc><lastmod>2022-09-18T17:03:12&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</loc><lastmod>2022-09-20T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/homomorphic-encryption/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/ms-seal/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/ckks/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/homomorphic-encryption-for-arithmetic-of-approximate-numbers/</loc><lastmod>2022-09-19T19:47:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/saudi-arabia/</loc><lastmod>2022-09-18T17:03:12&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/run-ubuntu-in-docker/</loc><lastmod>2022-08-21T10:29:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/fhe/</loc><lastmod>2022-08-10T17:33:23&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</loc><lastmod>2022-08-07T12:30:57&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -63,23 +63,23 @@
             <loc>https://www.joshuachou.ink/miniserver/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/i1.sort-1-million/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/publish-package-on-conda/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/medina-saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/taif-saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/bangkok-thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/malacca-malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/phuket-thailand/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/langkawi-archipelago-malaysia/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/bali-indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/medina-saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/taif-saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/bangkok-thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/malacca-malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/phuket-thailand/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/langkawi-archipelago-malaysia/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/bali-indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2022-09-25T11:01:22&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/encryption/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/encryption/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/</loc><lastmod>2022-09-25T11:01:22&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2022-09-25T11:01:22&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/privacy/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/privacy/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/privacy/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/privacy/</loc><lastmod>2022-09-21T10:23:04&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2022-09-25T11:01:22&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/life/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/life/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/life/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/life/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/saudi-arabia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/docker/</loc><lastmod>2022-08-21T10:29:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2022-09-25T11:01:22&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/ubuntu/</loc><lastmod>2022-08-21T10:29:13&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -108,8 +108,8 @@
             <loc>https://www.joshuachou.ink/tags/algorithm/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/bat/</loc><lastmod>2021-11-07T17:01:15&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/coding/</loc><lastmod>2021-11-05T18:20:34&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2022-09-20T11:40:17&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2022-09-20T11:40:17&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://www.joshuachou.ink/publications/</loc><priority>0</priority></url></urlset>
