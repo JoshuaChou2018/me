@@ -3,9 +3,19 @@
         <title>Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>jupyter in pycharm</title>
+    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
+    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
+1 jupyter URL is invalid Solution:
+Even without a token, use the url: http://url:port?token=
+Then it works]]></description>
+</item><item>
     <title>[转载] 谷歌开源计算框架JAX”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</link>
     <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
@@ -211,13 +221,5 @@ Example 1:
 1 2 Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Example 2:
 1 2 Input: nums = [] Output: [] Example 3:
 1 2 Input: nums = [0] Output: [] Constraints:]]></description>
-</item><item>
-    <title>lc297. Serialize and Deserialize Binary Tree</title>
-    <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
-    <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
-    <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
-Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.]]></description>
 </item></channel>
 </rss>

@@ -3,7 +3,17 @@
         <title>conda - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/conda/</link>
         <description>conda - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/conda/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/conda/" rel="self" type="application/rss+xml" /><item>
+    <title>jupyter in pycharm</title>
+    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
+    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
+1 jupyter URL is invalid Solution:
+Even without a token, use the url: http://url:port?token=
+Then it works]]></description>
+</item><item>
     <title>Install kernel for jupyter notebook</title>
     <link>https://www.joshuachou.ink/install-jupyter-kernel/</link>
     <pubDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</pubDate>

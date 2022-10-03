@@ -3,7 +3,17 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>jupyter in pycharm</title>
+    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
+    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
+1 jupyter URL is invalid Solution:
+Even without a token, use the url: http://url:port?token=
+Then it works]]></description>
+</item><item>
     <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
     <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
     <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -92,15 +102,5 @@ Fors some unknow reason, the user is unable to click the text boxes or type anyt
 This problem happens under my settings, macOS Catalina 10.15.7, Unity 2019.4.31f1, VRChat SDK3.
 Solution
 The reason of this problem is that when you click the temp scene created by the SDK3, the cursor will be invisible and locked.]]></description>
-</item><item>
-    <title>Install kernel for jupyter notebook</title>
-    <link>https://www.joshuachou.ink/install-jupyter-kernel/</link>
-    <pubDate>Sun, 28 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/install-jupyter-kernel/</guid>
-    <description><![CDATA[Avticate your environment，check for package ipykernel 1 python -m ipykernel --version If it’s not installed：
-1 python -m pip install ipykernel Add kernel to Jupyter notebook 1 python -m ipykernel install --user --name &#39;kernelname&#39; Check Jupyter notebook kernel 1 jupyter kernelspec list Delet jupyter kernel 1 jupyter kernelspec remove kernelname Update 2022.09.25:
-If you encounter the error: ImportError: cannot import name &lsquo;AsyncGenerator&rsquo;
-The reason is that the version of prompt_toolkit does not match Python 3.]]></description>
 </item></channel>
 </rss>

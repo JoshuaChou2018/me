@@ -3,7 +3,17 @@
         <title>linux - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>linux - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>jupyter in pycharm</title>
+    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
+    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
+    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
+1 jupyter URL is invalid Solution:
+Even without a token, use the url: http://url:port?token=
+Then it works]]></description>
+</item><item>
     <title>libc10_cuda.so error for installing pyG</title>
     <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
     <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -105,12 +115,5 @@ deleteHead表示调用deleteHead函数
 第二个栈对应的是操作的值。
 栈（Stack）的特点是先入后出，但是我们需要实现直接操作Head的功能。因此使用两个Stack可以实现列表倒序。
 1 2 3 4 5 6 7 8 9 10 11 12 13 class CQueue: def __init__(self): self.A, self.]]></description>
-</item><item>
-    <title>Example</title>
-    <link>https://www.joshuachou.ink/example/</link>
-    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/example/</guid>
-    <description><![CDATA[Example MD]]></description>
 </item></channel>
 </rss>
