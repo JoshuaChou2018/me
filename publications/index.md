@@ -178,12 +178,20 @@
 
 
 
-
 ## Preprint or under review
 
 
 
 <ol reversed>
+  <li>
+    <font color=#0096FF>GPT generates more diverse scaffolds than GRU in exploring the chemical space.
+    </font> 
+    <br>	
+    Xiaopeng Xu, <b>Juexiao Zhou</b>, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Xingyu Liao, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
   <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
