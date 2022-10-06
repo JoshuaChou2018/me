@@ -3,7 +3,14 @@
         <title>conda - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/conda/</link>
         <description>conda - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/conda/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/conda/" rel="self" type="application/rss+xml" /><item>
+    <title>python安装blender包bpy</title>
+    <link>https://www.joshuachou.ink/blender-python/</link>
+    <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/blender-python/</guid>
+    <description><![CDATA[ 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install ]]></description>
+</item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
     <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>

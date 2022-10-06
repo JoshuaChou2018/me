@@ -3,7 +3,14 @@
         <title>system - Tag - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/tags/system/</link>
         <description>system - Tag - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+    <title>python安装blender包bpy</title>
+    <link>https://www.joshuachou.ink/blender-python/</link>
+    <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/blender-python/</guid>
+    <description><![CDATA[ 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install ]]></description>
+</item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
     <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -95,14 +102,5 @@ The reason is that the version of prompt_toolkit does not match Python 3.]]></de
 1 sudo apt install slurm-wlm slurm-wlm-doc -y Modify config
 1 2 rm /etc/slurm-llnl/slurm.conf vi /etc/slurm-llnl/slurm.conf Example of config
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 # slurm.]]></description>
-</item><item>
-    <title>安装Python导致VNC黑屏解决方案</title>
-    <link>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/%E5%AE%89%E8%A3%85python%E5%AF%BC%E8%87%B4vnc%E7%95%8C%E9%9D%A2%E9%BB%91%E5%B1%8F/</guid>
-    <description><![CDATA[问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
-解决方案：
-1 2 3 4 5 6 7 8 9 $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base ]]></description>
 </item></channel>
 </rss>

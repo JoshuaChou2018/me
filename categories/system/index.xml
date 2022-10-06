@@ -3,7 +3,14 @@
         <title>system - Category - Juexiao Zhou</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>python安装blender包bpy</title>
+    <link>https://www.joshuachou.ink/blender-python/</link>
+    <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/blender-python/</guid>
+    <description><![CDATA[ 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install ]]></description>
+</item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
     <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -91,16 +98,5 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
     <author>Author</author>
     <guid>https://www.joshuachou.ink/example/</guid>
     <description><![CDATA[Example MD]]></description>
-</item><item>
-    <title>Unable to interact with text boxes during Build &amp; Publish for VRChat SDK3</title>
-    <link>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</link>
-    <pubDate>Fri, 17 Dec 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/vrcsdk_can_not_edit_text/</guid>
-    <description><![CDATA[Problem Description
-Fors some unknow reason, the user is unable to click the text boxes or type anything into the publish window after running the Build &amp; Publish. When the user clicks the main window in Unity, the cursor disappears and the user can not select the text boxes or anything else.
-This problem happens under my settings, macOS Catalina 10.15.7, Unity 2019.4.31f1, VRChat SDK3.
-Solution
-The reason of this problem is that when you click the temp scene created by the SDK3, the cursor will be invisible and locked.]]></description>
 </item></channel>
 </rss>
