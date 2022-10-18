@@ -186,16 +186,17 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 ### **Academic Services: Reviewer**
 
-| Journal/Conference                                  | # Paper Reviewed |
-|:---------------------------------------------------:|:----------------:|
-| Genome Biology                                      | 1                |
-| Genome Research                                     | 2                |
-| IJCAI-ECAI 2022                                     | 1                |
-| ICONIP2020                                          | 1                |
-| ICMLA2021                                           | 1                |
-| Journal of Bioinformatics and Computational Biology | 1                |
-| MICCAI2020                                          | 1                |
-| SIGKDD2022                                          | 2                |
+|                 Journal/Conference                  | # Paper Reviewed |
+| :-------------------------------------------------: | :--------------: |
+|                   Genome Biology                    |        1         |
+|                   Genome Research                   |        2         |
+|                       Heliyon                       |        1         |
+|                   IJCAI-ECAI 2022                   |        1         |
+|                     ICONIP2020                      |        1         |
+|                      ICMLA2021                      |        1         |
+| Journal of Bioinformatics and Computational Biology |        1         |
+|                     MICCAI2020                      |        1         |
+|                     SIGKDD2022                      |        2         |
 
 <br>
 
