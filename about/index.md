@@ -23,13 +23,13 @@ Major in Computer Science and Bioinformatics.
 
 **Affiliation:**
 
-Structural and Functional Bioinformatics (SFB) Group;
+[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb);
 
-Computational Bioscience Research Center (CBRC)
+[Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
 
-King Abdullah University of Science and Technology (KAUST)
+[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
 
- [CV](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: Jan 2022)](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -37,44 +37,45 @@ King Abdullah University of Science and Technology (KAUST)
 
 ### **Education**
 
-- **PhD Student in Computer Science**, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
-- **Master of Science, M.S. in Computer Science**, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
+- **PhD Student in Computer Science**, Supervised by Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1), [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
+- **Master of Science, M.S. in Computer Science**, Supervised by Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1), [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
 - Visiting Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Sep 2019 - Feb 2020
-- **B.S. (Honored) in Bioinformatics**, Supervised by Prof. Wei Chen, [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ), Sep 2016 - Jun 2020
+- **Bachelor of Science, B.S. (Honored) in Bioinformatics**, Supervised by Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en), [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ), Sep 2016 - Jun 2020
 
 <br>
 
 ### **Research Interest**
 
-- Intelligent Healthcare and Privacy
+- **Privacy in Bioinformatics and Intelligent Healthcare**
+	- Federated learning
+	- Differential privacy
+	- Homomorphic encryption
+	- Attacking and defense
 
-- Medical Imaging
-  
-  - EEG, X-ray, CT, fMRI
-
+- **Medical Imaging**
+  - EEG
+  - X-ray
+  - CT
+  - fMRI
+- **Bioinformatics**
+  - Analysis and integration of biological omics data with deep learning methods
+  - Developing new bioinformatics tools
 - Artificial Intelligence
-  
-  - Theoretical Research of Deep Learning.
 
-- Bioinformatics
-  
-  - Analysis and integration of biological omics data with deep learning methods.
-  - Developing new bioinformatics tools.
-
+  - Theoretical Research of Deep Learning
 - Metaverse
-  
-  - Computer vision and VR
 
+  - Computer vision and VR
 - Cognitive Neuroscience
-  
-  - Mechanism of Language, Emotion, Memory, and Dream.
+
+  - Mechanism of Language, Emotion, Memory, and Dream
   - Brain-Computer Interface
 
 <br>
 
-### Projects and Publications
+### Research and Publications
 
-Please check [here](https://www.joshuachou.ink/publications/)
+Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
@@ -128,6 +129,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 **GPA: 4.00 / 4.00**
 
+- KAUST AII’s NeurIPS travel grant, 2022
 - CEMSE Dean’s List  Award, 2022
 - Excellent Research Award, CEMSE, 2021
 
@@ -135,7 +137,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 ##### KAUST, 2020-2021
 
-**MS, Computer Science**
+**Master of Science, Computer Science**
 
 **GPA: 3.95 / 4.00**
 
@@ -147,7 +149,7 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 ##### SUSTech, 2016-2020
 
-**Bachelor, Bioinformatics, Biology**
+**Bachelor of Science, Bioinformatics, Biology**
 
 **GPA: 3.92 / 4.00 (Top 0.1%), Core GPA: 3.94/4.00**
 
@@ -184,7 +186,9 @@ Please check [here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-### **Academic Services: Reviewer**
+### **Academic Services**
+
+#### **Reviewer**
 
 |                 Journal/Conference                  | # Paper Reviewed |
 | :-------------------------------------------------: | :--------------: |
