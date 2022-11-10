@@ -52,7 +52,7 @@ Major in Computer Science and Bioinformatics.
 	- Homomorphic encryption
 	- Attacking and defense
 
-- **Medical Imaging**
+- **AI in Medical Imaging**
   - EEG
   - X-ray
   - CT
