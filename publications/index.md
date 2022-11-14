@@ -6,6 +6,18 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
+    </font> 
+    <br>
+    <b>Juexiao Zhou</b>, Xin Gao. 
+    <br>
+    <i>Poster</i>. <i><b>Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_Juexiao Zhou.pdf">certificate</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.
     </font> 
     <br>	
@@ -178,6 +190,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -270,5 +283,4 @@
   </li>
   <br>
 </ol>
-
 

@@ -75,7 +75,7 @@ Major in Computer Science and Bioinformatics.
 
 ### Research and Publications
 
-Please check the complete list [@here](https://www.joshuachou.ink/publications/)
+Please check the list [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
