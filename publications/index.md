@@ -5,6 +5,8 @@
 
 
 <ol reversed>
+  <font size="+1">2022</font>
+  <br>
   <li>
     <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
     </font> 
@@ -47,6 +49,8 @@
     <a href="https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf">pdf</a>
   </li>
   <br>
+  <font size="+1">2021</font>
+  <br>
   <li>
     <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.
     </font> 
@@ -61,6 +65,8 @@
     <a href="https://www.frontiersin.org/articles/10.3389/fphys.2021.655556/full">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/fphys-12-655556.pdf">pdf</a>
   </li>
+  <br>
+  <font size="+1">2020</font>
   <br>
   <li>
     <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.
@@ -149,6 +155,8 @@
     <a href="http://hdl.handle.net/10754/661204">online</a>
   </li>
   <br>
+  <font size="+1">2019</font>
+  <br>
   <li>
     <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
     </font> 
@@ -186,6 +194,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
