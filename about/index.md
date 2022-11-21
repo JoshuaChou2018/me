@@ -179,6 +179,9 @@ Please check the list [@here](https://www.joshuachou.ink/publications/)
 
 ### **Talks**
 
+- Privacy in Bioinformatics and Intelligent Healthcare.
+  - Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.
+  
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
   - CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
