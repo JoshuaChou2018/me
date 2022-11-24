@@ -8,7 +8,7 @@
   <font size="+1">2022</font>
   <br>
   <li>
-    <font color=#0096FF>DeeReCT-TSS: A novel meta-learning-based method annotates TSS in multiple cell types based on DNA sequences and RNA-seq data.</font> 
+    <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
     <br>	
     <b>Juexiao Zhou</b>*, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao.
     <br>
