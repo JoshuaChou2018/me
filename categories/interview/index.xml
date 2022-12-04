@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>interview - Category - Juexiao Zhou</title>
+        <title>interview - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/interview/</link>
-        <description>interview - Category - Juexiao Zhou</description>
+        <description>interview - Category - Juexiao Zhou 周觉晓</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/interview/" rel="self" type="application/rss+xml" /><item>
     <title>i4.genetic algorithm and evolutionary algorithm</title>
     <link>https://www.joshuachou.ink/i4.gaea/</link>
