@@ -174,6 +174,7 @@ Please check the list [@here](https://www.joshuachou.ink/publications/)
 ### **Membership**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
+- The international Asia-Pacific Bioinformatics Network (APBioNET) Member
 
 <br>
 
@@ -203,14 +204,14 @@ Please check the list [@here](https://www.joshuachou.ink/publications/)
 |                      ICMLA2021                      |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
 |                     MICCAI2020                      |        1         |
+|                 Multimedia Systems                  |        1         |
 |                     SIGKDD2022                      |        2         |
 
 <br>
 
 #### **Conference**
 
-- The 21st International Conference on Bioinformatics (InCoB2022), Zoom Admin
-
+- The 21st International Conference on Bioinformatics (InCoB2022), Administrator, [certificate](index.en.assets/InCoB2022.pdf)
 
 <br>
 
