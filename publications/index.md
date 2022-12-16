@@ -8,9 +8,20 @@
   <font size="+1">2022</font>
   <br>
   <li>
+    <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.
+    </font> 
+    <br>	
+    Zhongxiao Li*, Elva Gao*, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao
+    <br>
+    <i><b>Cell Reports Methods.</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
     <br>	
-    <b>Juexiao Zhou</b>*, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao.
+    <b>Juexiao Zhou*</b>, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao.
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics.</b></i>
     <br>
@@ -211,6 +222,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -253,15 +265,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Application of Deep Learning in Understanding Gene Expression Regulation.
-    </font> 
-    <br>	
-    Zhongxiao Li, Elva Gao, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Antibody library design with transformer and deep reinforcement learning.
     </font> 
     <br>	
@@ -273,7 +276,7 @@
   <li>
     <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
     <br>	
-    <b>Juexiao Zhou</b>*, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
+    <b>Juexiao Zhou*</b>, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
     <br>
     <i><b>under review.</b></i>
   </li>
