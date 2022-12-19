@@ -25,7 +25,9 @@
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics.</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>Access: </b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1672022922001656">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -223,6 +225,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -298,5 +301,4 @@
   </li>
   <br>
 </ol>
-
 
