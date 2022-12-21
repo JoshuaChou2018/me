@@ -101,6 +101,13 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/">linux删除百万级别文件</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-05">2022-08-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">在运行任务时，往linux的同一个文件夹中写入超过500万个文件，导致在硬盘还有空间的情况下，在该文件夹下无法继续写入文件，也无法使用ls、rm等命令。记录处理过程。
+Background: physical server, about two years old, 7200-RPM SATA drives connected to a 3Ware RAID card, ext3 FS mounted noatime and data=ordered, not under crazy load, kernel 2.6.18-92.1.22.el5, uptime 545 days. Directory doesn&rsquo;t contain any subdirectories, just millions of small (~100 byte) files, with some larger (a few KB) ones.
+We have a server that has gone a bit cuckoo over the course of the last few months, but we only noticed it the other day when it started being unable to write to a directory due to it containing too many files.</div><div class="post-footer">
+        <a href="/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/googlesheetautomaticsort/">Automatically Sort Data in Google Sheets</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-01">2022-07-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">Automatically Sort Data in Google Sheets
 Extension -&gt; Apps script
@@ -111,13 +118,6 @@ Extension -&gt; Apps script
         <a href="/check-swap/">Check SWAP</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content"> Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} </div><div class="post-footer">
         <a href="/check-swap/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/xcode-select/">xcode-select</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
-解决方案：
-1 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer </div><div class="post-footer">
-        <a href="/xcode-select/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
@@ -149,7 +149,7 @@ Extension -&gt; Apps script
                     <span class="page-link" aria-hidden="true">&hellip;</span>
                 </li><li class="page-item ">
                     <span class="page-link">
-                        <a href="/page/21/">21</a>
+                        <a href="/page/22/">22</a>
                     </span>
                 </li></ul></div>
     <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5f0suf0rff6&amp;m=7&amp;c=54ff00&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=80" async="async"></script></div>

@@ -3,9 +3,19 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>pycharm增加运行时内存</title>
+    <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
+    <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
+    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
+2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
+3，将**-Xms**属性的值修改为你想要的结果，然后保存
+1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+</item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -208,13 +218,5 @@ Example 1:
     <description><![CDATA[You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.]]></description>
-</item><item>
-    <title>lc621. Task Scheduler</title>
-    <link>https://www.joshuachou.ink/lc621.-task-scheduler/</link>
-    <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc621.-task-scheduler/</guid>
-    <description><![CDATA[Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
-However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks.]]></description>
 </item></channel>
 </rss>

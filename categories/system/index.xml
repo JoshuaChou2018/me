@@ -3,7 +3,17 @@
         <title>system - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>pycharm增加运行时内存</title>
+    <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
+    <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
+    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
+2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
+3，将**-Xms**属性的值修改为你想要的结果，然后保存
+1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+</item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -91,12 +101,5 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
 使用一块外置的USB移动硬盘，要求文件系统是HFS+。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
 方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。]]></description>
-</item><item>
-    <title>Example</title>
-    <link>https://www.joshuachou.ink/example/</link>
-    <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/example/</guid>
-    <description><![CDATA[Example MD]]></description>
 </item></channel>
 </rss>

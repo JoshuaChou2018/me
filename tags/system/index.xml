@@ -3,7 +3,17 @@
         <title>system - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/system/</link>
         <description>system - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+    <title>pycharm增加运行时内存</title>
+    <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
+    <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
+    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
+2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
+3，将**-Xms**属性的值修改为你想要的结果，然后保存
+1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+</item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -92,15 +102,5 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 1 python -m pip install ipykernel Add kernel to Jupyter notebook 1 python -m ipykernel install --user --name &#39;kernelname&#39; Check Jupyter notebook kernel 1 jupyter kernelspec list Delet jupyter kernel 1 jupyter kernelspec remove kernelname Update 2022.09.25:
 If you encounter the error: ImportError: cannot import name &lsquo;AsyncGenerator&rsquo;
 The reason is that the version of prompt_toolkit does not match Python 3.]]></description>
-</item><item>
-    <title>Install Slurm in Ubuntu</title>
-    <link>https://www.joshuachou.ink/install-slurm/</link>
-    <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/install-slurm/</guid>
-    <description><![CDATA[Install
-1 sudo apt install slurm-wlm slurm-wlm-doc -y Modify config
-1 2 rm /etc/slurm-llnl/slurm.conf vi /etc/slurm-llnl/slurm.conf Example of config
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 # slurm.]]></description>
 </item></channel>
 </rss>

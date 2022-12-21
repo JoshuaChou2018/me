@@ -3,7 +3,17 @@
         <title>linux - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>linux - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>pycharm增加运行时内存</title>
+    <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
+    <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
+    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
+2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
+3，将**-Xms**属性的值修改为你想要的结果，然后保存
+1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+</item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
@@ -92,14 +102,5 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
 Formally, a parentheses string is valid if and only if:
 It is the empty string, contains only lowercase characters, or It can be written as AB (A concatenated with B), where A and B are valid strings, or It can be written as (A), where A is a valid string.]]></description>
-</item><item>
-    <title>lc155.Min Stack</title>
-    <link>https://www.joshuachou.ink/lc155.min_stack/</link>
-    <pubDate>Sat, 08 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc155.min_stack/</guid>
-    <description><![CDATA[Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-Implement the MinStack class:
-MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. Example 1: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 Input [&#34;MinStack&#34;,&#34;push&#34;,&#34;push&#34;,&#34;push&#34;,&#34;getMin&#34;,&#34;pop&#34;,&#34;top&#34;,&#34;getMin&#34;] [[],[-2],[0],[-3],[],[],[],[]] Output [null,null,null,null,-3,null,0,-2] Explanation MinStack minStack = new MinStack(); minStack.]]></description>
 </item></channel>
 </rss>
