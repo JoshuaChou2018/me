@@ -3,9 +3,37 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>macOS上使用Openconnect代替Cisco Anyconnect</title>
+    <link>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</link>
+    <pubDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</guid>
+    <description><![CDATA[今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品
+下面说下Openconnect安装方法：
+命令行模式:
+1 brew install openconnect GUI模式:
+1 brew install openconnect-gui --cask 安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:
+1 sudo spctl --master-disable ]]></description>
+</item><item>
+    <title>macos cmake-gui</title>
+    <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
+    <pubDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/macos-cmake-gui/</guid>
+    <description><![CDATA[之前使用命令行安装：
+1 brew install cmake 安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。
+1 brew uninstall cmake 然后手动安装cmake，去官网下载。
+网址：https://cmake.org/download/
+下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。
+下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。
+这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。
+安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。
+1 sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install 查看版本：
+1 cmake --version Ref: https://www.cnblogs.com/juluwangshier/p/12987258.html]]></description>
+</item><item>
     <title>pycharm增加运行时内存</title>
     <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
     <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
@@ -198,25 +226,5 @@ Example 1:
 1 2 Input: x = 2.10000, n = 3 Output: 9.26100 Example 3:
 1 2 3 Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25 Constraints:
 -100.0 &lt; x &lt; 100.0 -231 &lt;= n &lt;= 231-1 -104 &lt;= xn &lt;= 104 思路 ]]></description>
-</item><item>
-    <title>lc76. Minimum Window Substring</title>
-    <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
-    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc76.-minimum-window-substring/</guid>
-    <description><![CDATA[Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &quot;&quot;.
-The testcases will be generated such that the answer is unique.
-A substring is a contiguous sequence of characters within the string.
-Example 1:
-1 2 3 Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.]]></description>
-</item><item>
-    <title>lc88. Merge Sorted Array</title>
-    <link>https://www.joshuachou.ink/lc88.-merge-sorted-array/</link>
-    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc88.-merge-sorted-array/</guid>
-    <description><![CDATA[You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
-Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.]]></description>
 </item></channel>
 </rss>
