@@ -15,7 +15,11 @@
     <br>
     <i><b>Cell Reports Methods.</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>DOI: 10.1016/j.crmeth.2022.100384</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S2667237522002892?via%3Dihub">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S2667237522002892-main.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -24,6 +28,8 @@
     <b>Juexiao Zhou*</b>, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao.
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics.</b></i>
+    <br>
+    <b>DOI: 10.1016/j.gpb.2022.11.010</b>
     <br>
     <b>Access: </b>
     <a href="https://www.sciencedirect.com/science/article/pii/S1672022922001656">online</a>, 
@@ -50,7 +56,7 @@
     <br>
     <i><b>Bioinformatics</b></i>
     <br>
-    <b>DOI: https://doi.org/10.1093/bioinformatics/btac605</b>
+    <b>DOI: 10.1093/bioinformatics/btac605</b>
     <br>
     <b>Access: </b>
     <a href="https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac605/6692424">online</a>, 
@@ -217,10 +223,6 @@
   </li>
   <br>
 </ol>
-
-
-
-
 
 
 
