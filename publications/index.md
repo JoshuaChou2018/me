@@ -227,12 +227,29 @@
 
 
 
-
 ## Preprint or under review
 
 
 
 <ol reversed>
+  <li>
+    <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+    </font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Haoyang Li*, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
+    </font> 
+    <br>	
+    Wenkai Han*, NingNing Chen*, Xinzhou Xu, Adil Salhi, <b>Juexiao Zhou</b>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
   <li>
     <font color=#0096FF>GPT generates more diverse scaffolds than GRU in exploring the chemical space.
     </font> 
@@ -303,4 +320,5 @@
   </li>
   <br>
 </ol>
+
 
