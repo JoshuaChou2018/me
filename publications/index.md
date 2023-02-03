@@ -5,7 +5,7 @@
 
 
 <ol reversed>
-  <font size="+1">2022</font>
+  <font size="+1">2023</font>
   <br>
   <li>
     <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.
@@ -21,6 +21,7 @@
     <a href="https://www.sciencedirect.com/science/article/pii/S2667237522002892?via%3Dihub">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S2667237522002892-main.pdf">pdf</a>
   </li>
+  <font size="+1">2022</font>
   <br>
   <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
@@ -227,6 +228,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -320,5 +322,4 @@
   </li>
   <br>
 </ol>
-
 

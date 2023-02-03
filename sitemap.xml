@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</loc><lastmod>2023-01-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/macos-cmake-gui/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</loc><lastmod>2023-01-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/macos-cmake-gui/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</loc><lastmod>2022-12-21T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/2022%E6%96%B0%E5%A5%A5%E5%B0%94%E8%89%AF/</loc><lastmod>2022-11-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/blender-python/</loc><lastmod>2022-10-06T21:32:08&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -80,16 +80,16 @@
             <loc>https://www.joshuachou.ink/life/phuket-thailand/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/langkawi-archipelago-malaysia/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/bali-indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/internet/</loc><lastmod>2023-01-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/internet/</loc><lastmod>2023-01-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/life/</loc><lastmod>2022-11-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/</loc><lastmod>2022-11-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/usa/</loc><lastmod>2022-11-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
