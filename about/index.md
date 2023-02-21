@@ -210,7 +210,7 @@ Please check the list [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-#### **Conference**
+#### **Conference Administrator**
 
 - The 21st International Conference on Bioinformatics (InCoB2022), Administrator, [certificate](index.en.assets/InCoB2022.pdf)
 
