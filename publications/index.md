@@ -243,6 +243,9 @@
     <b>Juexiao Zhou*</b>, Haoyang Li*, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao
     <br>
     <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
   </li>
   <br>
   <li>
@@ -305,6 +308,9 @@
     <b>Juexiao Zhou*</b>, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
     <br>
     <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
   </li>
   <br>
   <li>
