@@ -23,7 +23,7 @@ Major in Computer Science and Bioinformatics.
 
 **Affiliation:**
 
-[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb);
+[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
 
 [Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
 
