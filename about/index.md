@@ -46,12 +46,13 @@ Major in Computer Science and Bioinformatics.
 
 ### **Research Interest**
 
-- **Privacy in Bioinformatics and Intelligent Healthcare**
+- **Security in Bioinformatics and Privacy in Intelligent Healthcare**
 	- Federated learning
 	- Differential privacy
 	- Homomorphic encryption
 	- Attacking and defense
-
+	- Blockchain
+	
 - **AI in Medical Imaging**
   - EEG
   - X-ray

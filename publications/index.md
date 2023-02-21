@@ -291,7 +291,7 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Antibody library design with transformer and deep reinforcement learning.
+    <font color=#0096FF>AB-Gen: Antibody library design with transformer and deep reinforcement learning.
     </font> 
     <br>	
     Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Lu Zhang and Xin Gao
@@ -324,4 +324,5 @@
   </li>
   <br>
 </ol>
+
 
