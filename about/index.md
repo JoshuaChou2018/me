@@ -76,7 +76,82 @@ Major in Computer Science and Bioinformatics.
 
 ### Research and Publications
 
-Please check the list [@here](https://www.joshuachou.ink/publications/)
+**Selected Papers**
+
+<ol>
+  <li>
+    <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Bin Zhang*, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao.
+    <br>
+    <i><b>Genomics, Proteomics & Bioinformatics.</b></i>
+    <br>
+    <b>DOI: 10.1016/j.gpb.2022.11.010</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1672022922001656">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf">pdf</a>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+    </font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Haoyang Li*, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
+    </font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Longxi Zhou*, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
+    <br>	
+    <b>Juexiao Zhou*</b>, Siyuan Chen*, Yulian Wu*, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao.
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics.
+    </font> 
+    <br>	
+    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.
+    </font> 
+    <br>	
+    Longxi Zhou*, Xianglin Meng*, Yuxin Huang*, Kai Kang*, <b>Juexiao Zhou</b>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao.
+    <br>
+    <i><b>Nature machine intelligence</b></i>
+    <br>
+    <b>DOI: 10.1038/s42256-022-00483-7</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.nature.com/articles/s42256-022-00483-7">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf">pdf</a>
+  </li>
+  <br>
+</ol>
+
+Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
