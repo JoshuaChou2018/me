@@ -52,7 +52,6 @@ Major in Computer Science and Bioinformatics.
 	- Homomorphic encryption
 	- Attacking and defense
 	- Blockchain
-	
 - **AI in Medical Imaging**
   - EEG
   - X-ray
@@ -61,9 +60,6 @@ Major in Computer Science and Bioinformatics.
 - **Bioinformatics**
   - Analysis and integration of biological omics data with deep learning methods
   - Developing new bioinformatics tools
-- Artificial Intelligence
-
-  - Theoretical Research of Deep Learning
 - Metaverse
 
   - Computer vision and VR
@@ -256,9 +252,12 @@ Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 
 ### **Talks**
 
+- Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+  - Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia, Feb 2, 2023
+  
 - Privacy in Bioinformatics and Intelligent Healthcare.
   - Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.
-  
+
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
   - CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
