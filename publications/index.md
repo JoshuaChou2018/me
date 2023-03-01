@@ -8,12 +8,22 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
+    <br>	
+    Yongkang Long*, Bin Zhang*, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen, Xin Gao
+    <br>
+    <i><b>Genome Research</b></i>
+    <br>
+    <i><b>accepted</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.
     </font> 
     <br>	
     Zhongxiao Li*, Elva Gao*, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao
     <br>
-    <i><b>Cell Reports Methods.</b></i>
+    <i><b>Cell Reports Methods</b></i>
     <br>
     <b>DOI: 10.1016/j.crmeth.2022.100384</b>
     <br>
@@ -231,6 +241,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -321,13 +332,6 @@
     <i><b>under review.</b></i>
   </li>
   <br>
-  <li>
-    <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
-    <br>	
-    Yongkang Long*, Bin Zhang*, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen, Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
 </ol>
+
 
