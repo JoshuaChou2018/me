@@ -8,6 +8,17 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
+    </font> 
+    <br>	
+    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao
+    <br>
+    <i><b>Nature Communications</b></i>
+    <br>
+    <i><b>accepted</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
     <br>	
     Yongkang Long*, Bin Zhang*, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen, Xin Gao
@@ -242,6 +253,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -291,15 +303,6 @@
     </font> 
     <br>	
     <b>Juexiao Zhou*</b>, Longxi Zhou*, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
-    <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics.
-    </font> 
-    <br>	
-    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
     <br>
     <i><b>under review.</b></i>
   </li>
