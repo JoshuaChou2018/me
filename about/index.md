@@ -9,9 +9,9 @@
 
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
-PhD student @KAUST. 
+PhD student @KAUST
 
-Major in Computer Science and Bioinformatics.
+Computer Science and Bioinformatics
 
 <br>
 
@@ -150,7 +150,7 @@ Major in Computer Science and Bioinformatics.
 </ol>
 
 
-Please check the complete list [@here](https://www.joshuachou.ink/publications/)
+**Please check the complete list** [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
@@ -246,7 +246,7 @@ Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 
 <br>
 
-### **Membership**
+### **Memberships**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
@@ -256,15 +256,18 @@ Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 ### **Talks**
 
 - Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
-  - Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia, Feb 2, 2023
+  - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia, March 2, 2023
+  
+- Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+  - *Oral & Poster.* Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia, Feb 2, 2023
   
 - Privacy in Bioinformatics and Intelligent Healthcare.
-  - Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.
+  - *Poster.* Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.
 
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-  - CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
+  - *Oral.* CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
 - PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-  - BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
+  - *Oral.* BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
 
 <br>
 
