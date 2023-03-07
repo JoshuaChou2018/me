@@ -260,6 +260,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
+    </font> 
+    <br>	
+    Xingyu Liao , Wufei Zhu , <b>Juexiao Zhou</b> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
     </font> 
     <br>	
@@ -305,6 +314,9 @@
     <b>Juexiao Zhou*</b>, Longxi Zhou*, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao
     <br>
     <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
   </li>
   <br>
   <li>
