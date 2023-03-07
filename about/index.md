@@ -127,7 +127,9 @@ Major in Computer Science and Bioinformatics.
     <br>	
     Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
     <br>
-    <i><b>under review.</b></i>
+    <i><b>Nature Communications</b></i>
+    <br>
+    <i><b>accepted</b></i>
   </li>
   <br>
   <li>
@@ -146,6 +148,7 @@ Major in Computer Science and Bioinformatics.
   </li>
   <br>
 </ol>
+
 
 Please check the complete list [@here](https://www.joshuachou.ink/publications/)
 
