@@ -125,7 +125,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics.
     </font> 
     <br>	
-    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Hanmin Li, Siyuan Chen, Xin Gao
+    Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao
     <br>
     <i><b>Nature Communications</b></i>
     <br>
@@ -148,6 +148,7 @@ Computer Science and Bioinformatics
   </li>
   <br>
 </ol>
+
 
 
 **Please check the complete list** [@here](https://www.joshuachou.ink/publications/)
