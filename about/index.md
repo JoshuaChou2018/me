@@ -122,14 +122,18 @@ Computer Science and Bioinformatics
   </li>
   <br>
   <li>
-    <font color=#0096FF>Benchmarking and guidelines of cellular deconvolution for spatial transcriptomics.
+    <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
     Haoyang Li*, <b>Juexiao Zhou*</b>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao
     <br>
     <i><b>Nature Communications</b></i>
     <br>
-    <i><b>accepted</b></i>
+    <b>DOI: 10.1038/s41467-023-37168-7</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.nature.com/articles/s41467-023-37168-7">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s41467-023-37168-7.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -148,6 +152,7 @@ Computer Science and Bioinformatics
   </li>
   <br>
 </ol>
+
 
 
 

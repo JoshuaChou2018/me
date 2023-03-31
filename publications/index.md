@@ -8,6 +8,17 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>AB-Gen: Antibody Library Design with Generative Pre-trained Transformer and Deep Reinforcement Learning.
+    </font> 
+    <br>	
+    Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao
+    <br>
+    <i><b>Genomics, Proteomics & Bioinformatics.</b></i>
+    <br>
+    <i><b>accepted</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -15,7 +26,11 @@
     <br>
     <i><b>Nature Communications</b></i>
     <br>
-    <i><b>accepted</b></i>
+    <b>DOI: 10.1038/s41467-023-37168-7</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.nature.com/articles/s41467-023-37168-7">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s41467-023-37168-7.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -254,6 +269,7 @@
 
 
 
+
 ## Preprint or under review
 
 
@@ -317,15 +333,6 @@
     <br>
     <b>Access: </b>
     <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
-  </li>
-  <br>
-  <li>
-    <font color=#0096FF>AB-Gen: Antibody library design with transformer and deep reinforcement learning.
-    </font> 
-    <br>	
-    Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Lu Zhang and Xin Gao
-    <br>
-    <i><b>under review.</b></i>
   </li>
   <br>
   <li>
