@@ -2,7 +2,7 @@
 
 ## Journal
 
-**($^\#$equal contribution, $^*$corresponding author)**
+**(# equal contribution, * corresponding author)**
 
 <ol reversed>
   <font size="+1">2023</font>
@@ -360,5 +360,4 @@
   </li>
   <br>
 </ol>
-
 

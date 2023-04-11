@@ -72,7 +72,7 @@ Computer Science and Bioinformatics
 
 ### Research and Publications
 
-**Selected Papers ($^\#$equal contribution, $^*$corresponding author)**
+**Selected Papers (# equal contribution, * corresponding author)**
 
 <ol>
   <li>
