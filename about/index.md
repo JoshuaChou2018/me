@@ -46,7 +46,7 @@ Computer Science and Bioinformatics
 
 ### **Research Interest**
 
-- **Security in Bioinformatics and Privacy in Intelligent Healthcare**
+- **Secure Bioinformatics and Privacy-Preserving Intelligent Healthcare**
 	- Federated learning
 	- Differential privacy
 	- Homomorphic encryption
