@@ -209,7 +209,7 @@ Computer Science and Bioinformatics
     	- PDB
     	- PyMOL
     	- Secondary structure prediction
-    - Lab 3. Proetin structure and function, 2022.09.13, [colab](https://colab.research.google.com/drive/1CQmEgsdkyPuIwgW28eiqgf8v13OT6UD-)
+    - Lab 3. Protein structure and function, 2022.09.13, [colab](https://colab.research.google.com/drive/1CQmEgsdkyPuIwgW28eiqgf8v13OT6UD-)
     	- Ab initio with PyRosetta
     	- AlphaFold2
     	- NucleicNet
