@@ -195,7 +195,6 @@
   </li>
   <br>
 </ol>
-
 ##  Conference
 
 <ol reversed>
@@ -216,7 +215,6 @@
     <a href="https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf">pdf</a>
   </li>
 </ol>
-
 ## Posters
 
 <ol reversed>
@@ -234,6 +232,8 @@
     <a href="https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_Juexiao Zhou.pdf">certificate</a>
   </li>
 	<br>
+  <font size="+1">2020</font>
+  <br>
   <li>
     <font color=#0096FF>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. 
     </font>
@@ -285,6 +285,7 @@
   </li>
   <br>
 </ol>
+
 
 ## Preprint
 
