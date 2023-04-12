@@ -155,7 +155,7 @@
     <br>	
     Liongxi Zhou, Zhongxiao Li, <b>Juexiao Zhou</b>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
     <br>
-    <i><b>Transactions on Medical Imaging, 2020 (IF: 11.037)</b></i>
+    <i><b>Transactions on Medical Imaging (IF: 11.037)</b></i>
     <br>
     <b>DOI: 10.1109/TMI.2020.3001810.</b>
     <br>
@@ -170,7 +170,7 @@
     <br>	
     Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
     <br>
-    <i><b>Front. Oncol., 2020 (IF: 6.244)</b></i>
+    <i><b>Front. Oncol. (IF: 6.244)</b></i>
     <br>
     <b>DOI: 10.3389/fonc.2020.00207.</b>
     <br>
@@ -185,7 +185,7 @@
     <br>	
     Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, <b>Juexiao Zhou</b>, Yunfei Li, Liang Fang, Yuhui Hu*.
     <br>
-    <i><b>Molecular Systems Biology, 2020 (IF: 12.744)</b></i>
+    <i><b>Molecular Systems Biology (IF: 12.744)</b></i>
     <br>
     <b>DOI: 10.15252/msb.20199367.</b>
     <br>
@@ -195,6 +195,7 @@
   </li>
   <br>
 </ol>
+
 
 
 ##  Conference
