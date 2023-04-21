@@ -296,6 +296,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model.
+    </font> 
+    <br>	
+    <b>Juexiao Zhou</b> , Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
     </font> 
     <br>	
@@ -366,4 +375,5 @@
   </li>
   <br>
 </ol>
+
 
