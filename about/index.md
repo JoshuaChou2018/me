@@ -46,27 +46,11 @@ Computer Science and Bioinformatics
 
 ### **Research Interest**
 
-- **Secure Bioinformatics and Privacy-Preserving Intelligent Healthcare**
-	- Federated learning
-	- Differential privacy
-	- Homomorphic encryption
-	- Attacking and defense
-	- Blockchain
-- **AI in Medical Imaging**
-  - EEG
-  - X-ray
-  - CT
-  - fMRI
+- **Artificial General Intelligence (AGI)**
+- **Large Language Model (LLM)**
+- **Privacy and Security**
+- **Intelligent Healthcare**
 - **Bioinformatics**
-  - Analysis and integration of biological omics data with deep learning methods
-  - Developing new bioinformatics tools
-- Metaverse
-
-  - Computer vision and VR
-- Cognitive Neuroscience
-
-  - Mechanism of Language, Emotion, Memory, and Dream
-  - Brain-Computer Interface
 
 <br>
 
