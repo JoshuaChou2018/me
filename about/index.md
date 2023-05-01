@@ -46,11 +46,11 @@ Computer Science and Bioinformatics
 
 ### **Research Interest**
 
-- **Artificial General Intelligence (AGI)**
-- **Large Language Model (LLM)**
-- **Privacy and Security**
 - **Intelligent Healthcare**
 - **Bioinformatics**
+- **Privacy and Security**
+- **Artificial General Intelligence (AGI)**
+- **Large Language Model (LLM)**
 
 <br>
 
