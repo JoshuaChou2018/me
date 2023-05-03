@@ -11,7 +11,7 @@
     <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
     </font> 
     <br>	
-    Wenkai Han#, NingNing Chen#, Xinzhou Xu, Adil Salhi, <b>Juexiao Zhou</b>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao*
+    Wenkai Han#, NingNing Chen#, Xinzhou Xu, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
@@ -22,7 +22,7 @@
     <font color=#0096FF>AB-Gen: Antibody Library Design with Generative Pre-trained Transformer and Deep Reinforcement Learning.
     </font> 
     <br>	
-    Xiaopeng Xu, Tiantian Xu, <b>Juexiao Zhou</b>, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*
+    Xiaopeng Xu, Tiantian Xu, <u><b>Juexiao Zhou</b></u>, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
     <br>
@@ -33,7 +33,7 @@
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
-    Haoyang Li#, <b>Juexiao Zhou#</b>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
+    Haoyang Li#, <u><b>Juexiao Zhou#</b></u>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
@@ -47,7 +47,7 @@
   <li>
     <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
     <br>	
-    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
+    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
     <br>
     <i><b>Genome Research (IF: 9.438)</b></i>
     <br>
@@ -62,7 +62,7 @@
     <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.
     </font> 
     <br>	
-    Zhongxiao Li#, Elva Gao#, <b>Juexiao Zhou</b>, Wenkai Han, Xiaopeng Xu, and Xin Gao*
+    Zhongxiao Li#, Elva Gao#, <u><b>Juexiao Zhou</b></u>, Wenkai Han, Xiaopeng Xu, and Xin Gao*
     <br>
     <i><b>Cell Reports Methods</b></i>
     <br>
@@ -78,7 +78,7 @@
   <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
     <br>
@@ -93,7 +93,7 @@
     <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information.
     </font> 
     <br>	
-    Haoyang Li, Hanmin Li, <b>Juexiao Zhou</b> and Xin Gao*.
+    Haoyang Li, Hanmin Li, <u><b>Juexiao Zhou</b></u>, Xin Gao*.
     <br>
     <i><b>Bioinformatics (IF: 6.931)</b></i>
     <br>
@@ -108,7 +108,7 @@
     <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.
     </font> 
     <br>	
-    Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <b>Juexiao Zhou</b>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
+    Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <u><b>Juexiao Zhou</b></u>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
     <br>
     <i><b>Nature machine intelligence (IF: 25.9)</b></i>
     <br>
@@ -125,7 +125,7 @@
     <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.
     </font> 
     <br>	
-    Haoyang Li, <b>Juexiao Zhou</b>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.
+    Haoyang Li, <u><b>Juexiao Zhou</b></u>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.
     <br>
     <i><b>Frontiers in Physiology, section Computational Physiology and Medicine (IF: 4.755)</b></i>
     <br>
@@ -142,7 +142,7 @@
     <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.
     </font> 
     <br>	
-    Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, <b>Juexiao Zhou</b>, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.
+    Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, <u><b>Juexiao Zhou</b></u>, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.
     <br>
     <i><b>Genomics Proteomics and Bioinformatics (IF: 6.615)</b></i>
     <br>
@@ -157,7 +157,7 @@
     <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.
     </font> 
     <br>	
-    Liongxi Zhou, Zhongxiao Li, <b>Juexiao Zhou</b>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
+    Liongxi Zhou, Zhongxiao Li, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
     <br>
     <i><b>Transactions on Medical Imaging (IF: 11.037)</b></i>
     <br>
@@ -172,7 +172,7 @@
     <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
     </font> 
     <br>	
-    Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
+    Haoyang Li, <u><b>Juexiao Zhou</b></u>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
     <br>
     <i><b>Front. Oncol. (IF: 6.244)</b></i>
     <br>
@@ -187,7 +187,7 @@
     <font color=#0096FF>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation.
     </font> 
     <br>	
-    Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, <b>Juexiao Zhou</b>, Yunfei Li, Liang Fang, Yuhui Hu*.
+    Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, <u><b>Juexiao Zhou</b></u>, Yunfei Li, Liang Fang, Yuhui Hu*.
     <br>
     <i><b>Molecular Systems Biology (IF: 12.744)</b></i>
     <br>
@@ -204,6 +204,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -213,7 +214,7 @@
     <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.
     </font> 
     <br>	
-    Haoyang Li, <b>Juexiao Zhou</b>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.
+    Haoyang Li, <u><b>Juexiao Zhou</b></u>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.
     <br>
     <i><b>Medical Image Computing and Computer Assisted Interventions 2020</b></i>
     <br>
@@ -226,6 +227,7 @@
 </ol>
 
 
+
 ## Posters
 
 <ol reversed>
@@ -235,7 +237,7 @@
     <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
     </font> 
     <br>
-    <b>Juexiao Zhou</b>, Xin Gao*. 
+    <u><b>Juexiao Zhou</b></u>, Xin Gao*. 
     <br>
     <i>Poster</i>. <i><b>Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.</b></i>
     <br>
@@ -249,7 +251,7 @@
     <font color=#0096FF>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. 
     </font>
     <br>	
-    Haoyang Li, <b>Juexiao Zhou</b>, Xin Gao*. 
+    Haoyang Li, <u><b>Juexiao Zhou</b></u>, Xin Gao*. 
     <br>
     <i>Poster</i>. <i><b>DigitalHealth, KAUST, 2020</b></i>.
     <br>
@@ -263,7 +265,7 @@
     <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
     </font> 
     <br>
-    Haoyang Li, <b>Juexiao Zhou</b>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
+    Haoyang Li, <u><b>Juexiao Zhou</b></u>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
     <br>
     <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019.</b></i>
   </li>
@@ -272,7 +274,7 @@
     <font color=#0096FF>DeeRect-PAS—A Deep-Learning based method for Transcriptome-wide PAS Identification.
     </font> 
     <br>
-    Yongkang Long, <b>Juexiao Zhou</b>, Zhongxiao Li, Wei Chen, Xin Gao*. 
+    Yongkang Long, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Wei Chen, Xin Gao*. 
     <br>
     <i>Poster</i>. <i><b>Advance In Artificial Intelligence, KAUST, 2019. </b></i>
   </li>
@@ -281,7 +283,7 @@
     <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells.
     </font> 
     <br>
-    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen*. 
+    Min Zhang, Yisheng Li, <u><b>Juexiao Zhou</b></u>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen*. 
     <br>
     <i>Poster</i>. <i><b>RNA Biology, CSH Asia, 2019.</b></i>
   </li>
@@ -290,12 +292,13 @@
     <font color=#0096FF>Systematical discovery of cis-elements regulating alternative polyadenylation in mammalian cells. 
     </font> 
     <br>
-    Min Zhang, Yisheng Li, <b>Juexiao Zhou</b>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen*. 
+    Min Zhang, Yisheng Li, <u><b>Juexiao Zhou</b></u>, Yuhao He, Guipeng Li, Liang Fang, Wei Chen*. 
     <br>
     <i>Poster</i>. <i><b>Regulatory RNAs, Cell Symposia, Berlin, Germany, May 12-14, 2019.</b></i>
   </li>
   <br>
 </ol>
+
 
 
 ## Preprint
@@ -305,7 +308,7 @@
     <font color=#0096FF>SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model.
     </font> 
     <br>	
-    <b>Juexiao Zhou</b> , Xin Gao*
+    <u><b>Juexiao Zhou</b></u> , Xin Gao*
     <br>
     <i><b>under review.</b></i>
   </li>
@@ -314,7 +317,7 @@
     <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
     </font> 
     <br>	
-    Xingyu Liao , Wufei Zhu , <b>Juexiao Zhou</b> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*
+    Xingyu Liao , Wufei Zhu , <u><b>Juexiao Zhou</b></u> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*
     <br>
     <i><b>under review.</b></i>
   </li>
@@ -323,7 +326,7 @@
     <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
     </font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
+    <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -335,7 +338,7 @@
     <font color=#0096FF>GPT generates more diverse scaffolds than GRU in exploring the chemical space.
     </font> 
     <br>	
-    Xiaopeng Xu, <b>Juexiao Zhou</b>, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Xingyu Liao, Xin Gao*
+    Xiaopeng Xu, <u><b>Juexiao Zhou</b></u>, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Xingyu Liao, Xin Gao*
     <br>
     <i><b>under review.</b></i>
   </li>
@@ -344,7 +347,7 @@
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
     <br>	
-    Yuetan Chu#, Longxi Zhou#, <b>Juexiao Zhou</b>, Yuxin Huang, Tianyi Xing, Dexuan Xie, Xigang Xiao, Zhaowen Qiu, Xin Gao*
+    Yuetan Chu#, Longxi Zhou#, <u><b>Juexiao Zhou</b></u>, Yuxin Huang, Tianyi Xing, Dexuan Xie, Xigang Xiao, Zhaowen Qiu, Xin Gao*
     <br>
     <i><b>under review.</b></i>
   </li>
@@ -353,7 +356,7 @@
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
     </font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
+    <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -364,7 +367,7 @@
   <li>
     <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
+    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -375,10 +378,11 @@
   <li>
     <font color=#0096FF>A Workflow for Automatic, Accurate and Robust Breast Tumor Segmentation on Multi-Database DCE-MRI.</font> 
     <br>	
-    Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, <b>Juexiao Zhou</b>, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.
+    Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.
     <br>
     <i><b>under review.</b></i>
   </li>
   <br>
 </ol>
+
 

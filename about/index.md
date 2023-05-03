@@ -62,7 +62,7 @@ Computer Science and Bioinformatics
   <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
     <br>
@@ -77,7 +77,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
     </font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
+    <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -89,7 +89,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
     </font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
+    <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -100,7 +100,7 @@ Computer Science and Bioinformatics
   <li>
     <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
     <br>	
-    <b>Juexiao Zhou#</b>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
+    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -112,7 +112,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
-    Haoyang Li#, <b>Juexiao Zhou#</b>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
+    Haoyang Li#, <u><b>Juexiao Zhou#</b></u>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
@@ -127,7 +127,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.
     </font> 
     <br>	
-    Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <b>Juexiao Zhou</b>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
+    Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <u><b>Juexiao Zhou</b></u>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
     <br>
     <i><b>Nature machine intelligence (IF: 25.9)</b></i>
     <br>
@@ -141,7 +141,7 @@ Computer Science and Bioinformatics
   <li>
     <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
     <br>	
-    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <b>Juexiao Zhou</b>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
+    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
     <br>
     <i><b>Genome Research (IF: 9.438)</b></i>
     <br>
@@ -152,7 +152,7 @@ Computer Science and Bioinformatics
     <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
     </font> 
     <br>	
-    Wenkai Han#, NingNing Chen#, Xinzhou Xu, Adil Salhi, <b>Juexiao Zhou</b>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao*
+    Wenkai Han#, NingNing Chen#, Xinzhou Xu, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
@@ -160,6 +160,7 @@ Computer Science and Bioinformatics
   </li>
   <br>
 </ol>
+
 
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
 
