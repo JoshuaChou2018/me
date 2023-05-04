@@ -300,7 +300,6 @@
 </ol>
 
 
-
 ## Preprint
 
 <ol reversed>
@@ -311,6 +310,9 @@
     <u><b>Juexiao Zhou</b></u> , Xin Gao*
     <br>
     <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
   </li>
   <br>
   <li>

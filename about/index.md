@@ -109,6 +109,18 @@ Computer Science and Bioinformatics
   </li>
   <br>
   <li>
+    <font color=#0096FF>SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u> , Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -160,6 +172,7 @@ Computer Science and Bioinformatics
   </li>
   <br>
 </ol>
+
 
 
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
