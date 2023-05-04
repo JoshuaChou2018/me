@@ -3,9 +3,17 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 May 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Mac更新后无法连接Apple所有服务</title>
+    <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
+    <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
+    <description><![CDATA[问题描述 Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。
+解决方案 打开/Library/Preferences/SystemConfiguration 这个文件夹 删除除了com.apple.Boot.plist 之外的其他文件，然后重新启动 ]]></description>
+</item><item>
     <title>ubuntu18.04安装后的登陆问题、卡顿问题及基本环境配置</title>
     <link>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</pubDate>
@@ -201,25 +209,5 @@ Extension -&gt; Apps script
     <description><![CDATA[显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
 解决方案：
 1 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer ]]></description>
-</item><item>
-    <title>lc1570. Dot Product of Two Sparse Vectors</title>
-    <link>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</link>
-    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</guid>
-    <description><![CDATA[给定两个稀疏向量，计算它们的点积（数量积）。
-实现类 SparseVector：
-SparseVector(nums) 以向量 nums 初始化对象。 dotProduct(vec) 计算此向量与 vec 的点积。 稀疏向量 是指绝大多数分量为 0 的向量。你需要 高效 地存储这个向量，并计算两个稀疏向量的点积。
-进阶：当其中只有一个向量是稀疏向量时，你该如何解决此问题？
-示例 1：
-输入：nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
-输出：8
-解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
-v1.dotProduct(v2) = 10 + 03 + 00 + 24 + 3*0 = 8
-示例 2：
-输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
-输出：0
-解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
-v1.dotProduct(v2) = 00 + 10 + 00 + 00 + 0*2 = 0]]></description>
 </item></channel>
 </rss>
