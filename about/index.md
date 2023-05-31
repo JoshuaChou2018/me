@@ -157,7 +157,11 @@ Computer Science and Bioinformatics
     <br>
     <i><b>Genome Research (IF: 9.438)</b></i>
     <br>
-    <i><b>In press.</b></i>
+    <b>DOI: 10.1101/gr.277177.122</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/Genome Res.-2023-Long-gr.277177.122.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -172,6 +176,7 @@ Computer Science and Bioinformatics
   </li>
   <br>
 </ol>
+
 
 
 
