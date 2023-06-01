@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc><lastmod>2023-03-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</loc><lastmod>2023-01-03T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/macos-cmake-gui/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -82,14 +82,14 @@
             <loc>https://www.joshuachou.ink/life/phuket-thailand/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/langkawi-archipelago-malaysia/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/bali-indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/internet/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/macos/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/internet/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/macos/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2023-05-04T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2023-03-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/conda/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/python/</loc><lastmod>2023-01-03T13:29:28&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -128,5 +128,5 @@
             <loc>https://www.joshuachou.ink/tags/thailand/</loc><lastmod>2022-09-18T17:46:45&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/malaysia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2023-05-31T20:20:50&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/publications/</loc><lastmod>2023-05-04T15:47:46&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url></urlset>
+            <loc>https://www.joshuachou.ink/about/</loc><lastmod>2023-06-01T13:14:55&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/publications/</loc><lastmod>2023-06-01T13:14:55&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

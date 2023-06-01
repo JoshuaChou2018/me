@@ -11,7 +11,7 @@
     <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
     </font> 
     <br>	
-    Wenkai Han#, NingNing Chen#, Xinzhou Xu, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun, Peter Cheung, Xin Gao*
+    Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
@@ -205,6 +205,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -386,5 +387,4 @@
   </li>
   <br>
 </ol>
-
 
