@@ -26,7 +26,7 @@ My research interests are:
 
 
 
-**Contact: **juexiao.zhou@kaust.edu.sa
+**Contact: ** juexiao.zhou@kaust.edu.sa
 
 **Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
 
