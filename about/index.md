@@ -4,16 +4,23 @@
 <div>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/avatar.mEXOZc.png" width = "220" height = "200" alt="Juexiao" align=right />
 </div>
-
 **Hi!**
 
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
-PhD student @KAUST
+I am a PhD student @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). My research interests are:
 
-Computer Science and Bioinformatics
+- **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk prediction, etc.
+- **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
+- **Privacy and Security**
+- **Artificial General Intelligence (AGI)**
+- **Large Language Model (LLM)**
+
+
 
 <br>
+
+**Contact: **juexiao.zhou@kaust.edu.sa
 
 **Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
 
@@ -29,7 +36,7 @@ Computer Science and Bioinformatics
 
 [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
 
- [CV (last update: May 2023)](index.en.assets/CV_JuexiaoZhou.pdf), [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ), [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ), [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q), [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: May 2023)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -44,15 +51,7 @@ Computer Science and Bioinformatics
 
 <br>
 
-### **Research Interest**
 
-- **Intelligent Healthcare**
-- **Bioinformatics**
-- **Privacy and Security**
-- **Artificial General Intelligence (AGI)**
-- **Large Language Model (LLM)**
-
-<br>
 
 ### Research and Publications
 
@@ -177,10 +176,6 @@ Computer Science and Bioinformatics
   <br>
 </ol>
 
-
-
-
-
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
 
 <br>
@@ -284,21 +279,21 @@ Computer Science and Bioinformatics
 
 <br>
 
-### **Talks**
+### **Invited Talks**
 
-- Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
-  - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia, March 2, 2023
+- [2023/03/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+  - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia
   
-- Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
-  - *Oral & Poster.* Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia, Feb 2, 2023
+- [2023/02/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+  - *Oral & Poster.* Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia
   
-- Privacy in Bioinformatics and Intelligent Healthcare.
-  - *Poster.* Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.
+- [2022/11/10] Privacy in Bioinformatics and Intelligent Healthcare.
+  - *Poster.* Smart-Health Student Research Symposium, KAUST, Saudi Arabia
 
-- PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-  - *Oral.* CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia, March 29, 2022
-- PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
-  - *Oral.* BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京，March 9, 2022
+- [2022/03/29] PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
+  - *Oral.* CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia
+- [2022/03/09] PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
+  - *Oral.* BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京
 
 <br>
 
