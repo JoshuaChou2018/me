@@ -4,11 +4,15 @@
 <div>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/avatar.mEXOZc.png" width = "220" height = "200" alt="Juexiao" align=right />
 </div>
+
+
 **Hi!**
 
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
-I am a PhD student @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). My research interests are:
+I am a PhD student @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). 
+
+My research interests are:
 
 - **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk prediction, etc.
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
