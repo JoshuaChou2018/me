@@ -152,20 +152,6 @@ My research interests are:
   </li>
   <br>
   <li>
-    <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.</font> 
-    <br>	
-    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
-    <br>
-    <i><b>Genome Research (IF: 9.438)</b></i>
-    <br>
-    <b>DOI: 10.1101/gr.277177.122</b>
-    <br>
-    <b>Access: </b>
-    <a href="https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract">online</a>, 
-    <a href="https://www.joshuachou.ink/publications/papers/Genome Res.-2023-Long-gr.277177.122.pdf">pdf</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
     </font> 
     <br>	
@@ -177,6 +163,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
 
