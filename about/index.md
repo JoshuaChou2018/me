@@ -20,8 +20,6 @@ My research interests are:
 - **Artificial General Intelligence (AGI)**
 - **Large Language Model (LLM)**
 
-
-
 <br>
 
 
