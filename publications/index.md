@@ -388,3 +388,43 @@
   <br>
 </ol>
 
+
+## Patents and Patent Applications
+
+<ol reversed>
+  <li>
+    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>KAUST reference: 2023-012.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF> A high-precision identification method of tandem repeat expansion based on refined alignment and deep learning.
+    </font> 
+    <br>	
+    Xingyu Liao, <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>KAUST reference: 2023-054.</b></i>
+  </li>
+  <br><li>
+    <font color=#0096FF>Audit to forget: a unified suite to revoke patients’ private data in intelligent healthcare.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>KAUST reference: 2023-056.</b></i>
+  </li>
+  <br><li>
+    <font color=#0096FF>A camera-based privacy-preserving early warning system for critical diseases.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>KAUST reference: 2023-074.</b></i>
+  </li>
+  <br>
+</ol>
+
