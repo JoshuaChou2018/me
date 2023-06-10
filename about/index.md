@@ -270,6 +270,9 @@ My research interests are:
 
 ### **Invited Talks**
 
+- [2022/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
+  - *Oral.* [Unlocking the Power of “ChatGPT”](https://gptworkshop2023.kaust.edu.sa), King Abdullah University of Science and Technology, Saudi Arabia
+  
 - [2023/03/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
   - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia
   

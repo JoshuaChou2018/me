@@ -379,7 +379,7 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>A Workflow for Automatic, Accurate and Robust Breast Tumor Segmentation on Multi-Database DCE-MRI.</font> 
+    <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.</font> 
     <br>	
     Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.
     <br>
