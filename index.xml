@@ -3,9 +3,17 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 May 2023 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</title>
+    <link>https://www.joshuachou.ink/news-skingpt-4/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/news-skingpt-4/</guid>
+    <description><![CDATA[We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
+Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge.]]></description>
+</item><item>
     <title>Mac更新后无法连接Apple所有服务</title>
     <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
@@ -200,14 +208,5 @@ Extension -&gt; Apps script
     <author>Author</author>
     <guid>https://www.joshuachou.ink/check-swap/</guid>
     <description><![CDATA[ Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} ]]></description>
-</item><item>
-    <title>xcode-select</title>
-    <link>https://www.joshuachou.ink/xcode-select/</link>
-    <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/xcode-select/</guid>
-    <description><![CDATA[显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
-解决方案：
-1 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer ]]></description>
 </item></channel>
 </rss>

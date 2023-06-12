@@ -3,7 +3,14 @@
         <title>Tags - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/</link>
         <description>Tags - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 May 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>News</title>
+    <link>https://www.joshuachou.ink/tags/news/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/tags/news/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>internet</title>
     <link>https://www.joshuachou.ink/tags/internet/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
@@ -65,13 +72,6 @@
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/tags/encryption/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>privacy</title>
-    <link>https://www.joshuachou.ink/tags/privacy/</link>
-    <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/tags/privacy/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
