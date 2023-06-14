@@ -110,10 +110,10 @@ My research interests are:
   </li>
   <br>
   <li>
-    <font color=#0096FF>SkinGPT: A Dermatology Diagnostic System with Vision Large Language Model.
+    <font color=#0096FF>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
     </font> 
     <br>	
-    <u><b>Juexiao Zhou</b></u> , Xin Gao*
+    <u><b>Juexiao Zhou#</b></u>, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao*
     <br>
     <i><b>under review.</b></i>
     <br>
@@ -159,10 +159,15 @@ My research interests are:
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
-    <i><b>In press.</b></i>
+    <b>DOI: 10.1038/s41467-023-39199-6</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.nature.com/articles/s41467-023-39199-6">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s41467-023-39199-6.pdf">pdf</a>
   </li>
   <br>
 </ol>
+
 
 
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
