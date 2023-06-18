@@ -309,6 +309,18 @@
 ## Preprint
 
 <ol reversed>
+  <li>
+    <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Xiuying Chen#, Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="xxx">arXiv</a>
+  </li>
+  <br>
    <li>
     <font color=#0096FF>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
     </font> 
@@ -392,6 +404,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
