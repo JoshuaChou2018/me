@@ -122,6 +122,18 @@ My research interests are:
   </li>
   <br>
   <li>
+    <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Xiuying Chen#, Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2306.10765">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -167,6 +179,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
