@@ -28,7 +28,7 @@
     <br>	
     Xiaopeng Xu, Tiantian Xu, <u><b>Juexiao Zhou</b></u>, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
     <br>
     <i><b>In press.</b></i>
   </li>
@@ -84,7 +84,7 @@
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2022.11.010</b>
     <br>
@@ -148,7 +148,7 @@
     <br>	
     Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, <u><b>Juexiao Zhou</b></u>, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics Proteomics and Bioinformatics (IF: 6.615)</b></i>
+    <i><b>Genomics Proteomics and Bioinformatics (IF: 10.1)</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2020.05.004.</b>
     <br>

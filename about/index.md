@@ -65,7 +65,7 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 6.615)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2022.11.010</b>
     <br>
@@ -179,6 +179,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
