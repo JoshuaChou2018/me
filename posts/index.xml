@@ -12,6 +12,17 @@
     <description><![CDATA[We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
 Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge.]]></description>
 </item><item>
+    <title>chrome 解决在http协议下无法调用摄像头和麦克风的问题</title>
+    <link>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+    <description><![CDATA[在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车
+该选项置为Enabled
+在输入框中输入需要访问的地址，多个地址使用“,”隔开
+然后点击右下角弹出的Relaunch按钮
+重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了]]></description>
+</item><item>
     <title>Mac更新后无法连接Apple所有服务</title>
     <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
@@ -199,12 +210,5 @@ We have a server that has gone a bit cuckoo over the course of the last few mont
     <description><![CDATA[Automatically Sort Data in Google Sheets
 Extension -&gt; Apps script
 1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } ]]></description>
-</item><item>
-    <title>Check SWAP</title>
-    <link>https://www.joshuachou.ink/check-swap/</link>
-    <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/check-swap/</guid>
-    <description><![CDATA[ Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} ]]></description>
 </item></channel>
 </rss>
