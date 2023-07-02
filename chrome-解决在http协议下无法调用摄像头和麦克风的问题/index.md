@@ -1,6 +1,10 @@
 # chrome 解决在http协议下无法调用摄像头和麦克风的问题
 
 
+**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头
+
+**解决方案：**
+
 在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车
 
 该选项置为Enabled
