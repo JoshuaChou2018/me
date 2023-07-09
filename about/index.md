@@ -146,6 +146,13 @@ My research interests are:
     <b>Access: </b>
     <a href="https://www.nature.com/articles/s41467-023-37168-7">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/s41467-023-37168-7.pdf">pdf</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://mp.weixin.qq.com/s/ui5G25ERMuZdRT6J1dciUg">BioMed</a>, 
+    <a href="https://cbirt.net/unravelling-spatial-transcriptomics-a-benchmark-study-of-cellular-deconvolution-methods/">CBIRT news</a>,
+    <a href="https://cemse.kaust.edu.sa/cbrc/news/guidelines-cellular-deconvolution-spatial-transcriptomics">KAUST news</a>
+    <br>
+    <font color=#C40000>Chosen as Editors’ Highlights in Nature Communications</font> 
   </li>
   <br>
   <li>
@@ -179,6 +186,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
