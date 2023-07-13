@@ -19,6 +19,7 @@
     <br>
     <b>Access: </b>
     <a href="https://f1000research.com/articles/12-757">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/bc81d525-2684-4755-bd9c-d83bc2bb4321_130936_-_xiaopeng_xu">pdf</a>
   </li>
   <br>
   <li>
@@ -44,7 +45,11 @@
     <br>
     <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
     <br>
-    <i><b>In press.</b></i>
+    <b>DOI: 10.1016/j.gpb.2023.03.004</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S167202292300092X">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S167202292300092X-main.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -224,6 +229,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
