@@ -8,6 +8,20 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>Optimization of binding affinities in chemical space with generative pre-trained transformer and deep reinforcement learning.
+    </font> 
+    <br>	
+    Xiaopeng Xu, <u><b>Juexiao Zhou</b></u>, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Yu Wang, Xingyu Liao, Xin Gao*
+    <br>
+    <i><b>F1000 Research</b></i>
+    <br>
+    <b>DOI: 10.12688/f1000research.130936.1</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://f1000research.com/articles/12-757">online</a>, 
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
     </font> 
     <br>	
@@ -215,10 +229,6 @@
 
 
 
-
-
-
-
 ##  Conference
 
 <ol reversed>
@@ -239,7 +249,6 @@
     <a href="https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf">pdf</a>
   </li>
 </ol>
-
 
 
 ## Posters
@@ -363,15 +372,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>GPT generates more diverse scaffolds than GRU in exploring the chemical space.
-    </font> 
-    <br>	
-    Xiaopeng Xu, <u><b>Juexiao Zhou</b></u>, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Xingyu Liao, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
     <br>	
@@ -412,6 +412,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
