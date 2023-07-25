@@ -333,6 +333,18 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.
+    </font> 
+    <br>	
+    Xingyu Liao#, <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xingyi Li, Xiaopeng Xu, Haoyang Li, Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://xxx">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.
     </font> 
     <br>	
@@ -418,6 +430,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
