@@ -292,6 +292,7 @@ My research interests are:
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
+- Global Burden of Disease (GBD) Collaborator Network Member
 
 <br>
 
