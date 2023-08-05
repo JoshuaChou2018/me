@@ -187,7 +187,7 @@
     <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.
     </font> 
     <br>	
-    Liongxi Zhou, Zhongxiao Li, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
+    Longxi Zhou, Zhongxiao Li, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
     <br>
     <i><b>Transactions on Medical Imaging (IF: 11.037)</b></i>
     <br>
