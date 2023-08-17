@@ -333,6 +333,18 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response.
+    </font> 
+    <br>	
+    Xuan Zhou#, Baolei Yuan#, Yeteng Tian, <u><b>Juexiao Zhou</b></u>, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1">bioRxiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.
     </font> 
     <br>	
@@ -430,6 +442,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
