@@ -80,7 +80,9 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
-    <i><b>under review.</b></i>
+    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
     <br>
     <b>Access: </b>
     <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
@@ -186,6 +188,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 

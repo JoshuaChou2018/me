@@ -8,6 +8,20 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
+    <br>
+    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Optimization of binding affinities in chemical space with generative pre-trained transformer and deep reinforcement learning.
     </font> 
     <br>	
@@ -235,6 +249,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -390,18 +405,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
     <br>	
@@ -442,6 +445,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
