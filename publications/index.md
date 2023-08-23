@@ -346,15 +346,6 @@
 
 <ol reversed>
   <li>
-    <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.
-    </font> 
-    <br>	
-    Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Mingchen Zhuge, Jürgen Schmidhuber, Xin Gao, Xiangliang Zhang
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response.
     </font> 
     <br>	
@@ -452,6 +443,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
