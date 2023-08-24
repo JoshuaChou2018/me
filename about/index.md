@@ -249,6 +249,7 @@ My research interests are:
 
 **GPA: 4.00 / 4.00**
 
+- CEMSE Dean’s List  Award, 2023
 - KAUST AII’s NeurIPS travel grant, 2022
 - CEMSE Dean’s List  Award, 2022
 - Excellent Research Award, CEMSE, 2021
