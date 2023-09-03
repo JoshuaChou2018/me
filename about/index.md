@@ -190,14 +190,11 @@ My research interests are:
 </ol>
 
 
-
-
-
-
-
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
 
 <br>
+
+
 
 ### **Working Experience**
 
@@ -205,8 +202,15 @@ My research interests are:
 
 <br>
 
+
+
 ### **Teaching Experience**
 
+- CS220, Data Analytics - AI Camp for Ministry of Interior, Saudi Arabia, Fall 2023/2024, KAUST
+  - Cooperated with Prof. Xin Gao
+  
+  - Position: Senior Teaching Assistant
+  
 - CS220, Data Analytics, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
   - Position: Teaching Assistant
