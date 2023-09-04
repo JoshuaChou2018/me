@@ -8,6 +8,17 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
+    </font> 
+    <br>	
+    Xingyu Liao , Wufei Zhu , <u><b>Juexiao Zhou</b></u> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*
+    <br>
+    <i><b>Communications Biology (IF: 6.548)</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
     </font> 
     <br>	
@@ -248,6 +259,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -394,15 +406,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
-    </font> 
-    <br>	
-    Xingyu Liao , Wufei Zhu , <u><b>Juexiao Zhou</b></u> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
     <br>	
@@ -443,6 +446,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
