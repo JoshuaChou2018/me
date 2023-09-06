@@ -458,6 +458,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>KAUST reference: 2024-010.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
     </font> 
     <br>	
