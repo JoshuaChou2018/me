@@ -136,6 +136,18 @@ My research interests are:
   </li>
   <br>
   <li>
+    <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://xxx">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -188,6 +200,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)

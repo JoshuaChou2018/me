@@ -358,6 +358,18 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Xin Gao*
+    <br>
+    <i><b>under review.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://xxx">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response.
     </font> 
     <br>	
@@ -446,6 +458,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
