@@ -87,6 +87,21 @@
 Even without a token, use the url: http://url:port?token=
 Then it works]]></description>
 </item><item>
+    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
+    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
+    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
+    <description><![CDATA[获取IP地址
+1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
+1 sudo apt install openssh-server 安装gcc
+1 sudo apt install gcc g++ make 安装NVIDIA驱动
+在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
+1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
+1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
+1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
+1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+</item><item>
     <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
     <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
     <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -95,15 +110,5 @@ Then it works]]></description>
     <description><![CDATA[Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
 1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
 1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.]]></description>
-</item><item>
-    <title>libc10_cuda.so error for installing pyG</title>
-    <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
-    <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</guid>
-    <description><![CDATA[After installing PyG, here is the error:
-libc10_cuda.so: cannot open shared object file: No such file or directory
-Solution
-1 2 conda install pytorch==1.11.0 cudatoolkit=11.3 -c pytorch conda install pyg -c pyg ]]></description>
 </item></channel>
 </rss>

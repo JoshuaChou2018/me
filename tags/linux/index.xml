@@ -66,6 +66,21 @@
 Even without a token, use the url: http://url:port?token=
 Then it works]]></description>
 </item><item>
+    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
+    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
+    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
+    <description><![CDATA[获取IP地址
+1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
+1 sudo apt install openssh-server 安装gcc
+1 sudo apt install gcc g++ make 安装NVIDIA驱动
+在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
+1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
+1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
+1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
+1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+</item><item>
     <title>libc10_cuda.so error for installing pyG</title>
     <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
     <pubDate>Sat, 06 Aug 2022 00:00:00 &#43;0000</pubDate>
@@ -93,12 +108,5 @@ We have a server that has gone a bit cuckoo over the course of the last few mont
     <description><![CDATA[Automatically Sort Data in Google Sheets
 Extension -&gt; Apps script
 1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } ]]></description>
-</item><item>
-    <title>Check SWAP</title>
-    <link>https://www.joshuachou.ink/check-swap/</link>
-    <pubDate>Thu, 09 Jun 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/check-swap/</guid>
-    <description><![CDATA[ Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} ]]></description>
 </item></channel>
 </rss>
