@@ -10,7 +10,7 @@
 
 **I’m Juexiao Zhou, Joshua Chou, 周觉晓**
 
-I am a PhD student @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). 
+I am a PhD Candidate @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). 
 
 My research interests are:
 
