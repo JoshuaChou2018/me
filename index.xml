@@ -3,9 +3,24 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
+    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
+    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
+    <description><![CDATA[获取IP地址
+1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
+1 sudo apt install openssh-server 安装gcc
+1 sudo apt install gcc g++ make 安装NVIDIA驱动
+在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
+1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
+1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
+1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
+1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+</item><item>
     <title>[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</title>
     <link>https://www.joshuachou.ink/news-skingpt-4/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
@@ -109,21 +124,6 @@ Then it works]]></description>
 1 1 loop, best of 3: 109 ms per loop 我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！
 是不是很神奇？ 那JAX到底是什么？
 JAX是谷歌开源的、可以在CPU、GPU和TPU上运行的numpy，是针对机器学习研究的高性能自微分计算框架。]]></description>
-</item><item>
-    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
-    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
-    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
 </item><item>
     <title>[转载] 同态加密：实现数据的“可算不可见”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</link>

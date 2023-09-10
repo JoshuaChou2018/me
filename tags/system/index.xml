@@ -3,7 +3,22 @@
         <title>system - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/system/</link>
         <description>system - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
+    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
+    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
+    <description><![CDATA[获取IP地址
+1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
+1 sudo apt install openssh-server 安装gcc
+1 sudo apt install gcc g++ make 安装NVIDIA驱动
+在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
+1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
+1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
+1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
+1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+</item><item>
     <title>chrome 解决在http协议下无法调用摄像头和麦克风的问题</title>
     <link>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
@@ -86,21 +101,6 @@
 1 jupyter URL is invalid Solution:
 Even without a token, use the url: http://url:port?token=
 Then it works]]></description>
-</item><item>
-    <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
-    <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
-    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
 </item><item>
     <title>libc10_cuda.so error for installing pyG</title>
     <link>https://www.joshuachou.ink/libc10_cuda.so-error-for-installing-pyg/</link>
