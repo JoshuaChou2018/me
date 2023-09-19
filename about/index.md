@@ -219,18 +219,18 @@ My research interests are:
 
 ### **Teaching Experience**
 
-- CS220, Data Analytics - AI Camp for Ministry of Interior, Saudi Arabia, Fall 2023/2024, KAUST
+- **CS220, Data Analytics - AI Camp for Ministry of Interior**, Saudi Arabia, Fall 2023/2024, KAUST
   - Cooperated with Prof. Xin Gao
   
-  - Position: Senior Teaching Assistant
+  - Position: **Senior Teaching Assistant**
   
-- CS220, Data Analytics, Fall 2022/2023, KAUST
+- **CS220, Data Analytics**, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
-  - Position: Teaching Assistant
+  - Position: **Teaching Assistant**
 
-- BioE 201/230 Foundations of Bioengineering, Fall 2022/2023, KAUST
+- **BioE 201/230 Foundations of Bioengineering**, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
-  - Position: Teaching Labs, Building 9 Room 4225
+  - Position: **Teaching Labs**, Building 9 Room 4225
   - Contents:
     - Lab 1. Genome data analysis, 2022.08.30, [colab](https://colab.research.google.com/drive/1AqzzwgcwQpK36LwIBu0xg6zmkWDUmwoM)
     	- Python basics
@@ -250,9 +250,9 @@ My research interests are:
     	- NucleicNet
     	- Docking with Smina
     	- Pfam annotation with deep learning
-- CS398 Graduate Seminar, Spring 2022, KAUST
+- **CS398 Graduate Seminar**, Spring 2022, KAUST
   - Cooperated with Prof. Dominik Michels
-  - Position: Teaching Assistant
+  - Position: **Teaching Assistant**
 
 <br>
 
@@ -319,6 +319,9 @@ My research interests are:
 
 ### **Invited Talks**
 
+- [2022/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
+  - *Oral.* CBRC Seminar, King Abdullah University of Science and Technology, Saudi Arabia
+  
 - [2022/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
   - *Oral.* [Unlocking the Power of “ChatGPT”](https://gptworkshop2023.kaust.edu.sa), King Abdullah University of Science and Technology, Saudi Arabia
   
