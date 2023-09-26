@@ -145,6 +145,9 @@ My research interests are:
     <br>
     <b>Access: </b>
     <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>
   </li>
   <br>
   <li>
@@ -200,6 +203,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
