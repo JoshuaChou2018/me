@@ -75,17 +75,18 @@ My research interests are:
   </li>
   <br>
   <li>
-    <font color=#0096FF>Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
+    <font color=#0096FF>A unified method to revoke the private data of patients in intelligent healthcare with audit to forget.
     </font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
     <i><b>Nature Communications (IF: 14.919)</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>DOI: 10.1038/s41467-023-41703-x</b>
     <br>
     <b>Access: </b>
-    <a href="https://arxiv.org/abs/2302.09813">arXiv</a>
+    <a href="https://www.nature.com/articles/s41467-023-41703-x">online</a>,
+    <a href="https://www.joshuachou.ink/publications/papers/s41467-023-41703-x.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -203,6 +204,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
