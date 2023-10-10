@@ -13,7 +13,7 @@
     <br>	
     Xingyu Liao , Wufei Zhu , <u><b>Juexiao Zhou</b></u> , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*
     <br>
-    <i><b>Communications Biology (IF: 6.548)</b></i>
+    <i><b>Communications Biology</b></i>
     <br>
     <b>DOI: 10.1038/s42003-023-05322-y</b>
     <br>
@@ -28,7 +28,7 @@
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-41703-x</b>
     <br>
@@ -58,7 +58,7 @@
     <br>	
     Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-39199-6</b>
     <br>
@@ -73,7 +73,7 @@
     <br>	
     Xiaopeng Xu, Tiantian Xu, <u><b>Juexiao Zhou</b></u>, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2023.03.004</b>
     <br>
@@ -88,7 +88,7 @@
     <br>	
     Haoyang Li#, <u><b>Juexiao Zhou#</b></u>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-37168-7</b>
     <br>
@@ -109,7 +109,7 @@
     <br>	
     Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Yisheng Li, Zheng An,  Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*
     <br>
-    <i><b>Genome Research (IF: 9.438)</b></i>
+    <i><b>Genome Research</b></i>
     <br>
     <b>DOI: 10.1101/gr.277177.122</b>
     <br>
@@ -140,7 +140,7 @@
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2022.11.010</b>
     <br>
@@ -155,7 +155,7 @@
     <br>	
     Haoyang Li, Hanmin Li, <u><b>Juexiao Zhou</b></u>, Xin Gao*.
     <br>
-    <i><b>Bioinformatics (IF: 6.931)</b></i>
+    <i><b>Bioinformatics</b></i>
     <br>
     <b>DOI: 10.1093/bioinformatics/btac605</b>
     <br>
@@ -170,7 +170,7 @@
     <br>	
     Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <u><b>Juexiao Zhou</b></u>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
     <br>
-    <i><b>Nature machine intelligence (IF: 25.9)</b></i>
+    <i><b>Nature machine intelligence</b></i>
     <br>
     <b>DOI: 10.1038/s42256-022-00483-7</b>
     <br>
@@ -187,7 +187,7 @@
     <br>	
     Haoyang Li, <u><b>Juexiao Zhou</b></u>, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.
     <br>
-    <i><b>Frontiers in Physiology, section Computational Physiology and Medicine (IF: 4.755)</b></i>
+    <i><b>Frontiers in Physiology, section Computational Physiology and Medicine</b></i>
     <br>
     <b>DOI: 10.3389/fphys.2021.655556.</b>
     <br>
@@ -204,7 +204,7 @@
     <br>	
     Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, <u><b>Juexiao Zhou</b></u>, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics Proteomics and Bioinformatics (IF: 10.1)</b></i>
+    <i><b>Genomics Proteomics and Bioinformatics</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2020.05.004.</b>
     <br>
@@ -219,7 +219,7 @@
     <br>	
     Longxi Zhou, Zhongxiao Li, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.
     <br>
-    <i><b>Transactions on Medical Imaging (IF: 11.037)</b></i>
+    <i><b>Transactions on Medical Imaging</b></i>
     <br>
     <b>DOI: 10.1109/TMI.2020.3001810.</b>
     <br>
@@ -234,7 +234,7 @@
     <br>	
     Haoyang Li, <u><b>Juexiao Zhou</b></u>, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.
     <br>
-    <i><b>Front. Oncol. (IF: 6.244)</b></i>
+    <i><b>Frontiers in Oncology</b></i>
     <br>
     <b>DOI: 10.3389/fonc.2020.00207.</b>
     <br>
@@ -249,7 +249,7 @@
     <br>	
     Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, <u><b>Juexiao Zhou</b></u>, Yunfei Li, Liang Fang, Yuhui Hu*.
     <br>
-    <i><b>Molecular Systems Biology (IF: 12.744)</b></i>
+    <i><b>Molecular Systems Biology</b></i>
     <br>
     <b>DOI: 10.15252/msb.20199367.</b>
     <br>
@@ -259,6 +259,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

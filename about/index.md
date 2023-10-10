@@ -65,7 +65,7 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
     <br>
-    <i><b>Genomics, Proteomics & Bioinformatics (IF: 10.1)</b></i>
+    <i><b>Genomics, Proteomics & Bioinformatics</b></i>
     <br>
     <b>DOI: 10.1016/j.gpb.2022.11.010</b>
     <br>
@@ -80,7 +80,7 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-41703-x</b>
     <br>
@@ -157,7 +157,7 @@ My research interests are:
     <br>	
     Haoyang Li#, <u><b>Juexiao Zhou#</b></u>, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-37168-7</b>
     <br>
@@ -179,7 +179,7 @@ My research interests are:
     <br>	
     Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <u><b>Juexiao Zhou</b></u>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
     <br>
-    <i><b>Nature machine intelligence (IF: 25.9)</b></i>
+    <i><b>Nature machine intelligence</b></i>
     <br>
     <b>DOI: 10.1038/s42256-022-00483-7</b>
     <br>
@@ -194,7 +194,7 @@ My research interests are:
     <br>	
     Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*
     <br>
-    <i><b>Nature Communications (IF: 14.919)</b></i>
+    <i><b>Nature Communications</b></i>
     <br>
     <b>DOI: 10.1038/s41467-023-39199-6</b>
     <br>
@@ -204,6 +204,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
