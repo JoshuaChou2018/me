@@ -13,6 +13,7 @@ Extension -&gt; Apps script
 <meta property="og:url" content="https://www.joshuachou.ink/googlesheetautomaticsort/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-07-01T14:09:58+03:00" />
+
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"/>
 
@@ -138,16 +139,16 @@ Extension -&gt; Apps script
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">function autoSort(e) {
-</span></span><span class="line"><span class="cl">  const ss = SpreadsheetApp.getActiveSpreadsheet()
-</span></span><span class="line"><span class="cl">  const ws = ss.getSheetByName(&#34;Sheet1&#34;)
-</span></span><span class="line"><span class="cl">  const range = ws.getRange(2,1,ws.getLastRow()-1,2)
-</span></span><span class="line"><span class="cl">  range.sort({column: 2, ascending: false})
-</span></span><span class="line"><span class="cl">}
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">function</span> <span class="n">autoSort</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">const</span> <span class="n">ss</span> <span class="o">=</span> <span class="n">SpreadsheetApp</span><span class="o">.</span><span class="n">getActiveSpreadsheet</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="k">const</span> <span class="n">ws</span> <span class="o">=</span> <span class="n">ss</span><span class="o">.</span><span class="n">getSheetByName</span><span class="p">(</span><span class="s2">&#34;Sheet1&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">const</span> <span class="nb">range</span> <span class="o">=</span> <span class="n">ws</span><span class="o">.</span><span class="n">getRange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">ws</span><span class="o">.</span><span class="n">getLastRow</span><span class="p">()</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">range</span><span class="o">.</span><span class="n">sort</span><span class="p">({</span><span class="n">column</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">ascending</span><span class="p">:</span> <span class="bp">false</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">function onEdit(e){
-</span></span><span class="line"><span class="cl">  autoSort(e)
-</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl"><span class="n">function</span> <span class="n">onEdit</span><span class="p">(</span><span class="n">e</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">  <span class="n">autoSort</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
