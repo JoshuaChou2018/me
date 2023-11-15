@@ -61,20 +61,6 @@ My research interests are:
 
 <ol>
   <li>
-    <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
-    <br>
-    <i><b>Genomics, Proteomics & Bioinformatics</b></i>
-    <br>
-    <b>DOI: 10.1016/j.gpb.2022.11.010</b>
-    <br>
-    <b>Access: </b>
-    <a href="https://www.sciencedirect.com/science/article/pii/S1672022922001656">online</a>, 
-    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf">pdf</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>A unified method to revoke the private data of patients in intelligent healthcare with audit to forget.
     </font> 
     <br>	
@@ -90,6 +76,31 @@ My research interests are:
   </li>
   <br>
   <li>
+    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
+    <br>
+    <i><b>Science Advances.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
+    <br>
+    <i><b>Genomics, Proteomics & Bioinformatics</b></i>
+    <br>
+    <b>DOI: 10.1016/j.gpb.2022.11.010</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1672022922001656">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf">pdf</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
     </font> 
     <br>	
@@ -99,17 +110,6 @@ My research interests are:
     <br>
     <b>Access: </b>
     <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
-  </li>
-  <br>
-  <li>
-    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
   </li>
   <br>
   <li>
@@ -204,6 +204,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
