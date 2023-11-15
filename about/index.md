@@ -80,7 +80,7 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
-    <i><b>Science Advances.</b></i>
+    <i><b>Science Advances</b></i>
     <br>
     <b>Access: </b>
     <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
