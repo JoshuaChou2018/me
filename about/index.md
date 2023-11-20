@@ -207,10 +207,6 @@ My research interests are:
 
 
 
-
-
-
-
 **For complete publication list** [@here](https://www.joshuachou.ink/publications/)
 
 <br>
@@ -363,6 +359,7 @@ My research interests are:
 |                     ICONIP2020                      |        1         |
 |                      ICMLA2021                      |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
+|               Medical Image Analysis                |        1         |
 |                     MICCAI2020                      |        1         |
 |                 Multimedia Systems                  |        1         |
 |                     SIGKDD2022                      |        2         |
