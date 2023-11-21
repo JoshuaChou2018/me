@@ -14,7 +14,7 @@ I am a PhD Candidate @[King Abdullah University of Science and Technology (KAUST
 
 My research interests are:
 
-- **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk assesment, etc.
+- **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk assessment, etc.
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
 - **Privacy and Security**
 - **Artificial General Intelligence (AGI)**
