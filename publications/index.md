@@ -35,6 +35,9 @@
     <b>Access: </b>
     <a href="https://www.nature.com/articles/s41467-023-41703-x">online</a>,
     <a href="https://www.joshuachou.ink/publications/papers/s41467-023-41703-x.pdf">pdf</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/">KAUST Discovery</a>
   </li>
   <br>
   <li>
@@ -259,6 +262,7 @@
   </li>
   <br>
 </ol>
+
 
 
 ##  Conference
