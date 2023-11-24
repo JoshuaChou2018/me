@@ -182,7 +182,7 @@ My research interests are:
     <br>	
     Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, <u><b>Juexiao Zhou</b></u>, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.
     <br>
-    <i><b>Nature machine intelligence</b></i>
+    <i><b>Nature Machine Intelligence</b></i>
     <br>
     <b>DOI: 10.1038/s42256-022-00483-7</b>
     <br>
@@ -207,6 +207,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
