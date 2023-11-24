@@ -327,21 +327,18 @@ My research interests are:
 
 ### **Invited Talks**
 
+- [2023/11/22] Introduction to ChatGPT and Application of GPT in Healthcare.
+  - *Oral.* Saudi Olympiad Elite Camp, King Abdullah University of Science and Technology, Saudi Arabia
 - [2022/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
   - *Oral.* CBRC Seminar, King Abdullah University of Science and Technology, Saudi Arabia
-  
 - [2022/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
   - *Oral.* [Unlocking the Power of “ChatGPT”](https://gptworkshop2023.kaust.edu.sa), King Abdullah University of Science and Technology, Saudi Arabia
-  
 - [2023/03/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
   - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia
-  
 - [2023/02/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
   - *Oral & Poster.* Spotlight, [Rising Stars in AI Symposium 2023 at KAUST](https://cemse.kaust.edu.sa/ai/aii-symp-2023), Saudi Arabia
-  
 - [2022/11/10] Privacy in Bioinformatics and Intelligent Healthcare.
   - *Poster.* Smart-Health Student Research Symposium, KAUST, Saudi Arabia
-
 - [2022/03/29] PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
   - *Oral.* CBRC Dual Seminar, King Abdullah University of Science and Technology, Saudi Arabia
 - [2022/03/09] PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
