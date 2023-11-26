@@ -75,7 +75,8 @@ My research interests are:
     <a href="https://www.joshuachou.ink/publications/papers/s41467-023-41703-x.pdf">pdf</a>
     <br>
     <b>Press: </b>
-    <a href="https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/">KAUST Discovery</a>
+    <a href="https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/">KAUST Discovery</a>,
+    <a href="https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante">Enerzine</a>
   </li>
   <br>
   <li>
@@ -207,6 +208,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
