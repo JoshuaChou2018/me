@@ -386,7 +386,8 @@
     <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
     <br>
     <b>Press: </b>
-    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>
+    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
+    <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
   </li>
   <br>
   <li>
@@ -478,6 +479,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
