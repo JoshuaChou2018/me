@@ -8,6 +8,20 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
+    <br>
+    <i><b>Accepted.</b></i>
+    <br>
+    <i><b>Computers in Biology and Medicine</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
     </font> 
     <br>	
@@ -268,6 +282,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -448,18 +463,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
@@ -479,6 +482,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

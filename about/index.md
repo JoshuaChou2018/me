@@ -110,7 +110,9 @@ My research interests are:
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
     <br>
-    <i><b>under review.</b></i>
+    <i><b>Accepted.</b></i>
+    <br>
+    <i><b>Computers in Biology and Medicine</b></i>
     <br>
     <b>Access: </b>
     <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
@@ -209,6 +211,7 @@ My research interests are:
   </li>
   <br>
 </ol>
+
 
 
 
