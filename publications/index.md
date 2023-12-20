@@ -8,6 +8,19 @@
   <font size="+1">2023</font>
   <br>
   <li>
+    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
+    <br>
+    <i><b>Accepted.</b></i>
+    <br>
+    <i><b>Science Advances</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.
     </font> 
     <br>	
@@ -283,6 +296,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -463,17 +477,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v1">bioRxiv</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.</font> 
     <br>	
     Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.
@@ -482,6 +485,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
