@@ -3,7 +3,22 @@
         <title>All Posts - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>docker拉取镜像修改打包教程</title>
+    <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
+拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
+1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
+1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
+1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
+https://hub.docker.com/repository/
+用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
+上传镜像
+1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.]]></description>
+</item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
@@ -209,14 +224,5 @@ bootstrapping to rescure (decrease the noise)]]></description>
 libc10_cuda.so: cannot open shared object file: No such file or directory
 Solution
 1 2 conda install pytorch==1.11.0 cudatoolkit=11.3 -c pytorch conda install pyg -c pyg ]]></description>
-</item><item>
-    <title>linux删除百万级别文件</title>
-    <link>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</link>
-    <pubDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</guid>
-    <description><![CDATA[在运行任务时，往linux的同一个文件夹中写入超过500万个文件，导致在硬盘还有空间的情况下，在该文件夹下无法继续写入文件，也无法使用ls、rm等命令。记录处理过程。
-Background: physical server, about two years old, 7200-RPM SATA drives connected to a 3Ware RAID card, ext3 FS mounted noatime and data=ordered, not under crazy load, kernel 2.6.18-92.1.22.el5, uptime 545 days. Directory doesn&rsquo;t contain any subdirectories, just millions of small (~100 byte) files, with some larger (a few KB) ones.
-We have a server that has gone a bit cuckoo over the course of the last few months, but we only noticed it the other day when it started being unable to write to a directory due to it containing too many files.]]></description>
 </item></channel>
 </rss>

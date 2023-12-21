@@ -3,7 +3,22 @@
         <title>system - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>system - Category - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>docker拉取镜像修改打包教程</title>
+    <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
+拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
+1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
+1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
+1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
+https://hub.docker.com/repository/
+用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
+上传镜像
+1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.]]></description>
+</item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
@@ -101,14 +116,5 @@
 1 jupyter URL is invalid Solution:
 Even without a token, use the url: http://url:port?token=
 Then it works]]></description>
-</item><item>
-    <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
-    <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
-    <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/run-ubuntu-in-docker/</guid>
-    <description><![CDATA[Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
-1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
-1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.]]></description>
 </item></channel>
 </rss>

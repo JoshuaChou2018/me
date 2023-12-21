@@ -100,6 +100,16 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/">macOS上使用Openconnect代替Cisco Anyconnect</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-03">2023-01-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品
+下面说下Openconnect安装方法：
+命令行模式:
+1 brew install openconnect GUI模式:
+1 brew install openconnect-gui --cask 安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:
+1 sudo spctl --master-disable </div><div class="post-footer">
+        <a href="/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/internet/">internet</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/macos-cmake-gui/">macos cmake-gui</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-30">2022-12-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">之前使用命令行安装：
 1 brew install cmake 安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。
@@ -120,11 +130,6 @@
 3，将**-Xms**属性的值修改为你想要的结果，然后保存
 1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm</div><div class="post-footer">
         <a href="/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/conda/">conda</a>,&nbsp;<a href="/tags/python/">python</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/blender-python/">python安装blender包bpy</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-06">2022-10-06</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content"> 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install </div><div class="post-footer">
-        <a href="/blender-python/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/conda/">conda</a>,&nbsp;<a href="/tags/python/">python</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
