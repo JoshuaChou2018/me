@@ -4,15 +4,53 @@
 <div>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/avatar.mEXOZc.png" width = "220" height = "200" alt="Juexiao" align=right />
 </div>
+**Juexiao Zhou 周觉晓, Joshua Chou**
+
+PhD Candidate working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
+
+[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
+
+[Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
+
+[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
+
+**Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
+
+**Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
+
+ [CV (last update: Oct 2023)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+
+<br>
 
 
-**Hi!**
 
-**I’m Juexiao Zhou, Joshua Chou, 周觉晓**
+##### Recent News:
 
-I am a PhD Candidate @[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en) working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1). 
+- Dec 2023, PPML-Omics is accepted by **Science Advances**.
+- Dec 2023, PPPML-HMI is accepted by **Computers in Biology and Medicine**.
+- Oct 2023, AFS is accepted by **Nature Commucations**.
+- Sep 2023, passed my Ph.D. proposal titled "Towards Privacy-preserving Artificial General Intelligence (PAGI) for Healthcare and Bioinformatics".
+- Mar 2023, spatial transcriptomics paper is accepted by **Nature Commucations**.
 
-My research interests are:
+​	[[Past news](https://www.joshuachou.ink/news/)]
+
+<br>
+
+
+
+### Short Bio
+
+He is a PhD Candidate in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) from Dec 2021 - Present.
+
+He got the Master of Science degree, M.S. in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) in Dec 2021.
+
+He got Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
+
+He was born on 20 Jan, 1999 in Hunan, China.
+
+
+
+### Research Interests
 
 - **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk assessment, etc.
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
@@ -24,40 +62,9 @@ My research interests are:
 
 
 
-**Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
+### Selected Publications [[Full list](https://www.joshuachou.ink/publications/)]
 
-**Wechat:** JoshuaChou666
-
-**Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
-
-**Affiliation:**
-
-[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
-
-[Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
-
-[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
-
- [CV (last update: Oct 2023)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
-
-<br>
-
-
-
-### **Education**
-
-- **PhD Student in Computer Science**, Supervised by Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1), [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
-- **Master of Science, M.S. in Computer Science**, Supervised by Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1), [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Aug 2020 - Dec 2021
-- Visiting Student, Supervised by Prof. Xin Gao, [Computational Bioscience Research Center](https://www.google.com/url?q=https%3A%2F%2Fcb.kaust.edu.sa%2FPages%2FHome.aspx&sa=D&sntz=1&usg=AFQjCNEYyj85gXCAQWQ_NzWLBp9BzD2KtQ) (CBRC), [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Sep 2019 - Feb 2020
-- **Bachelor of Science, B.S. (Honored) in Bioinformatics**, Supervised by Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en), [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ), Sep 2016 - Jun 2020
-
-<br>
-
-
-
-### Research and Publications
-
-**Selected Papers (# equal contribution, * corresponding author)**
+**(# equal contribution, * corresponding author)**
 
 <ol>
   <li>
@@ -213,17 +220,6 @@ My research interests are:
   </li>
   <br>
 </ol>
-
-
-
-
-
-
-
-
-
-**For complete publication list** [@here](https://www.joshuachou.ink/publications/)
-
 <br>
 
 
@@ -275,7 +271,9 @@ My research interests are:
 
 <br>
 
-### Honours
+
+
+### Awards
 
 #### King Abdullah University of Science and Technology
 
@@ -328,6 +326,8 @@ My research interests are:
 
 <br>
 
+
+
 ### **Memberships**
 
 - Chinese Association for Artificial Intelligence (CAAI) Member
@@ -335,6 +335,8 @@ My research interests are:
 - Global Burden of Disease (GBD) Collaborator Network Member
 
 <br>
+
+
 
 ### **Invited Talks**
 
@@ -356,6 +358,8 @@ My research interests are:
   - *Oral.* BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京
 
 <br>
+
+
 
 ### **Academic Services**
 
