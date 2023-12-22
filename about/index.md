@@ -28,6 +28,7 @@ PhD Candidate working with Prof. [Xin Gao](https://scholar.google.com/citations?
 ##### Recent News:
 
 - Dec 2023, PPML-Omics is accepted by **Science Advances**.
+- Nov 2023, invited to give a talk to the Saudi Olympiad Elite Camp.
 - Dec 2023, PPPML-HMI is accepted by **Computers in Biology and Medicine**.
 - Oct 2023, AFS is accepted by **Nature Commucations**.
 - Sep 2023, passed my Ph.D. proposal titled "Towards Privacy-preserving Artificial General Intelligence (PAGI) for Healthcare and Bioinformatics".
