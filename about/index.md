@@ -49,6 +49,8 @@ He got Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern
 
 He was born on 20 Jan, 1999 in Hunan, China.
 
+<br>
+
 
 
 ### Research Interests
