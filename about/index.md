@@ -127,12 +127,13 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*
     <br>
-    <i><b>Accepted.</b></i>
-    <br>
     <i><b>Computers in Biology and Medicine</b></i>
     <br>
+    <b>DOI: 10.1016/j.compbiomed.2023.107861</b>
+    <br>
     <b>Access: </b>
-    <a href="https://www.medrxiv.org/content/10.1101/2023.02.19.22279631v1.full.pdf">medRxiv</a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0010482523013264">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482523013264-main.pdf">pdf</a>
   </li>
   <br>
   <li>
