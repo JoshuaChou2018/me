@@ -29,11 +29,14 @@ PhD Candidate working with Prof. [Xin Gao](https://scholar.google.com/citations?
 ##### Recent News:
 
 - Dec 2023, PPML-Omics is accepted by **Science Advances**.
-- Nov 2023, invited to give a talk to the Saudi Olympiad Elite Camp.
 - Dec 2023, PPPML-HMI is accepted by **Computers in Biology and Medicine**.
+- Nov 2023, invited to give a talk to the Saudi Olympiad Elite Camp.
 - Oct 2023, AFS is accepted by **Nature Commucations**.
 - Sep 2023, passed my Ph.D. proposal titled "Towards Privacy-preserving Artificial General Intelligence (PAGI) for Healthcare and Bioinformatics".
+- Jun 2023, COVID-19 paper is accepted by **Nature Commucations**.
 - Mar 2023, spatial transcriptomics paper is accepted by **Nature Commucations**.
+- Feb 2023, invited to give a talk at Rising Stars in AI Symposium 2023 at KAUST.
+- May 2022, COVID-19 paper is accepted by **Nature Machine Intelligence**.
 
 ​	[[Past news](https://www.joshuachou.ink/news/)]
 
@@ -347,9 +350,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 - [2023/11/22] Introduction to ChatGPT and Application of GPT in Healthcare.
   - *Oral.* Saudi Olympiad Elite Camp, King Abdullah University of Science and Technology, Saudi Arabia
-- [2022/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
+- [2023/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
   - *Oral.* CBRC Seminar, King Abdullah University of Science and Technology, Saudi Arabia
-- [2022/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
+- [2023/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
   - *Oral.* [Unlocking the Power of “ChatGPT”](https://gptworkshop2023.kaust.edu.sa), King Abdullah University of Science and Technology, Saudi Arabia
 - [2023/03/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
   - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia
