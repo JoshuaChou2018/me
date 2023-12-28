@@ -50,7 +50,7 @@ He is a Ph.D. Candidate in Computer Science at [King Abdullah University of Scie
 
 He got the Master of Science degree, M.S. in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) in Dec 2021.
 
-He got Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
+He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
 
 He was born on  Jan 20, 1999 in Hunan, China.
 
