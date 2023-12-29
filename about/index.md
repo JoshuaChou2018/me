@@ -66,6 +66,8 @@ He was born on  Jan 20, 1999 in Hunan, China.
 - **Artificial General Intelligence (AGI)**
 - **Large Language Model (LLM)**
 
+![image-20231229130918233](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png)
+
 <br>
 
 
