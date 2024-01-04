@@ -404,7 +404,8 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 <br>
 
-<div>
-  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/V4dlnQ.httpswww.joshuachou.inkabout.png" width = "220" height = "200" alt="QR" align="middle" />
+<div style="display:flex; align-items:center;">
+  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/V4dlnQ.httpswww.joshuachou.inkabout.png" width = "220" height = "200" alt="QR"/>
 </div>
+
 
