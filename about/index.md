@@ -402,3 +402,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 <br>
 
+<br>
+
+![httpswww.joshuachou.inkabout](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/V4dlnQ.httpswww.joshuachou.inkabout.png)
+
