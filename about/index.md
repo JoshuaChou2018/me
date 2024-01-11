@@ -102,9 +102,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
-    <i><b>Accepted.</b></i>
-    <br>
     <i><b>Science Advances</b></i>
+    <br>
+    <b>DOI: 10.1126/sciadv.adh8601</b>
     <br>
     <b>Access: </b>
     <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v2">bioRxiv</a>
@@ -232,6 +232,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 <br>
 
@@ -407,7 +408,6 @@ He was born on  Jan 20, 1999 in Hunan, China.
 <center>
 <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/V4dlnQ.httpswww.joshuachou.inkabout.png" width = "220" height = "200"/>
 </center>
-
 
 
 
