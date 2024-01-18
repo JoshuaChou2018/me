@@ -62,10 +62,16 @@ He was born on  Jan 20, 1999 in Hunan, China.
 ### Research Interests
 
 - **Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk assessment, etc.
+
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
+
 - **Privacy and Security**
+
 - **Artificial General Intelligence (AGI)**
+
 - **Large Language Model (LLM)**
+
+  
 
 ![image-20231229130918233](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png)
 
