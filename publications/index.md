@@ -294,12 +294,6 @@
 
 
 
-
-
-
-
-
-
 ##  Conference
 
 <ol reversed>
@@ -398,6 +392,24 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.
+    </font> 
+    <br>	
+    Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, <u><b>Juexiao Zhou</b></u>, Haoyang Li, Mingchen Zhuge, Jürgen Schmidhuber, Xin Gao, Xiangliang Zhang
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
+    <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer.
+    </font> 
+    <br>	
+    Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Metaphase-Image Mask Annotations.
     </font> 
     <br>	
@@ -488,11 +500,6 @@
   </li>
   <br>
 </ol>
-
-
-
-
-
 
 
 
