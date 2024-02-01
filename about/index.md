@@ -113,7 +113,8 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <b>DOI: 10.1126/sciadv.adh8601</b>
     <br>
     <b>Access: </b>
-    <a href="https://www.biorxiv.org/content/10.1101/2022.03.23.485485v2">bioRxiv</a>
+    <a href="https://www.science.org/doi/10.1126/sciadv.adh8601">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/sciadv.adh8601.pdf">pdf</a>
   </li>
   <br>
   <li>
@@ -238,6 +239,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 <br>
