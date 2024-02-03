@@ -115,6 +115,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <b>Access: </b>
     <a href="https://www.science.org/doi/10.1126/sciadv.adh8601">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/sciadv.adh8601.pdf">pdf</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/">Inside Precision Medicine</a>
   </li>
   <br>
   <li>
@@ -239,6 +242,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 
