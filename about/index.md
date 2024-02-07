@@ -104,7 +104,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
-    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
+    <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data.</font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
@@ -394,7 +394,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 |                 Journal/Conference                  | # Paper Reviewed |
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
-|          Computers in Biology and Medicine          |        5         |
+|          Computers in Biology and Medicine          |        6         |
 |                   Genome Biology                    |        1         |
 |                   Genome Research                   |        2         |
 |                       Heliyon                       |        1         |

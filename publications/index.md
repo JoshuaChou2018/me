@@ -8,7 +8,7 @@
   <font size="+1">2023</font>
   <br>
   <li>
-    <font color=#0096FF>PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data.</font> 
+    <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data.</font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
     <br>
