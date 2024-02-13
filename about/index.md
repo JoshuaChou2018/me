@@ -28,6 +28,7 @@ Ph.D. Candidate working with Prof. [Xin Gao](https://scholar.google.com/citation
 
 ##### Recent News:
 
+- Feb 2024, invited to the TV show "[Investing Now for Future in Hong Kong and the Middle East：New Cradle of Innovation](https://www.youtube.com/watch?v=RvZwiyyHfDw)" by [RTHK 香港電台](https://www.youtube.com/@RTHK) 
 - Dec 2023, PPML-Omics is accepted by **Science Advances (IF=15.4)**.
 - Dec 2023, PPPML-HMI is accepted by **Computers in Biology and Medicine (IF=7.7)**.
 - Nov 2023, invited to give a talk to the Saudi Olympiad Elite Camp.
