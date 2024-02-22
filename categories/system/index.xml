@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>system - Category - Juexiao Zhou 周觉晓</title>
+        <title>System - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
-        <description>system - Category - Juexiao Zhou 周觉晓</description>
+        <description>System - Category - Juexiao Zhou 周觉晓</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>

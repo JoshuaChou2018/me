@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>leetcode - Category - Juexiao Zhou 周觉晓</title>
+        <title>Leetcode - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/leetcode/</link>
-        <description>leetcode - Category - Juexiao Zhou 周觉晓</description>
+        <description>Leetcode - Category - Juexiao Zhou 周觉晓</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/leetcode/" rel="self" type="application/rss+xml" /><item>
     <title>lc1570. Dot Product of Two Sparse Vectors</title>
     <link>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</link>

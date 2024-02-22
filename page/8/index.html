@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.122.0">
+	<meta name="generator" content="Hugo 0.123.1">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -101,23 +101,23 @@
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/googlesheetautomaticsort/">Automatically Sort Data in Google Sheets</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-01">2022-07-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">Automatically Sort Data in Google Sheets
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-07-01">2022-07-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">Automatically Sort Data in Google Sheets
 Extension -&gt; Apps script
 1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } </div><div class="post-footer">
         <a href="/googlesheetautomaticsort/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/check-swap/">Check SWAP</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content"> Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} </div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"> Check SWAP used by differnt PID 1 for i in $(cd /proc;ls | grep &#34;^[0-9]&#34; | awk &#39;$0&gt;100&#39;); do awk &#39;/Swap:/{a=a+$2}END{print &#39;&#34;$i&#34;&#39;,a/1024&#34;M&#34;}&#39; /proc/$i/smaps;done| sort -k2nr | head Get the information about the PID 1 ps aux | grep ${pid} </div><div class="post-footer">
         <a href="/check-swap/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/xcode-select/">xcode-select</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>system</a></span></div><div class="content">显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-06-09">2022-06-09</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">显示“未能找到金属编译器安装的Xcode。请安装Xcode并运行Xcode.app来接受协议，或确保激活的开发者目录设为当前的Xcode安装（使用xcode-select）
 解决方案：
 1 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer </div><div class="post-footer">
         <a href="/xcode-select/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">system</a>,&nbsp;<a href="/tags/linux/">linux</a></div></div>
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

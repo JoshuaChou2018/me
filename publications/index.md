@@ -21,7 +21,15 @@
     <a href="https://www.joshuachou.ink/publications/papers/sciadv.adh8601.pdf">pdf</a>
     <br>
     <b>Press: </b>
-    <a href="https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/">Inside Precision Medicine</a>
+    <a href="https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/">Inside Precision Medicine</a>,
+    <a href="https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/">Today Headline</a>,
+    <a href="https://techxplore.com/news/2024-02-shuffler-optimizes-privacy-personal-genomic.html">Tech Xplore</a>,
+    <a href="https://scienmag.com/shuffling-the-deck-for-privacy/">ScienMag</a>,
+    <a href="https://bioengineer.org/shuffling-the-deck-for-privacy/">Bioengineer.org</a>,
+    <a href="https://www.newswise.com/articles/shuffling-the-deck-for-privacy">Newswise</a>,
+    <a href="https://www.eurekalert.org/news-releases/1034533">EurekAlert</a>,
+    <a href="https://www.biocompare.com/Life-Science-News/610989-Novel-Privacy-Preserving-Machine-Learning-Method-Developed-for-Genomics-Data/">Biocompare</a>,
+    <a href="https://nabd.ws/h/132899916-7bdd33/?hf=0">nabd.ws</a>
   </li>
   <br>
   <li>
@@ -295,6 +303,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
