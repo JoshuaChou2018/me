@@ -20,7 +20,7 @@ Ph.D. Candidate working with Prof. [Xin Gao](https://scholar.google.com/citation
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
- [CV (last update: Dec 2023)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: Feb 2024)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -280,7 +280,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 - **BioE 201/230 Foundations of Bioengineering**, Fall 2022/2023, KAUST
   - Cooperated with Prof. Xin Gao
-  - Position: **Teaching Labs**, Building 9 Room 4225
+  - Position: **Guest Lecturer**, Building 9 Room 4225
   - Contents:
     - Lab 1. Genome data analysis, 2022.08.30, [colab](https://colab.research.google.com/drive/1AqzzwgcwQpK36LwIBu0xg6zmkWDUmwoM)
     	- Python basics
@@ -368,6 +368,26 @@ He was born on  Jan 20, 1999 in Hunan, China.
 - Chinese Association for Artificial Intelligence (CAAI) Member
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
 - Global Burden of Disease (GBD) Collaborator Network Member
+
+<br>
+
+
+
+### Selected Press Coverage [[Full list](https://www.joshuachou.ink/press/)]
+
+- **PPML-Omics protects patients’ privacy in omic data**  was covered by:
+  - Algorithm Proposed to Protect Patient Privacy, [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/)
+  - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/)
+  - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Tech Xplore](https://techxplore.com/news/2024-02-shuffler-optimizes-privacy-personal-genomic.html)
+  - Shuffling the deck for privacy, [ScienMag](https://scienmag.com/shuffling-the-deck-for-privacy/)
+  - Shuffling the deck for privacy, [Bioengineer.org](https://bioengineer.org/shuffling-the-deck-for-privacy/)
+  - Shuffling the deck for privacy, [Newswise](https://www.newswise.com/articles/shuffling-the-deck-for-privacy)
+  - Shuffling the deck for privacy, [EurekAlert](https://www.eurekalert.org/news-releases/1034533)
+  - Novel Privacy-Preserving Machine-Learning Method Developed for Genomics Data, [Biocompare](https://www.biocompare.com/Life-Science-News/610989-Novel-Privacy-Preserving-Machine-Learning-Method-Developed-for-Genomics-Data/)
+  - نهج ثوري يحافظ على خصوصية البيانات الطبية, [nabd.ws](https://nabd.ws/h/132899916-7bdd33/?hf=0)
+- **Audit to forget** was covered by:
+  - Un logiciel pour garantir le droit à l’oubli des patients dans l’IA en milieu de santé, [Enerzine](https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante)
+  - Safeguarding the right to be forgotten, [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/)
 
 <br>
 
