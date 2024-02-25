@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>How to Install and Configure VNC on Ubuntu 20.04 - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="How to Install and Configure VNC on Ubuntu 20.04" />
+<meta property="og:description" content="Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
+In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-25T11:40:02+03:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png" /><meta name="twitter:title" content="How to Install and Configure VNC on Ubuntu 20.04"/>
+<meta name="twitter:description" content="Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
+In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel."/>
+<meta name="application-name" content="Juexiao Zhou">
+<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" /><link rel="prev" href="https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Install and Configure VNC on Ubuntu 20.04",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/vnc-on-ubuntu-20.04\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, vnc","wordcount":  2299 ,
+        "url": "https:\/\/www.joshuachou.ink\/vnc-on-ubuntu-20.04\/","datePublished": "2024-02-25T00:00:00+00:00","dateModified": "2024-02-25T11:40:02+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Juexiao Zhou 周觉晓">Juexiao Zhou</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/news/" title="News"> News </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/mentoring/" title="Mentoring"> Mentoring </a><a class="menu-item" href="/press/" title="Press"> Press </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/life/" title="Life"> Life </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Juexiao Zhou 周觉晓">Juexiao Zhou</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about/" title="Me">Me</a><a class="menu-item" href="/news/" title="News">News</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/mentoring/" title="Mentoring">Mentoring</a><a class="menu-item" href="/press/" title="Press">Press</a><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/life/" title="Life">Life</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">How to Install and Configure VNC on Ubuntu 20.04</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-02-25">2024-02-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2299 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introductionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04introduction"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#introduction">Introduction</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#prerequisiteshttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04prerequisites"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#prerequisites">Prerequisites</a></a></li>
+    <li><a href="#step-1--installing-the-desktop-environment-and-vnc-serverhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-1-installing-the-desktop-environment-and-vnc-server"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-1-installing-the-desktop-environment-and-vnc-server">Step 1 — Installing the Desktop Environment and VNC Server</a></a></li>
+    <li><a href="#step-3--connecting-to-the-vnc-desktop-securelyhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-3-connecting-to-the-vnc-desktop-securely"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-3-connecting-to-the-vnc-desktop-securely">Step 3 — Connecting to the VNC Desktop Securely</a></a></li>
+    <li><a href="#step-4--running-vnc-as-a-system-servicehttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-4-running-vnc-as-a-system-service"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-4-running-vnc-as-a-system-service">Step 4 — Running VNC as a System Service</a></a></li>
+    <li><a href="#conclusionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04conclusion"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#conclusion">Conclusion</a></a></li>
+    <li><a href="#ref">Ref</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="introductionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04introduction"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#introduction" target="_blank" rel="noopener noreffer">Introduction</a></h3>
+<p><em>Virtual Network Computing</em>, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.</p>
+<p>In this guide, you’ll set up a VNC server with <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a> on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.</p>
+<p>Deploy your applications from GitHub using <a href="https://www.digitalocean.com/products/app-platform" target="_blank" rel="noopener noreffer">DigitalOcean App Platform</a>. Let DigitalOcean focus on scaling your app.</p>
+<h2 id="prerequisiteshttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04prerequisites"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#prerequisites" target="_blank" rel="noopener noreffer">Prerequisites</a></h2>
+<p>To complete this tutorial, you’ll need:</p>
+<ul>
+<li>One Ubuntu 20.04 server with a non-root administrative user and a firewall configured with UFW. To set this up, follow our <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04" target="_blank" rel="noopener noreffer">initial server setup guide for Ubuntu 20.04</a>.</li>
+<li>A local computer with a VNC client installed. The VNC client you use must support connections over SSH tunnels:
+<ul>
+<li>On Windows, you can use <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a>, <a href="https://www.realvnc.com/" target="_blank" rel="noopener noreffer">RealVNC</a>, or <a href="https://www.uvnc.com/" target="_blank" rel="noopener noreffer">UltraVNC</a>.</li>
+<li>On macOS, you can use the built-in <a href="https://support.apple.com/guide/mac-help/screen-sharing-overview-mh14066/mac" target="_blank" rel="noopener noreffer">Screen Sharing</a> program, or can use a cross-platform app like <a href="https://www.realvnc.com/" target="_blank" rel="noopener noreffer">RealVNC</a>.</li>
+<li>On Linux, you can choose from many options, including <code>vinagre</code>, <code>krdc</code>, <a href="https://www.realvnc.com/" target="_blank" rel="noopener noreffer">RealVNC</a>, or <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="step-1--installing-the-desktop-environment-and-vnc-serverhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-1-installing-the-desktop-environment-and-vnc-server"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-1-installing-the-desktop-environment-and-vnc-server" target="_blank" rel="noopener noreffer">Step 1 — Installing the Desktop Environment and VNC Server</a></h2>
+<p>By default, an Ubuntu 20.04 server does not come with a graphical desktop environment or a VNC server installed, so you’ll begin by installing those.</p>
+<p>You have many options when it comes to which VNC server and desktop environment you choose. In this tutorial, you will install packages for the latest <a href="https://xfce.org/" target="_blank" rel="noopener noreffer">Xfce</a> desktop environment and the TightVNC package available from the official Ubuntu repository. Both Xfce and TightVNC are known for being lightweight and fast, which will help ensure that the VNC connection will be smooth and stable even on slower internet connections.</p>
+<p>After connecting to your server with SSH, update your list of packages:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now install Xfce along with the <code>xfce4-goodies</code> package, which contains a few enhancements for the desktop environment:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install xfce4 xfce4-goodies
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>During installation, you may be prompted to choose a default display manager for Xfce. A display manager is a program that allows you to select and log in to a desktop environment through a graphical interface. You’ll only be using Xfce when you connect with a VNC client, and in these Xfce sessions you’ll already be logged in as your non-root Ubuntu user. So for the purposes of this tutorial, your choice of display manager isn’t pertinent. Select either one and press <code>ENTER</code>.</p>
+<p>Once that installation completes, install the TightVNC server:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install tightvncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Next, run the <code>vncserver</code> command to set a VNC access password, create the initial configuration files, and start a VNC server instance:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You’ll be prompted to enter and verify a password to access your machine remotely:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OutputYou will require a password to access your desktops.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Password:
+</span></span><span class="line"><span class="cl">Verify:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The password must be between six and eight characters long. Passwords more than 8 characters will be truncated automatically.</p>
+<p>Once you verify the password, you’ll have the option to create a view-only password. Users who log in with the view-only password will not be able to control the VNC instance with their mouse or keyboard. This is a helpful option if you want to demonstrate something to other people using your VNC server, but this isn’t required.</p>
+<p>The process then creates the necessary default configuration files and connection information for the server. Additionally, it launches a default server instance on port <code>5901</code>. This port is called a <em>display port</em>, and is referred to by VNC as <code>:1</code>. VNC can launch multiple instances on other display ports, with <code>:2</code> referring to port <code>5902</code>, <code>:3</code> referring to <code>5903</code>, and so on:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OutputWould you like to enter a view-only password (y/n)? n
+</span></span><span class="line"><span class="cl">xauth:  file /home/sammy/.Xauthority does not exist
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">New &#39;X&#39; desktop is your_hostname:1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Creating default startup script /home/sammy/.vnc/xstartup
+</span></span><span class="line"><span class="cl">Starting applications specified in /home/sammy/.vnc/xstartup
+</span></span><span class="line"><span class="cl">Log file is /home/sammy/.vnc/your_hostname:1.log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Note that if you ever want to change your password or add a view-only password, you can do so with the <code>vncpasswd</code> command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vncpasswd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>At this point, the VNC server is installed and running. Now let’s configure it to launch Xfce and give us access to the server through a graphical interface.</p>
+<p>##Step 2 — Configuring the VNC Server</p>
+<p>The VNC server needs to know which commands to execute when it starts up. Specifically, VNC needs to know which graphical desktop environment it should connect to.</p>
+<p>The commands that the VNC server runs at startup are located in a configuration file called <code>xstartup</code> in the <code>.vnc</code> folder under your home directory. The startup script was created when you ran the <code>vncserver</code> command in the previous step, but you’ll create your own to launch the Xfce desktop.</p>
+<p>Because you are going to be changing how the VNC server is configured, first stop the VNC server instance that is running on port <code>5901</code> with the following command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vncserver -kill :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The output will look like this, although you’ll see a different PID:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OutputKilling Xtightvnc process ID 17648
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Before you modify the <code>xstartup</code> file, back up the original:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now create a new <code>xstartup</code> file and open it in a text editor, such as <code>nano</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano ~/.vnc/xstartup
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then add the following lines to the file:</p>
+<p>~/.vnc/xstartup</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">startxfce4 <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The first line is a <a href="https://en.wikipedia.org/wiki/Shebang_%28Unix%29" target="_blank" rel="noopener noreffer"><em>shebang</em></a>. In executable plain-text files on *nix platforms, a shebang tells the system what interpreter to pass that file to for execution. In this case, you’re passing the file to the Bash interpreter. This will allow each successive line to be executed as commands, in order.</p>
+<p>The first command in the file, <code>xrdb $HOME/.Xresources</code>, tells VNC’s GUI framework to read the server user’s <code>.Xresources</code> file. <code>.Xresources</code> is where a user can make changes to certain settings of the graphical desktop, like terminal colors, cursor themes, and font rendering. The second command tells the server to launch Xfce. Whenever you start or restart the VNC server, these commands will execute automatically.</p>
+<p>Save and close the file after adding these lines. If you used <code>nano</code>, do so by pressing <code>CTRL + X</code>, <code>Y</code>, then <code>ENTER</code>.</p>
+<p>To ensure that the VNC server will be able to use this new startup file properly, you’ll need to make it executable:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod +x ~/.vnc/xstartup
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then restart the VNC server:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vncserver -localhost
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Notice that this time the command includes the <code>-localhost</code> option, which binds the VNC server to your server’s loopback interface. This will cause VNC to only allow connections that originate from the server on which it’s installed.</p>
+<p>In the next step, you’ll establish an SSH tunnel between your local machine and your server, essentially tricking VNC into thinking that the connection from your local machine originated on your server. This strategy will add an extra layer of security around VNC, as the only users who will be able to access it are those that already have SSH access to your server.</p>
+<p>You’ll see output similar to this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">OutputNew &#39;X&#39; desktop is your_hostname:1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Starting applications specified in /home/sammy/.vnc/xstartup
+</span></span><span class="line"><span class="cl">Log file is /home/sammy/.vnc/your_hostname:1.log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>With the configuration in place, you’re ready to connect to the VNC server from your local machine.</p>
+<h2 id="step-3--connecting-to-the-vnc-desktop-securelyhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-3-connecting-to-the-vnc-desktop-securely"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-3-connecting-to-the-vnc-desktop-securely" target="_blank" rel="noopener noreffer">Step 3 — Connecting to the VNC Desktop Securely</a></h2>
+<p>VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, you’ll establish an SSH tunnel and then tell your VNC client to connect using that tunnel rather than making a direct connection.</p>
+<p>Create an SSH connection on your local computer that securely forwards to the <code>localhost</code>connection for VNC. You can do this via the terminal on Linux or macOS with the following <code>ssh</code>command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -L 59000:localhost:5901 -C -N -l sammy your_server_ip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Here’s what this <code>ssh</code> command’s options mean:</p>
+<ul>
+<li><code>-L 59000:localhost:5901</code>: The <code>-L</code> switch specifies that the given port on the local computer (<code>59000</code>) is to be forwarded to the given host and port on the destination server (<code>localhost:5901</code>, meaning port <code>5901</code> on the destination server, defined as <code>your_server_ip</code>). Note that the local port you specify is somewhat arbitrary; as long as the port isn’t already bound to another service, you can use it as the forwarding port for your tunnel.</li>
+<li><code>-C</code>: This flag enables compression which can help minimize resource consumption and speed things up.</li>
+<li><code>-N</code>: This option tells <code>ssh</code> that you don’t want to execute any remote commands. This setting is useful when you just want to forward ports.</li>
+<li><code>-l sammy your_server_ip</code>: The <code>-l</code> switch let’s you specify the user you want to log in as once you connect to the server. Make sure to replace <code>sammy</code> and <code>your_server_ip</code> with the name of your non-root user and your server’s IP address.</li>
+</ul>
+<p><strong>Note</strong>: This command establishes an SSH tunnel that forwards information from port <code>5901</code> on your VNC server to port <code>59000</code> on your local machine via port <code>22</code> on each machine, the default port for SSH. Assuming you followed the prerequisite <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04" target="_blank" rel="noopener noreffer">Initial Server Setup guide for Ubuntu 20.04</a>, you will have added a UFW rule to allow connections to your server over OpenSSH.</p>
+<p>This is more secure than simply opening up your server’s firewall to allow connections to port <code>5901</code>, as that would allow anyone to access your server over VNC. By connecting over an SSH tunnel, you’re limiting VNC access to machines that already have SSH access to the server.</p>
+<p>If you are using PuTTY to connect to your server, you can create an SSH tunnel by right-clicking on the top bar of the terminal window, and then clicking the <strong>Change Settings…</strong> option:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_topbar_arrow.png"
+        data-srcset="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_topbar_arrow.png, https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_topbar_arrow.png 1.5x, https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_topbar_arrow.png 2x"
+        data-sizes="auto"
+        alt="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_topbar_arrow.png"
+        title="Right-click on top bar to reveal Change Settings option" /></p>
+<p>Find the <strong>Connection</strong> branch in the tree menu on the left-hand side of the PuTTY Reconfiguration window. Expand the <strong>SSH</strong> branch and click on <strong>Tunnels</strong>. On the <strong>Options controlling SSH port forwarding</strong> screen, enter <code>59000</code> as the <strong>Source Port</strong> and <code>localhost:5901</code> as the <strong>Destination</strong>, like this:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_reconf_local.png"
+        data-srcset="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_reconf_local.png, https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_reconf_local.png 1.5x, https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_reconf_local.png 2x"
+        data-sizes="auto"
+        alt="https://assets.digitalocean.com/articles/vnc_2004/vnc_putty_reconf_local.png"
+        title="Example PuTTY SSH tunnel configuration" /></p>
+<p>Then click the <strong>Add</strong> button, and then the <strong>Apply</strong> button to implement the tunnel.</p>
+<p>Once the tunnel is running, use a VNC client to connect to <code>localhost:59000</code>. You’ll be prompted to authenticate using the password you set in Step 1.</p>
+<p>Once you are connected, you’ll see the default Xfce desktop. It should look something like this:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://assets.digitalocean.com/articles/vnc_2004/vnc_xfce.png"
+        data-srcset="https://assets.digitalocean.com/articles/vnc_2004/vnc_xfce.png, https://assets.digitalocean.com/articles/vnc_2004/vnc_xfce.png 1.5x, https://assets.digitalocean.com/articles/vnc_2004/vnc_xfce.png 2x"
+        data-sizes="auto"
+        alt="https://assets.digitalocean.com/articles/vnc_2004/vnc_xfce.png"
+        title="VNC connection to Ubuntu 20.04 server with the Xfce desktop environment" /></p>
+<p>You can access files in your home directory with the file manager or from the command line, as seen here:</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://assets.digitalocean.com/articles/vnc_2004/vnc_files.png"
+        data-srcset="https://assets.digitalocean.com/articles/vnc_2004/vnc_files.png, https://assets.digitalocean.com/articles/vnc_2004/vnc_files.png 1.5x, https://assets.digitalocean.com/articles/vnc_2004/vnc_files.png 2x"
+        data-sizes="auto"
+        alt="https://assets.digitalocean.com/articles/vnc_2004/vnc_files.png"
+        title="File Manager via VNC connection to Ubuntu 20.04" /></p>
+<p>Press <code>CTRL+C</code> in your local terminal to stop the SSH tunnel and return to your prompt. This will disconnect your VNC session as well.</p>
+<p>Now you can configure your VNC server to run as a systemd service.</p>
+<h2 id="step-4--running-vnc-as-a-system-servicehttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-4-running-vnc-as-a-system-service"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-4-running-vnc-as-a-system-service" target="_blank" rel="noopener noreffer">Step 4 — Running VNC as a System Service</a></h2>
+<p>By setting up the VNC server to run as a systemd service you can start, stop, and restart it as needed, like any other service. You can also use systemd’s management commands to ensure that VNC starts when your server boots up.</p>
+<p>First, create a new unit file called <code>/etc/systemd/system/vncserver@.service</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo nano /etc/systemd/system/vncserver@.service
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>@</code> symbol at the end of the name will let us pass in an argument you can use in the service configuration. You’ll use this to specify the VNC display port you want to use when you manage the service.</p>
+<p>Add the following lines to the file. Be sure to change the value of <strong>User</strong>, <strong>Group</strong>, <strong>WorkingDirectory</strong>, and the username in the value of <strong>PIDFILE</strong> to match your username:</p>
+<p>/etc/systemd/system/vncserver@.service</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[Unit]
+</span></span><span class="line"><span class="cl">Description=Start TightVNC server at startup
+</span></span><span class="line"><span class="cl">After=syslog.target network.target
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[Service]
+</span></span><span class="line"><span class="cl">Type=forking
+</span></span><span class="line"><span class="cl">User=sammy
+</span></span><span class="line"><span class="cl">Group=sammy
+</span></span><span class="line"><span class="cl">WorkingDirectory=/home/sammy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PIDFile=/home/sammy/.vnc/%H:%i.pid
+</span></span><span class="line"><span class="cl">ExecStartPre=-/usr/bin/vncserver -kill :%i &gt; /dev/null 2&gt;&amp;1
+</span></span><span class="line"><span class="cl">ExecStart=/usr/bin/vncserver -depth 24 -geometry 1280x800 -localhost :%i
+</span></span><span class="line"><span class="cl">ExecStop=/usr/bin/vncserver -kill :%i
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[Install]
+</span></span><span class="line"><span class="cl">WantedBy=multi-user.target
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>ExecStartPre</code> command stops VNC if it’s already running. The <code>ExecStart</code> command starts VNC and sets the color depth to 24-bit color with a resolution of 1280x800. You can modify these startup options as well to meet your needs. Also, note that the <code>ExecStart</code> command again includes the <code>-localhost</code> option.</p>
+<p>Save and close the file.</p>
+<p>Next, make the system aware of the new unit file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl daemon-reload
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Enable the unit file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> vncserver@1.service
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The <code>1</code> following the <code>@</code> sign signifies which display number the service should appear over, in this case the default <code>:1</code> as was discussed in Step 2.</p>
+<p>Stop the current instance of the VNC server if it’s still running:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vncserver -kill :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then start it as you would start any other systemd service:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl start vncserver@1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>You can verify that it started with this command:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl status vncserver@1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If it started correctly, the output should look like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">Output</span><span class="err">●</span> <span class="n">vncserver</span><span class="err">@</span><span class="mf">1.</span><span class="n">service</span> <span class="o">-</span> <span class="n">Start</span> <span class="n">TightVNC</span> <span class="n">server</span> <span class="n">at</span> <span class="n">startup</span>
+</span></span><span class="line"><span class="cl">     <span class="n">Loaded</span><span class="p">:</span> <span class="n">loaded</span> <span class="p">(</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">vncserver</span><span class="err">@</span><span class="o">.</span><span class="n">service</span><span class="p">;</span> <span class="n">enabled</span><span class="p">;</span> <span class="n">vendor</span> <span class="n">preset</span><span class="p">:</span> <span class="n">enabled</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="n">Active</span><span class="p">:</span> <span class="n">active</span> <span class="p">(</span><span class="n">running</span><span class="p">)</span> <span class="n">since</span> <span class="n">Thu</span> <span class="mi">2020</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">07</span> <span class="mi">17</span><span class="p">:</span><span class="mi">23</span><span class="p">:</span><span class="mi">50</span> <span class="n">UTC</span><span class="p">;</span> <span class="mi">6</span><span class="n">s</span> <span class="n">ago</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Process</span><span class="p">:</span> <span class="mi">39768</span> <span class="n">ExecStartPre</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">vncserver</span> <span class="o">-</span><span class="n">kill</span> <span class="p">:</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="mi">2</span><span class="o">&gt;&amp;</span><span class="mi">1</span> <span class="p">(</span><span class="n">code</span><span class="o">=</span><span class="n">exited</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Process</span><span class="p">:</span> <span class="mi">39772</span> <span class="n">ExecStart</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">vncserver</span> <span class="o">-</span><span class="n">depth</span> <span class="mi">24</span> <span class="o">-</span><span class="n">geometry</span> <span class="mi">1280</span><span class="n">x800</span> <span class="p">:</span><span class="mi">1</span> <span class="p">(</span><span class="n">code</span><span class="o">=</span><span class="n">exited</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="mi">0</span><span class="o">/</span><span class="n">SUCCESS</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="n">Main</span> <span class="n">PID</span><span class="p">:</span> <span class="mi">39795</span> <span class="p">(</span><span class="n">Xtightvnc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Your VNC server is now ready to use whenever your server boots up, and you can manage it with <a href="https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units" target="_blank" rel="noopener noreffer"><code>systemctl</code> commands</a> like any other systemd service.</p>
+<p>However, there won’t be any difference on the client side. To reconnect, start your SSH tunnel again:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -L 59000:localhost:5901 -C -N -l sammy your_server_ip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then make a new connection using your VNC client software to <code>localhost:59000</code> to connect to your server.</p>
+<h2 id="conclusionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04conclusion"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#conclusion" target="_blank" rel="noopener noreffer">Conclusion</a></h2>
+<p>You now have a secured VNC server up and running on your Ubuntu 20.04 server. Now you’ll be able to manage your files, software, and settings with a user-friendly graphical interface, and you’ll be able to run graphical software like web browsers remotely.</p>
+<h2 id="ref">Ref</h2>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04" target="_blank" rel="noopener noreffer">https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-02-25&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/8a2461ff20e7b3f0c8642b418ba01576e788e726" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) 8a2461ff20e7b3f0c8642b418ba01576e788e726: Create VNC on Ubuntu 20.04.md">
+                                    <i class="fas fa-hashtag fa-fw"></i>8a2461f</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/vnc-on-ubuntu-20.04/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04" data-hashtags="linux,vnc"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-hashtag="linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" data-title="How to Install and Configure VNC on Ubuntu 20.04"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/vnc/">Vnc</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/" class="prev" rel="prev" title="docker拉取镜像修改打包教程"><i class="fas fa-angle-left fa-fw"></i>docker拉取镜像修改打包教程</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5f0suf0rff6&amp;m=7&amp;c=54ff00&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=80" async="async"></script>
+
+            <div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"url","label":"","lightTheme":"github-light","repo":"JoshuaChou2018/me"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

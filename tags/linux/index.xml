@@ -3,7 +3,15 @@
         <title>Linux - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>Linux - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>How to Install and Configure VNC on Ubuntu 20.04</title>
+    <link>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</link>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</guid>
+    <description><![CDATA[Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
+In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel.]]></description>
+</item><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
     <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
@@ -105,14 +113,5 @@ Then it works]]></description>
 libc10_cuda.so: cannot open shared object file: No such file or directory
 Solution
 1 2 conda install pytorch==1.11.0 cudatoolkit=11.3 -c pytorch conda install pyg -c pyg ]]></description>
-</item><item>
-    <title>linux删除百万级别文件</title>
-    <link>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</link>
-    <pubDate>Fri, 05 Aug 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/linux%E5%88%A0%E9%99%A4%E7%99%BE%E4%B8%87%E7%BA%A7%E5%88%AB%E6%96%87%E4%BB%B6/</guid>
-    <description><![CDATA[在运行任务时，往linux的同一个文件夹中写入超过500万个文件，导致在硬盘还有空间的情况下，在该文件夹下无法继续写入文件，也无法使用ls、rm等命令。记录处理过程。
-Background: physical server, about two years old, 7200-RPM SATA drives connected to a 3Ware RAID card, ext3 FS mounted noatime and data=ordered, not under crazy load, kernel 2.6.18-92.1.22.el5, uptime 545 days. Directory doesn&rsquo;t contain any subdirectories, just millions of small (~100 byte) files, with some larger (a few KB) ones.
-We have a server that has gone a bit cuckoo over the course of the last few months, but we only noticed it the other day when it started being unable to write to a directory due to it containing too many files.]]></description>
 </item></channel>
 </rss>
