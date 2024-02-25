@@ -1,15 +1,13 @@
 # How to Install and Configure VNC on Ubuntu 20.04
 
 
-### [Introduction](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#introduction)
+### Introduction
 
 *Virtual Network Computing*, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
 
 In this guide, you’ll set up a VNC server with [TightVNC](https://www.tightvnc.com/) on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.
 
-Deploy your applications from GitHub using [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform). Let DigitalOcean focus on scaling your app.
-
-## [Prerequisites](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#prerequisites)
+## Prerequisites
 
 To complete this tutorial, you’ll need:
 
@@ -19,7 +17,7 @@ To complete this tutorial, you’ll need:
   - On macOS, you can use the built-in [Screen Sharing](https://support.apple.com/guide/mac-help/screen-sharing-overview-mh14066/mac) program, or can use a cross-platform app like [RealVNC](https://www.realvnc.com/).
   - On Linux, you can choose from many options, including `vinagre`, `krdc`, [RealVNC](https://www.realvnc.com/), or [TightVNC](https://www.tightvnc.com/).
 
-## [Step 1 — Installing the Desktop Environment and VNC Server](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-1-installing-the-desktop-environment-and-vnc-server)
+## Step 1 — Installing the Desktop Environment and VNC Server
 
 By default, an Ubuntu 20.04 server does not come with a graphical desktop environment or a VNC server installed, so you’ll begin by installing those.
 
@@ -158,7 +156,7 @@ Log file is /home/sammy/.vnc/your_hostname:1.log
 
 With the configuration in place, you’re ready to connect to the VNC server from your local machine.
 
-## [Step 3 — Connecting to the VNC Desktop Securely](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-3-connecting-to-the-vnc-desktop-securely)
+## Step 3 — Connecting to the VNC Desktop Securely
 
 VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, you’ll establish an SSH tunnel and then tell your VNC client to connect using that tunnel rather than making a direct connection.
 
@@ -203,7 +201,7 @@ Press `CTRL+C` in your local terminal to stop the SSH tunnel and return to your 
 
 Now you can configure your VNC server to run as a systemd service.
 
-## [Step 4 — Running VNC as a System Service](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-4-running-vnc-as-a-system-service)
+## Step 4 — Running VNC as a System Service
 
 By setting up the VNC server to run as a systemd service you can start, stop, and restart it as needed, like any other service. You can also use systemd’s management commands to ensure that VNC starts when your server boots up.
 
@@ -297,7 +295,7 @@ ssh -L 59000:localhost:5901 -C -N -l sammy your_server_ip
 
 Then make a new connection using your VNC client software to `localhost:59000` to connect to your server.
 
-## [Conclusion](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#conclusion)
+## Conclusion
 
 You now have a secured VNC server up and running on your Ubuntu 20.04 server. Now you’ll be able to manage your files, software, and settings with a user-friendly graphical interface, and you’ll be able to run graphical software like web browsers remotely.
 

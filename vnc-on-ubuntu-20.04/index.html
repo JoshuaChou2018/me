@@ -11,7 +11,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.joshuachou.ink/vnc-on-ubuntu-20.04/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-02-25T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-02-25T11:46:27+03:00" />
+<meta property="article:modified_time" content="2024-02-25T11:47:30+03:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png" /><meta name="twitter:title" content="How to Install and Configure VNC on Ubuntu 20.04"/>
@@ -29,8 +29,8 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/vnc-on-ubuntu-20.04\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, vnc","wordcount":  2361 ,
-        "url": "https:\/\/www.joshuachou.ink\/vnc-on-ubuntu-20.04\/","datePublished": "2024-02-25T00:00:00+00:00","dateModified": "2024-02-25T11:46:27+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, vnc","wordcount":  2345 ,
+        "url": "https:\/\/www.joshuachou.ink\/vnc-on-ubuntu-20.04\/","datePublished": "2024-02-25T00:00:00+00:00","dateModified": "2024-02-25T11:47:30+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -111,7 +111,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">How to Install and Configure VNC on Ubuntu 20.04</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-02-25">2024-02-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2361 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-02-25">2024-02-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2345 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;12 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -122,14 +122,14 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
   <ul>
     <li>
       <ul>
-        <li><a href="#introductionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04introduction"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#introduction">Introduction</a></a></li>
+        <li><a href="#introduction">Introduction</a></li>
       </ul>
     </li>
-    <li><a href="#prerequisiteshttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04prerequisites"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#prerequisites">Prerequisites</a></a></li>
-    <li><a href="#step-1--installing-the-desktop-environment-and-vnc-serverhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-1-installing-the-desktop-environment-and-vnc-server"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-1-installing-the-desktop-environment-and-vnc-server">Step 1 — Installing the Desktop Environment and VNC Server</a></a></li>
-    <li><a href="#step-3--connecting-to-the-vnc-desktop-securelyhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-3-connecting-to-the-vnc-desktop-securely"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-3-connecting-to-the-vnc-desktop-securely">Step 3 — Connecting to the VNC Desktop Securely</a></a></li>
-    <li><a href="#step-4--running-vnc-as-a-system-servicehttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-4-running-vnc-as-a-system-service"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-4-running-vnc-as-a-system-service">Step 4 — Running VNC as a System Service</a></a></li>
-    <li><a href="#conclusionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04conclusion"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#conclusion">Conclusion</a></a>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-1--installing-the-desktop-environment-and-vnc-server">Step 1 — Installing the Desktop Environment and VNC Server</a></li>
+    <li><a href="#step-3--connecting-to-the-vnc-desktop-securely">Step 3 — Connecting to the VNC Desktop Securely</a></li>
+    <li><a href="#step-4--running-vnc-as-a-system-service">Step 4 — Running VNC as a System Service</a></li>
+    <li><a href="#conclusion">Conclusion</a>
       <ul>
         <li><a href="#解决灰屏问题">解决灰屏问题</a></li>
       </ul>
@@ -137,11 +137,10 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
     <li><a href="#ref">Ref</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h3 id="introductionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04introduction"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#introduction" target="_blank" rel="noopener noreffer">Introduction</a></h3>
+            </div><div class="content" id="content"><h3 id="introduction">Introduction</h3>
 <p><em>Virtual Network Computing</em>, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.</p>
 <p>In this guide, you’ll set up a VNC server with <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a> on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.</p>
-<p>Deploy your applications from GitHub using <a href="https://www.digitalocean.com/products/app-platform" target="_blank" rel="noopener noreffer">DigitalOcean App Platform</a>. Let DigitalOcean focus on scaling your app.</p>
-<h2 id="prerequisiteshttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04prerequisites"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#prerequisites" target="_blank" rel="noopener noreffer">Prerequisites</a></h2>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>To complete this tutorial, you’ll need:</p>
 <ul>
 <li>One Ubuntu 20.04 server with a non-root administrative user and a firewall configured with UFW. To set this up, follow our <a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04" target="_blank" rel="noopener noreffer">initial server setup guide for Ubuntu 20.04</a>.</li>
@@ -153,7 +152,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
 </ul>
 </li>
 </ul>
-<h2 id="step-1--installing-the-desktop-environment-and-vnc-serverhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-1-installing-the-desktop-environment-and-vnc-server"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-1-installing-the-desktop-environment-and-vnc-server" target="_blank" rel="noopener noreffer">Step 1 — Installing the Desktop Environment and VNC Server</a></h2>
+<h2 id="step-1--installing-the-desktop-environment-and-vnc-server">Step 1 — Installing the Desktop Environment and VNC Server</h2>
 <p>By default, an Ubuntu 20.04 server does not come with a graphical desktop environment or a VNC server installed, so you’ll begin by installing those.</p>
 <p>You have many options when it comes to which VNC server and desktop environment you choose. In this tutorial, you will install packages for the latest <a href="https://xfce.org/" target="_blank" rel="noopener noreffer">Xfce</a> desktop environment and the TightVNC package available from the official Ubuntu repository. Both Xfce and TightVNC are known for being lightweight and fast, which will help ensure that the VNC connection will be smooth and stable even on slower internet connections.</p>
 <p>After connecting to your server with SSH, update your list of packages:</p>
@@ -335,7 +334,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>With the configuration in place, you’re ready to connect to the VNC server from your local machine.</p>
-<h2 id="step-3--connecting-to-the-vnc-desktop-securelyhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-3-connecting-to-the-vnc-desktop-securely"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-3-connecting-to-the-vnc-desktop-securely" target="_blank" rel="noopener noreffer">Step 3 — Connecting to the VNC Desktop Securely</a></h2>
+<h2 id="step-3--connecting-to-the-vnc-desktop-securely">Step 3 — Connecting to the VNC Desktop Securely</h2>
 <p>VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, you’ll establish an SSH tunnel and then tell your VNC client to connect using that tunnel rather than making a direct connection.</p>
 <p>Create an SSH connection on your local computer that securely forwards to the <code>localhost</code>connection for VNC. You can do this via the terminal on Linux or macOS with the following <code>ssh</code>command:</p>
 <div class="highlight"><div class="chroma">
@@ -395,7 +394,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
         title="File Manager via VNC connection to Ubuntu 20.04" /></p>
 <p>Press <code>CTRL+C</code> in your local terminal to stop the SSH tunnel and return to your prompt. This will disconnect your VNC session as well.</p>
 <p>Now you can configure your VNC server to run as a systemd service.</p>
-<h2 id="step-4--running-vnc-as-a-system-servicehttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04step-4-running-vnc-as-a-system-service"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#step-4-running-vnc-as-a-system-service" target="_blank" rel="noopener noreffer">Step 4 — Running VNC as a System Service</a></h2>
+<h2 id="step-4--running-vnc-as-a-system-service">Step 4 — Running VNC as a System Service</h2>
 <p>By setting up the VNC server to run as a systemd service you can start, stop, and restart it as needed, like any other service. You can also use systemd’s management commands to ensure that VNC starts when your server boots up.</p>
 <p>First, create a new unit file called <code>/etc/systemd/system/vncserver@.service</code>:</p>
 <div class="highlight"><div class="chroma">
@@ -529,7 +528,7 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Then make a new connection using your VNC client software to <code>localhost:59000</code> to connect to your server.</p>
-<h2 id="conclusionhttpswwwdigitaloceancomcommunitytutorialshow-to-install-and-configure-vnc-on-ubuntu-20-04conclusion"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04#conclusion" target="_blank" rel="noopener noreffer">Conclusion</a></h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>You now have a secured VNC server up and running on your Ubuntu 20.04 server. Now you’ll be able to manage your files, software, and settings with a user-friendly graphical interface, and you’ll be able to run graphical software like web browsers remotely.</p>
 <h3 id="解决灰屏问题">解决灰屏问题</h3>
 <p>vnc连接以后桌面打开是灰的，没有图标和terminal</p>
@@ -583,8 +582,8 @@ In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 ser
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-02-25&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/b701c75000166b53f57d48cce7ba0c77306664b7" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) b701c75000166b53f57d48cce7ba0c77306664b7: Update VNC on Ubuntu 20.04.md">
-                                    <i class="fas fa-hashtag fa-fw"></i>b701c75</a></span>
+                <span>Updated on 2024-02-25&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/ad79e69ebc6359f1789db065502d58d9fde635e6" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) ad79e69ebc6359f1789db065502d58d9fde635e6: Update VNC on Ubuntu 20.04.md">
+                                    <i class="fas fa-hashtag fa-fw"></i>ad79e69</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
