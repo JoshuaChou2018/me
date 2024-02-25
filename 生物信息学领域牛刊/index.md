@@ -11,11 +11,11 @@
 
 **练气期**：这是修仙的基础阶段，研究生修行者开始吸收天地灵气，将其转化为体内的元力。
 
-> [BMC genomics](https://www.zhihu.com/search?q=BMC genomics&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A3310893434})，BMC bioinformatics，BMC biology，BMC [medical genomics](https://www.zhihu.com/search?q=medical genomics&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A3310893434})
+> BMC genomics，BMC bioinformatics，BMC biology，BMC medical genomics
 
 **筑基期**：这是研究生修仙之路的起点，修行者开始修炼内功，累积内力，打下坚实的基础。
 
-> Bioinformatics，PLoS [computational biology](https://www.zhihu.com/search?q=computational biology&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A3310893434})，PLoS genetics，Briefings in bioinformatics，BMC medicine
+> Bioinformatics，PLoS computational biology，PLoS genetics，Briefings in bioinformatics，BMC medicine
 
 **金丹期**：修行者的内力能够凝聚成金丹，这个[金丹](https://www.zhihu.com/search?q=金丹&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A3310893434})象征着高级别的修为和力量。
 
