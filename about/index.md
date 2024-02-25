@@ -385,6 +385,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
   - Shuffling the deck for privacy, [EurekAlert](https://www.eurekalert.org/news-releases/1034533)
   - Novel Privacy-Preserving Machine-Learning Method Developed for Genomics Data, [Biocompare](https://www.biocompare.com/Life-Science-News/610989-Novel-Privacy-Preserving-Machine-Learning-Method-Developed-for-Genomics-Data/)
   - نهج ثوري يحافظ على خصوصية البيانات الطبية, [nabd.ws](https://nabd.ws/h/132899916-7bdd33/?hf=0)
+  - Revolutionizing Healthcare: Secure Multi-Party Computation and Privacy-Preserving Machine Learning, [BNN Breaking](https://bnnbreaking.com/tech/revolutionizing-healthcare-secure-multi-party-computation-and-privacy-preserving-machine-learning)
+  - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Microsoft Start](https://www.msn.com/en-us/news/technology/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/ar-BB1ikJxE)
+  - Shuffling The Deck For Privacy, [Eurasia Review](https://www.eurasiareview.com/18022024-shuffling-the-deck-for-privacy/)
 - **Audit to forget** was covered by:
   - Un logiciel pour garantir le droit à l’oubli des patients dans l’IA en milieu de santé, [Enerzine](https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante)
   - Safeguarding the right to be forgotten, [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/)
