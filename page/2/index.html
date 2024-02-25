@@ -100,6 +100,19 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/">全新Ubuntu18.04配置DL环境，保姆级教程</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-10">2023-09-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">获取IP地址
+1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
+1 sudo apt install openssh-server 安装gcc
+1 sudo apt install gcc g++ make 安装NVIDIA驱动
+在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
+1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
+1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
+1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
+1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login</div><div class="post-footer">
+        <a href="/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/system/">System</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/news-skingpt-4/">[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-12">2023-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/news/"><i class="far fa-folder fa-fw"></i>News</a></span></div><div class="content">We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
 Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge.</div><div class="post-footer">
@@ -116,12 +129,6 @@ Skin and subcutaneous diseases rank high among the leading contributors to the g
 重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</div><div class="post-footer">
         <a href="/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/">Mac更新后无法连接Apple所有服务</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-05-04">2023-05-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">问题描述 Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。
-解决方案 打开/Library/Preferences/SystemConfiguration 这个文件夹 删除除了com.apple.Boot.plist 之外的其他文件，然后重新启动 </div><div class="post-footer">
-        <a href="/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/macos/">MacOS</a>,&nbsp;<a href="/tags/internet/">Internet</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

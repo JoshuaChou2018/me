@@ -1,0 +1,34 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Bioinformatics - Tag - Juexiao Zhou 周觉晓</title>
+        <link>https://www.joshuachou.ink/tags/bioinformatics/</link>
+        <description>Bioinformatics - Tag - Juexiao Zhou 周觉晓</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/bioinformatics/" rel="self" type="application/rss+xml" /><item>
+    <title>生物信息领域牛刊修仙版</title>
+    <link>https://www.joshuachou.ink/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%89%9B%E5%88%8A/</link>
+    <pubDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%89%9B%E5%88%8A/</guid>
+    <description><![CDATA[在知乎上看到生物信息学领域的牛刊投稿顺序，发现一个很有趣的回答，于是转载一下作为参考：
+凡人期：这是修仙之路的起点，指的是还未开始修炼或刚刚接触修炼之道的普通研究生。
+arXiv，bioRxiv
+练气期：这是修仙的基础阶段，研究生修行者开始吸收天地灵气，将其转化为体内的元力。
+[BMC genomics](https://www.zhihu.com/search?q=BMC genomics&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&ldquo;sourceType&rdquo;%3A&quot;answer&quot;%2C&quot;sourceId&quot;%3A3310893434})，BMC bioinformatics，BMC biology，BMC [medical genomics](https://www.zhihu.com/search?q=medical genomics&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&ldquo;sourceType&rdquo;%3A&quot;answer&quot;%2C&quot;sourceId&quot;%3A3310893434})
+筑基期：这是研究生修仙之路的起点，修行者开始修炼内功，累积内力，打下坚实的基础。
+Bioinformatics，PLoS [computational biology](https://www.zhihu.com/search?q=computational biology&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&ldquo;sourceType&rdquo;%3A&quot;answer&quot;%2C&quot;sourceId&quot;%3A3310893434})，PLoS genetics，Briefings in bioinformatics，BMC medicine
+金丹期：修行者的内力能够凝聚成金丹，这个金丹象征着高级别的修为和力量。
+Nucleic Acids Research，eBiomedicine，Advanced Science，PLoS Biology
+元婴期：修行者的金丹形成元婴，元婴是修行者灵魂和修为的化身，跨入更高的境界。
+Genome Biology，Genome Medicine，Genome Research，Molecular Systems Biology，Cell systems
+化神期：修行者的元婴进一步成长，开始向神灵的境界转变。
+Nature Communications，PNAS，Science Advances，Cell Reports
+合体期：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。
+Nature Machine Intelligence，Nature Computational Sciences
+大乘期：修行者几乎达到了仙道的巅峰，具备了创造或改变世界的能力。
+Nature Genetics，Nature Biotechnology，Nature Methods，Nature Medicine，Cell Genomics
+飞升期：修行者完成了修仙之路，失去凡体，飞升仙界，无相无形，成为自然（Nature）。
+Nature，Science，Cell
+Acknowledgement:
+作者：浪矢Ryan 链接：https://www.zhihu.com/question/21660698/answer/3310893434 来源：知乎]]></description>
+</item></channel>
+</rss>
