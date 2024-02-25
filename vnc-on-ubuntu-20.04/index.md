@@ -301,6 +301,35 @@ Then make a new connection using your VNC client software to `localhost:59000` t
 
 You now have a secured VNC server up and running on your Ubuntu 20.04 server. Now you’ll be able to manage your files, software, and settings with a user-friendly graphical interface, and you’ll be able to run graphical software like web browsers remotely.
 
+### 解决灰屏问题
+
+vnc连接以后桌面打开是灰的，没有图标和terminal
+
+```sh
+sudo apt-get install gnome-panel
+```
+
+打开并编辑`xstartup`文件，将如下代码复制到`xstartup`文件中，替换原代码：
+
+```sh
+#!/bin/sh                                                                       
+
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+export XKL_XMODMAP_DISABLE=1
+export XDG_CURRENT_DESKTOP="GNOME-Flashback:GNOME"
+export XDG_MENU_PREFIX="gnome-flashback-"
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+#gnome-terminal &    
+#nautilus &   
+gnome-session --session=gnome-flashback-metacity --disable-acceleration-check &
+```
+
+关闭源端口，重新开启vnc端口，即可正常访问
+
 ## Ref
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-20-04
