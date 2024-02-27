@@ -199,6 +199,15 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
+    <font color=#0096FF>Patient privacy in AI-driven omics methods.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -251,6 +260,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 

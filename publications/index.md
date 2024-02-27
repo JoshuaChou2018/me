@@ -406,6 +406,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Patient privacy in AI-driven omics methods.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.
     </font> 
     <br>	
@@ -514,6 +523,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
