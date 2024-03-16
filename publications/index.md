@@ -8,6 +8,21 @@
   <font size="+1">2024</font>
   <br>
   <li>
+    <font color=#0096FF>Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.
+    </font> 
+    <br>	
+    GBD 2021 Demographics Collaborators
+    <br>
+    <i><b>The Lancet</b></i>
+    <br>
+    <b>DOI: https://doi.org/10.1016/S0140-6736(24)00476-8</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00476-8/fulltext">online</a>,
+    <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624004768.pdf">pdf</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data.</font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.
@@ -305,6 +320,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
