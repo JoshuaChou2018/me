@@ -444,6 +444,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 |                   IJCAI-ECAI 2022                   |        1         |
 |                     ICONIP2020                      |        1         |
 |                      ICMLA2021                      |        1         |
+| IEEE Transactions on Knowledge and Data Engineering |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
 |               Medical Image Analysis                |        1         |
 |                     MICCAI2020                      |        1         |
