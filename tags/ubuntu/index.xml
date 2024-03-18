@@ -3,7 +3,21 @@
         <title>Ubuntu - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/ubuntu/</link>
         <description>Ubuntu - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 18 Mar 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+    <title>ubuntu 18.04 升级至 glibc_2.28</title>
+    <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
+    <pubDate>Mon, 18 Mar 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</guid>
+    <description><![CDATA[近期在ubuntu 18.04上开发PyQt6前段时发现问题：
+ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
+1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
+1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc
+下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
+准备编译环境
+1 $ sudo apt install build-essential gawk bison 然后解压和编译
+1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr]]></description>
+</item><item>
     <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
     <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
     <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
