@@ -53,17 +53,11 @@ $ sudo apt install build-essential gawk bison
 
 可以通过文件夹点击指定的分区(这里是 /dev/nvme0n1p4)完成挂载
 
-![img](https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png)
-
 最后进入原 ubuntu 18.04 编译 glibc 的位置, 通过 `sudo make install DESTDIR=xxx` 安装, xxx 为原 ubuntu 18.04 的根目录
 
 不指定 DESTDIR 时, 会安装至现有的 ubuntu 18.04 live 中, 导致当前的 ubuntu 18.04 崩溃
 
-![img](https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png)
-
 最后重启, 查看 glibc 的版本
-
-![img](https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png)
 
 这种方法仅解决了 ubuntu 18.04 系统层面上 glibc 2.28 的兼容问题, 但是 ubuntu 18.04 安装源中的软件不一定兼容 glilbc 2.28
 

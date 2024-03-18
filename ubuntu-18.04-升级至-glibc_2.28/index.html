@@ -198,33 +198,9 @@ ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0
 </div>
 </div><p>确定原 ubuntu 18.04 的根目录, 这个位置下包含 ‘dev’ ‘home’ ‘usr’ 等文件夹</p>
 <p>可以通过文件夹点击指定的分区(这里是 /dev/nvme0n1p4)完成挂载</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png"
-        data-srcset="https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png, https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png 1.5x, https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png 2x"
-        data-sizes="auto"
-        alt="https://img-blog.csdnimg.cn/img_convert/9cc241b83eadf2310c8f77503f9c17c3.png"
-        title="img" /></p>
 <p>最后进入原 ubuntu 18.04 编译 glibc 的位置, 通过 <code>sudo make install DESTDIR=xxx</code> 安装, xxx 为原 ubuntu 18.04 的根目录</p>
 <p>不指定 DESTDIR 时, 会安装至现有的 ubuntu 18.04 live 中, 导致当前的 ubuntu 18.04 崩溃</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png"
-        data-srcset="https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png, https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png 1.5x, https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png 2x"
-        data-sizes="auto"
-        alt="https://img-blog.csdnimg.cn/img_convert/15bd30f22aa971b6258a0c467c37f2c6.png"
-        title="img" /></p>
 <p>最后重启, 查看 glibc 的版本</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png"
-        data-srcset="https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png, https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png 1.5x, https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png 2x"
-        data-sizes="auto"
-        alt="https://img-blog.csdnimg.cn/img_convert/6509b18411cf6513fa8f37d02fa3feda.png"
-        title="img" /></p>
 <p>这种方法仅解决了 ubuntu 18.04 系统层面上 glibc 2.28 的兼容问题, 但是 ubuntu 18.04 安装源中的软件不一定兼容 glilbc 2.28</p>
 <p>在升级软件或新安装软件时可能会遇到 “core segmentfault” 的报错, 所以这种方式强烈不推荐</p>
 <h2 id="ref">Ref</h2>
