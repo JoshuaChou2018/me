@@ -8,6 +8,17 @@
   <font size="+1">2024</font>
   <br>
   <li>
+    <font color=#0096FF>Patient privacy in AI-driven omics methods.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Chao Huang, Xin Gao
+    <br>
+    <i><b>Accepted</b></i>
+    <br>
+    <i><b>Trends in Genetics</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.
     </font> 
     <br>	
@@ -327,6 +338,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -424,15 +436,6 @@
 ## Preprint
 
 <ol reversed>
-  <li>
-    <font color=#0096FF>Patient privacy in AI-driven omics methods.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou</b></u>, Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
   <li>
     <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.
     </font> 
@@ -542,6 +545,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

@@ -28,6 +28,7 @@ Ph.D. Candidate working with Prof. [Xin Gao](https://scholar.google.com/citation
 
 ##### Recent News:
 
+- Mar 2024, one paper is accept by **Trends in Genetics (IF=11.4)**
 - Mar 2024, Demographics paper is accept by **The Lancet (IF=168.9)**
 - Feb 2024, invited to the TV show "[Investing Now for Future in Hong Kong and the Middle East：New Cradle of Innovation](https://www.youtube.com/watch?v=RvZwiyyHfDw)" by [RTHK 香港電台](https://www.youtube.com/@RTHK) 
 - Dec 2023, PPML-Omics is accepted by **Science Advances (IF=15.4)**.
@@ -131,6 +132,17 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
+    <font color=#0096FF>Patient privacy in AI-driven omics methods.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou</b></u>, Chao Huang, Xin Gao
+    <br>
+    <i><b>Accepted</b></i>
+    <br>
+    <i><b>Trends in Genetics</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.
@@ -200,15 +212,6 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
-    <font color=#0096FF>Patient privacy in AI-driven omics methods.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou</b></u>, Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.
     </font> 
     <br>	
@@ -261,6 +264,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 
