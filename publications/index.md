@@ -48,6 +48,8 @@
     <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624004768.pdf">pdf</a>
   </li>
   <br>
+  <font size="+1">2023</font>
+  <br>
   <li>
     <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data.</font> 
     <br>	
@@ -87,8 +89,6 @@
     <a href="https://www.sciencedirect.com/science/article/pii/S0010482523013264">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482523013264-main.pdf">pdf</a>
   </li>
-  <br>
-  <font size="+1">2023</font>
   <br>
   <li>
     <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome.
@@ -346,6 +346,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
