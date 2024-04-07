@@ -28,6 +28,7 @@ Ph.D. Candidate working with Prof. [Xin Gao](https://scholar.google.com/citation
 
 ##### Recent News:
 
+- Apr 2024,  Causes of Death paper is accept by **The Lancet (IF=168.9)**
 - Mar 2024, Global fertility paper is accept by **The Lancet (IF=168.9)**
 - Mar 2024, one paper is accept by **Trends in Genetics (IF=11.4)**
 - Mar 2024, Demographics paper is accept by **The Lancet (IF=168.9)**
