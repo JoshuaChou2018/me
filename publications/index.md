@@ -8,19 +8,29 @@
   <font size="+1">2024</font>
   <br>
   <li>
-    <font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
-    </font> 
-    <br>	
-    GBD 2021 Causes of Death Collaborators
-    <br>
-    <i><b>The Lancet</b></i>
-    <br>
-    <b>DOI: https://doi.org/10.1016/S0140-6736(24)00367-2</b>
-    <br>
-    <b>Access: </b>
-    <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00367-2/fulltext">online</a>,
-    <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624003672.pdf">pdf</a>
-  </li>
+    <table border="0">
+    <colgroup>
+    	<col style="width: 30%;">
+    	<col style="width: 70%;">
+  	</colgroup>
+    <tr>
+      <td><img src="https://www.thelancet.com/cms/attachment/0978ded8-589a-403f-b084-9b066ba493d3/gr1.jpg" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+      </font> 
+      <br>	
+      GBD 2021 Causes of Death Collaborators
+      <br>
+      <i><b>The Lancet</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/S0140-6736(24)00367-2</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00367-2/fulltext">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624003672.pdf">pdf</a>
+      </td>
+    </tr>
+    </table>
+  </li> 
   <br>
   <li>
     <font color=#0096FF>Global fertility in 204 countries and territories, 1950–2021, with forecasts to 2100: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.
@@ -361,6 +371,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
