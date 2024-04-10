@@ -505,14 +505,15 @@ He was born on  Jan 20, 1999 in Hunan, China.
 |                   Genome Research                   |        2         |
 |                       Heliyon                       |        1         |
 |                   IJCAI-ECAI 2022                   |        1         |
-|                     ICONIP2020                      |        1         |
-|                      ICMLA2021                      |        1         |
+|                     ICONIP 2020                     |        1         |
+|                     ICMLA 2021                      |        1         |
 | IEEE Transactions on Knowledge and Data Engineering |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
 |               Medical Image Analysis                |        1         |
-|                     MICCAI2020                      |        1         |
+|                     MICCAI 2020                     |        1         |
+|                     MICCAI 2024                     |        4         |
 |                 Multimedia Systems                  |        1         |
-|                     SIGKDD2022                      |        2         |
+|                     SIGKDD 2022                     |        2         |
 
 <br>
 
