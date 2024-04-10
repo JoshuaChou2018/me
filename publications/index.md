@@ -8,14 +8,14 @@
   <font size="+1">2024</font>
   <br>
   <li>
-    <table border="0">
+    <table>
     <colgroup>
     	<col style="width: 30%;">
     	<col style="width: 70%;">
   	</colgroup>
-    <tr>
-      <td><img src="https://www.thelancet.com/cms/attachment/0978ded8-589a-403f-b084-9b066ba493d3/gr1.jpg" alt="" style="float: left; margin-right: 10px;"></td>
-    	<td><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+    <tr style="border: none;">
+      <td style="border: none;"><img src="https://www.thelancet.com/cms/attachment/0978ded8-589a-403f-b084-9b066ba493d3/gr1.jpg" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td style="border: none;"><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
       GBD 2021 Causes of Death Collaborators
