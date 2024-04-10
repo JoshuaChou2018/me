@@ -364,14 +364,6 @@
 
 
 
-
-
-
-
-
-
-
-
 ##  Conference
 
 <ol reversed>
@@ -469,6 +461,15 @@
 ## Preprint
 
 <ol reversed>
+  <li>
+    <font color=#0096FF>Deep learning-driven pulmonary arteries and veins segmentation reveals demography-associated pulmonary vasculature anatomy.
+    </font> 
+    <br>	
+    Yuetan Chu, Gongning Luo, Longxi Zhou, Shaodong Cao, Guolin Ma, Xianglin Meng, <u><b>Juexiao Zhou</b></u>, Changchun Yang, Elva Gao, Dexuan Xie, Ricardo Henao, Xigang Xiao, Lianming Wu, Zhaowen Qiu, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
   <li>
     <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.
     </font> 
@@ -578,6 +579,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
