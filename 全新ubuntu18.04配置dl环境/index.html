@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>全新Ubuntu18.04配置DL环境，保姆级教程 - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="全新Ubuntu18.04配置DL环境，保姆级教程" />
-<meta property="og:description" content="获取IP地址
+        <title>全新Ubuntu18.04配置DL环境，保姆级教程 - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/">
+  <meta property="og:site_name" content="Juexiao Zhou 周觉晓">
+  <meta property="og:title" content="全新Ubuntu18.04配置DL环境，保姆级教程">
+  <meta property="og:description" content="获取IP地址
 1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
 1 sudo apt install openssh-server 安装gcc
 1 sudo apt install gcc g&#43;&#43; make 安装NVIDIA驱动
@@ -14,13 +16,17 @@
 1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
 1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
 1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a&#43;x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-09-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-09-10T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png" /><meta name="twitter:title" content="全新Ubuntu18.04配置DL环境，保姆级教程"/>
+1 2 sudo chmod a&#43;x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-09-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-09-10T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="System">
+    <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="全新Ubuntu18.04配置DL环境，保姆级教程">
 <meta name="twitter:description" content="获取IP地址
 1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
 1 sudo apt install openssh-server 安装gcc
@@ -29,7 +35,7 @@
 1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
 1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
 1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a&#43;x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login"/>
+1 2 sudo chmod a&#43;x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

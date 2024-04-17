@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>搭建Time Machine 服务器 （转载） - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="搭建Time Machine 服务器 （转载）" />
-<meta property="og:description" content="本文转载自：https://zhuanlan.zhihu.com/p/31088141
+        <title>搭建Time Machine 服务器 （转载） - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">
+  <meta property="og:site_name" content="Juexiao Zhou 周觉晓">
+  <meta property="og:title" content="搭建Time Machine 服务器 （转载）">
+  <meta property="og:description" content="本文转载自：https://zhuanlan.zhihu.com/p/31088141
 本文的内容分为：
 Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 软件的部署 Mac 备份到Time Machine 服务器 从Time Machine 服务器恢复Mac Time Machine 是什么？ Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
 本地快照（只要空间允许） 过去24小时的每小时备份 过去一个月的每日备份 过去所有月份的每周备份 Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。
@@ -17,13 +19,17 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
 使用一块外置的USB移动硬盘，要求文件系统是HFS&#43;。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
-方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-01-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-01-29T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png" /><meta name="twitter:title" content="搭建Time Machine 服务器 （转载）"/>
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-01-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-01-29T00:00:00+00:00">
+    <meta property="article:tag" content="System">
+    <meta property="article:tag" content="Linux">
+    <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="搭建Time Machine 服务器 （转载）">
 <meta name="twitter:description" content="本文转载自：https://zhuanlan.zhihu.com/p/31088141
 本文的内容分为：
 Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 软件的部署 Mac 备份到Time Machine 服务器 从Time Machine 服务器恢复Mac Time Machine 是什么？ Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：
@@ -35,7 +41,7 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
 使用一块外置的USB移动硬盘，要求文件系统是HFS&#43;。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
-方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。"/>
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

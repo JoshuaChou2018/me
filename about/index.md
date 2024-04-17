@@ -166,9 +166,13 @@ He was born on  Jan 20, 1999 in Hunan, China.
       <br>	
       <u><b>Juexiao Zhou</b></u>, Chao Huang, Xin Gao
       <br>
-      <i><b>Accepted</b></i>
-      <br>
       <i><b>Trends in Genetics</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/j.tig.2024.03.004</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.sciencedirect.com/science/article/pii/S0168952524000660">online</a>, 
+      <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0168952524000660-main.pdf">pdf</a>
       </td>
      </tr>
      </table>
@@ -326,6 +330,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 

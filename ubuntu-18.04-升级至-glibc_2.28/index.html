@@ -5,21 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>ubuntu 18.04 升级至 glibc_2.28 - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:title" content="ubuntu 18.04 升级至 glibc_2.28" />
-<meta property="og:description" content="近期在ubuntu 18.04上开发PyQt6前段时发现问题：
+        <title>ubuntu 18.04 升级至 glibc_2.28 - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/">
+  <meta property="og:site_name" content="Juexiao Zhou 周觉晓">
+  <meta property="og:title" content="ubuntu 18.04 升级至 glibc_2.28">
+  <meta property="og:description" content="近期在ubuntu 18.04上开发PyQt6前段时发现问题：
 ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
 1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
-1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc
+1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&amp;#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&amp;quot;比较省心&amp;quot;的方法, 保留系统仅升级 glibc
 下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
 准备编译环境
 1 $ sudo apt install build-essential gawk bison 然后解压和编译
-1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/" /><meta property="og:image" content="https://www.joshuachou.ink/logo.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-03-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-03-18T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png" /><meta name="twitter:title" content="ubuntu 18.04 升级至 glibc_2.28"/>
+1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+  <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-18T00:00:00+00:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Ubuntu">
+    <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="ubuntu 18.04 升级至 glibc_2.28">
 <meta name="twitter:description" content="近期在ubuntu 18.04上开发PyQt6前段时发现问题：
 ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
 1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
@@ -27,7 +33,7 @@ ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0
 下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
 准备编译环境
 1 $ sudo apt install build-essential gawk bison 然后解压和编译
-1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr"/>
+1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
