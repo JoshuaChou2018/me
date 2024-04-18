@@ -58,7 +58,7 @@
     <b>DOI: https://doi.org/10.1016/j.tig.2024.03.004</b>
     <br>
     <b>Access: </b>
-    <a href="https://www.sciencedirect.com/science/article/pii/S0168952524000660">online</a>, 
+    <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(24)00066-0">online</a>, 
     <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0168952524000660-main.pdf">pdf</a>
   </li>
   <br>
