@@ -14,6 +14,31 @@
     	<col style="width: 70%;">
   	</colgroup>
     <tr style="border: none;">
+      <td style="border: none;"><img src="https://www.thelancet.com/cms/attachment/d2771b29-725c-4690-a3f8-1dda87ea627b/gr5.jpg" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td style="border: none;"><font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+      </font> 
+      <br>	
+      GBD 2021 Diseases and Injuries Collaborators
+      <br>
+      <i><b>The Lancet</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/S0140-6736(24)00757-8</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00757-8/fulltext">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624007578.pdf">pdf</a>
+      </td>
+    </tr>
+    </table>
+  </li> 
+  <br>
+  <li>
+    <table>
+    <colgroup>
+    	<col style="width: 30%;">
+    	<col style="width: 70%;">
+  	</colgroup>
+    <tr style="border: none;">
       <td style="border: none;"><img src="https://www.thelancet.com/cms/attachment/0978ded8-589a-403f-b084-9b066ba493d3/gr1.jpg" alt="" style="float: left; margin-right: 10px;"></td>
     	<td style="border: none;"><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
@@ -375,6 +400,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
