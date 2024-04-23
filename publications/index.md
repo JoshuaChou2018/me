@@ -18,7 +18,7 @@
     	<td style="border: none;"><font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
-      GBD 2021 Diseases and Injuries Collaborators
+      GBD 2021 Diseases and Injuries Collaborators* (Authors listed alphabetically)
       <br>
       <i><b>The Lancet</b></i>
       <br>
@@ -43,7 +43,7 @@
     	<td style="border: none;"><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
-      GBD 2021 Causes of Death Collaborators
+      GBD 2021 Causes of Death Collaborators* (Authors listed alphabetically)
       <br>
       <i><b>The Lancet</b></i>
       <br>
@@ -61,7 +61,7 @@
     <font color=#0096FF>Global fertility in 204 countries and territories, 1950–2021, with forecasts to 2100: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.
     </font> 
     <br>	
-    GBD 2021 Fertility and Forecasting Collaborators
+    GBD 2021 Fertility and Forecasting Collaborators* (Authors listed alphabetically)
     <br>
     <i><b>The Lancet</b></i>
     <br>
@@ -91,7 +91,7 @@
     <font color=#0096FF>Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.
     </font> 
     <br>	
-    GBD 2021 Demographics Collaborators
+    GBD 2021 Demographics Collaborators* (Authors listed alphabetically)
     <br>
     <i><b>The Lancet</b></i>
     <br>
@@ -400,6 +400,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

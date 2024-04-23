@@ -482,7 +482,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   - *Oral.* Saudi Olympiad Elite Camp, King Abdullah University of Science and Technology, Saudi Arabia
 - [2023/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
   - *Oral.* CBRC Seminar, King Abdullah University of Science and Technology, Saudi Arabia
-- [2023/06/12] SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
+- [2023/06/12] [SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model](https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/).
   - *Oral.* [Unlocking the Power of “ChatGPT”](https://gptworkshop2023.kaust.edu.sa), King Abdullah University of Science and Technology, Saudi Arabia
 - [2023/03/02] Audit to Forget: A Unified Method to Revoke Patients’ Private Data in Intelligent Healthcare.
   - *Poster.* CBRC session, [KAUST Research Open Week](https://researchopenweek.kaust.edu.sa/), Saudi Arabia
