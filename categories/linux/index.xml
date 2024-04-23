@@ -33,5 +33,12 @@ ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0
     <guid>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</guid>
     <description><![CDATA[Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
 In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel.]]></description>
+</item><item>
+    <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
+    <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
+    <description><![CDATA[]]></description>
 </item></channel>
 </rss>

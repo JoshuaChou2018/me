@@ -26,6 +26,13 @@ ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0
 1 $ sudo apt install build-essential gawk bison 然后解压和编译
 1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr]]></description>
 </item><item>
+    <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
+    <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Run Ubuntu Linux in Docker with Desktop Environment and VNC</title>
     <link>https://www.joshuachou.ink/run-ubuntu-in-docker/</link>
     <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>

@@ -114,6 +114,13 @@ Skin and subcutaneous diseases rank high among the leading contributors to the g
 然后点击右下角弹出的Relaunch按钮
 重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了]]></description>
 </item><item>
+    <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
+    <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
+    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Mac更新后无法连接Apple所有服务</title>
     <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
@@ -231,15 +238,5 @@ Encryption scheme from LWE Encryption Decryption it can be generalized to matric
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ms-seal/</guid>
     <description><![CDATA[Microsoft SEAL Ref https://www.youtube.com/watch?v=XaYEHnaAg8M]]></description>
-</item><item>
-    <title>CKKS</title>
-    <link>https://www.joshuachou.ink/ckks/</link>
-    <pubDate>Sun, 18 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/ckks/</guid>
-    <description><![CDATA[What’s is CKKS Plain Computation Encrypted Computation bool, int (uint 64), modulo p BGV, BFV, TFHE double (float) CKKS Approximate arithmetic For floating-point arithmetic, we keep the bits of significand to be the same.
-For fixed-point arithmetic, we keep the scaling factor to be the same.
-Algorithms in CKKS Encoding and decoding 在编码过程中需要使用比较大的scaling factor，这样可以保证更大的精度。
-Encrypt and decrypt Ref https://www.youtube.com/watch?v=iQlgeL64vfo]]></description>
 </item></channel>
 </rss>
