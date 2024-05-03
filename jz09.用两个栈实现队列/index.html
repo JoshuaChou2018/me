@@ -11,12 +11,12 @@
   <meta property="og:description" content="用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
 示例 1：
 输入：
-1 2 3 [&amp;#34;CQueue&amp;#34;,&amp;#34;appendTail&amp;#34;,&amp;#34;deleteHead&amp;#34;,&amp;#34;deleteHead&amp;#34;] [[],[3],[],[]] 输出：[null,null,3,-1] 示例 2：
+1 2 3 [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1] 示例 2：
 输入：
-1 2 3 [&amp;#34;CQueue&amp;#34;,&amp;#34;deleteHead&amp;#34;,&amp;#34;appendTail&amp;#34;,&amp;#34;appendTail&amp;#34;,&amp;#34;deleteHead&amp;#34;,&amp;#34;deleteHead&amp;#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] 提示：
-1 2 1 &amp;lt;= values &amp;lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] 提示：
+1 2 1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 解题思路 输入为两个栈，
-第一个栈对应的是操作： [&amp;ldquo;CQueue&amp;rdquo;,&amp;ldquo;appendTail&amp;rdquo;,&amp;ldquo;deleteHead&amp;rdquo;,&amp;ldquo;deleteHead&amp;rdquo;]
+第一个栈对应的是操作： [“CQueue”,“appendTail”,“deleteHead”,“deleteHead”]
 CQueue表示init一个CQueue object
 appendTail表示调用appendTail函数
 deleteHead表示调用deleteHead函数
@@ -25,7 +25,7 @@ deleteHead表示调用deleteHead函数
 1 2 3 4 5 6 7 8 9 10 11 12 13 class CQueue: def __init__(self): self.A, self.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-  <meta property="article:section" content="posts">
+    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2022-01-08T00:00:00+00:00">
     <meta property="article:modified_time" content="2022-01-08T00:00:00+00:00">
     <meta property="article:tag" content="Linux">
