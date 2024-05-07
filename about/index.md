@@ -345,6 +345,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 ### **Working Experience**
 
+- Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 - Present
 - Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 
 <br>
