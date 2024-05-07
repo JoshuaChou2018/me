@@ -8,7 +8,11 @@
 
 ### **Juexiao Zhou 周觉晓, Joshua Chou**
 
-Ph.D. Candidate working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
+Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/)
+
+Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
+
+Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
 [Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
 
