@@ -436,7 +436,8 @@ He was born on  Jan 20, 1999 in Hunan, China.
 - Excellent Student, The First Prize Scholarship, 2018
 - Outstanding volunteer for the 12th CBIS Biennial Meeting, Shenzhen, China, 2018
 - Candidate for 2018 National Scholarship, 2018
-- Outstanding Volunteer of the 3rd Shenzhen International Life Science & Health Industry Summit (2016) Excellent Student, The First Prize Scholarship, 2017
+- Outstanding Volunteer of the 3rd Shenzhen International Life Science & Health Industry Summit (2016)
+- Excellent Student, The First Prize Scholarship, 2017
 - Dean scholarship, The First Prize Scholarship, 2017
 - Excellent Student Cadre, 2017
 - Outstanding Volunteer of 2017 Shenzhen International Precision Medicine Summit, 2017
