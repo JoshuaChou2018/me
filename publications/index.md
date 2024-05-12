@@ -8,6 +8,17 @@
   <font size="+1">2024</font>
   <br>
   <li>
+    <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations.
+    </font> 
+    <br>	
+    Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Chao Huang, Yongguo Yu, and Xin Gao
+    <br>
+    <i><b>Accepted.</b></i>
+    <br>
+    <i><b>Computers in Biology and Medicine</b></i>
+  </li>
+  <br>
+  <li>
     <table>
     <colgroup>
     	<col style="width: 30%;">
@@ -407,6 +418,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -534,15 +546,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Metaphase-Image Mask Annotations.
-    </font> 
-    <br>	
-    Siyuan Chen, Kaichuang Zhang, Bing Niu, Na Li, Qiuye Jin, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Yongguo Yu, and Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
     </font> 
     <br>	
@@ -624,6 +627,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
