@@ -256,18 +256,6 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
-    <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Xiuying Chen#, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://arxiv.org/abs/2306.10765">arXiv</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
     </font> 
     <br>	
@@ -336,6 +324,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 

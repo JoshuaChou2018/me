@@ -5,7 +5,7 @@
 **(# equal contribution, * corresponding author)**
 
 <ol reversed>
-  <font size="+1">2024</font>
+  <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
     <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations.
@@ -19,14 +19,7 @@
   </li>
   <br>
   <li>
-    <table>
-    <colgroup>
-    	<col style="width: 30%;">
-    	<col style="width: 70%;">
-  	</colgroup>
-    <tr style="border: none;">
-      <td style="border: none;"><img src="https://www.thelancet.com/cms/attachment/d2771b29-725c-4690-a3f8-1dda87ea627b/gr5.jpg" alt="" style="float: left; margin-right: 10px;"></td>
-    	<td style="border: none;"><font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+    <font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
       GBD 2021 Diseases and Injuries Collaborators* (Authors listed alphabetically)
@@ -38,20 +31,10 @@
       <b>Access: </b>
       <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00757-8/fulltext">online</a>,
       <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624007578.pdf">pdf</a>
-      </td>
-    </tr>
-    </table>
   </li> 
   <br>
   <li>
-    <table>
-    <colgroup>
-    	<col style="width: 30%;">
-    	<col style="width: 70%;">
-  	</colgroup>
-    <tr style="border: none;">
-      <td style="border: none;"><img src="https://www.thelancet.com/cms/attachment/0978ded8-589a-403f-b084-9b066ba493d3/gr1.jpg" alt="" style="float: left; margin-right: 10px;"></td>
-    	<td style="border: none;"><font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+    <font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
       GBD 2021 Causes of Death Collaborators* (Authors listed alphabetically)
@@ -63,9 +46,6 @@
       <b>Access: </b>
       <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00367-2/fulltext">online</a>,
       <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624003672.pdf">pdf</a>
-      </td>
-    </tr>
-    </table>
   </li> 
   <br>
   <li>
@@ -113,7 +93,7 @@
     <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624004768.pdf">pdf</a>
   </li>
   <br>
-  <font size="+1">2023</font>
+  <font size="+2" color=#0096FF>2023</font>
   <br>
   <li>
     <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data.</font> 
@@ -285,7 +265,7 @@
     <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S2667237522002892-main.pdf">pdf</a>
   </li>
   <br>
-  <font size="+1">2022</font>
+  <font size="+2" color=#0096FF>2022</font>
   <br>
   <li>
     <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.</font> 
@@ -331,7 +311,7 @@
     <a href="https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf">pdf</a>
   </li>
   <br>
-  <font size="+1">2021</font>
+  <font size="+2" color=#0096FF>2021</font>
   <br>
   <li>
     <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.
@@ -348,7 +328,7 @@
     <a href="https://www.joshuachou.ink/publications/papers/fphys-12-655556.pdf">pdf</a>
   </li>
   <br>
-  <font size="+1">2020</font>
+  <font size="+2" color=#0096FF>2020</font>
   <br>
   <li>
     <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.
@@ -416,13 +396,10 @@
 
 
 
-
-
-
 ##  Conference
 
 <ol reversed>
-  <font size="+1">2020</font>
+  <font size="+2" color=#0096FF>2020</font>
   <br>
   <li>
     <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.
@@ -443,10 +420,11 @@
 
 
 
+
 ## Posters
 
 <ol reversed>
-  <font size="+1">2023</font>
+  <font size="+2" color=#0096FF>2023</font>
   <br>
   <li>
     <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
@@ -460,7 +438,7 @@
     <a href="https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_Juexiao Zhou.pdf">certificate</a>
   </li>
 	<br>
-  <font size="+1">2020</font>
+  <font size="+2" color=#0096FF>2020</font>
   <br>
   <li>
     <font color=#0096FF>Deetal-Perio: DEEp denTAL Advisor for Periodontitis Diagnosis based on Two-step Segmentation of Teeth and Gingiva with Lower-dimensional Features. 
@@ -474,7 +452,7 @@
     <a href="http://hdl.handle.net/10754/661204">online</a>
   </li>
   <br>
-  <font size="+1">2019</font>
+  <font size="+2" color=#0096FF>2019</font>
   <br>
   <li>
     <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming.
@@ -513,6 +491,7 @@
   </li>
   <br>
 </ol>
+
 
 
 ## Preprint
