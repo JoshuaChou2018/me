@@ -256,7 +256,14 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
   <li>
-    <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
+    <table>
+    <colgroup>
+    	<col style="width: 30%;">
+    	<col style="width: 70%;">
+  	</colgroup>
+    <tr style="border: none;">
+      <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/uuVkwW.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td style="border: none;"><font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
     </font> 
     <br>	
     <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Xin Gao*
@@ -269,6 +276,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <b>Press: </b>
     <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
     <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
+    </td>
+    </tr>
+    </table>
   </li>
   <br>
   <li>
@@ -324,6 +334,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 
