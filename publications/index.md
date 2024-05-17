@@ -8,6 +8,36 @@
   <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
+    <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021.
+      </font> 
+      <br>	
+      GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)
+      <br>
+      <i><b>The Lancet</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/S0140-6736(24)00685-8</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf">pdf</a>
+  </li> 
+  <br>
+  <li>
+    <font color=#0096FF>Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.
+      </font> 
+      <br>	
+      GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)
+      <br>
+      <i><b>The Lancet</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/S0140-6736(24)00933-4</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf">pdf</a>
+  </li> 
+  <br>
+  <li>
     <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations.
     </font> 
     <br>	
