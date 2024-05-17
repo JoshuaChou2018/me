@@ -24,12 +24,14 @@ ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Ubuntu">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="ubuntu 18.04 升级至 glibc_2.28">
-<meta name="twitter:description" content="近期在ubuntu 18.04上开发PyQt6前段时发现问题：
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="ubuntu 18.04 升级至 glibc_2.28">
+  <meta name="twitter:description" content="近期在ubuntu 18.04上开发PyQt6前段时发现问题：
 ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
 1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
-1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc
+1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&#34;比较省心&#34;的方法, 保留系统仅升级 glibc
 下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
 准备编译环境
 1 $ sudo apt install build-essential gawk bison 然后解压和编译

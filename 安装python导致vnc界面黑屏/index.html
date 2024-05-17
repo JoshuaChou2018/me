@@ -19,9 +19,11 @@
     <meta property="article:tag" content="System">
     <meta property="article:tag" content="Linux">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="安装Python导致VNC黑屏解决方案">
-<meta name="twitter:description" content="问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="安装Python导致VNC黑屏解决方案">
+  <meta name="twitter:description" content="问题在于VNCServer使用Python编写，所以受到系统Python版本影响。
 解决方案：
 1 2 3 4 5 6 7 8 9 $ cd $HOME $ vim .bashrc 找到如下语句： export PATH=&#34;/home/user/anaconda2/bin:$PATH&#34; 并修改为，并保存退出。 export PATH=&#34;$PATH:/home/user/anaconda2/bin&#34; $ vncserver -kill :id $ source .bashrc $ conda config --set auto_activate_base false #取消conda自动启动base ">
 <meta name="application-name" content="Juexiao Zhou">

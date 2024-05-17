@@ -13,9 +13,14 @@
     <br>	
     Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Chao Huang, Yongguo Yu, and Xin Gao
     <br>
-    <i><b>Accepted.</b></i>
-    <br>
     <i><b>Computers in Biology and Medicine</b></i>
+    <br>
+      <b>DOI: https://doi.org/10.1016/j.compbiomed.2024.108601</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.sciencedirect.com/science/article/pii/S0010482524006863">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482524006863-main.pdf">pdf</a>
+  </li> 
   </li>
   <br>
   <li>
@@ -391,6 +396,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

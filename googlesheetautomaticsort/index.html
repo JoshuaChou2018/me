@@ -19,9 +19,11 @@ Extension -&gt; Apps script
     <meta property="article:tag" content="System">
     <meta property="article:tag" content="Linux">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="Automatically Sort Data in Google Sheets">
-<meta name="twitter:description" content="Automatically Sort Data in Google Sheets
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="Automatically Sort Data in Google Sheets">
+  <meta name="twitter:description" content="Automatically Sort Data in Google Sheets
 Extension -&gt; Apps script
 1 2 3 4 5 6 7 8 9 10 function autoSort(e) { const ss = SpreadsheetApp.getActiveSpreadsheet() const ws = ss.getSheetByName(&#34;Sheet1&#34;) const range = ws.getRange(2,1,ws.getLastRow()-1,2) range.sort({column: 2, ascending: false}) } function onEdit(e){ autoSort(e) } ">
 <meta name="application-name" content="Juexiao Zhou">

@@ -25,9 +25,11 @@ https://hub.docker.com/repository/
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="System">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="docker拉取镜像修改打包教程">
-<meta name="twitter:description" content="近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="docker拉取镜像修改打包教程">
+  <meta name="twitter:description" content="近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
 拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
 1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
 1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件

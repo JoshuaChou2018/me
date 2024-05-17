@@ -31,9 +31,11 @@ deleteHead表示调用deleteHead函数
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Leetcode">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.joshuachou.ink/logo.png"><meta name="twitter:title" content="剑指 Offer 09. 用两个栈实现队列">
-<meta name="twitter:description" content="用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="剑指 Offer 09. 用两个栈实现队列">
+  <meta name="twitter:description" content="用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
 示例 1：
 输入：
 1 2 3 [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1] 示例 2：
@@ -41,7 +43,7 @@ deleteHead表示调用deleteHead函数
 1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] 提示：
 1 2 1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 解题思路 输入为两个栈，
-第一个栈对应的是操作： [&ldquo;CQueue&rdquo;,&ldquo;appendTail&rdquo;,&ldquo;deleteHead&rdquo;,&ldquo;deleteHead&rdquo;]
+第一个栈对应的是操作： [“CQueue”,“appendTail”,“deleteHead”,“deleteHead”]
 CQueue表示init一个CQueue object
 appendTail表示调用appendTail函数
 deleteHead表示调用deleteHead函数
