@@ -534,6 +534,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Liyuan Sun#, Yan Xu#, Wenbin Liu#, Shawn Afvari#, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Xiaonan He, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Deep learning-driven pulmonary arteries and veins segmentation reveals demography-associated pulmonary vasculature anatomy.
     </font> 
     <br>	
@@ -642,6 +651,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
