@@ -32,6 +32,7 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 ##### Recent News:
 
+- June 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
 - May 2024, GBD 2021 Forecasting Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, GBD 2021 Risk Factors Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, a paper is accepted by **Computers in Biology and Medicine (IF=7.7)**.

@@ -8,6 +8,17 @@
   <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
+    <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer.
+    </font> 
+    <br>	
+    Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao
+    <br>
+    <i><b>Bioinformatics</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021.
       </font> 
       <br>	
@@ -432,6 +443,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -561,15 +573,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer.
-    </font> 
-    <br>	
-    Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Xin Gao
-    <br>
-    <i><b>under review.</b></i>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
     </font> 
     <br>	
@@ -651,6 +654,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
