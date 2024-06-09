@@ -525,7 +525,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 |                     ICMLA 2021                      |        1         |
 | IEEE Transactions on Knowledge and Data Engineering |        1         |
 | Journal of Bioinformatics and Computational Biology |        1         |
-|               Medical Image Analysis                |        1         |
+|               Medical Image Analysis                |        2         |
 |                     MICCAI 2020                     |        1         |
 |                     MICCAI 2024                     |        5         |
 |                 Multimedia Systems                  |        1         |
