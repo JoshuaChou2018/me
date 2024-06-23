@@ -407,6 +407,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 **GPA: 4.00 / 4.00**
 
+- CEMSE Dean’s List  Award, 2024
 - CEMSE Dean’s List  Award, 2023
 - KAUST AII’s NeurIPS travel grant, 2022
 - CEMSE Dean’s List  Award, 2022
