@@ -8,6 +8,20 @@
   <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
+    <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Shawn Afvari, Xin Gao*
+    <br>
+    <i><b>Nature Communications</b></i>
+    <br>
+    <i><b>Accepted.</b></i>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer.
     </font> 
     <br>	
@@ -444,6 +458,7 @@
 
 
 
+
 ##  Conference
 
 <ol reversed>
@@ -624,18 +639,6 @@
     <a href="https://arxiv.org/abs/2306.10765">arXiv</a>
   </li>
   <br>
-   <li>
-    <font color=#0096FF>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
-  </li>
-  <br>
   <li>
     <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT.
     </font> 
@@ -654,6 +657,7 @@
   </li>
   <br>
 </ol>
+
 
 
 

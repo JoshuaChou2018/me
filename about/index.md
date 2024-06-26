@@ -32,6 +32,7 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 ##### Recent News:
 
+- June 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
 - June 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
 - May 2024, GBD 2021 Forecasting Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, GBD 2021 Risk Factors Capstone paper is accepted by **The Lancet (IF=168.9)**
@@ -98,6 +99,30 @@ He was born on  Jan 20, 1999 in Hunan, China.
 **(# equal contribution, * corresponding author)**
 
 <ol>
+  <li>
+    <table>
+    <colgroup>
+    	<col style="width: 30%;">
+    	<col style="width: 70%;">
+  	</colgroup>
+    <tr style="border: none;">
+      <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/g693n4.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td style="border: none;"><font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
+      </font> 
+      <br>	
+      <u><b>Juexiao Zhou#</b></u>, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Shawn Afvari, Xin Gao*
+      <br>
+      <i><b>Nature Communications</b></i>
+      <br>
+      <i><b>Accepted.</b></i>
+      <br>
+      <b>Access: </b>
+      <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
+      </td>
+    </tr>
+    </table>
+  </li>
+  <br>
   <li>
     <table>
     <colgroup>
@@ -243,28 +268,6 @@ He was born on  Jan 20, 1999 in Hunan, China.
     	<col style="width: 70%;">
   	</colgroup>
     <tr style="border: none;">
-      <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/g693n4.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
-    	<td style="border: none;"><font color=#0096FF>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model.
-      </font> 
-      <br>	
-      <u><b>Juexiao Zhou#</b></u>, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Xin Gao*
-      <br>
-      <i><b>under review.</b></i>
-      <br>
-      <b>Access: </b>
-      <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
-      </td>
-    </tr>
-    </table>
-  </li>
-  <br>
-  <li>
-    <table>
-    <colgroup>
-    	<col style="width: 30%;">
-    	<col style="width: 70%;">
-  	</colgroup>
-    <tr style="border: none;">
       <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/uuVkwW.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
     	<td style="border: none;"><font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
     </font> 
@@ -337,6 +340,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
   </li>
   <br>
 </ol>
+
 
 
 
