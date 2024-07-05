@@ -472,6 +472,9 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 ### Selected Press Coverage [[Full list](https://www.joshuachou.ink/press/)]
 
+- **SkinGPT-4** was covered by:
+  - How a Saudi university is using AI to transform the diagnosis and treatment of skin diseases, [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia)
+
 - **PPML-Omics protects patients’ privacy in omic data**  was covered by:
   - Algorithm Proposed to Protect Patient Privacy, [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/)
   - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/)
