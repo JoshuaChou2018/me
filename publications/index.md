@@ -15,10 +15,11 @@
     <br>
     <i><b>Nature Communications</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>DOI: https://doi.org/10.1038/s41467-024-50043-3</b>
     <br>
     <b>Access: </b>
-    <a href="https://arxiv.org/abs/2304.10691">arXiv</a>
+    <a href="https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf">pdf</a>
   </li>
   <br>
   <li>
