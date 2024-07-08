@@ -32,6 +32,7 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 ##### Recent News:
 
+- July 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
 - June 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
 - June 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
 - May 2024, GBD 2021 Forecasting Capstone paper is accepted by **The Lancet (IF=168.9)**
@@ -119,6 +120,10 @@ He was born on  Jan 20, 1999 in Hunan, China.
     <b>Access: </b>
     <a href="https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3">online</a>,
       <a href="https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf">pdf</a>
+      <br>
+      <b>Press: </b>
+      <a href="https://www.arabnews.com/node/2543731/saudi-arabia">Arab News</a>,
+      <a href="https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html">ChicHue</a>
       </td>
     </tr>
     </table>
@@ -349,6 +354,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 
 
+
 <br>
 
 
@@ -474,7 +480,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 - **SkinGPT-4** was covered by:
   - How a Saudi university is using AI to transform the diagnosis and treatment of skin diseases, [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia)
-
+  - How Saudi Arabia's SkinGPT-4 is Revolutionizing Skin Care?, [ChicHue](https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html)
 - **PPML-Omics protects patients’ privacy in omic data**  was covered by:
   - Algorithm Proposed to Protect Patient Privacy, [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/)
   - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/)
