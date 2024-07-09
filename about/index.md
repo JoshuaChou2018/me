@@ -32,9 +32,9 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 ##### Recent News:
 
-- July 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
-- June 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
-- June 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
+- Jul 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
+- Jun 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
+- Jun 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
 - May 2024, GBD 2021 Forecasting Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, GBD 2021 Risk Factors Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, a paper is accepted by **Computers in Biology and Medicine (IF=7.7)**.

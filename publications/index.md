@@ -1,6 +1,6 @@
 # 
 
-## Journal
+### Journal
 
 **(# equal contribution, * corresponding author)**
 
@@ -460,7 +460,7 @@
 
 
 
-##  Conference
+###  Conference
 
 <ol reversed>
   <font size="+2" color=#0096FF>2020</font>
@@ -485,7 +485,7 @@
 
 
 
-## Posters
+### Posters
 
 <ol reversed>
   <font size="+2" color=#0096FF>2023</font>
@@ -558,7 +558,7 @@
 
 
 
-## Preprint
+### Preprint
 
 <ol reversed>
   <li>
@@ -668,7 +668,7 @@
 
 
 
-## Patents and Patent Applications
+### Patents and Patent Applications
 
 <ol reversed>
   <li>
