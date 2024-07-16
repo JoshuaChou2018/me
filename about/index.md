@@ -16,6 +16,8 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 [Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
 
+Center of Excellence on Smart Health
+
 [Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
 
 [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
