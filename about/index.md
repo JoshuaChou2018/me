@@ -83,7 +83,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
 
-- **Private Artificial General Intelligence (PAGI)**: privacy and security, Large Language Model (LLM)
+- **Private Artificial General Intelligence (PAGI)**: privacy and security, large language model (LLM)
 
   <center>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png"/>
