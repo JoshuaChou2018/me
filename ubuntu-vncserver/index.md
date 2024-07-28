@@ -4,6 +4,9 @@
 - 安装基础软件
 
   ```
+  sudo apt update
+  sudo apt-get upgrade
+  sudo apt install ubuntu-desktop
   sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
   sudo apt install tightvncserver
   vncserver
