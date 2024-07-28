@@ -531,6 +531,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
 |          Computers in Biology and Medicine          |        18        |
+|         Computational Biology and Chemistry         |        1         |
 |      Computerized Medical Imaging and Graphics      |        1         |
 |                   Genome Biology                    |        1         |
 |                   Genome Research                   |        2         |
