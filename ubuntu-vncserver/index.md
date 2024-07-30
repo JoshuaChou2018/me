@@ -45,3 +45,45 @@
   vncserver :1
   ```
 
+
+
+**机器无显示屏情况-设置虚拟显示屏**
+
+- 安装xserver-xorg
+
+```
+sudo apt-get install xserver-xorg-core-hwe-18.04
+sudo apt-get install xserver-xorg-video-dummy
+```
+
+- 增加xorg配置文件，通过指令vim /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。
+
+```
+Section "Monitor"
+  Identifier "Monitor0"
+  HorizSync 28.0-80.0
+  VertRefresh 48.0-75.0
+  Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
+EndSection
+Section "Device"
+  Identifier "Card0"
+  Driver "dummy"
+  VideoRam 256000
+EndSection
+Section "Screen"
+  DefaultDepth 24
+  Identifier "Screen0"
+  Device "Card0"
+  Monitor "Monitor0"
+  SubSection "Display"
+    Depth 24
+    Modes "1920x1080_60.00"
+  EndSubSection
+EndSection
+```
+
+- 重启机器
+
+重启后自动启用虚拟显示屏，如果之后再需要用显示器，将/usr/share/X11/xorg.conf.d/xorg.conf文件移除，再重启机器即可。
+
+

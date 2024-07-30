@@ -15,7 +15,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-02T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-07-28T16:20:42+03:00">
+    <meta property="article:modified_time" content="2024-07-30T14:06:47+03:00">
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Ubuntu">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
@@ -38,8 +38,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  116 ,
-        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-07-28T16:20:42+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  202 ,
+        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-07-30T14:06:47+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -120,7 +120,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Ubuntu配置VNCServer，一定能用，不白屏灰屏</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;116 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;202 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -215,12 +215,81 @@
 </div>
 </div></li>
 </ul>
+<p><strong>机器无显示屏情况-设置虚拟显示屏</strong></p>
+<ul>
+<li>安装xserver-xorg</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install xserver-xorg-core-hwe-18.04
+</span></span><span class="line"><span class="cl">sudo apt-get install xserver-xorg-video-dummy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>增加xorg配置文件，通过指令vim /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Section &#34;Monitor&#34;
+</span></span><span class="line"><span class="cl">  Identifier &#34;Monitor0&#34;
+</span></span><span class="line"><span class="cl">  HorizSync 28.0-80.0
+</span></span><span class="line"><span class="cl">  VertRefresh 48.0-75.0
+</span></span><span class="line"><span class="cl">  Modeline &#34;1920x1080_60.00&#34; 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
+</span></span><span class="line"><span class="cl">EndSection
+</span></span><span class="line"><span class="cl">Section &#34;Device&#34;
+</span></span><span class="line"><span class="cl">  Identifier &#34;Card0&#34;
+</span></span><span class="line"><span class="cl">  Driver &#34;dummy&#34;
+</span></span><span class="line"><span class="cl">  VideoRam 256000
+</span></span><span class="line"><span class="cl">EndSection
+</span></span><span class="line"><span class="cl">Section &#34;Screen&#34;
+</span></span><span class="line"><span class="cl">  DefaultDepth 24
+</span></span><span class="line"><span class="cl">  Identifier &#34;Screen0&#34;
+</span></span><span class="line"><span class="cl">  Device &#34;Card0&#34;
+</span></span><span class="line"><span class="cl">  Monitor &#34;Monitor0&#34;
+</span></span><span class="line"><span class="cl">  SubSection &#34;Display&#34;
+</span></span><span class="line"><span class="cl">    Depth 24
+</span></span><span class="line"><span class="cl">    Modes &#34;1920x1080_60.00&#34;
+</span></span><span class="line"><span class="cl">  EndSubSection
+</span></span><span class="line"><span class="cl">EndSection
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>重启机器</li>
+</ul>
+<p>重启后自动启用虚拟显示屏，如果之后再需要用显示器，将/usr/share/X11/xorg.conf.d/xorg.conf文件移除，再重启机器即可。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-07-28&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/1a8508bcfe4feb3349a1982dc9c1912385ccdc22" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) 1a8508bcfe4feb3349a1982dc9c1912385ccdc22: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>1a8508b</a></span>
+                <span>Updated on 2024-07-30&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/fa976e90d7f8aa8b43d458d970a80edcca609ff1" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) fa976e90d7f8aa8b43d458d970a80edcca609ff1: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>fa976e9</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

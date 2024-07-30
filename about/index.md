@@ -65,6 +65,8 @@ Center of Excellence on Smart Health
 
 ### Short Bio
 
+- English Bio
+
 He is a Ph.D. Candidate in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) from Dec 2021 - Present.
 
 He got the Master of Science degree, M.S. in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) in Dec 2021.
@@ -72,6 +74,14 @@ He got the Master of Science degree, M.S. in Computer Science at [King Abdullah 
 He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
 
 He was born on  Jan 20, 1999 in Hunan, China.
+
+<br>
+
+
+
+- 中文简介
+
+周觉晓， 沙特阿拉伯阿卜杜拉国王科技大学（King Abdullah University of Science and Technology, KAUST）博士候选人(PhD candidate)师从高欣(Xin Gao)教授，美国公司DermAssure.ai联合创始人兼首席AI科学家。其研究领域为计算机科学与生物医学的交叉学科，包括智慧医疗和生物信息学。研究方向为AI4H，即开发医疗保健领域的疾病检测、风险评估等任务的先进人工智能算法，如大语言模型(LLM)；开发生物信息学中的新方法，包括基因调控网络，功能和结构预测，系统生物学等；以及关注于深度学习和通用人工智能(PAGI)在医学领域中的隐私和安全问题。在Science Advances，Nature Machine Intelligence，Nature Communications，Trends in Genetics，The Lancet，Genome Research，Bioinformatics，MICCAI等领域内重要期刊和会议上发表学术论文30余篇。相关研究成果多次被主流媒体报导，如阿拉伯新闻（Arab News），香港电台(RTHK)，Inside Precision Medicine等。目前分别为CAAI/APBioNET/GBD成员，担任Medical Image Analysis, Computers in Biology and Medicine，Computational Biology and Chemistry, Computerized Medical Imaging and Graphics, Genome Biology，Genome Research，IEEE Transactions on Knowledge and Data Engineering等多种SCI期刊审稿人以及NeurIPS，IJCAI-ECAI，ICONIP，MICCAI，SIGKDD等多种国际会议审稿人。
 
 <br>
 
