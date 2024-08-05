@@ -52,35 +52,65 @@
 - 安装xserver-xorg
 
 ```
-sudo apt-get install xserver-xorg-core-hwe-18.04
-sudo apt-get install xserver-xorg-video-dummy
+sudo apt-get install  xserver-xorg-core-hwe-18.04
+sudo apt-get install  xserver-xorg-video-dummy-hwe-18.04  --fix-missing
 ```
 
-- 增加xorg配置文件，通过指令vim /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。
+- 增加xorg配置文件，通过指令sudo nano /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。
 
 ```
-Section "Monitor"
-  Identifier "Monitor0"
-  HorizSync 28.0-80.0
-  VertRefresh 48.0-75.0
-  Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
-EndSection
 Section "Device"
-  Identifier "Card0"
-  Driver "dummy"
-  VideoRam 256000
+    Identifier  "Configured Video Device"
+    Driver      "dummy"
 EndSection
+
+Section "Monitor"
+    Identifier  "Configured Monitor"
+    HorizSync 31.5-48.5
+    VertRefresh 50-70
+EndSection
+
 Section "Screen"
-  DefaultDepth 24
-  Identifier "Screen0"
-  Device "Card0"
-  Monitor "Monitor0"
-  SubSection "Display"
+    Identifier  "Default Screen"
+    Monitor     "Configured Monitor"
+    Device      "Configured Video Device"
+    DefaultDepth 24
+    SubSection "Display"
     Depth 24
-    Modes "1920x1080_60.00"
-  EndSubSection
+    Modes "1920x1080"
+    EndSubSection
 EndSection
 ```
+
+- sudo nano /usr/share/X11/xorg.conf.d/dummy-1920x1080.conf
+
+  ```
+  Section "Monitor"
+    Identifier "Monitor0"
+    HorizSync 28.0-80.0
+    VertRefresh 48.0-75.0
+    # https://arachnoid.com/modelines/
+    # 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz
+    Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
+  EndSection
+  
+  Section "Device"
+    Identifier "Card0"
+    Driver "dummy"
+    VideoRam 256000
+  EndSection
+  
+  Section "Screen"
+    DefaultDepth 24
+    Identifier "Screen0"
+    Device "Card0"
+    Monitor "Monitor0"
+    SubSection "Display"
+      Depth 24
+      Modes "1920x1080_60.00"
+    EndSubSection
+  EndSection
+  ```
 
 - 重启机器
 

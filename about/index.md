@@ -26,7 +26,7 @@ Center of Excellence on Smart Health
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
- [CV (last update: June 2024)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: Aug 2024)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -540,7 +540,7 @@ He was born on  Jan 20, 1999 in Hunan, China.
 |                 Journal/Conference                  | # Paper Reviewed |
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
-|          Computers in Biology and Medicine          |        18        |
+|          Computers in Biology and Medicine          |        19        |
 |         Computational Biology and Chemistry         |        1         |
 |      Computerized Medical Imaging and Graphics      |        1         |
 |                   Genome Biology                    |        1         |
