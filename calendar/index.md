@@ -10,6 +10,6 @@ Just a heads up, the calendar shows my meeting schedules, but I might be working
 
 
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FRiyadh&bgcolor=%23ffffff&title=Juexiao%20Zhou&src=anVleGlhby56aG91QGthdXN0LmVkdS5zYQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FRiyadh&bgcolor=%2333B679&hl=en_GB&title=Juexiao%20Zhou&src=anVleGlhby56aG91QGthdXN0LmVkdS5zYQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 
