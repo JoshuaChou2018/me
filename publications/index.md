@@ -562,6 +562,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>Improving Fairness in Medical Text Generation with Selective Optimization.
+    </font> 
+    <br>	
+    Xiuying Chen, Tairan Wang, <u><b>Juexiao Zhou#</b></u>, Xin Gao, Xiangliang Zhang
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.
     </font> 
     <br>	
@@ -658,6 +667,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
