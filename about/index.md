@@ -512,6 +512,8 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 ### **Invited Talks**
 
+- [2024/08/15] AI for Healthcare: Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
+  - *Oral.* 汕头大学医学院“智能计算赋能医学”, 中国
 - [2023/11/22] Introduction to ChatGPT and Application of GPT in Healthcare.
   - *Oral.* Saudi Olympiad Elite Camp, King Abdullah University of Science and Technology, Saudi Arabia
 - [2023/09/20] A Unified Method to Revoke the Private Data of Patients in Intelligent Healthcare with Audit to Forget.
