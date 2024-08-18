@@ -34,6 +34,7 @@ Center of Excellence on Smart Health
 
 ##### Recent News:
 
+- Aug 2024, AutoBA is accepted by **Advanced Science (IF=15.1)**.
 - Jul 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
 - Jun 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
 - Jun 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
@@ -208,6 +209,34 @@ He was born on  Jan 20, 1999 in Hunan, China.
     	<col style="width: 70%;">
   	</colgroup>
     <tr style="border: none;">
+      <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/uuVkwW.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
+    	<td style="border: none;"><font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Guowei Li, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Liwei Liu, Xin Gao*
+    <br>
+    <i><b>Advanced Science</b></i>
+    <br>
+    <b>DOI: https://doi.org/10.1002/advs.202407094</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
+    <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
+    </td>
+    </tr>
+    </table>
+  </li>
+  <br>
+  <li>
+    <table>
+    <colgroup>
+    	<col style="width: 30%;">
+    	<col style="width: 70%;">
+  	</colgroup>
+    <tr style="border: none;">
       <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/izH1yJ.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
     	<td style="border: none;"><font color=#0096FF>Patient privacy in AI-driven omics methods.
       </font> 
@@ -271,32 +300,6 @@ He was born on  Jan 20, 1999 in Hunan, China.
       <a href="https://www.sciencedirect.com/science/article/pii/S0010482523013264">online</a>, 
       <a href="https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482523013264-main.pdf">pdf</a>
       </td>
-    </tr>
-    </table>
-  </li>
-  <br>
-  <li>
-    <table>
-    <colgroup>
-    	<col style="width: 30%;">
-    	<col style="width: 70%;">
-  	</colgroup>
-    <tr style="border: none;">
-      <td style="border: none;"><img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/uuVkwW.Figure_1.png" alt="" style="float: left; margin-right: 10px;"></td>
-    	<td style="border: none;"><font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
-    <br>
-    <b>Press: </b>
-    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
-    <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
-    </td>
     </tr>
     </table>
   </li>

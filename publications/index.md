@@ -8,6 +8,24 @@
   <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
+    <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses.
+    </font> 
+    <br>	
+    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Guowei Li, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Liwei Liu, Xin Gao*
+    <br>
+    <i><b>Advanced Science</b></i>
+    <br>
+    <b>DOI: https://doi.org/10.1002/advs.202407094</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
+    <br>
+    <b>Press: </b>
+    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
+    <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
     </font> 
     <br>	
@@ -460,6 +478,7 @@
 
 
 
+
 ###  Conference
 
 <ol reversed>
@@ -598,22 +617,6 @@
   </li>
   <br>
   <li>
-    <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.
-    </font> 
-    <br>	
-    <u><b>Juexiao Zhou#</b></u>, Bin Zhang#, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Xin Gao*
-    <br>
-    <i><b>under review.</b></i>
-    <br>
-    <b>Access: </b>
-    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
-    <br>
-    <b>Press: </b>
-    <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
-    <a href="https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364">Medium</a>
-  </li>
-  <br>
-  <li>
     <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response.
     </font> 
     <br>	
@@ -667,6 +670,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
