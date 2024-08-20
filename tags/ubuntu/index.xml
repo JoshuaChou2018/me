@@ -10,7 +10,7 @@
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu-vncserver/</guid>
     <description><![CDATA[安装基础软件
-1 2 3 4 5 sudo apt update sudo apt-get upgrade sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal sudo apt install tightvncserver vncserver 修改~/.vnc/xstartup
+1 2 3 4 5 6 7 8 sudo apt update sudo apt-get upgrade sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal sudo apt install tightvncserver vncserver 注: 在防火墙上打开 VNC Server 的监听端口 VNC Server 用到了三个端口：5801(*)、5901(*)、6001 修改~/.vnc/xstartup
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash export $(dbus-launch) export XKL_XMODMAP_DISABLE=1 export XDG_CURRENT_DESKTOP=&#34;GNOME-Flashback:Unity&#34; export XDG_MENU_PREFIX=&#34;gnome-flashback-&#34; unset SESSION_MANAGER gnome-panel &amp; gnome-settings-daemon &amp; metacity &amp; nautilus &amp; gnome-terminal &amp; # [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup # [ -r $HOME/.]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>

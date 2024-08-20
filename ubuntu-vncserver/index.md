@@ -9,6 +9,9 @@
   sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
   sudo apt install tightvncserver
   vncserver
+  
+  注: 在防火墙上打开 VNC Server 的监听端口
+  VNC Server 用到了三个端口：5801(*)、5901(*)、6001
   ```
 
 - 修改~/.vnc/xstartup
@@ -113,6 +116,30 @@ EndSection
   ```
 
 - 重启机器
+
+- 检测虚拟显示器是否可用
+
+  ```
+  xrandr -q 
+  xrandr: Failed to get size of gamma for output default
+  Screen 0: minimum 320 x 240, current 1360 x 768, maximum 1360 x 768
+  default connected primary 1360x768+0+0 0mm x 0mm
+     1360x768      60.00* 
+     1280x720      60.00  
+     1024x768      60.00  
+     1024x576      60.00  
+     960x540       60.00  
+     800x600       60.00    56.00  
+     640x480       60.00  
+     684x384       60.00  
+     680x384       60.00  
+     640x360       60.00  
+     512x384       60.00  
+     512x288       60.00  
+     480x270       60.00  
+     400x300       60.00    56.00  
+     320x240       60.00
+  ```
 
 重启后自动启用虚拟显示屏，如果之后再需要用显示器，将/usr/share/X11/xorg.conf.d/xorg.conf文件移除，再重启机器即可。
 
