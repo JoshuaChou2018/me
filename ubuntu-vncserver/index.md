@@ -50,84 +50,210 @@
 
 
 
-**机器无显示屏情况-设置虚拟显示屏**
+## 机器无显示屏情况-设置虚拟显示屏 [转自：https://leimao.github.io/blog/Remote-Linux-Desktop/]
 
-- 安装xserver-xorg
+### Set Up Remote Linux Desktop
+
+### X Forwarding
+
+We have to first enable X forwarding.
+
+We SSH to the remote Linux computer with `-XC` where `X` is the X service and `C` allows data compression.
 
 ```
-sudo apt install xserver-xorg-video-dummy
+$ ssh -XC leimao@192.168.0.23
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.9.201-tegra aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+
+
+Last login: Sat May 15 09:18:28 2021 from 192.168.0.19
+/usr/bin/xauth:  file /home/leimao/.Xauthority does not exist
 ```
 
-- After that, save this config file as `dummy-1920x1080.conf`
-
+We install `xauth` if it has not been installed on the remote Linux computer.
 
 ```
-Section "Monitor"
-  Identifier "Monitor0"
-  HorizSync 28.0-80.0
-  VertRefresh 48.0-75.0
-  # https://arachnoid.com/modelines/
-  # 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz
-  Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
-EndSection
-
-Section "Device"
-  Identifier "Card0"
-  Driver "dummy"
-  VideoRam 256000
-EndSection
-
-Section "Screen"
-  DefaultDepth 24
-  Identifier "Screen0"
-  Device "Card0"
-  Monitor "Monitor0"
-  SubSection "Display"
-    Depth 24
-    Modes "1920x1080_60.00"
-  EndSubSection
-EndSection
+$ sudo apt update
+$ sudo apt install -y xauth
 ```
 
-- Now you can start X.org
+Make sure `X11Forwarding` is `yes` in `/etc/ssh/sshd_config`.
 
-  ```
-  sudo X -config dummy-1920x1080.conf &
-  
-  ###
-  X.Org X Server 1.19.6
-  Release Date: 2017-12-20
-  X Protocol Version 11, Revision 0
-  Build Operating System: Linux 4.4.0-138-generic x86_64 Ubuntu
-  Current Operating System: Linux ubuntu-s-1vcpu-2gb-fra1-01 4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64
-  Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-45-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
-  Build Date: 25 October 2018  04:11:27PM
-  xorg-server 2:1.19.6-1ubuntu4.2 (For technical support please see http://www.ubuntu.com/support) 
-  Current version of pixman: 0.34.0
-          Before reporting problems, check http://wiki.x.org
-          to make sure that you have the latest version.
-  Markers: (--) probed, (**) from config file, (==) default setting,
-          (++) from command line, (!!) notice, (II) informational,
-          (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-  (==) Log file: "/var/log/Xorg.0.log", Time: Sat Feb 23 17:48:07 2019
-  (++) Using config file: "dummy-1920x1080.conf"
-  (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-  ```
+```
+$ cat /etc/ssh/sshd_config | grep X11Forwarding
+X11Forwarding yes
+```
 
-- Starting your software
+Restart OpenSSH.
 
-  Now you can start your software that needs a graphical interface as follows (we use `firefox`, and display number 0, as an example):
+```
+sudo systemctl restart sshd
+```
 
-  ```null
-  DISPLAY=:0 firefox
-  ```
+Confirm X forwarding is enabled.
 
-- Starting X.org on a specific display number
+```
+$ echo $DISPLAY
+localhost:10.0
+```
 
-  If you want to start the X server on a specific display number, e.g. `7`, because some other dummy server is running concurrently, use this command to start the X server:
+Quick test X forwarding with X applications.
 
-  ```null
-  sudo X :7 -config dummy-1920x1080.conf
-  ```
+```
+$ sudo apt install -y x11-apps
+$ xclock
+```
 
+The GUI of the X applications will show up on our local computer.
+
+We could also try FireFox browser.
+
+```
+$ sudo apt install -y firefox
+$ firefox
+```
+
+### Linux Desktop Forwarding
+
+We have run single X applications successfully. Can we forward the entire remote Linux desktop? Sure, we can.
+
+We will have to install the following dependencies.
+
+```
+$ sudo touch /dev/fuse
+$ sudo apt install -y xfce4 xfce4-goodies gnome-icon-theme libcanberra-gtk-module
+```
+
+Run the following command on the remote Linux computer while we are still `ssh -X` in.
+
+```
+$ xfce4-session
+```
+
+The forwarded desktop will show up on our local computer.
+
+Opening X applications from the forwarded desktop is fine. But we were not able to open terminal to run commands.
+
+### Linux Desktop Forwarding via VNC
+
+A better way to forward the Linux Desktop is to use VNC service.
+
+To install the VNC server, we will install `tightvncserver` on the remote Linux computer.
+
+```
+$ sudo apt install -y tightvncserver
+```
+
+Then we could start a virtual desktop with an id of `1`.
+
+```
+$ vncserver :1 -geometry 1920x1080 -depth 24
+```
+
+We could then connect to the remote Linux desktop using VNC client software on our local computer.
+
+[Remmina](https://remmina.org/) is installed by default on my local Ubuntu 20.04 LTS. Here we just have to input the remote Linux computer IP address with the VNC virtual desktop id, and press `Enter`. 
+
+![Remmina](https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png)
+
+Remmina
+
+
+
+The connection was successful. However, we only see gray screen and could not do anything.
+
+To fix this problem, we disconnect the VNC connection and kill the virtual desktop.
+
+```
+$ vncserver -kill :1
+```
+
+We will install `lxde` on the remote Linux computer.
+
+```
+$ sudo apt install -y lxde
+```
+
+We will modify the `~/.vnc/xstartup` by adding `/usr/bin/startlxde` to it. The modified file will look like this.
+
+```
+$ cat ~/.vnc/xstartup 
+#!/bin/sh
+
+xrdb $HOME/.Xresources
+xsetroot -solid grey
+#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+#x-window-manager &
+# Fix to make GNOME work
+export XKL_XMODMAP_DISABLE=1
+/etc/X11/Xsession
+/usr/bin/startlxde
+```
+
+Finally, restart VNC server.
+
+```
+$ vncserver :1 -geometry 1920x1080 -depth 24
+```
+
+This time, the remote Linux desktop shows correctly in Remmina.
+
+![Remote Linux Desktop](https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png)
+
+Remote Linux Desktop
+
+
+
+There are some inconvenience that copy and paste text between the local computer and the remote desktop does not work. To fix this problem, again, we disconnect the VNC connection and kill the virtual desktop.
+
+```
+$ vncserver -kill :1
+```
+
+We will install `autocutsel` on the remote Linux computer.
+
+```
+$ sudo apt install -y autocutsel
+```
+
+We will modify the `~/.vnc/xstartup` by adding `autocutsel -fork` to it. The modified file will look like this.
+
+```
+$ cat ~/.vnc/xstartup 
+#!/bin/sh
+
+xrdb $HOME/.Xresources
+xsetroot -solid grey
+autocutsel -fork
+#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+#x-window-manager &
+# Fix to make GNOME work
+export XKL_XMODMAP_DISABLE=1
+/etc/X11/Xsession
+/usr/bin/startlxde
+```
+
+Finally, restart VNC server.
+
+```
+$ vncserver :1 -geometry 1920x1080 -depth 24
+```
+
+Now, we could copy and paste easily between the local computer and the remote desktop.
+
+## References
+
+- [Remote Linux Desktop on Your VPS with SSH and VNC](https://blog.ssdnodes.com/blog/remote-linux-desktop-vps-ssh-vnc/)
+- [Grey Screen Comes on Connecting to VNC Server](https://youtu.be/_8YZst2x9GE)
+- [Running X Client Using Virtual X Server Xvfb](https://leimao.github.io/blog/Running-X-Client-Using-Virtual-X-Server-Xvfb/)
+- [Raspberry Pi: Enabling Copy and Paste over VNC](https://youtu.be/npiX-11kBUU)
+- https://leimao.github.io/blog/Remote-Linux-Desktop/
 

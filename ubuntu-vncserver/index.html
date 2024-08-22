@@ -15,7 +15,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-02T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-08-22T14:25:03+03:00">
+    <meta property="article:modified_time" content="2024-08-22T15:14:51+03:00">
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Ubuntu">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
@@ -38,8 +38,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  458 ,
-        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-08-22T14:25:03+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  868 ,
+        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-08-22T15:14:51+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -120,14 +120,26 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Ubuntu配置VNCServer，一定能用，不白屏灰屏</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;458 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;868 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#机器无显示屏情况-设置虚拟显示屏-转自httpsleimaogithubioblogremote-linux-desktop">机器无显示屏情况-设置虚拟显示屏 [转自：https://leimao.github.io/blog/Remote-Linux-Desktop/]</a>
+      <ul>
+        <li><a href="#set-up-remote-linux-desktop">Set Up Remote Linux Desktop</a></li>
+        <li><a href="#x-forwarding">X Forwarding</a></li>
+        <li><a href="#linux-desktop-forwarding">Linux Desktop Forwarding</a></li>
+        <li><a href="#linux-desktop-forwarding-via-vnc">Linux Desktop Forwarding via VNC</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><ul>
 <li>
 <p>安装基础软件</p>
@@ -221,158 +233,307 @@
 </div>
 </div></li>
 </ul>
-<p><strong>机器无显示屏情况-设置虚拟显示屏</strong></p>
+<h2 id="机器无显示屏情况-设置虚拟显示屏-转自httpsleimaogithubioblogremote-linux-desktop">机器无显示屏情况-设置虚拟显示屏 [转自：https://leimao.github.io/blog/Remote-Linux-Desktop/]</h2>
+<h3 id="set-up-remote-linux-desktop">Set Up Remote Linux Desktop</h3>
+<h3 id="x-forwarding">X Forwarding</h3>
+<p>We have to first enable X forwarding.</p>
+<p>We SSH to the remote Linux computer with <code>-XC</code> where <code>X</code> is the X service and <code>C</code> allows data compression.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ ssh -XC leimao@192.168.0.23
+</span></span><span class="line"><span class="cl">Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.9.201-tegra aarch64)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> * Documentation:  https://help.ubuntu.com
+</span></span><span class="line"><span class="cl"> * Management:     https://landscape.canonical.com
+</span></span><span class="line"><span class="cl"> * Support:        https://ubuntu.com/advantage
+</span></span><span class="line"><span class="cl">This system has been minimized by removing packages and content that are
+</span></span><span class="line"><span class="cl">not required on a system that users do not log into.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">To restore this content, you can run the &#39;unminimize&#39; command.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Last login: Sat May 15 09:18:28 2021 from 192.168.0.19
+</span></span><span class="line"><span class="cl">/usr/bin/xauth:  file /home/leimao/.Xauthority does not exist
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We install <code>xauth</code> if it has not been installed on the remote Linux computer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt update
+</span></span><span class="line"><span class="cl">$ sudo apt install -y xauth
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Make sure <code>X11Forwarding</code> is <code>yes</code> in <code>/etc/ssh/sshd_config</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ cat /etc/ssh/sshd_config | grep X11Forwarding
+</span></span><span class="line"><span class="cl">X11Forwarding yes
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Restart OpenSSH.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo systemctl restart sshd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Confirm X forwarding is enabled.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ echo $DISPLAY
+</span></span><span class="line"><span class="cl">localhost:10.0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Quick test X forwarding with X applications.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install -y x11-apps
+</span></span><span class="line"><span class="cl">$ xclock
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The GUI of the X applications will show up on our local computer.</p>
+<p>We could also try FireFox browser.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install -y firefox
+</span></span><span class="line"><span class="cl">$ firefox
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="linux-desktop-forwarding">Linux Desktop Forwarding</h3>
+<p>We have run single X applications successfully. Can we forward the entire remote Linux desktop? Sure, we can.</p>
+<p>We will have to install the following dependencies.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo touch /dev/fuse
+</span></span><span class="line"><span class="cl">$ sudo apt install -y xfce4 xfce4-goodies gnome-icon-theme libcanberra-gtk-module
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Run the following command on the remote Linux computer while we are still <code>ssh -X</code> in.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ xfce4-session
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The forwarded desktop will show up on our local computer.</p>
+<p>Opening X applications from the forwarded desktop is fine. But we were not able to open terminal to run commands.</p>
+<h3 id="linux-desktop-forwarding-via-vnc">Linux Desktop Forwarding via VNC</h3>
+<p>A better way to forward the Linux Desktop is to use VNC service.</p>
+<p>To install the VNC server, we will install <code>tightvncserver</code> on the remote Linux computer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install -y tightvncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Then we could start a virtual desktop with an id of <code>1</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vncserver :1 -geometry 1920x1080 -depth 24
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We could then connect to the remote Linux desktop using VNC client software on our local computer.</p>
+<p><a href="https://remmina.org/" target="_blank" rel="noopener noreffer">Remmina</a> is installed by default on my local Ubuntu 20.04 LTS. Here we just have to input the remote Linux computer IP address with the VNC virtual desktop id, and press <code>Enter</code>.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png"
+        data-srcset="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png, https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png 1.5x, https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png 2x"
+        data-sizes="auto"
+        alt="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/remmina.png"
+        title="Remmina" /></p>
+<p>Remmina</p>
+<p>The connection was successful. However, we only see gray screen and could not do anything.</p>
+<p>To fix this problem, we disconnect the VNC connection and kill the virtual desktop.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vncserver -kill :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We will install <code>lxde</code> on the remote Linux computer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install -y lxde
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We will modify the <code>~/.vnc/xstartup</code> by adding <code>/usr/bin/startlxde</code> to it. The modified file will look like this.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat ~/.vnc/xstartup 
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">xsetroot -solid grey
+</span></span><span class="line"><span class="cl"><span class="c1">#x-terminal-emulator -geometry 80x24+10+10 -ls -title &#34;$VNCDESKTOP Desktop&#34; &amp;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#x-window-manager &amp;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Fix to make GNOME work</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XKL_XMODMAP_DISABLE</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">/etc/X11/Xsession
+</span></span><span class="line"><span class="cl">/usr/bin/startlxde
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Finally, restart VNC server.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vncserver :1 -geometry 1920x1080 -depth 24
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This time, the remote Linux desktop shows correctly in Remmina.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png"
+        data-srcset="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png, https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png 1.5x, https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png 2x"
+        data-sizes="auto"
+        alt="https://leimao.github.io/images/blog/2021-06-30-Remote-Linux-Desktop/vnc.png"
+        title="Remote Linux Desktop" /></p>
+<p>Remote Linux Desktop</p>
+<p>There are some inconvenience that copy and paste text between the local computer and the remote desktop does not work. To fix this problem, again, we disconnect the VNC connection and kill the virtual desktop.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vncserver -kill :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We will install <code>autocutsel</code> on the remote Linux computer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install -y autocutsel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>We will modify the <code>~/.vnc/xstartup</code> by adding <code>autocutsel -fork</code> to it. The modified file will look like this.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cat ~/.vnc/xstartup 
+</span></span><span class="line"><span class="cl"><span class="c1">#!/bin/sh</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">xsetroot -solid grey
+</span></span><span class="line"><span class="cl">autocutsel -fork
+</span></span><span class="line"><span class="cl"><span class="c1">#x-terminal-emulator -geometry 80x24+10+10 -ls -title &#34;$VNCDESKTOP Desktop&#34; &amp;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#x-window-manager &amp;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Fix to make GNOME work</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XKL_XMODMAP_DISABLE</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">/etc/X11/Xsession
+</span></span><span class="line"><span class="cl">/usr/bin/startlxde
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Finally, restart VNC server.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ vncserver :1 -geometry 1920x1080 -depth 24
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now, we could copy and paste easily between the local computer and the remote desktop.</p>
+<h2 id="references">References</h2>
 <ul>
-<li>安装xserver-xorg</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install xserver-xorg-video-dummy
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>After that, save this config file as <code>dummy-1920x1080.conf</code></li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Section &#34;Monitor&#34;
-</span></span><span class="line"><span class="cl">  Identifier &#34;Monitor0&#34;
-</span></span><span class="line"><span class="cl">  HorizSync 28.0-80.0
-</span></span><span class="line"><span class="cl">  VertRefresh 48.0-75.0
-</span></span><span class="line"><span class="cl">  # https://arachnoid.com/modelines/
-</span></span><span class="line"><span class="cl">  # 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz
-</span></span><span class="line"><span class="cl">  Modeline &#34;1920x1080_60.00&#34; 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
-</span></span><span class="line"><span class="cl">EndSection
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Section &#34;Device&#34;
-</span></span><span class="line"><span class="cl">  Identifier &#34;Card0&#34;
-</span></span><span class="line"><span class="cl">  Driver &#34;dummy&#34;
-</span></span><span class="line"><span class="cl">  VideoRam 256000
-</span></span><span class="line"><span class="cl">EndSection
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Section &#34;Screen&#34;
-</span></span><span class="line"><span class="cl">  DefaultDepth 24
-</span></span><span class="line"><span class="cl">  Identifier &#34;Screen0&#34;
-</span></span><span class="line"><span class="cl">  Device &#34;Card0&#34;
-</span></span><span class="line"><span class="cl">  Monitor &#34;Monitor0&#34;
-</span></span><span class="line"><span class="cl">  SubSection &#34;Display&#34;
-</span></span><span class="line"><span class="cl">    Depth 24
-</span></span><span class="line"><span class="cl">    Modes &#34;1920x1080_60.00&#34;
-</span></span><span class="line"><span class="cl">  EndSubSection
-</span></span><span class="line"><span class="cl">EndSection
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>
-<p>Now you can start X.org</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">X</span> <span class="o">-</span><span class="n">config</span> <span class="n">dummy</span><span class="o">-</span><span class="mi">1920</span><span class="n">x1080</span><span class="o">.</span><span class="n">conf</span> <span class="o">&amp;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">###</span>
-</span></span><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">Org</span> <span class="n">X</span> <span class="n">Server</span> <span class="mf">1.19</span><span class="o">.</span><span class="mi">6</span>
-</span></span><span class="line"><span class="cl"><span class="n">Release</span> <span class="n">Date</span><span class="p">:</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">20</span>
-</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="n">Protocol</span> <span class="n">Version</span> <span class="mi">11</span><span class="p">,</span> <span class="n">Revision</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="n">Build</span> <span class="n">Operating</span> <span class="n">System</span><span class="p">:</span> <span class="n">Linux</span> <span class="mf">4.4</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">138</span><span class="o">-</span><span class="n">generic</span> <span class="n">x86_64</span> <span class="n">Ubuntu</span>
-</span></span><span class="line"><span class="cl"><span class="n">Current</span> <span class="n">Operating</span> <span class="n">System</span><span class="p">:</span> <span class="n">Linux</span> <span class="n">ubuntu</span><span class="o">-</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="n">vcpu</span><span class="o">-</span><span class="mi">2</span><span class="n">gb</span><span class="o">-</span><span class="n">fra1</span><span class="o">-</span><span class="mi">01</span> <span class="mf">4.15</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">45</span><span class="o">-</span><span class="n">generic</span> <span class="c1">#48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64</span>
-</span></span><span class="line"><span class="cl"><span class="n">Kernel</span> <span class="n">command</span> <span class="n">line</span><span class="p">:</span> <span class="n">BOOT_IMAGE</span><span class="o">=/</span><span class="n">boot</span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="mf">4.15</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">45</span><span class="o">-</span><span class="n">generic</span> <span class="n">root</span><span class="o">=</span><span class="n">LABEL</span><span class="o">=</span><span class="n">cloudimg</span><span class="o">-</span><span class="n">rootfs</span> <span class="n">ro</span> <span class="n">console</span><span class="o">=</span><span class="n">tty1</span> <span class="n">console</span><span class="o">=</span><span class="n">ttyS0</span>
-</span></span><span class="line"><span class="cl"><span class="n">Build</span> <span class="n">Date</span><span class="p">:</span> <span class="mi">25</span> <span class="n">October</span> <span class="mi">2018</span>  <span class="mi">04</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">27</span><span class="n">PM</span>
-</span></span><span class="line"><span class="cl"><span class="n">xorg</span><span class="o">-</span><span class="n">server</span> <span class="mi">2</span><span class="p">:</span><span class="mf">1.19</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="mi">1</span><span class="n">ubuntu4</span><span class="o">.</span><span class="mi">2</span> <span class="p">(</span><span class="n">For</span> <span class="n">technical</span> <span class="n">support</span> <span class="n">please</span> <span class="n">see</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">support</span><span class="p">)</span> 
-</span></span><span class="line"><span class="cl"><span class="n">Current</span> <span class="n">version</span> <span class="n">of</span> <span class="n">pixman</span><span class="p">:</span> <span class="mf">0.34</span><span class="o">.</span><span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Before</span> <span class="n">reporting</span> <span class="n">problems</span><span class="p">,</span> <span class="n">check</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">wiki</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">org</span>
-</span></span><span class="line"><span class="cl">        <span class="n">to</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">you</span> <span class="n">have</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">version</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="n">Markers</span><span class="p">:</span> <span class="p">(</span><span class="o">--</span><span class="p">)</span> <span class="n">probed</span><span class="p">,</span> <span class="p">(</span><span class="o">**</span><span class="p">)</span> <span class="n">from</span> <span class="n">config</span> <span class="n">file</span><span class="p">,</span> <span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">default</span> <span class="n">setting</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="n">from</span> <span class="n">command</span> <span class="n">line</span><span class="p">,</span> <span class="p">(</span><span class="o">!!</span><span class="p">)</span> <span class="n">notice</span><span class="p">,</span> <span class="p">(</span><span class="n">II</span><span class="p">)</span> <span class="n">informational</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">WW</span><span class="p">)</span> <span class="n">warning</span><span class="p">,</span> <span class="p">(</span><span class="n">EE</span><span class="p">)</span> <span class="n">error</span><span class="p">,</span> <span class="p">(</span><span class="n">NI</span><span class="p">)</span> <span class="ow">not</span> <span class="n">implemented</span><span class="p">,</span> <span class="p">(</span><span class="err">??</span><span class="p">)</span> <span class="n">unknown</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">Log</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;/var/log/Xorg.0.log&#34;</span><span class="p">,</span> <span class="n">Time</span><span class="p">:</span> <span class="n">Sat</span> <span class="n">Feb</span> <span class="mi">23</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">07</span> <span class="mi">2019</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="n">Using</span> <span class="n">config</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;dummy-1920x1080.conf&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">Using</span> <span class="n">system</span> <span class="n">config</span> <span class="n">directory</span> <span class="s2">&#34;/usr/share/X11/xorg.conf.d&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>Starting your software</p>
-<p>Now you can start your software that needs a graphical interface as follows (we use <code>firefox</code>, and display number 0, as an example):</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DISPLAY=:0 firefox
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>Starting X.org on a specific display number</p>
-<p>If you want to start the X server on a specific display number, e.g. <code>7</code>, because some other dummy server is running concurrently, use this command to start the X server:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo X :7 -config dummy-1920x1080.conf
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
+<li><a href="https://blog.ssdnodes.com/blog/remote-linux-desktop-vps-ssh-vnc/" target="_blank" rel="noopener noreffer">Remote Linux Desktop on Your VPS with SSH and VNC</a></li>
+<li><a href="https://youtu.be/_8YZst2x9GE" target="_blank" rel="noopener noreffer">Grey Screen Comes on Connecting to VNC Server</a></li>
+<li><a href="https://leimao.github.io/blog/Running-X-Client-Using-Virtual-X-Server-Xvfb/" target="_blank" rel="noopener noreffer">Running X Client Using Virtual X Server Xvfb</a></li>
+<li><a href="https://youtu.be/npiX-11kBUU" target="_blank" rel="noopener noreffer">Raspberry Pi: Enabling Copy and Paste over VNC</a></li>
+<li><a href="https://leimao.github.io/blog/Remote-Linux-Desktop/" target="_blank" rel="noopener noreffer">https://leimao.github.io/blog/Remote-Linux-Desktop/</a></li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-08-22&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/f6f9e82422189733828589f64bb3ffb22b280ae1" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) f6f9e82422189733828589f64bb3ffb22b280ae1: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>f6f9e82</a></span>
+                <span>Updated on 2024-08-22&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/03e9baaf6b0c021ddc67c24b1d07b9291dd5f300" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) 03e9baaf6b0c021ddc67c24b1d07b9291dd5f300: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>03e9baa</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
