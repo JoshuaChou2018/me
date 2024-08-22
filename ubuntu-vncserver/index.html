@@ -15,7 +15,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-07-02T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-08-20T10:55:54+03:00">
+    <meta property="article:modified_time" content="2024-08-22T14:25:03+03:00">
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Ubuntu">
     <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
@@ -38,8 +38,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/"
-        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  383 ,
-        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-08-20T10:55:54+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "linux, ubuntu","wordcount":  458 ,
+        "url": "https:\/\/www.joshuachou.ink\/ubuntu-vncserver\/","datePublished": "2024-07-02T00:00:00+00:00","dateModified": "2024-08-22T14:25:03+03:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
@@ -120,8 +120,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Ubuntu配置VNCServer，一定能用，不白屏灰屏</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;383 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-07-02">2024-07-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;458 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -228,67 +228,14 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install  xserver-xorg-core-hwe-18.04
-</span></span><span class="line"><span class="cl">sudo apt-get install  xserver-xorg-video-dummy-hwe-18.04  --fix-missing
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install xserver-xorg-video-dummy
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>增加xorg配置文件，通过指令sudo nano /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。</li>
+<li>After that, save this config file as <code>dummy-1920x1080.conf</code></li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Section &#34;Device&#34;
-</span></span><span class="line"><span class="cl">    Identifier  &#34;Configured Video Device&#34;
-</span></span><span class="line"><span class="cl">    Driver      &#34;dummy&#34;
-</span></span><span class="line"><span class="cl">EndSection
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Section &#34;Monitor&#34;
-</span></span><span class="line"><span class="cl">    Identifier  &#34;Configured Monitor&#34;
-</span></span><span class="line"><span class="cl">    HorizSync 31.5-48.5
-</span></span><span class="line"><span class="cl">    VertRefresh 50-70
-</span></span><span class="line"><span class="cl">EndSection
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Section &#34;Screen&#34;
-</span></span><span class="line"><span class="cl">    Identifier  &#34;Default Screen&#34;
-</span></span><span class="line"><span class="cl">    Monitor     &#34;Configured Monitor&#34;
-</span></span><span class="line"><span class="cl">    Device      &#34;Configured Video Device&#34;
-</span></span><span class="line"><span class="cl">    DefaultDepth 24
-</span></span><span class="line"><span class="cl">    SubSection &#34;Display&#34;
-</span></span><span class="line"><span class="cl">    Depth 24
-</span></span><span class="line"><span class="cl">    Modes &#34;1920x1080&#34;
-</span></span><span class="line"><span class="cl">    EndSubSection
-</span></span><span class="line"><span class="cl">EndSection
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>
-<p>sudo nano /usr/share/X11/xorg.conf.d/dummy-1920x1080.conf</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -345,12 +292,9 @@
 </span></span><span class="line"><span class="cl">EndSection
 </span></span></code></pre></td></tr></table>
 </div>
-</div></li>
+</div><ul>
 <li>
-<p>重启机器</p>
-</li>
-<li>
-<p>检测虚拟显示器是否可用</p>
+<p>Now you can start X.org</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -372,38 +316,63 @@
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">xrandr -q 
-</span></span><span class="line"><span class="cl">xrandr: Failed to get size of gamma for output default
-</span></span><span class="line"><span class="cl">Screen 0: minimum 320 x 240, current 1360 x 768, maximum 1360 x 768
-</span></span><span class="line"><span class="cl">default connected primary 1360x768+0+0 0mm x 0mm
-</span></span><span class="line"><span class="cl">   1360x768      60.00* 
-</span></span><span class="line"><span class="cl">   1280x720      60.00  
-</span></span><span class="line"><span class="cl">   1024x768      60.00  
-</span></span><span class="line"><span class="cl">   1024x576      60.00  
-</span></span><span class="line"><span class="cl">   960x540       60.00  
-</span></span><span class="line"><span class="cl">   800x600       60.00    56.00  
-</span></span><span class="line"><span class="cl">   640x480       60.00  
-</span></span><span class="line"><span class="cl">   684x384       60.00  
-</span></span><span class="line"><span class="cl">   680x384       60.00  
-</span></span><span class="line"><span class="cl">   640x360       60.00  
-</span></span><span class="line"><span class="cl">   512x384       60.00  
-</span></span><span class="line"><span class="cl">   512x288       60.00  
-</span></span><span class="line"><span class="cl">   480x270       60.00  
-</span></span><span class="line"><span class="cl">   400x300       60.00    56.00  
-</span></span><span class="line"><span class="cl">   320x240       60.00
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">X</span> <span class="o">-</span><span class="n">config</span> <span class="n">dummy</span><span class="o">-</span><span class="mi">1920</span><span class="n">x1080</span><span class="o">.</span><span class="n">conf</span> <span class="o">&amp;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">###</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span><span class="o">.</span><span class="n">Org</span> <span class="n">X</span> <span class="n">Server</span> <span class="mf">1.19</span><span class="o">.</span><span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">Release</span> <span class="n">Date</span><span class="p">:</span> <span class="mi">2017</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="n">Protocol</span> <span class="n">Version</span> <span class="mi">11</span><span class="p">,</span> <span class="n">Revision</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">Build</span> <span class="n">Operating</span> <span class="n">System</span><span class="p">:</span> <span class="n">Linux</span> <span class="mf">4.4</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">138</span><span class="o">-</span><span class="n">generic</span> <span class="n">x86_64</span> <span class="n">Ubuntu</span>
+</span></span><span class="line"><span class="cl"><span class="n">Current</span> <span class="n">Operating</span> <span class="n">System</span><span class="p">:</span> <span class="n">Linux</span> <span class="n">ubuntu</span><span class="o">-</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="n">vcpu</span><span class="o">-</span><span class="mi">2</span><span class="n">gb</span><span class="o">-</span><span class="n">fra1</span><span class="o">-</span><span class="mi">01</span> <span class="mf">4.15</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">45</span><span class="o">-</span><span class="n">generic</span> <span class="c1">#48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64</span>
+</span></span><span class="line"><span class="cl"><span class="n">Kernel</span> <span class="n">command</span> <span class="n">line</span><span class="p">:</span> <span class="n">BOOT_IMAGE</span><span class="o">=/</span><span class="n">boot</span><span class="o">/</span><span class="n">vmlinuz</span><span class="o">-</span><span class="mf">4.15</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="mi">45</span><span class="o">-</span><span class="n">generic</span> <span class="n">root</span><span class="o">=</span><span class="n">LABEL</span><span class="o">=</span><span class="n">cloudimg</span><span class="o">-</span><span class="n">rootfs</span> <span class="n">ro</span> <span class="n">console</span><span class="o">=</span><span class="n">tty1</span> <span class="n">console</span><span class="o">=</span><span class="n">ttyS0</span>
+</span></span><span class="line"><span class="cl"><span class="n">Build</span> <span class="n">Date</span><span class="p">:</span> <span class="mi">25</span> <span class="n">October</span> <span class="mi">2018</span>  <span class="mi">04</span><span class="p">:</span><span class="mi">11</span><span class="p">:</span><span class="mi">27</span><span class="n">PM</span>
+</span></span><span class="line"><span class="cl"><span class="n">xorg</span><span class="o">-</span><span class="n">server</span> <span class="mi">2</span><span class="p">:</span><span class="mf">1.19</span><span class="o">.</span><span class="mi">6</span><span class="o">-</span><span class="mi">1</span><span class="n">ubuntu4</span><span class="o">.</span><span class="mi">2</span> <span class="p">(</span><span class="n">For</span> <span class="n">technical</span> <span class="n">support</span> <span class="n">please</span> <span class="n">see</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">ubuntu</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">support</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="n">Current</span> <span class="n">version</span> <span class="n">of</span> <span class="n">pixman</span><span class="p">:</span> <span class="mf">0.34</span><span class="o">.</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Before</span> <span class="n">reporting</span> <span class="n">problems</span><span class="p">,</span> <span class="n">check</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">wiki</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">org</span>
+</span></span><span class="line"><span class="cl">        <span class="n">to</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">you</span> <span class="n">have</span> <span class="n">the</span> <span class="n">latest</span> <span class="n">version</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">Markers</span><span class="p">:</span> <span class="p">(</span><span class="o">--</span><span class="p">)</span> <span class="n">probed</span><span class="p">,</span> <span class="p">(</span><span class="o">**</span><span class="p">)</span> <span class="n">from</span> <span class="n">config</span> <span class="n">file</span><span class="p">,</span> <span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">default</span> <span class="n">setting</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="n">from</span> <span class="n">command</span> <span class="n">line</span><span class="p">,</span> <span class="p">(</span><span class="o">!!</span><span class="p">)</span> <span class="n">notice</span><span class="p">,</span> <span class="p">(</span><span class="n">II</span><span class="p">)</span> <span class="n">informational</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">(</span><span class="n">WW</span><span class="p">)</span> <span class="n">warning</span><span class="p">,</span> <span class="p">(</span><span class="n">EE</span><span class="p">)</span> <span class="n">error</span><span class="p">,</span> <span class="p">(</span><span class="n">NI</span><span class="p">)</span> <span class="ow">not</span> <span class="n">implemented</span><span class="p">,</span> <span class="p">(</span><span class="err">??</span><span class="p">)</span> <span class="n">unknown</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">Log</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;/var/log/Xorg.0.log&#34;</span><span class="p">,</span> <span class="n">Time</span><span class="p">:</span> <span class="n">Sat</span> <span class="n">Feb</span> <span class="mi">23</span> <span class="mi">17</span><span class="p">:</span><span class="mi">48</span><span class="p">:</span><span class="mi">07</span> <span class="mi">2019</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">++</span><span class="p">)</span> <span class="n">Using</span> <span class="n">config</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;dummy-1920x1080.conf&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="o">==</span><span class="p">)</span> <span class="n">Using</span> <span class="n">system</span> <span class="n">config</span> <span class="n">directory</span> <span class="s2">&#34;/usr/share/X11/xorg.conf.d&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Starting your software</p>
+<p>Now you can start your software that needs a graphical interface as follows (we use <code>firefox</code>, and display number 0, as an example):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DISPLAY=:0 firefox
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Starting X.org on a specific display number</p>
+<p>If you want to start the X server on a specific display number, e.g. <code>7</code>, because some other dummy server is running concurrently, use this command to start the X server:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo X :7 -config dummy-1920x1080.conf
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
-<p>重启后自动启用虚拟显示屏，如果之后再需要用显示器，将/usr/share/X11/xorg.conf.d/xorg.conf文件移除，再重启机器即可。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-08-20&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/80eecda07ccf98ba13cc0ab0057cb6e965615ea0" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) 80eecda07ccf98ba13cc0ab0057cb6e965615ea0: 1">
-                                    <i class="fas fa-hashtag fa-fw"></i>80eecda</a></span>
+                <span>Updated on 2024-08-22&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/f6f9e82422189733828589f64bb3ffb22b280ae1" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) f6f9e82422189733828589f64bb3ffb22b280ae1: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>f6f9e82</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>

@@ -55,92 +55,79 @@
 - 安装xserver-xorg
 
 ```
-sudo apt-get install  xserver-xorg-core-hwe-18.04
-sudo apt-get install  xserver-xorg-video-dummy-hwe-18.04  --fix-missing
+sudo apt install xserver-xorg-video-dummy
 ```
 
-- 增加xorg配置文件，通过指令sudo nano /usr/share/X11/xorg.conf.d/xorg.conf，添加以下内容。
+- After that, save this config file as `dummy-1920x1080.conf`
+
 
 ```
-Section "Device"
-    Identifier  "Configured Video Device"
-    Driver      "dummy"
+Section "Monitor"
+  Identifier "Monitor0"
+  HorizSync 28.0-80.0
+  VertRefresh 48.0-75.0
+  # https://arachnoid.com/modelines/
+  # 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz
+  Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
 EndSection
 
-Section "Monitor"
-    Identifier  "Configured Monitor"
-    HorizSync 31.5-48.5
-    VertRefresh 50-70
+Section "Device"
+  Identifier "Card0"
+  Driver "dummy"
+  VideoRam 256000
 EndSection
 
 Section "Screen"
-    Identifier  "Default Screen"
-    Monitor     "Configured Monitor"
-    Device      "Configured Video Device"
-    DefaultDepth 24
-    SubSection "Display"
+  DefaultDepth 24
+  Identifier "Screen0"
+  Device "Card0"
+  Monitor "Monitor0"
+  SubSection "Display"
     Depth 24
-    Modes "1920x1080"
-    EndSubSection
+    Modes "1920x1080_60.00"
+  EndSubSection
 EndSection
 ```
 
-- sudo nano /usr/share/X11/xorg.conf.d/dummy-1920x1080.conf
+- Now you can start X.org
 
   ```
-  Section "Monitor"
-    Identifier "Monitor0"
-    HorizSync 28.0-80.0
-    VertRefresh 48.0-75.0
-    # https://arachnoid.com/modelines/
-    # 1920x1080 @ 60.00 Hz (GTF) hsync: 67.08 kHz; pclk: 172.80 MHz
-    Modeline "1920x1080_60.00" 172.80 1920 2040 2248 2576 1080 1081 1084 1118 -HSync +Vsync
-  EndSection
+  sudo X -config dummy-1920x1080.conf &
   
-  Section "Device"
-    Identifier "Card0"
-    Driver "dummy"
-    VideoRam 256000
-  EndSection
-  
-  Section "Screen"
-    DefaultDepth 24
-    Identifier "Screen0"
-    Device "Card0"
-    Monitor "Monitor0"
-    SubSection "Display"
-      Depth 24
-      Modes "1920x1080_60.00"
-    EndSubSection
-  EndSection
+  ###
+  X.Org X Server 1.19.6
+  Release Date: 2017-12-20
+  X Protocol Version 11, Revision 0
+  Build Operating System: Linux 4.4.0-138-generic x86_64 Ubuntu
+  Current Operating System: Linux ubuntu-s-1vcpu-2gb-fra1-01 4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64
+  Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-45-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+  Build Date: 25 October 2018  04:11:27PM
+  xorg-server 2:1.19.6-1ubuntu4.2 (For technical support please see http://www.ubuntu.com/support) 
+  Current version of pixman: 0.34.0
+          Before reporting problems, check http://wiki.x.org
+          to make sure that you have the latest version.
+  Markers: (--) probed, (**) from config file, (==) default setting,
+          (++) from command line, (!!) notice, (II) informational,
+          (WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+  (==) Log file: "/var/log/Xorg.0.log", Time: Sat Feb 23 17:48:07 2019
+  (++) Using config file: "dummy-1920x1080.conf"
+  (==) Using system config directory "/usr/share/X11/xorg.conf.d"
   ```
 
-- 重启机器
+- Starting your software
 
-- 检测虚拟显示器是否可用
+  Now you can start your software that needs a graphical interface as follows (we use `firefox`, and display number 0, as an example):
 
-  ```
-  xrandr -q 
-  xrandr: Failed to get size of gamma for output default
-  Screen 0: minimum 320 x 240, current 1360 x 768, maximum 1360 x 768
-  default connected primary 1360x768+0+0 0mm x 0mm
-     1360x768      60.00* 
-     1280x720      60.00  
-     1024x768      60.00  
-     1024x576      60.00  
-     960x540       60.00  
-     800x600       60.00    56.00  
-     640x480       60.00  
-     684x384       60.00  
-     680x384       60.00  
-     640x360       60.00  
-     512x384       60.00  
-     512x288       60.00  
-     480x270       60.00  
-     400x300       60.00    56.00  
-     320x240       60.00
+  ```null
+  DISPLAY=:0 firefox
   ```
 
-重启后自动启用虚拟显示屏，如果之后再需要用显示器，将/usr/share/X11/xorg.conf.d/xorg.conf文件移除，再重启机器即可。
+- Starting X.org on a specific display number
+
+  If you want to start the X server on a specific display number, e.g. `7`, because some other dummy server is running concurrently, use this command to start the X server:
+
+  ```null
+  sudo X :7 -config dummy-1920x1080.conf
+  ```
 
 
