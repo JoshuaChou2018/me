@@ -6,7 +6,7 @@
 </div>
 
 
-**Juexiao Zhou 周觉晓, Joshua Chou**
+### **Juexiao Zhou 周觉晓, Joshua Chou**
 
 Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/)
 
