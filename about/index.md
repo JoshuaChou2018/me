@@ -64,9 +64,7 @@ Center of Excellence on Smart Health
 
 
 
-### Short Bio
-
-##### English Bio
+### Brief Timeline
 
 He is a Ph.D. Candidate in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) from Dec 2021 - Present.
 
@@ -75,6 +73,14 @@ He got the Master of Science degree, M.S. in Computer Science at [King Abdullah 
 He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
 
 He was born on  Jan 20, 1999 in Hunan, China.
+
+
+
+### Short Bio
+
+##### English Bio
+
+Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Technology (KAUST) in Saudi Arabia, under the supervision of Professor Xin Gao. He is also the co-founder and Chief AI Scientist at the American company DermAssure.ai. His research lies at the intersection of computer science and biomedicine, focusing on intelligent healthcare and bioinformatics. His work primarily involves AI for Healthcare (AI4H), where he develops advanced AI algorithms for tasks such as disease detection and risk assessment in the healthcare sector, including large language models (LLMs). He also works on developing new methods in bioinformatics, such as gene regulatory networks, functional and structural prediction, and systems biology. Additionally, he is concerned with privacy and security issues in deep learning and General Artificial Intelligence (PAGI) within the medical field. He has published over 30 academic papers in prestigious journals and conferences, including *Science Advances*, *Nature Machine Intelligence*, *Nature Communications*, *Trends in Genetics*, *The Lancet*, *Genome Research*, *Bioinformatics*, and MICCAI. His research has been widely covered by mainstream media outlets, such as *Arab News*, *Radio Television Hong Kong (RTHK)*, and *Inside Precision Medicine*. Juexiao is a member of CAAI/APBioNET/GBD and serves as a reviewer for several SCI journals, including *Medical Image Analysis*, *Computers in Biology and Medicine*, *Computational Biology and Chemistry*, *Computerized Medical Imaging and Graphics*, *Genome Biology*, *Genome Research*, and *IEEE Transactions on Knowledge and Data Engineering*. He also reviews for various international conferences, such as NeurIPS, IJCAI-ECAI, ICONIP, MICCAI, and SIGKDD.
 
 <br>
 
