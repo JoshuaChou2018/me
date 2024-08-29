@@ -12,6 +12,8 @@ Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/)
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
+Co-founder & Chief Executive Officer @MOSS.ai
+
 Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
 [Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
@@ -389,6 +391,10 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 ### Teaching Experience
 
+- **CS220, Data Analytics**, Fall 2024/2025, KAUST
+  - Cooperated with Prof. Xin Gao
+  - Position: **Teaching Assistant**
+  
 - **CS220, Data Analytics - AI Camp for Ministry of Interior**, Saudi Arabia, Fall 2023/2024, KAUST
   - Cooperated with Prof. Xin Gao
   
@@ -502,6 +508,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 - **SkinGPT-4** was covered by:
   - How a Saudi university is using AI to transform the diagnosis and treatment of skin diseases, [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia)
   - How Saudi Arabia's SkinGPT-4 is Revolutionizing Skin Care?, [ChicHue](https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html)
+  - 皮肤诊断“智能”升级：阿卜杜拉国王科技大学团队引入多模态大语言模型, [澎湃新闻](https://www.thepaper.cn/newsDetail_forward_28040125)
 - **PPML-Omics protects patients’ privacy in omic data**  was covered by:
   - Algorithm Proposed to Protect Patient Privacy, [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/)
   - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/)
@@ -571,6 +578,12 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |                     MICCAI 2024                     |        5         |
 |                 Multimedia Systems                  |        1         |
 |                     SIGKDD 2022                     |        2         |
+
+<br>
+
+#### Editor
+
+- Guest Editor Assistant in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
 
 <br>
 
