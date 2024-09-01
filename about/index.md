@@ -12,7 +12,7 @@ Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/)
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
-Co-founder & Chief Executive Officer @MOSS.ai
+Co-founder & CEO @MOSS.ai
 
 Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
