@@ -9,58 +9,60 @@
     <pubDate>Sat, 05 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/neurips-personalized-federated-learning-a-meta-learning-approach/</guid>
-    <description><![CDATA[Title: Personalized Federated Learning: A Meta-Learning Approach
-INFO: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)
-研究背景 目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。
-However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
-但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
-This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
-在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
-In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
+    <description><![CDATA[<p><strong>Title:</strong> Personalized Federated Learning: A Meta-Learning Approach</p>
+<p><strong>INFO:</strong> 34th Conference on Neural Information Processing Systems (NeurIPS 2020)</p>
+<h6 id="研究背景">研究背景</h6>
+<p>目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。</p>
+<blockquote>
+<p>However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.</p>
+</blockquote>
+<p>但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。</p>
+<blockquote>
+<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>]]></description>
 </item><item>
     <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
     <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
     <pubDate>Fri, 04 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</guid>
-    <description><![CDATA[Title: Personalized Federated Learning With Differential Privacy
-DOI: 10.1109/JIOT.2020.2991416
-INFO: IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020
-发表周期: Manuscript received December 15, 2019; revised March 20, 2020; accepted April 13, 2020. Date of publication April 30, 2020;]]></description>
+    <description><![CDATA[<p><strong>Title:</strong> Personalized Federated Learning With Differential Privacy</p>
+<p><strong>DOI:</strong> 10.1109/JIOT.2020.2991416</p>
+<p><strong>INFO:</strong> IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020</p>
+<p><strong>发表周期</strong>: Manuscript received December 15, 2019; revised March 20, 2020; accepted April  13,  2020.  Date of publication April 30, 2020;</p>]]></description>
 </item><item>
     <title>[NMI] A geometric deep learning approach to predict binding conformations of bioactive molecules 解读</title>
     <link>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</link>
     <pubDate>Sun, 02 Jan 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/nmi-a-geometric-deep-learning-approach-to-predict-binding-conformations-of-bioactive-molecules/</guid>
-    <description><![CDATA[Title: A geometric deep learning approach to predict binding conformations of bioactive molecules
-DOI: https://doi.org/10.1038/s42256-021-00409-9
-INFO: NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021
-发表周期: Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021
-药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。
-One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.]]></description>
+    <description><![CDATA[<p><strong>Title:</strong> A geometric deep learning approach to predict binding conformations of bioactive molecules</p>
+<p><strong>DOI:</strong> <a href="https://doi.org/10.1038/s42256-021-00409-9" target="_blank" rel="noopener noreffer">https://doi.org/10.1038/s42256-021-00409-9</a></p>
+<p><strong>INFO:</strong> NATURE MACHINE INTELLIGENCE | VOL 3 | DECEMBER 2021</p>
+<p><strong>发表周期</strong>: Received: 18 May 2021; Accepted: 28 September 2021; Published online: 2 December 2021</p>
+<p>药物设计是近年来AI应用的极火领域之一，其中一个最有挑战的问题就是空间结构设计。</p>
+<blockquote>
+<p>One of the difficulties arises from the fact that only a small portion of the large chemical space will bind to a specific biological target and result in a therapeutic effect.</p>]]></description>
 </item><item>
     <title>i4.genetic algorithm and evolutionary algorithm</title>
     <link>https://www.joshuachou.ink/i4.gaea/</link>
     <pubDate>Sun, 14 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/i4.gaea/</guid>
-    <description><![CDATA[Q. What are genetic algorithm and evolutionary algorithm?
-Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).
-There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:
-GA: They were developed by Holland and thoroughly reviewed by Goldberg;]]></description>
+    <description><![CDATA[<p><strong>Q. What are genetic algorithm and evolutionary algorithm?</strong></p>
+<p>Genetic algorithm (GA) is a sub-class of evolutionary algorithm (EA).</p>
+<p>There are 3 implementation of EAs: GA, evolution strategies (ES), and evolutionary programming (EP). Among these, GAs have proved to be the most popular of the 3 EAs. These algorithms are similar in general, yet there are big differences among them:</p>
+<p><strong>GA</strong>: They were developed by Holland and thoroughly reviewed by Goldberg;</p>]]></description>
 </item><item>
     <title>i3.different types of machine learning</title>
     <link>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</link>
     <pubDate>Mon, 08 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/i3.different-types-of-machine-learning/</guid>
-    <description><![CDATA[Q. What Are the Different Types of Machine Learning?
-Supervised learning
-A model makes predictions or decisions based on past or labeled data. Labeled data refers to sets of data that are given tags or labels, and thus made more meaningful.
-Unsupervised learning
-In this case, we don’t have labeled data, a model can identify patterns, anomalies, and relationships in the input data.
-Reinforcement learning
-The model learn based on the rewards received from the previous action.]]></description>
+    <description><![CDATA[<p><strong>Q. What Are the Different Types of Machine Learning?</strong></p>
+<p><strong>Supervised learning</strong></p>
+<p>A model makes predictions or decisions based on past or labeled data. Labeled data refers to sets of data that are given tags or labels, and thus made more meaningful.</p>
+<p><strong>Unsupervised learning</strong></p>
+<p>In this case, we don’t have labeled data, a model can identify patterns, anomalies, and relationships in the input data.</p>
+<p><strong>Reinforcement learning</strong></p>]]></description>
 </item></channel>
 </rss>

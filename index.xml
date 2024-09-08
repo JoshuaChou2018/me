@@ -11,234 +11,371 @@
     <pubDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu-vncserver/</guid>
-    <description><![CDATA[安装基础软件
-1 2 3 4 5 6 7 8 sudo apt update sudo apt-get upgrade sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal sudo apt install tightvncserver vncserver 注: 在防火墙上打开 VNC Server 的监听端口 VNC Server 用到了三个端口：5801(*)、5901(*)、6001 修改~/.vnc/xstartup
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash export $(dbus-launch) export XKL_XMODMAP_DISABLE=1 export XDG_CURRENT_DESKTOP=&#34;GNOME-Flashback:Unity&#34; export XDG_MENU_PREFIX=&#34;gnome-flashback-&#34; unset SESSION_MANAGER gnome-panel &amp; gnome-settings-daemon &amp; metacity &amp; nautilus &amp; gnome-terminal &amp; # [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup # [ -r $HOME/.]]></description>
+    <description><![CDATA[<ul>
+<li>
+<p>安装基础软件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt-get upgrade
+</span></span><span class="line"><span class="cl">sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+</span></span><span class="line"><span class="cl">sudo apt install tightvncserver
+</span></span><span class="line"><span class="cl">vncserver
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">注: 在防火墙上打开 VNC Server 的监听端口
+</span></span><span class="line"><span class="cl">VNC Server 用到了三个端口：5801(*)、5901(*)、6001
+</span></span></code></pr]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>
     <link>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</link>
     <pubDate>Wed, 20 Mar 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</guid>
-    <description><![CDATA[Problem description 1 2 3 4 5 6 &gt;&gt;&gt; torch.cuda.is_available() /home/python3.8/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /opt/con da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.) return torch._C._cuda_getDeviceCount() &gt; 0 False But both nvcc - V and nvidia-smi still work
-Solution 1 2 sudo rmmod nvidia_uvm sudo modprobe nvidia_uvm ]]></description>
+    <description><![CDATA[<h1 id="problem-description">Problem description</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">&gt;&gt;&gt; torch.cuda.is_available<span class="o">()</span>                                                     
+</span></span><span class="line"><span class="cl">/home/python3.8/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an
+</span></span><span class="line"><span class="cl"> incorrectly <span class="nb">set</span> up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. <span class="o">(</span>Triggered internally at /opt/con
+</span></span><span class="line"><span class="cl">da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.<span class="o">)</span>   <span class="k">return</span> torch._C._cuda_getDeviceCount<span class="o">()</span> &gt; <span class="m">0</span>                        
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">False         
+</span></span></code></pr]]></description>
 </item><item>
     <title>ubuntu 18.04 升级至 glibc_2.28</title>
     <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
     <pubDate>Mon, 18 Mar 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</guid>
-    <description><![CDATA[近期在ubuntu 18.04上开发PyQt6前段时发现问题：
-ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
-1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
-1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc
-下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
-准备编译环境
-1 $ sudo apt install build-essential gawk bison 然后解压和编译
-1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr]]></description>
+    <description><![CDATA[<p>近期在ubuntu 18.04上开发PyQt6前段时发现问题：</p>
+<p>ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="o">$</span> <span class="err">/opt/Qt/Tools/QtCreator/bin/qtcreator</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version <span class="sb">`</span>glibc_2.28<span class="err">&#39;</span> not found
+</span></span></code></pr]]></description>
 </item><item>
     <title>How to Install and Configure VNC on Ubuntu 20.04</title>
     <link>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</link>
     <pubDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</guid>
-    <description><![CDATA[Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
-In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel.]]></description>
+    <description><![CDATA[<h3 id="introduction">Introduction</h3>
+<p><em>Virtual Network Computing</em>, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.</p>
+<p>In this guide, you’ll set up a VNC server with <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a> on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.</p>]]></description>
 </item><item>
     <title>生物信息领域牛刊修仙版</title>
     <link>https://www.joshuachou.ink/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%89%9B%E5%88%8A/</link>
     <pubDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E9%A2%86%E5%9F%9F%E7%89%9B%E5%88%8A/</guid>
-    <description><![CDATA[在知乎上看到生物信息学领域的牛刊投稿顺序，发现一个很有趣的回答，于是转载一下作为参考：
-凡人期：这是修仙之路的起点，指的是还未开始修炼或刚刚接触修炼之道的普通研究生。
-arXiv，bioRxiv
-练气期：这是修仙的基础阶段，研究生修行者开始吸收天地灵气，将其转化为体内的元力。
-BMC genomics，BMC bioinformatics，BMC biology，BMC medical genomics
-筑基期：这是研究生修仙之路的起点，修行者开始修炼内功，累积内力，打下坚实的基础。
-Bioinformatics，PLoS computational biology，PLoS genetics，Briefings in bioinformatics，BMC medicine
-金丹期：修行者的内力能够凝聚成金丹，这个金丹象征着高级别的修为和力量。
-Nucleic Acids Research，eBiomedicine，Advanced Science，PLoS Biology
-元婴期：修行者的金丹形成元婴，元婴是修行者灵魂和修为的化身，跨入更高的境界。
-Genome Biology，Genome Medicine，Genome Research，Molecular Systems Biology，Cell systems
-化神期：修行者的元婴进一步成长，开始向神灵的境界转变。
-Nature Communications，PNAS，Science Advances，Cell Reports
-合体期：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。
-Nature Machine Intelligence，Nature Computational Sciences
-大乘期：修行者几乎达到了仙道的巅峰，具备了创造或改变世界的能力。
-Nature Genetics，Nature Biotechnology，Nature Methods，Nature Medicine，Cell Genomics
-飞升期：修行者完成了修仙之路，失去凡体，飞升仙界，无相无形，成为自然（Nature）。
-Nature，Science，Cell
-Acknowledgement:
-作者：浪矢Ryan 链接：https://www.zhihu.com/question/21660698/answer/3310893434 来源：知乎]]></description>
+    <description><![CDATA[<p>在知乎上看到生物信息学领域的牛刊投稿顺序，发现一个很有趣的回答，于是转载一下作为参考：</p>
+<p><strong>凡人期</strong>：这是修仙之路的起点，指的是还未开始修炼或刚刚接触修炼之道的普通研究生。</p>
+<blockquote>
+<p>arXiv，bioRxiv</p>
+</blockquote>
+<p><strong>练气期</strong>：这是修仙的基础阶段，研究生修行者开始吸收天地灵气，将其转化为体内的元力。</p>
+<blockquote>
+<p>BMC genomics，BMC bioinformatics，BMC biology，BMC medical genomics</p>
+</blockquote>
+<p><strong>筑基期</strong>：这是研究生修仙之路的起点，修行者开始修炼内功，累积内力，打下坚实的基础。</p>
+<blockquote>
+<p>Bioinformatics，PLoS computational biology，PLoS genetics，Briefings in bioinformatics，BMC medicine</p>
+</blockquote>
+<p><strong>金丹期</strong>：修行者的内力能够凝聚成金丹，这个<a href="https://www.zhihu.com/search?q=%e9%87%91%e4%b8%b9&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">金丹</a>象征着高级别的修为和力量。</p>
+<blockquote>
+<p>Nucleic Acids Research，eBiomedicine，Advanced Science，PLoS Biology</p>
+</blockquote>
+<p><strong><a href="https://www.zhihu.com/search?q=%e5%85%83%e5%a9%b4%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">元婴期</a></strong>：修行者的金丹形成元婴，元婴是修行者灵魂和修为的化身，跨入更高的境界。</p>
+<blockquote>
+<p>Genome Biology，Genome Medicine，Genome Research，Molecular Systems Biology，Cell systems</p>
+</blockquote>
+<p><strong>化神期</strong>：修行者的元婴进一步成长，开始向神灵的境界转变。</p>
+<blockquote>
+<p>Nature Communications，PNAS，Science Advances，Cell Reports</p>
+</blockquote>
+<p><strong><a href="https://www.zhihu.com/search?q=%e5%90%88%e4%bd%93%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">合体期</a></strong>：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。</p>]]></description>
 </item><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
     <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
-拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
-1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
-1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
-1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
-https://hub.docker.com/repository/
-用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
-上传镜像
-1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.]]></description>
+    <description><![CDATA[<p>近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。</p>
+<ol>
+<li>
+<p><strong>拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>进入镜像，修改软件配置环境等：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
+</span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
+</span></span></code></pr]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+    <description><![CDATA[<ol>
+<li>
+<p>获取IP地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install net-tools
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装openssh，这样可以远程ssh连接服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install openssh-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装gcc</p>]]></description>
 </item><item>
     <title>[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</title>
     <link>https://www.joshuachou.ink/news-skingpt-4/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/news-skingpt-4/</guid>
-    <description><![CDATA[We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
-Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge.]]></description>
+    <description><![CDATA[<p>We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</p>
+<p>Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge. Lastly, generating patient-friendly diagnostic reports is usually a time-consuming and labor-intensive task for dermatologists. To tackle these challenges, we present SkinGPT-4, which is the world&rsquo;s first interactive dermatology diagnostic system powered by an advanced visual large language model. SkinGPT-4 leverages a fine-tuned version of MiniGPT-4, trained on an extensive collection of skin disease images (comprising 52,929 publicly available and proprietary images) along with clinical concepts and doctors&rsquo; notes. We designed a two-step training process to allow SkinGPT-4 to express medical features in skin disease images with natural language and make accurate diagnoses of the types of skin diseases. With SkinGPT-4, users could upload their own skin photos for diagnosis, and the system could autonomously evaluate the images, identifies the characteristics and categories of the skin conditions, performs in-depth analysis, and provides interactive treatment recommendations. Meanwhile, SkinGPT-4&rsquo;s local deployment capability and commitment to user privacy also render it an appealing choice for patients in search of a dependable and precise diagnosis of their skin ailments. To demonstrate the robustness of SkinGPT-4, we conducted quantitative evaluations on 150 real-life cases, which were independently reviewed by certified dermatologists, and showed that SkinGPT-4 could provide accurate diagnoses of skin diseases. Though SkinGPT-4 is not a substitute for doctors, it could enhance users&rsquo; comprehension of their medical conditions, facilitate improve communication between patients and doctors, expedite the diagnostic process for dermatologists, and potentially promote human-centred care and healthcare equity in underdeveloped areas.</p>]]></description>
 </item><item>
     <title>chrome 解决在http协议下无法调用摄像头和麦克风的问题</title>
     <link>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-    <description><![CDATA[**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头
-解决方案：
-在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车
-该选项置为Enabled
-在输入框中输入需要访问的地址，多个地址使用“,”隔开
-然后点击右下角弹出的Relaunch按钮
-重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了]]></description>
+    <description><![CDATA[<p>**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头</p>
+<p><strong>解决方案：</strong></p>
+<p>在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车</p>
+<p>该选项置为Enabled</p>
+<p>在输入框中输入需要访问的地址，多个地址使用“,”隔开</p>
+<p>然后点击右下角弹出的Relaunch按钮</p>
+<p>重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</p>
+<p></p>]]></description>
 </item><item>
     <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
     <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<p></p>
+<p></p>]]></description>
 </item><item>
     <title>Mac更新后无法连接Apple所有服务</title>
     <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
-    <description><![CDATA[问题描述 Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。
-解决方案 打开/Library/Preferences/SystemConfiguration 这个文件夹 删除除了com.apple.Boot.plist 之外的其他文件，然后重新启动 ]]></description>
+    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
+<p>Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。</p>
+<h3 id="解决方案">解决方案</h3>
+<ul>
+<li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
+<li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
+</ul>]]></description>
 </item><item>
     <title>ubuntu18.04安装后的登陆问题、卡顿问题及基本环境配置</title>
     <link>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[参考 https://blog.csdn.net/weixin_51524504/article/details/119487457]]></description>
+    <description><![CDATA[<p>参考 <a href="https://blog.csdn.net/weixin_51524504/article/details/119487457" target="_blank" rel="noopener noreffer">https://blog.csdn.net/weixin_51524504/article/details/119487457</a></p>]]></description>
 </item><item>
     <title>macOS上使用Openconnect代替Cisco Anyconnect</title>
     <link>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</link>
     <pubDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</guid>
-    <description><![CDATA[今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品
-下面说下Openconnect安装方法：
-命令行模式:
-1 brew install openconnect GUI模式:
-1 brew install openconnect-gui --cask 安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:
-1 sudo spctl --master-disable ]]></description>
+    <description><![CDATA[<p>今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品</p>
+<p>下面说下Openconnect安装方法：</p>
+<p>命令行模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GUI模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect-gui --cask
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pr]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
     <pubDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos-cmake-gui/</guid>
-    <description><![CDATA[之前使用命令行安装：
-1 brew install cmake 安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。
-1 brew uninstall cmake 然后手动安装cmake，去官网下载。
-网址：https://cmake.org/download/
-下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。
-下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。
-这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。
-安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。
-1 sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install 查看版本：
-1 cmake --version Ref: https://www.cnblogs.com/juluwangshier/p/12987258.html]]></description>
+    <description><![CDATA[<p>之前使用命令行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew uninstall cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后手动安装cmake，去官网下载。</p>
+<p>网址：https://cmake.org/download/</p>
+<p></p>]]></description>
 </item><item>
     <title>pycharm增加运行时内存</title>
     <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
     <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
-    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
-2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
-3，将**-Xms**属性的值修改为你想要的结果，然后保存
-1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+    <description><![CDATA[<p>1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”</p>
+<p>2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。</p>
+<p>3，将**-Xms**属性的值修改为你想要的结果，然后保存</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-Xmx750m 增加到 -Xmx1024m
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4，重启Pycharm</p>]]></description>
 </item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/blender-python/</guid>
-    <description><![CDATA[ 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install ]]></description>
+    <description><![CDATA[<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">p37</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
+</span></span><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">TylerGubala</span><span class="o">/</span><span class="n">blenderpy</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">91</span><span class="n">a0</span><span class="o">/</span><span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span>
+</span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span> <span class="o">&amp;&amp;</span> <span class="n">bpy_post_install</span>
+</span></span></code></pr]]></description>
 </item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
     <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
-    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
-1 jupyter URL is invalid Solution:
-Even without a token, use the url: http://url:port?token=
-Then it works]]></description>
+    <description><![CDATA[<p>When setting jupyter interpreter in pycharm, it may throw the error:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter URL is invalid
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Solution:</strong></p>
+<p>Even without a token, use the url: <strong>http://url:port?token=</strong></p>
+<p>Then it works</p>]]></description>
 </item><item>
     <title>[转载] 谷歌开源计算框架JAX”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</link>
     <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</guid>
-    <description><![CDATA[相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！
-下面是使用Numpy的运行情况：
-1 2 3 import numpy as np # 使用标准numpy，运算将在CPU上执行。 x = np.random.random([5000, 5000]).astype(np.float32) %timeit np.matmul(x, x) 运行结果：
-1 2 1 loop, best of 3: 3.9 s per loop 而下面是使用JAX的Numpy的情况： import jax.numpy as np # 使用&#34;JAX版&#34;的numpy from jax import random # 注意JAX下随机数API有所不同 x = random.uniform(random.PRNGKey(0), [5000, 5000]) %timeit np.matmul(x, x) 运行情况：
-1 1 loop, best of 3: 109 ms per loop 我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！
-是不是很神奇？ 那JAX到底是什么？
-JAX是谷歌开源的、可以在CPU、GPU和TPU上运行的numpy，是针对机器学习研究的高性能自微分计算框架。]]></description>
+    <description><![CDATA[<p></p>
+<p>相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！</p>]]></description>
 </item><item>
     <title>[转载] 同态加密：实现数据的“可算不可见”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</link>
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</guid>
-    <description><![CDATA[同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。
-本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。
-一、同态加密概述 1、基本概念 同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。
-图1：同态加密原理
-如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。
-目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。
-2、研究进展 1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。
-表1：各类同态加密算法
-*类型* *算法* *时间* *说明* *实际应用* 半同态加密 乘法同态 RSA算法 1977 非随机化加密，具有乘法同态性的原始算法面临选择明文攻击 在非同态场景中应用广泛 ElGamal算法 1985 随机化加密 DSS数字签名标准基于ElGamal数字签名算法的变体 加法同态 Paillier算法 1999 应用最为成熟 联邦学习 有限次数全同态 Boneh-Goh-Nissim方案 2005 仅支持1次乘法同态运算 / 全同态加密 Gentry方案 2009 第一代全同态加密，性能较差 / BGV方案 2012 第二代全同态加密，性能相对较好 IBM HElib开源库 BFV方案 2012 第二代全同态加密，与BGV类似 微软SEAL开源库 GSW方案 2013 第三代全同态加密，基于近似特征向量 TFHE开源库 CKKS方案 2017 可实现浮点数近似计算，适合机器学习建模场景 HElib和SEAL 3、标准化进展 （1）半同态加密标准化]]></description>
+    <description><![CDATA[<blockquote>
+<p>同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。</p>
+<p>本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。</p>
+</blockquote>
+<h2 id="一同态加密概述">一、同态加密概述</h2>
+<h3 id="1基本概念">1、基本概念</h3>
+<p>同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。</p>]]></description>
 </item><item>
     <title>Homomorphic Encryption</title>
     <link>https://www.joshuachou.ink/homomorphic-encryption/</link>
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/homomorphic-encryption/</guid>
-    <description><![CDATA[Outsourcing computation, privately Homomorphic evaluation function:
-Eval: f, Enc(x) -&gt; Enc(f(x))
-Fully homomorphic encryption Fully homomorphic = correctness for any efficient f = correctness for universal set
-Approximate eigenvector method 基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。
-**idea：**使用approximate eigenvectors，在secret key右乘cipher text
-Learning with errors (LWE) R05 Rearranging notation **basic idea: ** we have a matrix A, we can generate a matrix s, such that sA=$\eta$
-Encryption scheme from LWE Encryption Decryption it can be generalized to matrices.]]></description>
+    <description><![CDATA[<h2 id="outsourcing-computation-privately">Outsourcing computation, privately</h2>
+<p></p>]]></description>
 </item></channel>
 </rss>

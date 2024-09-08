@@ -9,110 +9,222 @@
     <pubDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu-vncserver/</guid>
-    <description><![CDATA[安装基础软件
-1 2 3 4 5 6 7 8 sudo apt update sudo apt-get upgrade sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal sudo apt install tightvncserver vncserver 注: 在防火墙上打开 VNC Server 的监听端口 VNC Server 用到了三个端口：5801(*)、5901(*)、6001 修改~/.vnc/xstartup
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 #!/bin/bash export $(dbus-launch) export XKL_XMODMAP_DISABLE=1 export XDG_CURRENT_DESKTOP=&#34;GNOME-Flashback:Unity&#34; export XDG_MENU_PREFIX=&#34;gnome-flashback-&#34; unset SESSION_MANAGER gnome-panel &amp; gnome-settings-daemon &amp; metacity &amp; nautilus &amp; gnome-terminal &amp; # [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup # [ -r $HOME/.]]></description>
+    <description><![CDATA[<ul>
+<li>
+<p>安装基础软件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt-get upgrade
+</span></span><span class="line"><span class="cl">sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+</span></span><span class="line"><span class="cl">sudo apt install tightvncserver
+</span></span><span class="line"><span class="cl">vncserver
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">注: 在防火墙上打开 VNC Server 的监听端口
+</span></span><span class="line"><span class="cl">VNC Server 用到了三个端口：5801(*)、5901(*)、6001
+</span></span></code></pr]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>
     <link>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</link>
     <pubDate>Wed, 20 Mar 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</guid>
-    <description><![CDATA[Problem description 1 2 3 4 5 6 &gt;&gt;&gt; torch.cuda.is_available() /home/python3.8/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /opt/con da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.) return torch._C._cuda_getDeviceCount() &gt; 0 False But both nvcc - V and nvidia-smi still work
-Solution 1 2 sudo rmmod nvidia_uvm sudo modprobe nvidia_uvm ]]></description>
+    <description><![CDATA[<h1 id="problem-description">Problem description</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">&gt;&gt;&gt; torch.cuda.is_available<span class="o">()</span>                                                     
+</span></span><span class="line"><span class="cl">/home/python3.8/site-packages/torch/cuda/__init__.py:141: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an
+</span></span><span class="line"><span class="cl"> incorrectly <span class="nb">set</span> up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. <span class="o">(</span>Triggered internally at /opt/con
+</span></span><span class="line"><span class="cl">da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.<span class="o">)</span>   <span class="k">return</span> torch._C._cuda_getDeviceCount<span class="o">()</span> &gt; <span class="m">0</span>                        
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">False         
+</span></span></code></pr]]></description>
 </item><item>
     <title>ubuntu 18.04 升级至 glibc_2.28</title>
     <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
     <pubDate>Mon, 18 Mar 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</guid>
-    <description><![CDATA[近期在ubuntu 18.04上开发PyQt6前段时发现问题：
-ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错
-1 $ /opt/Qt/Tools/QtCreator/bin/qtcreator 报错
-1 /opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version `glibc_2.28&#39; not found 此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc
-下载 https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz
-准备编译环境
-1 $ sudo apt install build-essential gawk bison 然后解压和编译
-1 2 3 4 5 6 $ tar -xJf glibc-2.28.tar.xz $ cd glibc-2.28/ $ mkdir build $ cd build $ ../configure --prefix=/usr $ make 到这一步后不要 sudo make install 立刻安装到 /usr]]></description>
+    <description><![CDATA[<p>近期在ubuntu 18.04上开发PyQt6前段时发现问题：</p>
+<p>ubuntu 18.04.6 默认的 glibc 版本位 2.27, 在运行最新的 Qt Creator 6.0.2 时会报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-awk" data-lang="awk"><span class="line"><span class="cl"><span class="o">$</span> <span class="err">/opt/Qt/Tools/QtCreator/bin/qtcreator</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version <span class="sb">`</span>glibc_2.28<span class="err">&#39;</span> not found
+</span></span></code></pr]]></description>
 </item><item>
     <title>How to Install and Configure VNC on Ubuntu 20.04</title>
     <link>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</link>
     <pubDate>Sun, 25 Feb 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</guid>
-    <description><![CDATA[Introduction Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
-In this guide, you’ll set up a VNC server with TightVNC on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel.]]></description>
+    <description><![CDATA[<h3 id="introduction">Introduction</h3>
+<p><em>Virtual Network Computing</em>, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.</p>
+<p>In this guide, you’ll set up a VNC server with <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a> on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.</p>]]></description>
 </item><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
     <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
-拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
-1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
-1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
-1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
-https://hub.docker.com/repository/
-用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
-上传镜像
-1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.]]></description>
+    <description><![CDATA[<p>近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。</p>
+<ol>
+<li>
+<p><strong>拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>进入镜像，修改软件配置环境等：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
+</span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
+</span></span></code></pr]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+    <description><![CDATA[<ol>
+<li>
+<p>获取IP地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install net-tools
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装openssh，这样可以远程ssh连接服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install openssh-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装gcc</p>]]></description>
 </item><item>
     <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
     <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
-    <description><![CDATA[]]></description>
+    <description><![CDATA[<p></p>
+<p></p>]]></description>
 </item><item>
     <title>ubuntu18.04安装后的登陆问题、卡顿问题及基本环境配置</title>
     <link>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[参考 https://blog.csdn.net/weixin_51524504/article/details/119487457]]></description>
+    <description><![CDATA[<p>参考 <a href="https://blog.csdn.net/weixin_51524504/article/details/119487457" target="_blank" rel="noopener noreffer">https://blog.csdn.net/weixin_51524504/article/details/119487457</a></p>]]></description>
 </item><item>
     <title>macOS上使用Openconnect代替Cisco Anyconnect</title>
     <link>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</link>
     <pubDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</guid>
-    <description><![CDATA[今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品
-下面说下Openconnect安装方法：
-命令行模式:
-1 brew install openconnect GUI模式:
-1 brew install openconnect-gui --cask 安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:
-1 sudo spctl --master-disable ]]></description>
+    <description><![CDATA[<p>今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品</p>
+<p>下面说下Openconnect安装方法：</p>
+<p>命令行模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GUI模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect-gui --cask
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pr]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
     <pubDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos-cmake-gui/</guid>
-    <description><![CDATA[之前使用命令行安装：
-1 brew install cmake 安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。
-1 brew uninstall cmake 然后手动安装cmake，去官网下载。
-网址：https://cmake.org/download/
-下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。
-下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。
-这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。
-安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。
-1 sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install 查看版本：
-1 cmake --version Ref: https://www.cnblogs.com/juluwangshier/p/12987258.html]]></description>
+    <description><![CDATA[<p>之前使用命令行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew uninstall cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后手动安装cmake，去官网下载。</p>
+<p>网址：https://cmake.org/download/</p>
+<p></p>]]></description>
 </item></channel>
 </rss>

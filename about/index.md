@@ -142,7 +142,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
       <br>
       <b>Press: </b>
       <a href="https://www.arabnews.com/node/2543731/saudi-arabia">Arab News</a>,
-      <a href="https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html">ChicHue</a>
+      <a href="https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html">ChicHue</a>,
+      <a href="https://discovery.kaust.edu.sa/en/article/24627/k2081_ais-helping-hand-for-skin-disorders/">KAUST Discovery</a>,
+      <a href="https://www.360zhyx.com/home-research-index-rid-79898.shtml">转化医学网</a>
       </td>
     </tr>
     </table>
@@ -376,6 +378,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 
 
+
 <br>
 
 
@@ -509,6 +512,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
   - How a Saudi university is using AI to transform the diagnosis and treatment of skin diseases, [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia)
   - How Saudi Arabia's SkinGPT-4 is Revolutionizing Skin Care?, [ChicHue](https://www.chichue.com/2024/07/ai-diagnoses-skin-conditions.html)
   - 皮肤诊断“智能”升级：阿卜杜拉国王科技大学团队引入多模态大语言模型, [澎湃新闻](https://www.thepaper.cn/newsDetail_forward_28040125)
+  - AI tool for diagnosing skin disorders, [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/24627/k2081_ais-helping-hand-for-skin-disorders/)
 - **PPML-Omics protects patients’ privacy in omic data**  was covered by:
   - Algorithm Proposed to Protect Patient Privacy, [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/)
   - An integrated shuffler optimizes the privacy of personal genomic data used for machine learning, [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/)
@@ -532,6 +536,8 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 ### Invited Talks
 
+- [2024/09/04] 子刊论文撰写经验分享.
+  - *Oral.* 青岛中医药科学院医学人工智能研究中心, 中国
 - [2024/08/15] AI for Healthcare: Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Oral.* 汕头大学医学院“智能计算赋能医学”, 中国
 - [2023/11/22] Introduction to ChatGPT and Application of GPT in Healthcare.
@@ -563,7 +569,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
 |          Computers in Biology and Medicine          |        19        |
-|         Computational Biology and Chemistry         |        1         |
+|         Computational Biology and Chemistry         |        2         |
 |      Computerized Medical Imaging and Graphics      |        1         |
 |                   Genome Biology                    |        1         |
 |                   Genome Research                   |        2         |

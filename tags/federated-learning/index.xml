@@ -9,23 +9,25 @@
     <pubDate>Sat, 05 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/neurips-personalized-federated-learning-a-meta-learning-approach/</guid>
-    <description><![CDATA[Title: Personalized Federated Learning: A Meta-Learning Approach
-INFO: 34th Conference on Neural Information Processing Systems (NeurIPS 2020)
-研究背景 目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。
-However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.
-但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。
-This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.
-在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。
-In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.]]></description>
+    <description><![CDATA[<p><strong>Title:</strong> Personalized Federated Learning: A Meta-Learning Approach</p>
+<p><strong>INFO:</strong> 34th Conference on Neural Information Processing Systems (NeurIPS 2020)</p>
+<h6 id="研究背景">研究背景</h6>
+<p>目前的联邦学习框架是基于所有users的数据，整合训练出一个最优的server模型。</p>
+<blockquote>
+<p>However, this scheme only develops a common output for all the users, and, therefore, it does not adapt the model to each user.</p>
+</blockquote>
+<p>但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。</p>
+<blockquote>
+<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>]]></description>
 </item><item>
     <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
     <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
     <pubDate>Fri, 04 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</guid>
-    <description><![CDATA[Title: Personalized Federated Learning With Differential Privacy
-DOI: 10.1109/JIOT.2020.2991416
-INFO: IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020
-发表周期: Manuscript received December 15, 2019; revised March 20, 2020; accepted April 13, 2020. Date of publication April 30, 2020;]]></description>
+    <description><![CDATA[<p><strong>Title:</strong> Personalized Federated Learning With Differential Privacy</p>
+<p><strong>DOI:</strong> 10.1109/JIOT.2020.2991416</p>
+<p><strong>INFO:</strong> IEEE INTERNET OF THINGS JOURNAL, VOL. 7, NO. 10, OCTOBER 2020</p>
+<p><strong>发表周期</strong>: Manuscript received December 15, 2019; revised March 20, 2020; accepted April  13,  2020.  Date of publication April 30, 2020;</p>]]></description>
 </item></channel>
 </rss>

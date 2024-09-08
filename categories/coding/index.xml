@@ -9,7 +9,38 @@
     <pubDate>Mon, 01 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/publish-package-on-conda/</guid>
-    <description><![CDATA[Install Conda Packaging Tool 1 conda install conda-build anaconda-client File Structure 1 2 3 4 5 6 7 8 9 - home/ - my_package/ - my_package/ - package_lib/ - setup.py - README.md - run_test.py - build.sh - meta.yaml meta.yaml This file tells conda-build how to package files under my_package/
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 package: name: my_package version: 1.]]></description>
+    <description><![CDATA[<h4 id="install-conda-packaging-tool">Install Conda Packaging Tool</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">conda install conda-build anaconda-client
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="file-structure">File Structure</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    - home/
+</span></span><span class="line"><span class="cl">        - my_package/
+</span></span><span class="line"><span class="cl">            - my_package/
+</span></span><span class="line"><span class="cl">                - package_lib/
+</span></span><span class="line"><span class="cl">                - setup.py
+</span></span><span class="line"><span class="cl">                - README.md
+</span></span><span class="line"><span class="cl">                - run_test.py
+</span></span><span class="line"><span class="cl">            - build.sh
+</span></span><span class="line"><span class="cl">            - meta.yaml    
+</span></span></code></pr]]></description>
 </item></channel>
 </rss>

@@ -9,8 +9,21 @@
     <pubDate>Sun, 21 Aug 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/run-ubuntu-in-docker/</guid>
-    <description><![CDATA[Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
-1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
-1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.]]></description>
+    <description><![CDATA[<h1 id="run-ubuntu-linux-in-docker-with-desktop-environment-and-vnc">Run Ubuntu Linux in Docker with Desktop Environment and VNC</h1>
+<h2 id="step-1--install-docker-on-your-system">Step 1 – Install Docker on your System</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo systemctl start docker &amp;&amp; sudo systemctl enable docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Add your system user to the Docker group to be able to execute Docker commands without *<strong>sudo*</strong>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pr]]></description>
 </item></channel>
 </rss>

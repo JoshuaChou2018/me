@@ -9,7 +9,12 @@
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
-    <description><![CDATA[问题描述 Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。
-解决方案 打开/Library/Preferences/SystemConfiguration 这个文件夹 删除除了com.apple.Boot.plist 之外的其他文件，然后重新启动 ]]></description>
+    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
+<p>Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。</p>
+<h3 id="解决方案">解决方案</h3>
+<ul>
+<li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
+<li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
+</ul>]]></description>
 </item></channel>
 </rss>

@@ -11,12 +11,7 @@
   <meta property="og:description" content="近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
 拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
 1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
-1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
-1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
-https://hub.docker.com/repository/
-用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
-上传镜像
-1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.">
+1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less ">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -32,12 +27,7 @@ https://hub.docker.com/repository/
   <meta name="twitter:description" content="近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
 拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
 1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
-1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
-1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
-https://hub.docker.com/repository/
-用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
-上传镜像
-1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.">
+1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less ">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

@@ -9,9 +9,74 @@
     <pubDate>Wed, 03 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/i1.sort-1-million/</guid>
-    <description><![CDATA[Q. What is the most efficient way to sort a million integers?
-Time Complexity
-Sorting Algorithm Average Case Best Case Worst Case Bubble Sort O(n^2) O(n) O(n^2) Insertion Sort O(n^2) O(n) O(n^2) Selection Sort O(n^2) O(n^2) O(n^2) Quick Sort O(n.log(n)) O(n.log(n)) O(n^2) Merge Sort O(n.log(n)) O(n.log(n)) O(n.log(n)) Heap Sort O(n.log(n)) O(n.log(n)) O(n.log(n)) Counting Sort O(n+k) O(n+k) O(n+k) Radix Sort O(n*k) O(n*k) O(n*k) Bucket Sort O(n+k) O(n+k) O(n^2) Space Complexity
-Sorting Algorithm Space Complexity Bubble Sort O(1) Insertion Sort O(1) Selection Sort O(1) Quick Sort O(log(n)) Merge Sort O(n) Heap Sort O(1) Counting Sort O(k) Radix Sort O(n + k) Bucket Sort O(n) Stability]]></description>
+    <description><![CDATA[<p><strong>Q. What is the most efficient way to sort a million integers?</strong></p>
+<p><strong>Time Complexity</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Sorting Algorithm</th>
+          <th style="text-align: left">Average Case</th>
+          <th style="text-align: left">Best Case</th>
+          <th style="text-align: left">Worst Case</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/bubblesort-algorithm/" target="_blank" rel="noopener noreffer">Bubble Sort</a></td>
+          <td style="text-align: left">O(n^2)</td>
+          <td style="text-align: left">O(n)</td>
+          <td style="text-align: left">O(n^2)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/insertion-sort-algorithm/" target="_blank" rel="noopener noreffer">Insertion Sort</a></td>
+          <td style="text-align: left">O(n^2)</td>
+          <td style="text-align: left">O(n)</td>
+          <td style="text-align: left">O(n^2)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/selection-sort-algorithm/" target="_blank" rel="noopener noreffer">Selection Sort</a></td>
+          <td style="text-align: left">O(n^2)</td>
+          <td style="text-align: left">O(n^2)</td>
+          <td style="text-align: left">O(n^2)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/quicksort-algorithm/" target="_blank" rel="noopener noreffer">Quick Sort</a></td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n^2)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/merge-sort-algorithm/" target="_blank" rel="noopener noreffer">Merge Sort</a></td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n.log(n))</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/heap-sort-algorithm/" target="_blank" rel="noopener noreffer">Heap Sort</a></td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n.log(n))</td>
+          <td style="text-align: left">O(n.log(n))</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/counting-sort-algorithm/" target="_blank" rel="noopener noreffer">Counting Sort</a></td>
+          <td style="text-align: left">O(n+k)</td>
+          <td style="text-align: left">O(n+k)</td>
+          <td style="text-align: left">O(n+k)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/radix-sort-algorithm/" target="_blank" rel="noopener noreffer">Radix Sort</a></td>
+          <td style="text-align: left">O(n*k)</td>
+          <td style="text-align: left">O(n*k)</td>
+          <td style="text-align: left">O(n*k)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://coderslegacy.com/python/bucket-sort-algorithm/" target="_blank" rel="noopener noreffer">Bucket Sort</a></td>
+          <td style="text-align: left">O(n+k)</td>
+          <td style="text-align: left">O(n+k)</td>
+          <td style="text-align: left">O(n^2)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Space Complexity</strong></p>]]></description>
 </item></channel>
 </rss>

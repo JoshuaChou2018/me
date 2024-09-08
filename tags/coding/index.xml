@@ -9,20 +9,36 @@
     <pubDate>Thu, 18 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc3.longest_substring_without_repeating_characters/</guid>
-    <description><![CDATA[Given a string s, find the length of the longest substring without repeating characters.
-Example 1:
-1 2 3 Input: s = &#34;abcabcbb&#34; Output: 3 Explanation: The answer is &#34;abc&#34;, with the length of 3. Example 2:
-1 2 3 Input: s = &#34;bbbbb&#34; Output: 1 Explanation: The answer is &#34;b&#34;, with the length of 1. Example 3:
-1 2 3 4 Input: s = &#34;pwwkew&#34; Output: 3 Explanation: The answer is &#34;wke&#34;, with the length of 3.]]></description>
+    <description><![CDATA[<p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> without repeating characters.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;abcabcbb&#34;
+</span></span><span class="line"><span class="cl">Output: 3
+</span></span><span class="line"><span class="cl">Explanation: The answer is &#34;abc&#34;, with the length of 3.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pr]]></description>
 </item><item>
     <title>lc2.Add Two Numbers</title>
     <link>https://www.joshuachou.ink/lc2.add2numbers/</link>
     <pubDate>Sun, 07 Nov 2021 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc2.add2numbers/</guid>
-    <description><![CDATA[You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Example 1:
-1 2 3 Input: l1 = [2,4,3], l2 = [5,6,4] Output: [7,0,8] Explanation: 342 + 465 = 807.]]></description>
+    <description><![CDATA[<p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
+<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
+<p><strong>Example 1:</strong></p>
+<p></p>]]></description>
 </item></channel>
 </rss>

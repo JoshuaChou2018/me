@@ -9,117 +9,162 @@
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc1570.-dot-product-of-two-sparse-vectors/</guid>
-    <description><![CDATA[给定两个稀疏向量，计算它们的点积（数量积）。
-实现类 SparseVector：
-SparseVector(nums) 以向量 nums 初始化对象。 dotProduct(vec) 计算此向量与 vec 的点积。 稀疏向量 是指绝大多数分量为 0 的向量。你需要 高效 地存储这个向量，并计算两个稀疏向量的点积。
-进阶：当其中只有一个向量是稀疏向量时，你该如何解决此问题？
-示例 1：
-输入：nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
-输出：8
-解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
-v1.dotProduct(v2) = 10 + 03 + 00 + 24 + 3*0 = 8
-示例 2：
-输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]
-输出：0
-解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)
-v1.dotProduct(v2) = 00 + 10 + 00 + 00 + 0*2 = 0]]></description>
+    <description><![CDATA[<p>给定两个稀疏向量，计算它们的点积（数量积）。</p>
+<p>实现类 SparseVector：</p>
+<p>SparseVector(nums) 以向量 nums 初始化对象。
+dotProduct(vec) 计算此向量与 vec 的点积。
+稀疏向量 是指绝大多数分量为 0 的向量。你需要 高效 地存储这个向量，并计算两个稀疏向量的点积。</p>
+<p>进阶：当其中只有一个向量是稀疏向量时，你该如何解决此问题？</p>
+<p>示例 1：</p>
+<p>输入：nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]</p>
+<p>输出：8</p>
+<p>解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)</p>
+<p>v1.dotProduct(v2) = 1<em>0 + 0</em>3 + 0<em>0 + 2</em>4 + 3*0 = 8</p>
+<p>示例 2：</p>
+<p>输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]</p>
+<p>输出：0</p>
+<p>解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)</p>]]></description>
 </item><item>
     <title>lc50. Pow(x, n)</title>
     <link>https://www.joshuachou.ink/lc50.-powx-n/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc50.-powx-n/</guid>
-    <description><![CDATA[Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
-Example 1:
-1 2 Input: x = 2.00000, n = 10 Output: 1024.00000 Example 2:
-1 2 Input: x = 2.10000, n = 3 Output: 9.26100 Example 3:
-1 2 3 Input: x = 2.00000, n = -2 Output: 0.25000 Explanation: 2-2 = 1/22 = 1/4 = 0.25 Constraints:
--100.0 &lt; x &lt; 100.0 -231 &lt;= n &lt;= 231-1 -104 &lt;= xn &lt;= 104 思路 ]]></description>
+    <description><![CDATA[<p>Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_blank" rel="noopener noreffer">pow(x, n)</a>, which calculates <code>x</code> raised to the power <code>n</code> (i.e., <code>xn</code>).</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: x = 2.00000, n = 10
+</span></span><span class="line"><span class="cl">Output: 1024.00000
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pr]]></description>
 </item><item>
     <title>lc76. Minimum Window Substring</title>
     <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc76.-minimum-window-substring/</guid>
-    <description><![CDATA[Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string &quot;&quot;.
-The testcases will be generated such that the answer is unique.
-A substring is a contiguous sequence of characters within the string.
-Example 1:
-1 2 3 Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34; Output: &#34;BANC&#34; Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.]]></description>
+    <description><![CDATA[<p>Given two strings <code>s</code> and <code>t</code> of lengths <code>m</code> and <code>n</code> respectively, return <em>the <strong>minimum window substring</strong> of</em> <code>s</code> <em>such that every character in</em> <code>t</code> (including duplicates) is included in the window. If there is no such substring, return the empty string <code>&quot;&quot;</code>.</p>
+<p>The testcases will be generated such that the answer is <strong>unique</strong>.</p>
+<p>A <strong>substring</strong> is a contiguous sequence of characters within the string.</p>
+<p><strong>Example 1:</strong></p>]]></description>
 </item><item>
     <title>lc88. Merge Sorted Array</title>
     <link>https://www.joshuachou.ink/lc88.-merge-sorted-array/</link>
     <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc88.-merge-sorted-array/</guid>
-    <description><![CDATA[You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
-Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.]]></description>
+    <description><![CDATA[<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
+<p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>
+<p>The final sorted array should not be returned by the function, but instead be <em>stored inside the array</em> <code>nums1</code>. To accommodate this, <code>nums1</code> has a length of <code>m + n</code>, where the first <code>m</code> elements denote the elements that should be merged, and the last <code>n</code> elements are set to <code>0</code> and should be ignored. <code>nums2</code> has a length of <code>n</code>.</p>]]></description>
 </item><item>
     <title>lc621. Task Scheduler</title>
     <link>https://www.joshuachou.ink/lc621.-task-scheduler/</link>
     <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc621.-task-scheduler/</guid>
-    <description><![CDATA[Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.
-However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks.]]></description>
+    <description><![CDATA[<p>Given a characters array <code>tasks</code>, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle.</p>
+<p>However, there is a non-negative integer <code>n</code> that represents the cooldown period between two <strong>same tasks</strong> (the same letter in the array), that is that there must be at least <code>n</code> units of time between any two same tasks.</p>]]></description>
 </item><item>
     <title>lc15. 3Sum</title>
     <link>https://www.joshuachou.ink/lc15.-3sum/</link>
     <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc15.-3sum/</guid>
-    <description><![CDATA[Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
-Example 1:
-1 2 Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Example 2:
-1 2 Input: nums = [] Output: [] Example 3:
-1 2 Input: nums = [0] Output: [] Constraints:]]></description>
+    <description><![CDATA[<p>Given an integer array nums, return all the triplets <code>[nums[i], nums[j], nums[k]]</code> such that <code>i != j</code>, <code>i != k</code>, and <code>j != k</code>, and <code>nums[i] + nums[j] + nums[k] == 0</code>.</p>
+<p>Notice that the solution set must not contain duplicate triplets.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [-1,0,1,2,-1,-4]
+</span></span><span class="line"><span class="cl">Output: [[-1,-1,2],[-1,0,1]]
+</span></span></code></pr]]></description>
 </item><item>
     <title>lc297. Serialize and Deserialize Binary Tree</title>
     <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
     <pubDate>Mon, 14 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</guid>
-    <description><![CDATA[Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
-Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.]]></description>
+    <description><![CDATA[<p>Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.</p>
+<p>Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.</p>]]></description>
 </item><item>
     <title>lc314. Binary Tree Vertical Order Traversal</title>
     <link>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</link>
     <pubDate>Tue, 08 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc314.binary-tree-vertical-order-traversal/</guid>
-    <description><![CDATA[Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).
-If two nodes are in the same row and column, the order should be from left to right.
-Example 1:
-1 2 Input: root = [3,9,20,null,null,15,7] Output: [[9],[3,15],[20],[7]] Example 2:
-1 2 Input: root = [3,9,8,4,0,1,7] Output: [[4],[9],[3,0,1],[8],[7]] Example 3:
-1 2 Input: root = [3,9,8,4,0,1,7,null,null,null,2,5] Output: [[4],[9,5],[3,0,1],[8,2],[7]] Constraints:]]></description>
+    <description><![CDATA[<p>Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).</p>
+<p>If two nodes are in the same row and column, the order should be from left to right.</p>
+<p><strong>Example 1:</strong></p>
+<p></p>]]></description>
 </item><item>
     <title>lc253. 会议室 II</title>
     <link>https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/</link>
     <pubDate>Thu, 03 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc253.%E4%BC%9A%E8%AE%AE%E5%AE%A4ii/</guid>
-    <description><![CDATA[给你一个会议时间安排的数组 intervals ，每个会议时间都会包括开始和结束的时间 intervals[i] = [starti, endi] ，返回 所需会议室的最小数量 。
-示例 1：
-输入：intervals = [[0,30],[5,10],[15,20]] 输出：2
-示例 2：
-输入：intervals = [[7,10],[2,4]] 输出：1
-提示：
-1 &lt;= intervals.length &lt;= 104 0 &lt;= starti &lt; endi &lt;= 106
-解题思路 我们可以想象把这些interval给叠起来，所需要会议室的最小数量就等于最大重叠的interval的数目。
-转化为上下车问题，每个interval的开始时间+1，每个interval的结束时间-1，然后我们统计counter的最大数值。
-换个思路就是我们以时间为单位，我们可以知道每个单位时间车上的总人数是增加多少还是减少多少，这样我们可以直接求和从开始扫描到结束，获取当前车上最大的人数就可以。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 class Solution(object): def minMeetingRooms(self, intervals): &#34;&#34;&#34; :type intervals: List[List[int]] :rtype: int &#34;&#34;&#34; dic={} for interval in intervals: try: dic[interval[0]]+=1 except: dic[interval[0]]=1 try: dic[interval[1]]-=1 except: dic[interval[1]]=-1 max_=0 count=0 for key in sorted(dic.]]></description>
+    <description><![CDATA[<p>给你一个会议时间安排的数组 intervals ，每个会议时间都会包括开始和结束的时间 intervals[i] = [starti, endi] ，返回 所需会议室的最小数量 。</p>
+<p>示例 1：</p>
+<p>输入：intervals = [[0,30],[5,10],[15,20]]
+输出：2</p>
+<p>示例 2：</p>
+<p>输入：intervals = [[7,10],[2,4]]
+输出：1</p>
+<p>提示：</p>
+<p>1 &lt;= intervals.length &lt;= 104
+0 &lt;= starti &lt; endi &lt;= 106</p>
+<h6 id="解题思路">解题思路</h6>
+<p>我们可以想象把这些interval给叠起来，所需要会议室的最小数量就等于最大重叠的interval的数目。</p>
+<p>转化为上下车问题，每个interval的开始时间+1，每个interval的结束时间-1，然后我们统计counter的最大数值。</p>
+<p>换个思路就是我们以时间为单位，我们可以知道每个单位时间车上的总人数是增加多少还是减少多少，这样我们可以直接求和从开始扫描到结束，获取当前车上最大的人数就可以。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pr]]></description>
 </item><item>
     <title>lc938. Range Sum of BST</title>
     <link>https://www.joshuachou.ink/lc938.range_sum_of_bst/</link>
     <pubDate>Thu, 03 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/lc938.range_sum_of_bst/</guid>
-    <description><![CDATA[Given the root node of a binary search tree and two integers low and high, return the sum of values of all nodes with a value in the inclusive range [low, high].
-Example 1:
-1 2 3 Input: root = [10,5,15,3,7,null,18], low = 7, high = 15 Output: 32 Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32. Example 2:]]></description>
+    <description><![CDATA[<p>Given the <code>root</code> node of a binary search tree and two integers <code>low</code> and <code>high</code>, return <em>the sum of values of all nodes with a value in the <strong>inclusive</strong> range</em> <code>[low, high]</code>.</p>
+<p><strong>Example 1:</strong></p>
+<p></p>]]></description>
 </item></channel>
 </rss>

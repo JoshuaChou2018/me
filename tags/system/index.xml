@@ -9,112 +9,207 @@
     <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</guid>
-    <description><![CDATA[近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。
-拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：
-1 docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 进入镜像，修改软件配置环境等：
-1 2 docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash apt-get update &amp;&amp; apt-get install -y wget nano vim curl less 安装Conda环境以及其它需要的软件
-1 2 curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh bash Anaconda3-2023.09-0-Linux-x86_64.sh 新建repository
-https://hub.docker.com/repository/
-用docker commit从容器打包镜像 1 2 sudo docker ps -a sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3 然后docker images就能在本地找到打包好的镜像
-上传镜像
-1 2 3 4 5 # sudo docker login --username=用户名 sudo docker login --username=admin # sudo docker push 镜像tag sudo docker push joshuachou666/autoba:cuda12.]]></description>
+    <description><![CDATA[<p>近期因为工作需求和提高用户友好度的考量需要对软件进行Docker打包，于是总结以下简易流程。</p>
+<ol>
+<li>
+<p><strong>拉取镜像，如果需要预先配置好CUDA等，可以搜索对应镜像：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker pull nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>进入镜像，修改软件配置环境等：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
+</span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
+</span></span></code></pr]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</guid>
-    <description><![CDATA[获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login]]></description>
+    <description><![CDATA[<ol>
+<li>
+<p>获取IP地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install net-tools
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装openssh，这样可以远程ssh连接服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install openssh-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装gcc</p>]]></description>
 </item><item>
     <title>chrome 解决在http协议下无法调用摄像头和麦克风的问题</title>
     <link>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</link>
     <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
-    <description><![CDATA[**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头
-解决方案：
-在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车
-该选项置为Enabled
-在输入框中输入需要访问的地址，多个地址使用“,”隔开
-然后点击右下角弹出的Relaunch按钮
-重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了]]></description>
+    <description><![CDATA[<p>**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头</p>
+<p><strong>解决方案：</strong></p>
+<p>在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车</p>
+<p>该选项置为Enabled</p>
+<p>在输入框中输入需要访问的地址，多个地址使用“,”隔开</p>
+<p>然后点击右下角弹出的Relaunch按钮</p>
+<p>重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</p>
+<p></p>]]></description>
 </item><item>
     <title>Mac更新后无法连接Apple所有服务</title>
     <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
     <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
-    <description><![CDATA[问题描述 Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。
-解决方案 打开/Library/Preferences/SystemConfiguration 这个文件夹 删除除了com.apple.Boot.plist 之外的其他文件，然后重新启动 ]]></description>
+    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
+<p>Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。</p>
+<h3 id="解决方案">解决方案</h3>
+<ul>
+<li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
+<li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
+</ul>]]></description>
 </item><item>
     <title>ubuntu18.04安装后的登陆问题、卡顿问题及基本环境配置</title>
     <link>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
     <pubDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[参考 https://blog.csdn.net/weixin_51524504/article/details/119487457]]></description>
+    <description><![CDATA[<p>参考 <a href="https://blog.csdn.net/weixin_51524504/article/details/119487457" target="_blank" rel="noopener noreffer">https://blog.csdn.net/weixin_51524504/article/details/119487457</a></p>]]></description>
 </item><item>
     <title>macOS上使用Openconnect代替Cisco Anyconnect</title>
     <link>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</link>
     <pubDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</guid>
-    <description><![CDATA[今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品
-下面说下Openconnect安装方法：
-命令行模式:
-1 brew install openconnect GUI模式:
-1 brew install openconnect-gui --cask 安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:
-1 sudo spctl --master-disable ]]></description>
+    <description><![CDATA[<p>今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品</p>
+<p>下面说下Openconnect安装方法：</p>
+<p>命令行模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GUI模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect-gui --cask
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pr]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
     <pubDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/macos-cmake-gui/</guid>
-    <description><![CDATA[之前使用命令行安装：
-1 brew install cmake 安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。
-1 brew uninstall cmake 然后手动安装cmake，去官网下载。
-网址：https://cmake.org/download/
-下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。
-下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。
-这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。
-安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。
-1 sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install 查看版本：
-1 cmake --version Ref: https://www.cnblogs.com/juluwangshier/p/12987258.html]]></description>
+    <description><![CDATA[<p>之前使用命令行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew uninstall cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后手动安装cmake，去官网下载。</p>
+<p>网址：https://cmake.org/download/</p>
+<p></p>]]></description>
 </item><item>
     <title>pycharm增加运行时内存</title>
     <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
     <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
-    <description><![CDATA[1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”
-2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。
-3，将**-Xms**属性的值修改为你想要的结果，然后保存
-1 -Xmx750m 增加到 -Xmx1024m 4，重启Pycharm]]></description>
+    <description><![CDATA[<p>1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”</p>
+<p>2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。</p>
+<p>3，将**-Xms**属性的值修改为你想要的结果，然后保存</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-Xmx750m 增加到 -Xmx1024m
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4，重启Pycharm</p>]]></description>
 </item><item>
     <title>python安装blender包bpy</title>
     <link>https://www.joshuachou.ink/blender-python/</link>
     <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/blender-python/</guid>
-    <description><![CDATA[ 1 2 3 conda create -n p37 python==3.7 wget https://github.com/TylerGubala/blenderpy/releases/download/v2.91a0/bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl pip install bpy-2.91a0-cp37-cp37m-manylinux2014_x86_64.whl &amp;&amp; bpy_post_install ]]></description>
+    <description><![CDATA[<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">p37</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
+</span></span><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">TylerGubala</span><span class="o">/</span><span class="n">blenderpy</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">91</span><span class="n">a0</span><span class="o">/</span><span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span>
+</span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span> <span class="o">&amp;&amp;</span> <span class="n">bpy_post_install</span>
+</span></span></code></pr]]></description>
 </item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
     <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
-    <description><![CDATA[When setting jupyter interpreter in pycharm, it may throw the error:
-1 jupyter URL is invalid Solution:
-Even without a token, use the url: http://url:port?token=
-Then it works]]></description>
+    <description><![CDATA[<p>When setting jupyter interpreter in pycharm, it may throw the error:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter URL is invalid
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Solution:</strong></p>
+<p>Even without a token, use the url: <strong>http://url:port?token=</strong></p>
+<p>Then it works</p>]]></description>
 </item></channel>
 </rss>

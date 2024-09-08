@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.133.1">
+	<meta name="generator" content="Hugo 0.134.1">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -105,32 +105,58 @@
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/">全新Ubuntu18.04配置DL环境，保姆级教程</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-10">2023-09-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">获取IP地址
-1 2 sudo apt install net-tools ifconfig 安装openssh，这样可以远程ssh连接服务器
-1 sudo apt install openssh-server 安装gcc
-1 sudo apt install gcc g++ make 安装NVIDIA驱动
-在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动
-1 wget https://cn.download.nvidia.com/XFree86/Linux-x86_64/535.104.05/NVIDIA-Linux-x86_64-535.104.05.run 禁用nouveau
-1 2 3 4 5 sudo nano /etc/modprobe.d/blacklist.conf # 最后一行加入 blacklist nouveau sudo update-initramfs -u sudo reboot 检查nouveau是否不在运行
-1 2 lsmod | grep nouveau # 没输出代表禁用生效 sudo telinit 3 安装驱动
-1 2 sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files –no-opengl-files 参数必须加否则会循环登录，也就是loop login</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-09-10">2023-09-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><ol>
+<li>
+<p>获取IP地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install net-tools
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装openssh，这样可以远程ssh连接服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo apt install openssh-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装gcc</p></div><div class="post-footer">
         <a href="/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/system/">System</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/news-skingpt-4/">[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-12">2023-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/news/"><i class="far fa-folder fa-fw"></i>News</a></span></div><div class="content">We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model
-Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-12">2023-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/news/"><i class="far fa-folder fa-fw"></i>News</a></span></div><div class="content"><p>We are happy to announce the SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</p>
+<p>Skin and subcutaneous diseases rank high among the leading contributors to the global burden of nonfatal diseases, impacting a considerable portion of the population. Nonetheless, the field of dermatology diagnosis faces three significant hurdles. Firstly, there is a shortage of dermatologists accessible to diagnose patients, particularly in rural regions. Secondly, accurately interpreting skin disease images poses a considerable challenge. Lastly, generating patient-friendly diagnostic reports is usually a time-consuming and labor-intensive task for dermatologists. To tackle these challenges, we present SkinGPT-4, which is the world&rsquo;s first interactive dermatology diagnostic system powered by an advanced visual large language model. SkinGPT-4 leverages a fine-tuned version of MiniGPT-4, trained on an extensive collection of skin disease images (comprising 52,929 publicly available and proprietary images) along with clinical concepts and doctors&rsquo; notes. We designed a two-step training process to allow SkinGPT-4 to express medical features in skin disease images with natural language and make accurate diagnoses of the types of skin diseases. With SkinGPT-4, users could upload their own skin photos for diagnosis, and the system could autonomously evaluate the images, identifies the characteristics and categories of the skin conditions, performs in-depth analysis, and provides interactive treatment recommendations. Meanwhile, SkinGPT-4&rsquo;s local deployment capability and commitment to user privacy also render it an appealing choice for patients in search of a dependable and precise diagnosis of their skin ailments. To demonstrate the robustness of SkinGPT-4, we conducted quantitative evaluations on 150 real-life cases, which were independently reviewed by certified dermatologists, and showed that SkinGPT-4 could provide accurate diagnoses of skin diseases. Though SkinGPT-4 is not a substitute for doctors, it could enhance users&rsquo; comprehension of their medical conditions, facilitate improve communication between patients and doctors, expedite the diagnostic process for dermatologists, and potentially promote human-centred care and healthcare equity in underdeveloped areas.</p></div><div class="post-footer">
         <a href="/news-skingpt-4/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/news/">News</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/">chrome 解决在http协议下无法调用摄像头和麦克风的问题</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-12">2023-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content">**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头
-解决方案：
-在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车
-该选项置为Enabled
-在输入框中输入需要访问的地址，多个地址使用“,”隔开
-然后点击右下角弹出的Relaunch按钮
-重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-12">2023-06-12</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>**问题描述：**近期在Gradio开发的时候，发现自己服务器搭建的http无法在Chrome下开启麦克风和摄像头</p>
+<p><strong>解决方案：</strong></p>
+<p>在浏览器地址栏中输入“chrome://flags/#unsafely-treat-insecure-origin-as-secure”，回车</p>
+<p>该选项置为Enabled</p>
+<p>在输入框中输入需要访问的地址，多个地址使用“,”隔开</p>
+<p>然后点击右下角弹出的Relaunch按钮</p>
+<p>重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/881fe814429a41cda3010bb39e88c20c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.0cK0Zt.awebp"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/881fe814429a41cda3010bb39e88c20c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.0cK0Zt.awebp, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/881fe814429a41cda3010bb39e88c20c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.0cK0Zt.awebp 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/881fe814429a41cda3010bb39e88c20c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.0cK0Zt.awebp 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/881fe814429a41cda3010bb39e88c20c~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.0cK0Zt.awebp"
+        title="image.png" /></p></div><div class="post-footer">
         <a href="/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
