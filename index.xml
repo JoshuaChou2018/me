@@ -98,7 +98,7 @@
     <pubDate>Wed, 20 Mar 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</guid>
-    <description><![CDATA[<h1 id="problem-description">Problem description</h1>
+    <description><![CDATA[<h3 id="problem-description">Problem description</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -118,7 +118,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>But both nvcc - V and nvidia-smi still work</p>
-<h1 id="solution">Solution</h1>
+<h3 id="solution">Solution</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

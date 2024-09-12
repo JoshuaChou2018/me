@@ -1,7 +1,7 @@
 # CUDA unknown error - this may be due to an incorrectly set up environment
 
 
-# Problem description
+### Problem description
 
 ```shell
 >>> torch.cuda.is_available()                                                     
@@ -14,7 +14,7 @@ False
 
 But both nvcc - V and nvidia-smi still work
 
-# Solution
+### Solution
 
 ```shell
 sudo rmmod nvidia_uvm
