@@ -24,6 +24,42 @@
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo usermod -aG docker $USER
+</span></span><span class="line"><span class="cl">newgrp docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Verify the installed Docker version.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ docker version
+</span></span><span class="line"><span class="cl">Client: Docker Engine - Community
+</span></span><span class="line"><span class="cl"> Version:           20.10.12
+</span></span><span class="line"><span class="cl"> API version:       1.41
+</span></span><span class="line"><span class="cl"> Go version:        go1.16.12
+</span></span><span class="line"><span class="cl"> Git commit:        e91ed57
+</span></span><span class="line"><span class="cl"> Built:             Mon Dec 13 11:45:48 2021
+</span></span><span class="line"><span class="cl"> OS/Arch:           linux/amd64
+</span></span><span class="line"><span class="cl"> Context:           default
+</span></span><span class="line"><span class="cl"> Experimental:      true
+</span></span><span class="line"><span class="cl">....
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="step-2--pull-the-ubuntu-docker-image">Step 2 – Pull the Ubuntu Docker Image</h2>
+<p>As said earlier, there are several images for Ubuntu that can be pulled. These images are available on the<a href="https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/tags/" target="_blank" rel="noopener noreffer"> Docker</a> page and can be pulled using Docker as shown.</p>]]></description>
 </item></channel>
 </rss>

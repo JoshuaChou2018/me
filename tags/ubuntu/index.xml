@@ -32,7 +32,64 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">注: 在防火墙上打开 VNC Server 的监听端口
 </span></span><span class="line"><span class="cl">VNC Server 用到了三个端口：5801(*)、5901(*)、6001
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>修改~/.vnc/xstartup</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">export</span> <span class="k">$(</span>dbus-launch<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XKL_XMODMAP_DISABLE</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_CURRENT_DESKTOP</span><span class="o">=</span><span class="s2">&#34;GNOME-Flashback:Unity&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_MENU_PREFIX</span><span class="o">=</span><span class="s2">&#34;gnome-flashback-&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> SESSION_MANAGER
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">gnome-panel <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-settings-daemon <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">metacity <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">nautilus <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-terminal <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">autocutsel -fork
+</span></span><span class="line"><span class="cl">xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">xsetroot -solid grey
+</span></span><span class="line"><span class="cl">vncconfig -iconic <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">x-terminal-emulator -geometry 80x24+10+10 -ls -title <span class="s2">&#34;</span><span class="nv">$VNCDESKTOP</span><span class="s2"> Desktop&#34;</span> <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-session --session<span class="o">=</span>gnome-flashback-metacity --disable-acceleration-check --debug <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动</p>]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>
     <link>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</link>
@@ -56,7 +113,21 @@
 </span></span><span class="line"><span class="cl">da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.<span class="o">)</span>   <span class="k">return</span> torch._C._cuda_getDeviceCount<span class="o">()</span> &gt; <span class="m">0</span>                        
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">False         
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>But both nvcc - V and nvidia-smi still work</p>
+<h1 id="solution">Solution</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo rmmod nvidia_uvm
+</span></span><span class="line"><span class="cl">sudo modprobe nvidia_uvm
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>ubuntu 18.04 升级至 glibc_2.28</title>
     <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
@@ -80,7 +151,39 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version <span class="sb">`</span>glibc_2.28<span class="err">&#39;</span> not found
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc</p>
+<p>下载 <a href="https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz" target="_blank" rel="noopener noreffer">https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz</a></p>
+<p>准备编译环境</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install build-essential gawk bison
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后解压和编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ tar -xJf glibc-2.28.tar.xz
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> glibc-2.28/
+</span></span><span class="line"><span class="cl">$ mkdir build
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">$ ../configure --prefix<span class="o">=</span>/usr
+</span></span><span class="line"><span class="cl">$ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>到这一步后不要 <code>sudo make install</code> 立刻安装到 /usr</p>]]></description>
 </item><item>
     <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
     <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
@@ -110,6 +213,42 @@
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo usermod -aG docker $USER
+</span></span><span class="line"><span class="cl">newgrp docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Verify the installed Docker version.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ docker version
+</span></span><span class="line"><span class="cl">Client: Docker Engine - Community
+</span></span><span class="line"><span class="cl"> Version:           20.10.12
+</span></span><span class="line"><span class="cl"> API version:       1.41
+</span></span><span class="line"><span class="cl"> Go version:        go1.16.12
+</span></span><span class="line"><span class="cl"> Git commit:        e91ed57
+</span></span><span class="line"><span class="cl"> Built:             Mon Dec 13 11:45:48 2021
+</span></span><span class="line"><span class="cl"> OS/Arch:           linux/amd64
+</span></span><span class="line"><span class="cl"> Context:           default
+</span></span><span class="line"><span class="cl"> Experimental:      true
+</span></span><span class="line"><span class="cl">....
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="step-2--pull-the-ubuntu-docker-image">Step 2 – Pull the Ubuntu Docker Image</h2>
+<p>As said earlier, there are several images for Ubuntu that can be pulled. These images are available on the<a href="https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/tags/" target="_blank" rel="noopener noreffer"> Docker</a> page and can be pulled using Docker as shown.</p>]]></description>
 </item></channel>
 </rss>

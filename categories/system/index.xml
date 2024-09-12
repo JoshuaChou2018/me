@@ -32,7 +32,61 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
 </span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>安装Conda环境以及其它需要的软件</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span><span class="line"><span class="cl">bash Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>新建repository</strong></p>
+<p><a href="https://hub.docker.com/repository/" target="_blank" rel="noopener noreffer">https://hub.docker.com/repository/</a></p>
+</li>
+<li>
+<h5 id="用docker-commit从容器打包镜像">用docker commit从容器打包镜像</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker ps -a
+</span></span><span class="line"><span class="cl">sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后docker images就能在本地找到打包好的镜像</p>
+</li>
+<li>
+<p><strong>上传镜像</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># sudo docker login --username=用户名
+</span></span><span class="line"><span class="cl">sudo docker login --username=admin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># sudo docker push 镜像tag
+</span></span><span class="line"><span class="cl">sudo docker push joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>重新拉取镜像测试</strong></p>]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
@@ -65,7 +119,77 @@
 </div>
 </div></li>
 <li>
-<p>安装gcc</p>]]></description>
+<p>安装gcc</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install gcc g++ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装NVIDIA驱动</p>
+<ol>
+<li>
+<p>在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动</p>
+</li>
+<li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">cn</span><span class="o">.</span><span class="n">download</span><span class="o">.</span><span class="n">nvidia</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">XFree86</span><span class="o">/</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">/</span><span class="mf">535.104</span><span class="o">.</span><span class="mi">05</span><span class="o">/</span><span class="n">NVIDIA</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">535.104</span><span class="o">.</span><span class="mf">05.</span><span class="n">run</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>禁用nouveau</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo nano /etc/modprobe.d/blacklist.conf
+</span></span><span class="line"><span class="cl"><span class="c1"># 最后一行加入</span>
+</span></span><span class="line"><span class="cl">blacklist nouveau
+</span></span><span class="line"><span class="cl">sudo update-initramfs -u
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>检查nouveau是否不在运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lsmod | grep nouveau  # 没输出代表禁用生效
+</span></span><span class="line"><span class="cl">sudo telinit 3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装驱动</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run
+</span></span><span class="line"><span class="cl">sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>–no-opengl-files 参数必须加否则会循环登录，也就是loop login</strong></p>]]></description>
 </item><item>
     <title>chrome 解决在http协议下无法调用摄像头和麦克风的问题</title>
     <link>https://www.joshuachou.ink/chrome-%E8%A7%A3%E5%86%B3%E5%9C%A8http%E5%8D%8F%E8%AE%AE%E4%B8%8B%E6%97%A0%E6%B3%95%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E5%92%8C%E9%BA%A6%E5%85%8B%E9%A3%8E%E7%9A%84%E9%97%AE%E9%A2%98/</link>
@@ -130,7 +254,12 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo spctl --master-disable
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
@@ -157,7 +286,30 @@
 </div>
 </div><p>然后手动安装cmake，去官网下载。</p>
 <p>网址：https://cmake.org/download/</p>
-<p></p>]]></description>
+<p></p>
+<p>下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。</p>
+<p>下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。</p>
+<p></p>
+<p>这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。</p>
+<p>安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看版本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmake --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p>]]></description>
 </item><item>
     <title>pycharm增加运行时内存</title>
     <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
@@ -192,7 +344,9 @@
 <pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">p37</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
 </span></span><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">TylerGubala</span><span class="o">/</span><span class="n">blenderpy</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">91</span><span class="n">a0</span><span class="o">/</span><span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span>
 </span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span> <span class="o">&amp;&amp;</span> <span class="n">bpy_post_install</span>
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>

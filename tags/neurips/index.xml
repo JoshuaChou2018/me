@@ -18,6 +18,10 @@
 </blockquote>
 <p>但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。</p>
 <blockquote>
-<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>]]></description>
+<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>
+</blockquote>
+<p>在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。</p>
+<blockquote>
+<p>In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.</p>]]></description>
 </item></channel>
 </rss>

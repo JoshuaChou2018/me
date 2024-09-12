@@ -13,7 +13,16 @@
 输入：
 1 2 3 [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1] 示例 2：
 输入：
-1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] ">
+1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] 提示：
+1 2 1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+解题思路 输入为两个栈，
+第一个栈对应的是操作： [“CQueue”,“appendTail”,“deleteHead”,“deleteHead”]
+CQueue表示init一个CQueue object
+appendTail表示调用appendTail函数
+deleteHead表示调用deleteHead函数
+第二个栈对应的是操作的值。
+栈（Stack）的特点是先入后出，但是我们需要实现直接操作Head的功能。因此使用两个Stack可以实现列表倒序。
+1 2 3 4 5 6 7 8 9 10 11 12 13 class CQueue: def __init__(self): self.A, self.B = [], [] def appendTail(self, value: int) -&gt; None: self.A.append(value) def deleteHead(self) -&gt; int: if self.B: return self.B.pop() if not self.A: return -1 while self.A: self.B.append(self.A.pop()) return self.B.pop() 时间复杂度： appendTail()为O(1), deleteHead()为O(N)">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -31,7 +40,16 @@
 输入：
 1 2 3 [&#34;CQueue&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[3],[],[]] 输出：[null,null,3,-1] 示例 2：
 输入：
-1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] ">
+1 2 3 [&#34;CQueue&#34;,&#34;deleteHead&#34;,&#34;appendTail&#34;,&#34;appendTail&#34;,&#34;deleteHead&#34;,&#34;deleteHead&#34;] [[],[],[5],[2],[],[]] 输出：[null,-1,null,null,5,2] 提示：
+1 2 1 &lt;= values &lt;= 10000 最多会对 appendTail、deleteHead 进行 10000 次调用 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+解题思路 输入为两个栈，
+第一个栈对应的是操作： [“CQueue”,“appendTail”,“deleteHead”,“deleteHead”]
+CQueue表示init一个CQueue object
+appendTail表示调用appendTail函数
+deleteHead表示调用deleteHead函数
+第二个栈对应的是操作的值。
+栈（Stack）的特点是先入后出，但是我们需要实现直接操作Head的功能。因此使用两个Stack可以实现列表倒序。
+1 2 3 4 5 6 7 8 9 10 11 12 13 class CQueue: def __init__(self): self.A, self.B = [], [] def appendTail(self, value: int) -&gt; None: self.A.append(value) def deleteHead(self) -&gt; int: if self.B: return self.B.pop() if not self.A: return -1 while self.A: self.B.append(self.A.pop()) return self.B.pop() 时间复杂度： appendTail()为O(1), deleteHead()为O(N)">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

@@ -15,7 +15,11 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 引用知友
 @Xing
 在OS X 中的 Time Machine 真的有用吗？中的回答：
-只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。">
+只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
+使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
+自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
+使用一块外置的USB移动硬盘，要求文件系统是HFS&#43;。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -35,7 +39,11 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 引用知友
 @Xing
 在OS X 中的 Time Machine 真的有用吗？中的回答：
-只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。">
+只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，按住option开机进入recovery分区，选择从Time Machine中恢复。开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。 当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。
+使用Time Machine，你既可以回到过去某个时刻，提取某个文件在当时的版本；也可以在电脑异常崩溃后直接全盘恢复到过去某个时刻的状态。
+自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
+使用一块外置的USB移动硬盘，要求文件系统是HFS&#43;。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
+方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

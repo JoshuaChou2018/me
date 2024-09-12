@@ -23,7 +23,8 @@ dotProduct(vec) 计算此向量与 vec 的点积。
 <p>示例 2：</p>
 <p>输入：nums1 = [0,1,0,0,0], nums2 = [0,0,0,0,2]</p>
 <p>输出：0</p>
-<p>解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)</p>]]></description>
+<p>解释：v1 = SparseVector(nums1) , v2 = SparseVector(nums2)</p>
+<p>v1.dotProduct(v2) = 0<em>0 + 1</em>0 + 0<em>0 + 0</em>0 + 0*2 = 0</p>]]></description>
 </item><item>
     <title>lc50. Pow(x, n)</title>
     <link>https://www.joshuachou.ink/lc50.-powx-n/</link>
@@ -47,7 +48,32 @@ dotProduct(vec) 计算此向量与 vec 的点积。
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: x = 2.10000, n = 3
+</span></span><span class="line"><span class="cl">Output: 9.26100
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 3:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: x = 2.00000, n = -2
+</span></span><span class="line"><span class="cl">Output: 0.25000
+</span></span><span class="line"><span class="cl">Explanation: 2-2 = 1/22 = 1/4 = 0.25
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Constraints:</strong></p>
+<ul>
+<li><code>-100.0 &lt; x &lt; 100.0</code></li>
+<li><code>-231 &lt;= n &lt;= 231-1</code></li>
+<li><code>-104 &lt;= xn &lt;= 104</code></li>
+</ul>
+<h5 id="思路">思路</h5>]]></description>
 </item><item>
     <title>lc76. Minimum Window Substring</title>
     <link>https://www.joshuachou.ink/lc76.-minimum-window-substring/</link>
@@ -57,7 +83,20 @@ dotProduct(vec) 计算此向量与 vec 的点积。
     <description><![CDATA[<p>Given two strings <code>s</code> and <code>t</code> of lengths <code>m</code> and <code>n</code> respectively, return <em>the <strong>minimum window substring</strong> of</em> <code>s</code> <em>such that every character in</em> <code>t</code> (including duplicates) is included in the window. If there is no such substring, return the empty string <code>&quot;&quot;</code>.</p>
 <p>The testcases will be generated such that the answer is <strong>unique</strong>.</p>
 <p>A <strong>substring</strong> is a contiguous sequence of characters within the string.</p>
-<p><strong>Example 1:</strong></p>]]></description>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;ADOBECODEBANC&#34;, t = &#34;ABC&#34;
+</span></span><span class="line"><span class="cl">Output: &#34;BANC&#34;
+</span></span><span class="line"><span class="cl">Explanation: The minimum window substring &#34;BANC&#34; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>]]></description>
 </item><item>
     <title>lc88. Merge Sorted Array</title>
     <link>https://www.joshuachou.ink/lc88.-merge-sorted-array/</link>
@@ -92,7 +131,31 @@ dotProduct(vec) 计算此向量与 vec 的点积。
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [-1,0,1,2,-1,-4]
 </span></span><span class="line"><span class="cl">Output: [[-1,-1,2],[-1,0,1]]
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = []
+</span></span><span class="line"><span class="cl">Output: []
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 3:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [0]
+</span></span><span class="line"><span class="cl">Output: []
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Constraints:</strong></p>]]></description>
 </item><item>
     <title>lc297. Serialize and Deserialize Binary Tree</title>
     <link>https://www.joshuachou.ink/lc297.-serialize-and-deserialize-binary-tree/</link>
@@ -110,6 +173,18 @@ dotProduct(vec) 计算此向量与 vec 的点积。
     <description><![CDATA[<p>Given the root of a binary tree, return the vertical order traversal of its nodes&rsquo; values. (i.e., from top to bottom, column by column).</p>
 <p>If two nodes are in the same row and column, the order should be from left to right.</p>
 <p><strong>Example 1:</strong></p>
+<p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: root = [3,9,20,null,null,15,7]
+</span></span><span class="line"><span class="cl">Output: [[9],[3,15],[20],[7]]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
 <p></p>]]></description>
 </item><item>
     <title>lc253. 会议室 II</title>
@@ -156,7 +231,34 @@ dotProduct(vec) 计算此向量与 vec 的点积。
 </span><span class="lnt">21
 </span><span class="lnt">22
 </span><span class="lnt">23
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Solution</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">minMeetingRooms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">intervals</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :type intervals: List[List[int]]
+</span></span></span><span class="line"><span class="cl"><span class="s2">        :rtype: int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">dic</span><span class="o">=</span><span class="p">{}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">interval</span> <span class="ow">in</span> <span class="n">intervals</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">dic</span><span class="p">[</span><span class="n">interval</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">dic</span><span class="p">[</span><span class="n">interval</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">dic</span><span class="p">[</span><span class="n">interval</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">dic</span><span class="p">[</span><span class="n">interval</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">=-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">max_</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">dic</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">+=</span><span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">count</span><span class="o">&gt;</span><span class="n">max_</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">max_</span><span class="o">=</span><span class="n">count</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">max_</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>lc938. Range Sum of BST</title>
     <link>https://www.joshuachou.ink/lc938.range_sum_of_bst/</link>
@@ -165,6 +267,19 @@ dotProduct(vec) 计算此向量与 vec 的点积。
     <guid>https://www.joshuachou.ink/lc938.range_sum_of_bst/</guid>
     <description><![CDATA[<p>Given the <code>root</code> node of a binary search tree and two integers <code>low</code> and <code>high</code>, return <em>the sum of values of all nodes with a value in the <strong>inclusive</strong> range</em> <code>[low, high]</code>.</p>
 <p><strong>Example 1:</strong></p>
-<p></p>]]></description>
+<p></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: root = [10,5,15,3,7,null,18], low = 7, high = 15
+</span></span><span class="line"><span class="cl">Output: 32
+</span></span><span class="line"><span class="cl">Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>]]></description>
 </item></channel>
 </rss>

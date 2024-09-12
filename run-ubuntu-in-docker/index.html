@@ -9,7 +9,8 @@
   <meta property="og:site_name" content="Juexiao Zhou 周觉晓">
   <meta property="og:title" content="Run Ubuntu Linux in Docker with Desktop Environment and VNC">
   <meta property="og:description" content="Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
-1 2 ">
+1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
+1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.10.12 API version: 1.41 Go version: go1.16.12 Git commit: e91ed57 Built: Mon Dec 13 11:45:48 2021 OS/Arch: linux/amd64 Context: default Experimental: true .... Step 2 – Pull the Ubuntu Docker Image As said earlier, there are several images for Ubuntu that can be pulled. These images are available on the Docker page and can be pulled using Docker as shown.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -23,7 +24,8 @@
   <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
   <meta name="twitter:title" content="Run Ubuntu Linux in Docker with Desktop Environment and VNC">
   <meta name="twitter:description" content="Run Ubuntu Linux in Docker with Desktop Environment and VNC Step 1 – Install Docker on your System 1 sudo systemctl start docker &amp;&amp; sudo systemctl enable docker Add your system user to the Docker group to be able to execute Docker commands without *sudo*.
-1 2 ">
+1 2 sudo usermod -aG docker $USER newgrp docker Verify the installed Docker version.
+1 2 3 4 5 6 7 8 9 10 11 $ docker version Client: Docker Engine - Community Version: 20.10.12 API version: 1.41 Go version: go1.16.12 Git commit: e91ed57 Built: Mon Dec 13 11:45:48 2021 OS/Arch: linux/amd64 Context: default Experimental: true .... Step 2 – Pull the Ubuntu Docker Image As said earlier, there are several images for Ubuntu that can be pulled. These images are available on the Docker page and can be pulled using Docker as shown.">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

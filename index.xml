@@ -34,7 +34,64 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">注: 在防火墙上打开 VNC Server 的监听端口
 </span></span><span class="line"><span class="cl">VNC Server 用到了三个端口：5801(*)、5901(*)、6001
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>修改~/.vnc/xstartup</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">export</span> <span class="k">$(</span>dbus-launch<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XKL_XMODMAP_DISABLE</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_CURRENT_DESKTOP</span><span class="o">=</span><span class="s2">&#34;GNOME-Flashback:Unity&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_MENU_PREFIX</span><span class="o">=</span><span class="s2">&#34;gnome-flashback-&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> SESSION_MANAGER
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">gnome-panel <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-settings-daemon <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">metacity <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">nautilus <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-terminal <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">autocutsel -fork
+</span></span><span class="line"><span class="cl">xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">xsetroot -solid grey
+</span></span><span class="line"><span class="cl">vncconfig -iconic <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">x-terminal-emulator -geometry 80x24+10+10 -ls -title <span class="s2">&#34;</span><span class="nv">$VNCDESKTOP</span><span class="s2"> Desktop&#34;</span> <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-session --session<span class="o">=</span>gnome-flashback-metacity --disable-acceleration-check --debug <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动</p>]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>
     <link>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</link>
@@ -58,7 +115,21 @@
 </span></span><span class="line"><span class="cl">da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.<span class="o">)</span>   <span class="k">return</span> torch._C._cuda_getDeviceCount<span class="o">()</span> &gt; <span class="m">0</span>                        
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">False         
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>But both nvcc - V and nvidia-smi still work</p>
+<h1 id="solution">Solution</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo rmmod nvidia_uvm
+</span></span><span class="line"><span class="cl">sudo modprobe nvidia_uvm
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>ubuntu 18.04 升级至 glibc_2.28</title>
     <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
@@ -82,7 +153,39 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version <span class="sb">`</span>glibc_2.28<span class="err">&#39;</span> not found
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc</p>
+<p>下载 <a href="https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz" target="_blank" rel="noopener noreffer">https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz</a></p>
+<p>准备编译环境</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install build-essential gawk bison
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后解压和编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ tar -xJf glibc-2.28.tar.xz
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> glibc-2.28/
+</span></span><span class="line"><span class="cl">$ mkdir build
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">$ ../configure --prefix<span class="o">=</span>/usr
+</span></span><span class="line"><span class="cl">$ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>到这一步后不要 <code>sudo make install</code> 立刻安装到 /usr</p>]]></description>
 </item><item>
     <title>How to Install and Configure VNC on Ubuntu 20.04</title>
     <link>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</link>
@@ -123,7 +226,22 @@
 <blockquote>
 <p>Nature Communications，PNAS，Science Advances，Cell Reports</p>
 </blockquote>
-<p><strong><a href="https://www.zhihu.com/search?q=%e5%90%88%e4%bd%93%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">合体期</a></strong>：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。</p>]]></description>
+<p><strong><a href="https://www.zhihu.com/search?q=%e5%90%88%e4%bd%93%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">合体期</a></strong>：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。</p>
+<blockquote>
+<p>Nature Machine Intelligence，Nature Computational Sciences</p>
+</blockquote>
+<p><strong>大乘期</strong>：修行者几乎达到了<a href="https://www.zhihu.com/search?q=%e4%bb%99%e9%81%93&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">仙道</a>的巅峰，具备了创造或改变世界的能力。</p>
+<blockquote>
+<p>Nature Genetics，Nature Biotechnology，Nature Methods，Nature Medicine，Cell Genomics</p>
+</blockquote>
+<p><strong><a href="https://www.zhihu.com/search?q=%e9%a3%9e%e5%8d%87%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">飞升期</a></strong>：修行者完成了修仙之路，失去凡体，飞升仙界，无相无形，成为自然（Nature）。</p>
+<blockquote>
+<p>Nature，Science，Cell</p>
+</blockquote>
+<p>Acknowledgement:</p>
+<p>作者：浪矢Ryan
+链接：https://www.zhihu.com/question/21660698/answer/3310893434
+来源：知乎</p>]]></description>
 </item><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
@@ -153,7 +271,61 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
 </span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>安装Conda环境以及其它需要的软件</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span><span class="line"><span class="cl">bash Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>新建repository</strong></p>
+<p><a href="https://hub.docker.com/repository/" target="_blank" rel="noopener noreffer">https://hub.docker.com/repository/</a></p>
+</li>
+<li>
+<h5 id="用docker-commit从容器打包镜像">用docker commit从容器打包镜像</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker ps -a
+</span></span><span class="line"><span class="cl">sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后docker images就能在本地找到打包好的镜像</p>
+</li>
+<li>
+<p><strong>上传镜像</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># sudo docker login --username=用户名
+</span></span><span class="line"><span class="cl">sudo docker login --username=admin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># sudo docker push 镜像tag
+</span></span><span class="line"><span class="cl">sudo docker push joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>重新拉取镜像测试</strong></p>]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
@@ -186,7 +358,77 @@
 </div>
 </div></li>
 <li>
-<p>安装gcc</p>]]></description>
+<p>安装gcc</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install gcc g++ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装NVIDIA驱动</p>
+<ol>
+<li>
+<p>在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动</p>
+</li>
+<li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">cn</span><span class="o">.</span><span class="n">download</span><span class="o">.</span><span class="n">nvidia</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">XFree86</span><span class="o">/</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">/</span><span class="mf">535.104</span><span class="o">.</span><span class="mi">05</span><span class="o">/</span><span class="n">NVIDIA</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">535.104</span><span class="o">.</span><span class="mf">05.</span><span class="n">run</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>禁用nouveau</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo nano /etc/modprobe.d/blacklist.conf
+</span></span><span class="line"><span class="cl"><span class="c1"># 最后一行加入</span>
+</span></span><span class="line"><span class="cl">blacklist nouveau
+</span></span><span class="line"><span class="cl">sudo update-initramfs -u
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>检查nouveau是否不在运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lsmod | grep nouveau  # 没输出代表禁用生效
+</span></span><span class="line"><span class="cl">sudo telinit 3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装驱动</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run
+</span></span><span class="line"><span class="cl">sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>–no-opengl-files 参数必须加否则会循环登录，也就是loop login</strong></p>]]></description>
 </item><item>
     <title>[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</title>
     <link>https://www.joshuachou.ink/news-skingpt-4/</link>
@@ -267,7 +509,12 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo spctl --master-disable
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
@@ -294,7 +541,30 @@
 </div>
 </div><p>然后手动安装cmake，去官网下载。</p>
 <p>网址：https://cmake.org/download/</p>
-<p></p>]]></description>
+<p></p>
+<p>下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。</p>
+<p>下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。</p>
+<p></p>
+<p>这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。</p>
+<p>安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看版本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmake --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p>]]></description>
 </item><item>
     <title>pycharm增加运行时内存</title>
     <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
@@ -329,7 +599,9 @@
 <pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">p37</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
 </span></span><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">TylerGubala</span><span class="o">/</span><span class="n">blenderpy</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">91</span><span class="n">a0</span><span class="o">/</span><span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span>
 </span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span> <span class="o">&amp;&amp;</span> <span class="n">bpy_post_install</span>
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>jupyter in pycharm</title>
     <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
@@ -355,7 +627,41 @@
     <author>Author</author>
     <guid>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</guid>
     <description><![CDATA[<p></p>
-<p>相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！</p>]]></description>
+<p>相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！</p>
+<p>下面是使用Numpy的运行情况：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import numpy as np  # 使用标准numpy，运算将在CPU上执行。
+</span></span><span class="line"><span class="cl">x = np.random.random([5000, 5000]).astype(np.float32)
+</span></span><span class="line"><span class="cl">%timeit np.matmul(x, x)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 loop, best of 3: 3.9 s per loop 而下面是使用JAX的Numpy的情况：
+</span></span><span class="line"><span class="cl">import jax.numpy as np # 使用&#34;JAX版&#34;的numpy from jax import random # 注意JAX下随机数API有所不同 x = random.uniform(random.PRNGKey(0), [5000, 5000]) %timeit np.matmul(x, x)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行情况：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 loop, best of 3: 109 ms per loop
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！</p>]]></description>
 </item><item>
     <title>[转载] 同态加密：实现数据的“可算不可见”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/</link>
@@ -368,7 +674,101 @@
 </blockquote>
 <h2 id="一同态加密概述">一、同态加密概述</h2>
 <h3 id="1基本概念">1、基本概念</h3>
-<p>同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。</p>]]></description>
+<p>同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。</p>
+<p>图1：同态加密原理</p>
+<p>如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。</p>
+<p>目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。</p>
+<h3 id="2研究进展">2、研究进展</h3>
+<p>1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。</p>
+<p>表1：各类同态加密算法</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><em><strong>*类型*</strong></em></th>
+          <th style="text-align: left"><em><strong>*算法*</strong></em></th>
+          <th style="text-align: left"><em><strong>*时间*</strong></em></th>
+          <th style="text-align: left"><em><strong>*说明*</strong></em></th>
+          <th style="text-align: left"><em><strong>*实际应用*</strong></em></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">半同态加密</td>
+          <td style="text-align: left">乘法同态</td>
+          <td style="text-align: left">RSA算法</td>
+          <td style="text-align: left">1977</td>
+          <td style="text-align: left">非随机化加密，具有乘法同态性的原始算法面临选择明文攻击</td>
+          <td style="text-align: left">在非同态场景中应用广泛</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ElGamal算法</td>
+          <td style="text-align: left">1985</td>
+          <td style="text-align: left">随机化加密</td>
+          <td style="text-align: left">DSS数字签名标准基于ElGamal数字签名算法的变体</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">加法同态</td>
+          <td style="text-align: left">Paillier算法</td>
+          <td style="text-align: left">1999</td>
+          <td style="text-align: left">应用最为成熟</td>
+          <td style="text-align: left">联邦学习</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">有限次数全同态</td>
+          <td style="text-align: left">Boneh-Goh-Nissim方案</td>
+          <td style="text-align: left">2005</td>
+          <td style="text-align: left">仅支持1次乘法同态运算</td>
+          <td style="text-align: left">/</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">全同态加密</td>
+          <td style="text-align: left">Gentry方案</td>
+          <td style="text-align: left">2009</td>
+          <td style="text-align: left">第一代全同态加密，性能较差</td>
+          <td style="text-align: left">/</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BGV方案</td>
+          <td style="text-align: left">2012</td>
+          <td style="text-align: left">第二代全同态加密，性能相对较好</td>
+          <td style="text-align: left">IBM HElib开源库</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">BFV方案</td>
+          <td style="text-align: left">2012</td>
+          <td style="text-align: left">第二代全同态加密，与BGV类似</td>
+          <td style="text-align: left">微软SEAL开源库</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">GSW方案</td>
+          <td style="text-align: left">2013</td>
+          <td style="text-align: left">第三代全同态加密，基于近似特征向量</td>
+          <td style="text-align: left">TFHE开源库</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CKKS方案</td>
+          <td style="text-align: left">2017</td>
+          <td style="text-align: left">可实现浮点数近似计算，适合机器学习建模场景</td>
+          <td style="text-align: left">HElib和SEAL</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="3标准化进展">3、标准化进展</h3>
+<p><strong>（1）半同态加密标准化</strong></p>]]></description>
 </item><item>
     <title>Homomorphic Encryption</title>
     <link>https://www.joshuachou.ink/homomorphic-encryption/</link>
@@ -376,6 +776,16 @@
     <author>Author</author>
     <guid>https://www.joshuachou.ink/homomorphic-encryption/</guid>
     <description><![CDATA[<h2 id="outsourcing-computation-privately">Outsourcing computation, privately</h2>
+<p></p>
+<p>Homomorphic evaluation function:</p>
+<p>Eval: f, Enc(x) -&gt; Enc(f(x))</p>
+<h2 id="fully-homomorphic-encryption">Fully homomorphic encryption</h2>
+<p></p>
+<p><strong>Fully</strong> homomorphic = correctness for <strong>any</strong> efficient f = correctness for <strong>universal</strong> set</p>
+<h3 id="approximate-eigenvector-method">Approximate eigenvector method</h3>
+<p></p>
+<p>基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。</p>
+<p>**idea：**使用approximate eigenvectors，在secret key右乘cipher text</p>
 <p></p>]]></description>
 </item></channel>
 </rss>

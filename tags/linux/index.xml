@@ -32,7 +32,64 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">注: 在防火墙上打开 VNC Server 的监听端口
 </span></span><span class="line"><span class="cl">VNC Server 用到了三个端口：5801(*)、5901(*)、6001
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>修改~/.vnc/xstartup</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">export</span> <span class="k">$(</span>dbus-launch<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XKL_XMODMAP_DISABLE</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_CURRENT_DESKTOP</span><span class="o">=</span><span class="s2">&#34;GNOME-Flashback:Unity&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">XDG_MENU_PREFIX</span><span class="o">=</span><span class="s2">&#34;gnome-flashback-&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">unset</span> SESSION_MANAGER
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">gnome-panel <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-settings-daemon <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">metacity <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">nautilus <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-terminal <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">autocutsel -fork
+</span></span><span class="line"><span class="cl">xrdb <span class="nv">$HOME</span>/.Xresources
+</span></span><span class="line"><span class="cl">xsetroot -solid grey
+</span></span><span class="line"><span class="cl">vncconfig -iconic <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">x-terminal-emulator -geometry 80x24+10+10 -ls -title <span class="s2">&#34;</span><span class="nv">$VNCDESKTOP</span><span class="s2"> Desktop&#34;</span> <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">gnome-session --session<span class="o">=</span>gnome-flashback-metacity --disable-acceleration-check --debug <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启动</p>]]></description>
 </item><item>
     <title>CUDA unknown error - this may be due to an incorrectly set up environment</title>
     <link>https://www.joshuachou.ink/cuda-unknown-error-this-may-be-due-to-an-incorrectly-set-up-environment/</link>
@@ -56,7 +113,21 @@
 </span></span><span class="line"><span class="cl">da/conda-bld/pytorch_1708025845899/work/c10/cuda/CUDAFunctions.cpp:108.<span class="o">)</span>   <span class="k">return</span> torch._C._cuda_getDeviceCount<span class="o">()</span> &gt; <span class="m">0</span>                        
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">False         
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>But both nvcc - V and nvidia-smi still work</p>
+<h1 id="solution">Solution</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo rmmod nvidia_uvm
+</span></span><span class="line"><span class="cl">sudo modprobe nvidia_uvm
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>ubuntu 18.04 升级至 glibc_2.28</title>
     <link>https://www.joshuachou.ink/ubuntu-18.04-%E5%8D%87%E7%BA%A7%E8%87%B3-glibc_2.28/</link>
@@ -80,7 +151,39 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/opt/Qt/Tools/QtCreator/bin/qtcreator: /lib/x86_64-linux-gnu/libc.so.6: version <span class="sb">`</span>glibc_2.28<span class="err">&#39;</span> not found
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时最佳方法是升级到 ubuntu 20.04 或 ubuntu 22.04, 还有一种&quot;比较省心&quot;的方法, 保留系统仅升级 glibc</p>
+<p>下载 <a href="https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz" target="_blank" rel="noopener noreffer">https://ftp.gnu.org/gnu/glibc/glibc-2.28.tar.xz</a></p>
+<p>准备编译环境</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ sudo apt install build-essential gawk bison
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后解压和编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ tar -xJf glibc-2.28.tar.xz
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> glibc-2.28/
+</span></span><span class="line"><span class="cl">$ mkdir build
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> build
+</span></span><span class="line"><span class="cl">$ ../configure --prefix<span class="o">=</span>/usr
+</span></span><span class="line"><span class="cl">$ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>到这一步后不要 <code>sudo make install</code> 立刻安装到 /usr</p>]]></description>
 </item><item>
     <title>How to Install and Configure VNC on Ubuntu 20.04</title>
     <link>https://www.joshuachou.ink/vnc-on-ubuntu-20.04/</link>
@@ -119,7 +222,61 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run --gpus all -it nvidia/cuda:12.2.2-cudnn8-devel-ubuntu22.04 /bin/bash
 </span></span><span class="line"><span class="cl">apt-get update &amp;&amp; apt-get install -y wget nano vim curl less
-</span></span></code></pr]]></description>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>安装Conda环境以及其它需要的软件</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span><span class="line"><span class="cl">bash Anaconda3-2023.09-0-Linux-x86_64.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>新建repository</strong></p>
+<p><a href="https://hub.docker.com/repository/" target="_blank" rel="noopener noreffer">https://hub.docker.com/repository/</a></p>
+</li>
+<li>
+<h5 id="用docker-commit从容器打包镜像">用docker commit从容器打包镜像</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker ps -a
+</span></span><span class="line"><span class="cl">sudo docker commit -m &#34;AutoBA&#34; -a &#34;juexiao_zhou (www.joshuachou.ink)&#34; 12748b01449a joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后docker images就能在本地找到打包好的镜像</p>
+</li>
+<li>
+<p><strong>上传镜像</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># sudo docker login --username=用户名
+</span></span><span class="line"><span class="cl">sudo docker login --username=admin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># sudo docker push 镜像tag
+</span></span><span class="line"><span class="cl">sudo docker push joshuachou666/autoba:cuda12.2.2-cudnn8-devel-ubuntu22.04-autoba0.0.3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>重新拉取镜像测试</strong></p>]]></description>
 </item><item>
     <title>全新Ubuntu18.04配置DL环境，保姆级教程</title>
     <link>https://www.joshuachou.ink/%E5%85%A8%E6%96%B0ubuntu18.04%E9%85%8D%E7%BD%AEdl%E7%8E%AF%E5%A2%83/</link>
@@ -152,7 +309,77 @@
 </div>
 </div></li>
 <li>
-<p>安装gcc</p>]]></description>
+<p>安装gcc</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install gcc g++ make
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装NVIDIA驱动</p>
+<ol>
+<li>
+<p>在https://www.nvidia.com/Download/index.aspx?lang=cn下载对应型号驱动</p>
+</li>
+<li>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">cn</span><span class="o">.</span><span class="n">download</span><span class="o">.</span><span class="n">nvidia</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">XFree86</span><span class="o">/</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">/</span><span class="mf">535.104</span><span class="o">.</span><span class="mi">05</span><span class="o">/</span><span class="n">NVIDIA</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">535.104</span><span class="o">.</span><span class="mf">05.</span><span class="n">run</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>禁用nouveau</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo nano /etc/modprobe.d/blacklist.conf
+</span></span><span class="line"><span class="cl"><span class="c1"># 最后一行加入</span>
+</span></span><span class="line"><span class="cl">blacklist nouveau
+</span></span><span class="line"><span class="cl">sudo update-initramfs -u
+</span></span><span class="line"><span class="cl">sudo reboot
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>检查nouveau是否不在运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">lsmod | grep nouveau  # 没输出代表禁用生效
+</span></span><span class="line"><span class="cl">sudo telinit 3
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装驱动</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo chmod a+x NVIDIA-Linux-x86_64-535.104.05.run
+</span></span><span class="line"><span class="cl">sudo sh ./NVIDIA-Linux-x86_64-535.104.05.run --no-opengl-files
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>–no-opengl-files 参数必须加否则会循环登录，也就是loop login</strong></p>]]></description>
 </item><item>
     <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
     <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
@@ -198,7 +425,12 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pr]]></description>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo spctl --master-disable
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
 </item><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
@@ -225,6 +457,29 @@
 </div>
 </div><p>然后手动安装cmake，去官网下载。</p>
 <p>网址：https://cmake.org/download/</p>
-<p></p>]]></description>
+<p></p>
+<p>下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。</p>
+<p>下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。</p>
+<p></p>
+<p>这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。</p>
+<p>安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看版本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmake --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p>]]></description>
 </item></channel>
 </rss>

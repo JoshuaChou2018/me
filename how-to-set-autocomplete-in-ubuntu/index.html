@@ -10,7 +10,9 @@
   <meta property="og:title" content="How to set autocomplete in Ubuntu">
   <meta property="og:description" content="Mofidy bash.bashrc
 1 sudo vi /etc/bash.bashrc Find those code in the file
-1 2 3 4 5 6 7 8 #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi ">
+1 2 3 4 5 6 7 8 #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi Remove #
+Like below:
+1 2 3 4 5 6 7 8 #enable bash completion in interactive shells if ! shopt -oq posix; then if [-f /usr/share/bash-completion/bash_completion ]; then . /usr/share/bash-completion/bash_completion elif [ -f /etc/bash_completion]; then . /etc/bash_completion fi fi Source it">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -24,7 +26,9 @@
   <meta name="twitter:title" content="How to set autocomplete in Ubuntu">
   <meta name="twitter:description" content="Mofidy bash.bashrc
 1 sudo vi /etc/bash.bashrc Find those code in the file
-1 2 3 4 5 6 7 8 #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi ">
+1 2 3 4 5 6 7 8 #enable bash completion in interactive shells #if ! shopt -oq posix; then # if [-f /usr/share/bash-completion/bash_completion ]; then # . /usr/share/bash-completion/bash_completion # elif [ -f /etc/bash_completion]; then # . /etc/bash_completion # fi #fi Remove #
+Like below:
+1 2 3 4 5 6 7 8 #enable bash completion in interactive shells if ! shopt -oq posix; then if [-f /usr/share/bash-completion/bash_completion ]; then . /usr/share/bash-completion/bash_completion elif [ -f /etc/bash_completion]; then . /etc/bash_completion fi fi Source it">
 <meta name="application-name" content="Juexiao Zhou">
 <meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

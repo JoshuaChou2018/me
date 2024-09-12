@@ -34,7 +34,22 @@
 <blockquote>
 <p>Nature Communications，PNAS，Science Advances，Cell Reports</p>
 </blockquote>
-<p><strong><a href="https://www.zhihu.com/search?q=%e5%90%88%e4%bd%93%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">合体期</a></strong>：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。</p>]]></description>
+<p><strong><a href="https://www.zhihu.com/search?q=%e5%90%88%e4%bd%93%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">合体期</a></strong>：修行者的身体和灵魂开始与周围的世界融合，接近于自然（Nature）的本源。</p>
+<blockquote>
+<p>Nature Machine Intelligence，Nature Computational Sciences</p>
+</blockquote>
+<p><strong>大乘期</strong>：修行者几乎达到了<a href="https://www.zhihu.com/search?q=%e4%bb%99%e9%81%93&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">仙道</a>的巅峰，具备了创造或改变世界的能力。</p>
+<blockquote>
+<p>Nature Genetics，Nature Biotechnology，Nature Methods，Nature Medicine，Cell Genomics</p>
+</blockquote>
+<p><strong><a href="https://www.zhihu.com/search?q=%e9%a3%9e%e5%8d%87%e6%9c%9f&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7b%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3310893434%7d" target="_blank" rel="noopener noreffer">飞升期</a></strong>：修行者完成了修仙之路，失去凡体，飞升仙界，无相无形，成为自然（Nature）。</p>
+<blockquote>
+<p>Nature，Science，Cell</p>
+</blockquote>
+<p>Acknowledgement:</p>
+<p>作者：浪矢Ryan
+链接：https://www.zhihu.com/question/21660698/answer/3310893434
+来源：知乎</p>]]></description>
 </item><item>
     <title>[NeurIPS] Personalized Federated Learning: A Meta-Learning Approach解读</title>
     <link>https://www.joshuachou.ink/neurips-personalized-federated-learning-a-meta-learning-approach/</link>
@@ -50,7 +65,11 @@
 </blockquote>
 <p>但是，这样训练处来的server模型不一定适用于每一个user，尤其在不同的users所独有的数据差异比较大的时候。</p>
 <blockquote>
-<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>]]></description>
+<p>This is an important missing feature, especially given the heterogeneity of the underlying data distribution for various users.</p>
+</blockquote>
+<p>在heterogeneous的情景下，使用federated averaging方法训练出来的模型可能在每个独立user上的表现会比较差。</p>
+<blockquote>
+<p>In particular, in the heterogeneous settings where the underlying data distribution of users are not identical, the resulted global model obtained by minimizing the average loss could perform arbitrarily poorly once applied to the local dataset of each user.</p>]]></description>
 </item><item>
     <title>[IEEE] Personalized Federated Learning WithDifferential Privacy解读</title>
     <link>https://www.joshuachou.ink/ieee-personalized-federated-learning-with-differential-privacy/</link>
