@@ -3,9 +3,74 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Netatalk在Linux上面搭建时间机器备份</title>
+    <link>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</link>
+    <pubDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</guid>
+    <description><![CDATA[<p>安装 Nettalk</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install netatalk -y
+</span></span><span class="line"><span class="cl">sudo apt install avahi-daemon -y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Netatlk 3.x 只使用一个配置文件 <code>/etc/netatalk/afp.conf</code> :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="p">[</span><span class="n">Global</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">mimic</span> <span class="n">model</span> <span class="o">=</span> <span class="n">TimeCapsule6</span><span class="p">,</span><span class="mi">106</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">log</span> <span class="n">level</span> <span class="o">=</span> <span class="n">default</span><span class="p">:</span><span class="n">warn</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">log</span> <span class="n">file</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">afpd</span><span class="o">.</span><span class="n">log</span>
+</span></span><span class="line"><span class="cl"> <span class="n">hosts</span> <span class="n">allow</span> <span class="o">=</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">1.0</span><span class="o">/</span><span class="mi">16</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">Homes</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">basedir</span> <span class="n">regex</span> <span class="o">=</span> <span class="o">/</span><span class="n">home</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">TimeMachine</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">path</span> <span class="o">=</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">joshuachou</span><span class="o">/</span><span class="n">myDisk</span><span class="o">/</span><span class="n">TimeMachine</span>
+</span></span><span class="line"><span class="cl"> <span class="n">valid</span> <span class="n">users</span> <span class="o">=</span> <span class="n">joshuachou</span>
+</span></span><span class="line"><span class="cl"> <span class="n">time</span> <span class="n">machine</span> <span class="o">=</span> <span class="n">yes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>并且确保 <code>avahi</code> 处于运行状态：</p>
+<p><code>systemctl status avahi-daemon.service</code> 查看 <code>avahi</code> 运行状态。</p>
+<p>重启Netatalk服务：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo service avahi-daemon restart
+</span></span><span class="line"><span class="cl">sudo service netatalk restart
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mac-备份非常慢">Mac 备份非常慢</h2>
+<p>如果你的 Mac 是第一次在这个上面进行备份，第一次备份一般都很慢，可以调节参数的方式将其调节为全速进行备份，记得备份完后将其调整回来，否则可能会导致你的电脑在正常使用的时候由于同时在备份导致卡顿。</p>]]></description>
+</item><item>
     <title>Ubuntu配置VNCServer，一定能用，不白屏灰屏</title>
     <link>https://www.joshuachou.ink/ubuntu-vncserver/</link>
     <pubDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</pubDate>
@@ -769,23 +834,5 @@
 </table>
 <h3 id="3标准化进展">3、标准化进展</h3>
 <p><strong>（1）半同态加密标准化</strong></p>]]></description>
-</item><item>
-    <title>Homomorphic Encryption</title>
-    <link>https://www.joshuachou.ink/homomorphic-encryption/</link>
-    <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/homomorphic-encryption/</guid>
-    <description><![CDATA[<h2 id="outsourcing-computation-privately">Outsourcing computation, privately</h2>
-<p></p>
-<p>Homomorphic evaluation function:</p>
-<p>Eval: f, Enc(x) -&gt; Enc(f(x))</p>
-<h2 id="fully-homomorphic-encryption">Fully homomorphic encryption</h2>
-<p></p>
-<p><strong>Fully</strong> homomorphic = correctness for <strong>any</strong> efficient f = correctness for <strong>universal</strong> set</p>
-<h3 id="approximate-eigenvector-method">Approximate eigenvector method</h3>
-<p></p>
-<p>基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。</p>
-<p>**idea：**使用approximate eigenvectors，在secret key右乘cipher text</p>
-<p></p>]]></description>
 </item></channel>
 </rss>

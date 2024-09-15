@@ -3,7 +3,72 @@
         <title>Numpy - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/numpy/</link>
         <description>Numpy - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/numpy/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/numpy/" rel="self" type="application/rss+xml" /><item>
+    <title>Netatalk在Linux上面搭建时间机器备份</title>
+    <link>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</link>
+    <pubDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</guid>
+    <description><![CDATA[<p>安装 Nettalk</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt install netatalk -y
+</span></span><span class="line"><span class="cl">sudo apt install avahi-daemon -y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Netatlk 3.x 只使用一个配置文件 <code>/etc/netatalk/afp.conf</code> :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="p">[</span><span class="n">Global</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">mimic</span> <span class="n">model</span> <span class="o">=</span> <span class="n">TimeCapsule6</span><span class="p">,</span><span class="mi">106</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">log</span> <span class="n">level</span> <span class="o">=</span> <span class="n">default</span><span class="p">:</span><span class="n">warn</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">log</span> <span class="n">file</span> <span class="o">=</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="nb">log</span><span class="o">/</span><span class="n">afpd</span><span class="o">.</span><span class="n">log</span>
+</span></span><span class="line"><span class="cl"> <span class="n">hosts</span> <span class="n">allow</span> <span class="o">=</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">1.0</span><span class="o">/</span><span class="mi">16</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">Homes</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">basedir</span> <span class="n">regex</span> <span class="o">=</span> <span class="o">/</span><span class="n">home</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">TimeMachine</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> <span class="n">path</span> <span class="o">=</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">joshuachou</span><span class="o">/</span><span class="n">myDisk</span><span class="o">/</span><span class="n">TimeMachine</span>
+</span></span><span class="line"><span class="cl"> <span class="n">valid</span> <span class="n">users</span> <span class="o">=</span> <span class="n">joshuachou</span>
+</span></span><span class="line"><span class="cl"> <span class="n">time</span> <span class="n">machine</span> <span class="o">=</span> <span class="n">yes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>并且确保 <code>avahi</code> 处于运行状态：</p>
+<p><code>systemctl status avahi-daemon.service</code> 查看 <code>avahi</code> 运行状态。</p>
+<p>重启Netatalk服务：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo service avahi-daemon restart
+</span></span><span class="line"><span class="cl">sudo service netatalk restart
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mac-备份非常慢">Mac 备份非常慢</h2>
+<p>如果你的 Mac 是第一次在这个上面进行备份，第一次备份一般都很慢，可以调节参数的方式将其调节为全速进行备份，记得备份完后将其调整回来，否则可能会导致你的电脑在正常使用的时候由于同时在备份导致卡顿。</p>]]></description>
+</item><item>
     <title>[转载] 谷歌开源计算框架JAX”</title>
     <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</link>
     <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
