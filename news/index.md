@@ -2,6 +2,9 @@
 
 ### News
 
+- Aug 2024, AutoBA is accepted by **Advanced Science (IF=15.1)**.
+- Jul 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
+- Jun 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
 - June 2024, a paper is accepted by **Bioinformatics (IF=5.8)**
 - May 2024, GBD 2021 Forecasting Capstone paper is accepted by **The Lancet (IF=168.9)**
 - May 2024, GBD 2021 Risk Factors Capstone paper is accepted by **The Lancet (IF=168.9)**
