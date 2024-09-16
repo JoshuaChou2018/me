@@ -439,6 +439,22 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 
 
+### Mentoring
+
+#### At KAUST
+
+- Mohammed Saif [Sr.System Administrator/DevOps Evangelist, [Computational Bioscience Research Center](https://cemse.kaust.edu.sa/cbrc), KAUST]
+
+  Email: [mohammed.saif@kaust.edu.sa](mailto:mohammed.saif@kaust.edu.sa)
+
+  For his master thesis titled "A comparative study on the application of advanced AI methods in the diagnosis of difficult skin diseases".
+
+
+
+<br>
+
+
+
 ### Awards
 
 #### King Abdullah University of Science and Technology
@@ -506,9 +522,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 
 
-### Selected Press Coverage
-
-**[[Full list](https://www.joshuachou.ink/press/)]**
+### Press Coverage
 
 - **SkinGPT-4** was covered by:
   - How a Saudi university is using AI to transform the diagnosis and treatment of skin diseases, [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia)
