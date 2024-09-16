@@ -3,7 +3,32 @@
         <title>System - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/system/</link>
         <description>System - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
+    <title>cannot create directory ‘disk4’: Read-only file system</title>
+    <link>https://www.joshuachou.ink/read-only-file-system/</link>
+    <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/read-only-file-system/</guid>
+    <description><![CDATA[<p><strong>问题描述</strong>：近期重启Ubuntu发现home目录写文件报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cannot create directory ‘disk4’: Read-only file system
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>解决方案</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -o rw,remount /
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>docker拉取镜像修改打包教程</title>
     <link>https://www.joshuachou.ink/docker%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F%E4%BF%AE%E6%94%B9%E6%89%93%E5%8C%85%E6%95%99%E7%A8%8B/</link>
     <pubDate>Thu, 21 Dec 2023 00:00:00 &#43;0000</pubDate>
@@ -347,23 +372,5 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
-</item><item>
-    <title>jupyter in pycharm</title>
-    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
-    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
-    <description><![CDATA[<p>When setting jupyter interpreter in pycharm, it may throw the error:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter URL is invalid
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Solution:</strong></p>
-<p>Even without a token, use the url: <strong>http://url:port?token=</strong></p>
-<p>Then it works</p>]]></description>
 </item></channel>
 </rss>

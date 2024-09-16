@@ -105,6 +105,65 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/install-jupyter-kernel/">Install kernel for jupyter notebook</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-28">2021-11-28</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><ol>
+<li><strong>Avticate your environment，check for package ipykernel</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python -m ipykernel --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>If it’s not installed：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python -m pip install ipykernel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li><strong>Add kernel to Jupyter notebook</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python -m ipykernel install --user --name &#39;kernelname&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li><strong>Check Jupyter notebook kernel</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter kernelspec list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li><strong>Delet jupyter kernel</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter kernelspec remove kernelname
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Update 2022.09.25:</strong></p>
+<p>If you encounter the error: <strong>ImportError: cannot import name &lsquo;AsyncGenerator&rsquo;</strong></p></div><div class="post-footer">
+        <a href="/install-jupyter-kernel/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/conda/">Conda</a>,&nbsp;<a href="/tags/python/">Python</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc3.longest_substring_without_repeating_characters/">lc3.Longest Substring Without Repeating Characters</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-18">2021-11-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> without repeating characters.</p>
 <p><strong>Example 1:</strong></p>
@@ -337,34 +396,6 @@
 <p>The model learn based on the rewards received from the previous action.</p></div><div class="post-footer">
         <a href="/i3.different-types-of-machine-learning/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/interview/">Interview</a>,&nbsp;<a href="/tags/machine-learning/">Machine Learning</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc2.add2numbers/">lc2.Add Two Numbers</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-07">2021-11-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
-<p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
-<p><strong>Example 1:</strong></p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/addtwonumber1.jpg"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/addtwonumber1.jpg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/addtwonumber1.jpg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/addtwonumber1.jpg 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/addtwonumber1.jpg"
-        title="addtwonumber1" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: l1 = [2,4,3], l2 = [5,6,4]
-</span></span><span class="line"><span class="cl">Output: [7,0,8]
-</span></span><span class="line"><span class="cl">Explanation: 342 + 465 = 807.
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Example 2:</strong></p></div><div class="post-footer">
-        <a href="/lc2.add2numbers/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/coding/">Coding</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

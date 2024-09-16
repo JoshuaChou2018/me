@@ -105,6 +105,38 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/lc56.merge_intervals/">lc56. Merge Intervals</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given an array of <code>intervals</code> where <code>intervals[i] = [starti, endi]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+</span></span><span class="line"><span class="cl">Output: [[1,6],[8,10],[15,18]]
+</span></span><span class="line"><span class="cl">Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: intervals = [[1,4],[4,5]]
+</span></span><span class="line"><span class="cl">Output: [[1,5]]
+</span></span><span class="line"><span class="cl">Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Constraints:</strong></p></div><div class="post-footer">
+        <a href="/lc56.merge_intervals/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc125.valid_palindrome/">lc125. Valid Palindrome</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-26">2022-01-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>A phrase is a <strong>palindrome</strong> if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.</p>
 <p>Given a string <code>s</code>, return <code>true</code> <em>if it is a <strong>palindrome</strong>, or</em> <code>false</code> <em>otherwise</em>.</p>
@@ -252,41 +284,6 @@
 </ul>
 <p><strong>难点</strong>：本题和<a href="https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses/" target="_blank" rel="noopener noreffer">1249. 移除无效的括号</a>非常相似，但是这里最难的点是如何找到所有的可能解。</p></div><div class="post-footer">
         <a href="/lc301.remove_invalid_parentheses/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc67.add_binary/">lc67. Add Binary</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-20">2022-01-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given two binary strings <code>a</code> and <code>b</code>, return <em>their sum as a binary string</em>.</p>
-<p><strong>Example 1:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: a = &#34;11&#34;, b = &#34;1&#34;
-</span></span><span class="line"><span class="cl">Output: &#34;100&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Example 2:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: a = &#34;1010&#34;, b = &#34;1011&#34;
-</span></span><span class="line"><span class="cl">Output: &#34;10101&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Constraints:</strong></p>
-<ul>
-<li><code>1 &lt;= a.length, b.length &lt;= 104</code></li>
-<li><code>a</code> and <code>b</code> consist only of <code>'0'</code> or <code>'1'</code> characters.</li>
-<li>Each string does not contain leading zeros except for the zero itself.</li>
-</ul>
-<h6 id="解题思路">解题思路</h6>
-<p>直接按照进位处理即可。</p></div><div class="post-footer">
-        <a href="/lc67.add_binary/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

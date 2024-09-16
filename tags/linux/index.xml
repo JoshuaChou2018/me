@@ -3,7 +3,32 @@
         <title>Linux - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/linux/</link>
         <description>Linux - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>cannot create directory ‘disk4’: Read-only file system</title>
+    <link>https://www.joshuachou.ink/read-only-file-system/</link>
+    <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/read-only-file-system/</guid>
+    <description><![CDATA[<p><strong>问题描述</strong>：近期重启Ubuntu发现home目录写文件报错</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cannot create directory ‘disk4’: Read-only file system
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>解决方案</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo mount -o rw,remount /
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>Ubuntu配置VNCServer，一定能用，不白屏灰屏</title>
     <link>https://www.joshuachou.ink/ubuntu-vncserver/</link>
     <pubDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</pubDate>
@@ -431,55 +456,5 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
-</item><item>
-    <title>macos cmake-gui</title>
-    <link>https://www.joshuachou.ink/macos-cmake-gui/</link>
-    <pubDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/macos-cmake-gui/</guid>
-    <description><![CDATA[<p>之前使用命令行安装：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install cmake
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew uninstall cmake
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>然后手动安装cmake，去官网下载。</p>
-<p>网址：https://cmake.org/download/</p>
-<p></p>
-<p>下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。</p>
-<p>下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。</p>
-<p></p>
-<p>这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。</p>
-<p>安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>查看版本：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmake --version
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p>]]></description>
 </item></channel>
 </rss>
