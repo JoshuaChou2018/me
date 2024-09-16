@@ -105,6 +105,17 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/i3.different-types-of-machine-learning/">i3.different types of machine learning</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-08">2021-11-08</time></span>&nbsp;<span class="post-category">included in <a href="/categories/interview/"><i class="far fa-folder fa-fw"></i>Interview</a></span></div><div class="content"><p><strong>Q. What Are the Different Types of Machine Learning?</strong></p>
+<p><strong>Supervised learning</strong></p>
+<p>A model makes predictions or decisions based on past or labeled data. Labeled data refers to sets of data that are given tags or labels, and thus made more meaningful.</p>
+<p><strong>Unsupervised learning</strong></p>
+<p>In this case, we don’t have labeled data, a model can identify patterns, anomalies, and relationships in the input data.</p>
+<p><strong>Reinforcement learning</strong></p>
+<p>The model learn based on the rewards received from the previous action.</p></div><div class="post-footer">
+        <a href="/i3.different-types-of-machine-learning/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/interview/">Interview</a>,&nbsp;<a href="/tags/machine-learning/">Machine Learning</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc2.add2numbers/">lc2.Add Two Numbers</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-07">2021-11-07</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.</p>
 <p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
@@ -257,72 +268,6 @@
 <p>If you just sit in your chair quietly, then the interviewer is not going to know how you came to your answer. Talking the answer out gives the hiring manager valuable insight into how you are able to think.</p></div><div class="post-footer">
         <a href="/i2.clock-hand-overlap/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/interview/">Interview</a>,&nbsp;<a href="/tags/thinking/">Thinking</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/miniserver/">Miniserve, an elegant file server</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-04">2021-11-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><h4 id="install">Install</h4>
-<p>You can find it at here: <a href="https://github.com/svenstaro/miniserve/releases" target="_blank" rel="noopener noreffer">https://github.com/svenstaro/miniserve/releases</a></p>
-<h4 id="usage">Usage</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">miniserve --help
-</span></span><span class="line"><span class="cl">miniserve 0.4.1
-</span></span><span class="line"><span class="cl">Sven-Hendrik Haase &lt;svenstaro@gmail.com&gt;, Boastful Squirrel &lt;boastful.squirrel@gmail.com&gt;
-</span></span><span class="line"><span class="cl">For when you really just want to serve some files over HTTP right now!
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">USAGE:
-</span></span><span class="line"><span class="cl">    miniserve <span class="o">[</span>FLAGS<span class="o">]</span> <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>--<span class="o">]</span> <span class="o">[</span>PATH<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">FLAGS:
-</span></span><span class="line"><span class="cl">    -u, --upload-files       Enable file uploading
-</span></span><span class="line"><span class="cl">    -h, --help               Prints <span class="nb">help</span> information
-</span></span><span class="line"><span class="cl">    -P, --no-symlinks        Do not follow symbolic links
-</span></span><span class="line"><span class="cl">    -o, --overwrite-files    Enable overriding existing files during file upload
-</span></span><span class="line"><span class="cl">        --random-route       Generate a random 6-hexdigit route
-</span></span><span class="line"><span class="cl">    -V, --version            Prints version information
-</span></span><span class="line"><span class="cl">    -v, --verbose            Be verbose, includes emitting access logs
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">OPTIONS:
-</span></span><span class="line"><span class="cl">    -a, --auth &lt;auth&gt;                    Set authentication <span class="o">(</span>username:password<span class="o">)</span>
-</span></span><span class="line"><span class="cl">    -c, --color-scheme &lt;color_scheme&gt;    Default color scheme <span class="o">[</span>default: Squirrel<span class="o">]</span>  <span class="o">[</span>possible values:
-</span></span><span class="line"><span class="cl">                                         Archlinux, Zenburn, Monokai, Squirrel<span class="o">]</span>
-</span></span><span class="line"><span class="cl">    -i, --if &lt;interfaces&gt;...             Interface to listen on
-</span></span><span class="line"><span class="cl">    -p, --port &lt;port&gt;                    Port to use <span class="o">[</span>default: 8080<span class="o">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">ARGS:
-</span></span><span class="line"><span class="cl">    &lt;PATH&gt;    Which path to serve
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Serve single folder</strong></p></div><div class="post-footer">
-        <a href="/miniserver/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>

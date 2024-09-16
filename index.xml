@@ -31,6 +31,23 @@
 </div>
 </div>]]></description>
 </item><item>
+    <title>NVIDIA driver install - Error: Unable to find the kernel source tree</title>
+    <link>https://www.joshuachou.ink/unable-to-find-the-kernel-source-tree/</link>
+    <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/unable-to-find-the-kernel-source-tree/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong> NVIDIA driver install - Error: Unable to find the kernel source tree</p>
+<p><strong>Solution:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install linux-headers-`uname -r`
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>Netatalk在Linux上面搭建时间机器备份</title>
     <link>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</link>
     <pubDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</pubDate>
@@ -710,47 +727,5 @@
 </div><p><strong>Solution:</strong></p>
 <p>Even without a token, use the url: <strong>http://url:port?token=</strong></p>
 <p>Then it works</p>]]></description>
-</item><item>
-    <title>[转载] 谷歌开源计算框架JAX”</title>
-    <link>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</link>
-    <pubDate>Thu, 29 Sep 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/</guid>
-    <description><![CDATA[<p></p>
-<p>相信大家对numpy, Tensorflow, Pytorch已经极其熟悉，不过，你知道JAX吗？ JAX发布之后，有网友进行了测试，发现，使用JAX，Numpy运算可以快三十多倍！</p>
-<p>下面是使用Numpy的运行情况：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import numpy as np  # 使用标准numpy，运算将在CPU上执行。
-</span></span><span class="line"><span class="cl">x = np.random.random([5000, 5000]).astype(np.float32)
-</span></span><span class="line"><span class="cl">%timeit np.matmul(x, x)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>运行结果：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 loop, best of 3: 3.9 s per loop 而下面是使用JAX的Numpy的情况：
-</span></span><span class="line"><span class="cl">import jax.numpy as np # 使用&#34;JAX版&#34;的numpy from jax import random # 注意JAX下随机数API有所不同 x = random.uniform(random.PRNGKey(0), [5000, 5000]) %timeit np.matmul(x, x)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>运行情况：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 loop, best of 3: 109 ms per loop
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！</p>]]></description>
 </item></channel>
 </rss>
