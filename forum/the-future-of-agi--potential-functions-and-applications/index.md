@@ -1,7 +1,7 @@
 # The Future of AGI – Potential Functions and Applications
 
 
-
+#### Topic:
 
 As we move toward the development of Artificial General Intelligence (AGI), the possibilities for its future capabilities and applications are vast. AGI, unlike narrow AI, has the potential to understand, learn, and perform any intellectual task that a human being can, eventually surpassing human cognitive abilities in a wide range of areas.
 
