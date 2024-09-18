@@ -48,7 +48,11 @@
     <br>
     <i><b>Bioinformatics</b></i>
     <br>
-    <i><b>Accepted.</b></i>
+    <b>DOI: https://doi.org/10.1093/bioinformatics/btae364</b>
+    <br>
+    <b>Access: </b>
+    <a href="https://academic.oup.com/bioinformatics/article/40/6/btae364/7691994">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/btae364.pdf">pdf</a>
   </li>
   <br>
   <li>
