@@ -3,9 +3,38 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>ERROR: You appear to be running an X server;</title>
+    <link>https://www.joshuachou.ink/error-you-appear-to-be-running-an-x-server/</link>
+    <pubDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/error-you-appear-to-be-running-an-x-server/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>Get this error when install ./NVIDIA-Linux-x86_64-535.104.05.run.</p>
+<p>![image-20240919101144517](/Users/joshuachou/Library/Application Support/typora-user-images/image-20240919101144517.png)</p>
+<p><strong>Solution:</strong></p>
+<p>Check if any vncserver is running and close it.</p>]]></description>
+</item><item>
+    <title>NVIDIA driver install - Error: Unable to find the kernel source tree</title>
+    <link>https://www.joshuachou.ink/nvidia-driver-install-error-unable-to-find-the-kernel-source-tree/</link>
+    <pubDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/nvidia-driver-install-error-unable-to-find-the-kernel-source-tree/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>NVIDIA driver install - Error: Unable to find the kernel source tree</p>
+<p><strong>Solution:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install linux-headers-`uname -r`
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>cannot create directory ‘disk4’: Read-only file system</title>
     <link>https://www.joshuachou.ink/read-only-file-system/</link>
     <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
@@ -690,42 +719,5 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>4，重启Pycharm</p>]]></description>
-</item><item>
-    <title>python安装blender包bpy</title>
-    <link>https://www.joshuachou.ink/blender-python/</link>
-    <pubDate>Thu, 06 Oct 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/blender-python/</guid>
-    <description><![CDATA[<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">p37</span> <span class="n">python</span><span class="o">==</span><span class="mf">3.7</span>
-</span></span><span class="line"><span class="cl"><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">TylerGubala</span><span class="o">/</span><span class="n">blenderpy</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v2</span><span class="o">.</span><span class="mi">91</span><span class="n">a0</span><span class="o">/</span><span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span>
-</span></span><span class="line"><span class="cl"><span class="n">pip</span> <span class="n">install</span> <span class="n">bpy</span><span class="o">-</span><span class="mf">2.91</span><span class="n">a0</span><span class="o">-</span><span class="n">cp37</span><span class="o">-</span><span class="n">cp37m</span><span class="o">-</span><span class="n">manylinux2014_x86_64</span><span class="o">.</span><span class="n">whl</span> <span class="o">&amp;&amp;</span> <span class="n">bpy_post_install</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
-</item><item>
-    <title>jupyter in pycharm</title>
-    <link>https://www.joshuachou.ink/pycharm-jupyter/</link>
-    <pubDate>Mon, 03 Oct 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/pycharm-jupyter/</guid>
-    <description><![CDATA[<p>When setting jupyter interpreter in pycharm, it may throw the error:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">jupyter URL is invalid
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Solution:</strong></p>
-<p>Even without a token, use the url: <strong>http://url:port?token=</strong></p>
-<p>Then it works</p>]]></description>
 </item></channel>
 </rss>

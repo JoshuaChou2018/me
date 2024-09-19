@@ -105,6 +105,70 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">搭建Time Machine 服务器 （转载）</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-29">2022-01-29</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p><strong>本文转载自：https://zhuanlan.zhihu.com/p/31088141</strong></p>
+<p>本文的内容分为：</p>
+<ul>
+<li>Time Machine 是什么？</li>
+<li>自建Time Machine 服务器的理由</li>
+<li>硬件的选择</li>
+<li>软件的部署</li>
+<li>Mac 备份到Time Machine 服务器</li>
+<li>从Time Machine 服务器恢复Mac</li>
+</ul>
+<h2 id="time-machine-是什么">Time Machine 是什么？</h2>
+<p>Time Machine是macOS中一个非常强大的功能，Time Machine能够保留：</p>
+<ul>
+<li>本地快照（只要空间允许）</li>
+<li>过去24小时的每小时备份</li>
+<li>过去一个月的每日备份</li>
+<li>过去所有月份的每周备份</li>
+</ul>
+<p>Time Machine的备份是增量备份，只会备份自上次备份以来有变动的文件，因此备份速度很快，占用的空间也不多。如果Time Machine 占满了磁盘空间，最早的备份会被自动删除。</p>
+<p>引用知友</p>
+<p><a href="https://www.zhihu.com/people/f42bb95d1448482e4aae658a19f6ed0b" target="_blank" rel="noopener noreffer">@Xing</a></p>
+<p>在<a href="https://www.zhihu.com/question/21277559/answer/18483790" target="_blank" rel="noopener noreffer">OS X 中的 Time Machine 真的有用吗？</a>中的回答：</p>
+<blockquote>
+<p>只要使用Time Machine备份过，即使原来的Mac在Windows双系统下渲染片子时突然蓝屏被你一气之下砸坏或者在麦当劳吃晚饭时被人连电脑包顺走，你也只需走进Apple Store，买一台新Mac，回家连上Time Capsule或者插上含有备份的硬盘，<del>按住option开机进入recovery分区，选择从Time Machine中恢复。</del>开机后打开迁移助手Migration Assistant，选择从Time Machine备份中恢复。等你小憩醒来，将会看到一台和之前一模一样的Mac，不仅是图库音乐库昨晚看过的美剧进度，包括所有设置、开机启动项浏览器历史都是完全一致的。
+当然上面只是Time Machine顺滑体验的一部分，Time Machine可以带你回到每一个有记录的节点，例如你有一个project几个月前 从零开始做，在Time Machine中可以演绎整个project文件夹内的变化，同时可以把某个时间任何文件揪出来。这感觉就像你有一麻袋后悔药，想怎么来就怎么来。</p>
+</blockquote>
+<p>使用Time Machine，你既可以<strong>回到过去某个时刻，提取某个文件在当时的版本</strong>；也可以在电脑异常崩溃后直接<strong>全盘恢复到过去某个时刻的状态</strong>。</p>
+<h2 id="自建time-machine-服务器的理由">自建Time Machine 服务器的理由</h2>
+<p>Time Machine的使用方法有三种：</p>
+<ol>
+<li>使用一块外置的USB移动硬盘，要求文件系统是HFS+。</li>
+<li>使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。</li>
+<li>使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。</li>
+</ol>
+<p>方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。</p>
+<p>方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。</p></div><div class="post-footer">
+        <a href="/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/lc10.regular_expression_matching/">lc10. Regular Expression Matching</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given an input string <code>s</code> and a pattern <code>p</code>, implement regular expression matching with support for <code>'.'</code> and <code>'*'</code> where:</p>
+<ul>
+<li><code>'.'</code> Matches any single character.</li>
+<li><code>'*'</code> Matches zero or more of the preceding element.</li>
+</ul>
+<p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: s = &#34;aa&#34;, p = &#34;a&#34;
+</span></span><span class="line"><span class="cl">Output: false
+</span></span><span class="line"><span class="cl">Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Example 2:</strong></p></div><div class="post-footer">
+        <a href="/lc10.regular_expression_matching/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/lc31.next_permutation/">lc31. Next Permutation</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-27">2022-01-27</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>A <strong>permutation</strong> of an array of integers is an arrangement of its members into a sequence or linear order.</p>
 <ul>
@@ -183,70 +247,6 @@
 </div>
 </div><p><strong>Example 2:</strong></p></div><div class="post-footer">
         <a href="/lc238._product_of_array_except_self/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc415.add_strings/">lc415. Add Strings</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-26">2022-01-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given two non-negative integers, <code>num1</code> and <code>num2</code> represented as string, return <em>the sum of</em> <code>num1</code><em>and</em> <code>num2</code> <em>as a string</em>.</p>
-<p>You must solve the problem without using any built-in library for handling large integers (such as <code>BigInteger</code>). You must also not convert the inputs to integers directly.</p>
-<p><strong>Example 1:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num1 = &#34;11&#34;, num2 = &#34;123&#34;
-</span></span><span class="line"><span class="cl">Output: &#34;134&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Example 2:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: num1 = &#34;456&#34;, num2 = &#34;77&#34;
-</span></span><span class="line"><span class="cl">Output: &#34;533&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Example 3:</strong></p></div><div class="post-footer">
-        <a href="/lc415.add_strings/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/lc560.subarray_sum_equals_k/">lc560. Subarray Sum Equals K</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-01-25">2022-01-25</time></span>&nbsp;<span class="post-category">included in <a href="/categories/leetcode/"><i class="far fa-folder fa-fw"></i>Leetcode</a></span></div><div class="content"><p>Given an array of integers <code>nums</code> and an integer <code>k</code>, return <em>the total number of continuous subarrays whose sum equals to <code>k</code></em>.</p>
-<p><strong>Example 1:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [1,1,1], k = 2
-</span></span><span class="line"><span class="cl">Output: 2
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Example 2:</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Input: nums = [1,2,3], k = 3
-</span></span><span class="line"><span class="cl">Output: 2
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><strong>Constraints:</strong></p>
-<ul>
-<li><code>1 &lt;= nums.length &lt;= 2 * 104</code></li>
-<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
-<li><code>-107 &lt;= k &lt;= 107</code></li>
-</ul>
-<h6 id="解题思路">解题思路：</h6>
-<p><strong>累积和</strong>（使用数组）</p></div><div class="post-footer">
-        <a href="/lc560.subarray_sum_equals_k/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/leetcode/">Leetcode</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

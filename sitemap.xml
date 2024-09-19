@@ -2,6 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://www.joshuachou.ink/error-you-appear-to-be-running-an-x-server/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/nvidia-driver-install-error-unable-to-find-the-kernel-source-tree/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/read-only-file-system/</loc><lastmod>2024-09-16T10:25:59&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/unable-to-find-the-kernel-source-tree/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/forum/the-future-of-agi--potential-functions-and-applications/</loc><lastmod>2024-09-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -96,20 +98,20 @@
             <loc>https://www.joshuachou.ink/life/phuket-thailand/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/langkawi-archipelago-malaysia/</loc><lastmod>2022-09-18T17:25:48&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/bali-indonesia/</loc><lastmod>2022-09-19T11:46:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/categories/linux/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.joshuachou.ink/tags/ubuntu/</loc><lastmod>2024-09-19T10:14:03&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/forum/</loc><lastmod>2024-09-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/forum/</loc><lastmod>2024-09-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/forum/</loc><lastmod>2024-09-16T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/</loc><lastmod>2024-09-18T13:07:24&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/linux/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/posts/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/system/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/system/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/</loc><lastmod>2024-09-16T11:23:25&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/numpy/</loc><lastmod>2024-09-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/python/</loc><lastmod>2024-09-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/categories/linux/</loc><lastmod>2024-09-12T11:17:36&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://www.joshuachou.ink/tags/ubuntu/</loc><lastmod>2024-09-12T11:17:36&#43;03:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://www.joshuachou.ink/categories/life/</loc><lastmod>2024-06-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/life/</loc><lastmod>2024-06-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://www.joshuachou.ink/tags/turkey/</loc><lastmod>2024-06-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

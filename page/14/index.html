@@ -105,6 +105,82 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/how-to-set-autocomplete-in-ubuntu/">How to set autocomplete in Ubuntu</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-04">2021-11-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p><strong>Mofidy bash.bashrc</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo vi /etc/bash.bashrc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Find those code in the file</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#enable bash completion in interactive shells</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#if ! shopt -oq posix; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      if [-f  /usr/share/bash-completion/bash_completion ]; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#          . /usr/share/bash-completion/bash_completion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      elif [ -f /etc/bash_completion]; then</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#           . /etc/bash_completion</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#      fi</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Remove #</strong></p>
+<p>Like below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#enable bash completion in interactive shells</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> ! <span class="nb">shopt</span> -oq posix<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">     <span class="k">if</span> <span class="o">[</span>-f  /usr/share/bash-completion/bash_completion <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">          . /usr/share/bash-completion/bash_completion
+</span></span><span class="line"><span class="cl">      <span class="k">elif</span> <span class="o">[</span> -f /etc/bash_completion<span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">           . /etc/bash_completion
+</span></span><span class="line"><span class="cl">      <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Source it</strong></p></div><div class="post-footer">
+        <a href="/how-to-set-autocomplete-in-ubuntu/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/i2.clock-hand-overlap/">i2.How Many Times Do A Clock’s Hands Overlap In A Day?</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-04">2021-11-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/interview/"><i class="far fa-folder fa-fw"></i>Interview</a></span></div><div class="content"><p><strong>Q. How Many Times Do A Clock’s Hands Overlap In A Day?</strong></p>
+<p>The most important is not the answer but the way to think and work out problems.</p>
+<p>In total 22, because the clock hands approximately overlap at 12:00, 1:05, 2:10, 3:15, 4:20, 5:25, 6:30, 7:35, 8:40, 9:45 and 10:50 twice a day.</p>
+<p>Although reaching the wrong answer is fine to an extent, you should avoid these common errors.</p>
+<ul>
+<li>Don&rsquo;t just blurt out an answer without thinking it through.</li>
+<li>If you give the wrong answer, don&rsquo;t get flustered.</li>
+<li>Don&rsquo;t say, &ldquo;I don&rsquo;t know.&rdquo;</li>
+<li>Don&rsquo;t sit in silence.</li>
+</ul>
+<p>If you just sit in your chair quietly, then the interviewer is not going to know how you came to your answer. Talking the answer out gives the hiring manager valuable insight into how you are able to think.</p></div><div class="post-footer">
+        <a href="/i2.clock-hand-overlap/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/interview/">Interview</a>,&nbsp;<a href="/tags/thinking/">Thinking</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/miniserver/">Miniserve, an elegant file server</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2021-11-04">2021-11-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><h4 id="install">Install</h4>
 <p>You can find it at here: <a href="https://github.com/svenstaro/miniserve/releases" target="_blank" rel="noopener noreffer">https://github.com/svenstaro/miniserve/releases</a></p>

@@ -3,7 +3,36 @@
         <title>Ubuntu - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/ubuntu/</link>
         <description>Ubuntu - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/ubuntu/" rel="self" type="application/rss+xml" /><item>
+    <title>ERROR: You appear to be running an X server;</title>
+    <link>https://www.joshuachou.ink/error-you-appear-to-be-running-an-x-server/</link>
+    <pubDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/error-you-appear-to-be-running-an-x-server/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>Get this error when install ./NVIDIA-Linux-x86_64-535.104.05.run.</p>
+<p>![image-20240919101144517](/Users/joshuachou/Library/Application Support/typora-user-images/image-20240919101144517.png)</p>
+<p><strong>Solution:</strong></p>
+<p>Check if any vncserver is running and close it.</p>]]></description>
+</item><item>
+    <title>NVIDIA driver install - Error: Unable to find the kernel source tree</title>
+    <link>https://www.joshuachou.ink/nvidia-driver-install-error-unable-to-find-the-kernel-source-tree/</link>
+    <pubDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/nvidia-driver-install-error-unable-to-find-the-kernel-source-tree/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>NVIDIA driver install - Error: Unable to find the kernel source tree</p>
+<p><strong>Solution:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt-get install linux-headers-`uname -r`
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>Ubuntu配置VNCServer，一定能用，不白屏灰屏</title>
     <link>https://www.joshuachou.ink/ubuntu-vncserver/</link>
     <pubDate>Tue, 02 Jul 2024 00:00:00 &#43;0000</pubDate>
