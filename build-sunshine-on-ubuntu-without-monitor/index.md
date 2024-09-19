@@ -110,7 +110,7 @@
 
 				   Section "Screen"
 						Identifier "Screen0"
-						Device     "Card0"     <-- This is the line we want
+						Device     "Card0"     <-- This is the line we want， 要根据实际NVIDIA GPU是哪个来修改
 						Monitor    "Monitor0"
 						SubSection "Display"
 								Viewport   0 0
@@ -140,8 +140,8 @@
 						#Option     "AccelMethod"               # <str>
 						#Option     "DRI"                       # <i>
 						Identifier  "Card0"             <------------------------------- Here is the identifier
-						Driver      "nouveau"
-						BusID       "PCI:1:0:0"
+						Driver      "modesetting"   <------ 修改这一个Device for NVIDIA GPU
+        		BusID       "PCI:4:0:0"
 				EndSection
 
                At the bottom of this section (but still above the "EndSection" block) add the following configuration
