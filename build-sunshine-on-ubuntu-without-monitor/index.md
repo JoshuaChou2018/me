@@ -266,7 +266,7 @@
 6). Now navigate to the Sunshine Appimage and start it in the background.  This can be done as follows:
 
       cd sunshine/install/home
-      ./sunshine.AppImage > ./sunshine.log 2>&1 &
+      sudo ./sunshine.AppImage > ./sunshine.log 2>&1 &
 
 7). Use the "jobs" command to verify that sunshine has started and is staying up.  If the process fails and exits than
     review the content in the "./sunshine.log" file to see what went wrong.
@@ -286,6 +286,8 @@
 
       screen -S sun
       sudo mate-session --display=:9
+      sudo DISPLAY=:9 gnome-session
+      sudo xfce4-session --display=:9
 
 At this point you should be able to start and connect to your system using Moonlight.
 
