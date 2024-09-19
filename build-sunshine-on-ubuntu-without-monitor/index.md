@@ -83,7 +83,7 @@
 
                This will create a screen for each GPU and will attach them side-by-side.  In our case we need a single
                screen so remove all "Screen" lines except for the first (i.e., 'Screen      0  "Screen0" 0 0').  MAKE
-               A NOTE OF THE "IDENTIFIER" IN THE 3RD COLUMN ("Screen0", "Screen1", etc) FOR ALL LINES YOU DELETE AS
+               A NOTE OF THE "IDENTIFIER" IN THE 3RD COLUMN ("Screen0", "Screen1", etc) FOR ALL LINES YOU DELETE AS˚˚˚˚˚˚˚
                YOU WILL NEED THIS SHORTLY.
 
                Now you will need to look through the rest of document for blocks that start with 'Section "Screen"' and
@@ -249,7 +249,7 @@
              +extension RENDER \
              vt2 \
              -logfile /home/joshuachou/X_LOG.txt \
-             -config /usr/share/X11/xorg.conf.d/xorg.conf \
+             -config /home/joshuachou/xorg.conf.new \
              :9 >> /home/joshuachou/std_stream.out 2>&1 &
 
 4). At this point the X-server should be started and running in the background; use the 'jobs' command to verify
