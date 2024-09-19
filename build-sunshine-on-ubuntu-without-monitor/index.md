@@ -286,8 +286,8 @@
 
       screen -S sun
       sudo mate-session --display=:9
-      sudo DISPLAY=:9 gnome-session
       sudo xfce4-session --display=:9
+      export DISPLAY=":9"; gnome-session
 
 At this point you should be able to start and connect to your system using Moonlight.
 
