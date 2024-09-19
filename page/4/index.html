@@ -105,6 +105,40 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/JoshuaChou2018" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/joshuachou2017" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="https://www.instagram.com/z.juex" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a><a href="https://weibo.com/6285763593" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a><a href="mailto:juexiao.zhou@kaust.edu.sa" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/">macOS上使用Openconnect代替Cisco Anyconnect</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-01-03">2023-01-03</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品</p>
+<p>下面说下Openconnect安装方法：</p>
+<p>命令行模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>GUI模式:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect-gui --cask
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo spctl --master-disable
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer">
+        <a href="/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/internet/">Internet</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/macos-cmake-gui/">macos cmake-gui</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-30">2022-12-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>之前使用命令行安装：</p>
 <div class="highlight"><div class="chroma">
@@ -262,118 +296,6 @@
 </div><p>我们可以发现，使用原始numpy，运行时间大概为3.9s，而使用JAX的numpy，运行时间仅仅只有0.109s，速度上直接提升了三十多倍！</p></div><div class="post-footer">
         <a href="/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/numpy/">Numpy</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/">[转载] 同态加密：实现数据的“可算不可见”</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-20">2022-09-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>Privacy</a></span></div><div class="content"><blockquote>
-<p>同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。</p>
-<p>本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。</p>
-</blockquote>
-<h2 id="一同态加密概述">一、同态加密概述</h2>
-<h3 id="1基本概念">1、基本概念</h3>
-<p>同态加密（Homomorphic Encryption, HE）是指满足密文同态运算性质的加密算法，即数据经过同态加密之后，对密文进行特定的计算，得到的密文计算结果在进行对应的同态解密后的明文等同于对明文数据直接进行相同的计算，实现数据的“可算不可见”。同态加密的实现效果如图1所示。<img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/1595586273.N8LctX.jpeg"
-        title="img" /></p>
-<p>图1：同态加密原理</p>
-<p>如果一种同态加密算法支持对密文进行任意形式的计算，则称其为全同态加密（Fully Homomorphic Encryption, FHE）；如果支持对密文进行部分形式的计算，例如仅支持加法、仅支持乘法或支持有限次加法和乘法，则称其为半同态加密或部分同态加密，英文简称为SWHE（Somewhat Homomorphic Encryption）或PHE（Partially Homomorphic Encryption）。一般而言，由于任意计算均可通过加法和乘法构造，若加密算法同时满足加法同态性和乘法同态性，则可称其满足全同态性。</p>
-<p>目前，同态加密算法已在区块链、联邦学习等存在数据隐私计算需求的场景实现了落地应用。由于全同态加密仍处于方案探索阶段，现有算法存在运行效率低、密钥过大和密文爆炸等性能问题，在性能方面距离可行工程应用还存在一定的距离。因此，实际应用中的同态加密算法多选取半同态加密（如加法同态），用于在特定应用场景中实现有限的同态计算功能。</p>
-<h3 id="2研究进展">2、研究进展</h3>
-<p>1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。</p>
-<p>表1：各类同态加密算法</p>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><em><strong>*类型*</strong></em></th>
-          <th style="text-align: left"><em><strong>*算法*</strong></em></th>
-          <th style="text-align: left"><em><strong>*时间*</strong></em></th>
-          <th style="text-align: left"><em><strong>*说明*</strong></em></th>
-          <th style="text-align: left"><em><strong>*实际应用*</strong></em></th>
-          <th style="text-align: left"></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">半同态加密</td>
-          <td style="text-align: left">乘法同态</td>
-          <td style="text-align: left">RSA算法</td>
-          <td style="text-align: left">1977</td>
-          <td style="text-align: left">非随机化加密，具有乘法同态性的原始算法面临选择明文攻击</td>
-          <td style="text-align: left">在非同态场景中应用广泛</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">ElGamal算法</td>
-          <td style="text-align: left">1985</td>
-          <td style="text-align: left">随机化加密</td>
-          <td style="text-align: left">DSS数字签名标准基于ElGamal数字签名算法的变体</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">加法同态</td>
-          <td style="text-align: left">Paillier算法</td>
-          <td style="text-align: left">1999</td>
-          <td style="text-align: left">应用最为成熟</td>
-          <td style="text-align: left">联邦学习</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">有限次数全同态</td>
-          <td style="text-align: left">Boneh-Goh-Nissim方案</td>
-          <td style="text-align: left">2005</td>
-          <td style="text-align: left">仅支持1次乘法同态运算</td>
-          <td style="text-align: left">/</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">全同态加密</td>
-          <td style="text-align: left">Gentry方案</td>
-          <td style="text-align: left">2009</td>
-          <td style="text-align: left">第一代全同态加密，性能较差</td>
-          <td style="text-align: left">/</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">BGV方案</td>
-          <td style="text-align: left">2012</td>
-          <td style="text-align: left">第二代全同态加密，性能相对较好</td>
-          <td style="text-align: left">IBM HElib开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">BFV方案</td>
-          <td style="text-align: left">2012</td>
-          <td style="text-align: left">第二代全同态加密，与BGV类似</td>
-          <td style="text-align: left">微软SEAL开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">GSW方案</td>
-          <td style="text-align: left">2013</td>
-          <td style="text-align: left">第三代全同态加密，基于近似特征向量</td>
-          <td style="text-align: left">TFHE开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">CKKS方案</td>
-          <td style="text-align: left">2017</td>
-          <td style="text-align: left">可实现浮点数近似计算，适合机器学习建模场景</td>
-          <td style="text-align: left">HElib和SEAL</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="3标准化进展">3、标准化进展</h3>
-<p><strong>（1）半同态加密标准化</strong></p></div><div class="post-footer">
-        <a href="/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">Privacy</a>,&nbsp;<a href="/tags/encryption/">Encryption</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">
                         <a href="/">1</a>
