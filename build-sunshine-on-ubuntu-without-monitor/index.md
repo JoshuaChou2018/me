@@ -288,6 +288,17 @@
       sudo mate-session --display=:9
       sudo xfce4-session --display=:9
       export DISPLAY=":9"; gnome-session
+      
+      if gnome-session does not work, then reinstall:
+      sudo apt-get remove ubuntu-gnome-desktop
+      sudo apt-get remove gnome-shell 
+      sudo apt-get remove --auto-remove ubuntu-gnome-desktop
+      sudo apt-get purge ubuntu-gnome-desktop
+      sudo apt-get purge --auto-remove ubuntu-gnome-desktop
+      sudo apt-get autoremove 
+      sudo dpkg-reconfigure gdm
+      sudo apt-get remove gdm  
+      sudo apt install ubuntu-gnome-desktop # use lightgdm
 
 At this point you should be able to start and connect to your system using Moonlight.
 
