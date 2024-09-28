@@ -38,6 +38,7 @@ Center of Excellence on Smart Health
 
 ##### Recent News:
 
+- Sep 2024, GBD 2021 upper respiratory infections is accepted by **The Lancet Infectious Diseases (IF=36.4)**
 - Aug 2024, AutoBA is accepted by **Advanced Science (IF=15.1)**.
 - Jul 2024, our recent work SkinGPT-4 is reported by [Arab News](https://www.arabnews.com/node/2543731/saudi-arabia).
 - Jun 2024, SkinGPT-4 paper is accepted by **Nature Communications (IF=17)**.
@@ -585,7 +586,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
 |          Computers in Biology and Medicine          |        19        |
-|         Computational Biology and Chemistry         |        2         |
+|         Computational Biology and Chemistry         |        3         |
 |      Computerized Medical Imaging and Graphics      |        1         |
 |                   Genome Biology                    |        1         |
 |                   Genome Research                   |        2         |

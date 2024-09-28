@@ -8,6 +8,21 @@
   <font size="+2" color=#0096FF>2024</font>
   <br>
   <li>
+    <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021.
+      </font> 
+      <br>	
+      GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically)
+      <br>
+      <i><b>The Lancet Infectious Diseases</b></i>
+      <br>
+      <b>DOI: https://doi.org/10.1016/S1473-3099(24)00430-4</b>
+      <br>
+      <b>Access: </b>
+      <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00430-4/fulltext">online</a>,
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS1473309924004304">pdf</a>
+  </li> 
+  <br>
+  <li>
     <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses.
     </font> 
     <br>	
@@ -474,6 +489,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
