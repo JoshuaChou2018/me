@@ -237,7 +237,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
     <b>DOI: https://doi.org/10.1002/advs.202407094</b>
     <br>
     <b>Access: </b>
-    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/advs.202407094">online</a>, <a href="https://www.joshuachou.ink/publications/papers/advs.202407094.pdf">pdf</a>
     <br>
     <b>Press: </b>
     <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,

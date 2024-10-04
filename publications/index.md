@@ -19,7 +19,7 @@
       <br>
       <b>Access: </b>
       <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00430-4/fulltext">online</a>,
-      <a href="https://www.joshuachou.ink/publications/papers/PIIS1473309924004304">pdf</a>
+      <a href="https://www.joshuachou.ink/publications/papers/PIIS1473309924004304.pdf">pdf</a>
   </li> 
   <br>
   <li>
@@ -33,7 +33,7 @@
     <b>DOI: https://doi.org/10.1002/advs.202407094</b>
     <br>
     <b>Access: </b>
-    <a href="https://arxiv.org/abs/2309.03242">arXiv</a>
+    <a href="https://onlinelibrary.wiley.com/doi/10.1002/advs.202407094">online</a>, <a href="https://www.joshuachou.ink/publications/papers/advs.202407094.pdf">pdf</a>
     <br>
     <b>Press: </b>
     <a href="https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/">CBIRT news</a>,
