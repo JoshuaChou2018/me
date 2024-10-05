@@ -3,7 +3,46 @@
         <title>System - Category - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>System - Category - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>手动创建swapfile文件以配置swap</title>
+    <link>https://www.joshuachou.ink/%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BAswapfile%E6%96%87%E4%BB%B6%E4%BB%A5%E9%85%8D%E7%BD%AEswap/</link>
+    <pubDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BAswapfile%E6%96%87%E4%BB%B6%E4%BB%A5%E9%85%8D%E7%BD%AEswap/</guid>
+    <description><![CDATA[<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">free -h
+</span></span><span class="line"><span class="cl">sudo swapoff /swapfile  
+</span></span><span class="line"><span class="cl">sudo rm  /swapfile
+</span></span><span class="line"><span class="cl">df -h
+</span></span><span class="line"><span class="cl">sudo fallocate -l 64G /swapfile
+</span></span><span class="line"><span class="cl">ls -lh /swapfile
+</span></span><span class="line"><span class="cl">sudo chmod 600 /swapfile
+</span></span><span class="line"><span class="cl">sudo mkswap /swapfile
+</span></span><span class="line"><span class="cl">sudo swapon /swapfile
+</span></span><span class="line"><span class="cl">sudo swapon --show
+</span></span><span class="line"><span class="cl">free -h
+</span></span><span class="line"><span class="cl">sudo cp /etc/fstab /etc/fstab.bak
+</span></span><span class="line"><span class="cl">echo &#39;/swapfile none swap sw 0 0&#39; | sudo tee -a /etc/fstab
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>cannot create directory ‘disk4’: Read-only file system</title>
     <link>https://www.joshuachou.ink/read-only-file-system/</link>
     <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
@@ -352,23 +391,5 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p>]]></description>
-</item><item>
-    <title>pycharm增加运行时内存</title>
-    <link>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</link>
-    <pubDate>Wed, 21 Dec 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/</guid>
-    <description><![CDATA[<p>1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”</p>
-<p>2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。</p>
-<p>3，将**-Xms**属性的值修改为你想要的结果，然后保存</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">-Xmx750m 增加到 -Xmx1024m
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>4，重启Pycharm</p>]]></description>
 </item></channel>
 </rss>

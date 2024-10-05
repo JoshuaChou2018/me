@@ -3,12 +3,19 @@
         <title>Tags - Tag - Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/tags/</link>
         <description>Tags - Tag - Juexiao Zhou 周觉晓</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Linux</title>
     <link>https://www.joshuachou.ink/tags/linux/</link>
-    <pubDate>Thu, 19 Sep 2024 00:00:00 &#43;0000</pubDate>
+    <pubDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/tags/linux/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>System</title>
+    <link>https://www.joshuachou.ink/tags/system/</link>
+    <pubDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/tags/system/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Ubuntu</title>
@@ -23,13 +30,6 @@
     <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/tags/forum/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>System</title>
-    <link>https://www.joshuachou.ink/tags/system/</link>
-    <pubDate>Mon, 16 Sep 2024 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/tags/system/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Numpy</title>
