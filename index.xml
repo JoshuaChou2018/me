@@ -3,9 +3,53 @@
         <title>Juexiao Zhou 周觉晓</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 11 Oct 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>nextcloud配置smtp邮件服务器</title>
+    <link>https://www.joshuachou.ink/nextcloud%E9%85%8D%E7%BD%AEsmtp%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <pubDate>Fri, 11 Oct 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/nextcloud%E9%85%8D%E7%BD%AEsmtp%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
+<p>smtp服务器已配置ssl，支持465端口并且在其它软件中均可正常配置。但是使用nextcloud-aio-nextcloud docker，在Nextcloud中配置自建smtp服务器时总是遇到报错：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">“A problem occurred while sending the email. Please revise your settings. (Error: Email could not be sent. Check your mail server log)”
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解决方案">解决方案</h3>
+<p>修改<code>config.php</code>文件，首先在nextcloud-aio-nextcloud docker中定位数据卷的位置，如<code>/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data</code>，在这个文件夹下的<code>config/config.php</code>即为配置文件。</p>
+<p>在<code>config/config.php</code>中加入一行以下内容，即可解决问题：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#39;mail_smtpstreamoptions&#39; =&gt;
+</span></span><span class="line"><span class="cl">  array (
+</span></span><span class="line"><span class="cl">    &#39;ssl&#39; =&gt;
+</span></span><span class="line"><span class="cl">    array (
+</span></span><span class="line"><span class="cl">      &#39;allow_self_signed&#39; =&gt; true,
+</span></span><span class="line"><span class="cl">      &#39;verify_peer&#39; =&gt; false,
+</span></span><span class="line"><span class="cl">      &#39;verify_peer_name&#39; =&gt; false,
+</span></span><span class="line"><span class="cl">    ),
+</span></span><span class="line"><span class="cl">  ),
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item><item>
     <title>手动创建swapfile文件以配置swap</title>
     <link>https://www.joshuachou.ink/%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BAswapfile%E6%96%87%E4%BB%B6%E4%BB%A5%E9%85%8D%E7%BD%AEswap/</link>
     <pubDate>Sat, 05 Oct 2024 00:00:00 &#43;0000</pubDate>
@@ -1281,41 +1325,5 @@
     <author>Author</author>
     <guid>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
     <description><![CDATA[<p>参考 <a href="https://blog.csdn.net/weixin_51524504/article/details/119487457" target="_blank" rel="noopener noreffer">https://blog.csdn.net/weixin_51524504/article/details/119487457</a></p>]]></description>
-</item><item>
-    <title>macOS上使用Openconnect代替Cisco Anyconnect</title>
-    <link>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</link>
-    <pubDate>Tue, 03 Jan 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/macos%E4%B8%8A%E4%BD%BF%E7%94%A8openconnect%E4%BB%A3%E6%9B%BFcisco-anyconnect/</guid>
-    <description><![CDATA[<p>今天Cisco Anyconnect莫名奇妙用不了，重新安装却提示安装器错误，于是找到了Openconnect这个替代品</p>
-<p>下面说下Openconnect安装方法：</p>
-<p>命令行模式:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>GUI模式:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install openconnect-gui --cask
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>安装完之后, 发现GUI打不开, 提示来自不被信任的开发者, 这个时候需要我们开启权限允许所有来源的软件:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo spctl --master-disable
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></description>
 </item></channel>
 </rss>
