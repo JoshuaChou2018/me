@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - Juexiao Zhou 周觉晓</title>
+        <title>All Posts - π4h Lab</title>
         <link>https://www.joshuachou.ink/posts/</link>
-        <description>All Posts | Juexiao Zhou 周觉晓</description>
+        <description>All Posts | π4h Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 11 Oct 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
     <title>nextcloud配置smtp邮件服务器</title>
     <link>https://www.joshuachou.ink/nextcloud%E9%85%8D%E7%BD%AEsmtp%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>

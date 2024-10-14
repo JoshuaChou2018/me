@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>lc155.Min Stack - Juexiao Zhou 周觉晓</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/lc155.min_stack/">
-  <meta property="og:site_name" content="Juexiao Zhou 周觉晓">
+        <title>lc155.Min Stack - π4h Lab</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/lc155.min_stack/">
+  <meta property="og:site_name" content="π4h Lab">
   <meta property="og:title" content="lc155.Min Stack">
   <meta property="og:description" content="Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class:
@@ -26,8 +26,8 @@ MinStack() initializes the stack object. void push(int val) pushes the element v
   <meta name="twitter:description" content="Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class:
 MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. Example 1: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 Input [&#34;MinStack&#34;,&#34;push&#34;,&#34;push&#34;,&#34;push&#34;,&#34;getMin&#34;,&#34;pop&#34;,&#34;top&#34;,&#34;getMin&#34;] [[],[-2],[0],[-3],[],[],[],[]] Output [null,null,null,null,-3,null,0,-2] Explanation MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); // return -3 minStack.pop(); minStack.top(); // return 0 minStack.getMin(); // return -2 Constraints: -231 &lt;= val &lt;= 231 - 1 Methods pop, top and getMinoperations will always be called on non-empty stacks. At most 3 * 104 calls will be made to push, pop, top, and getMin. 解题思路 Stack进行push和pop操作都非常简单，困难的是如何操作getMin。">
-<meta name="application-name" content="Juexiao Zhou">
-<meta name="apple-mobile-web-app-title" content="Juexiao Zhou"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="application-name" content="π4h Lab">
+<meta name="apple-mobile-web-app-title" content="π4h Lab"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/lc155.min_stack/" /><link rel="prev" href="https://www.joshuachou.ink/jz09.%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/" /><link rel="next" href="https://www.joshuachou.ink/lc1249.minimum_remove_to_make_valid_parentheses/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -58,7 +58,7 @@ MinStack() initializes the stack object. void push(int val) pushes the element v
 
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="Juexiao Zhou 周觉晓">Juexiao Zhou</a>
+            <a href="/" title="π4h Lab">Juexiao Zhou</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/about/" title="Me"> Me </a><a class="menu-item" href="/news/" title="News"> News </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/forum/" title="Life"> Forum </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><a class="menu-item" href="/calendar/" title="Calendar"> Calendar </a><a class="menu-item" href="/docs/" title="Docs"> Docs </a><a class="menu-item" href="/life/" title="Life"> Life </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -82,7 +82,7 @@ MinStack() initializes the stack object. void push(int val) pushes the element v
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="Juexiao Zhou 周觉晓">Juexiao Zhou</a>
+                <a href="/" title="π4h Lab">Juexiao Zhou</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
