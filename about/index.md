@@ -38,7 +38,7 @@ Center of Excellence on Smart Health
 
 ##### Recent News:
 
-<div style="height: 500px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; width: auto;"> 
+<div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
   <li><strong>Sep 2024</strong>, GBD 2021 upper respiratory infections is accepted by <strong>The Lancet Infectious Diseases (IF=36.4)</strong></li>
   <li><strong>Aug 2024</strong>, AutoBA is accepted by <strong>Advanced Science (IF=15.1)</strong></li>
@@ -67,6 +67,7 @@ Center of Excellence on Smart Health
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
