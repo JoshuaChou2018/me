@@ -25,86 +25,86 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"><em><strong>*类型*</strong></em></th>
-          <th style="text-align: left"><em><strong>*算法*</strong></em></th>
-          <th style="text-align: left"><em><strong>*时间*</strong></em></th>
-          <th style="text-align: left"><em><strong>*说明*</strong></em></th>
-          <th style="text-align: left"><em><strong>*实际应用*</strong></em></th>
-          <th style="text-align: left"></th>
+          <th><em><strong>*类型*</strong></em></th>
+          <th><em><strong>*算法*</strong></em></th>
+          <th><em><strong>*时间*</strong></em></th>
+          <th><em><strong>*说明*</strong></em></th>
+          <th><em><strong>*实际应用*</strong></em></th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">半同态加密</td>
-          <td style="text-align: left">乘法同态</td>
-          <td style="text-align: left">RSA算法</td>
-          <td style="text-align: left">1977</td>
-          <td style="text-align: left">非随机化加密，具有乘法同态性的原始算法面临选择明文攻击</td>
-          <td style="text-align: left">在非同态场景中应用广泛</td>
+          <td>半同态加密</td>
+          <td>乘法同态</td>
+          <td>RSA算法</td>
+          <td>1977</td>
+          <td>非随机化加密，具有乘法同态性的原始算法面临选择明文攻击</td>
+          <td>在非同态场景中应用广泛</td>
       </tr>
       <tr>
-          <td style="text-align: left">ElGamal算法</td>
-          <td style="text-align: left">1985</td>
-          <td style="text-align: left">随机化加密</td>
-          <td style="text-align: left">DSS数字签名标准基于ElGamal数字签名算法的变体</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
+          <td>ElGamal算法</td>
+          <td>1985</td>
+          <td>随机化加密</td>
+          <td>DSS数字签名标准基于ElGamal数字签名算法的变体</td>
+          <td></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">加法同态</td>
-          <td style="text-align: left">Paillier算法</td>
-          <td style="text-align: left">1999</td>
-          <td style="text-align: left">应用最为成熟</td>
-          <td style="text-align: left">联邦学习</td>
-          <td style="text-align: left"></td>
+          <td>加法同态</td>
+          <td>Paillier算法</td>
+          <td>1999</td>
+          <td>应用最为成熟</td>
+          <td>联邦学习</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">有限次数全同态</td>
-          <td style="text-align: left">Boneh-Goh-Nissim方案</td>
-          <td style="text-align: left">2005</td>
-          <td style="text-align: left">仅支持1次乘法同态运算</td>
-          <td style="text-align: left">/</td>
-          <td style="text-align: left"></td>
+          <td>有限次数全同态</td>
+          <td>Boneh-Goh-Nissim方案</td>
+          <td>2005</td>
+          <td>仅支持1次乘法同态运算</td>
+          <td>/</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">全同态加密</td>
-          <td style="text-align: left">Gentry方案</td>
-          <td style="text-align: left">2009</td>
-          <td style="text-align: left">第一代全同态加密，性能较差</td>
-          <td style="text-align: left">/</td>
-          <td style="text-align: left"></td>
+          <td>全同态加密</td>
+          <td>Gentry方案</td>
+          <td>2009</td>
+          <td>第一代全同态加密，性能较差</td>
+          <td>/</td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">BGV方案</td>
-          <td style="text-align: left">2012</td>
-          <td style="text-align: left">第二代全同态加密，性能相对较好</td>
-          <td style="text-align: left">IBM HElib开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
+          <td>BGV方案</td>
+          <td>2012</td>
+          <td>第二代全同态加密，性能相对较好</td>
+          <td>IBM HElib开源库</td>
+          <td></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">BFV方案</td>
-          <td style="text-align: left">2012</td>
-          <td style="text-align: left">第二代全同态加密，与BGV类似</td>
-          <td style="text-align: left">微软SEAL开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
+          <td>BFV方案</td>
+          <td>2012</td>
+          <td>第二代全同态加密，与BGV类似</td>
+          <td>微软SEAL开源库</td>
+          <td></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">GSW方案</td>
-          <td style="text-align: left">2013</td>
-          <td style="text-align: left">第三代全同态加密，基于近似特征向量</td>
-          <td style="text-align: left">TFHE开源库</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
+          <td>GSW方案</td>
+          <td>2013</td>
+          <td>第三代全同态加密，基于近似特征向量</td>
+          <td>TFHE开源库</td>
+          <td></td>
+          <td></td>
       </tr>
       <tr>
-          <td style="text-align: left">CKKS方案</td>
-          <td style="text-align: left">2017</td>
-          <td style="text-align: left">可实现浮点数近似计算，适合机器学习建模场景</td>
-          <td style="text-align: left">HElib和SEAL</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
+          <td>CKKS方案</td>
+          <td>2017</td>
+          <td>可实现浮点数近似计算，适合机器学习建模场景</td>
+          <td>HElib和SEAL</td>
+          <td></td>
+          <td></td>
       </tr>
   </tbody>
 </table>
@@ -148,18 +148,18 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Plain Computation</th>
-          <th style="text-align: left">Encrypted Computation</th>
+          <th>Plain Computation</th>
+          <th>Encrypted Computation</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">bool, int (uint 64), modulo p</td>
-          <td style="text-align: left">BGV, BFV, TFHE</td>
+          <td>bool, int (uint 64), modulo p</td>
+          <td>BGV, BFV, TFHE</td>
       </tr>
       <tr>
-          <td style="text-align: left">double (float)</td>
-          <td style="text-align: left">CKKS</td>
+          <td>double (float)</td>
+          <td>CKKS</td>
       </tr>
   </tbody>
 </table>

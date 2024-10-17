@@ -11,7 +11,7 @@
   <meta property="og:description" content="问题描述 smtp服务器已配置ssl，支持465端口并且在其它软件中均可正常配置。但是使用nextcloud-aio-nextcloud docker，在Nextcloud中配置自建smtp服务器时总是遇到报错：
 1 “A problem occurred while sending the email. Please revise your settings. (Error: Email could not be sent. Check your mail server log)” 解决方案 修改config.php文件，首先在nextcloud-aio-nextcloud docker中定位数据卷的位置，如/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data，在这个文件夹下的config/config.php即为配置文件。
 在config/config.php中加入一行以下内容，即可解决问题：
-1 2 3 4 5 6 7 8 9 &#39;mail_smtpstreamoptions&#39; =&gt; array ( &#39;ssl&#39; =&gt; array ( &#39;allow_self_signed&#39; =&gt; true, &#39;verify_peer&#39; =&gt; false, &#39;verify_peer_name&#39; =&gt; false, ), ), ">
+1 2 3 4 5 6 7 8 9 &#39;mail_smtpstreamoptions&#39; =&gt; array ( &#39;ssl&#39; =&gt; array ( &#39;allow_self_signed&#39; =&gt; true, &#39;verify_peer&#39; =&gt; false, &#39;verify_peer_name&#39; =&gt; false, ), ),">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -27,7 +27,7 @@
   <meta name="twitter:description" content="问题描述 smtp服务器已配置ssl，支持465端口并且在其它软件中均可正常配置。但是使用nextcloud-aio-nextcloud docker，在Nextcloud中配置自建smtp服务器时总是遇到报错：
 1 “A problem occurred while sending the email. Please revise your settings. (Error: Email could not be sent. Check your mail server log)” 解决方案 修改config.php文件，首先在nextcloud-aio-nextcloud docker中定位数据卷的位置，如/var/lib/docker/volumes/nextcloud_aio_nextcloud/_data，在这个文件夹下的config/config.php即为配置文件。
 在config/config.php中加入一行以下内容，即可解决问题：
-1 2 3 4 5 6 7 8 9 &#39;mail_smtpstreamoptions&#39; =&gt; array ( &#39;ssl&#39; =&gt; array ( &#39;allow_self_signed&#39; =&gt; true, &#39;verify_peer&#39; =&gt; false, &#39;verify_peer_name&#39; =&gt; false, ), ), ">
+1 2 3 4 5 6 7 8 9 &#39;mail_smtpstreamoptions&#39; =&gt; array ( &#39;ssl&#39; =&gt; array ( &#39;allow_self_signed&#39; =&gt; true, &#39;verify_peer&#39; =&gt; false, &#39;verify_peer_name&#39; =&gt; false, ), ),">
 <meta name="application-name" content="π4h Lab">
 <meta name="apple-mobile-web-app-title" content="π4h Lab"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -219,7 +219,7 @@
               gtag('config', 'G-RWZ5YJ7070');
             </script>
 
-            <div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Juexiao Zhou</a></span></div>
+            <div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
         </div>
     </footer></div>
 
