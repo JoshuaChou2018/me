@@ -607,6 +607,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |                     MICCAI 2024                     |        5         |
 |                 Multimedia Systems                  |        1         |
 |                Nature Communications                |        1         |
+|               npj Precision Oncology                |        1         |
 |                     SIGKDD 2022                     |        2         |
 
 <br>
