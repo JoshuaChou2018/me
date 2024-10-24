@@ -3,9 +3,19 @@
         <title>π4h Lab</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 11 Oct 2024 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Oct 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Showcase SkinGPT-4 at Global Health Exhibition</title>
+    <link>https://www.joshuachou.ink/rdia_20241022/</link>
+    <pubDate>Thu, 24 Oct 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/rdia_20241022/</guid>
+    <description><![CDATA[<p></p>
+<p></p>
+<p></p>
+<p></p>]]></description>
+</item><item>
     <title>nextcloud配置smtp邮件服务器</title>
     <link>https://www.joshuachou.ink/nextcloud%E9%85%8D%E7%BD%AEsmtp%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
     <pubDate>Fri, 11 Oct 2024 00:00:00 &#43;0000</pubDate>
@@ -1318,12 +1328,5 @@
 <li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
 <li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
 </ul>]]></description>
-</item><item>
-    <title>ubuntu18.04安装后的登陆问题、卡顿问题及基本环境配置</title>
-    <link>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
-    <pubDate>Tue, 07 Mar 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/ubuntu18.04%E5%AE%89%E8%A3%85%E5%90%8E%E7%9A%84%E7%99%BB%E9%99%86%E9%97%AE%E9%A2%98%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98%E5%8F%8A%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-    <description><![CDATA[<p>参考 <a href="https://blog.csdn.net/weixin_51524504/article/details/119487457" target="_blank" rel="noopener noreffer">https://blog.csdn.net/weixin_51524504/article/details/119487457</a></p>]]></description>
 </item></channel>
 </rss>

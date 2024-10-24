@@ -849,13 +849,5 @@
     <description><![CDATA[<h3 id="introduction">Introduction</h3>
 <p><em>Virtual Network Computing</em>, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.</p>
 <p>In this guide, you’ll set up a VNC server with <a href="https://www.tightvnc.com/" target="_blank" rel="noopener noreffer">TightVNC</a> on an Ubuntu 20.04 server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.</p>]]></description>
-</item><item>
-    <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
-    <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
-    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
-    <description><![CDATA[<p></p>
-<p></p>]]></description>
 </item></channel>
 </rss>
