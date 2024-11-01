@@ -593,6 +593,15 @@
 
 <ol reversed>
   <li>
+    <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.
+    </font> 
+    <br>	
+    Wenjia He, Xiaopeng Xu, Haoyang Li, <u><b>Juexiao Zhou</b></u>, Xin Gao
+    <br>
+    <i><b>under review.</b></i>
+  </li>
+  <br>
+  <li>
     <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.
     </font> 
     <br>	
@@ -691,6 +700,7 @@
   </li>
   <br>
 </ol>
+
 
 
 
