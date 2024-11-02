@@ -403,11 +403,15 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 ### Teaching Experience
 
+- **CS220, Data Analytics - AI Camp for Ministry of Interior**, Fall 2024/2025, Saudi Arabia
+  - Cooperated with Prof. Xin Gao
+  - Position: **Teaching Assistant**
+  
 - **CS220, Data Analytics**, Fall 2024/2025, KAUST
   - Cooperated with Prof. Xin Gao
   - Position: **Teaching Assistant**
   
-- **CS220, Data Analytics - AI Camp for Ministry of Interior**, Saudi Arabia, Fall 2023/2024, KAUST
+- **CS220, Data Analytics - AI Camp for Ministry of Interior**, Fall 2023/2024, Saudi Arabia
   - Cooperated with Prof. Xin Gao
   
   - Position: **Senior Teaching Assistant**
