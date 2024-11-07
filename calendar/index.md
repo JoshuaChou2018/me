@@ -4,7 +4,7 @@ Hey there!
 
 Feel free to propose a meeting time slot based on my calendar below. 
 
-- **Option 1:** When you do, please **send a Google Calendar invitation** to juexiao.zhou@kaust.edu.sa with the title {Your Name}-Juexiao Zhou-{Meeting Purpose}. Just replace {Your Name} with your actual name and {Meeting Purpose} with the specific reason for the meeting. \
+- **Option 1:** When you do, please **send a Google Calendar invitation** to juexiao.zhou@kaust.edu.sa with the title {Your Name}-Juexiao Zhou-{Meeting Purpose}. Just replace {Your Name} with your actual name and {Meeting Purpose} with the specific reason for the meeting.
 - **Option 2:** You can also book a timeslot at http://odoo.joshuachou.ink/book/meeting-with-juexiao-1
 
 Thanks a lot!
