@@ -40,6 +40,7 @@ Center of Excellence on Smart Health
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
+  <li><strong>Nov 2024</strong>, I am happy to join the Editorial Board of <a href="https://bmcbioinformatics.biomedcentral.com">BMC Bioinformatics</a></li>
   <li><strong>Nov 2024</strong>, We showcased MOSS2.ai at Saudi's first <a href="https://entrepreneurship-alliance.space">Space Tech Incubation Program</a></li>
   <li><strong>Sep 2024</strong>, GBD 2021 upper respiratory infections is accepted by <strong>The Lancet Infectious Diseases (IF=36.4)</strong></li>
   <li><strong>Aug 2024</strong>, AutoBA is accepted by <strong>Advanced Science (IF=15.1)</strong></li>
@@ -68,6 +69,7 @@ Center of Excellence on Smart Health
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
@@ -622,6 +624,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 #### Editor
 
+- Editorial Board of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
 - Guest Editor Assistant in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
 
 <br>
