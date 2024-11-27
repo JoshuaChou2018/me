@@ -15,9 +15,3 @@
 
 ![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/wKgEaVy6gK-AfzUHAAayhkG5r8o25.bEusGs.jpeg)
 
-![img](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/wKgEaVy6l6yAPCKTABEi40MNf3Q74.9ugvze.jpeg)
-
-
-
-More: https://www.mafengwo.cn/i/12413094.html
-
