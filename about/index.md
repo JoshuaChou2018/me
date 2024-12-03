@@ -605,7 +605,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
 |          Computers in Biology and Medicine          |        20        |
 |         Computational Biology and Chemistry         |        3         |
-|      Computerized Medical Imaging and Graphics      |        1         |
+|      Computerized Medical Imaging and Graphics      |        2         |
 |                   Genome Biology                    |        1         |
 |                   Genome Research                   |        2         |
 |                       Heliyon                       |        1         |
