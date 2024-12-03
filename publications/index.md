@@ -6,24 +6,25 @@
 
 #### <font color=#0096FF>2024</font>
 
-1. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>
-   GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically) 
-   ***The Lancet Infectious Diseases*** 
-   **DOI: https://doi.org/10.1016/S1473-3099(24)00430-4** 
+1. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>  
+
+   GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically)   
+   ***The Lancet Infectious Diseases***   
+   **DOI: https://doi.org/10.1016/S1473-3099(24)00430-4**   
    **Access:** [online](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00430-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS1473309924004304.pdf)
 
-2. <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses. </font>
-   **<u>Juexiao Zhou#</u>**, Bin Zhang#, Guowei Li, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Liwei Liu, Xin Gao* 
-   ***Advanced Science*** 
-   **DOI: https://doi.org/10.1002/advs.202407094** 
-   **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/advs.202407094), [pdf](https://www.joshuachou.ink/publications/papers/advs.202407094.pdf) 
-   **Press:** [CBIRT news](https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/), [Medium](https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364)
+2. <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses. </font>  
+   **<u>Juexiao Zhou#</u>**, Bin Zhang#, Guowei Li, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Liwei Liu, Xin Gao*   
+   ***Advanced Science***   
+   **DOI: https://doi.org/10.1002/advs.202407094**   
+   **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/advs.202407094), [pdf](https://www.joshuachou.ink/publications/papers/advs.202407094.pdf)   
+   **Press:** [CBIRT news](https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/), [Medium](https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364)  
 
-3. <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4. </font>
-   **<u>Juexiao Zhou#</u>**, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Shawn Afvari, Xin Gao* 
-   ***Nature Communications*** 
-   **DOI: https://doi.org/10.1038/s41467-024-50043-3** 
-   **Access:** [online](https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3), [pdf](https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf)
+3. <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4. </font>  
+   **<u>Juexiao Zhou#</u>**, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Shawn Afvari, Xin Gao*   
+   ***Nature Communications***   
+   **DOI: https://doi.org/10.1038/s41467-024-50043-3**   
+   **Access:** [online](https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3), [pdf ](https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf) 
 
 4. <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer. </font>
    Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, **<u>Juexiao Zhou</u>**, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao 
