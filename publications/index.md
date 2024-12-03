@@ -138,7 +138,7 @@
     Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, **<u>Juexiao Zhou</u>**, Zhongxiao Li, Yisheng Li, Zheng An, Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*   
     ***Genome Research***   
     **DOI: 10.1101/gr.277177.122**   
-    **Access:** [online](https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract), [pdf](https://www.joshuachou.ink/publications/papers/Genome Res.-2023-Long-gr.277177.122.pdf)  
+    **Access:** [online](https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract), [pdf](https://www.joshuachou.ink/publications/papers/GenomeRes.-2023-Long-gr.277177.122.pdf)  
 
 22. <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.  </font>  
     Zhongxiao Li#, Elva Gao#, **<u>Juexiao Zhou</u>**, Wenkai Han, Xiaopeng Xu, and Xin Gao*   
@@ -226,7 +226,7 @@
 1. <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
    **Juexiao Zhou**, Xin Gao*.  </font>  
    *Poster*. ***Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.***   
-   **Access:** [certificate](https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_Juexiao Zhou.pdf) 
+   **Access:** [certificate](https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_JuexiaoZhou.pdf) 
 
    #### <font color=#0096FF>2020</font>
 
