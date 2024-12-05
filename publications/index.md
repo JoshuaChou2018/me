@@ -6,7 +6,7 @@
 
 #### <font color=#0096FF>2024</font>
 
-1. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>  
+1. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>    
 
    GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically)   
    ***The Lancet Infectious Diseases***   
@@ -273,25 +273,25 @@
 5. <font color=#0096FF>Deep learning-driven pulmonary arteries and veins segmentation reveals demography-associated pulmonary vasculature anatomy.  </font>  
    Yuetan Chu, Gongning Luo, Longxi Zhou, Shaodong Cao, Guolin Ma, Xianglin Meng, **<u>Juexiao Zhou</u>**, Changchun Yang, Elva Gao, Dexuan Xie, Ricardo Henao, Xigang Xiao, Lianming Wu, Zhaowen Qiu, Xin Gao   
    ***under review.***
-6. <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.  </font> 
+6. <font color=#0096FF>ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering.  </font>   
    Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **<u>Juexiao Zhou</u>**, Haoyang Li, Mingchen Zhuge, Jürgen Schmidhuber, Xin Gao, Xiangliang Zhang   
    ***under review.***
 7. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
    Xuan Zhou#, Baolei Yuan#, Yeteng Tian, **<u>Juexiao Zhou</u>**, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*   
    ***under review.***   
    **Access:** [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1)
-8. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font> 
+8. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
    Xingyu Liao#, **<u>Juexiao Zhou#</u>**, Bin Zhang#, Xingyi Li, Xiaopeng Xu, Haoyang Li, Xin Gao*   
    ***under review.***   
    **Access:** [arXiv](https://www.biorxiv.org/content/10.1101/2023.08.17.553659v1)
-9. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font> 
+9. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font>   
    **<u>Juexiao Zhou#</u>**, Xiuying Chen#, Xin Gao*   
    ***under review.***   
    **Access:** [arXiv](https://arxiv.org/abs/2306.10765)
-10. <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT. </font> 
+10. <font color=#0096FF>An end-to-end workflow for robust pulmonary artery-vein segmentation on thick-slice chest CT. </font>  
     Yuetan Chu#, Longxi Zhou#, **<u>Juexiao Zhou</u>**, Yuxin Huang, Tianyi Xing, Dexuan Xie, Xigang Xiao, Zhaowen Qiu, Xin Gao*   
     ***under review.***
-11. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font> 
+11. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
     Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **<u>Juexiao Zhou</u>**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
     ***under review.***
 
@@ -306,13 +306,13 @@
 1. <font color=#0096FF>Automated Bioinformatics Analysis via AutoBA.  </font>   
    **Juexiao Zhou**, Xin Gao   
    ***KAUST reference: 2024-010.***
-2. <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.  </font> 
+2. <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI.  </font>   
    **Juexiao Zhou**, Xin Gao   
    ***KAUST reference: 2023-012.***
-3. <font color=#0096FF>A high-precision identification method of tandem repeat expansion based on refined alignment and deep learning.  </font> 
+3. <font color=#0096FF>A high-precision identification method of tandem repeat expansion based on refined alignment and deep learning.  </font>   
    Xingyu Liao, **Juexiao Zhou**, Xin Gao   
    ***KAUST reference: 2023-054.***
-4. <font color=#0096FF>Audit to forget: a unified suite to revoke patients’ private data in intelligent healthcare.  </font> 
+4. <font color=#0096FF>Audit to forget: a unified suite to revoke patients’ private data in intelligent healthcare.  </font>   
    **Juexiao Zhou**, Xin Gao   
    ***KAUST reference: 2023-056.***
 5. <font color=#0096FF>A camera-based privacy-preserving early warning system for critical diseases. </font>  
