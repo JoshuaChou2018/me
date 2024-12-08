@@ -568,7 +568,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 ### Invited Talks
 
 - [2024/11/27] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
-  - *Poster.* 1st International Health Conference on Quality and Organization Excellence, Jeddah, Saudi Arabia.
+  - *Poster.* 1st International Health Conference on Quality and Organization Excellence, Jeddah, Saudi Arabia. [certificate](index.en.assets/Juexiao_Zhou_certificate_IHCQOE.pdf)
 - [2024/10/22] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* [Health Innovation Week 2024](https://health.innovation-weeks.com/), [Global Health Exhibition](https://www.globalhealthsaudi.com/en/home.html), Riyadh, Saudi Arabia. [certificate](index.en.assets/RDIA_20241022.pdf)
 - [2024/09/04] 子刊论文撰写经验分享.
@@ -603,7 +603,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |                 Journal/Conference                  | # Paper Reviewed |
 | :-------------------------------------------------: | :--------------: |
 |  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
-|          Computers in Biology and Medicine          |        20        |
+|          Computers in Biology and Medicine          |        21        |
 |         Computational Biology and Chemistry         |        3         |
 |      Computerized Medical Imaging and Graphics      |        2         |
 |                   Genome Biology                    |        1         |
