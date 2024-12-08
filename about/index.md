@@ -34,6 +34,10 @@ Center of Excellence on Smart Health
 
 <br>
 
+<font color=Red>I am now looking for motivated remote intern students. If you are interested in and want to collaborate with me, feel free to contact me with your CV.</font>
+
+<br>
+
 
 
 ##### Recent News:
