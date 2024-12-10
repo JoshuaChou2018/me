@@ -3,9 +3,33 @@
         <title>π4h Lab</title>
         <link>https://www.joshuachou.ink/</link>
         <description>Juexiao Zhou&#39;s personal site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 24 Oct 2024 00:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://www.joshuachou.ink/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Ext4硬盘空间系统占用</title>
+    <link>https://www.joshuachou.ink/%E7%A1%AC%E7%9B%98%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/%E7%A1%AC%E7%9B%98%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8/</guid>
+    <description><![CDATA[<p>在 Ubuntu 中挂载硬盘后，如果发现硬盘的部分空间显示为“系统占用”或不可用，可能是由于：</p>
+<ul>
+<li>Ext4 默认会预留 5% 的空间给root，以便在磁盘空间耗尽时仍可进行系统操作。这部分空间通常也会显示为“系统占用”。</li>
+</ul>
+<p><strong>解决方法</strong>：</p>
+<ul>
+<li>
+<p>如果这是数据盘而非系统盘，可以使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo tune2fs -m 0 /dev/sdX1
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>]]></description>
+</item><item>
     <title>Showcase SkinGPT-4 at Global Health Exhibition</title>
     <link>https://www.joshuachou.ink/rdia_20241022/</link>
     <pubDate>Thu, 24 Oct 2024 00:00:00 &#43;0000</pubDate>
@@ -1315,18 +1339,5 @@
     <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
     <description><![CDATA[<p></p>
 <p></p>]]></description>
-</item><item>
-    <title>Mac更新后无法连接Apple所有服务</title>
-    <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
-    <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
-    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
-<p>Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。</p>
-<h3 id="解决方案">解决方案</h3>
-<ul>
-<li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
-<li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
-</ul>]]></description>
 </item></channel>
 </rss>
