@@ -8,7 +8,7 @@
 
 1. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font>     
 
-   Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **<u>Juexiao Zhou</u>**, Haoyang Li, Zirui Song , Xin Gao , Xiangliang Zhang.  
+   Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **<u>Juexiao Zhou</u>**, Haoyang Li, Zirui Song, Xin Gao, Xiangliang Zhang.  
    ***Communications Chemistry***   
    **Accepted**
 
