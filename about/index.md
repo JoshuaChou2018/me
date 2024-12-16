@@ -606,27 +606,29 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 #### Reviewer
 
-|                 Journal/Conference                  | # Paper Reviewed |
-| :-------------------------------------------------: | :--------------: |
-|  [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)   |        1         |
-|          Computers in Biology and Medicine          |        21        |
-|         Computational Biology and Chemistry         |        3         |
-|      Computerized Medical Imaging and Graphics      |        2         |
-|                   Genome Biology                    |        1         |
-|                   Genome Research                   |        2         |
-|                       Heliyon                       |        1         |
-|                   IJCAI-ECAI 2022                   |        1         |
-|                     ICONIP 2020                     |        1         |
-|                     ICMLA 2021                      |        1         |
-| IEEE Transactions on Knowledge and Data Engineering |        1         |
-| Journal of Bioinformatics and Computational Biology |        1         |
-|               Medical Image Analysis                |        2         |
-|                     MICCAI 2020                     |        1         |
-|                     MICCAI 2024                     |        5         |
-|                 Multimedia Systems                  |        1         |
-|                Nature Communications                |        1         |
-|               npj Precision Oncology                |        1         |
-|                     SIGKDD 2022                     |        2         |
+|                    Journal/Conference                     | # Paper Reviewed |
+| :-------------------------------------------------------: | :--------------: |
+|     [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)      |        1         |
+|                    BMC Bioinformatics                     |        1         |
+|             Computers in Biology and Medicine             |        21        |
+|            Computational Biology and Chemistry            |        3         |
+|         Computerized Medical Imaging and Graphics         |        2         |
+|                      Genome Biology                       |        1         |
+|                      Genome Research                      |        2         |
+|                          Heliyon                          |        1         |
+|                      IJCAI-ECAI 2022                      |        1         |
+|                        ICONIP 2020                        |        1         |
+|                        ICMLA 2021                         |        1         |
+|    IEEE Transactions on Knowledge and Data Engineering    |        1         |
+| International Journal of Machine Learning and Cybernetics |        1         |
+|    Journal of Bioinformatics and Computational Biology    |        1         |
+|                  Medical Image Analysis                   |        2         |
+|                        MICCAI 2020                        |        1         |
+|                        MICCAI 2024                        |        5         |
+|                    Multimedia Systems                     |        1         |
+|                   Nature Communications                   |        1         |
+|                  npj Precision Oncology                   |        1         |
+|                        SIGKDD 2022                        |        2         |
 
 <br>
 
