@@ -5,6 +5,8 @@
 
 After installing onlyoffice (docker) and onlyoffice-plugin in mattermost. It shows Download failed when open files in mattermost.
 
+
+
 ![image-20241219164424601](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png)
 
 
@@ -46,6 +48,8 @@ services:
    ```
 
 3. Modify the setting in mattermost
+
+
 
 ![image-20241219164909482](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/FN7E9u.image-20241219164909482.png)
 
