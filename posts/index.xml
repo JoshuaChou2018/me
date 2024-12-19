@@ -3,7 +3,23 @@
         <title>All Posts - π4h Lab</title>
         <link>https://www.joshuachou.ink/posts/</link>
         <description>All Posts | π4h Lab</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Download failed for onlyoffice in mattermost</title>
+    <link>https://www.joshuachou.ink/download-failed-for-onlyoffice-in-mattermost/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/download-failed-for-onlyoffice-in-mattermost/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>After installing onlyoffice (docker) and onlyoffice-plugin in mattermost. It shows Download failed when open files in mattermost.</p>
+<p></p>
+<p><strong>Reason:</strong></p>
+<p><code>JWT_HEADER</code> must be set to a value that is not <code>Authorization</code>, as stated here:</p>
+<blockquote>
+<ul>
+<li>JWT Header: If JWT protection is enabled, it is necessary to specify a custom header name since the Mattermost security policy blocks external &lsquo;Authorization&rsquo; Headers. This header should be specified in the ONLYOFFICE Docs signature settings as well (further information can be found <a href="https://api.onlyoffice.com/editors/signature/" target="_blank" rel="noopener noreffer">here</a>).</li>
+</ul>
+<p>Reference: <a href="https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings" target="_blank" rel="noopener noreffer">https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings</a></p>]]></description>
+</item><item>
     <title>Ext4硬盘空间系统占用</title>
     <link>https://www.joshuachou.ink/%E7%A1%AC%E7%9B%98%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8/</link>
     <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
@@ -1328,14 +1344,6 @@
 <p>在输入框中输入需要访问的地址，多个地址使用“,”隔开</p>
 <p>然后点击右下角弹出的Relaunch按钮</p>
 <p>重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</p>
-<p></p>]]></description>
-</item><item>
-    <title>SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model, Oral. Unlocking the Power of “ChatGPT”, King Abdullah University of Science and Technology, Saudi Arabia</title>
-    <link>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</link>
-    <pubDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/unlocking-the-power-of-chatgpt/</guid>
-    <description><![CDATA[<p></p>
 <p></p>]]></description>
 </item></channel>
 </rss>

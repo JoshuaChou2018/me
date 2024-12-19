@@ -3,7 +3,23 @@
         <title>System - Category - π4h Lab</title>
         <link>https://www.joshuachou.ink/categories/system/</link>
         <description>System - Category - π4h Lab</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/system/" rel="self" type="application/rss+xml" /><item>
+    <title>Download failed for onlyoffice in mattermost</title>
+    <link>https://www.joshuachou.ink/download-failed-for-onlyoffice-in-mattermost/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/download-failed-for-onlyoffice-in-mattermost/</guid>
+    <description><![CDATA[<p><strong>Problem:</strong></p>
+<p>After installing onlyoffice (docker) and onlyoffice-plugin in mattermost. It shows Download failed when open files in mattermost.</p>
+<p></p>
+<p><strong>Reason:</strong></p>
+<p><code>JWT_HEADER</code> must be set to a value that is not <code>Authorization</code>, as stated here:</p>
+<blockquote>
+<ul>
+<li>JWT Header: If JWT protection is enabled, it is necessary to specify a custom header name since the Mattermost security policy blocks external &lsquo;Authorization&rsquo; Headers. This header should be specified in the ONLYOFFICE Docs signature settings as well (further information can be found <a href="https://api.onlyoffice.com/editors/signature/" target="_blank" rel="noopener noreffer">here</a>).</li>
+</ul>
+<p>Reference: <a href="https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings" target="_blank" rel="noopener noreffer">https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings</a></p>]]></description>
+</item><item>
     <title>Ext4硬盘空间系统占用</title>
     <link>https://www.joshuachou.ink/%E7%A1%AC%E7%9B%98%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8/</link>
     <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
@@ -363,18 +379,5 @@
 <p>然后点击右下角弹出的Relaunch按钮</p>
 <p>重启浏览器之后就可以在添加的http地址下调用摄像头和麦克风了</p>
 <p></p>]]></description>
-</item><item>
-    <title>Mac更新后无法连接Apple所有服务</title>
-    <link>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</link>
-    <pubDate>Thu, 04 May 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/mac%E6%9B%B4%E6%96%B0%E5%90%8E%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5apple%E6%89%80%E6%9C%89%E6%9C%8D%E5%8A%A1/</guid>
-    <description><![CDATA[<h3 id="问题描述">问题描述</h3>
-<p>Mac更新后无法使用任何Apple服务，比如无法退出Apple ID，无法进入Apple Store，但是其它网络连接均正常。</p>
-<h3 id="解决方案">解决方案</h3>
-<ul>
-<li>打开/Library/Preferences/SystemConfiguration 这个文件夹</li>
-<li>删除<strong>除了com.apple.Boot.plist 之外</strong>的其他文件，然后重新启动</li>
-</ul>]]></description>
 </item></channel>
 </rss>

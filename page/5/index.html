@@ -102,6 +102,68 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-3" class="typeit"></div></h2></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/macos-cmake-gui/">macos cmake-gui</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-30">2022-12-30</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>之前使用命令行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew install cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装的是最新版，安装速度也很快，但是这个cmake是不带 GUI的，用着不习惯，就又一个命令行给卸载了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">brew uninstall cmake
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后手动安装cmake，去官网下载。</p>
+<p>网址：https://cmake.org/download/</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529135817483-1173478203-20221230133628532.1V6hYj.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529135817483-1173478203-20221230133628532.1V6hYj.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529135817483-1173478203-20221230133628532.1V6hYj.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529135817483-1173478203-20221230133628532.1V6hYj.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529135817483-1173478203-20221230133628532.1V6hYj.png"
+        title="img" /></p>
+<p>下载框线这个，可能因为时间段问题，晚上下载只有几kb/s，然后就放弃了，早上下载几MB/s。</p>
+<p>下载完成后直接双击安装。双击会出现这个界面，直接将cmake图标拖到右边Application文件夹中，这样就可以在launcher中找到cmake了。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529140038097-1063038490-20221230133638235.qaNBcu.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529140038097-1063038490-20221230133638235.qaNBcu.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529140038097-1063038490-20221230133638235.qaNBcu.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529140038097-1063038490-20221230133638235.qaNBcu.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/730180-20200529140038097-1063038490-20221230133638235.qaNBcu.png"
+        title="img" /></p>
+<p>这个样可以从laucher中找到cmake并使用，但是命令行还是查不到cmake,也不能使用cmake。</p>
+<p>安装完成之后，使用以下指令创建/usr/local/bin下 CMake 的软链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo &#34;/Applications/CMake.app/Contents/bin/cmake-gui&#34; --install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看版本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cmake --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ref: <a href="https://www.cnblogs.com/juluwangshier/p/12987258.html" target="_blank" rel="noopener noreffer">https://www.cnblogs.com/juluwangshier/p/12987258.html</a></p></div><div class="post-footer">
+        <a href="/macos-cmake-gui/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/conda/">Conda</a>,&nbsp;<a href="/tags/python/">Python</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/pycharm%E5%A2%9E%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E5%86%85%E5%AD%98/">pycharm增加运行时内存</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-12-21">2022-12-21</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>1，Help -&gt; Find Action -&gt; (输入 “VM”) -&gt; (点击)“Edit Custom VM options”</p>
 <p>2，Pycharm会在编辑器中打开适当的vmoptions文件（pycharm.vmoptions或pycharm64.options）。</p>
@@ -308,50 +370,6 @@
 <h3 id="3标准化进展">3、标准化进展</h3>
 <p><strong>（1）半同态加密标准化</strong></p></div><div class="post-footer">
         <a href="/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">Privacy</a>,&nbsp;<a href="/tags/encryption/">Encryption</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/homomorphic-encryption/">Homomorphic Encryption</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-20">2022-09-20</time></span>&nbsp;<span class="post-category">included in <a href="/categories/privacy/"><i class="far fa-folder fa-fw"></i>Privacy</a></span></div><div class="content"><h2 id="outsourcing-computation-privately">Outsourcing computation, privately</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154446784.aYwPWN.png"
-        title="image-20220919154446784" /></p>
-<p>Homomorphic evaluation function:</p>
-<p>Eval: f, Enc(x) -&gt; Enc(f(x))</p>
-<h2 id="fully-homomorphic-encryption">Fully homomorphic encryption</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919154723892.p8PeXK.png"
-        title="image-20220919154723892" /></p>
-<p><strong>Fully</strong> homomorphic = correctness for <strong>any</strong> efficient f = correctness for <strong>universal</strong> set</p>
-<h3 id="approximate-eigenvector-method">Approximate eigenvector method</h3>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160158938.DZqLdh.png"
-        title="image-20220919160158938" /></p>
-<p>基于GSW13的特征向量的构造，我们可以在ciphertext上计算加法和乘法，然后可以通过secret key恢复出message的计算结果。但是这个方法不安全，因为特征向量很容易被找到。</p>
-<p>**idea：**使用approximate eigenvectors，在secret key右乘cipher text</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png"
-        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png 2x"
-        data-sizes="auto"
-        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/image-20220919160511119.ZDDasR.png"
-        title="image-20220919160511119" /></p></div><div class="post-footer">
-        <a href="/homomorphic-encryption/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/privacy/">Privacy</a>,&nbsp;<a href="/tags/encryption/">Encryption</a></div></div>
 </article><ul class="pagination"><li class="page-item ">
                     <span class="page-link">

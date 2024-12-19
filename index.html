@@ -102,6 +102,27 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><h2 class="home-subtitle"><div id="id-3" class="typeit"></div></h2></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/download-failed-for-onlyoffice-in-mattermost/">Download failed for onlyoffice in mattermost</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-19">2024-12-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p><strong>Problem:</strong></p>
+<p>After installing onlyoffice (docker) and onlyoffice-plugin in mattermost. It shows Download failed when open files in mattermost.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png"
+        data-srcset="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png 1.5x, https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png 2x"
+        data-sizes="auto"
+        alt="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/DIVdJf.image-20241219164424601.png"
+        title="image-20241219164424601" /></p>
+<p><strong>Reason:</strong></p>
+<p><code>JWT_HEADER</code> must be set to a value that is not <code>Authorization</code>, as stated here:</p>
+<blockquote>
+<ul>
+<li>JWT Header: If JWT protection is enabled, it is necessary to specify a custom header name since the Mattermost security policy blocks external &lsquo;Authorization&rsquo; Headers. This header should be specified in the ONLYOFFICE Docs signature settings as well (further information can be found <a href="https://api.onlyoffice.com/editors/signature/" target="_blank" rel="noopener noreffer">here</a>).</li>
+</ul>
+<p>Reference: <a href="https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings" target="_blank" rel="noopener noreffer">https://github.com/ONLYOFFICE/onlyoffice-mattermost?tab=readme-ov-file#plugin-settings</a></p></div><div class="post-footer">
+        <a href="/download-failed-for-onlyoffice-in-mattermost/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/system/">System</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/%E7%A1%AC%E7%9B%98%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E5%8D%A0%E7%94%A8/">Ext4硬盘空间系统占用</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-12-10">2024-12-10</time></span>&nbsp;<span class="post-category">included in <a href="/categories/system/"><i class="far fa-folder fa-fw"></i>System</a></span></div><div class="content"><p>在 Ubuntu 中挂载硬盘后，如果发现硬盘的部分空间显示为“系统占用”或不可用，可能是由于：</p>
 <ul>
@@ -862,15 +883,6 @@
 </div>
 </div></div><div class="post-footer">
         <a href="/build-sunshine-on-ubuntu-without-monitor/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/ubuntu/">Ubuntu</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/error-you-appear-to-be-running-an-x-server/">ERROR: You appear to be running an X server;</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Juexiao Zhou</a></span>&nbsp;<span class="post-publish">published on <time datetime="2024-09-19">2024-09-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/linux/"><i class="far fa-folder fa-fw"></i>Linux</a></span></div><div class="content"><p><strong>Problem:</strong></p>
-<p>Get this error when install ./NVIDIA-Linux-x86_64-535.104.05.run.</p>
-<p>![image-20240919101144517](/Users/joshuachou/Library/Application Support/typora-user-images/image-20240919101144517.png)</p>
-<p><strong>Solution:</strong></p>
-<p>Check if any vncserver is running and close it.</p></div><div class="post-footer">
-        <a href="/error-you-appear-to-be-running-an-x-server/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/ubuntu/">Ubuntu</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
