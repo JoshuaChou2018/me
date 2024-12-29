@@ -6,10 +6,10 @@
 
 #### <font color=#0096FF>2024</font>
 
-1. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font>  
-   Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao    
+1. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
+   Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao<br>
 
-   ***Protein Science***   
+   ***Protein Science***<br>
 
    ***Accepted***
 
