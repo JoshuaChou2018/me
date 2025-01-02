@@ -76,12 +76,7 @@ Center of Excellence on Smart Health
 </div>
 
 
-
-
-
 <br>
-
-
 
 ### Education
 
@@ -93,27 +88,9 @@ He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Sout
 
 He was born on  Jan 20, 1999 in Hunan, China.
 
-<br>
 
-
-
-### Short Bio
-
-#### English Bio
-
-Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Technology (KAUST) in Saudi Arabia, under the supervision of Professor Xin Gao. He is also the co-founder and Chief AI Scientist at DermAssure.ai. His research lies at the intersection of computer science and biomedicine, focusing on intelligent healthcare and bioinformatics. His work primarily involves AI for Healthcare (AI4H), where he develops advanced AI algorithms for tasks such as disease detection and risk assessment in the healthcare sector, including large language models (LLMs). He also works on developing new methods in bioinformatics, such as gene regulatory networks, functional and structural prediction, and systems biology. Additionally, he is concerned with privacy and security issues in deep learning and Artificial General Intelligence (AGI) within the medical field. He has published over 30 academic papers in prestigious journals and conferences, including *Science Advances*, *Nature Machine Intelligence*, *Nature Communications*, *Trends in Genetics*, *The Lancet*, *Genome Research*, *Bioinformatics*, and MICCAI. His research has been widely covered by mainstream media outlets, such as *Arab News*, *Radio Television Hong Kong (RTHK)*, and *Inside Precision Medicine*. Juexiao is a member of CAAI/APBioNET/GBD and serves as a reviewer for several SCI journals, including *Nature*, *Nature Communications*, *Medical Image Analysis*, *Computers in Biology and Medicine*, *Computational Biology and Chemistry*, *Computerized Medical Imaging and Graphics*, *Genome Biology*, *Genome Research*, and *IEEE Transactions on Knowledge and Data Engineering*. He also reviews for various international conferences, such as *NeurIPS, IJCAI-ECAI, ICONIP, MICCAI*, and *SIGKDD*.
 
 <br>
-
-
-
-#### 中文简介
-
-周觉晓， 沙特阿拉伯阿卜杜拉国王科技大学（King Abdullah University of Science and Technology, KAUST）博士候选人(PhD candidate)师从高欣(Xin Gao)教授，美国公司DermAssure.ai联合创始人兼首席AI科学家。其研究领域为计算机科学与生物医学的交叉学科，包括智慧医疗和生物信息学。研究方向为AI4H，即开发医疗保健领域的疾病检测、风险评估等任务的先进人工智能算法，如大语言模型(LLM)；开发生物信息学中的新方法，包括基因调控网络，功能和结构预测，系统生物学等；以及关注于深度学习和通用人工智能(PAGI)在医学领域中的隐私和安全问题。在Science Advances，Nature Machine Intelligence，Nature Communications，Trends in Genetics，The Lancet，Genome Research，Bioinformatics，MICCAI等领域内重要期刊和会议上发表学术论文30余篇。相关研究成果多次被主流媒体报导，如阿拉伯新闻（Arab News），香港电台(RTHK)，Inside Precision Medicine等。目前分别为CAAI/APBioNET/GBD成员，担任*Nature*, *Nature Communications*, Medical Image Analysis, Computers in Biology and Medicine，Computational Biology and Chemistry, Computerized Medical Imaging and Graphics, Genome Biology，Genome Research，IEEE Transactions on Knowledge and Data Engineering等多种SCI期刊审稿人以及NeurIPS，IJCAI-ECAI，ICONIP，MICCAI，SIGKDD等多种国际会议审稿人。
-
-<br>
-
-
 
 ### Research Interests
 
@@ -127,9 +104,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png"/>
   </center>
 
+
+
 <br>
-
-
 
 ### Selected Publications
 
@@ -388,17 +365,25 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 </ol>
 
 
+<br>
 
+### Short Bio
 
+#### English Bio
 
-
-
-
-
+Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Technology (KAUST) in Saudi Arabia, under the supervision of Professor Xin Gao. He is also the co-founder and Chief AI Scientist at DermAssure.ai. His research lies at the intersection of computer science and biomedicine, focusing on intelligent healthcare and bioinformatics. His work primarily involves AI for Healthcare (AI4H), where he develops advanced AI algorithms for tasks such as disease detection and risk assessment in the healthcare sector, including large language models (LLMs). He also works on developing new methods in bioinformatics, such as gene regulatory networks, functional and structural prediction, and systems biology. Additionally, he is concerned with privacy and security issues in deep learning and Artificial General Intelligence (AGI) within the medical field. He has published over 30 academic papers in prestigious journals and conferences, including *Science Advances*, *Nature Machine Intelligence*, *Nature Communications*, *Trends in Genetics*, *The Lancet*, *Genome Research*, *Bioinformatics*, and MICCAI. His research has been widely covered by mainstream media outlets, such as *Arab News*, *Radio Television Hong Kong (RTHK)*, and *Inside Precision Medicine*. Juexiao is a member of CAAI/APBioNET/GBD and serves as a reviewer for several SCI journals, including *Nature*, *Nature Communications*, *Medical Image Analysis*, *Computers in Biology and Medicine*, *Computational Biology and Chemistry*, *Computerized Medical Imaging and Graphics*, *Genome Biology*, *Genome Research*, and *IEEE Transactions on Knowledge and Data Engineering*. He also reviews for various international conferences, such as *NeurIPS, IJCAI-ECAI, ICONIP, MICCAI*, and *SIGKDD*.
 
 <br>
 
 
+
+#### 中文简介
+
+周觉晓， 沙特阿拉伯阿卜杜拉国王科技大学（King Abdullah University of Science and Technology, KAUST）博士候选人(PhD candidate)师从高欣(Xin Gao)教授，美国公司DermAssure.ai联合创始人兼首席AI科学家。其研究领域为计算机科学与生物医学的交叉学科，包括智慧医疗和生物信息学。研究方向为AI4H，即开发医疗保健领域的疾病检测、风险评估等任务的先进人工智能算法，如大语言模型(LLM)；开发生物信息学中的新方法，包括基因调控网络，功能和结构预测，系统生物学等；以及关注于深度学习和通用人工智能(PAGI)在医学领域中的隐私和安全问题。在Science Advances，Nature Machine Intelligence，Nature Communications，Trends in Genetics，The Lancet，Genome Research，Bioinformatics，MICCAI等领域内重要期刊和会议上发表学术论文30余篇。相关研究成果多次被主流媒体报导，如阿拉伯新闻（Arab News），香港电台(RTHK)，Inside Precision Medicine等。目前分别为CAAI/APBioNET/GBD成员，担任*Nature*, *Nature Communications*, Medical Image Analysis, Computers in Biology and Medicine，Computational Biology and Chemistry, Computerized Medical Imaging and Graphics, Genome Biology，Genome Research，IEEE Transactions on Knowledge and Data Engineering等多种SCI期刊审稿人以及NeurIPS，IJCAI-ECAI，ICONIP，MICCAI，SIGKDD等多种国际会议审稿人。
+
+
+
+<br>
 
 ### Working Experience
 
@@ -407,9 +392,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 - Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 - Present
 - Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 
+
+
 <br>
-
-
 
 ### Teaching Experience
 
@@ -456,9 +441,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
   - Cooperated with Prof. Dominik Michels
   - Position: **Teaching Assistant**
 
+
+
 <br>
-
-
 
 ### Mentoring
 
@@ -473,8 +458,6 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 
 <br>
-
-
 
 ### Awards
 
@@ -529,9 +512,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 - National Literary Creation Award, 2016
 - Excellent Student, The Second Prize Scholarship, 2016
 
+
+
 <br>
-
-
 
 ### Memberships
 
@@ -539,9 +522,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
 - Global Burden of Disease (GBD) Collaborator Network Member
 
+
+
 <br>
-
-
 
 ### Press Coverage
 
@@ -567,9 +550,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
   - Un logiciel pour garantir le droit à l’oubli des patients dans l’IA en milieu de santé, [Enerzine](https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante)
   - Safeguarding the right to be forgotten, [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/)
 
+
+
 <br>
-
-
 
 ### Invited Talks
 
@@ -598,9 +581,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 - [2022/03/09] PPML-Omics: a Privacy-Preserving federated Machine Learning system protects patients’ privacy from omic data 
   - *Oral.* BDAI重点实验室研究生沙龙第19期, 中国人民大学高瓴人工智能学院，中国北京
 
+
+
 <br>
-
-
 
 ### Academic Services
 
@@ -631,6 +614,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |                   Nature Communications                   |        1         |
 |                  npj Precision Oncology                   |        1         |
 |                        SIGKDD 2022                        |        2         |
+|                    Scientific Reports                     |        1         |
+
+
 
 <br>
 
@@ -638,6 +624,8 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 - Editorial Board Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
 - Guest Editor Assistant in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
+
+
 
 <br>
 
