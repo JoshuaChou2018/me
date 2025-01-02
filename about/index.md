@@ -593,6 +593,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 | :-------------------------------------------------------: | :--------------: |
 |     [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)      |        1         |
 |                    BMC Bioinformatics                     |        1         |
+|        BMC Medical Informatics and Decision Making        |        1         |
 |             Computers in Biology and Medicine             |        21        |
 |            Computational Biology and Chemistry            |        3         |
 |         Computerized Medical Imaging and Graphics         |        2         |
