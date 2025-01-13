@@ -22,8 +22,6 @@ Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAA
 
 Center of Excellence on Smart Health
 
-[Computational Bioscience Research Center (CBRC)](https://cemse.kaust.edu.sa/cbrc)
-
 [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
 
 **Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
@@ -607,12 +605,13 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 |    IEEE Transactions on Knowledge and Data Engineering    |        1         |
 | International Journal of Machine Learning and Cybernetics |        1         |
 |    Journal of Bioinformatics and Computational Biology    |        1         |
+|             Knowledge and Information Systems             |        1         |
 |                  Medical Image Analysis                   |        2         |
 |                        MICCAI 2020                        |        1         |
 |                        MICCAI 2024                        |        5         |
 |                    Multimedia Systems                     |        1         |
 |                          Nature                           |        1         |
-|                   Nature Communications                   |        1         |
+|                   Nature Communications                   |        2         |
 |                  npj Precision Oncology                   |        1         |
 |                        SIGKDD 2022                        |        2         |
 |                    Scientific Reports                     |        1         |
