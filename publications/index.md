@@ -13,15 +13,20 @@
    **Accepted**
 
    #### <font color=#0096FF>2024</font>
-   
+
 2. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
-   Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao<br>***Protein Science***<br>***Accepted***
+   Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao<br>***Protein Science***<br>**DOI: https://doi.org/10.1002/pro.70031** <br>
 
-3. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font>     
+   **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/pro.70031)
 
-   Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **<u>Juexiao Zhou</u>**, Haoyang Li, Zirui Song, Xin Gao, Xiangliang Zhang.  
-   ***Communications Chemistry***   
-   **Accepted**
+3. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font><br>
+
+   Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **<u>Juexiao Zhou</u>**, Haoyang Li, Zirui Song, Xin Gao, Xiangliang Zhang. <br>
+   ***Communications Chemistry***<br>
+
+   **DOI: https://doi.org/10.1038/s42004-024-01394-x** <br>
+
+   **Access:** [online](https://www.nature.com/articles/s42004-024-01394-x), [pdf](https://www.joshuachou.ink/publications/papers/s42004-024-01394-x.pdf)
 
 4. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>      
 
