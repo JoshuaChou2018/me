@@ -4,7 +4,7 @@
 
 **(# equal contribution, * corresponding author)**
 
-#### <font color=#0096FF>2024</font>
+#### <font color=#0096FF>2025</font>
 
 1. <font color=#0096FF>Deep learning-driven pulmonary artery and vein segmentation reveals demography-associated vasculature anatomical differences. </font><br>
    Yuetan Chu#, Gongning Luo#, Longxi Zhou, Shaodong Cao, Guolin Ma, Xianglin Meng, Changchun Yang, Dan Mu,  **<u>Juexiao Zhou</u>**, Dexuan Xie, Ricardo Henao, Xigang Xiao, Lianming Wu, Zhaowen Qiu, Gianluca Setti, Xin Gao*<br>
@@ -12,6 +12,8 @@
    ***Nature Communications***<br>
    **Accepted**
 
+   #### <font color=#0096FF>2024</font>
+   
 2. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
    Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao<br>***Protein Science***<br>***Accepted***
 
@@ -60,10 +62,10 @@
    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf)
 
 10. <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations. </font>  
-   Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Chao Huang, Yongguo Yu, and Xin Gao   
-   ***Computers in Biology and Medicine***   
-   **DOI: https://doi.org/10.1016/j.compbiomed.2024.108601**   
-   **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482524006863), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482524006863-main.pdf)
+      Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Chao Huang, Yongguo Yu, and Xin Gao   
+      ***Computers in Biology and Medicine***   
+      **DOI: https://doi.org/10.1016/j.compbiomed.2024.108601**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482524006863), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482524006863-main.pdf)
 
 11. <font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.</font>   
       GBD 2021 Diseases and Injuries Collaborators* (Authors listed alphabetically)   
