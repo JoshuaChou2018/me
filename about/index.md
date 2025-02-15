@@ -10,8 +10,6 @@
 
 Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/) with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
-Incoming Assistant Professor at [CUHK-SZ](https://sds.cuhk.edu.cn/en/teacher/2085)
-
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
 Co-founder & Chief Scientist @BeautyX.ai
