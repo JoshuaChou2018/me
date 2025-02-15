@@ -8,15 +8,15 @@
 
 ### Juexiao Zhou 周觉晓, Joshua Chou
 
-Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/)
+Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/) with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
+
+Incoming Assistant Professor at [CUHK-SZ](https://sds.cuhk.edu.cn/en/teacher/2085)
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
 Co-founder & Chief Scientist @BeautyX.ai
 
 Co-founder & CEO @MOSS.ai
-
-Working with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
 [Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
 
@@ -43,7 +43,7 @@ Center of Excellence on Smart Health
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
   <li><strong>Jan 2025</strong>, a paper is accepted by <strong>Nature Communications (IF=17)</strong></li>
-  <li><strong>Dec 2024</strong>, One paper is accepted by <strong>Communications Chemistry (IF=5.9)</strong></li>
+  <li><strong>Dec 2024</strong>, a paper is accepted by <strong>Communications Chemistry (IF=5.9)</strong></li>
   <li><strong>Nov 2024</strong>, I am happy to join the Editorial Board of <a href="https://bmcbioinformatics.biomedcentral.com">BMC Bioinformatics</a></li>
   <li><strong>Nov 2024</strong>, We showcased MOSS2.ai at Saudi's first <a href="https://entrepreneurship-alliance.space">Space Tech Incubation Program</a></li>
   <li><strong>Sep 2024</strong>, GBD 2021 upper respiratory infections is accepted by <strong>The Lancet Infectious Diseases (IF=36.4)</strong></li>
@@ -94,11 +94,11 @@ He was born on  Jan 20, 1999 in Hunan, China.
 
 ### Research Interests
 
-- **AI for Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, including disease detection, risk assessment, etc.
+- **AI-driven Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, especially critical diseases.
 
 - **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
 
-- **Private Artificial General Intelligence (PAGI)**: privacy and security, large language model (LLM)
+- **Private Artificial General Intelligence (PAGI)**: large language model (LLM), AI agents, privacy, security, bias, fairness, etc.
 
   <center>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png"/>
