@@ -280,7 +280,10 @@
 
 ### Preprint
 
-1. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
+1. <font color=#0096FF>Agentic Bioinformatics  </font> <br>
+   **<u>Juexiao Zhou#</u>**, Jindong Jiang, Zhongyi Han, Xin Gao  <br>
+   ***under review.***
+2. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
    Zhongyi Han#, Bin Wang#, Shenjing Wu#, **<u>Juexiao Zhou#</u>**, Wenhao Wang, Gongning Luo, Benzheng Wei, Xin Gao   
    ***under review.***
 3. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font>  
@@ -292,21 +295,21 @@
 5. <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.  </font>  
    **<u>Juexiao Zhou#</u>**, Liyuan Sun#, Yan Xu#, Wenbin Liu#, Shawn Afvari#, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Xiaonan He, Xin Gao   
    ***under review.***
-8. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
+6. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
    Xuan Zhou#, Baolei Yuan#, Yeteng Tian, **<u>Juexiao Zhou</u>**, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*   
    ***under review.***   
    **Access:** [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1)
-9. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
+7. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
    Xingyu Liao#, **<u>Juexiao Zhou#</u>**, Bin Zhang#, Xingyi Li, Xiaopeng Xu, Haoyang Li, Xin Gao*   
    ***under review.***   
    **Access:** [arXiv](https://www.biorxiv.org/content/10.1101/2023.08.17.553659v1)
-10. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font>   
-      **<u>Juexiao Zhou#</u>**, Xiuying Chen#, Xin Gao*   
-      ***under review.***   
-      **Access:** [arXiv](https://arxiv.org/abs/2306.10765)
-12. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
-    Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **<u>Juexiao Zhou</u>**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
-    ***under review.***
+8. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font>   
+     **<u>Juexiao Zhou#</u>**, Xiuying Chen#, Xin Gao*   
+     ***under review.***   
+     **Access:** [arXiv](https://arxiv.org/abs/2306.10765)
+9. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
+   Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **<u>Juexiao Zhou</u>**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
+   ***under review.***
 
 
 
