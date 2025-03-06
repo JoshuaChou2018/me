@@ -24,7 +24,7 @@ Center of Excellence on Smart Health
 
 [King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
 
-**Email:** juexiao.zhou@kaust.edu.sa, juexiao.zhou@gmail.com
+**Email:** juexiao.zhou[AT]kaust.edu.sa, juexiao.zhou[AT]gmail.com
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
