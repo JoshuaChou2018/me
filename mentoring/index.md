@@ -7,6 +7,10 @@
 
 - We want you!
 
+#### MPhil Student
+
+- We want you!
+
 #### Postdoc
 
 - We want you!
@@ -29,11 +33,11 @@
 
 - Pavel Putintcev [2024, M.S., KAUST]
 
-  Email: [pavel.putintcev@kaust.edu.sa](mailto:pavel.putintcev@kaust.edu.sa)
+  Email: [pavel.putintcev[AT]kaust.edu.sa](mailto:pavel.putintcev@kaust.edu.sa)
 
 - Mohammed Saif [Sr.System Administrator/DevOps Evangelist, KAUST]
 
-  Email: [mohammed.saif@kaust.edu.sa](mailto:mohammed.saif@kaust.edu.sa)
+  Email: [mohammed.saif[AT]kaust.edu.sa](mailto:mohammed.saif@kaust.edu.sa)
 
   For his master thesis titled "A comparative study on the application of advanced AI methods in the diagnosis of difficult skin diseases".
 
