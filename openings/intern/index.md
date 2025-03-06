@@ -11,7 +11,7 @@ Professor Juexiao Zhou is an Assistant Professor at the School of Data Science. 
 
 **Position:** 
 
-Remote Intern
+Intern
 
  <br>
 
