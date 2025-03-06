@@ -39,5 +39,5 @@
 
   Email: [mohammed.saif[AT]kaust.edu.sa](mailto:mohammed.saif@kaust.edu.sa)
 
-  For his master thesis titled "A comparative study on the application of advanced AI methods in the diagnosis of difficult skin diseases".
+  For his master's thesis titled "A comparative study on the application of advanced AI methods in the diagnosis of difficult skin diseases".
 
