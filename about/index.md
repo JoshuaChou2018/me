@@ -32,7 +32,7 @@ Center of Excellence on Smart Health
 
 <br>
 
-<font color=Red>**Openings:** </font>[Intern](https://www.joshuachou.ink/openings/), [PhD/MPhil students](https://www.joshuachou.ink/openings/), [Research Assistant](https://www.joshuachou.ink/openings/) for Fall 2025.
+<font color=Red>**Openings:** </font>[Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/), [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/), [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) for Fall 2025.
 
 <br>
 

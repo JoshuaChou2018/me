@@ -1,4 +1,4 @@
-# Remote Intern
+# Intern
 
 
 **Laboratory Introduction**
@@ -14,6 +14,14 @@ Professor Juexiao Zhou is an Assistant Professor at the School of Data Science. 
 Remote Intern
 
  <br>
+
+**Salary and Benefits**
+
+Interns will not be paid salary, but will be rewarded based on actual research achievements.
+
+  <br>
+
+**Application Procedure**
 
 Please send full curriculum vitae together with copies of qualification documents, and at least two references by email to juexiao.zhou@gmail.com.
 
