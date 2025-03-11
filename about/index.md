@@ -42,8 +42,9 @@ Center of Excellence on Smart Health
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
-  <li><strong>Jan 2025</strong>, a paper is accepted by <strong>Nature Communications (IF=17)</strong></li>
-  <li><strong>Dec 2024</strong>, a paper is accepted by <strong>Communications Chemistry (IF=5.9)</strong></li>
+  <li><strong>Mar 2025</strong>, fair medical LLM paper is accepted by <strong>Nature Computational Science (IF=12)</strong></li>
+  <li><strong>Jan 2025</strong>, pulmonary artery and vein segmentation paper is accepted by <strong>Nature Communications (IF=17)</strong></li>
+  <li><strong>Dec 2024</strong>, chemical LLM paper is accepted by <strong>Communications Chemistry (IF=5.9)</strong></li>
   <li><strong>Nov 2024</strong>, I am happy to join the Editorial Board of <a href="https://bmcbioinformatics.biomedcentral.com">BMC Bioinformatics</a></li>
   <li><strong>Nov 2024</strong>, We showcased MOSS2.ai at Saudi's first <a href="https://entrepreneurship-alliance.space">Space Tech Incubation Program</a></li>
   <li><strong>Sep 2024</strong>, GBD 2021 upper respiratory infections is accepted by <strong>The Lancet Infectious Diseases (IF=36.4)</strong></li>
@@ -73,6 +74,7 @@ Center of Excellence on Smart Health
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 

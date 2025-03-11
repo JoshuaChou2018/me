@@ -10,14 +10,17 @@
    Yuetan Chu#, Gongning Luo#, Longxi Zhou, Shaodong Cao, Guolin Ma, Xianglin Meng, Changchun Yang, Dan Mu,  **<u>Juexiao Zhou</u>**, Dexuan Xie, Ricardo Henao, Xigang Xiao, Lianming Wu, Zhaowen Qiu, Gianluca Setti, Xin Gao*<br>
 
    ***Nature Communications***<br>
-   **Accepted**
-
+   
+   **DOI: https://doi.org/s41467-025-56505-6** <br>**Access:** [online](https://www.nature.com/articles/s41467-025-56505-6), [pdf](https://www.joshuachou.ink/publications/papers/s41467-025-56505-6.pdf)
+   
+   
+   
    #### <font color=#0096FF>2024</font>
-
+   
 2. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
    Wenjia He, Xiaopeng Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Xin Gao<br>***Protein Science***<br>**DOI: https://doi.org/10.1002/pro.70031** <br>
 
-   **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/pro.70031)
+   **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/pro.70031), [pdf](https://www.joshuachou.ink/publications/papers/pro.70031.pdf)
 
 3. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font><br>
 
