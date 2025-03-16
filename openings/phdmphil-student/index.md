@@ -15,6 +15,30 @@ PhD/MPhil Student
 
  <br>
 
+**My Preferred Qualifications:** 
+
+- Degree in **Computer Science, Big Data, Artificial Intelligence, Bioinformatics, Statistics, Mathematics,** or a related field. Students from non-CS backgrounds are also welcome.
+
+- Graduated from a **top university** with a **GPA ranking in the top 10%**.
+
+- Strong foundation in **mathematics and computer science**. Preference will be given to candidates with relevant **competition awards**.
+
+- Solid **programming skills**. **Internship experience** in a company is a plus.
+
+  
+
+<u>For PhD Applicants</u>:
+
+- **At least two** first-author papers published in **top-tier conferences or journals** in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- *Or* significant contributions to **popular open-source projects**.
+
+<u>For MPhil Applicants</u>:
+
+- **At least one** first-author paper published in **top-tier conferences or journals** in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- *Or* significant contributions to **popular open-source projects**.
+
+ <br>
+
 **Key Duties and Responsibilities:**
 
 I am looking for self-motivated PhD/MPhil students, working on AI and healthcare. I have several quotas each year.
