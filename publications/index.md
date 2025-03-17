@@ -69,10 +69,10 @@
    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf)
 
 10. <font color=#0096FF>Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
-   GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)   
-   ***The Lancet***   
-   **DOI: https://doi.org/10.1016/S0140-6736(24)00933-4**   
-   **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf)
+      GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00933-4**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf)
 
 11. <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations. </font>  
       Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, **<u>Juexiao Zhou</u>**, Chao Huang, Yongguo Yu, and Xin Gao   
@@ -288,13 +288,15 @@
 
 ### Preprint
 
-1. <font color=#0096FF>Agentic Bioinformatics  </font> <br>
+1. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
+   ***under review.***
+2. <font color=#0096FF>Agentic Bioinformatics  </font> <br>
    **<u>Juexiao Zhou#</u>**, Jindong Jiang, Zhongyi Han, Xin Gao  <br>
    ***under review.***
-2. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
+3. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
    Zhongyi Han#, Bin Wang#, Shenjing Wu#, **<u>Juexiao Zhou#</u>**, Wenhao Wang, Gongning Luo, Benzheng Wei, Xin Gao   
    ***under review.***
-3. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font>  
+4. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font>  
    **<u>Juexiao Zhou</u>**, Haoyang Li, Siyuan Chen, Zhongyi Han, Xin Gao   
    ***under review.***
 5. <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.  </font>  
