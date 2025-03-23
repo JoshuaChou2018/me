@@ -15,6 +15,18 @@ PhD/MPhil Student
 
  <br>
 
+The **admissions committee** has relatively strict requirements. Applicants for the MPhil/PhD program must meet at least one of the following criteria (otherwise, the chances of admission are relatively low):
+
+- Ranked in the top 30% of a **Project 985 university** or an equivalent institution.
+
+- Or, **first-author publication** in a top-tier journal or conference.
+
+- Or, **other prestigious awards** with significant recognition.
+
+- And, Meet the university's **minimum language requirement** (IELTS 6.5 / TOEFL 80), with the option to submit proof after applying.
+
+  
+
 **My Preferred Qualifications:** 
 
 - Degree in **Computer Science, Big Data, Artificial Intelligence, Bioinformatics, Statistics, Mathematics,** or a related field. Students from non-CS backgrounds are also welcome.
