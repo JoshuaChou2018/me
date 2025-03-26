@@ -31,13 +31,25 @@
 
 ### In KAUST (During my Ph.D.)
 
-- Pavel Putintcev [2024, M.S., KAUST]
+- Jiaqi Dong [2025, Ph.D., KAUST]
 
-  Email: [pavel.putintcev[AT]kaust.edu.sa](mailto:pavel.putintcev@kaust.edu.sa)
+  Email: jiaqi.dong[AT]kaust.edu.sa
 
-- Mohammed Saif [Sr.System Administrator/DevOps Evangelist, KAUST]
+- Jingyi Fang (Remote Intern)
 
-  Email: [mohammed.saif[AT]kaust.edu.sa](mailto:mohammed.saif@kaust.edu.sa)
+  Email: fangjingyiabby[AT]gmail.com
 
-  For his master's thesis titled "A comparative study on the application of advanced AI methods in the diagnosis of difficult skin diseases".
+- Yuxin He (Remote Intern) [2025, B.S., Sun Yat-sen University]
+
+  Email: heyuxin345[AT]gmail.com
+
+- Pavel Putintcev [2024, M.S., KAUST -> now, Dubai]
+
+  Email: pavel.putintcev[AT]kaust.edu.sa
+
+- Mohammed Saif [2024, Sr.System Administrator/DevOps Evangelist, KAUST]
+
+  Email: mohammed.saif[AT]kaust.edu.sa
+
+  For his master's thesis on the application of advanced AI methods in the diagnosis of difficult skin diseases.
 
