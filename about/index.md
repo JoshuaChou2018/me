@@ -34,11 +34,11 @@ Center of Excellence on Smart Health
 
 <font color=Red>**Openings:** </font>
 
-|                            Plans                             | 25 Fall  | 26 Spring | 26 Summer |  26 Fall   |
-| :----------------------------------------------------------: | :------: | :-------: | :-------: | :--------: |
-| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open   |   Open    |   Open    |    Open    |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |   Full   |     -     |     -     | Open (1-2) |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) | Open (2) | Open (2)  | Open (2)  |  Open (2)  |
+|                            Plans                             | 25 Fall  | 26 Spring | 26 Summer | 26 Fall  |
+| :----------------------------------------------------------: | :------: | :-------: | :-------: | :------: |
+| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open   |   Open    |   Open    |   Open   |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) | Open (1) |     -     |     -     | Open (2) |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) | Open (2) | Open (2)  | Open (2)  | Open (2) |
 
 <br>
 
