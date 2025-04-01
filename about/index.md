@@ -32,7 +32,13 @@ Center of Excellence on Smart Health
 
 <br>
 
-<font color=Red>**Openings:** </font>[Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/), [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/), [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) for Fall 2025.
+<font color=Red>**Openings:** </font>
+
+|                            Plans                             | 25 Fall  | 26 Spring | 26 Summer |  26 Fall   |
+| :----------------------------------------------------------: | :------: | :-------: | :-------: | :--------: |
+| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open   |   Open    |   Open    |    Open    |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |   Full   |     -     |     -     | Open (1-2) |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) | Open (2) | Open (2)  | Open (2)  |  Open (2)  |
 
 <br>
 
@@ -89,8 +95,6 @@ He got the Master of Science degree, M.S. in Computer Science at [King Abdullah 
 He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
 
 He was born in  Jan 1999 in Hunan, China.
-
-
 
 <br>
 

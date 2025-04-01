@@ -17,7 +17,7 @@ Intern
 
 **Salary and Benefits**
 
-Interns will not be paid salary, but will be rewarded based on actual research achievements.
+Interns will not be paid a salary, but will be rewarded based on actual research achievements. I hope you can participate in some research projects so that you can get authorship on some papers.
 
   <br>
 
