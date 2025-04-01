@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>[转载] 同态加密：实现数据的“可算不可见” - π4h Lab</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/">
-  <meta property="og:site_name" content="π4h Lab">
+        <title>[转载] 同态加密：实现数据的“可算不可见” - 𝝅4h Group</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/">
+  <meta property="og:site_name" content="𝝅4h Group">
   <meta property="og:title" content="[转载] 同态加密：实现数据的“可算不可见”">
   <meta property="og:description" content="同态加密是密码学领域自1978年以来的经典难题，也是实现数据隐私计算的关键技术，在云计算、区块链、隐私计算等领域均存在着广泛的应用需求和一些可行的应用方案。
 本文首先介绍同态加密的基本概念、研究进展以及标准化进展，然后对主流的乘法/加法半同态加密算法和全同态加密算法及其工程实现情况进行概述，最后对同态加密在各领域的应用场景进行分析。
@@ -38,8 +38,8 @@
 2、研究进展 1978年，Rivest、Adleman（“RSA”中的“R”和“A”）和Dertouzos提出了全同态加密的构想[1]，自此成为了密码学研究领域的一个公开难题。目前，同态加密算法主要分为半同态加密和全同态加密两大类。半同态加密主要包括以RSA算法[2]和ElGamal算法[3]为代表的乘法同态加密、以Paillier算法[4]为代表的加法同态加密以及以Boneh-Goh-Nissim方案[5]为代表的有限次数全同态加密；全同态加密算法主要包括以Gentry方案[6][7]为代表的第一代方案、以BGV方案[8]和BFV方案[9][10]为代表的第二代方案、以GSW方案[11]为代表的第三代方案以及支持浮点数近似计算的CKKS方案[12]等等。上述方案及其基本特性和应用情况总览如表1所示。
 表1：各类同态加密算法
 *类型* *算法* *时间* *说明* *实际应用* 半同态加密 乘法同态 RSA算法 1977 非随机化加密，具有乘法同态性的原始算法面临选择明文攻击 在非同态场景中应用广泛 ElGamal算法 1985 随机化加密 DSS数字签名标准基于ElGamal数字签名算法的变体 加法同态 Paillier算法 1999 应用最为成熟 联邦学习 有限次数全同态 Boneh-Goh-Nissim方案 2005 仅支持1次乘法同态运算 / 全同态加密 Gentry方案 2009 第一代全同态加密，性能较差 / BGV方案 2012 第二代全同态加密，性能相对较好 IBM HElib开源库 BFV方案 2012 第二代全同态加密，与BGV类似 微软SEAL开源库 GSW方案 2013 第三代全同态加密，基于近似特征向量 TFHE开源库 CKKS方案 2017 可实现浮点数近似计算，适合机器学习建模场景 HElib和SEAL 3、标准化进展 （1）半同态加密标准化">
-<meta name="application-name" content="π4h Lab">
-<meta name="apple-mobile-web-app-title" content="π4h Lab"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="application-name" content="𝝅4h Group">
+<meta name="apple-mobile-web-app-title" content="𝝅4h Group"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%AF%E7%AE%97%E4%B8%8D%E5%8F%AF%E8%A7%81/" /><link rel="prev" href="https://www.joshuachou.ink/homomorphic-encryption/" /><link rel="next" href="https://www.joshuachou.ink/%E8%BD%AC%E8%BD%BD-%E8%B0%B7%E6%AD%8C%E5%BC%80%E6%BA%90%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6jax/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -70,7 +70,7 @@
 
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="π4h Lab"><span id="id-1" class="typeit"></span></a>
+            <a href="/" title="𝝅4h Group"><span id="id-1" class="typeit"></span></a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/about/" title="About Me"> About Me </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/mentoring/" title="Mentoring"> Mentoring </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><a class="menu-item" href="/openings/" title="Openings"> Openings </a><a class="menu-item" href="/calendar/" title="Calendar"> Calendar </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -94,7 +94,7 @@
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="π4h Lab"><span id="id-2" class="typeit"></span></a>
+                <a href="/" title="𝝅4h Group"><span id="id-2" class="typeit"></span></a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>

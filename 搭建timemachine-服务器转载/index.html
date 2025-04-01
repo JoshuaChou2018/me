@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>搭建Time Machine 服务器 （转载） - π4h Lab</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">
-  <meta property="og:site_name" content="π4h Lab">
+        <title>搭建Time Machine 服务器 （转载） - 𝝅4h Group</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/">
+  <meta property="og:site_name" content="𝝅4h Group">
   <meta property="og:title" content="搭建Time Machine 服务器 （转载）">
   <meta property="og:description" content="本文转载自：https://zhuanlan.zhihu.com/p/31088141
 本文的内容分为：
@@ -44,8 +44,8 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 自建Time Machine 服务器的理由 Time Machine的使用方法有三种：
 使用一块外置的USB移动硬盘，要求文件系统是HFS&#43;。 使用苹果的AirPort网络设备，通过有线网络/无线网络的方式备份到Airport的硬盘上。 使用Mac mini，安装「macOS Server」使之成为AFP协议传输的文件服务器，Time Machine备份到文件服务器上。 方法1. 外置的USB移动硬盘需要总是挂在Mac上占用一个USB接口，对于有移动需求的MacBook要经常插拔，我经常会忘记弹出直接拔，或者忘记去停下备份中的Time Machine直接拔，长此以往容易造成硬盘的损坏。
 方法2. 中可选的Airport设备有两款，分别是AirPort Extreme和AirPort Time Capsule (2TB/3TB)，除了售价高昂之外，性能孱弱，功能单一，最新款发布于2013年，产品线已经多年没有更新。">
-<meta name="application-name" content="π4h Lab">
-<meta name="apple-mobile-web-app-title" content="π4h Lab"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="application-name" content="𝝅4h Group">
+<meta name="apple-mobile-web-app-title" content="𝝅4h Group"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/%E6%90%AD%E5%BB%BAtimemachine-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BD%AC%E8%BD%BD/" /><link rel="prev" href="https://www.joshuachou.ink/lc10.regular_expression_matching/" /><link rel="next" href="https://www.joshuachou.ink/lc938.range_sum_of_bst/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
@@ -76,7 +76,7 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
 
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="π4h Lab"><span id="id-1" class="typeit"></span></a>
+            <a href="/" title="𝝅4h Group"><span id="id-1" class="typeit"></span></a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/about/" title="About Me"> About Me </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/mentoring/" title="Mentoring"> Mentoring </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><a class="menu-item" href="/openings/" title="Openings"> Openings </a><a class="menu-item" href="/calendar/" title="Calendar"> Calendar </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -100,7 +100,7 @@ Time Machine 是什么？ 自建Time Machine 服务器的理由 硬件的选择 
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="π4h Lab"><span id="id-2" class="typeit"></span></a>
+                <a href="/" title="𝝅4h Group"><span id="id-2" class="typeit"></span></a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
