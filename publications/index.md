@@ -16,7 +16,7 @@
 
    ***Nature Communications***<br>
 
-   **DOI: https://doi.org/s41467-025-56505-6** <br>**Access:** [online](https://www.nature.com/articles/s41467-025-56505-6), [pdf](https://www.joshuachou.ink/publications/papers/s41467-025-56505-6.pdf)
+   **DOI: https://doi.org/10.1038/s41467-025-56505-6** <br>**Access:** [online](https://www.nature.com/articles/s41467-025-56505-6), [pdf](https://www.joshuachou.ink/publications/papers/s41467-025-56505-6.pdf)
 
    
 

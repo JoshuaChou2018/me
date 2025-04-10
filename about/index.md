@@ -592,6 +592,7 @@ see [here](https://www.joshuachou.ink/mentoring)
 |                    Journal/Conference                     | # Paper Reviewed |
 | :-------------------------------------------------------: | :--------------: |
 |     [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)      |        1         |
+|                BMC Artificial Intelligence                |        1         |
 |                    BMC Bioinformatics                     |        2         |
 |        BMC Medical Informatics and Decision Making        |        1         |
 |             Computers in Biology and Medicine             |        21        |
@@ -604,6 +605,7 @@ see [here](https://www.joshuachou.ink/mentoring)
 |                      IJCAI-ECAI 2022                      |        1         |
 |                        ICONIP 2020                        |        1         |
 |                        ICMLA 2021                         |        1         |
+|       International Journal of Intelligent Systems        |        1         |
 |    IEEE Transactions on Knowledge and Data Engineering    |        1         |
 | International Journal of Machine Learning and Cybernetics |        1         |
 |    Journal of Bioinformatics and Computational Biology    |        1         |
