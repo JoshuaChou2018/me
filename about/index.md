@@ -28,7 +28,7 @@ Center of Excellence on Smart Health
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
- [CV (last update: March 2025)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: 2025.4)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -100,11 +100,11 @@ He was born in  Jan 1999 in Hunan, China.
 
 ### Research Interests
 
-- **AI-driven Intelligent Healthcare**: develop machine learning (ML) / deep learning (DL) techniques for healthcare, especially critical diseases.
+- **AI-driven Intelligent Healthcare**: I develop cutting-edge AI algorithms, particularly DL and LLMs, to enable disease detection, prognosis, and risk assessment across clinical settings.
 
-- **Bioinformatics**: develop new methods for bioinformatics tasks, including gene regulation understanding, system biology, etc.
+- **Bioinformatics**: I develop intelligent computational frameworks to decode gene regulatory networks, predict protein function and structure, and model complex biological systems. I also develop curiosity-driven AI scientists based on AI agents.
 
-- **Private Artificial General Intelligence (PAGI)**: large language model (LLM), AI agents, privacy, security, bias, fairness, etc.
+- **Ethical and Trustworthy AI in Healthcare**: I investigate the ethical and societal implications of AI in medicine, focusing on pressing challenges such as privacy, security, bias, fairness, toxicity and so on.
 
   <center>
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Ej4Ajy.image-20231229130918233.png"/>
@@ -387,18 +387,26 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 周觉晓， 沙特阿拉伯阿卜杜拉国王科技大学（King Abdullah University of Science and Technology, KAUST）博士候选人(PhD candidate)师从高欣(Xin Gao)教授，美国公司DermAssure.ai联合创始人兼首席AI科学家。其研究领域为计算机科学与生物医学的交叉学科，包括智慧医疗和生物信息学。研究方向为AI4H，即开发医疗保健领域的疾病检测、风险评估等任务的先进人工智能算法，如大语言模型(LLM)；开发生物信息学中的新方法，包括基因调控网络，功能和结构预测，系统生物学等；以及关注于深度学习和通用人工智能(PAGI)在医学领域中的隐私和安全问题。在Science Advances，Nature Machine Intelligence，Nature Communications，Trends in Genetics，The Lancet，Genome Research，Bioinformatics，MICCAI等领域内重要期刊和会议上发表学术论文30余篇。相关研究成果多次被主流媒体报导，如阿拉伯新闻（Arab News），香港电台(RTHK)，Inside Precision Medicine等。目前分别为CAAI/APBioNET/GBD成员，担任*Nature*, *Nature Communications*, Medical Image Analysis, Computers in Biology and Medicine，Computational Biology and Chemistry, Computerized Medical Imaging and Graphics, Genome Biology，Genome Research，IEEE Transactions on Knowledge and Data Engineering等多种SCI期刊审稿人以及NeurIPS，IJCAI-ECAI，ICONIP，MICCAI，SIGKDD等多种国际会议审稿人。
 
+<br>
+
+### Academia Experience
+
+- Tenure-track Assistant Professor in Computer Science, Chinese University of Hong Kong (Shenzhen), Aug 2025 - Present
+- Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Apr 2025
+
 
 
 <br>
 
-### Working Experience
+### Industry Experience
 
 - Co-founder & CEO, MOSS.ai, Sep 2024 - Present
+
 - Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 - Present
+
 - Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 - Present
-- Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Present
 
-
+  
 
 <br>
 
@@ -459,7 +467,7 @@ see [here](https://www.joshuachou.ink/mentoring)
 
 <br>
 
-### Awards
+### Honors & Awards
 
 #### King Abdullah University of Science and Technology
 
