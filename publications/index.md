@@ -288,7 +288,7 @@
 
 ### Preprint
 
-1. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **<u>Juexiao Zhou</u>**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao  <br>
+1. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **<u>Juexiao Zhou</u>**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
    ***under review.***
 2. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
    ***under review.***
@@ -317,8 +317,8 @@
      ***under review.***   
      **Access:** [arXiv](https://arxiv.org/abs/2306.10765)
 10. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
-   Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **<u>Juexiao Zhou</u>**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
-   ***under review.***
+      Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **<u>Juexiao Zhou</u>**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
+      ***under review.***
 
 
 
