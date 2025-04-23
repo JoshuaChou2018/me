@@ -354,21 +354,22 @@ He was born in  Jan 1999 in Hunan, China.
   </li>
   <br>
   <li>
-    <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.
+    <font color=#0096FF>Evaluating and mitigating bias in AI-based medical text generation.
     </font> 
     <br>	
-    Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, <u><b>Juexiao Zhou</b></u>, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*
+    Xiuying Chen, Tairan Wang, <u><b>Juexiao Zhou</b></u>, Zirui Song, Xin Gao, Xiangliang Zhang 
     <br>
-    <i><b>Nature Communications</b></i>
+    <i><b>Nature Computational Science </b></i>
     <br>
-    <b>DOI: 10.1038/s41467-023-39199-6</b>
+    <b>DOI: 10.1038/s43588-025-00789-7</b>
     <br>
     <b>Access: </b>
-    <a href="https://www.nature.com/articles/s41467-023-39199-6">online</a>, 
-    <a href="https://www.joshuachou.ink/publications/papers/s41467-023-39199-6.pdf">pdf</a>
+    <a href="https://www.nature.com/articles/s43588-025-00789-7">online</a>, 
+    <a href="https://www.joshuachou.ink/publications/papers/s43588-025-00789-7.pdf">pdf</a>
   </li>
   <br>
 </ol>
+
 
 
 <br>
