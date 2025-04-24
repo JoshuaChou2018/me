@@ -94,7 +94,7 @@ He got the Master of Science degree, M.S. in Computer Science at [King Abdullah 
 
 He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
 
-He was born in  Jan 1999 in Hunan, China.
+
 
 <br>
 
