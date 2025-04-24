@@ -411,7 +411,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 <br>
 
-### Teaching Experience **[[Full list](https://www.joshuachou.ink/teaching/)]** 
+### Teaching Experience
+
+**[[Full list](https://www.joshuachou.ink/teaching/)]** 
 
 - **CS220, Data Analytics - AI Camp for Ministry of Interior**, Fall 2024/2025, Saudi Arabia
   - Cooperated with Prof. Xin Gao
@@ -460,7 +462,9 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 <br>
 
-### Mentoring **[[Full list](https://www.joshuachou.ink/mentoring/)]** 
+### Mentoring
+
+**[[Full list](https://www.joshuachou.ink/mentoring/)]** 
 
 I'm very glad to work and grow together with these excellent students.
 
