@@ -7,7 +7,14 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 24 Apr 2025 17:27:50 +0300</lastBuildDate>
     <atom:link href="https://www.joshuachou.ink/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSC6113 Automated Software Testing and Analysis</title>
+      <link>https://www.joshuachou.ink/teaching/csc6113-automated-software-testing-and-analysis/</link>
+      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.joshuachou.ink/teaching/csc6113-automated-software-testing-and-analysis/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Course Content Under Construction&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -3,7 +3,14 @@
         <title>Categories - Category - 𝝅4h Group</title>
         <link>https://www.joshuachou.ink/categories/</link>
         <description>Categories - Category - 𝝅4h Group</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Mar 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Course</title>
+    <link>https://www.joshuachou.ink/categories/course/</link>
+    <pubDate>Wed, 23 Apr 2025 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/categories/course/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Openings</title>
     <link>https://www.joshuachou.ink/categories/openings/</link>
     <pubDate>Thu, 06 Mar 2025 00:00:00 &#43;0000</pubDate>
@@ -65,13 +72,6 @@
     <pubDate>Tue, 20 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
     <guid>https://www.joshuachou.ink/categories/privacy/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>Leetcode</title>
-    <link>https://www.joshuachou.ink/categories/leetcode/</link>
-    <pubDate>Tue, 01 Mar 2022 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://www.joshuachou.ink/categories/leetcode/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>
