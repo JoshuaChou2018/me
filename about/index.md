@@ -10,7 +10,7 @@
 
 Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/) with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
-Incoming Tenure-track Assistant Professor @[CUHK-SZ](https://sds.cuhk.edu.cn/en/teacher/2085)
+Incoming Tenure-track Assistant Professor @[CUHK-SZ](https://sds.cuhk.edu.cn/en/teacher/2085) (**E**thical **H**ealthcare **A**rtificial **I**ntelligence Laboratory, EHAI Lab)
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
