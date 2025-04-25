@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Python - Tag - EHAI Lab</title>
+        <title>Python - Tag - HEAL Lab</title>
         <link>https://www.joshuachou.ink/tags/python/</link>
-        <description>Python - Tag - EHAI Lab</description>
+        <description>Python - Tag - HEAL Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 30 Dec 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/python/" rel="self" type="application/rss+xml" /><item>
     <title>macos cmake-gui</title>
     <link>https://www.joshuachou.ink/macos-cmake-gui/</link>

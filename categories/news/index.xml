@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>News - Category - EHAI Lab</title>
+        <title>News - Category - HEAL Lab</title>
         <link>https://www.joshuachou.ink/categories/news/</link>
-        <description>News - Category - EHAI Lab</description>
+        <description>News - Category - HEAL Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 12 Jun 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/news/" rel="self" type="application/rss+xml" /><item>
     <title>[NEWS] A recent project: SkinGPT-4: An Interactive Dermatology Diagnostic System with Visual Large Language Model</title>
     <link>https://www.joshuachou.ink/news-skingpt-4/</link>

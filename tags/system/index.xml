@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>System - Tag - EHAI Lab</title>
+        <title>System - Tag - HEAL Lab</title>
         <link>https://www.joshuachou.ink/tags/system/</link>
-        <description>System - Tag - EHAI Lab</description>
+        <description>System - Tag - HEAL Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/system/" rel="self" type="application/rss+xml" /><item>
     <title>Download failed for onlyoffice in mattermost</title>
     <link>https://www.joshuachou.ink/download-failed-for-onlyoffice-in-mattermost/</link>

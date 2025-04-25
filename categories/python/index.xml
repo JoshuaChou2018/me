@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Python - Category - EHAI Lab</title>
+        <title>Python - Category - HEAL Lab</title>
         <link>https://www.joshuachou.ink/categories/python/</link>
-        <description>Python - Category - EHAI Lab</description>
+        <description>Python - Category - HEAL Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 15 Sep 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/python/" rel="self" type="application/rss+xml" /><item>
     <title>Netatalk在Linux上面搭建时间机器备份</title>
     <link>https://www.joshuachou.ink/netatalk%E5%9C%A8linux%E4%B8%8A%E9%9D%A2%E6%90%AD%E5%BB%BA%E6%97%B6%E9%97%B4%E6%9C%BA%E5%99%A8%E5%A4%87%E4%BB%BD/</link>
