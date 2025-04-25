@@ -23,7 +23,8 @@ Interns will not be paid a salary, but will be rewarded based on actual research
 
 **Application Procedure**
 
-Please send full curriculum vitae together with copies of qualification documents, and at least two references by email to juexiao.zhou@gmail.com.
+1. Please send a full curriculum vitae together with copies of qualification documents, and at least two references by email to juexiao.zhou@gmail.com.
+2. If you are qualified, I will contact you for next steps. 
 
  <br>
 

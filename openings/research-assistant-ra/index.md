@@ -11,7 +11,7 @@ Professor Juexiao Zhou is an Assistant Professor at the School of Data Science. 
 
 **Position:** 
 
-Research Assistant (RA)
+Part-time/full time Research Assistant (RA)
 
  <br>
 
@@ -27,7 +27,7 @@ Research Assistant (RA)
 **Qualifications and Requirements:**  
 
 1. Degree in Computer Science/ Bioinformatics or related disciplines (Master's Degree is preferred);
-2. Working experience in AI for healthcare is preferred;
+2. Working experience in AI for healthcare is preferred.
 3. Good English reading and writing skills;
 4. Strong responsibility, team spirit, and communication skills.
 
@@ -35,13 +35,15 @@ Research Assistant (RA)
 
 **Salary and Benefits**
 
-Salary will be competitive, commensurate with qualifications and experience. Appointments will be made under the establishment of CUHK(SZ) and statutory benefits will be provided according to the prevailing labour laws applicable in the PRC. The appointee will be based at the University campus in Shenzhen, PRC.
+Salary will be competitive, commensurate with qualifications and experience. Appointments will be made under the establishment of CUHK(SZ), and statutory benefits will be provided according to the prevailing labour laws applicable in the PRC. The appointee will be based at the University campus in Shenzhen, PRC.
 
   <br>
 
 **Application Procedure**
 
-Please send full curriculum vitae together with copies of qualification documents, and at least two references by email to juexiao.zhou@gmail.com.
+1. Please send a full curriculum vitae together with copies of qualification documents, and at least two references by email to juexiao.zhou@gmail.com.
+2. If you are qualified, I will contact you for a short interview. 
+3. Once you have passed the interview, you will receive an offer from me. 
 
  <br>
 
