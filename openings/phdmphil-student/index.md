@@ -18,14 +18,11 @@ PhD/MPhil Student
 The **admissions committee** has relatively strict requirements. Applicants for the MPhil/PhD program must meet at least one of the following criteria (otherwise, the chances of admission are relatively low):
 
 - Ranked in the top 30% of a **Project 985 university** or an equivalent institution.
-
 - Or, **first-author publication** in a top-tier journal or conference.
-
 - Or, **other prestigious awards** with significant recognition.
-
 - And, Meet the university's **minimum language requirement** (IELTS 6.5 / TOEFL 80), with the option to submit proof after applying.
 
-  
+ <br>
 
 **My Preferred Qualifications:** 
 
@@ -37,12 +34,13 @@ The **admissions committee** has relatively strict requirements. Applicants for 
 
 - Solid **programming skills**. **Internship experience** in a company is a plus.
 
-  
 
-<u>For PhD Applicants</u>:
+ <br><u>For PhD Applicants</u>:
 
 - **At least two** first-author papers published in **top-tier conferences or journals** in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
+
+ <br>
 
 <u>For MPhil Applicants</u>:
 
@@ -53,13 +51,16 @@ The **admissions committee** has relatively strict requirements. Applicants for 
 
 **Key Duties and Responsibilities:**
 
-I am looking for self-motivated PhD/MPhil students, working on AI and healthcare. I have several quotas each year.
+I am looking for self-motivated PhD/MPhil students, working on AI and healthcare. If you have a dream, I will help you make it a reality. But in case you give up on yourself, then I'll just give up on you. I have several quotas each year.
 
  <br>
 
 **Application Procedure**
 
-Please send full curriculum vitae together with copies of qualification documents by email to juexiao.zhou@gmail.com. If you are qualified, I will contact you for a short interview. Once you passed the interview, you will receive my message and be encouraged to apply through our [school's official website](https://sds.cuhk.edu.cn/en/phd-programmes).
+1. Please send a full curriculum vitae together with copies of qualification documents by email to juexiao.zhou@gmail.com. 
+2. If you are qualified, I will contact you for a short interview. 
+3. Once you have passed the interview, you will receive my message and be encouraged to apply through our [school's official website](https://sds.cuhk.edu.cn/en/phd-programmes). 
+4. If your materials pass the admission committee, then I will welcome you to join us.
 
  <br>
 
