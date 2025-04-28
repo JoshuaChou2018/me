@@ -1,7 +1,7 @@
 # 
 
 
-### In CUHK-SZ
+### In CUHK-Shenzhen
 
 #### Ph.D. Student
 
@@ -21,33 +21,30 @@
 
 #### Research Assistant
 
-- We want you!
-
-#### Alumni
-
-- We want you!
+- Shiqin Han, *(B.S., South China Normal University), 2025.11 -* 
+- Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 -*
 
 <br>
 
 ### In KAUST (During my Ph.D.)
 
-- Jiaqi Dong [2025, Ph.D., KAUST]
+- Jiaqi Dong, *(Ph.D., KAUST), 2025 -*
 
   Email: jiaqi.dong[AT]kaust.edu.sa
 
-- Jingyi Fang (Remote Intern)
+- Jingyi Fang, *Remote Intern, 2025 - *
 
   Email: fangjingyiabby[AT]gmail.com
 
-- Yuxin He (Remote Intern) [2025, B.S., Sun Yat-sen University]
+- Yuxin He, *Remote Intern (B.S., Sun Yat-sen University), 2025 - *
 
   Email: heyuxin345[AT]gmail.com
 
-- Pavel Putintcev [2024, M.S., KAUST -> now, Dubai]
+- Pavel Putintcev, *(M.S., KAUST), 2024 -> now, Dubai*
 
   Email: pavel.putintcev[AT]kaust.edu.sa
 
-- Mohammed Saif [2024, Sr.System Administrator/DevOps Evangelist, KAUST]
+- Mohammed Saif, *(Sr.System Administrator/DevOps Evangelist, KAUST), 2024*
 
   Email: mohammed.saif[AT]kaust.edu.sa
 
