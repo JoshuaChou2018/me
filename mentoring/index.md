@@ -32,11 +32,11 @@
 
   Email: jiaqi.dong[AT]kaust.edu.sa
 
-- Jingyi Fang, *Remote Intern, 2025 - *
+- Jingyi Fang, *Remote Intern, 2025 -* 
 
   Email: fangjingyiabby[AT]gmail.com
 
-- Yuxin He, *Remote Intern (B.S., Sun Yat-sen University), 2025 - *
+- Yuxin He, *Remote Intern (B.S., Sun Yat-sen University), 2025 -* 
 
   Email: heyuxin345[AT]gmail.com
 
