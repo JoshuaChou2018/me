@@ -628,6 +628,7 @@ I'm very glad to work and grow together with these excellent students.
 |                        MICCAI 2024                        |        5         |
 |                    Multimedia Systems                     |        1         |
 |                          Nature                           |        1         |
+|                      Nature Methods                       |        1         |
 |                   Nature Communications                   |        2         |
 |                  npj Precision Oncology                   |        1         |
 |                        SIGKDD 2022                        |        2         |
@@ -639,8 +640,8 @@ I'm very glad to work and grow together with these excellent students.
 
 #### Editor
 
-- Editorial Board Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
-- Guest Editor Assistant in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
+- *Editorial Board* Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
+- *Guest Editor Assistant* in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
 
 
 
@@ -648,7 +649,8 @@ I'm very glad to work and grow together with these excellent students.
 
 #### Conference Administrator
 
-- The 21st International Conference on Bioinformatics (InCoB2022), Administrator, [certificate](index.en.assets/InCoB2022.pdf)
+- [IS-HIS 2025 Symposium](https://www.ishis.org/), [ICCNS2025](https://iccns-conference.org/2025/index.php), Varna, Bulgaria, *Co-Chair*
+- The 21st International Conference on Bioinformatics (InCoB2022), *Administrator*, [certificate](index.en.assets/InCoB2022.pdf)
 
 <br>
 
