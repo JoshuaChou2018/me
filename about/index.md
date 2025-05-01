@@ -10,7 +10,7 @@
 
 Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/) with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
 
-Incoming Tenure-track Assistant Professor @[CUHK-SZ](https://sds.cuhk.edu.cn/en/teacher/2085) (**H**ealthcare **E**thical **A**I **L**ab, **HEAL** 意为“治愈”，延长人类寿命)
+Incoming Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) (**H**ealthcare **E**thical **A**I **L**ab, **HEAL** 意为“治愈”，延长人类寿命)
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
@@ -392,7 +392,7 @@ Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Techn
 
 ### Academia Experience
 
-- Tenure-track Assistant Professor in Computer Science, Chinese University of Hong Kong (Shenzhen), Aug 2025 - Present
+- Tenure-track Assistant Professor in Computer Science, The Chinese University of Hong Kong, Shenzhen, Aug 2025 - Present
 - Student Ambassador, CEMSE, [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA), Dec 2021 - Apr 2025
 
 
