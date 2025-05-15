@@ -50,6 +50,7 @@ Center of Excellence on Smart Health
 <ul>
   <li><strong>May 2025</strong>, I am happy to serve as the co-chair of <a href="https://www.ishis.org/">IS-HIS 2025 Symposium, ICCNS2025, Varna, Bulgaria</a></li>
   <li><strong>Mar 2025</strong>, fair medical LLM paper is accepted by <strong>Nature Computational Science (IF=12)</strong></li>
+  <li><strong>Feb 2025</strong>, I am invited to attend the launching ceremony of The Global AI for Science Developer Community, 2025 Global Developer Conference, Shanghai, China</strong></li>
   <li><strong>Jan 2025</strong>, pulmonary artery and vein segmentation paper is accepted by <strong>Nature Communications (IF=17)</strong></li>
   <li><strong>Dec 2024</strong>, chemical LLM paper is accepted by <strong>Communications Chemistry (IF=5.9)</strong></li>
   <li><strong>Nov 2024</strong>, I am happy to join the Editorial Board of <a href="https://bmcbioinformatics.biomedcentral.com">BMC Bioinformatics</a></li>
@@ -81,6 +82,7 @@ Center of Excellence on Smart Health
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
@@ -563,12 +565,19 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Invited Talks
 
+- [2024/05/15] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
+  - *Poster.* Inaugural KCSH Conference: Shaping the Future of Smart Health, Jeddah, Saudi Arabia.
+- [2024/02/24] Private Artificial Intelligence (PAI) for Healthcare.
+  - *Oral.* Shanghai Innovation Institute, China.
 - [2024/11/27] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* 1st International Health Conference on Quality and Organization Excellence, Jeddah, Saudi Arabia. [certificate](index.en.assets/Juexiao_Zhou_certificate_IHCQOE.pdf)
+- [2024/11/04] Private Artificial Intelligence (PAI) for Healthcare.
+  - *Oral.* Westlake University, China.
+- [2024/10/28] Private Artificial Intelligence (PAI) for Healthcare.
+  - *Oral.* CUHK-Shenzhen, China.
+  
 - [2024/10/22] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* [Health Innovation Week 2024](https://health.innovation-weeks.com/), [Global Health Exhibition](https://www.globalhealthsaudi.com/en/home.html), Riyadh, Saudi Arabia. [certificate](index.en.assets/RDIA_20241022.pdf)
-- [2024/09/04] 子刊论文撰写经验分享.
-  - *Oral.* 青岛中医药科学院医学人工智能研究中心, 中国
 - [2024/08/15] AI for Healthcare: Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Oral.* 汕头大学医学院“智能计算赋能医学”, 中国
 - [2023/11/22] Introduction to ChatGPT and Application of GPT in Healthcare.
