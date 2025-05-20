@@ -5,10 +5,10 @@
         <description>Csc6113 - Tag - HEAL Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 23 Apr 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/tags/csc6113/" rel="self" type="application/rss+xml" /><item>
     <title>CSC6113-Fall-2025 Automated Software Testing and Analysis</title>
-    <link>https://www.joshuachou.ink/teaching/csc6113-automated-software-testing-and-analysis/</link>
+    <link>https://www.joshuachou.ink/backup/csc6113-automated-software-testing-and-analysis/</link>
     <pubDate>Wed, 23 Apr 2025 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://www.joshuachou.ink/teaching/csc6113-automated-software-testing-and-analysis/</guid>
+    <guid>https://www.joshuachou.ink/backup/csc6113-automated-software-testing-and-analysis/</guid>
     <description><![CDATA[<h1 id="csc6113-fall-2025-automated-software-testing-and-analysis">CSC6113-Fall-2025: Automated Software Testing and Analysis</h1>
 <h3 id="course-description">Course Description</h3>
 <p>This course explores both foundational and cutting-edge techniques in software testing and analysis, with a focus on enhancing reliability, performance, and security. Topics include coverage metrics, metamorphic testing, mutation testing, combinatorial testing, fuzzing, and AIOps. Students will examine the application of these techniques across diverse domains such as machine translation, databases, mobile applications, and cloud computing. Emphasis is placed on recent research developments and practical implementation. By the end of the course, students will be able to critically analyze and apply these techniques through a hands-on course project.</p>]]></description>
