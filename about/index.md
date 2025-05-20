@@ -8,9 +8,7 @@
 
 ### Juexiao Zhou 周觉晓, Joshua Chou
 
-Ph.D. Candidate @[KAUST](https://www.kaust.edu.sa/en/) with Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1)
-
-Incoming Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) (**H**ealthcare **E**thical **A**I **L**ab, **HEAL** 意为“治愈”，延长人类寿命)
+Incoming Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) 
 
 Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
 
@@ -18,13 +16,13 @@ Co-founder & Chief Scientist @BeautyX.ai
 
 Co-founder & CEO @MOSS.ai
 
-[Structural and Functional Bioinformatics (SFB) Group](https://cemse.kaust.edu.sa/sfb)
+**H**ealthcare **E**thical **A**I **L**ab, **HEAL** (意为“治愈”，延长人类寿命)
 
-Center of Excellence on Smart Health
+[School of Data Science](https://sds.cuhk.edu.cn)
 
-[King Abdullah University of Science and Technology (KAUST)](https://www.kaust.edu.sa/en)
+[The Chinese University of Hong Kong, Shenzhen](https://www.cuhk.edu.cn)
 
-**Email:** juexiao.zhou[AT]kaust.edu.sa, juexiao.zhou[AT]gmail.com
+**Email:** juexiao.zhou[AT]gmail.com
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
@@ -48,6 +46,8 @@ Center of Excellence on Smart Health
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
+  <li><strong>May 2025</strong>, got my Doctor of Philosophy degree, Ph.D. in Computer Science at King Abdullah University of Science and Technology.</li>
+    <li><strong>May 2025</strong>, passed my Ph.D. dissertation defense titled "Towards Privacy-preserving Artificial Intelligence (PAI) for Healthcare and Bioinformatics"</li>
   <li><strong>May 2025</strong>, I am happy to serve as the co-chair of <a href="https://www.ishis.org/">IS-HIS 2025 Symposium, ICCNS2025, Varna, Bulgaria</a></li>
   <li><strong>Mar 2025</strong>, fair medical LLM paper is accepted by <strong>Nature Computational Science (IF=12)</strong></li>
   <li><strong>Feb 2025</strong>, I am invited to attend the launching ceremony of The Global AI for Science Developer Community, 2025 Global Developer Conference, Shanghai, China</strong></li>
@@ -88,15 +88,19 @@ Center of Excellence on Smart Health
 
 
 
+
+
 <br>
 
 ### Education
 
-He is a Ph.D. Candidate in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) from Dec 2021 - Present.
+He got the Ph.D. degree in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) from Dec 2021 - May 2025.
 
 He got the Master of Science degree, M.S. in Computer Science at [King Abdullah University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.kaust.edu.sa%2Fen&sa=D&sntz=1&usg=AFQjCNHigiWR8Xiu-ZSsO_GK0fYzjM1DHA) under the supervision of Prof. [Xin Gao](https://scholar.google.com/citations?user=wqdK8ugAAAAJ&hl=en&authuser=1) in Dec 2021.
 
 He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Southern University of Science and Technology](https://www.google.com/url?q=https%3A%2F%2Fwww.sustech.edu.cn&sa=D&sntz=1&usg=AFQjCNEKP4FKe2DLRW55DVjQaNQGb7sBPQ) under the supervision of Prof. [Wei Chen](https://scholar.google.com/citations?user=bKZA82cAAAAJ&hl=en) in Jun 2020.
+
+I said "Hello World" in January 1999 in China.
 
 
 
@@ -380,7 +384,7 @@ He got the Bachelor of Science degree, B.S. (Honored) in Bioinformatics at [Sout
 
 ### Short Bio
 
-Juexiao Zhou is a PhD candidate at King Abdullah University of Science and Technology (KAUST), Saudi Arabia, under the supervision of Professor Xin Gao. He is also the co-founder and Chief AI Scientist at DermAssure.ai, MOSS.ai, and BeautyX.ai. His research lies at the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical and trustworthy AI in healthcare. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to enable disease detection, prognosis, and risk assessment across clinical settings. In the domain of bioinformatics, he builds intelligent computational frameworks to decode gene regulatory networks, predict protein structure and function, and model complex biological systems. His recent research also explores curiosity-driven AI agents as autonomous scientific researchers. He is committed to advancing ethical AI in healthcare, tackling key challenges such as data privacy, bias, fairness, security, toxicity, and the broader implications of emerging Artificial General Intelligence (AGI) in clinical practice. Juexiao has authored over 30 publications in top-tier journals and conferences, including Science Advances, Nature Machine Intelligence, Nature Computational Science, Nature Communications, The Lancet, Genome Research, Trends in Genetics, Bioinformatics, IEEE TMI, and MICCAI. His work has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of CAAI, APBioNET, and GBD. He serves as a reviewer for leading journals and conferences, including Nature, Nature Methods, Nature Communications, Medical Image Analysis, Genome Biology, Genome Research, NeurIPS, SIGKDD, and MICCAI. He is also an editorial board member of BMC Bioinformatics and a guest editor for Biomedical Informatics.
+Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science, The Chinese University of Hong Kong, Shenzhen. He obtained his bachelor’s degree in Bioinformatics from the Southern University of Science and Technology (SUSTech) in 2020 and his Ph.D. degree in Computer Science from King Abdullah University of Science and Technology (KAUST) in 2025. He is also the co-founder and Chief AI Scientist at DermAssure.ai, MOSS.ai, and BeautyX.ai. His research lies at the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical and trustworthy AI in healthcare. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to enable disease detection, prognosis, and risk assessment across clinical settings. In the domain of bioinformatics, he builds intelligent computational frameworks to decode gene regulatory networks, predict protein structure and function, and model complex biological systems. His recent research also explores curiosity-driven AI agents as autonomous scientific researchers. He is committed to advancing ethical AI in healthcare, tackling key challenges such as data privacy, bias, fairness, security, toxicity, and the broader implications of emerging Artificial General Intelligence (AGI) in clinical practice. Juexiao has authored over 30 publications in top-tier journals and conferences, including Science Advances, Nature Machine Intelligence, Nature Computational Science, Nature Communications, The Lancet, Genome Research, Trends in Genetics, Bioinformatics, IEEE TMI, and MICCAI. His work has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of CAAI, APBioNET, and GBD. He serves as a reviewer for leading journals and conferences, including Nature, Nature Methods, Nature Communications, Medical Image Analysis, Genome Biology, Genome Research, NeurIPS, SIGKDD, and MICCAI. He is also an editorial board member of BMC Bioinformatics and a guest editor for Biomedical Informatics.
 
 
 
