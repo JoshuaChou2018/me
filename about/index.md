@@ -482,6 +482,7 @@ I'm very glad to work and grow together with these excellent students.
 
 **GPA: 4.00 / 4.00**
 
+- CEMSE Dean’s List  Award, 2025
 - CEMSE Dean’s List  Award, 2024
 - CEMSE Dean’s List  Award, 2023
 - KAUST AII’s NeurIPS travel grant, 2022
