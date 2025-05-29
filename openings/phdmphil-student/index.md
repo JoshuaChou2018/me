@@ -9,7 +9,7 @@ PhD/MPhil Student
 
 **Admissions Requirements:**
 
-The **school's admissions committee** has strict requirements. Applicants for the MPhil/PhD programs must meet **at least one** of the following criteria (otherwise, admission chances will be relatively low):
+The **school's admissions committee** has strict requirements, which is what I cannot control. Applicants for the MPhil/PhD programs must meet **at least one** of the following criteria (otherwise, admission chances will be relatively low):
 
 - Ranked in the top 30% of a **Project 985 university** or an equivalent institution.
 - Or, **first-author publication** in a top-tier journal or conference.
@@ -65,6 +65,28 @@ I am looking for **self-motivated PhD/MPhil students** passionate about AI and h
 Review of applications will begin immediately and will continue until the position is filled.
 
  <br>
+
+**Supervision**
+
+As a supervisor in computer science, I can offer you:
+
+1. **Productivity & Technical Expertise**
+   1. I stay up to date with the technical details of recent research and am highly productive. This allows me to provide clear, detailed guidance to you. Beyond supervision, I actively collaborate with students, co-authoring papers and offering hands-on support throughout the research process. 
+2. **Science Taste and Direction Control**
+   1. I have a strong grasp of cutting-edge and trending research areas, thus I can identify potential topics with the potential for top-tier publications. I offer you the possibility of publishing papers in top journals and conferences.
+3. **Unlimited Computational Resources**
+   1. Students under my supervision have unrestricted access to multiple supercomputers and cloud computing, ensuring no computational limitations for their research.
+4. **Global Collaboration Network**
+   1. My research network spans the US, Australia, the Middle East, and Mainland China, including top institutions such as MIT, Stanford, Duke, KAUST, MBZUAI, HKUST, CUHK, and so on. 
+   2. I collaborate with industry researchers from leading companies such as Microsoft, Meta and Huawei. This provides students with ample opportunities to engage with world-class researchers across academia and industry.
+   3. I work closely with computational researchers, experimental scientists and doctors in many countries, ensuring access to first-hand data, especially private health data. This enables our methods to be validated through wet-lab experiments, increasing the impact and real-world applicability of our work.
+   4. I have connections with well-known startups, investors, incubators, FAs, etc. If you are interested in starting a business based on our research, my resources can help you succeed.
+5. **Money**
+   1. One of my major duties is to seek collaboration and secure funding to support your research, tuition, salaries, conferences, paper publications, and more (I need to cost about 200,000 RMB per PhD per year). Without money, none of these could happen.
+6. **Career Support**
+   1. I understand your concerns about your future careers (faculty or industry). Therefore, I am committed to supporting your job search and professional growth after graduation. In general, you need to start your job search at least six months in advance of your scheduled graduation date. You should have already gotten a good offer with my support before leaving our group.
+
+<br>
 
 **FQA**
 
