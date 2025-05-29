@@ -6,7 +6,7 @@
 </div>
 
 
-### Juexiao Zhou 周觉晓, Joshua Chou
+### Juexiao Zhou 周觉晓
 
 Incoming Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) 
 
