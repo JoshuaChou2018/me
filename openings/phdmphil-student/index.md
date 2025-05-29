@@ -9,7 +9,7 @@ PhD/MPhil Student
 
 **Admissions Requirements:**
 
-The **school's admissions committee** maintains high standards. Applicants for the MPhil/PhD programs must meet **at least one** of the following criteria (otherwise, admission chances will be relatively low):
+The **school's admissions committee** has strict requirements. Applicants for the MPhil/PhD programs must meet **at least one** of the following criteria (otherwise, admission chances will be relatively low):
 
 - Ranked in the top 30% of a **Project 985 university** or an equivalent institution.
 - Or, **first-author publication** in a top-tier journal or conference.
@@ -33,7 +33,7 @@ The **school's admissions committee** maintains high standards. Applicants for t
 
  <br><u>For PhD Applicants</u>:
 
-- **At least two** first-author papers published in **top-tier conferences or journals** in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** first-author paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - If you are highly interested in joining our lab but do not yet meet these requirements, you may apply for the MPhil program, the taught Master's program, or an RA position. Priority for PhD admission will be given to outstanding MPhil students or RAs within the lab.
 
@@ -41,7 +41,7 @@ The **school's admissions committee** maintains high standards. Applicants for t
 
 <u>For MPhil Applicants</u>:
 
-- **At least one** first-author paper published in **top-tier conferences or journals** in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** first-author paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - Please note that the MPhil program at CUHK-Shenzhen is **self-funded**.
 
