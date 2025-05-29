@@ -33,7 +33,7 @@ The **school's admissions committee** has strict requirements, which is what I c
 
  <br><u>For PhD Applicants</u>:
 
-- **At least one** first-author paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** first-author/co-first paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - If you are highly interested in joining our lab but do not yet meet these requirements, you may apply for the MPhil program, the taught Master's program, or an RA position. Priority for PhD admission will be given to outstanding MPhil students or RAs within the lab.
 
@@ -41,7 +41,7 @@ The **school's admissions committee** has strict requirements, which is what I c
 
 <u>For MPhil Applicants</u>:
 
-- **At least one** first-author paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** first-author/co-first paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - Please note that the MPhil program at CUHK-Shenzhen is **self-funded**.
 
