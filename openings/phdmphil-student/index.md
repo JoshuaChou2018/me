@@ -41,7 +41,7 @@ The **school's admissions committee** has strict requirements, which is what I c
 
 <u>For MPhil Applicants</u>:
 
-- **At least one** first-author/co-first paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** authored paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - Please note that the MPhil program at CUHK-Shenzhen is **self-funded**.
 
