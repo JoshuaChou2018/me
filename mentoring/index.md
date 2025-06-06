@@ -1,7 +1,7 @@
 # 
 
 
-### In CUHK-Shenzhen
+### At CUHK-Shenzhen
 
 #### Ph.D. Student
 
@@ -31,7 +31,7 @@
 
 <br>
 
-### In KAUST (During my Ph.D.)
+### At KAUST (During my Ph.D.)
 
 - Jiaqi Dong, *(Ph.D., KAUST), 2025 -*
 
