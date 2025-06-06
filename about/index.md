@@ -570,6 +570,8 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Invited Talks
 
+- [2025/06/06] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
+  - *Oral.* BAAI Conference, 2025 (北京智源大会), Beijing, China.
 - [2024/05/15] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* Inaugural KCSH Conference: Shaping the Future of Smart Health, Jeddah, Saudi Arabia.
 - [2024/02/24] Private Artificial Intelligence (PAI) for Healthcare.
@@ -580,7 +582,6 @@ I'm very glad to work and grow together with these excellent students.
   - *Oral.* Westlake University, China.
 - [2024/10/28] Private Artificial Intelligence (PAI) for Healthcare.
   - *Oral.* CUHK-Shenzhen, China.
-  
 - [2024/10/22] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* [Health Innovation Week 2024](https://health.innovation-weeks.com/), [Global Health Exhibition](https://www.globalhealthsaudi.com/en/home.html), Riyadh, Saudi Arabia. [certificate](index.en.assets/RDIA_20241022.pdf)
 - [2024/08/15] AI for Healthcare: Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
