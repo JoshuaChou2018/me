@@ -35,8 +35,8 @@ Co-founder & CEO @MOSS.ai
 |                            Plans                             | 25 Fall | 26 Spring | 26 Summer | 26 Fall  |
 | :----------------------------------------------------------: | :-----: | :-------: | :-------: | :------: |
 | [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |  Full   |   Open    |   Open    |   Open   |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |  Full   | Open (1)  |     -     | Open (2) |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |  Full   | Open (2)  | Open (2)  | Open (2) |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |  Full   |   Full    |     -     | Open (2) |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |  Full   |   Full    |   Full    | Open (2) |
 
 <br>
 
