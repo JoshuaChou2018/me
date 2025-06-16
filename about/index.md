@@ -640,6 +640,7 @@ I'm very glad to work and grow together with these excellent students.
 |                      Nature Methods                       |        1         |
 |                   Nature Communications                   |        3         |
 |                  npj Precision Oncology                   |        1         |
+|                   npj Digital Medicine                    |        1         |
 |                        SIGKDD 2022                        |        2         |
 |                    Scientific Reports                     |        1         |
 
