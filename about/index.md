@@ -637,12 +637,12 @@ I'm very glad to work and grow together with these excellent students.
 |                        MICCAI 2024                        |        5         |
 |                    Multimedia Systems                     |        1         |
 |                          Nature                           |        1         |
-|                      Nature Methods                       |        1         |
+|                      Nature Methods                       |        2         |
 |                   Nature Communications                   |        3         |
 |                  npj Precision Oncology                   |        1         |
 |                   npj Digital Medicine                    |        1         |
 |                        SIGKDD 2022                        |        2         |
-|                    Scientific Reports                     |        1         |
+|                    Scientific Reports                     |        2         |
 
 
 
