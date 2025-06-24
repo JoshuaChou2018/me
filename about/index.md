@@ -26,7 +26,7 @@ Co-founder & CEO @MOSS.ai
 
 **Office:** Building 3, Level 4, Sea Side, 4216-WS23, KAUST
 
- [CV (last update: 2025.4)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: 2025.6)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -572,9 +572,9 @@ I'm very glad to work and grow together with these excellent students.
 
 - [2025/06/06] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
   - *Oral.* BAAI Conference, 2025 (北京智源大会), Beijing, China.
-- [2024/05/15] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
+- [2025/05/15] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* Inaugural KCSH Conference: Shaping the Future of Smart Health, Jeddah, Saudi Arabia.
-- [2024/02/24] Private Artificial Intelligence (PAI) for Healthcare.
+- [2025/02/24] Private Artificial Intelligence (PAI) for Healthcare.
   - *Oral.* Shanghai Innovation Institute, China.
 - [2024/11/27] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
   - *Poster.* 1st International Health Conference on Quality and Organization Excellence, Jeddah, Saudi Arabia. [certificate](index.en.assets/Juexiao_Zhou_certificate_IHCQOE.pdf)
