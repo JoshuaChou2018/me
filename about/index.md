@@ -46,6 +46,7 @@ Co-founder & CEO @MOSS.ai
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
+  <li><strong>June 2025</strong>, I am happy to serve as the editor of <a href="https://www.nature.com/collections/ehfcbdhjai">npj Artificial Intelligence</a></li>
   <li><strong>May 2025</strong>, got my Doctor of Philosophy degree, Ph.D. in Computer Science at King Abdullah University of Science and Technology.</li>
     <li><strong>May 2025</strong>, passed my Ph.D. dissertation defense titled "Towards Privacy-preserving Artificial Intelligence (PAI) for Healthcare and Bioinformatics"</li>
   <li><strong>May 2025</strong>, I am happy to serve as the co-chair of <a href="https://www.ishis.org/">IS-HIS 2025 Symposium, ICCNS2025, Varna, Bulgaria</a></li>
@@ -82,6 +83,7 @@ Co-founder & CEO @MOSS.ai
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
@@ -650,6 +652,7 @@ I'm very glad to work and grow together with these excellent students.
 
 #### Editor
 
+- *Editorial Board* Member of [npj Artificial Intelligence](https://www.nature.com/collections/ehfcbdhjai)
 - *Editorial Board* Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
 - *Guest Editor Assistant* in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
 
