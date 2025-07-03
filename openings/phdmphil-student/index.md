@@ -11,10 +11,10 @@ PhD/MPhil Student
 
 The **school's admissions committee** has strict requirements, which is what I cannot control. Applicants for the MPhil/PhD programs must meet **at least one** of the following criteria (otherwise, admission chances will be relatively low):
 
-- Ranked in the top 30% of a **Project 985 university** or an equivalent institution.
+- Ranked in the top 30% of a **Project 985 university (in China)** or an equivalent institution (in other countries, a high QS ranking is preferred).
 - Or, **first-author publication** in a top-tier journal or conference.
 - Or, **other prestigious awards** with significant recognition.
-- And, Meet the university's **minimum language requirement** (IELTS 6.5 / TOEFL 80), with the option to submit proof after applying.
+- And, meet the university's **minimum language requirement** (IELTS 6.5 / TOEFL 80), with the option to submit proof after applying.
 
  <br>
 
@@ -41,7 +41,7 @@ The **school's admissions committee** has strict requirements, which is what I c
 
 <u>For MPhil Applicants</u>:
 
-- **At least one** authored paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
+- **At least one** first-author/co-first paper published in areas such as **Artificial Intelligence, Healthcare, or Computational Biology**.
 - *Or* significant contributions to **popular open-source projects**.
 - Please note that the MPhil program at CUHK-Shenzhen is **self-funded**.
 
