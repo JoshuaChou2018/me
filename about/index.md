@@ -16,7 +16,7 @@ Co-founder & Chief Scientist @BeautyX.ai
 
 Co-founder & CEO @MOSS.ai
 
-**H**ealthcare **E**thical **A**I **L**ab, **HEAL** (意为“治愈”，延长人类寿命)
+**H**ealthcare **E**thical **A**I **L**ab, **HEAL** (意为“治愈”，技术创新助力延长人类寿命)
 
 [School of Data Science](https://sds.cuhk.edu.cn)
 
@@ -572,6 +572,8 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Invited Talks
 
+- [2025/07/14] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
+  - *Oral.* "新医科的创新实践：人工智能赋能科学研究", 汕头大学医学院, China.
 - [2025/06/06] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
   - *Oral.* BAAI Conference, 2025 (北京智源大会), Beijing, China.
 - [2025/05/15] Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4.
@@ -662,8 +664,8 @@ I'm very glad to work and grow together with these excellent students.
 
 #### Conference Administrator
 
-- [IS-HIS 2025 Symposium](https://www.ishis.org/), [ICCNS2025](https://iccns-conference.org/2025/index.php), Varna, Bulgaria, *Co-Chair*
-- The 21st International Conference on Bioinformatics (InCoB2022), *Administrator*, [certificate](index.en.assets/InCoB2022.pdf)
+- *Co-Chair*, [IS-HIS 2025 Symposium](https://www.ishis.org/), [ICCNS2025](https://iccns-conference.org/2025/index.php), Varna, Bulgaria
+- *Administrator*, The 21st International Conference on Bioinformatics (InCoB2022), [certificate](index.en.assets/InCoB2022.pdf)
 
 <br>
 
