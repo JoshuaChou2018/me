@@ -6,6 +6,7 @@
 #### Ph.D. Student
 
 - Zhangtianyi Chen, *(B.S., Jinan University), 2025.9 -* 
+- Zijian Wang, *(B.S., Dalian University of Technology), 2025.9 -* 
 
 #### MPhil Student
 
@@ -28,16 +29,17 @@
 #### Interns
 
 - Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
+- Florensia Widjaja, *(B.S., CUHKSZ), 2025.6 -* 
 
 <br>
 
 ### At KAUST (During my Ph.D.)
 
-- Jiaqi Dong, *(Ph.D., KAUST), 2025 -*
+- Jiaqi Dong, *(Ph.D., KAUST), 2025*
 
-- Jingyi Fang, *Remote Intern, 2025 -* 
+- Jingyi Fang, *Remote Intern, 2025* 
 
-- Yuxin He, *Remote Intern (B.S., Sun Yat-sen University), 2025 -* 
+- Yuxin He, *Remote Intern (B.S., Sun Yat-sen University), 2025* 
 
 - Pavel Putintcev, *(M.S., KAUST), 2024 -> now, Dubai*
 
