@@ -12,5 +12,15 @@
     <description><![CDATA[<h1 id="csc6113-fall-2025-automated-software-testing-and-analysis">CSC6113-Fall-2025: Automated Software Testing and Analysis</h1>
 <h3 id="course-description">Course Description</h3>
 <p>This course explores both foundational and cutting-edge techniques in software testing and analysis, with a focus on enhancing reliability, performance, and security. Topics include coverage metrics, metamorphic testing, mutation testing, combinatorial testing, fuzzing, and AIOps. Students will examine the application of these techniques across diverse domains such as machine translation, databases, mobile applications, and cloud computing. Emphasis is placed on recent research developments and practical implementation. By the end of the course, students will be able to critically analyze and apply these techniques through a hands-on course project.</p>]]></description>
+</item><item>
+    <title>DDA3020-2025-Fall Machine Learning</title>
+    <link>https://www.joshuachou.ink/teaching/dda3020-machine-learning---2025fall/</link>
+    <pubDate>Wed, 23 Apr 2025 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://www.joshuachou.ink/teaching/dda3020-machine-learning---2025fall/</guid>
+    <description><![CDATA[<p><strong>[Note] This is a draft version.</strong></p>
+<h3 id="course-description">Course Description</h3>
+<p>This course provides an introduction to the field of machine learning, covering fundamental concepts, algorithms, and applications. Students will learn various machine learning techniques, including classic machine learning algorithms (Linear regression, Support Vector Machine, K-Means, etc.), and neural networks (MLP, CNN, RNN, Transformer). The course combines theoretical foundations with practical implementation, preparing students for advanced study and research in machine learning.
+By the end of this course, students will be able to:</p>]]></description>
 </item></channel>
 </rss>
