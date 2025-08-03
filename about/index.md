@@ -46,7 +46,8 @@ Co-founder & CEO @MOSS.ai
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
-  <li><strong>June 2025</strong>, I am happy to serve as the editor of <a href="https://www.nature.com/collections/ehfcbdhjai">npj Artificial Intelligence</a></li>
+  <li><strong>Aug 2025</strong>, I have joined CUHK-Shenzhen as an Assistant Professor</a></li>
+  <li><strong>Jun 2025</strong>, I am happy to serve as the editor of <a href="https://www.nature.com/collections/ehfcbdhjai">npj Artificial Intelligence</a></li>
   <li><strong>May 2025</strong>, got my Doctor of Philosophy degree, Ph.D. in Computer Science at King Abdullah University of Science and Technology.</li>
     <li><strong>May 2025</strong>, passed my Ph.D. dissertation defense titled "Towards Privacy-preserving Artificial Intelligence (PAI) for Healthcare and Bioinformatics"</li>
   <li><strong>May 2025</strong>, I am happy to serve as the co-chair of <a href="https://www.ishis.org/">IS-HIS 2025 Symposium, ICCNS2025, Varna, Bulgaria</a></li>
@@ -83,6 +84,7 @@ Co-founder & CEO @MOSS.ai
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
