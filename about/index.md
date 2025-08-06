@@ -10,12 +10,6 @@
 
 Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) 
 
-Co-founder & Chief AI Scientist @[DermAssure.ai](https://dermassure.ai)
-
-Co-founder & Chief Scientist @BeautyX.ai
-
-Co-founder & CEO @MOSS.ai
-
 **H**ealthcare **E**thical **A**I **L**ab, **HEAL** (意为“治愈”，技术创新助力延长人类寿命)
 
 [School of Data Science](https://sds.cuhk.edu.cn)
@@ -388,7 +382,7 @@ I said "Hello World" in January 1999 in China.
 
 ### Short Bio
 
-Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science, The Chinese University of Hong Kong, Shenzhen. He obtained his bachelor’s degree in Bioinformatics from the Southern University of Science and Technology (SUSTech) in 2020 and his Ph.D. degree in Computer Science from King Abdullah University of Science and Technology (KAUST) in 2025. He is also the co-founder and Chief AI Scientist at DermAssure.ai, MOSS.ai, and BeautyX.ai. His research lies at the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical and trustworthy AI in healthcare. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to enable disease detection, prognosis, and risk assessment across clinical settings. In the domain of bioinformatics, he builds intelligent computational frameworks to decode gene regulatory networks, predict protein structure and function, and model complex biological systems. His recent research also explores curiosity-driven AI agents as autonomous scientific researchers. He is committed to advancing ethical AI in healthcare, tackling key challenges such as data privacy, bias, fairness, security, toxicity, and the broader implications of emerging Artificial General Intelligence (AGI) in clinical practice. Juexiao has authored over 30 publications in top-tier journals and conferences, including Science Advances, Nature Machine Intelligence, Nature Computational Science, Nature Communications, The Lancet, Genome Research, Trends in Genetics, Bioinformatics, IEEE TMI, and MICCAI. His work has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of CAAI, APBioNET, and GBD. He serves as a reviewer for leading journals and conferences, including Nature, Nature Methods, Nature Communications, Medical Image Analysis, Genome Biology, Genome Research, NeurIPS, SIGKDD, and MICCAI. He is also an editorial board member of BMC Bioinformatics and a guest editor for Biomedical Informatics.
+Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science, The Chinese University of Hong Kong, Shenzhen. He obtained his bachelor’s degree in Bioinformatics from the Southern University of Science and Technology (SUSTech) in 2020 and his Ph.D. degree in Computer Science from King Abdullah University of Science and Technology (KAUST) in 2025. His research lies at the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical and trustworthy AI in healthcare. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to enable disease detection, prognosis, and risk assessment across clinical settings. In the domain of bioinformatics, he builds intelligent computational frameworks to decode gene regulatory networks, predict protein structure and function, and model complex biological systems. His recent research also explores curiosity-driven AI agents as autonomous scientific researchers. He is committed to advancing ethical AI in healthcare, tackling key challenges such as data privacy, bias, fairness, security, toxicity, and the broader implications of emerging Artificial General Intelligence (AGI) in clinical practice. Juexiao has authored over 30 publications in top-tier journals and conferences, including Science Advances, Nature Machine Intelligence, Nature Computational Science, Nature Communications, The Lancet, Genome Research, Trends in Genetics, Bioinformatics, IEEE TMI, and MICCAI. His work has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of CAAI, APBioNET, and GBD. He serves as a reviewer for leading journals and conferences, including Nature, Nature Methods, Nature Communications, Medical Image Analysis, Genome Biology, Genome Research, NeurIPS, SIGKDD, and MICCAI. He is also an editorial board member of BMC Bioinformatics and a guest editor for Biomedical Informatics.
 
 
 
@@ -405,11 +399,11 @@ Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science
 
 ### Industry Experience
 
-- Co-founder & CEO, MOSS.ai, Sep 2024 - Present
+- Co-founder & CEO, MOSS.ai, Sep 2024
 
-- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 - Present
+- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024
 
-- Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 - Present
+- Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024
 
   
 
