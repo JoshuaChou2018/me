@@ -11,7 +11,7 @@
 #### MPhil Student
 
 - Yuhao Shen, *(B.S., Hangzhou Dianzi University), 2025.9 -* 
-- Xinyuan Zhang, *(B.S., Xi’an Jiaotong-Liverpool University), 2025.9 -* 
+- [Xinyuan Zhang](https://xinyuanzhang1126.github.io/), *(B.S., Xi’an Jiaotong-Liverpool University), 2025.9 -* 
 
 #### Postdoc
 
@@ -29,7 +29,7 @@
 #### Interns
 
 - Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
-- Florensia Widjaja, *(B.S., CUHKSZ), 2025.6 -* 
+- Florensia Widjaja, *(B.S., CUHK-Shenzhen), 2025.6 -* 
 
 <br>
 
