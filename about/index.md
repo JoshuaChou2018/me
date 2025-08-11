@@ -533,6 +533,7 @@ I'm very glad to work and grow together with these excellent students.
 - Chinese Association for Artificial Intelligence (CAAI) Member
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
 - Global Burden of Disease (GBD) Collaborator Network Member
+- CCF生物信息专委会通讯委员
 
 
 
@@ -568,6 +569,8 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Invited Talks
 
+- [2025/08/10] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
+  - *Oral.* 第十届中国计算机学会生物信息学会议, 海南海口, China.
 - [2025/07/14] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
   - *Oral.* "新医科的创新实践：人工智能赋能科学研究", 汕头大学医学院, China.
 - [2025/06/06] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
