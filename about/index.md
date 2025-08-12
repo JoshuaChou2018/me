@@ -645,7 +645,7 @@ I'm very glad to work and grow together with these excellent students.
 |                  npj Precision Oncology                   |        1         |
 |                   npj Digital Medicine                    |        2         |
 |                        SIGKDD 2022                        |        2         |
-|                    Scientific Reports                     |        2         |
+|                    Scientific Reports                     |        3         |
 
 
 
