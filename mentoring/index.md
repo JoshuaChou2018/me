@@ -6,7 +6,7 @@
 #### Ph.D. Student
 
 - Zhangtianyi Chen, *(B.S., Jinan University), 2025.9 -* 
-- Zijian Wang, *(B.S., Dalian University of Technology), 2025.9 -* 
+- [Zijian Wang](https://zephyr-wang-personal.github.io/), *(B.S., Dalian University of Technology), 2025.9 -* 
 
 #### MPhil Student
 
