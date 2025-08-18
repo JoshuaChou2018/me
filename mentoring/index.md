@@ -10,7 +10,7 @@
 
 #### MPhil Student
 
-- Yuhao Shen, *(B.S., Hangzhou Dianzi University), 2025.9 -* 
+- [Yuhao Shen](http://yuhos16.github.io), *(B.S., Hangzhou Dianzi University), 2025.9 -* 
 - [Xinyuan Zhang](https://xinyuanzhang1126.github.io/), *(B.S., Xi’an Jiaotong-Liverpool University), 2025.9 -* 
 
 #### Postdoc
