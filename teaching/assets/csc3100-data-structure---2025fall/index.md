@@ -1,4 +1,4 @@
-# DDA3020-2025-Fall Machine Learning
+# CSC3100-2025-Fall Data Structure
 
 
 **[Note] This is a draft version.**
@@ -98,7 +98,7 @@ In-person. Slides will be available the day before the lecture.
 - D class (D+, D-): accordingly.
 - F class: accordingly.
 
-#### AI Tools Use Policy
+#### AI tools use policy
 
 - You can use AI tools, including ChatGPT, to polish your report if applicable. 
 - However, you are required to submit both your own version and the one polished using AI tools. 
@@ -115,14 +115,14 @@ In-person. Slides will be available the day before the lecture.
 - Each team will submit their algorithm and results based on the project topic. The course project will be graded according to the team's ranking on the overall leaderboard.
 - **Bonus**: If a team ranks in the global top 10 on the leaderboard, they will receive additional bonus points.
 
-#### Post-lecture Survey
+#### Post-lecture survey
 
 - Deadline for each survey: **11:59 pm on the day before the next lecture**. 
 - We do this because we could have time to answer the questions you mentioned in the survey. We also encourage you to complete all of them so that we know your feedback and can adjust the course accordingly.
 
 <br>
 
-### Course Schedule and Materials
+### Course schedule and materials
 
 | Lecture | Date         | Location                   | Topic                                             | Slides | Notes | Reading | Important dates (All due at 11:59 pm) |
 | ------- | ------------ | -------------------------- | ------------------------------------------------- | ------ | ----- | ------- | ------------------------------------- |
