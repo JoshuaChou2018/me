@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teachings on HEAL Lab</title>
-    <link>https://www.joshuachou.ink/teaching/</link>
-    <description>Recent content in Teachings on HEAL Lab</description>
+    <title>Backups on HEAL Lab</title>
+    <link>https://www.joshuachou.ink/backup/</link>
+    <description>Recent content in Backups on HEAL Lab</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Sep 2025 20:17:36 +0800</lastBuildDate>
-    <atom:link href="https://www.joshuachou.ink/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Sep 2025 09:29:46 +0800</lastBuildDate>
+    <atom:link href="https://www.joshuachou.ink/backup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSC3100-2025-Fall Data Structure</title>
-      <link>https://www.joshuachou.ink/teaching/assets/csc3100-data-structure---2025fall/</link>
+      <link>https://www.joshuachou.ink/backup/csc3100-data-structure---2025fall/</link>
       <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.joshuachou.ink/teaching/assets/csc3100-data-structure---2025fall/</guid>
+      <guid>https://www.joshuachou.ink/backup/csc3100-data-structure---2025fall/</guid>
       <description>&lt;p&gt;&lt;strong&gt;[Note] This is a draft version.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;course-description&#34;&gt;Course Description&lt;/h3&gt;&#xA;&lt;p&gt;This course provides an introduction to the field of machine learning, covering fundamental concepts, algorithms, and applications. Students will learn various machine learning techniques, including classic machine learning algorithms (Linear regression, Support Vector Machine, K-Means, etc.), and neural networks (MLP, CNN, RNN, Transformer). The course combines theoretical foundations with practical implementation, preparing students for advanced study and research in machine learning.&#xA;By the end of this course, students will be able to:&lt;/p&gt;</description>
     </item>
     <item>
       <title>DDA3020-2025-Fall Machine Learning</title>
-      <link>https://www.joshuachou.ink/teaching/assets/dda3020-machine-learning---2025fall/</link>
+      <link>https://www.joshuachou.ink/backup/dda3020-machine-learning---2025fall/</link>
       <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.joshuachou.ink/teaching/assets/dda3020-machine-learning---2025fall/</guid>
+      <guid>https://www.joshuachou.ink/backup/dda3020-machine-learning---2025fall/</guid>
       <description>&lt;h3 id=&#34;course-description&#34;&gt;Course Description&lt;/h3&gt;&#xA;&lt;p&gt;This course provides an introduction to the field of machine learning, covering fundamental concepts, algorithms, and applications. Students will learn various machine learning techniques, including classic machine learning algorithms (Linear regression, Support Vector Machine, K-Means, etc.), and neural networks (MLP, CNN, RNN, Transformer). The course combines theoretical foundations with practical implementation, preparing students for advanced study and research in machine learning.&#xA;By the end of this course, students will be able to:&lt;/p&gt;</description>
     </item>
   </channel>
