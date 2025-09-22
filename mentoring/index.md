@@ -47,3 +47,13 @@
 
   For his master's thesis on the application of advanced AI methods in the diagnosis of difficult skin diseases.
 
+<br>
+
+### Happy Moment
+
+#### <font color=#0096FF>2025/9</font>
+
+<font color=#0096FF>Shenzhen, China</font>
+
+![f917010bfe5eae92ef8fe7eb23915274](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/Id8nTm.f917010bfe5eae92ef8fe7eb23915274.JPG)
+
