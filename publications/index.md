@@ -7,7 +7,7 @@
 #### <font color=#0096FF>2025</font>
 
 1. <font color=#0096FF>Streamline Automated Biomedical Discoveries with Agentic Bioinformatics  </font> <br>
-   **Juexiao Zhou***, Jindong Jiang, Zhongyi Han, Zijian Wang, Xin Gao  <br>
+   **Juexiao Zhou**, <u>Jindong Jiang</u>, <u>Zhongyi Han</u>, Zijian Wang, Xin Gao  <br>
 
    ***Briefings in Bioinformatics*** <br>
 
@@ -70,10 +70,10 @@
    **Access:** [online](https://academic.oup.com/bioinformatics/article/40/6/btae364/7691994), [pdf](https://www.joshuachou.ink/publications/papers/btae364.pdf)
 
 10. <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021. </font>  
-   GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)   
-   ***The Lancet***   
-   **DOI: https://doi.org/10.1016/S0140-6736(24)00685-8**   
-   **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf)
+      GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00685-8**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf)
 
 11. <font color=#0096FF>Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
       GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)   
