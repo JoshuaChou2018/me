@@ -30,6 +30,14 @@
 
 - Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
 - Florensia Widjaja, *(B.S., CUHK-Shenzhen), 2025.6 -* 
+- Yuanhao He, *(B.S., CUHK-Shenzhen), 2025.9 -* 
+- Siqi Yao, *(B.S., CUHK-Shenzhen), 2025.9 -* 
+- Jiachen Luo, *(Ph.D., Queen Mary University of London), 2025.9 -*
+- Yiyang Zhang, *(B.S., CUHK-Shenzhen), 2025.9 -* 
+- Luchang Jiang, *2025.5 -* 
+- Jindong Jiang, *(B.S., Nanjing University), 2024.11 - 2025.9* 
+  - Published a co-first-authored paper on *[Briefings in Bioinformatics](https://academic.oup.com/bib/pages/handling-editor-recruitment)* (IF: 7.7)
+
 
 <br>
 
