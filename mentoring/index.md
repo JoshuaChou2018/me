@@ -25,10 +25,10 @@
 
 - Shiqin Han, *(B.S., South China Normal University), 2025.11 -* 
 - Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 -*
+- Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
 
 #### Interns
 
-- Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
 - Florensia Widjaja, *(B.S., CUHK-Shenzhen), 2025.6 -* 
 - Yuanhao He, *(B.S., CUHK-Shenzhen), 2025.9 -* 
 - Siqi Yao, *(B.S., CUHK-Shenzhen), 2025.9 -* 
