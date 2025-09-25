@@ -7,7 +7,7 @@
 #### <font color=#0096FF>2025</font>
 
 1. <font color=#0096FF>Streamline Automated Biomedical Discoveries with Agentic Bioinformatics  </font> <br>
-   **Juexiao Zhou**, <u>Jindong Jiang</u>, <u>Zhongyi Han</u>, Zijian Wang, Xin Gao  <br>
+   **Juexiao Zhou**, <u>Jindong Jiang</u>, Zhongyi Han, <u>Zijian Wang</u>, Xin Gao  <br>
 
    ***Briefings in Bioinformatics*** <br>
 
