@@ -295,13 +295,15 @@
 
 ### Preprint
 
-1. <font color=#0096FF>MoE Meets Reparameterization: Reparameterizable Mixture-of-Experts Model Enhances Dermatology Diagnosis via Dense-to-Experts Distillation  </font> <br> Jiahe Qian, **Juexiao Zhou***<br>
+1. <font color=#0096FF>Towards Trustworthy Dermatology MLLMs: A Benchmark and Multimodal Evaluator for Diagnostic Narratives  </font> <br><u>Yuhao Shen</u>, <u>Jiahe Qian</u>, Shupingzhang, <u>Zhangtianyi Chen</u>, Tao Lu, **Juexiao Zhou***<br>
    ***under review.***
-2. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
+2. <font color=#0096FF>MoE Meets Reparameterization: Reparameterizable Mixture-of-Experts Model Enhances Dermatology Diagnosis via Dense-to-Experts Distillation  </font> <br> <u>Jiahe Qian</u>, Xiaotong Luo, **Juexiao Zhou***<br>
    ***under review.***
-3. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
+3. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
    ***under review.***
-4. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
+4. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
+   ***under review.***
+5. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
    ***under review.***
 6. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
    Zhongyi Han#, Bin Wang#, Shenjing Wu#, **Juexiao Zhou#**, Wenhao Wang, Gongning Luo, Benzheng Wei, Xin Gao   
