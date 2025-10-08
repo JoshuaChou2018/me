@@ -11,7 +11,7 @@
 
    ***Briefings in Bioinformatics*** <br>
 
-   ***Accepted.***
+   **DOI: https://doi.org/10.1093/bib/bbaf505** <br>**Access:** [online](https://academic.oup.com/bib/article/26/5/bbaf505/8266996), [pdf](https://www.joshuachou.ink/publications/papers/bbaf505.pdf)
 
 2. <font color=#0096FF>Evaluating and Mitigating Bias in AI-Driven Medical Text Generation.  </font><br>
    Xiuying Chen, Tairan Wang, **Juexiao Zhou**, Xin Gao, Xiangliang Zhang <br>***Nature Computational Science***<br>
@@ -317,9 +317,9 @@
    **Juexiao Zhou#**, Liyuan Sun#, Yan Xu#, Wenbin Liu#, Shawn Afvari#, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Xiaonan He, Xin Gao   
    ***under review.***
 10. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
-   Xuan Zhou#, Baolei Yuan#, Yeteng Tian, **Juexiao Zhou**, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*   
-   ***under review.***   
-   **Access:** [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1)
+      Xuan Zhou#, Baolei Yuan#, Yeteng Tian, **Juexiao Zhou**, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*   
+      ***under review.***   
+      **Access:** [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1)
 11. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
       Xingyu Liao#, **Juexiao Zhou#**, Bin Zhang#, Xingyi Li, Xiaopeng Xu, Haoyang Li, Xin Gao*   
       ***under review.***   
