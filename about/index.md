@@ -5,6 +5,8 @@
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/8eR9Ut.IMG_4305%202.JPG" width = "210" height = "300" alt="Juexiao" align=right />
 </div>
 
+
+
 ### Juexiao Zhou 周觉晓
 
 Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) 
@@ -401,11 +403,11 @@ Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science
 
 ### Industry Experience
 
-- Co-founder & CEO, MOSS.ai, Sep 2024
+- Co-founder & CEO, MOSS.ai, Sep 2024 -
 
-- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024
+- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 -
 
-- Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024
+- Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 -
 
   
 
@@ -474,9 +476,17 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Honors & Awards
 
+#### The Chinese University of Hong Kong, Shenzhen
+
+##### CUHK-Shenzhen, 2025 - Present
+
+##### Tenure-track Assistant Professor
+
+- The first batch of Members of ISCB-China Council
+
 #### King Abdullah University of Science and Technology
 
-##### KAUST, 2021-Present
+##### KAUST, 2021-2025
 
 **PhD, Computer Science**
 
@@ -536,7 +546,7 @@ I'm very glad to work and grow together with these excellent students.
 - The international Asia-Pacific Bioinformatics Network (APBioNET) Member
 - Global Burden of Disease (GBD) Collaborator Network Member
 - CCF生物信息专委会通讯委员
-- Member of ISCB-China Council
+- [Member of ISCB-China Council](https://www.iscb-cn.org.cn/web/14/202510/247.html)
 
 
 
