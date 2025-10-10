@@ -5,8 +5,6 @@
   <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/8eR9Ut.IMG_4305%202.JPG" width = "210" height = "300" alt="Juexiao" align=right />
 </div>
 
-
-
 ### Juexiao Zhou 周觉晓
 
 Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/teacher/2085) 
