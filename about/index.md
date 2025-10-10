@@ -2,8 +2,9 @@
 
 
 <div>
-  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/avatar.mEXOZc.png" width = "220" height = "200" alt="Juexiao" align=right />
+  <img src="https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/8eR9Ut.IMG_4305%202.JPG" width = "210" height = "300" alt="Juexiao" align=right />
 </div>
+
 
 
 ### Juexiao Zhou 周觉晓
@@ -26,11 +27,11 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <font color=Red>**Openings:** </font>
 
-|                            Plans                             | 25 Fall | 26 Spring | 26 Summer | 26 Fall  |
-| :----------------------------------------------------------: | :-----: | :-------: | :-------: | :------: |
-| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |  Full   |   Open    |   Open    |   Open   |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |  Full   |   Full    |     -     | Open (2) |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |  Full   |   Full    |   Full    | Open (2) |
+|                            Plans                             | 26 Spring | 26 Fall  | 27 Spring | 27 Fall |
+| :----------------------------------------------------------: | :-------: | :------: | :-------: | :-----: |
+| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open    |   Open   |   Open    |  Open   |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |     -     | Open (1) |     -     |    -    |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Full    |   Open   |   Open    |  Open   |
 
 <br>
 
