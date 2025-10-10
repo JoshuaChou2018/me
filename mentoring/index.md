@@ -52,8 +52,8 @@
 - Pavel Putintcev, *(M.S., KAUST), 2024 -> now, Dubai*
 
 - Mohammed Saif, *(Sr.System Administrator/DevOps Evangelist, KAUST), 2024*
-
-  For his master's thesis on the application of advanced AI methods in the diagnosis of difficult skin diseases.
+  - For his master's thesis on the application of advanced AI methods in the diagnosis of difficult skin diseases from Liverpool John Moores University.
+  
 
 <br>
 
