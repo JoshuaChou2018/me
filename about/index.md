@@ -417,6 +417,12 @@ Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science
 
 **[[Full list](https://www.joshuachou.ink/teaching/)]** 
 
+- **CSC3100 Data Structures**, Fall 2025, CUHK-Shenzhen, China
+  - Position: **Instructor**
+  
+- **DDA3020 Machine Learning**, Fall 2025, CUHK-Shenzhen, China
+  - Position: **Instructor**
+  
 - **CS220, Data Analytics - AI Camp for Ministry of Interior**, Fall 2024/2025, Saudi Arabia
   - Cooperated with Prof. Xin Gao
   - Position: **Teaching Assistant**
