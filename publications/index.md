@@ -6,7 +6,7 @@
 
 #### <font color=#0096FF>2025</font>
 
-1. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font>  
+1. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font><br>
    **Juexiao Zhou**, Haoyang Li, Siyuan Chen, <u>Zhangtianyi Chen</u>, Zhongyi Han, Xin Gao   
 
    ***npj Artificial Intelligence***<br>
@@ -71,10 +71,10 @@
    **Access:** [online](https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3), [pdf](https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf)
 
 10. <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer. </font>  
-   Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, **Juexiao Zhou**, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao   
-   ***Bioinformatics***   
-   **DOI: https://doi.org/10.1093/bioinformatics/btae364**   
-   **Access:** [online](https://academic.oup.com/bioinformatics/article/40/6/btae364/7691994), [pdf](https://www.joshuachou.ink/publications/papers/btae364.pdf)
+      Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, **Juexiao Zhou**, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao   
+      ***Bioinformatics***   
+      **DOI: https://doi.org/10.1093/bioinformatics/btae364**   
+      **Access:** [online](https://academic.oup.com/bioinformatics/article/40/6/btae364/7691994), [pdf](https://www.joshuachou.ink/publications/papers/btae364.pdf)
 
 11. <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021. </font>  
       GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)   
