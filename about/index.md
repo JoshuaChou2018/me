@@ -41,6 +41,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
+  <li><strong>Oct 2025</strong>, one paper is accepted by <strong>npj Artificial Intelligence</strong></li>
   <li><strong>Oct 2025</strong>, I am happy to serve as the <a href="https://www.iscb-cn.org.cn/web/14/202510/247.html"><strong>Member of ISCB-China Council</strong></a></li>
   <li><strong>Oct 2025</strong>, Agentic Bioinformatics paper is accepted by <strong>Briefings in Bioinformatics (IF=7.7)</strong></li>
   <li><strong>Aug 2025</strong>, I have joined CUHK-Shenzhen as an Assistant Professor</a></li>
@@ -81,6 +82,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
