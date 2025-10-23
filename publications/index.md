@@ -205,7 +205,7 @@
     **DOI: 10.15252/msb.20199367.**   
     **Access:** [online](https://www.embopress.org/doi/full/10.15252/msb.20199367), [pdf](https://www.joshuachou.ink/publications/papers/msb.20199367.pdf)
 
-    #### <font color=#0096FF>GBD Collaborator Papers</font>
+    #### <font color=#0096FF>GBD</font>
 
 31. <font color=#0096FF>Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
 
