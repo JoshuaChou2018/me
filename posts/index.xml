@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - HEAL Lab</title>
+        <title>All Posts - Healthcare Ethical AI Lab (HEAL)</title>
         <link>https://www.joshuachou.ink/posts/</link>
-        <description>All Posts | HEAL Lab</description>
+        <description>All Posts | Healthcare Ethical AI Lab (HEAL)</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Feb 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Launching ceremony of The Global AI for Science Developer Community, Shanghai, China</title>
     <link>https://www.joshuachou.ink/2025-global-developer-conference/</link>

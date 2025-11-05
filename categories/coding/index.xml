@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Coding - Category - HEAL Lab</title>
+        <title>Coding - Category - Healthcare Ethical AI Lab (HEAL)</title>
         <link>https://www.joshuachou.ink/categories/coding/</link>
-        <description>Coding - Category - HEAL Lab</description>
+        <description>Coding - Category - Healthcare Ethical AI Lab (HEAL)</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.joshuachou.ink/categories/coding/" rel="self" type="application/rss+xml" /><item>
     <title>Publish python package on Anaconda</title>
     <link>https://www.joshuachou.ink/publish-package-on-conda/</link>
