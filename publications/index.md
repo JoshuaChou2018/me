@@ -324,40 +324,46 @@
 
 ### Preprint
 
-1. <font color=#0096FF>SkinCaRe: A Multimodal Dermatology Dataset Annotated with Medical Caption and Chain-of-Thought Reasoning.  </font>  
+1. <font color=#0096FF>CoTBox-TTT: Grounding Medical VQA with Visual Chain-of-Thought Boxes During Test-time Training.  </font>  
+   <u>Jiahe Qian</u>, <u>Yuhao Shen</u>, <u>Zhangtianyi Chen</u>, **Juexiao Zhou***, Peisong Wang   
+   ***under review.***
+2. <font color=#0096FF>SkinGPT-R1: Adapter-Only Dual Distillation for Efficient Dermatology Reasoning.  </font>  
+   <u>Yuhao Shen</u>, <u>Jiahe Qian</u>, <u>Zhangtianyi Chen</u>, <u>Yuanhao He</u>, **Juexiao Zhou***   
+   ***under review.***
+3. <font color=#0096FF>SkinCaRe: A Multimodal Dermatology Dataset Annotated with Medical Caption and Chain-of-Thought Reasoning.  </font>  
    <u>Yuhao Shen</u>, Liyuan Sun, Yan Xu, Wenbin Liu, Shuping Zhang, Shawn Afvari, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Tao Lu, Xiaonan He, Xin Gao, **Juexiao Zhou***   
    ***under review.***
-2. <font color=#0096FF>BioinfoMCP: A Unified Platform Enabling MCP Interfaces in Agentic Bioinformatics  </font> <br><u>Florensia Widjaja</u>, <u>Zhangtianyi Chen</u>, **Juexiao Zhou***<br>
+4. <font color=#0096FF>BioinfoMCP: A Unified Platform Enabling MCP Interfaces in Agentic Bioinformatics  </font> <br><u>Florensia Widjaja</u>, <u>Zhangtianyi Chen</u>, **Juexiao Zhou***<br>
    ***under review.***
-3. <font color=#0096FF>Towards Trustworthy Dermatology MLLMs: A Benchmark and Multimodal Evaluator for Diagnostic Narratives  </font> <br><u>Yuhao Shen</u>, <u>Jiahe Qian</u>, Shupingzhang, <u>Zhangtianyi Chen</u>, Tao Lu, **Juexiao Zhou***<br>
+5. <font color=#0096FF>Towards Trustworthy Dermatology MLLMs: A Benchmark and Multimodal Evaluator for Diagnostic Narratives  </font> <br><u>Yuhao Shen</u>, <u>Jiahe Qian</u>, Shupingzhang, <u>Zhangtianyi Chen</u>, Tao Lu, **Juexiao Zhou***<br>
    ***under review.***
-4. <font color=#0096FF>MoE Meets Reparameterization: Reparameterizable Mixture-of-Experts Model Enhances Dermatology Diagnosis via Dense-to-Experts Distillation  </font> <br> <u>Jiahe Qian</u>, Xiaotong Luo, **Juexiao Zhou***<br>
+6. <font color=#0096FF>MoE Meets Reparameterization: Reparameterizable Mixture-of-Experts Model Enhances Dermatology Diagnosis via Dense-to-Experts Distillation  </font> <br> <u>Jiahe Qian</u>, Xiaotong Luo, **Juexiao Zhou***<br>
    ***under review.***
-5. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
+7. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
    ***under review.***
-6. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
+8. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
    ***under review.***
-7. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
+9. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
    ***under review.***
-8. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
+10. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
    Zhongyi Han#, Bin Wang#, Shenjing Wu#, **Juexiao Zhou#**, Wenhao Wang, Gongning Luo, Benzheng Wei, Xin Gao   
    ***under review.***
-9. <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.  </font>  
-   **Juexiao Zhou#**, Liyuan Sun#, Yan Xu#, Wenbin Liu#, Shawn Afvari#, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Xiaonan He, Xin Gao   
-   ***under review.***
-10. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
+11. <font color=#0096FF>SkinCAP: A Multi-modal Dermatology Dataset Annotated with Rich Medical Captions.  </font>  
+    **Juexiao Zhou#**, Liyuan Sun#, Yan Xu#, Wenbin Liu#, Shawn Afvari#, Zhongyi Han, Jiaoyan Song, Yongzhi Ji, Xiaonan He, Xin Gao   
+    ***under review.***
+12. <font color=#0096FF>Wiskott-Aldrich Syndrome Protein Regulates Nucleolar Organization and Function in Innate Immune Response. </font>  
       Xuan Zhou#, Baolei Yuan#, Yeteng Tian, **Juexiao Zhou**, Mengge Wang, Ismail shakir, Yingzi Zhang, Chongwei Bi, Bayan Mohammed Aljamal, Mais Omar Hashem, Omar Imad Abuyousef, Firdous Mohammed Abdulwahab, Afshan Ali, Sarah Dunn, James Moresco, John Robert Yates III, Francesco Frassoni, Xin Gao, Fowzan Alkuraya, Juan Carlo Izpisua Belmonte, Mo Li*   
       ***under review.***   
       **Access:** [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.08.15.553387v1)
-11. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
+13. <font color=#0096FF>Deep Learning Enhanced Tandem Repeat Variation Identification via Multi-Modal Conversion of Nanopore Reads Alignment.  </font>   
       Xingyu Liao#, **Juexiao Zhou#**, Bin Zhang#, Xingyi Li, Xiaopeng Xu, Haoyang Li, Xin Gao*   
       ***under review.***   
       **Access:** [arXiv](https://www.biorxiv.org/content/10.1101/2023.08.17.553659v1)
-12. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font>   
+14. <font color=#0096FF>Path to Medical AGI: Unify Domain-specific Medical LLMs with the Lowest Cost.  </font>   
      **Juexiao Zhou#**, Xiuying Chen#, Xin Gao*   
      ***under review.***   
      **Access:** [arXiv](https://arxiv.org/abs/2306.10765)
-13. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
+15. <font color=#0096FF>Heart Region Anchoring: a Model-Agnostic Workflow to Improve Segmentation Robustness for Breast Cancer in DCE-MRI.  </font>   
     Longxi Zhou, Yitong Ding, Jiayang Guo, Ming Fan, **Juexiao Zhou**, Haoyang Li, Yujiao Li, Yuxin Huang, Yi Zhao, Yuetan Chu, Kun Wang, Qiming Fang, Xin Gao, Hongxia Zhang, Lihua Li.   
     ***under review.***
 
