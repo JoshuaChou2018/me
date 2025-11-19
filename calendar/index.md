@@ -4,8 +4,8 @@ Hey there!
 
 Feel free to propose a meeting time slot based on my calendar below. 
 
-- **Option 1:** When you do, please **send a Google Calendar invitation** to juexiao.zhou@gmail.com with the title {Your Name}-Juexiao Zhou-{Meeting Purpose}. Just replace {Your Name} with your actual name and {Meeting Purpose} with the specific reason for the meeting.
-- **Option 2:** You can also book a timeslot at https://calendly.com/juexiao-zhou/meeting-with-juexiao
+- **Option 1:** You can book a timeslot at https://calendly.com/juexiao-zhou/meeting-with-juexiao
+- **Option 2:** You can **send a Google Calendar invitation** to juexiao.zhou@gmail.com with the title {Your Name}-Juexiao Zhou-{Meeting Purpose}. Just replace {Your Name} with your actual name and {Meeting Purpose} with the specific reason for the meeting.
 
 Thanks a lot!
 
