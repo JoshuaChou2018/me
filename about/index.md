@@ -41,7 +41,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
-  <li><strong>Nov 2025</strong>, two innovation awards for Outstanding Scientific Research achievements were received at <a href="https://www.chtf.com/awardList/"><strong>The 27th China Hi-tech fair</strong></a></li>
+  <li><strong>Nov 2025</strong>, two innovation awards for Outstanding Scientific Research achievements (第二十七届高交会“优秀科研成果创新奖”) were received at <a href="https://www.chtf.com/awardList/"><strong>The 27th China Hi-tech fair</strong></a></li>
   <li><strong>Oct 2025</strong>, five GBD 2023 papers are accepted by <strong>The Lancet (IF=168.9)</strong></li>
   <li><strong>Oct 2025</strong>, one paper is accepted by <strong>npj Artificial Intelligence</strong></li>
   <li><strong>Oct 2025</strong>, I am happy to serve as the <a href="https://www.iscb-cn.org.cn/web/14/202510/247.html"><strong>Member of ISCB-China Council</strong></a></li>
@@ -493,7 +493,7 @@ I'm very glad to work and grow together with these excellent students.
 
 ##### Tenure-track Assistant Professor
 
-- Innovation awards for Outstanding Scientific Research Achievements, [The 27th China Hi-tech fair](https://www.chtf.com/awardList/) (two awards), 2025
+- Innovation awards for Outstanding Scientific Research Achievements (**第二十七届高交会“优秀科研成果创新奖”**), [The 27th China Hi-tech fair](https://www.chtf.com/awardList/) (two awards), 2025
 - The first batch of Members of ISCB-China Council, 2025
 
 #### King Abdullah University of Science and Technology
