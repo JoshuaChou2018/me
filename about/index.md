@@ -594,6 +594,8 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Invited Talks
 
+- [2025/11/28] 迈向可信赖、强解释性与道德的智慧医疗人工智能（Towards Trustworthy, Explainable and Ethical Intelligent Healthcare）
+  - *Oral.*   “智汇湾区，数创未来”--2025智慧医疗与数字健康创新融合发展大会 ("Intelligence Empower Digital Future" - 2025 Smart  Healthcare and Digital Health Innovation Development Conference), Shenzhen, China.
 - [2025/08/10] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）
   - *Oral.* 第十届中国计算机学会生物信息学会议, 海南海口, China.
 - [2025/07/14] 迈向智慧医疗的伦理人工智能（Towards Healthcare Ethical AI）

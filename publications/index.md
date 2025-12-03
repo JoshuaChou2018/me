@@ -11,7 +11,7 @@
 
    ***npj Artificial Intelligence***<br>
 
-   ***Accepted.***
+   **DOI: https://doi.org/10.1038/s44387-025-00047-1** <br>**Access:** [online](https://www.nature.com/articles/s44387-025-00047-1#rightslink), [pdf](https://www.joshuachou.ink/publications/papers/s44387-025-00047-1.pdf)
 
 2. <font color=#0096FF>Streamline Automated Biomedical Discoveries with Agentic Bioinformatics  </font> <br>
    **Juexiao Zhou**, <u>Jindong Jiang</u>, Zhongyi Han, <u>Zijian Wang</u>, Xin Gao  <br>
@@ -347,7 +347,7 @@
 9. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
    ***under review.***
 10. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
-   ***under review.***
+      ***under review.***
 11. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
        Zhongyi Han#, Bin Wang#, Shenjing Wu#, **Juexiao Zhou#**, Wenhao Wang, Gongning Luo, Benzheng Wei, Xin Gao   
        ***under review.***
