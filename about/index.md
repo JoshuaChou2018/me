@@ -27,11 +27,11 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <font color=Red>**Openings:** </font>
 
-|                            Plans                             | 26 Spring | 26 Fall  | 27 Spring | 27 Fall |
-| :----------------------------------------------------------: | :-------: | :------: | :-------: | :-----: |
-| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open    |   Open   |   Open    |  Open   |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |     -     | Open (1) |     -     |    -    |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Full    |   Open   |   Open    |  Open   |
+|                            Plans                             | 26 Spring | 26 Fall  | 27 Spring | 27 Fall  |
+| :----------------------------------------------------------: | :-------: | :------: | :-------: | :------: |
+| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Full    |   Open   |   Open    |   Open   |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |     -     | Open (1) |     -     | Open (1) |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Full    |   Open   |   Open    |   Open   |
 
 <br>
 
@@ -671,6 +671,7 @@ I'm very glad to work and grow together with these excellent students.
 |                    Nature Communications                     |        3         |
 |                    npj Precision Oncology                    |        1         |
 |                     npj Digital Medicine                     |        2         |
+|                 npj Artificial Intelligence                  |        1         |
 |                         SIGKDD 2022                          |        2         |
 |                      Scientific Reports                      |        4         |
 
