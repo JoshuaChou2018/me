@@ -408,9 +408,9 @@ Juexiao Zhou is a Tenure-track Assistant Professor at the School of Data Science
 
 ### Industry Experience
 
-- Co-founder & CEO, MOSS.ai, Sep 2024 -
+- Co-founder & CEO, MOSS.ai, Sep 2024 - Dec 2025
 
-- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 -
+- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 - 
 
 - Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 -
 
