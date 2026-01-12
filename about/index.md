@@ -27,11 +27,11 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <font color=Red>**Openings:** </font>
 
-|                            Plans                             | 26 Spring | 26 Fall  | 27 Spring | 27 Fall  |
-| :----------------------------------------------------------: | :-------: | :------: | :-------: | :------: |
-| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Full    |   Open   |   Open    |   Open   |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) |     -     | Open (1) |     -     | Open (1) |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Full    |   Open   |   Open    |   Open   |
+|                            Plans                             | 26 Fall  | 27 Fall  | 28 Fall  |
+| :----------------------------------------------------------: | :------: | :------: | :------: |
+| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open   |   Open   |   Open   |
+| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) | Open (2) | Open (2) | Open (2) |
+| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Open   |   Open   |   Open   |
 
 <br>
 
@@ -554,11 +554,12 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Memberships
 
-- Chinese Association for Artificial Intelligence (CAAI) Member
-- The international Asia-Pacific Bioinformatics Network (APBioNET) Member
-- Global Burden of Disease (GBD) Collaborator Network Member
-- CCF生物信息专委会通讯委员
-- [Member of ISCB-China Council](https://www.iscb-cn.org.cn/web/14/202510/247.html)
+- Chinese Association for Artificial Intelligence (CAAI) Member, 2018-Present
+- The international Asia-Pacific Bioinformatics Network (APBioNET) Member, 2022-Present
+- Global Burden of Disease (GBD) Collaborator Network Member, 2023-Present
+- CCF生物信息专委会通讯委员, 2025-Present
+- [Member of ISCB-China Council](https://www.iscb-cn.org.cn/web/14/202510/247.html), 2025-Present
+- 广东省医学会肿瘤影像与大数据分会委员, 2025-Present
 
 
 
