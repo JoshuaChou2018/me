@@ -289,8 +289,8 @@
 
 #### <font color=#0096FF>2023</font>
 
-1. <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. 
-   **Juexiao Zhou**, Xin Gao*.  </font>  
+1. <font color=#0096FF>Privacy in Bioinformatics and Intelligent Healthcare. </font>  
+   **Juexiao Zhou**, Xin Gao*.    
    *Poster*. ***Smart-Health Student Research Symposium, KAUST, Saudi Arabia, November 10, 2022.***   
    **Access:** [certificate](https://www.joshuachou.ink/publications/papers/Certificate_SHSRS_JuexiaoZhou.pdf) 
 
@@ -348,7 +348,7 @@
 9. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
    ***under review.***
 10. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
-   ***under review.***
+      ***under review.***
 11. <font color=#0096FF>Mitigating Bias Catastrophic Inheritance in Medical Large Vision-Language Models with Logit Fairness Adjustment  </font> <br>
       ***under review.***
 12. <font color=#0096FF>Adaptive Feature Unlearning for Trustworthy Healthcare Data Privacy  </font>  
