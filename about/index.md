@@ -21,7 +21,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 **Office:** Zhi Xin Building, 403b, CUHK-Shenzhen
 
- [CV (last update: 2025.6)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
+ [CV (last update: 2026.1)](index.en.assets/CV_JuexiaoZhou.pdf) | [Github](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FJoshuaChou2018&sa=D&sntz=1&usg=AFQjCNElRLXHsJn1RpOm7AMp5eX-VB8qQQ) | [Linkedln](https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjoshuachou2017%2F&sa=D&sntz=1&usg=AFQjCNEZAexzCAEki6qa9eafsSofNzPkFQ) | [ORCID](https://www.google.com/url?q=https%3A%2F%2Forcid.org%2F0000-0002-6739-6236&sa=D&sntz=1&usg=AFQjCNFl3A75c0MOsaZcnQmFFCRdWaFV1Q) | [Google Scholar](https://scholar.google.com/citations?user=_aiu2_MAAAAJ&hl=en)
 
 <br>
 
@@ -642,39 +642,39 @@ I'm very glad to work and grow together with these excellent students.
 
 #### Reviewer
 
-|                      Journal/Conference                      | # Paper Reviewed |
-| :----------------------------------------------------------: | :--------------: |
-|       [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)       |        1         |
-|                 BMC Artificial Intelligence                  |        1         |
-|                      BMC Bioinformatics                      |        2         |
-|         BMC Medical Informatics and Decision Making          |        1         |
-|              Computers in Biology and Medicine               |        21        |
-|             Computational Biology and Chemistry              |        3         |
-|          Computerized Medical Imaging and Graphics           |        2         |
-|      Computational and Structural Biotechnology Journal      |        1         |
-|                        Genome Biology                        |        1         |
-|                       Genome Research                        |        2         |
-|                           Heliyon                            |        1         |
-|                       IJCAI-ECAI 2022                        |        1         |
-|                         ICONIP 2020                          |        1         |
-|                          ICMLA 2021                          |        1         |
-|         International Journal of Intelligent Systems         |        1         |
-| [IEEE Transactions on Knowledge and Data Engineering](index.en.assets/Transactions on Knowledge and Data Engineering reviewer certificate.pdf) |        1         |
-|  International Journal of Machine Learning and Cybernetics   |        1         |
-|     Journal of Bioinformatics and Computational Biology      |        1         |
-|              Knowledge and Information Systems               |        1         |
-|                    Medical Image Analysis                    |        2         |
-|                         MICCAI 2020                          |        1         |
-|                         MICCAI 2024                          |        5         |
-|                      Multimedia Systems                      |        1         |
-|                            Nature                            |        1         |
-|                        Nature Methods                        |        3         |
-|                    Nature Communications                     |        3         |
-|                    npj Precision Oncology                    |        1         |
-|                     npj Digital Medicine                     |        2         |
-|                 npj Artificial Intelligence                  |        1         |
-|                         SIGKDD 2022                          |        2         |
-|                      Scientific Reports                      |        4         |
+|                    Journal/Conference                     | # Paper Reviewed |
+| :-------------------------------------------------------: | :--------------: |
+|     [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)      |        1         |
+|                BMC Artificial Intelligence                |        1         |
+|                    BMC Bioinformatics                     |        2         |
+|        BMC Medical Informatics and Decision Making        |        1         |
+|             Computers in Biology and Medicine             |        21        |
+|            Computational Biology and Chemistry            |        3         |
+|         Computerized Medical Imaging and Graphics         |        2         |
+|    Computational and Structural Biotechnology Journal     |        1         |
+|                      Genome Biology                       |        1         |
+|                      Genome Research                      |        2         |
+|                          Heliyon                          |        1         |
+|                      IJCAI-ECAI 2022                      |        1         |
+|                        ICONIP 2020                        |        1         |
+|                        ICMLA 2021                         |        1         |
+|       International Journal of Intelligent Systems        |        1         |
+|    IEEE Transactions on Knowledge and Data Engineering    |        1         |
+| International Journal of Machine Learning and Cybernetics |        1         |
+|    Journal of Bioinformatics and Computational Biology    |        1         |
+|             Knowledge and Information Systems             |        1         |
+|                  Medical Image Analysis                   |        2         |
+|                        MICCAI 2020                        |        1         |
+|                        MICCAI 2024                        |        5         |
+|                    Multimedia Systems                     |        1         |
+|                          Nature                           |        1         |
+|                      Nature Methods                       |        3         |
+|                   Nature Communications                   |        3         |
+|                  npj Precision Oncology                   |        1         |
+|                   npj Digital Medicine                    |        2         |
+|                npj Artificial Intelligence                |        1         |
+|                        SIGKDD 2022                        |        2         |
+|                    Scientific Reports                     |        4         |
 
 
 
