@@ -4,28 +4,39 @@
 
 **(# equal contribution, * corresponding author, <u>supervised students</u>)**
 
-#### <font color=#0096FF>2025</font>
 
-1. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font><br>
+
+#### <font color=#0096FF>2026</font>
+
+1. <font color=#0096FF>Pushing the boundaries of autonomous biological discovery.  </font>  
+   **Juexiao Zhou**, Xiaonan He, Kai Kang, Xin Gao   
+
+   ***Nature Methods***<br>
+
+   ***Accepted.***
+
+   <font color=#0096FF>2025</font>
+
+2. <font color=#0096FF>Large Language Models in Biomedicine and Healthcare.  </font><br>
    **Juexiao Zhou**, Haoyang Li, Siyuan Chen, <u>Zhangtianyi Chen</u>, Zhongyi Han, Xin Gao   
 
    ***npj Artificial Intelligence***<br>
 
    **DOI: https://doi.org/10.1038/s44387-025-00047-1** <br>**Access:** [online](https://www.nature.com/articles/s44387-025-00047-1#rightslink), [pdf](https://www.joshuachou.ink/publications/papers/s44387-025-00047-1.pdf)
 
-2. <font color=#0096FF>Streamline Automated Biomedical Discoveries with Agentic Bioinformatics  </font> <br>
+3. <font color=#0096FF>Streamline Automated Biomedical Discoveries with Agentic Bioinformatics  </font> <br>
    **Juexiao Zhou**, <u>Jindong Jiang</u>, Zhongyi Han, <u>Zijian Wang</u>, Xin Gao  <br>
 
    ***Briefings in Bioinformatics*** <br>
 
    **DOI: https://doi.org/10.1093/bib/bbaf505** <br>**Access:** [online](https://academic.oup.com/bib/article/26/5/bbaf505/8266996), [pdf](https://www.joshuachou.ink/publications/papers/bbaf505.pdf)
 
-3. <font color=#0096FF>Evaluating and Mitigating Bias in AI-Driven Medical Text Generation.  </font><br>
+4. <font color=#0096FF>Evaluating and Mitigating Bias in AI-Driven Medical Text Generation.  </font><br>
    Xiuying Chen, Tairan Wang, **Juexiao Zhou**, Xin Gao, Xiangliang Zhang <br>***Nature Computational Science***<br>
 
    **DOI: https://doi.org/10.1038/s43588-025-00789-7** <br>**Access:** [online](https://www.nature.com/articles/s43588-025-00789-7), [pdf](https://www.joshuachou.ink/publications/papers/s43588-025-00789-7.pdf)
 
-4. <font color=#0096FF>Deep learning-driven pulmonary artery and vein segmentation reveals demography-associated vasculature anatomical differences. </font><br>
+5. <font color=#0096FF>Deep learning-driven pulmonary artery and vein segmentation reveals demography-associated vasculature anatomical differences. </font><br>
    Yuetan Chu#, Gongning Luo#, Longxi Zhou, Shaodong Cao, Guolin Ma, Xianglin Meng, **Juexiao Zhou**, Changchun Yang, Dexuan Xie, Dan Mu, Ricardo Henao, Gianluca Setti, Xigang Xiao, Lianming Wu, Zhaowen Qiu, Xin Gao*<br>
 
    ***Nature Communications***<br>
@@ -34,12 +45,12 @@
 
    #### <font color=#0096FF>2024</font>
 
-5. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
+6. <font color=#0096FF>AggNet: Advancing Protein Aggregation Analysis Through Deep Learning and Protein Language Model.  </font><br>
    Wenjia He, Xiaopeng Xu, Haoyang Li, **Juexiao Zhou**, Xin Gao<br>***Protein Science***<br>**DOI: https://doi.org/10.1002/pro.70031** <br>
 
    **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/pro.70031), [pdf](https://www.joshuachou.ink/publications/papers/pro.70031.pdf)
 
-6. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font><br>
+7. <font color=#0096FF>Unveiling the Power of Language Models in Chemical Research Question Answering. </font><br>
 
    Xiuying Chen, Tairan Wang, Taicheng Guo, Kehan Guo, **Juexiao Zhou**, Haoyang Li, Zirui Song, Xin Gao, Xiangliang Zhang. <br>
    ***Communications Chemistry***<br>
@@ -48,237 +59,237 @@
 
    **Access:** [online](https://www.nature.com/articles/s42004-024-01394-x), [pdf](https://www.joshuachou.ink/publications/papers/s42004-024-01394-x.pdf)
 
-7. <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses. </font>  
+8. <font color=#0096FF>An AI Agent for Fully Automated Multi-omic Analyses. </font>  
    **Juexiao Zhou#**, Bin Zhang#, Guowei Li, Xiuying Chen, Haoyang Li, Xiaopeng Xu, Siyuan Chen, Liwei Liu, Xin Gao*   
    ***Advanced Science***    
    **DOI: https://doi.org/10.1002/advs.202407094**   
    **Access:** [online](https://onlinelibrary.wiley.com/doi/10.1002/advs.202407094), [pdf](https://www.joshuachou.ink/publications/papers/advs.202407094.pdf)   
    **Press:** [CBIRT news](https://cbirt.net/meet-autoba-a-new-tool-making-bioinformatics-analysis-easy/), [Medium](https://octetbio.medium.com/top-insights-from-autoba-transforming-bioinformatics-and-beyond-8f7dedf32364)
 
-8. <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4. </font>  
+9. <font color=#0096FF>Pre-trained Multimodal Large Language Model Enhances Dermatological Diagnosis using SkinGPT-4. </font>  
    **Juexiao Zhou#**, Xiaonan He#, Liyuan Sun#, Jiannan Xu, Xiuying Chen, Yuetan Chu, Longxi Zhou, Xingyu Liao, Bin Zhang, Shawn Afvari, Xin Gao*   
    ***Nature Communications***   
    **DOI: https://doi.org/10.1038/s41467-024-50043-3**   
    **Access:** [online](https://www.nature.com/articles/s41467-024-50043-3?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240705&utm_content=10.1038/s41467-024-50043-3), [pdf](https://www.joshuachou.ink/publications/papers/s41467-024-50043-3.pdf)
 
-9. <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer. </font>  
+10. <font color=#0096FF>HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer. </font>  
      Xiaopeng Xu, Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, **Juexiao Zhou**, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao   
      ***Bioinformatics***   
      **DOI: https://doi.org/10.1093/bioinformatics/btae364**   
      **Access:** [online](https://academic.oup.com/bioinformatics/article/40/6/btae364/7691994), [pdf](https://www.joshuachou.ink/publications/papers/btae364.pdf)
 
-10. <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations. </font>  
-      Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, **Juexiao Zhou**, Chao Huang, Yongguo Yu, and Xin Gao   
+11. <font color=#0096FF>KaryoXpert: An Accurate Chromosome Segmentation and Classification Framework for Karyotyping Analysis without Training with Manually Labeled Metaphase-Image Mask Annotations. </font>  
+        Siyuan Chen, Kaichuang Zhang, Jingdong Hu, Na Li, Ao Xu, Haoyang Li, **Juexiao Zhou**, Chao Huang, Yongguo Yu, and Xin Gao   
+        ***Computers in Biology and Medicine***   
+        **DOI: https://doi.org/10.1016/j.compbiomed.2024.108601**   
+        **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482524006863), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482524006863-main.pdf)
+
+12. <font color=#0096FF>Patient privacy in AI-driven omics methods. </font>  
+      **Juexiao Zhou**, Chao Huang, Xin Gao   
+      ***Trends in Genetics***   
+      **DOI: https://doi.org/10.1016/j.tig.2024.03.004**   
+      **Access:** [online](https://www.cell.com/trends/genetics/fulltext/S0168-9525(24)00066-0), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0168952524000660-main.pdf)
+
+      #### <font color=#0096FF>2023</font>
+
+13. <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data. </font>  
+      **Juexiao Zhou#**, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.   
+      **Science Advances**  
+      **DOI: 10.1126/sciadv.adh8601**   
+      **Access:** [online](https://www.science.org/doi/10.1126/sciadv.adh8601), [pdf](https://www.joshuachou.ink/publications/papers/sciadv.adh8601.pdf)   
+      **Press:** [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/), [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/), [Tech Xplore](https://techxplore.com/news/2024-02-shuffler-optimizes-privacy-personal-genomic.html), [ScienMag](https://scienmag.com/shuffling-the-deck-for-privacy/), [Bioengineer.org](https://bioengineer.org/shuffling-the-deck-for-privacy/),[Newswise](https://www.newswise.com/articles/shuffling-the-deck-for-privacy), [EurekAlert](https://www.eurekalert.org/news-releases/1034533), [Biocompare](https://www.biocompare.com/Life-Science-News/610989-Novel-Privacy-Preserving-Machine-Learning-Method-Developed-for-Genomics-Data/), [nabd.ws](https://nabd.ws/h/132899916-7bdd33/?hf=0)
+
+14. <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI. </font>  
+      **Juexiao Zhou#**, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*   
       ***Computers in Biology and Medicine***   
-      **DOI: https://doi.org/10.1016/j.compbiomed.2024.108601**   
-      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482524006863), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482524006863-main.pdf)
+      **DOI: 10.1016/j.compbiomed.2023.107861**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482523013264), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482523013264-main.pdf)
 
-11. <font color=#0096FF>Patient privacy in AI-driven omics methods. </font>  
-    **Juexiao Zhou**, Chao Huang, Xin Gao   
-    ***Trends in Genetics***   
-    **DOI: https://doi.org/10.1016/j.tig.2024.03.004**   
-    **Access:** [online](https://www.cell.com/trends/genetics/fulltext/S0168-9525(24)00066-0), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0168952524000660-main.pdf)
+15. <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome. </font>   
+      Xingyu Liao , Wufei Zhu , **Juexiao Zhou** , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*   
+      ***Communications Biology***   
+      **DOI: 10.1038/s42003-023-05322-y**   
+      **Access:** [online](https://www.nature.com/articles/s42003-023-05322-y), [pdf](https://www.joshuachou.ink/publications/papers/s42003-023-05322-y.pdf)
 
-    #### <font color=#0096FF>2023</font>
+16. <font color=#0096FF>A unified method to revoke the private data of patients in intelligent healthcare with audit to forget. </font>   
+      **Juexiao Zhou#**, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*   
+      ***Nature Communications***    
+      **DOI: 10.1038/s41467-023-41703-x**    
+      **Access:** [online](https://www.nature.com/articles/s41467-023-41703-x), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-41703-x.pdf)   
+      **Press:** [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/), [Enerzine](https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante)
 
-12. <font color=#0096FF>PPML-Omics: A privacy-preserving federated machine learning method protects patients’ privacy in omic data. </font>  
-    **Juexiao Zhou#**, Siyuan Chen#, Yulian Wu#, Haoyang Li, Bin Zhang, Longxi Zhou, Yan Hu, Zihang Xiang, Zhongxiao Li, Ningning Chen, Wenkai Han, Di Wang and Xin Gao*.   
-    **Science Advances**  
-    **DOI: 10.1126/sciadv.adh8601**   
-    **Access:** [online](https://www.science.org/doi/10.1126/sciadv.adh8601), [pdf](https://www.joshuachou.ink/publications/papers/sciadv.adh8601.pdf)   
-    **Press:** [Inside Precision Medicine](https://www.insideprecisionmedicine.com/topics/algorithm-proposed-to-protect-patient-privacy/), [Today Headline](https://todayheadline.co/an-integrated-shuffler-optimizes-the-privacy-of-personal-genomic-data-used-for-machine-learning/), [Tech Xplore](https://techxplore.com/news/2024-02-shuffler-optimizes-privacy-personal-genomic.html), [ScienMag](https://scienmag.com/shuffling-the-deck-for-privacy/), [Bioengineer.org](https://bioengineer.org/shuffling-the-deck-for-privacy/),[Newswise](https://www.newswise.com/articles/shuffling-the-deck-for-privacy), [EurekAlert](https://www.eurekalert.org/news-releases/1034533), [Biocompare](https://www.biocompare.com/Life-Science-News/610989-Novel-Privacy-Preserving-Machine-Learning-Method-Developed-for-Genomics-Data/), [nabd.ws](https://nabd.ws/h/132899916-7bdd33/?hf=0)
+17. <font color=#0096FF>Optimization of binding affinities in chemical space with generative pre-trained transformer and deep reinforcement learning.  </font>  
+      Xiaopeng Xu, **Juexiao Zhou**, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Yu Wang, Xingyu Liao, Xin Gao*   
+      ***F1000 Research***   
+      **DOI: 10.12688/f1000research.130936.1**   
+      **Access:** [online](https://f1000research.com/articles/12-757), [pdf](https://www.joshuachou.ink/publications/papers/bc81d525-2684-4755-bd9c-d83bc2bb4321_130936_-_xiaopeng_xu.pdf)
 
-13. <font color=#0096FF>Personalized and privacy-preserving federated heterogeneous medical image analysis with PPPML-HMI. </font>  
-    **Juexiao Zhou#**, Longxi Zhou#, Di Wang, Xiaopeng Xu, Haoyang Li, Yuetan Chu, Wenkai Han, Xin Gao*   
-    ***Computers in Biology and Medicine***   
-    **DOI: 10.1016/j.compbiomed.2023.107861**   
-    **Access:** [online](https://www.sciencedirect.com/science/article/pii/S0010482523013264), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S0010482523013264-main.pdf)
+18. <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.  </font>  
+      Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, **Juexiao Zhou**, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*   
+      ***Nature Communications***   
+      **DOI: 10.1038/s41467-023-39199-6**   
+      **Access:** [online](https://www.nature.com/articles/s41467-023-39199-6), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-39199-6.pdf)
 
-14. <font color=#0096FF>Repetitive DNA sequence detection and its role in the human genome. </font>   
-    Xingyu Liao , Wufei Zhu , **Juexiao Zhou** , Haoyang Li , Xiaopeng Xu , Bin Zhang, Xin Gao*   
-    ***Communications Biology***   
-    **DOI: 10.1038/s42003-023-05322-y**   
-    **Access:** [online](https://www.nature.com/articles/s42003-023-05322-y), [pdf](https://www.joshuachou.ink/publications/papers/s42003-023-05322-y.pdf)
+19. <font color=#0096FF>AB-Gen: Antibody Library Design with Generative Pre-trained Transformer and Deep Reinforcement Learning. </font>   
+      Xiaopeng Xu, Tiantian Xu, **Juexiao Zhou**, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*   
+      ***Genomics, Proteomics & Bioinformatics***   
+      **DOI: 10.1016/j.gpb.2023.03.004**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S167202292300092X), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S167202292300092X-main.pdf)
 
-15. <font color=#0096FF>A unified method to revoke the private data of patients in intelligent healthcare with audit to forget. </font>   
-    **Juexiao Zhou#**, Haoyang Li#, Xingyu Liao, Bin Zhang, Wenjia He, Zhongxiao Li, Longxi Zhou, Xin Gao*   
-    ***Nature Communications***    
-    **DOI: 10.1038/s41467-023-41703-x**    
-    **Access:** [online](https://www.nature.com/articles/s41467-023-41703-x), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-41703-x.pdf)   
-    **Press:** [KAUST Discovery](https://discovery.kaust.edu.sa/en/article/22902/safeguarding-the-right-to-be-forgotten/), [Enerzine](https://www.enerzine.com/un-logiciel-pour-garantir-le-droit-a-loubli-des-patients-dans-lia-en-milieu-de-sante)
+20. <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.  </font>  
+      Haoyang Li#, **Juexiao Zhou#**, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*   
+      ***Nature Communications***   
+      **DOI: 10.1038/s41467-023-37168-7**   
+      **Access:** [online](https://www.nature.com/articles/s41467-023-37168-7), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-37168-7.pdf)   
+      **Press:** [BioMed](https://mp.weixin.qq.com/s/ui5G25ERMuZdRT6J1dciUg), [CBIRT news](https://cbirt.net/unravelling-spatial-transcriptomics-a-benchmark-study-of-cellular-deconvolution-methods/), [KAUST news](https://cemse.kaust.edu.sa/cbrc/news/guidelines-cellular-deconvolution-spatial-transcriptomics)   
+      <font color=Red>Chosen as Editors’ Highlights in Nature Communications</font>
 
-16. <font color=#0096FF>Optimization of binding affinities in chemical space with generative pre-trained transformer and deep reinforcement learning.  </font>  
-    Xiaopeng Xu, **Juexiao Zhou**, Chen Zhu, Qing Zhan, Zhongxiao Li, Ruochi Zhang, Yu Wang, Xingyu Liao, Xin Gao*   
-    ***F1000 Research***   
-    **DOI: 10.12688/f1000research.130936.1**   
-    **Access:** [online](https://f1000research.com/articles/12-757), [pdf](https://www.joshuachou.ink/publications/papers/bc81d525-2684-4755-bd9c-d83bc2bb4321_130936_-_xiaopeng_xu.pdf)
+21. <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.  </font>  
+      Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, **Juexiao Zhou**, Zhongxiao Li, Yisheng Li, Zheng An, Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*   
+      ***Genome Research***   
+      **DOI: 10.1101/gr.277177.122**   
+      **Access:** [online](https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract), [pdf](https://www.joshuachou.ink/publications/papers/GenomeRes.-2023-Long-gr.277177.122.pdf)  
 
-17. <font color=#0096FF>Predicting the antigenic evolution of SARS-COV-2 with deep learning.  </font>  
-    Wenkai Han#, NingNing Chen#, Xinzhou Xu#, Adil Salhi, **Juexiao Zhou**, Zhongxiao Li, Huawen Zhong, Elva Gao, Ruochi Zhang, Yu Wang, Shiwei Sun*, Peter Cheung*, Xin Gao*   
-    ***Nature Communications***   
-    **DOI: 10.1038/s41467-023-39199-6**   
-    **Access:** [online](https://www.nature.com/articles/s41467-023-39199-6), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-39199-6.pdf)
+22. <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.  </font>  
+      Zhongxiao Li#, Elva Gao#, **Juexiao Zhou**, Wenkai Han, Xiaopeng Xu, and Xin Gao*   
+      ***Cell Reports Methods***   
+      **DOI: 10.1016/j.crmeth.2022.100384**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S2667237522002892?via%3Dihub), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S2667237522002892-main.pdf)
 
-18. <font color=#0096FF>AB-Gen: Antibody Library Design with Generative Pre-trained Transformer and Deep Reinforcement Learning. </font>   
-    Xiaopeng Xu, Tiantian Xu, **Juexiao Zhou**, Xingyu Liao, Ruochi Zhang, Yu Wang, Lu Zhang, Xin Gao*   
-    ***Genomics, Proteomics & Bioinformatics***   
-    **DOI: 10.1016/j.gpb.2023.03.004**   
-    **Access:** [online](https://www.sciencedirect.com/science/article/pii/S167202292300092X), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S167202292300092X-main.pdf)
+      #### <font color=#0096FF>2022</font>
 
-19. <font color=#0096FF>A comprehensive benchmarking with practical guidelines for cellular deconvolution of spatial transcriptomics.  </font>  
-    Haoyang Li#, **Juexiao Zhou#**, Zhongxiao Li, Siyuan Chen, Xingyu Liao, Bin Zhang, Ruochi Zhang, Yu Wang, Shiwei Sun, Xin Gao*   
-    ***Nature Communications***   
-    **DOI: 10.1038/s41467-023-37168-7**   
-    **Access:** [online](https://www.nature.com/articles/s41467-023-37168-7), [pdf](https://www.joshuachou.ink/publications/papers/s41467-023-37168-7.pdf)   
-    **Press:** [BioMed](https://mp.weixin.qq.com/s/ui5G25ERMuZdRT6J1dciUg), [CBIRT news](https://cbirt.net/unravelling-spatial-transcriptomics-a-benchmark-study-of-cellular-deconvolution-methods/), [KAUST news](https://cemse.kaust.edu.sa/cbrc/news/guidelines-cellular-deconvolution-spatial-transcriptomics)   
-    <font color=Red>Chosen as Editors’ Highlights in Nature Communications</font>
+23. <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.  </font>  
+      **Juexiao Zhou#**, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.   
+      **Genomics, Proteomics & Bioinformatics**   
+      **DOI: 10.1016/j.gpb.2022.11.010**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S1672022922001656), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf)
 
-20. <font color=#0096FF>Accurate transcriptome-wide identification and quantification of alternative polyadenylation from RNA-seq data with APAIQ.  </font>  
-    Yongkang Long#, Bin Zhang#, Shuye Tian, Jiajia Chan, **Juexiao Zhou**, Zhongxiao Li, Yisheng Li, Zheng An, Xingyu Liao, Yu Wang, Shiwei Sun, Ying Xu, Yvonne Tay, Wei Chen*, Xin Gao*   
-    ***Genome Research***   
-    **DOI: 10.1101/gr.277177.122**   
-    **Access:** [online](https://genome.cshlp.org/content/early/2023/04/28/gr.277177.122.abstract), [pdf](https://www.joshuachou.ink/publications/papers/GenomeRes.-2023-Long-gr.277177.122.pdf)  
+24. <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information. </font>   
+      Haoyang Li, Hanmin Li, **Juexiao Zhou**, Xin Gao*.   
+      **Bioinformatics**   
+      **DOI: 10.1093/bioinformatics/btac605**   
+      **Access:** [online](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac605/6692424), [pdf](https://www.joshuachou.ink/publications/papers/btac605.pdf)
 
-21. <font color=#0096FF>Applications of Deep Learning in Understanding Gene Regulation.  </font>  
-    Zhongxiao Li#, Elva Gao#, **Juexiao Zhou**, Wenkai Han, Xiaopeng Xu, and Xin Gao*   
-    ***Cell Reports Methods***   
-    **DOI: 10.1016/j.crmeth.2022.100384**   
-    **Access:** [online](https://www.sciencedirect.com/science/article/pii/S2667237522002892?via%3Dihub), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S2667237522002892-main.pdf)
+25. <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.   </font>  
+      Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, **Juexiao Zhou**, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.   
+      **Nature Machine Intelligence**   
+      **DOI: 10.1038/s42256-022-00483-7**   
+      **Access:** [online](https://www.nature.com/articles/s42256-022-00483-7), [pdf](https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf)
 
-    #### <font color=#0096FF>2022</font>
+      #### <font color=#0096FF>2021</font>
 
-22. <font color=#0096FF>Annotating TSSs in Multiple Cell Types Based on DNA Sequences and RNA-seq Data via DeeReCT-TSS.  </font>  
-    **Juexiao Zhou#**, Bin Zhang#, Haoyang Li, Longxi Zhou, Zhongxiao Li, Yongkang Long, Wenkai Han, Mengran Wang, Huanhuan Cui, Wei Chen, Xin Gao*.   
-    **Genomics, Proteomics & Bioinformatics**   
-    **DOI: 10.1016/j.gpb.2022.11.010**   
-    **Access:** [online](https://www.sciencedirect.com/science/article/pii/S1672022922001656), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022922001656-main.pdf)
+26. <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.  </font>  
+      Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.   
+      **Frontiers in Physiology, section Computational Physiology and Medicine**   
+      **DOI: 10.3389/fphys.2021.655556.**   
+      **Access:** [online](https://www.frontiersin.org/articles/10.3389/fphys.2021.655556/full), [pdf](https://www.joshuachou.ink/publications/papers/fphys-12-655556.pdf)
 
-23. <font color=#0096FF>SD2: Spatially resolved transcriptomics deconvolution through integration of spatial and dropout information. </font>   
-    Haoyang Li, Hanmin Li, **Juexiao Zhou**, Xin Gao*.   
-    **Bioinformatics**   
-    **DOI: 10.1093/bioinformatics/btac605**   
-    **Access:** [online](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac605/6692424), [pdf](https://www.joshuachou.ink/publications/papers/btac605.pdf)
+      #### <font color=#0096FF>2020</font>
 
-24. <font color=#0096FF>An Interpretable Deep Learning Workflow for Discovering Sub-Visual Abnormalities in CT Scans of COVID-19 Inpatients and Survivors.   </font>  
-    Longxi Zhou#, Xianglin Meng#, Yuxin Huang#, Kai Kang#, **Juexiao Zhou**, Yuetan Chu, Haoyang Li, Dexuan Xie, Jiannan Zhang, Weizhen Yang, Na Bai, Yi Zhao, Mingyan Zhao, Guohua Wang, Lawrence Carin, Xigang Xiao, Kaijiang Yu, Zhaowen Qiu, Xin Gao*.   
-    **Nature Machine Intelligence**   
-    **DOI: 10.1038/s42256-022-00483-7**   
-    **Access:** [online](https://www.nature.com/articles/s42256-022-00483-7), [pdf](https://www.joshuachou.ink/publications/papers/s42256-022-00483-7.pdf)
+27. <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.  </font>  
+      Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, **Juexiao Zhou**, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.   
+      **Genomics Proteomics and Bioinformatics**   
+      **DOI: 10.1016/j.gpb.2020.05.004.**   
+      **Access:** [online](https://www.sciencedirect.com/science/article/pii/S1672022921000498), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022921000498-main.pdf)
 
-    #### <font color=#0096FF>2021</font>
+28. <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.  </font>  
+      Longxi Zhou, Zhongxiao Li, **Juexiao Zhou**, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.   
+      **Transactions on Medical Imaging**   
+      **DOI: 10.1109/TMI.2020.3001810.**   
+      **Access:** [online](https://ieeexplore.ieee.org/document/9115057?source=authoralert), [pdf](https://www.joshuachou.ink/publications/papers/A_Rapid_Accurate_and_Machine-Agnostic_Segmentation_and_Quantification_Method_for_CT-Based_COVID-19_Diagnosis.pdf)
 
-25. <font color=#0096FF>An interpretable computer-aided diagnosis method for periodontitis from panoramic radiographs.  </font>  
-    Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.   
-    **Frontiers in Physiology, section Computational Physiology and Medicine**   
-    **DOI: 10.3389/fphys.2021.655556.**   
-    **Access:** [online](https://www.frontiersin.org/articles/10.3389/fphys.2021.655556/full), [pdf](https://www.joshuachou.ink/publications/papers/fphys-12-655556.pdf)
+29. <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.  </font>  
+      Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.   
+      **Medical Image Computing and Computer Assisted Interventions 2020** 
+      **DOI: 10.1007/978-3-030-59713-9_44.**   
+      **Access:** [online](https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas), [pdf](https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf)
 
-    #### <font color=#0096FF>2020</font>
+30. <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming. </font>  
+      Haoyang Li, **Juexiao Zhou**, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.   
+      **Frontiers in Oncology**   
+      **DOI: 10.3389/fonc.2020.00207.**   
+      **Access:** [online](https://www.frontiersin.org/articles/10.3389/fonc.2020.00207/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Oncology&id=518675), [pdf](https://www.joshuachou.ink/publications/papers/fonc-10-00207.pdf)
 
-26. <font color=#0096FF>DeeReCT-APA: Prediction of Alternative Polyadenylation Site Usage through Deep Learning.  </font>  
-    Zhongxiao Li, Yisheng Li, Bin Zhang, Yu Li, Yongkang Long, **Juexiao Zhou**, Xudong Zou, Min Zhang, Yuhui Hu, Wei Chen, Xin Gao*.   
-    **Genomics Proteomics and Bioinformatics**   
-    **DOI: 10.1016/j.gpb.2020.05.004.**   
-    **Access:** [online](https://www.sciencedirect.com/science/article/pii/S1672022921000498), [pdf](https://www.joshuachou.ink/publications/papers/1-s2.0-S1672022921000498-main.pdf)
+31. <font color=#0096FF>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation. </font>  
+      Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, **Juexiao Zhou**, Yunfei Li, Liang Fang, Yuhui Hu*.   
+      **Molecular Systems Biology**   
+      **DOI: 10.15252/msb.20199367.**   
+      **Access:** [online](https://www.embopress.org/doi/full/10.15252/msb.20199367), [pdf](https://www.joshuachou.ink/publications/papers/msb.20199367.pdf)
 
-27. <font color=#0096FF>A Rapid, Accurate and Machine-agnostic Segmentation and Quantification Method for CT-based COVID-19 Diagnosis.  </font>  
-    Longxi Zhou, Zhongxiao Li, **Juexiao Zhou**, Haoyang Li, Yupeng Chen, Yuxin Huang, Dexuan Xie, Lintao Zhao, Ming Fan, Shahrukh Hashmi, Faisal AbdelKareem, Riham Eiada, Xigang Xiao, Lihua Li, Zhaowen Qiu, and Xin Gao*.   
-    **Transactions on Medical Imaging**   
-    **DOI: 10.1109/TMI.2020.3001810.**   
-    **Access:** [online](https://ieeexplore.ieee.org/document/9115057?source=authoralert), [pdf](https://www.joshuachou.ink/publications/papers/A_Rapid_Accurate_and_Machine-Agnostic_Segmentation_and_Quantification_Method_for_CT-Based_COVID-19_Diagnosis.pdf)
+      #### <font color=#0096FF>GBD</font>
 
-28. <font color=#0096FF>Automatic and interpretable model for periodontitis diagnosis in panoramic radiographs.  </font>  
-    Haoyang Li, **Juexiao Zhou**, Yi Zhou, Jieyu Chen, Feng Gao, Ying Xu, Xin Gao*.   
-    **Medical Image Computing and Computer Assisted Interventions 2020** 
-    **DOI: 10.1007/978-3-030-59713-9_44.**   
-    **Access:** [online](https://link.springer.com/chapter/10.1007/978-3-030-59713-9_44#citeas), [pdf](https://www.joshuachou.ink/publications/papers/Li2020_Chapter_AutomaticAndInterpretableModel.pdf)
+32. <font color=#0096FF>Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
 
-29. <font color=#0096FF>CaMeRe: A novel tool for inference of cancer metabolic reprogramming. </font>  
-    Haoyang Li, **Juexiao Zhou**, Huiyan Sun, Zhaowen Qiu, Xin Gao* and Ying Xu*.   
-    **Frontiers in Oncology**   
-    **DOI: 10.3389/fonc.2020.00207.**   
-    **Access:** [online](https://www.frontiersin.org/articles/10.3389/fonc.2020.00207/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Oncology&id=518675), [pdf](https://www.joshuachou.ink/publications/papers/fonc-10-00207.pdf)
+      GBD 2023 Causes of Death Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(25)01917-8**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01917-8/fulltext)
 
-30. <font color=#0096FF>Pan-tissue analysis of allelic alternative polyadenylation suggests widespread functional regulation. </font>  
-    Yisheng Li#, Bernhard Schaefke#, Xudong Zou, Min Zhang, Florian Heyd, Wei Sun, Bin Zhang, Guipeng Li, Weizheng Liang, Yuhao He, **Juexiao Zhou**, Yunfei Li, Liang Fang, Yuhui Hu*.   
-    **Molecular Systems Biology**   
-    **DOI: 10.15252/msb.20199367.**   
-    **Access:** [online](https://www.embopress.org/doi/full/10.15252/msb.20199367), [pdf](https://www.joshuachou.ink/publications/papers/msb.20199367.pdf)
+33. <font color=#0096FF>Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
 
-    #### <font color=#0096FF>GBD</font>
+      GBD 2023 Disease and Injury and Risk Factor Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(25)01637-X**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01637-X/fulltext)
 
-31. <font color=#0096FF>Global burden of 292 causes of death in 204 countries and territories and 660 subnational locations, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
+34. <font color=#0096FF>Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950–2023: a demographic analysis for the Global Burden of Disease Study 2023. </font>      
 
-    GBD 2023 Causes of Death Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(25)01917-8**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01917-8/fulltext)
+      GBD 2023 Demographics Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(25)01330-3**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01330-3/fulltext)
 
-32. <font color=#0096FF>Burden of 375 diseases and injuries, risk-attributable burden of 88 risk factors, and healthy life expectancy in 204 countries and territories, including 660 subnational locations, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
+35. <font color=#0096FF>The global, regional, and national burden of cancer, 1990–2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
 
-    GBD 2023 Disease and Injury and Risk Factor Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(25)01637-X**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01637-X/fulltext)
+      GBD 2023 Cancer Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(25)01635-6**   
+      **Access:** [online](https://www.thelancet.com/article/S0140-6736(25)01635-6/abstract)
 
-33. <font color=#0096FF>Global age-sex-specific all-cause mortality and life expectancy estimates for 204 countries and territories and 660 subnational locations, 1950–2023: a demographic analysis for the Global Burden of Disease Study 2023. </font>      
+36. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>      
 
-    GBD 2023 Demographics Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(25)01330-3**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01330-3/fulltext)
+      GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically)   
+      ***The Lancet Infectious Diseases***   
+      **DOI: https://doi.org/10.1016/S1473-3099(24)00430-4**   
+      **Access:** [online](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00430-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS1473309924004304.pdf)
 
-34. <font color=#0096FF>The global, regional, and national burden of cancer, 1990–2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023. </font>      
+37. <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021. </font>  
+      GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00685-8**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf)
 
-    GBD 2023 Cancer Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(25)01635-6**   
-    **Access:** [online](https://www.thelancet.com/article/S0140-6736(25)01635-6/abstract)
+38. <font color=#0096FF>Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
+      GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00933-4**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf)
 
-35. <font color=#0096FF>Global, regional, and national burden of upper respiratory infections and otitis media, 1990–2021: a systematic analysis from the Global Burden of Disease Study 2021. </font>      
+39. <font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.</font>   
+      GBD 2021 Diseases and Injuries Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00757-8**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00757-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624007578.pdf)
 
-    GBD 2021 Upper Respiratory Infections Otitis Media Collaborators* (Authors listed alphabetically)   
-    ***The Lancet Infectious Diseases***   
-    **DOI: https://doi.org/10.1016/S1473-3099(24)00430-4**   
-    **Access:** [online](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(24)00430-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS1473309924004304.pdf)
+40. <font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
+      GBD 2021 Causes of Death Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00367-2**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00367-2/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624003672.pdf)
 
-36. <font color=#0096FF>Burden of disease scenarios for 204 countries and territories, 2022–2050: a forecasting analysis for the Global Burden of Disease Study 2021. </font>  
-    GBD 2021 Forecasting Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00685-8**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00685-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624006858.pdf)
+41. <font color=#0096FF>Global fertility in 204 countries and territories, 1950–2021, with forecasts to 2100: a comprehensive demographic analysis for the Global Burden of Disease Study 2021. </font>  
+      GBD 2021 Fertility and Forecasting Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00550-6**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00550-6/fulltext# ), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624005506.pdf)
 
-37. <font color=#0096FF>Global burden and strength of evidence for 88 risk factors in 204 countries and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
-    GBD 2021 Risk Factors Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00933-4**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00933-4/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624009334.pdf)
+42. <font color=#0096FF>Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.</font>  
+      GBD 2021 Demographics Collaborators* (Authors listed alphabetically)   
+      ***The Lancet***   
+      **DOI: https://doi.org/10.1016/S0140-6736(24)00476-8**   
+      **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00476-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624004768.pdf)
 
-38. <font color=#0096FF>Global incidence, prevalence, years lived with disability (YLDs), disability-adjusted life-years (DALYs), and healthy life expectancy (HALE) for 371 diseases and injuries in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021.</font>   
-    GBD 2021 Diseases and Injuries Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00757-8**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00757-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624007578.pdf)
-
-39. <font color=#0096FF>Global burden of 288 causes of death and life expectancy decomposition in 204 countries and territories and 811 subnational locations, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021. </font>  
-    GBD 2021 Causes of Death Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00367-2**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00367-2/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624003672.pdf)
-
-40. <font color=#0096FF>Global fertility in 204 countries and territories, 1950–2021, with forecasts to 2100: a comprehensive demographic analysis for the Global Burden of Disease Study 2021. </font>  
-    GBD 2021 Fertility and Forecasting Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00550-6**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00550-6/fulltext# ), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624005506.pdf)
-
-41. <font color=#0096FF>Global age-sex-specific mortality, life expectancy, and population estimates in 204 countries and territories and 811 subnational locations, 1950–2021, and the impact of the COVID-19 pandemic: a comprehensive demographic analysis for the Global Burden of Disease Study 2021.</font>  
-    GBD 2021 Demographics Collaborators* (Authors listed alphabetically)   
-    ***The Lancet***   
-    **DOI: https://doi.org/10.1016/S0140-6736(24)00476-8**   
-    **Access:** [online](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00476-8/fulltext), [pdf](https://www.joshuachou.ink/publications/papers/PIIS0140673624004768.pdf)
-
-    
+      
 
 
 
@@ -326,9 +337,6 @@
 
 1. <font color=#0096FF>Honesty-Aware Multi-Agent Framework for High-Fidelity Synthetic Data Generation in Digital Psychiatric Intake Doctor-Patient Interactions.  </font>  
    <u>Xinyuan Zhang</u>, <u>Zijian Wang</u>, <u>Chang Dao</u>, **Juexiao Zhou***   
-   ***under review.***
-2. <font color=#0096FF>Pushing the boundaries of autonomous biological discovery.  </font>  
-   **Juexiao Zhou**, Xiaonan He, Kai Kang, Xin Gao   
    ***under review.***
 3. <font color=#0096FF>CoTBox-TTT: Grounding Medical VQA with Visual Chain-of-Thought Boxes During Test-time Training.  </font>  
    <u>Jiahe Qian</u>, <u>Yuhao Shen</u>, <u>Zhangtianyi Chen</u>, **Juexiao Zhou***, Peisong Wang   
