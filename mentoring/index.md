@@ -59,6 +59,12 @@
 
 ### Happy Moment
 
+#### <font color=#0096FF>2026/1</font>
+
+<font color=#0096FF>Huizhou, China</font>
+
+![IMG_5666](https://cdn.jsdelivr.net/gh/JoshuaChou2018/oss@main/uPic/6Ys7Nk.IMG_5666.JPG)
+
 #### <font color=#0096FF>2025/9</font>
 
 <font color=#0096FF>Shenzhen, China</font>
