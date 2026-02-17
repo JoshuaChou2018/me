@@ -661,6 +661,7 @@ I'm very glad to work and grow together with these excellent students.
 |                        ICONIP 2020                        |        1         |
 |                        ICMLA 2021                         |        1         |
 |                  ICLR 2026 CAO Workshop                   |        2         |
+|                         ISMB 2026                         |        5         |
 |       International Journal of Intelligent Systems        |        1         |
 |    IEEE Transactions on Knowledge and Data Engineering    |        1         |
 | International Journal of Machine Learning and Cybernetics |        1         |
