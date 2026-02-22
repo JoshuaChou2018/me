@@ -25,13 +25,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <br>
 
-<font color=Red>**Openings:** </font>
-
-|                            Plans                             | 26 Fall  | 27 Fall  | 28 Fall  |
-| :----------------------------------------------------------: | :------: | :------: | :------: |
-| [Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/) |   Open   |   Open   |   Open   |
-| [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/) | Open (2) | Open (2) | Open (2) |
-| [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/) |   Open   |   Open   |   Open   |
+<font color=Red>**Openings:** </font>[Remote/Onsite Intern](https://www.joshuachou.ink/openings/intern/), [PhD/MPhil students](https://www.joshuachou.ink/openings/phdmphil-student/), [Research Assistant](https://www.joshuachou.ink/openings/research-assistant-ra/)
 
 <br>
 
