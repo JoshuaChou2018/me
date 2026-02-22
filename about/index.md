@@ -89,13 +89,15 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 
 
+<br>
 
+### Short Bio
 
+周觉晓自2025年8月起担任香港中文大学（深圳）数据科学学院 tenure-track 助理教授。他于2020年获得南方科技大学生物信息学理学学士学位，2025年获得阿卜杜拉国王科技大学计算机科学博士学位。其研究方向聚焦计算机科学与生物医学的交叉领域，主要研究人工智能驱动的智慧医疗、生物信息学，以及临床场景中符合伦理、可信赖的人工智能。技术上关注于研发前沿深度学习模型与大语言模型，用于在各类临床场景中实现疾病检测、预后评估与风险评估。他已在顶级期刊和会议发表40余篇学术论文，包括*Nature Methods*, *Nature Machine Intelligence*, *Science Advances*, *Nature Computational Science*, *Nature Communications*, *The Lancet*, *Genome Research*, *Trends in Genetics*, *Bioinformatics*, *IEEE Transactions on Medical Imaging (IEEE TMI)*, *MICCAI*等。其中，以第一作者身份发表论文11篇，包括 *Nature Methods* (2026), *Nature Communications* (2023, 2023, 2024), *Science Advances* (2023)等。其研究成果被Arab News, Radio Television Hong Kong (RTHK), Inside Precision Medicine等多家主流媒体报道。他同时是CAAI, APBioNET, GBD的活跃会员。他担任*Nature*, *Nature Methods*, *Nature Communications*, *Medical Image Analysis*,*Genome Biology*, *Genome Research*, *NeurIPS*, *SIGKDD*, *MICCAI*等众多顶级期刊与会议的审稿人并审稿70余次，同时担任*BMC Bioinformatics*, *npj Artificial Intelligence*, *Biomedical Informatics*等期刊的编委。
 
+<br>
 
-
-
-
+Juexiao Zhou has been a Tenure-Track Assistant Professor at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, since 2025. He received his Bachelor of Science degree in Bioinformatics from the Southern University of Science and Technology (SUSTech) in 2020 and his Doctor of Philosophy (Ph.D.) degree in Computer Science from King Abdullah University of Science and Technology (KAUST) in 2025. His research spans the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical, trustworthy AI in clinical contexts. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to facilitate disease detection, prognosis, and risk assessment across diverse clinical settings. He has authored over 40 publications in top-tier journals and conferences, including *Nature Methods*, *Nature Machine Intelligence*, *Science Advances*, *Nature Computational Science*, *Nature Communications*, *The Lancet*, *Genome Research*, *Trends in Genetics*, *Bioinformatics*, *IEEE Transactions on Medical Imaging (IEEE TMI)*, and *MICCAI*. Among these, 11 are first-author papers, including contributions to *Nature Methods* (2026), *Nature Communications* (2023, 2023, 2024), and *Science Advances* (2023). His research has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of the Chinese Association for Artificial Intelligence (CAAI), the Asia Pacific Bioinformatics Network (APBioNET), and GBD. He has reviewed over 70 times for numerous leading journals and conferences, including *Nature*, *Nature Methods*, *Nature Communications*, *Medical Image Analysis*, *Genome Biology*, *Genome Research*, *NeurIPS*, *SIGKDD*, and *MICCAI*. Additionally, he holds editorial positions at *BMC Bioinformatics*, *npj Artificial Intelligence*, and *Biomedical Informatics*.
 
 
 
@@ -114,6 +116,8 @@ I said "Hello World" in January 1999 in China.
 
 
 <br>
+
+
 
 ### Research Interests
 
@@ -386,18 +390,6 @@ I said "Hello World" in January 1999 in China.
   </li>
   <br>
 </ol>
-
-
-<br>
-
-### Short Bio
-
-周觉晓自2025年8月起担任香港中文大学（深圳）数据科学学院 tenure-track 助理教授。他于2020年获得南方科技大学生物信息学理学学士学位，2025年获得阿卜杜拉国王科技大学计算机科学博士学位。其研究方向聚焦计算机科学与生物医学的交叉领域，主要研究人工智能驱动的智慧医疗、生物信息学，以及临床场景中符合伦理、可信赖的人工智能。技术上关注于研发前沿深度学习模型与大语言模型，用于在各类临床场景中实现疾病检测、预后评估与风险评估。他已在顶级期刊和会议发表40余篇学术论文，包括*Nature Methods*, *Nature Machine Intelligence*, *Science Advances*, *Nature Computational Science*, *Nature Communications*, *The Lancet*, *Genome Research*, *Trends in Genetics*, *Bioinformatics*, *IEEE Transactions on Medical Imaging (IEEE TMI)*, *MICCAI*等。其中，以第一作者身份发表论文11篇，包括 *Nature Methods* (2026), *Nature Communications* (2023, 2023, 2024), *Science Advances* (2023)等。其研究成果被Arab News, Radio Television Hong Kong (RTHK), Inside Precision Medicine等多家主流媒体报道。他同时是CAAI, APBioNET, GBD的活跃会员。他担任*Nature*, *Nature Methods*, *Nature Communications*, *Medical Image Analysis*,*Genome Biology*, *Genome Research*, *NeurIPS*, *SIGKDD*, *MICCAI*等众多顶级期刊与会议的审稿人并审稿70余次，同时担任*BMC Bioinformatics*, *npj Artificial Intelligence*, *Biomedical Informatics*等期刊的编委。
-
-<br>
-
-Juexiao Zhou has been a Tenure-Track Assistant Professor at the School of Data Science, The Chinese University of Hong Kong, Shenzhen, since 2025. He received his Bachelor of Science degree in Bioinformatics from the Southern University of Science and Technology (SUSTech) in 2020 and his Doctor of Philosophy (Ph.D.) degree in Computer Science from King Abdullah University of Science and Technology (KAUST) in 2025. His research spans the intersection of computer science and biomedicine, with a primary focus on AI-driven intelligent healthcare, bioinformatics, and ethical, trustworthy AI in clinical contexts. Juexiao develops cutting-edge deep learning models and large language models (LLMs) to facilitate disease detection, prognosis, and risk assessment across diverse clinical settings. He has authored over 40 publications in top-tier journals and conferences, including *Nature Methods*, *Nature Machine Intelligence*, *Science Advances*, *Nature Computational Science*, *Nature Communications*, *The Lancet*, *Genome Research*, *Trends in Genetics*, *Bioinformatics*, *IEEE Transactions on Medical Imaging (IEEE TMI)*, and *MICCAI*. Among these, 11 are first-author papers, including contributions to *Nature Methods* (2026), *Nature Communications* (2023, 2023, 2024), and *Science Advances* (2023). His research has been featured by major media outlets such as Arab News, Radio Television Hong Kong (RTHK), and Inside Precision Medicine. He is an active member of the Chinese Association for Artificial Intelligence (CAAI), the Asia Pacific Bioinformatics Network (APBioNET), and GBD. He has reviewed over 70 times for numerous leading journals and conferences, including *Nature*, *Nature Methods*, *Nature Communications*, *Medical Image Analysis*, *Genome Biology*, *Genome Research*, *NeurIPS*, *SIGKDD*, and *MICCAI*. Additionally, he holds editorial positions at *BMC Bioinformatics*, *npj Artificial Intelligence*, and *Biomedical Informatics*.
-
 
 
 <br>
