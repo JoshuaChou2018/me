@@ -24,16 +24,15 @@
 #### Research Assistant
 
 - Ziwen Wang, (M.S., UIUC), 2026.1 -  
-- Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 -*
 - Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 -* 
+- Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 - 2026.1 -> SLAI* 
 
 #### Interns
 
+- Chang Dao, *(B.S., CUHK-Shenzhen), 2025.11 -* 
 - Haoran Yang, *(B.S., CUHK-Shenzhen), 2025.10 -* 
-- Yuanhao He, *(B.S., CUHK-Shenzhen), 2025.9 -* 
+- Yuanhao He, *(M.S., CUHK-Shenzhen), 2025.9 -* 
 - Siqi Yao, *(B.S., CUHK-Shenzhen), 2025.9 -* 
-- Jiachen Luo, *(Ph.D., Queen Mary University of London), 2025.9 -*
-- Yiyang Zhang, *(B.S., CUHK-Shenzhen), 2025.9 - 2025.12* 
 - Florensia Widjaja, *(B.S., CUHK-Shenzhen), 2025.6 -* 
 - Jindong Jiang, *(B.S., Nanjing University), 2024.11 - 2025.9* 
   - Published a co-first-authored paper on *[Briefings in Bioinformatics](https://academic.oup.com/bib/pages/handling-editor-recruitment)* (IF: 7.7)
