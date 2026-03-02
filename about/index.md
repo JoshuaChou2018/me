@@ -649,6 +649,7 @@ I'm very glad to work and grow together with these excellent students.
 |                      IJCAI-ECAI 2022                      |        1         |
 |                        ICONIP 2020                        |        1         |
 |                        ICMLA 2021                         |        1         |
+|                         ICML 2026                         |        6         |
 |                  ICLR 2026 CAO Workshop                   |        2         |
 |                         ISMB 2026                         |        5         |
 |       International Journal of Intelligent Systems        |        1         |
