@@ -8,12 +8,12 @@
 
 #### <font color=#0096FF>2026</font>
 
-1. <font color=#0096FF>Pushing the boundaries of autonomous biological discovery.  </font>  
-   **Juexiao Zhou**, Xiaonan He, Kai Kang, Xin Gao   
+1. <font color=#0096FF>Pushing the boundaries of autonomous biological discovery.  </font><br>
+   **Juexiao Zhou**, Xiaonan He, Kai Kang, Xin Gao<br>
 
    ***Nature Methods***<br>
 
-   ***Accepted.***
+   **DOI: https://doi.org/10.1038/s41592-026-03018-9** <br>**Access:** [online](https://www.nature.com/articles/s41592-026-03018-9), [pdf](https://www.joshuachou.ink/publications/papers/s41592-026-03018-9.pdf)
 
    #### <font color=#0096FF>2025</font>
 
