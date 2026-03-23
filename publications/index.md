@@ -341,7 +341,7 @@
 2. <font color=#0096FF>CryoGaussian: Physics-Informed Gaussian Splatting for Ultra-High Resolution Homogeneous and Heterogeneous Cryo-EM 3D Reconstruction.  </font>  
    <u>Ziwen Wang</u>, Jiajun Fan, Chaoran Cheng, Ruihan Guo, Yanru Qu, Zhipeng Xie, **Juexiao Zhou**, Ge Liu  
    ***under review.***
-3. <font color=#0096FF>Honesty-Aware Multi-Agent Framework for High-Fidelity Synthetic Data Generation in Digital Psychiatric Intake Doctor-Patient Interactions.  </font>  
+3. <font color=#0096FF>A Vision-Language Foundation Model for Zero-shot Clinical Collaboration and Automated Concept Discovery in Dermatology.  </font>  
    Siyuan Yan, Xieji Li, Dan Mo, Philipp Tschandl, Yiwen Jiang, Zhonghua Wang, Ming Hu, Lie Ju, Cristina Alonso, Yizhen Zheng, Jiahe Liu, **Juexiao Zhou**, Camilla Chello, Jen Cheung, Julien Anriot, Luc Thomas, Clare Primiero, Gin Tan, Aik Ng, Simon See, Xiaoying Tang, Albert Ip, Xiaoyang Liao, Adrian Bowling, Martin Haskett, Shuang Zhao, Monika Janda, H Peter Soyer, Victoria Mar, Harald Kittler, Zongyuan Ge    
    ***under review.***
 4. <font color=#0096FF>Honesty-Aware Multi-Agent Framework for High-Fidelity Synthetic Data Generation in Digital Psychiatric Intake Doctor-Patient Interactions.  </font>  
@@ -361,7 +361,7 @@
 9. <font color=#0096FF>Towards Trustworthy Dermatology MLLMs: A Benchmark and Multimodal Evaluator for Diagnostic Narratives  </font> <br><u>Yuhao Shen</u>, <u>Jiahe Qian</u>, Shupingzhang, <u>Zhangtianyi Chen</u>, Tao Lu, **Juexiao Zhou***<br>
    ***under review.***
 10. <font color=#0096FF>MoE Meets Reparameterization: Reparameterizable Mixture-of-Experts Model Enhances Dermatology Diagnosis via Dense-to-Experts Distillation  </font> <br> <u>Jiahe Qian</u>, Xiaotong Luo, **Juexiao Zhou***<br>
-   ***under review.***
+      ***under review.***
 11. <font color=#0096FF>Facial Foundational Model Advances Early Warning of Coronary Artery Disease from Live Videos with DigitalShadow  </font> <br> **Juexiao Zhou**, Zhongyi Han, Mankun Xin, Xingwei He, Guotao Wang, Jiaoyan Song, Gongning Luo, Wenjia He, Xintong Li, Yuetan Chu, Juanwen Chen, Bo Wang, Xia Wu, Wenwen Duan, Zhixia Guo, Liyan Bai, Yilin Pan, Xuefei Bi, Lu Liu, Long Feng, Xiaonan He, Xin Gao   <br>
     ***under review.***
 12. <font color=#0096FF>Beyond Perceptual Limit: Verifiable AI for Pulmonary Embolism Detection on Non-contrast CT  </font> <br>Longxi Zhou#, Yuetan Chu#, Xianglin Meng#, Gongning Luo#, **Juexiao Zhou**, Kai Kang, Yang Gao, Xue Du, Anthony Capone, Dan Mu, Gang Yang, Manxi Xu, Shilong Sun, Hongwei Yu, Tong Zhang, Dexuan Xie, Mingsheng Lei, Guoxu Zhang, Shibo Wu, Lei Xu, Xin Guo,  Jinyu Meng, Yuan Cheng, Ricardo Henao, Lawrence Carin, Yuan Qi, Gianluca Setti, Guo-Lin Ma, Zhaowen Qiu, Xin Gao   <br>
