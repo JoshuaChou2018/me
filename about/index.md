@@ -666,7 +666,7 @@ I'm very glad to work and grow together with these excellent students.
 |                   Nature Communications                   |        3         |
 |                  npj Precision Oncology                   |        1         |
 |                   npj Digital Medicine                    |        2         |
-|                npj Artificial Intelligence                |        1         |
+|                npj Artificial Intelligence                |        2         |
 |                   Quantitative Biology                    |        1         |
 |                        SIGKDD 2022                        |        2         |
 |                    Scientific Reports                     |        4         |
