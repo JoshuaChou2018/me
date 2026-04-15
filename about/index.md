@@ -663,7 +663,7 @@ I'm very glad to work and grow together with these excellent students.
 |                    Multimedia Systems                     |        1         |
 |                          Nature                           |        1         |
 |                      Nature Methods                       |        3         |
-|                   Nature Communications                   |        3         |
+|                   Nature Communications                   |        4         |
 |                  npj Precision Oncology                   |        1         |
 |                   npj Digital Medicine                    |        2         |
 |                npj Artificial Intelligence                |        2         |
