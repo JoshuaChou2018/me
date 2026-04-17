@@ -399,10 +399,6 @@ I said "Hello World" in January 1999 in China.
 
 ### Industry Experience
 
-- Co-founder & CEO, MOSS.ai, Sep 2024 - Dec 2025
-
-- Co-founder & Chief Scientist, BeautyX.ai, Sep 2024 - 
-
 - Co-founder & Chief AI Scientist, [DermAssure.ai](https://dermassure.ai), April 2024 -
 
   
@@ -682,6 +678,7 @@ I'm very glad to work and grow together with these excellent students.
 - *Editorial Board* Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
 - *Guest Editor Assistant* in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
 - *PC member* of ISMB 2026
+- *PC member* of BIBM 2026
 
 
 
