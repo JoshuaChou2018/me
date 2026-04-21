@@ -632,6 +632,7 @@ I'm very glad to work and grow together with these excellent students.
 |                    Journal/Conference                     | # Paper Reviewed |
 | :-------------------------------------------------------: | :--------------: |
 |     [AI4D3 @ NeurIPS 2023](https://ai4d3.github.io/)      |        1         |
+|                      Bioinformatics                       |        1         |
 |                BMC Artificial Intelligence                |        1         |
 |                    BMC Bioinformatics                     |        2         |
 |               BMC Cardiovascular Disorders                |        1         |
