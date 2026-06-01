@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1 - Healthcare Ethical AI Lab (HEAL)</title><meta name="Description" content="Juexiao Zhou&#39;s personal site"><meta property="og:url" content="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/">
+  <meta property="og:site_name" content="Healthcare Ethical AI Lab (HEAL)">
+  <meta property="og:title" content="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1">
+  <meta property="og:description" content="&lt;!DOCTYPE html&gt; CSC3100 Data Structures - Lecture 1 Introduction × ​ {CSC3100} Home Why? Examples ADT Topics Plan Kth Math Proof Quiz ​ Click to enlarge Explore the Lecture Scroll to explore ​ Outline What We Will Cover Today 01Why take this course? 02Basic concepts: Abstract Data Type (ADT) 03Relationship of ADT, DS, and Algorithms 04Topics in this course 05Tentative teaching plan">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="teaching">
+    <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-01T12:47:54+08:00">
+    <meta property="article:tag" content="CSC3100 Data Structures - 2026 Summer">
+    <meta property="og:image" content="https://www.joshuachou.ink/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.joshuachou.ink/logo.png">
+  <meta name="twitter:title" content="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1">
+  <meta name="twitter:description" content="&lt;!DOCTYPE html&gt; CSC3100 Data Structures - Lecture 1 Introduction × ​ {CSC3100} Home Why? Examples ADT Topics Plan Kth Math Proof Quiz ​ Click to enlarge Explore the Lecture Scroll to explore ​ Outline What We Will Cover Today 01Why take this course? 02Basic concepts: Abstract Data Type (ADT) 03Relationship of ADT, DS, and Algorithms 04Topics in this course 05Tentative teaching plan">
+<meta name="application-name" content="Healthcare Ethical AI Lab (HEAL)">
+<meta name="apple-mobile-web-app-title" content="Healthcare Ethical AI Lab (HEAL)"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/www.joshuachou.ink\/teaching\/csc3100-data-structures---lecture-1-introduction-61\/intern\/"
+        },"image": ["https:\/\/www.joshuachou.ink\/images\/Apple-Devices-Preview.png"],"genre": "teaching","keywords": "CSC3100 Data Structures - 2026 Summer","wordcount":  1252 ,
+        "url": "https:\/\/www.joshuachou.ink\/teaching\/csc3100-data-structures---lecture-1-introduction-61\/intern\/","datePublished": "2026-06-01T00:00:00+00:00","dateModified": "2026-06-01T12:47:54+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/www.joshuachou.ink\/images\/avatar.png",
+                    "width":  2132 ,
+                    "height":  2132 
+                }},"author": {
+                "@type": "Person",
+                "name": "Juexiao Zhou"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Healthcare Ethical AI Lab (HEAL)"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/" title="About Me"> About Me </a><a class="menu-item" href="/publications/" title="Publications"> Publications </a><a class="menu-item" href="/mentoring/" title="Mentoring"> Mentoring </a><a class="menu-item" href="/teaching/" title="Teaching"> Teaching </a><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><a class="menu-item" href="/openings/" title="Openings"> Openings </a><a class="menu-item" href="/calendar/" title="Calendar"> Calendar </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Healthcare Ethical AI Lab (HEAL)"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about/" title="About Me">About Me</a><a class="menu-item" href="/publications/" title="Publications">Publications</a><a class="menu-item" href="/mentoring/" title="Mentoring">Mentoring</a><a class="menu-item" href="/teaching/" title="Teaching">Teaching</a><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a class="menu-item" href="/openings/" title="Openings">Openings</a><a class="menu-item" href="/calendar/" title="Calendar">Calendar</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><div class="page single special"><h1 class="single-title animated pulse faster">CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1</h1><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC3100 Data Structures - Lecture 1 Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <img id="lightbox-img" src="" alt="PPT Slide">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+<p>​    <!-- Navigation -->
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<div class="nav-logo">
+<img src="ppt_images/page_01.png" alt="CUHK" class="nav-logo-img" id="nav-logo-thumb">
+<span>{CSC3100}</span>
+</div>
+<ul class="nav-links">
+<li><a href="#hero" class="nav-link active">Home</a></li>
+<li><a href="#why" class="nav-link">Why?</a></li>
+<li><a href="#examples" class="nav-link">Examples</a></li>
+<li><a href="#adt" class="nav-link">ADT</a></li>
+<li><a href="#topics" class="nav-link">Topics</a></li>
+<li><a href="#plan" class="nav-link">Plan</a></li>
+<li><a href="#kth" class="nav-link">Kth</a></li>
+<li><a href="#math" class="nav-link">Math</a></li>
+<li><a href="#proof" class="nav-link">Proof</a></li>
+<li><a href="#quiz" class="nav-link">Quiz</a></li>
+</ul>
+<div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</div>
+</nav></p>
+<p>​    <!-- Hero -->
+<section id="hero" class="hero">
+<canvas id="hero-canvas"></canvas>
+<div class="hero-content">
+<div class="hero-ppt" data-slide="1">
+<img src="ppt_images/page_01.png" alt="Lecture 1 Cover" class="ppt-img hero-main-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<a href="#outline" class="hero-cta"><span>Explore the Lecture</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+</a>
+</div>
+<div class="scroll-indicator">
+<div class="mouse"><div class="wheel"></div></div>
+<span>Scroll to explore</span>
+</div>
+</section></p>
+<p>​    <!-- Outline -->
+<section id="outline" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Outline</span>
+<h2 class="section-title">What We Will Cover Today</h2>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="2">
+<img src="ppt_images/page_02.png" alt="Outline" class="ppt-img">
+<div class="ppt-zoom-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></div>
+</div>
+<div class="ppt-sidebar">
+<div class="outline-checklist">
+<div class="check-item"><span class="check-num">01</span><span>Why take this course?</span></div>
+<div class="check-item"><span class="check-num">02</span><span>Basic concepts: Abstract Data Type (ADT)</span></div>
+<div class="check-item"><span class="check-num">03</span><span>Relationship of ADT, DS, and Algorithms</span></div>
+<div class="check-item"><span class="check-num">04</span><span>Topics in this course</span></div>
+<div class="check-item"><span class="check-num">05</span><span>Tentative teaching plan</span></div>
+</div>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Why Take This Course -->
+<section id="why" class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Motivation</span>
+<h2 class="section-title">Why Take This Course?</h2>
+</div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="info-cards">
+<div class="info-card">
+<div class="info-icon">🎯</div>
+<h4>Required &amp; Fundamental</h4>
+<p>A core course in computer science. Very important and very useful.</p>
+</div>
+<div class="info-card">
+<div class="info-icon">💾</div>
+<h4>Data + Algorithms</h4>
+<p>Learn to <strong>save</strong> data (data structures) and <strong>manipulate</strong> data (algorithms) effectively and efficiently.</p>
+</div>
+<div class="info-card">
+<div class="info-icon">⚖️</div>
+<h4>No One-Size-Fits-All</h4>
+<p>Array: good for search, bad for updates. List: good for updates, bad for search.</p>
+</div>
+<div class="info-card">
+<div class="info-icon">🚀</div>
+<h4>Real-World Impact</h4>
+<p>ID validation, route planning, Google search — all powered by data structures.</p>
+</div>
+</div>
+</div>
+<div class="ppt-card large" data-slide="3">
+<img src="ppt_images/page_03.png" alt="Why take this course" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Real Examples -->
+<section id="examples" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Real Examples</span>
+<h2 class="section-title">How Useful in Practice?</h2>
+</div></p>
+<p>​            <!-- Route Planning -->
+<div class="example-block">
+<div class="example-header">
+<span class="example-badge">Example 1</span>
+<h3>Route Planning</h3>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="4">
+<img src="ppt_images/page_04.png" alt="Route Planning" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="interactive-demo">
+<h4>🗺️ Interactive Shortest Path</h4>
+<p>Find the shortest path between two locations in a road network.</p>
+<canvas id="route-canvas" width="500" height="280"></canvas>
+<div class="demo-controls">
+<button id="route-reset" class="btn-secondary">Reset Network</button>
+<button id="route-find" class="btn-primary">Find Shortest Path</button>
+</div>
+<div class="demo-note">
+<strong>Input:</strong> Road network, source, destination<br>
+<strong>Output:</strong> Path with shortest total distance
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Google Search -->
+<div class="example-block">
+<div class="example-header">
+<span class="example-badge">Example 2</span>
+<h3>Google Search</h3>
+</div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="interactive-demo">
+<h4>🔍 Search Engine Indexing</h4>
+<p>Google processes <strong>30 trillion (30×10¹²)</strong> webpages using sophisticated index structures.</p>
+<div class="search-sim">
+<div class="search-bar-mini">
+<input type="text" value="data structure" readonly>
+<span>🔍</span>
+</div>
+<div class="search-result-bar">
+<div class="result-fill" id="search-fill"></div>
+</div>
+<div class="search-stat" id="search-stat">Indexing&hellip;</div>
+</div>
+<button class="btn-primary" id="search-run">Run Indexing Simulation</button>
+<div class="demo-note">
+An <strong>inverted index</strong> is just a data structure — mapping keywords to documents.
+</div>
+</div>
+</div>
+<div class="ppt-card" data-slide="5">
+<img src="ppt_images/page_05.png" alt="Google Search" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div>
+​        </div>
+​    </section>
+​ <br>
+​    <!-- Course Goal -->
+<section class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Goal</span>
+<h2 class="section-title">One Sentence About This Course</h2>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="6">
+<img src="ppt_images/page_06.png" alt="Course Goal" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="goal-interactive">
+<div class="goal-word" id="goal-correct">correctly</div>
+<div class="goal-arrow">↙</div>
+<div class="goal-skill">Logical thinking and math</div>
+<div class="goal-word" id="goal-efficient">efficiently</div>
+<div class="goal-arrow">↙</div>
+<div class="goal-skill">Good at data structures, algorithms, and programming</div>
+</div>
+<p class="goal-summary">This course is about how to use computing resources and tools to solve practical problems <strong>correctly</strong> and <strong>efficiently</strong>.</p>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Data Abstraction / ADT -->
+<section id="adt" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Core Concept</span>
+<h2 class="section-title">Abstract Data Type (ADT)</h2>
+</div></p>
+<p>​            <!-- Data Abstraction -->
+<div class="example-block">
+<div class="example-header">
+<span class="example-badge">Concept 1</span>
+<h3>Data Abstraction — The Smartphone Analogy</h3>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="7">
+<img src="ppt_images/page_07.png" alt="Data Abstraction" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="phone-analogy">
+<div class="phone-screen-sim">
+<div class="phone-apps">
+<div class="phone-app" data-app="call"><span>📞</span><small>Call</small></div>
+<div class="phone-app" data-app="internet"><span>🌐</span><small>Internet</small></div>
+<div class="phone-app" data-app="storage"><span>💾</span><small>Storage</small></div>
+</div>
+<div class="phone-detail" id="phone-detail">Tap an app to see abstraction vs implementation!</div>
+</div>
+<div class="abstraction-box" id="abstraction-box">
+<div class="abs-layer">
+<span class="abs-label">What users know (Interface)</span>
+<p id="abs-interface">To make a call: input a person&rsquo;s phone number</p>
+</div>
+<div class="abs-divider">▼ Hidden Implementation ▼</div>
+<div class="abs-layer hidden">
+<span class="abs-label">What users DON&rsquo;T know (Implementation)</span>
+<p id="abs-implementation">CPU, memory, battery, signal processing, base station negotiation&hellip;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- ADT Benefits -->
+<div class="example-block">
+<div class="example-header">
+<span class="example-badge">Concept 2</span>
+<h3>Benefits of ADT</h3>
+</div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="benefit-cards">
+<div class="benefit-card" id="ben-user">
+<span class="ben-icon">👤</span>
+<h4>User-friendly</h4>
+<p>Users don&rsquo;t need to know how to connect to the Internet.</p>
+</div>
+<div class="benefit-card" id="ben-designer">
+<span class="ben-icon">🔧</span>
+<h4>Designer-friendly</h4>
+<p>Designers can change mechanisms without affecting users.</p>
+</div>
+<div class="benefit-card" id="ben-protect">
+<span class="ben-icon">🔒</span>
+<h4>Protection</h4>
+<p>Others cannot know your secrets! Information hiding enforced.</p>
+</div>
+</div>
+<button class="btn-primary" id="animate-benefits">Animate Benefits</button>
+</div>
+<div class="ppt-card" data-slide="8">
+<img src="ppt_images/page_08.png" alt="ADT Benefits" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- How to Separate -->
+<div class="example-block">
+<div class="example-header">
+<span class="example-badge">Concept 3</span>
+<h3>How to Separate? — IntegerSet ADT</h3>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="9">
+<img src="ppt_images/page_09.png" alt="How to separate" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="adt-playground">
+<div class="code-panel">
+<div class="code-header"><span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span><span class="code-title">IntegerSet ADT</span></div>
+<pre class="code-block"><code><span class="kw">ADT</span> <span class="type">IntegerSet</span> {
+<span class="type">IntegerSet</span> <span class="fn">createEmptySet</span>();
+<span class="type">IntegerSet</span> <span class="fn">addElementToSet</span>(<span class="type">integer</span>, SetA);
+<span class="type">Boolean</span>    <span class="fn">search</span>(<span class="type">integer</span>, SetA);
+<span class="type">IntegerSet</span> <span class="fn">intersection</span>(setA, setB);
+<span class="type">IntegerSet</span> <span class="fn">union</span>(setA, setB);
+<span class="type">IntegerSet</span> <span class="fn">difference</span>(setA, setB);
+}</code></pre>
+</div>
+<div class="impl-tabs">
+<button class="impl-tab active" data-impl="array">Array</button>
+<button class="impl-tab" data-impl="list">Linked List</button>
+<button class="impl-tab" data-impl="tree">Red-Black Tree</button>
+<button class="impl-tab" data-impl="hash">Hash Table</button>
+</div>
+<div class="impl-view" id="impl-view">
+<div class="impl-content active" id="impl-array"><div class="vis-array"></div><p>Search: O(n) | Insert: O(n)</p></div>
+<div class="impl-content" id="impl-list"><div class="vis-list"></div><p>Search: O(n) | Insert: O(1)</p></div>
+<div class="impl-content" id="impl-tree"><div class="vis-tree"></div><p>Search: O(log n) | Insert: O(log n)</p></div>
+<div class="impl-content" id="impl-hash"><div class="vis-hash"></div><p>Search: O(1) avg | Insert: O(1) avg</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+​        </div>
+​    </section></p>
+<p>​    <!-- Relationships -->
+<section class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Relationships</span>
+<h2 class="section-title">ADT, Data Structures &amp; Algorithms</h2>
+</div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="relation-flow">
+<div class="rel-box">
+<div class="rel-title">Abstract Data Type</div>
+<div class="rel-desc">Defines operations (what)</div>
+</div>
+<div class="rel-arrow-down">↓</div>
+<div class="rel-box">
+<div class="rel-title">Data Structure</div>
+<div class="rel-desc">Implementation (how to store)</div>
+</div>
+<div class="rel-arrow-down">↓</div>
+<div class="rel-box">
+<div class="rel-title">Algorithm</div>
+<div class="rel-desc">Implementation of operations (how to process)</div>
+</div>
+</div>
+<div class="sorting-interactive">
+<h4>🎨 Interactive Sorting Visualizer</h4>
+<canvas id="sort-canvas" width="520" height="220"></canvas>
+<div class="sort-controls">
+<button class="btn-sort" data-algo="bubble">Bubble</button>
+<button class="btn-sort" data-algo="selection">Selection</button>
+<button class="btn-sort" data-algo="insertion">Insertion</button>
+<button class="btn-sort" data-algo="quick">Quick</button>
+<button class="btn-sort" data-algo="merge">Merge</button>
+</div>
+<div class="sort-stats">
+<span>Comparisons: <strong id="sort-comp">0</strong></span>
+<span>Swaps: <strong id="sort-swap">0</strong></span>
+<span>Complexity: <strong id="sort-complexity">—</strong></span>
+</div>
+</div>
+</div>
+<div class="ppt-card large" data-slide="10">
+<img src="ppt_images/page_10.png" alt="Relationships" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Topics / Common ADTs -->
+<section id="topics" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Topics</span>
+<h2 class="section-title">Common ADTs &amp; Topics Covered</h2>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="11">
+<img src="ppt_images/page_11.png" alt="Common ADTs" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="topics-flip">
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">📊</span><h4>Array</h4><p>Contiguous memory</p></div><div class="flip-back"><h4>Array</h4><p>Random access O(1)<br>Fixed size<br>Cache-friendly</p></div></div></div>
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">🔗</span><h4>List</h4><p>Linked storage</p></div><div class="flip-back"><h4>List</h4><p>Dynamic size<br>Efficient insertion<br>Sequential access</p></div></div></div>
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">📚</span><h4>Stack</h4><p>LIFO</p></div><div class="flip-back"><h4>Stack</h4><p>Push/Pop O(1)<br>Expression eval<br>Backtracking</p></div></div></div>
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">🎢</span><h4>Queue</h4><p>FIFO</p></div><div class="flip-back"><h4>Queue</h4><p>Enqueue/Dequeue O(1)<br>BFS traversal<br>Task scheduling</p></div></div></div>
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">🌲</span><h4>Tree</h4><p>Hierarchical</p></div><div class="flip-back"><h4>Tree</h4><p>BST, AVL, R-B Tree<br>Heap<br>Range queries</p></div></div></div>
+<div class="flip-card"><div class="flip-inner"><div class="flip-front"><span class="flip-icon">🕸️</span><h4>Graph</h4><p>Network</p></div><div class="flip-back"><h4>Graph</h4><p>BFS &amp; DFS<br>Shortest path<br>MST</p></div></div></div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Topics Covered (page 12) -->
+<div class="ppt-showcase alt-mt">
+<div class="ppt-sidebar">
+<div class="efficiency-panel">
+<h4>Efficiency Comparison</h4>
+<div class="eff-table-wrapper">
+<table class="eff-table">
+<thead><tr><th>Structure</th><th>Search</th><th>Insert</th><th>Best For</th></tr></thead>
+<tbody>
+<tr><td><strong>Array</strong></td><td><span class="tag mid">O(n)</span></td><td><span class="tag bad">O(n)</span></td><td>Indexing</td></tr>
+<tr><td><strong>List</strong></td><td><span class="tag mid">O(n)</span></td><td><span class="tag good">O(1)</span></td><td>Updates</td></tr>
+<tr><td><strong>BST</strong></td><td><span class="tag good">O(log n)</span></td><td><span class="tag good">O(log n)</span></td><td>Sorted data</td></tr>
+<tr><td><strong>Hash Table</strong></td><td><span class="tag good">O(1)</span></td><td><span class="tag good">O(1)</span></td><td>Fast lookup</td></tr>
+</tbody>
+</table>
+</div>
+<div class="complexity-canvas-wrap">
+<canvas id="complexity-chart" width="500" height="280"></canvas>
+</div>
+</div>
+</div>
+<div class="ppt-card large" data-slide="12">
+<img src="ppt_images/page_12.png" alt="Topics Covered" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+​        </div>
+​    </section>
+​ <br>
+​    <!-- Teaching Plan -->
+<section id="plan" class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Schedule</span>
+<h2 class="section-title">Tentative Teaching Plan</h2>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="13">
+<img src="ppt_images/page_13.png" alt="Teaching Plan" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="timeline-interactive">
+<div class="timeline-line-v"></div>
+<div class="t-item" data-w="1"><div class="t-dot"></div><div class="t-card"><span class="t-week">W1</span><span>Course overview, Java basics</span></div></div>
+<div class="t-item" data-w="2"><div class="t-dot"></div><div class="t-card"><span class="t-week">W2</span><span>Arrays, insertion/merge sort</span></div></div>
+<div class="t-item" data-w="3"><div class="t-dot"></div><div class="t-card"><span class="t-week">W3</span><span>Time complexity</span></div></div>
+<div class="t-item" data-w="4"><div class="t-dot"></div><div class="t-card"><span class="t-week">W4</span><span>List</span></div></div>
+<div class="t-item" data-w="5"><div class="t-dot"></div><div class="t-card"><span class="t-week">W5</span><span>Stack, queues</span></div></div>
+<div class="t-item" data-w="6"><div class="t-dot"></div><div class="t-card"><span class="t-week">W6</span><span>More sorting algorithms</span></div></div>
+<div class="t-item" data-w="7"><div class="t-dot"></div><div class="t-card"><span class="t-week">W7</span><span>Trees</span></div></div>
+<div class="t-item" data-w="8"><div class="t-dot exam"></div><div class="t-card exam"><span class="t-week">W8</span><span>📝 Midterm Exam</span></div></div>
+<div class="t-item" data-w="9"><div class="t-dot"></div><div class="t-card"><span class="t-week">W9</span><span>Trees</span></div></div>
+<div class="t-item" data-w="10"><div class="t-dot"></div><div class="t-card"><span class="t-week">W10</span><span>Hashing</span></div></div>
+<div class="t-item" data-w="11"><div class="t-dot"></div><div class="t-card"><span class="t-week">W11</span><span>Graphs</span></div></div>
+<div class="t-item" data-w="12"><div class="t-dot"></div><div class="t-card"><span class="t-week">W12</span><span>Graphs</span></div></div>
+<div class="t-item" data-w="13"><div class="t-dot"></div><div class="t-card"><span class="t-week">W13</span><span>Graphs, other DS</span></div></div>
+<div class="t-item" data-w="14"><div class="t-dot"></div><div class="t-card"><span class="t-week">W14</span><span>Course review</span></div></div>
+</div>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Kth Largest Problem -->
+<section id="kth" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Case Study</span>
+<h2 class="section-title">Example: Selection Problem</h2>
+</div></p>
+<p>​            <!-- Page 14 -->
+<div class="example-block">
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="14">
+<img src="ppt_images/page_14.png" alt="Selection Problem" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="kth-sim">
+<h4>⚡ Interactive Simulator</h4>
+<p>Compare two solutions for finding the kth largest element.</p>
+<div class="sim-inputs">
+<label>N: <input type="range" id="sim-n" min="10" max="1000" value="100"><span id="sim-n-val">100</span></label>
+<label>k: <input type="range" id="sim-k" min="1" max="99" value="10"><span id="sim-k-val">10</span></label>
+</div>
+<button id="sim-run" class="btn-primary">Run Simulation</button>
+<canvas id="kth-canvas" width="460" height="180"></canvas>
+<div class="sim-legend">
+<span class="leg-s1">Solution 1: O(N log N)</span>
+<span class="leg-s2">Solution 2: O(N × k)</span>
+</div>
+<div class="sim-insight" id="sim-insight">Adjust N and k, then click Run!</div>
+</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Page 15 -->
+<div class="example-block">
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="question-cards">
+<div class="q-card">
+<h4>❓ Which solution is better?</h4>
+<p>By simulation or by theoretical analysis?</p>
+</div>
+<div class="q-card">
+<h4>❓ Is either good enough?</h4>
+<p>With N=1,000,000 and k=500,000, <strong>neither</strong> finishes in reasonable time!</p>
+</div>
+<div class="q-card highlight">
+<h4>💡 Conclusion</h4>
+<p>Writing a working program is <strong>not good enough</strong>! We need the optimum solution.</p>
+</div>
+</div>
+</div>
+<div class="ppt-card large" data-slide="15">
+<img src="ppt_images/page_15.png" alt="Questions and Conclusion" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Page 16 -->
+<div class="example-block">
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="16">
+<img src="ppt_images/page_16.png" alt="Exercise" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="hint-box">
+<h4>🧠 Think About It</h4>
+<p>Is it possible to find a better algorithm to select the k<sup>th</sup> largest number?</p>
+<div class="hint-reveal" id="hint-reveal">
+<button class="btn-secondary" id="show-hint">Show Hint</button>
+<p class="hint-text" id="hint-text" style="display:none;">Yes! <strong>QuickSelect</strong> achieves O(N) average time using partition similar to QuickSort!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+​        </div>
+​    </section></p>
+<p>​    <!-- Math Review -->
+<section id="math" class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Foundation</span>
+<h2 class="section-title">Mathematics Review</h2>
+</div></p>
+<p>​            <!-- Exponents (page 17) -->
+<div class="example-block">
+<div class="example-header"><span class="example-badge">Math 1</span><h3>Exponents</h3></div>
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="17">
+<img src="ppt_images/page_17.png" alt="Exponents" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="calc-panel">
+<h4>🧮 Exponent Calculator</h4>
+<div class="calc-row"><span>X<sup>A</sup> × X<sup>B</sup> = X<sup>A+B</sup></span></div>
+<div class="calc-row interactive">
+<input type="number" id="e-base" value="2" min="2">^<input type="number" id="e-a" value="3" min="0"> × <input type="number" id="e-base2" value="2" min="2">^<input type="number" id="e-b" value="4" min="0"> = <span class="calc-result" id="e-r1">128</span>
+</div>
+<div class="calc-row"><span>(X<sup>A</sup>)<sup>B</sup> = X<sup>AB</sup></span></div>
+<div class="calc-row interactive">
+(<input type="number" id="e-p-base" value="2" min="2">^<input type="number" id="e-p-a" value="3" min="0">)^<input type="number" id="e-p-b" value="2" min="0"> = <span class="calc-result" id="e-r2">64</span>
+</div>
+<div class="calc-row"><span>2<sup>N</sup> + 2<sup>N</sup> = 2<sup>N+1</sup></span></div>
+<div class="calc-row interactive">
+2^<input type="number" id="e-n" value="5" min="0"> + 2^<input type="number" id="e-n2" value="5" min="0" disabled> = <span class="calc-result" id="e-r3">64</span>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Logarithms (page 18) -->
+<div class="example-block">
+<div class="example-header"><span class="example-badge">Math 2</span><h3>Logarithms</h3></div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="calc-panel">
+<h4>🧮 Log Calculator (base 2)</h4>
+<div class="calc-row"><span>log<sub>2</sub> A = ?</span></div>
+<div class="calc-row interactive">
+log₂ <input type="number" id="log-in" value="64" min="1"> = <span class="calc-result" id="log-r">6</span>
+</div>
+<div class="calc-row"><span>log(AB) = log A + log B</span></div>
+<div class="calc-row interactive">
+log₂(<input type="number" id="log-m1" value="4" min="1"> × <input type="number" id="log-m2" value="8" min="1">) = <span class="calc-result" id="log-r2">5</span>
+</div>
+<div class="calc-row"><span>log(A/B) = log A - log B</span></div>
+<div class="calc-row interactive">
+log₂(<input type="number" id="log-d1" value="64" min="1"> / <input type="number" id="log-d2" value="8" min="1">) = <span class="calc-result" id="log-r3">3</span>
+</div>
+<div class="calc-facts">
+<span class="fact-tag">log 1 = 0</span>
+<span class="fact-tag">log 2 = 1</span>
+<span class="fact-tag">log 1024 = 10</span>
+<span class="fact-tag">log 65536 = 16</span>
+</div>
+</div>
+</div>
+<div class="ppt-card" data-slide="18">
+<img src="ppt_images/page_18.png" alt="Logarithms" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Arithmetic Series (page 19) -->
+<div class="example-block">
+<div class="example-header"><span class="example-badge">Math 3</span><h3>Arithmetic Series</h3></div>
+<div class="ppt-showcase">
+<div class="ppt-card" data-slide="19">
+<img src="ppt_images/page_19.png" alt="Arithmetic Series" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="calc-panel">
+<h4>🧮 Series Calculator</h4>
+<div class="series-formula">Σ<sub>i=1</sub><sup>N</sup> i = N(N+1)/2</div>
+<div class="calc-row interactive">
+N = <input type="number" id="arith-n" value="100" min="1">
+<button id="arith-calc" class="btn-mini">Calculate</button>
+<span class="calc-result" id="arith-r">5050</span>
+</div>
+<div class="series-formula">Σ i² = N(N+1)(2N+1)/6</div>
+<div class="calc-row interactive">
+N = <input type="number" id="arith-n2" value="10" min="1">
+<button id="arith-calc2" class="btn-mini">Calculate</button>
+<span class="calc-result" id="arith-r2">385</span>
+</div>
+<div class="example-box">
+<strong>Example:</strong> 2+5+8+&hellip;+(3k-1) = 3k(k+1)/2 - k
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p>​            <!-- Geometric Series (page 20) -->
+<div class="example-block">
+<div class="example-header"><span class="example-badge">Math 4</span><h3>Geometric Series</h3></div>
+<div class="ppt-showcase reverse">
+<div class="ppt-sidebar">
+<div class="calc-panel">
+<h4>🧮 Geometric Series</h4>
+<div class="series-formula">S = 1 + r + r² + &hellip; = 1/(1-r)   (0&lt;r&lt;1)</div>
+<div class="calc-row interactive">
+r = <input type="number" id="geo-r" value="0.5" min="0.01" max="0.99" step="0.01">
+<button id="geo-calc" class="btn-mini">Calculate</button>
+<span class="calc-result" id="geo-rslt">2</span>
+</div>
+<div class="derivation-box">
+<h5>📐 Derivation</h5>
+<p>Let S = 1 + r + r² + &hellip; (1)</p>
+<p>Then rS = r + r² + r³ + &hellip; (2)</p>
+<p>(1) - (2): S - rS = 1</p>
+<p><strong>S = 1/(1-r)</strong></p>
+</div>
+</div>
+</div>
+<div class="ppt-card" data-slide="20">
+<img src="ppt_images/page_20.png" alt="Geometric Series" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+</div>
+</div>
+​        </div>
+​    </section>
+​ <br>
+​    <!-- Proof Techniques -->
+<section id="proof" class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Logic</span>
+<h2 class="section-title">Proof Techniques</h2>
+</div>
+<div class="ppt-showcase">
+<div class="ppt-card large" data-slide="21">
+<img src="ppt_images/page_21.png" alt="Proof Techniques" class="ppt-img">
+<div class="ppt-zoom-hint">Click to enlarge</div>
+</div>
+<div class="ppt-sidebar">
+<div class="proof-tabs">
+<button class="proof-tab active" data-proof="counter">Counterexample</button>
+<button class="proof-tab" data-proof="induction">Induction</button>
+<button class="proof-tab" data-proof="contradiction">Contradiction</button>
+</div>
+<div class="proof-content active" id="proof-counter">
+<h4>❌ Proof by Counterexample</h4>
+<p>To disprove: find one concrete example that violates the statement.</p>
+<div class="fib-demo">
+<p>Claim: F<sub>k</sub> ≤ k²</p>
+<div class="fib-bars" id="fib-bars"></div>
+<p class="fib-highlight">F<sub>11</sub> = 144 &gt; 11² = 121 ✗</p>
+</div>
+</div>
+<div class="proof-content" id="proof-induction">
+<h4>🔁 Proof by Induction</h4>
+<div class="ind-steps">
+<div class="ind-step"><span class="ind-num">1</span><p><strong>Base Case:</strong> Prove for n=1</p></div>
+<div class="ind-step"><span class="ind-num">2</span><p><strong>Hypothesis:</strong> Assume true for n=k</p></div>
+<div class="ind-step"><span class="ind-num">3</span><p><strong>Inductive Step:</strong> Prove for n=k+1</p></div>
+</div>
+<button class="btn-secondary" id="ind-run">Prove Σi = n(n+1)/2</button>
+<div class="ind-state" id="ind-state">Click to start the proof&hellip;</div>
+</div>
+<div class="proof-content" id="proof-contradiction">
+<h4>🔄 Proof by Contradiction</h4>
+<div class="contra-flow" id="contra-flow">
+<div class="c-step">Assume √2 = p/q (reduced)</div>
+<div class="c-step">2 = p²/q² → p² = 2q²</div>
+<div class="c-step">p² even → p even</div>
+<div class="c-step">p=2k → 4k² = 2q² → q² = 2k²</div>
+<div class="c-step">q is also even!</div>
+<div class="c-step contra">Contradiction!</div>
+</div>
+<button class="btn-secondary" id="contra-run">Animate Proof</button>
+</div>
+</div>
+</div>
+</div>
+</section></p>
+<p>​    <!-- Quiz -->
+<section id="quiz" class="section alt-bg">
+<div class="container">
+<div class="section-header">
+<span class="section-tag">Quiz</span>
+<h2 class="section-title">Knowledge Check</h2>
+</div>
+<div class="quiz-wrapper">
+<div class="quiz-progress"><div class="quiz-bar" id="quiz-bar"></div></div>
+<div class="quiz-info">Question <span id="q-cur">1</span> / <span id="q-tot">5</span></div></p>
+<pre><code>            &lt;div class=&quot;quiz-slide active&quot; data-q=&quot;1&quot;&gt;
+                &lt;h3&gt;What is the primary purpose of an ADT?&lt;/h3&gt;
+                &lt;div class=&quot;quiz-options&quot;&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;To make programs run faster&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;t&quot;&gt;To separate abstract properties from implementation details&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;To reduce memory usage&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;To replace all data structures&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;q-feedback&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quiz-slide&quot; data-q=&quot;2&quot;&gt;
+                &lt;h3&gt;Which data structure offers O(1) average search time?&lt;/h3&gt;
+                &lt;div class=&quot;quiz-options&quot;&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Array (unsorted)&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Linked List&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;t&quot;&gt;Hash Table&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Binary Search Tree (unbalanced)&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;q-feedback&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quiz-slide&quot; data-q=&quot;3&quot;&gt;
+                &lt;h3&gt;Time complexity of Solution 1 (sort all) for Kth largest?&lt;/h3&gt;
+                &lt;div class=&quot;quiz-options&quot;&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;O(N)&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;t&quot;&gt;O(N log N)&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;O(N²)&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;O(k log N)&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;q-feedback&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quiz-slide&quot; data-q=&quot;4&quot;&gt;
+                &lt;h3&gt;What does log₂ 64 equal?&lt;/h3&gt;
+                &lt;div class=&quot;quiz-options&quot;&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;4&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;5&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;t&quot;&gt;6&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;8&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;q-feedback&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quiz-slide&quot; data-q=&quot;5&quot;&gt;
+                &lt;h3&gt;Which proof assumes false and derives contradiction?&lt;/h3&gt;
+                &lt;div class=&quot;quiz-options&quot;&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Proof by counterexample&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Proof by induction&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;t&quot;&gt;Proof by contradiction&lt;/button&gt;
+                    &lt;button class=&quot;q-opt&quot; data-c=&quot;f&quot;&gt;Direct proof&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;q-feedback&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;quiz-nav&quot;&gt;
+                &lt;button id=&quot;q-prev&quot; class=&quot;btn-secondary&quot; disabled&gt;Previous&lt;/button&gt;
+                &lt;button id=&quot;q-next&quot; class=&quot;btn-primary&quot; disabled&gt;Next&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;quiz-result-panel&quot; id=&quot;quiz-result-panel&quot;&gt;
+                &lt;div class=&quot;result-inner&quot;&gt;
+                    &lt;h3&gt;🎉 Quiz Complete!&lt;/h3&gt;
+                    &lt;div class=&quot;score-display&quot;&gt;&lt;span id=&quot;score-num&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;score-total&quot;&gt;/5&lt;/span&gt;&lt;/div&gt;
+                    &lt;p id=&quot;score-msg&quot;&gt;Great job!&lt;/p&gt;
+                    &lt;button class=&quot;btn-primary&quot; id=&quot;q-restart&quot;&gt;Restart Quiz&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+</code></pre>
+<p>​            </div>
+​        </div>
+​    </section>
+​ <br>
+​    <!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-brand">
+<img src="ppt_images/page_01.png" alt="CUHK" class="footer-logo">
+<div>
+<strong>CSC3100 Data Structures</strong>
+<p>Lecture 1: Introduction</p>
+</div>
+</div>
+<div class="footer-meta">
+<p>Juexiao Zhou</p>
+<p>School of Data Science, CUHK-Shenzhen</p>
+</div>
+</div>
+</div>
+</footer></p>
+<pre><code>&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</body>
+</html>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-06-01&nbsp;<a class="git-hash" href="https://github.com/JoshuaChou2018/me.hugo/commit/0c068cddc41628df5ee8455b5e269fcdc243db56" target="_blank" title="commit by Juexiao Zhou(maybechou@live.com) 0c068cddc41628df5ee8455b5e269fcdc243db56: 1">
+                                    <i class="fas fa-hashtag fa-fw"></i>0c068cd</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1" data-hashtags="CSC3100 Data Structures - 2026 Summer"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-hashtag="CSC3100 Data Structures - 2026 Summer"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/"><i class="fab fa-reddit fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1" data-ralateuid="6285763593"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://www.joshuachou.ink/teaching/csc3100-data-structures---lecture-1-introduction-61/intern/" data-title="CSC3100 Data Structures - 2026 Summer - Lecture 1 Introduction 6/1"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=""></a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=365&t=tt&d=2ZX2L_ReESLJDBPh7uotGkXQcbNCek-_eR0dtzBPItI'></script>
+            
+
+            
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWZ5YJ7070"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-RWZ5YJ7070');
+            </script>
+
+            <div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@13.0.0/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"Healthcare Ethical AI Lab (HEAL)","id-2":"Healthcare Ethical AI Lab (HEAL)"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":30,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
