@@ -411,6 +411,9 @@ I said "Hello World" in January 1999 in China.
 
 **[[Full list](https://www.joshuachou.ink/teaching/)]** 
 
+- **CSC3100 Data Structures**, Summer 2026, CUHK-Shenzhen, China
+  - Position: **Instructor**
+  
 - **CSC3100 Data Structures**, Fall 2025, CUHK-Shenzhen, China
   - Position: **Instructor**
   
