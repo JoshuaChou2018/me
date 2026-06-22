@@ -35,6 +35,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
 
 <div style="height: 500px; overflow-y: scroll; padding: 10px; width: auto;"> 
 <ul>
+  <li><strong>Jun 2026</strong>, one paper is accepted by <strong>ECCV 2026</strong>, congratulations to Yuhao</li>
   <li><strong>Jun 2026</strong>, one paper is accepted by <strong>Medical Image Analysis</strong></li>
   <li><strong>Jan 2026</strong>, one paper is accepted by <strong>Nature Methods</strong></li>
   <li><strong>Nov 2025</strong>, two innovation awards for Outstanding Scientific Research achievements (第二十七届高交会“优秀科研成果创新奖”) were received at <a href="https://www.chtf.com/awardList/"><strong>The 27th China Hi-tech fair</strong></a></li>
@@ -80,6 +81,7 @@ Tenure-track Assistant Professor @[CUHK-Shenzhen](https://sds.cuhk.edu.cn/en/tea
   <li><strong>Dec 2021</strong>, got my master of science degree, M.S. in Computer Science at King Abdullah University of Science and Technology.</li>
 </ul>
 </div>
+
 
 
 
