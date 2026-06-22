@@ -15,7 +15,7 @@
 
 #### Postdoc
 
-- We want you!
+- Bin Yang, *(PhD, SUSTech), 2026.7 -*
 
 #### Visiting Scholar
 
@@ -24,18 +24,22 @@
 #### Research Assistant
 
 - Ziwen Wang, (M.S., UIUC), 2026.1 -  
-- Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 - 2026.6 -> CUHK* 
-- Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 - 2026.1 -> SLAI* 
 
 #### Interns
 
+- Xuanrui Liu, *(B.S., Northeast Forestry University), 2026.6 -*
+- Xiangjun Zhang, *(B.S., Southeast University), 2026.6 -* 
 - Chang Dao, *(B.S., CUHK-Shenzhen), 2025.11 -* 
 - Haoran Yang, *(B.S., CUHK-Shenzhen), 2025.10 -* 
 - Yuanhao He, *(M.S., CUHK-Shenzhen), 2025.9 -* 
+
+#### Alumni
+
+- Jiahe Qian, *(M.S., Chinese Academy of Sciences), 2025.6 - 2026.6 -> PhD@CUHK* 
 - Florensia Widjaja, *(B.S., CUHK-Shenzhen), 2025.6 - 2026.5, -> PolyU*
+- Yuyuan Yang, *(B.S., Southwest University of Science and Technology), 2025.10 - 2026.1 -> SLAI*
 - Jindong Jiang, *(B.S., Nanjing University), 2024.11 - 2025.9* 
   - Published a co-first-authored paper on *[Briefings in Bioinformatics](https://academic.oup.com/bib/pages/handling-editor-recruitment)* (IF: 7.7)
-
 
 <br>
 
