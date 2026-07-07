@@ -671,7 +671,7 @@ I'm very glad to work and grow together with these excellent students.
 |                    Multimedia Systems                     |        1         |
 |                          Nature                           |        1         |
 |                      Nature Methods                       |        3         |
-|                   Nature Communications                   |        4         |
+|                   Nature Communications                   |        5         |
 |                  npj Precision Oncology                   |        1         |
 |                   npj Digital Medicine                    |        2         |
 |                npj Artificial Intelligence                |        2         |
@@ -679,7 +679,7 @@ I'm very glad to work and grow together with these excellent students.
 |                   Quantitative Biology                    |        2         |
 |                        SIGKDD 2022                        |        2         |
 |                    Scientific Reports                     |        4         |
-|                           TMLR                            |        1         |
+|                           TMLR                            |        2         |
 
 
 
