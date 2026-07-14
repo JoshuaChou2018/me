@@ -636,6 +636,23 @@ I'm very glad to work and grow together with these excellent students.
 
 ### Academic Services
 
+#### Editor
+
+- *Editorial Board* Member of [npj Artificial Intelligence](https://www.nature.com/collections/ehfcbdhjai)
+- *Editorial Board* Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
+- *Guest Editor Assistant* in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
+- *PC member* of ISMB 2026
+- *PC member* of BIBM 2026
+
+<br>
+
+#### Conference Administrator
+
+- *Co-Chair*, [IS-HIS 2025 Symposium](https://www.ishis.org/), [ICCNS2025](https://iccns-conference.org/2025/index.php), Varna, Bulgaria
+- *Administrator*, The 21st International Conference on Bioinformatics (InCoB2022), [certificate](index.en.assets/InCoB2022.pdf)
+
+<br>
+
 #### Reviewer
 
 |                    Journal/Conference                     | # Paper Reviewed |
@@ -680,27 +697,6 @@ I'm very glad to work and grow together with these excellent students.
 |                        SIGKDD 2022                        |        2         |
 |                    Scientific Reports                     |        4         |
 |                           TMLR                            |        2         |
-
-
-
-<br>
-
-#### Editor
-
-- *Editorial Board* Member of [npj Artificial Intelligence](https://www.nature.com/collections/ehfcbdhjai)
-- *Editorial Board* Member of [BMC Bioinformatics](https://bmcbioinformatics.biomedcentral.com)
-- *Guest Editor Assistant* in Biomedical Informatics ([Special issue: spatial transcriptomics](https://elspub.com/journals/biomedical-informatics/special_issues/Biomedical%20Informatics))
-- *PC member* of ISMB 2026
-- *PC member* of BIBM 2026
-
-
-
-<br>
-
-#### Conference Administrator
-
-- *Co-Chair*, [IS-HIS 2025 Symposium](https://www.ishis.org/), [ICCNS2025](https://iccns-conference.org/2025/index.php), Varna, Bulgaria
-- *Administrator*, The 21st International Conference on Bioinformatics (InCoB2022), [certificate](index.en.assets/InCoB2022.pdf)
 
 <br>
 
